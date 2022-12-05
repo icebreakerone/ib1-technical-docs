@@ -1,0 +1,6 @@
+site_name: Icebreaker One Technical Documentation
+theme:
+  name: material
+extra:
+  version:
+    provider: mike
