@@ -1,0 +1,1287 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Guidance for Data Providers - Icebreaker One Technical Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guidance-for-data-providers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Icebreaker One Technical Documentation" class="md-header__button md-logo" aria-label="Icebreaker One Technical Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Icebreaker One Technical Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Guidance for Data Providers
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Icebreaker One Technical Documentation" class="md-nav__button md-logo" aria-label="Icebreaker One Technical Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Icebreaker One Technical Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Open Energy Tech Docs
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../access_control_specification/" class="md-nav__link">
+        Access Control and Capability Grant Language
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additional_material/" class="md-nav__link">
+        Additional Material
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/" class="md-nav__link">
+        Open Energy Architecture
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        Open Energy Glossary
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metadata/" class="md-nav__link">
+        Data Set Metadata
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Ops guidelines
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Ops guidelines" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Ops guidelines
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../before_starting/" class="md-nav__link">
+        Considerations Before You Start
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common_policies/" class="md-nav__link">
+        Core Policies
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_consumer_ops_guidelines/" class="md-nav__link">
+        Guidance for Data Consumers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Guidance for Data Providers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Guidance for Data Providers
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-provider-role-and-responsibilities" class="md-nav__link">
+    Data Provider Role and Responsibilities
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Provider Role and Responsibilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-data-classification" class="md-nav__link">
+    Responsibility - Data classification
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-access-and-licensing-specification" class="md-nav__link">
+    Responsibility - Access and licensing specification
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-data-provision" class="md-nav__link">
+    Responsibility - Data provision
+  </a>
+  
+    <nav class="md-nav" aria-label="Responsibility - Data provision">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-formats" class="md-nav__link">
+    Data formats
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-data-integrity-and-correctness" class="md-nav__link">
+    Responsibility - Data integrity and correctness
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-metadata-provision" class="md-nav__link">
+    Responsibility - Metadata provision
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-api-availability" class="md-nav__link">
+    Responsibility - API availability
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-api-stability-and-change-management" class="md-nav__link">
+    Responsibility - API stability and change management
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-api-requirements" class="md-nav__link">
+    Data API Requirements
+  </a>
+  
+    <nav class="md-nav" aria-label="Data API Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#date-and-time-formats" class="md-nav__link">
+    Date and time formats
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint-security" class="md-nav__link">
+    Endpoint security
+  </a>
+  
+    <nav class="md-nav" aria-label="Endpoint security">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-data-endpoints" class="md-nav__link">
+    Open data endpoints
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shared-data-endpoints" class="md-nav__link">
+    Shared data endpoints
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heartbeat-and-monitoring-endpoint" class="md-nav__link">
+    Heartbeat and monitoring endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-documentation" class="md-nav__link">
+    API documentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versioning" class="md-nav__link">
+    Versioning
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-resolution-data-providers" class="md-nav__link">
+    Problem Resolution (Data Providers)
+  </a>
+  
+    <nav class="md-nav" aria-label="Problem Resolution (Data Providers)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#effective-resolution-of-problems-data-providers" class="md-nav__link">
+    Effective resolution of problems (Data Providers)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#online-support" class="md-nav__link">
+    Online support
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ticket-management-process" class="md-nav__link">
+    Ticket management process
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dispute-resolution-for-access-control-and-capability-grant-policies-data-providers" class="md-nav__link">
+    Dispute resolution for access control and capability grant policies (Data Providers)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oegs-support-data-providers" class="md-nav__link">
+    OEGS support (Data Providers)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-management" class="md-nav__link">
+    Change Management
+  </a>
+  
+    <nav class="md-nav" aria-label="Change Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#downtime" class="md-nav__link">
+    Downtime
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#licensing-and-access-control-changes" class="md-nav__link">
+    Licensing and access control changes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-api-changes" class="md-nav__link">
+    Data API changes
+  </a>
+  
+    <nav class="md-nav" aria-label="Data API changes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dual-running-and-deprecation" class="md-nav__link">
+    Dual running and deprecation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-credentials-consent-and-authorisation" class="md-nav__link">
+    API credentials, consent and authorisation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        Introduction to Open Energy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../technical_common/" class="md-nav__link">
+        Common Security Requirements
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-provider-role-and-responsibilities" class="md-nav__link">
+    Data Provider Role and Responsibilities
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Provider Role and Responsibilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-data-classification" class="md-nav__link">
+    Responsibility - Data classification
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-access-and-licensing-specification" class="md-nav__link">
+    Responsibility - Access and licensing specification
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-data-provision" class="md-nav__link">
+    Responsibility - Data provision
+  </a>
+  
+    <nav class="md-nav" aria-label="Responsibility - Data provision">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-formats" class="md-nav__link">
+    Data formats
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-data-integrity-and-correctness" class="md-nav__link">
+    Responsibility - Data integrity and correctness
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-metadata-provision" class="md-nav__link">
+    Responsibility - Metadata provision
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-api-availability" class="md-nav__link">
+    Responsibility - API availability
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-api-stability-and-change-management" class="md-nav__link">
+    Responsibility - API stability and change management
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-api-requirements" class="md-nav__link">
+    Data API Requirements
+  </a>
+  
+    <nav class="md-nav" aria-label="Data API Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#date-and-time-formats" class="md-nav__link">
+    Date and time formats
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint-security" class="md-nav__link">
+    Endpoint security
+  </a>
+  
+    <nav class="md-nav" aria-label="Endpoint security">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-data-endpoints" class="md-nav__link">
+    Open data endpoints
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shared-data-endpoints" class="md-nav__link">
+    Shared data endpoints
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heartbeat-and-monitoring-endpoint" class="md-nav__link">
+    Heartbeat and monitoring endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-documentation" class="md-nav__link">
+    API documentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versioning" class="md-nav__link">
+    Versioning
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-resolution-data-providers" class="md-nav__link">
+    Problem Resolution (Data Providers)
+  </a>
+  
+    <nav class="md-nav" aria-label="Problem Resolution (Data Providers)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#effective-resolution-of-problems-data-providers" class="md-nav__link">
+    Effective resolution of problems (Data Providers)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#online-support" class="md-nav__link">
+    Online support
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ticket-management-process" class="md-nav__link">
+    Ticket management process
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dispute-resolution-for-access-control-and-capability-grant-policies-data-providers" class="md-nav__link">
+    Dispute resolution for access control and capability grant policies (Data Providers)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oegs-support-data-providers" class="md-nav__link">
+    OEGS support (Data Providers)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-management" class="md-nav__link">
+    Change Management
+  </a>
+  
+    <nav class="md-nav" aria-label="Change Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#downtime" class="md-nav__link">
+    Downtime
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#licensing-and-access-control-changes" class="md-nav__link">
+    Licensing and access control changes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-api-changes" class="md-nav__link">
+    Data API changes
+  </a>
+  
+    <nav class="md-nav" aria-label="Data API changes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dual-running-and-deprecation" class="md-nav__link">
+    Dual running and deprecation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-credentials-consent-and-authorisation" class="md-nav__link">
+    API credentials, consent and authorisation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="guidance-for-data-providers">Guidance for Data Providers</h1>
+<p><strong>NOTE</strong>: This documented is primarily intended for technical and operations teams within organisations wishing
+to participate in Open Energy as <a href="../../glossary/#term-Data-Provider">Data Providers</a>.</p>
+<p><strong>NOTE</strong>: The key words <strong>“MUST”</strong>, <strong>“MUST NOT”</strong>, <strong>“REQUIRED”</strong>, <strong>“SHALL”</strong>, <strong>“SHALL NOT”</strong>, <strong>“SHOULD”</strong>,
+<strong>“SHOULD NOT”</strong>, <strong>“RECOMMENDED”</strong>, <strong>“MAY”</strong>, and <strong>“OPTIONAL”</strong> in this document are to be interpreted
+as described in <a href="https://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a>.</p>
+<h2 id="data-provider-role-and-responsibilities">Data Provider Role and Responsibilities</h2>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> are Open Energy members which make data sets available to:</p>
+<ul>
+<li>
+<p><a href="../../glossary/#term-Data-Consumer">Data Consumers</a> within the Open Energy ecosystem</p>
+<ul>
+<li>
+<p>Applies to shared data sets</p>
+</li>
+<li>
+<p>Data <a href="../../glossary/#term-Application-programming-interface">APIs</a> secured using Financial-grade <a href="../../glossary/#term-Application-programming-interface">API</a> security (<a href="../../glossary/#term-Financial-Grade-API">FAPI</a>)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Any third party, in the case of open data</p>
+<ul>
+<li>
+<p>Open data sets are made available through publicly accessible <a href="../../glossary/#term-Application-programming-interface">APIs</a></p>
+</li>
+<li>
+<p>Data are made available under an appropriate open license agreement</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>In this context, Data <a href="../../glossary/#term-Application-programming-interface">APIs</a> can be anything from a simple link to a <a href="../../glossary/#term-Comma-Separated-Value">CSV</a> or other file (for open data) to a complex
+query system returning custom output on demand.</p>
+<p>To support this role, <a href="../../glossary/#term-Data-Provider">Data Providers</a> have certain responsibilities:</p>
+<h3 id="responsibility-data-classification">Responsibility - Data classification</h3>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> are responsible for classification of their data sets by data sensitivity class, and for ensuring that
+data are shared, or not shared, as appropriate.</p>
+<ul>
+<li>
+<p>Any data classed as <a href="../../glossary/#term-Data-sensitivity-class-closed">OE-C</a> (Closed) or <a href="../../glossary/#term-Data-sensitivity-class-personal">OE-SP</a> (Personal) <strong>MUST NOT</strong> be shared within the Open Energy ecosystem
+at present.</p>
+</li>
+<li>
+<p>Data in <a href="../../glossary/#term-Data-sensitivity-class-open">OE-O</a>, <a href="../../glossary/#term-Data-sensitivity-class-shared-A">OE-SA</a>, and <a href="../../glossary/#term-Data-sensitivity-class-shared-B">OE-SB</a> <strong>MAY</strong> be shared within the Open Energy ecosystem as described in the
+following sections</p>
+</li>
+</ul>
+<h3 id="responsibility-access-and-licensing-specification">Responsibility - Access and licensing specification</h3>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> are responsible for creating access rules for each dataset shared via Open Energy. For each data set, the <a href="../../glossary/#term-Data-Provider">Data Provider</a> must
+create a set of one or more access rules as defined in <a href="../../metadata/#data-set-metadata">Data Set Metadata</a>. These rules specify the conditions under which access will be
+granted, along with the capabilities forming the license grant should those conditions be satisfied.</p>
+<ul>
+<li>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> <strong>MUST</strong> ensure that access conditions and capability grants are non-discriminatory and fair to Data Consumers</p>
+</li>
+<li>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> <strong>SHOULD</strong> ensure that the validity time bounds of any published capability grants are sufficient for
+reasonable commercial operation of a data consumer</p>
+</li>
+</ul>
+<h3 id="responsibility-data-provision">Responsibility - Data provision</h3>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> are responsible for providing a data <a href="../../glossary/#term-Application-programming-interface">API</a> for each data set, and for configuring and securing each <a href="../../glossary/#term-Application-programming-interface">API</a> in accordance
+with the kinds of data it exposes (along with any other access conditions deemed necessary and appropriate by the <a href="../../glossary/#term-Data-Provider">Data Provider</a>
+on a per-data-set basis)</p>
+<ul>
+<li>
+<p>Open data <strong>MUST</strong> be made available with no authentication or authorization requirements</p>
+</li>
+<li>
+<p>Shared data <strong>MUST</strong> made available through a <a href="../../glossary/#term-Financial-Grade-API">FAPI</a> compliant resource server connected to the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a>’s authorization
+service (see <a href="../technical_common/#common-security-requirements">Common Security Requirements</a> for more details)</p>
+</li>
+</ul>
+<h4 id="data-formats">Data formats</h4>
+<p>Open Energy does not define or mandate individual data formats to be returned from data <a href="../../glossary/#term-Application-programming-interface">APIs</a> - the diversity of kinds
+of information in the sector renders this impractical, and the additional overhead imposed on data providers would be
+undesirable.</p>
+<p>With this said, we would encourage <a href="../../glossary/#term-Data-Provider">Data Providers</a> to consider likely automated consumption of data when designing their
+data <a href="../../glossary/#term-Application-programming-interface">APIs</a> - this implies using machine readable formats such as <a href="../../glossary/#term-Comma-Separated-Value">CSV</a>, <a href="../../glossary/#term-Javascript-Object-Notation">JSON</a> and similar, with a preference for those
+formats compatible with existing software tools and libraries.</p>
+<h3 id="responsibility-data-integrity-and-correctness">Responsibility - Data integrity and correctness</h3>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> are responsible for the correctness of data returned by their published data <a href="../../glossary/#term-Application-programming-interface">APIs</a>. The <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a> will provide a
+mechanism by which <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> can report any data quality issues, and will convey any such reports to a nominated contact
+within the <a href="../../glossary/#term-Data-Provider">Data Provider</a>.</p>
+<h3 id="responsibility-metadata-provision">Responsibility - Metadata provision</h3>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> are responsible for creating, and publishing, metadata for each exposed data set. This provides visibility of each
+data set within the Open Energy Governance Service (<a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a>) Registry.</p>
+<p>The metadata file covers, for each provided data set, whether shared or open:</p>
+<ul>
+<li>
+<p>Semantic content</p>
+</li>
+<li>
+<p>Access rules and licensing of the data set</p>
+</li>
+<li>
+<p>Transport mechanism specification</p>
+</li>
+<li>
+<p>Syntactic content</p>
+</li>
+</ul>
+<p>The content and format of the metadata file can be found at <a href="../../metadata/#data-set-metadata">Data Set Metadata</a>.</p>
+<p>The <a href="../../glossary/#term-Data-Provider">Data Provider</a> is responsible for the accuracy and completeness of this metadata.</p>
+<h3 id="responsibility-api-availability">Responsibility - API availability</h3>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> are responsible for availability of their published data <a href="../../glossary/#term-Application-programming-interface">APIs</a>. Availability will be monitored automatically by the
+<a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a>, availability information will form part of the metadata for each data set record in the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a> Registry.</p>
+<p>The <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a> will provide a mechanism for <a href="../../glossary/#term-Data-Provider">Data Providers</a> to announce scheduled downtime when planned, and to report unscheduled
+downtime when necessary.</p>
+<h3 id="responsibility-api-stability-and-change-management">Responsibility - API stability and change management</h3>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> are responsible for managing any change to the data <a href="../../glossary/#term-Application-programming-interface">APIs</a> such that disruption to <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> is minimised. This is handled
+through:</p>
+<ul>
+<li>
+<p>Semantic versioning of all <a href="../../glossary/#term-Application-programming-interface">API</a> methods</p>
+</li>
+<li>
+<p>Publication of anticipated changes and retirement of <a href="../../glossary/#term-Application-programming-interface">API</a> versions through the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a></p>
+</li>
+<li>
+<p>Changeover periods where new and prior <a href="../../glossary/#term-Application-programming-interface">API</a> versions are run in parallel</p>
+</li>
+</ul>
+<h2 id="data-api-requirements">Data API Requirements</h2>
+<p>Unlike open banking, open energy does not mandate particular <a href="../../glossary/#term-Application-programming-interface">APIs</a> for data provision - it is expected that there will
+be a variety of mechanisms to expose data, with varying inputs (from a single data set <a href="../../glossary/#term-Identification">ID</a> to a complex query object)
+and varying kinds of output dependent on the information exposed.</p>
+<p>With that said, there are certain properties that all data <a href="../../glossary/#term-Application-programming-interface">APIs</a> must satisfy to interoperate successfully with other
+parties within the open energy ecosystem.</p>
+<p>We refer to endpoints used to retrieve energy data as data endpoints, and others as infrastructure endpoints.</p>
+<h3 id="date-and-time-formats">Date and time formats</h3>
+<p>Whenever date or time quantities are accepted or returned from a data <a href="../../glossary/#term-Application-programming-interface">API</a>, these values MUST conform to
+<a href="https://tools.ietf.org/html/rfc3339">|RFC| 3339</a>. This is referenced elsewhere in this document as <strong>date/time</strong></p>
+<h3 id="endpoint-security">Endpoint security</h3>
+<h4 id="open-data-endpoints">Open data endpoints</h4>
+<p>Data endpoints which provide access to open data (in class <a href="../../glossary/#term-Data-sensitivity-class-open">OE-O</a>) <strong>MUST NOT</strong> require any form of authentication
+prior to access. This includes allowing access to entities which are not members of the open energy ecosystem.</p>
+<h4 id="shared-data-endpoints">Shared data endpoints</h4>
+<p>Data endpoints which provide access to shared data (in classes <a href="../../glossary/#term-Data-sensitivity-class-shared-A">OE-SA</a> and <a href="../../glossary/#term-Data-sensitivity-class-shared-B">OE-SB</a>) <strong>MUST</strong> implement the subset
+of the resource server part of the <a href="../../glossary/#term-Financial-Grade-API">FAPI</a> specification used within Open Energy as described in
+<a href="../technical_common/#common-security-requirements">Common Security Requirements</a>, and authorize against the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a> authorization service.</p>
+<p>Protected data endpoints <strong>MAY</strong> use the token introspection mechanism provided by <a href="../../glossary/#term-Financial-Grade-API">FAPI</a> to gather additional
+information about the client making the request prior to any access decision.</p>
+<h3 id="heartbeat-and-monitoring-endpoint">Heartbeat and monitoring endpoint</h3>
+<p>All data <a href="../../glossary/#term-Application-programming-interface">APIs</a> <strong>SHOULD</strong> include a <a href="../../glossary/#term-Financial-Grade-API">FAPI</a> protected heartbeat infrastructure endpoint. This serves two purposes:</p>
+<ul>
+<li>
+<p>It allows the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a> to monitor the liveness of the data <a href="../../glossary/#term-Application-programming-interface">API</a></p>
+</li>
+<li>
+<p>It provides some level of verification that the resource server has been correctly configured</p>
+</li>
+</ul>
+<p>The heartbeat endpoint location is defined within the data set metadata file, if specified it <strong>MUST</strong> respond to
+<code>GET</code> requests from the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a> monitoring system with a <code>200</code> status code.</p>
+<p>If the heartbeat response contains a body, the body will be interpreted by the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a> monitoring system as a <a href="../../glossary/#term-Javascript-Object-Notation">JSON</a>
+dictionary containing statistics for the period between the most recent two successful calls to the heartbeat
+endpoint (including the call to which this is a response). This response is <strong>RECOMMENDED</strong> as it provides oversight
+of <a href="../../glossary/#term-Application-programming-interface">API</a> usage to the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a>.</p>
+<p>Legal keys, and the semantics of their associated values, are as follows:</p>
+<p>| Name</p>
+<p>| Content</p>
+<p>|
+| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | ---------------------- | -------------------- |  |  |  |  |  |  |  |  |  |  |
+| <code>period_start</code></p>
+<pre><code>                                                                               | **date/time** of the start of the period for which statistics are reported
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+</code></pre>
+<p>| <code>period_end</code></p>
+<pre><code>                                                                                 | **date/time** of the end of the period for which statistics are reported, this will typically be the date and
+</code></pre>
+<p>time of the heartbeat request</p>
+<pre><code>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+</code></pre>
+<p>| <code>api_call_response_[CODE]_count</code></p>
+<pre><code>                                                             | integer number of requests to non-heartbeat endpoints within this data [API](../glossary.md#term-Application-programming-interface) which resulted in a response of type
+</code></pre>
+<p>CODE. A distinct key:value pair is sent in the response for each distinct <a href="../../glossary/#term-HypterText-Transfer-Protocol">HTTP</a> status code returned.</p>
+<pre><code>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+</code></pre>
+<h3 id="api-documentation">API documentation</h3>
+<p>Data <a href="../../glossary/#term-Application-programming-interface">APIs</a> <strong>MUST</strong> be described within the transport section of the data set metadata file.</p>
+<h3 id="versioning">Versioning</h3>
+<p>All data <a href="../../glossary/#term-Application-programming-interface">APIs</a> <strong>MUST</strong> include a version number in the path of each data endpoint. This version SHOULD use semantic
+versioning to differentiate between breaking and backwards compatible changes. This <strong>MUST</strong> be documented within the
+Open|API| transport section of the metadata file.</p>
+<h2 id="problem-resolution-data-providers">Problem Resolution (Data Providers)</h2>
+<h3 id="effective-resolution-of-problems-data-providers">Effective resolution of problems (Data Providers)</h3>
+<p>A <a href="../../glossary/#term-Data-Provider">Data Provider</a> <strong>MUST</strong> create documentation to clearly outline the policies, processes and systems it has in place for problem
+resolution and its respective service level objectives. This framework should enable the effective resolution of <a href="../../glossary/#term-Data-Consumer">Data Consumer</a>
+issues and therefore cater for problems that relate specifically to a <a href="../../glossary/#term-Data-Consumer">Data Consumer</a>’s use of a <a href="../../glossary/#term-Data-Provider">Data Provider</a>’s data <a href="../../glossary/#term-Application-programming-interface">APIs</a>. In the event that a
+<a href="../../glossary/#term-Data-Consumer">Data Consumer</a> is unable to resolve an issue with a <a href="../../glossary/#term-Data-Provider">Data Provider</a>, the issue <strong>MAY</strong> be flagged to the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a> Dispute Resolution function for
+independent support.</p>
+<h3 id="online-support">Online support</h3>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> <strong>SHOULD</strong> provide <a href="../../glossary/#term-Frequently-Asked-Question">Frequently Asked Questions</a>, which address areas that may be specific to <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> such as technical advice or test facility
+guidance. They should also consider a means of identifying recurring questions or user-error issues so these can be
+collated into <a href="../../glossary/#term-Frequently-Asked-Question">Frequently Asked Questions</a> to support the early resolution of problems.</p>
+<p>Problem resolution documentation, <a href="../../glossary/#term-Frequently-Asked-Question">Frequently Asked Questions</a>, contact details, opening times and out of hours support <strong>SHOULD</strong> be published
+and easily accessible in one collective area on the <a href="../../glossary/#term-Data-Provider">Data Provider</a>’s website.</p>
+<h3 id="ticket-management-process">Ticket management process</h3>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> <strong>MUST</strong> ensure they have a functioning ticket management system which enables them to respond to issues and
+problems raised within clearly defined service level targets. A successful problem resolution framework will enable the
+efficient identification and resolution of problems which specifically impact <a href="../../glossary/#term-Data-Consumer">Data Consumers</a>. The system for raising and reporting
+on tickets should be transparent in order to fully inform users and engender trust across the ecosystem.</p>
+<h3 id="dispute-resolution-for-access-control-and-capability-grant-policies-data-providers">Dispute resolution for access control and capability grant policies (Data Providers)</h3>
+<p>In cases where a <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> believes that access conditions or capability grant rules are being applied unfairly, the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a>
+will act as a mediating party.</p>
+<h3 id="oegs-support-data-providers">OEGS support (Data Providers)</h3>
+<p>The <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a> Service Desk will provide participants with a supplementary ticket management process and supports <a href="../../glossary/#term-Data-Provider">Data Providers</a> in
+communicating problems to ecosystem participants via the noticeboard.</p>
+<h2 id="change-management">Change Management</h2>
+<p>This section outlines various change scenarios that may impact <a href="../../glossary/#term-Data-Consumer">Data Consumers</a>, and provides guidance for a <a href="../../glossary/#term-Data-Provider">Data Provider</a> to consider when
+implementing a change and communicating to <a href="../../glossary/#term-Data-Consumer">Data Consumers</a>.</p>
+<h3 id="downtime">Downtime</h3>
+<p>Planned downtime, by definition, is something that a <a href="../../glossary/#term-Data-Provider">Data Provider</a> anticipates and therefore is able to give advance notice to <a href="../../glossary/#term-Data-Consumer">Data Consumers</a>.
+It is not generally possible to give advance notice of unplanned downtime, but <a href="../../glossary/#term-Data-Provider">Data Providers</a> should give notice as soon as they
+are aware of the downtime.</p>
+<p>When providing notifications, <a href="../../glossary/#term-Data-Provider">Data Providers</a> <strong>SHOULD</strong> provide a specific time period, so <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> are aware that the data <a href="../../glossary/#term-Application-programming-interface">API</a> will be
+unavailable for that time, or upon a subsequent notification to confirm that the service has been reinstated sooner
+than anticipated.</p>
+<p><a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a> Support Services can assist <a href="../../glossary/#term-Data-Provider">Data Providers</a> with the dissemination of downtime information to the wider Open Energy ecosystem
+via its central noticeboard facility.</p>
+<p>Planned downtime should be given at least five business days before the event. Apart from cancelling the planned
+downtime, no changes should be made to the planned downtime notification within the five business day period. Where
+practical, <a href="../../glossary/#term-Data-Provider">Data Providers</a> should give advance notice via their own website, developer portal or <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a> of any planned downtime one
+calendar month in advance.</p>
+<h3 id="licensing-and-access-control-changes">Licensing and access control changes</h3>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> <strong>MUST</strong> provide advance notice of any changes to access control and capability grant policies. This is normally
+covered by the time-bounded nature of these grants, but <a href="../../glossary/#term-Data-Provider">Data Providers</a> <strong>MAY</strong> also use any notification services provided by the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a>
+to publish additional information about changes.</p>
+<h3 id="data-api-changes">Data API changes</h3>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> may periodically wish to upgrade and / or to deprecate versions of their data <a href="../../glossary/#term-Application-programming-interface">APIs</a>. The following
+mitigation measures will reduce the impact on service providers of these changes.</p>
+<h4 id="dual-running-and-deprecation">Dual running and deprecation</h4>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> <strong>SHOULD</strong> support a minimum of two non-compatible <a href="../../glossary/#term-Application-programming-interface">API</a> versions in a production context, providing both versions
+were previously supported by the <a href="../../glossary/#term-Data-Provider">Data Provider</a>, for a period of time long enough to ensure that <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> have had sufficient time to
+successfully test the new version and migrate their applications and customers. <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a> recommends dual running for at
+least six months for a major version, and three months for a minor version. Where a <a href="../../glossary/#term-Data-Provider">Data Provider</a> implements a data <a href="../../glossary/#term-Application-programming-interface">API</a> for the
+first time, they will only need to support this one version to start with.</p>
+<p>The deprecation of unsupported versions is at the <a href="../../glossary/#term-Data-Provider">Data Provider</a>’s discretion – based on usage metrics. However, the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a> may
+recommend that any specific version (major, minor, or patch) should be deprecated at any time, and this should be
+implemented within three months of notification by the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a>. This is to cater for critical defects, especially those
+relating to security. In exceptional circumstances it may be agreed by <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a> that support for a specific version is
+terminated earlier.</p>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> must not apply any measures to induce <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> to adopt a new version of the <a href="../../glossary/#term-Application-programming-interface">APIs</a> (e.g. rate limiting the older version
+while providing better performance on a newer version).</p>
+<h4 id="api-credentials-consent-and-authorisation">API credentials, consent and authorisation</h4>
+<p><a href="../../glossary/#term-Application-programming-interface">API</a> Credentials associated with an <a href="../../glossary/#term-Application-programming-interface">API</a> should be version agnostic. Therefore, a <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> accessing v1.0, v1.1 or v2.0 should
+be able to use the same <a href="../../glossary/#term-Application-programming-interface">API</a> Credentials across all available <a href="../../glossary/#term-Application-programming-interface">API</a> endpoints.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../data_consumer_ops_guidelines/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Guidance for Data Consumers" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Guidance for Data Consumers
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../introduction/" class="md-footer__link md-footer__link--next" aria-label="Next: Introduction to Open Energy" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Introduction to Open Energy
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+    
+    
+  </body>
+</html>
