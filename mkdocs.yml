@@ -1,7 +1,28 @@
 site_name: Icebreaker One Technical Documentation
 theme:
   name: material
+  logo: assets/logo.png
+  favicon: assets/logo.png
   custom_dir: overrides
+  font:
+    text: Open Sans
+  palette:
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: ib1-light
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: ib1-dark
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 extra:
   version:
     provider: mike
+extra_css:
+  - stylesheets/extra.css
