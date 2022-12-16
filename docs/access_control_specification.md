@@ -236,7 +236,7 @@ semantics of this are not well defined.
 | `open:fal_1.2`                                | [Free Art License](http://artlibre.org/licence/lal/en/) (v1.2, v1.3 respectively)                           |
 | `open:fal_1.3`                                |                                                                                                             |
 +-----------------------------------------------+-------------------------------------------------------------------------------------------------------------+ 
-                                                                                                                                                                                               |
+
 Open data sets **SHOULD** be released under the latest version of any given license.
 
 ## Obligations
@@ -260,7 +260,7 @@ granted. They are specified as a single **name**.
 | ShareAlike               | `oe:sa`                                   | Re-users who create derivatives of the work must release the derivatives under the     |
 |                          |                                           | same license as the original work, if they choose to distribute the derivatives        |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-                                                       |
+
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are
 explicitly not included here as it is possible to express this through the access conditions (i.e. rather than
 declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial
