@@ -5,7 +5,7 @@ nav:
   - 'Core Policies': 'ops_guidelines/common_policies.md'
   - 'Guidance for Data Consumers': 'ops_guidelines/data_consumer_ops_guidelines.md'
   - 'Guidance for Data Providers': 'ops_guidelines/data_provider_ops_guidelines.md'
-  - 'Common Security Requirmenets': 'ops_guidelines/technical_common.md'
+  - 'Common Security Requirements': 'ops_guidelines/technical_common.md'
   - 'Open Energy Architecture': 'architecture.md'
   - 'Dataset Metadata': 'metadata.md'
   - 'Access Control and Capability Grant Language': 'access_control_specification.md'
@@ -38,3 +38,5 @@ extra:
     provider: mike
 extra_css:
   - stylesheets/extra.css
+markdown_extensions:
+  - markdown_grid_tables

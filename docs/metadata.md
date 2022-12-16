@@ -67,50 +67,36 @@ as in the example above.
 
 ## Mandatory data content metadata fields
 
-| Key
++---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+| Key                                                                                                     | Value                                                                                                       |
++=========================================================================================================+=============================================================================================================+
+| [dct:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/title/)              | Short title for this data set                                                                               |
++---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+| [dct:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/description/)  | Longer form description of this data set. This is used in combination with the title and tags when people   |
+|                                                                                                         | search for data sets, so aim to include probable search words in the description.                           |
++---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+| [dcat:version](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version)                           | Version number of the data set, this should preferably follow [semantic versioning](https://semver.org/) if |
+|                                                                                                         | possible. Versioning of the data set should be used to indicate changes in delivery mechanism, or in        |
+|                                                                                                         | representation, rather than for changes in the underlying data. For example, this should not be used to     |
+|                                                                                                         | differentiate between data sets from different years, rather it should be used to indicate whether a        |
+|                                                                                                         | potential data consumer might need to alter how it processes any returned data.                             |
++---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+| [dcat:versionNotes](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version_notes)                | Notes used to explain any changes to this version                                                           |
++---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+| `oe:sensitivityClass`                                                                                   | The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this data set. In the current Open |
+|                                                                                                         | Energy system this should always be one of [OE-O](glossary.md#term-Data-sensitivity-class-open),            |
+|                                                                                                         | [OE-SA](glossary.md#term-Data-sensitivity-class-shared-A), or                                               |
+|                                                                                                         | [OE-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of     |
+|                                                                                                         | this property also determines the level of [API](glossary.md#term-Application-programming-interface)        |
+|                                                                                                         | security imposed, with [OE-O](glossary.md#term-Data-sensitivity-class-open) data sets being open data with  |
+|                                                                                                         | no additional security, and the two shared data classes mandating                                           |
+|                                                                                                         | [FAPI](glossary.md#term-Financial-Grade-API) security using the Open Energy trust services.                 |
++---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+| `oe:dataSetStableIdentifier`                                                                            | An identifier, unique to this [Data Provider](glossary.md#term-Data-Provider), which will not be changed,   |
+|                                                                                                         | and which will be used along with the data provider’s own ID to create a unique identifier for this data    |
+|                                                                                                         | set within the Open Energy search system.                                                                   |
++---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
 
- | Value
-
- |
-| ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |  |  |
-| [dct:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/title/)
-
-                                                                                 | Short title for this data set
-
-                                                                                                                                                                                                            |
-| [dct:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/description/)
-
-                                                                           | Longer form description of this data set. This is used in combination with the title and tags when people search for data sets, so aim to include probably search words in the description.
-
-                                              |
-| [dcat:version](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version)
-
-                                                                              | Version number of the data set, this should preferably follow [semantic versioning](https://semver.org/) if
-possible. Versioning of the data set should be used to indicate changes in delivery mechanism, or in
-representation, rather than for changes in the underlying data. For example, this should not be used to differentiate
-between data sets from different years, rather it should be used to indicate whether a potential data consumer
-might need to alter how it processes any returned data.
-
- |
-| [dcat:versionNotes](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version_notes)
-
-                                                                         | Notes used to explain any changes to this version
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| `oe:sensitivityClass`
-
-                                                                       | The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this data set. In the current Open Energy system this should always be one of
-[OE-O](glossary.md#term-Data-sensitivity-class-open), [OE-SA](glossary.md#term-Data-sensitivity-class-shared-A), or [OE-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the
-level of [API](glossary.md#term-Application-programming-interface) security imposed, with [OE-O](glossary.md#term-Data-sensitivity-class-open) data sets being open data with no additional security, and the two
-shared data classes mandating [FAPI](glossary.md#term-Financial-Grade-API) security using the Open Energy trust services.
-
-                                                                        |
-| `oe:dataSetStableIdentifier`
-
-                                                                | An identifier, unique to this [Data Provider](glossary.md#term-Data-Provider), which will not be changed, and which will be used along with
-the data provider’s own ID to create a unique identifier for this data set within the Open Energy search system.
-
-                                                                                                                                                                                                                                                             |
 ### Additional metadata
 
 The information above is the minimum needed to ensure that a data set is visible in the Open Energy search system. There

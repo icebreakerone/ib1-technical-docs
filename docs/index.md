@@ -1,4 +1,4 @@
-# Open Energy Tech Docs
+# Open Energy Technical Documentation
 
 Technical documentation for the [IcebreakerOne](https://icebreakerone.org) Open Energy project.
 

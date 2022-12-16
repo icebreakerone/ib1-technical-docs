@@ -7,11 +7,7 @@ An access rule contains:
 
 
 1. Zero or more conditions for access
-
-
 2. One or more capability grants to the data consumer if access is granted
-
-
 3. Zero or more obligations falling on the data consumer if access is granted
 
 They are applied to properties of a [Data Consumer](glossary.md#term-Data-Consumer) while processing a request for data from a
@@ -38,11 +34,7 @@ be followed by the literal `requires` and one or more Obligations in a comma sep
 
 **NOTE**: 
 * A rule with no conditions is valid, and is satisfied by all requests
-
-
 * All rules must grant at least one capability
-
-
 * Rules may have zero or more obligations
 
 See the following sections for specification of conditions and capabilities.
@@ -80,60 +72,34 @@ comma separated list of strings surrounded by `[` and `]` characters. Lists are 
 
 ### Operators
 
-| Operator
++-----------------------------+-------------------------+--------------------------------------------------------------------------+
+| Operator                    | Range                   | Description                                                              |
++=============================+=========================+==========================================================================+
+| `is`                        | Any                     | The condition passes if the value of the property on the LHS is exactly  |
+|                             |                         | equal to the value in the RHS                                            |
++-----------------------------+-------------------------+--------------------------------------------------------------------------+
+| `before`                    | date or datetime        | The condition passes if the value of the property on the LHS is before   |
+|                             |                         | the date or datetime specifed as the RHS. Where a date needs to be       |
+|                             |                         | coerced to a datetime, it is done by setting it to 00:00.00 with the     |
+|                             |                         | same date                                                                |
++-----------------------------+-------------------------+--------------------------------------------------------------------------+
+| `after`                     | date or datetime        | As above, but passes if the value of the property on the LHS is after    |
+|                             |                         | the date or datetime specified on the RHS.                               |
++-----------------------------+-------------------------+--------------------------------------------------------------------------+
+| `max_age_days`              | date or datetime        | The condition passes if the value on the LHS corresponds to a date at    |
+|                             |                         | most X days in the past compared to the current date, where X is integer |
+|                             |                         | numeral specified as the RHS                                             |
++-----------------------------+-------------------------+--------------------------------------------------------------------------+
+| `<`, `<=`, `>=`, `>`, `==`  | number                  | Conditions pass if the LHS is, respectively, less than, less than or     |
+|                             |                         | equal, greater than or equal, greater than, or strictly equal, to the    |
+|                             |                         | number on the RHS. Note that `==` and `is` are equivalent for numeric    |
+|                             |                         | quantities                                                               |
++-----------------------------+-------------------------+--------------------------------------------------------------------------+
+| `in`                        | number or string        | Conditions pass if there is at least one item in the list specified in   |
+|                             |                         | the RHS which would match the `is` condition with respect to the LHS     |
+|                             |                         | value                                                                    |
++-----------------------------+-------------------------+--------------------------------------------------------------------------+
 
- | Range
-
- | Description
-
- |
-| -------- | ----- | ----------- |
-| `is`
-
-       | Any
-
-   | The condition passes if the value of the property on the LHS is exactly equal to the value in the RHS
-
- |
-| `before`
-
-   | date or datetime
-
- | The condition passes if the value of the property on the LHS is before the date or datetime specifed as the
-RHS. Where a date needs to be coerced to a datetime, it is done by setting it to 00:00.00 with the same date
-
- |
-| `after`
-
-    | date or datetime
-
- | As above, but passes if the value of the property on the LHS is after the date or datetime specified on the RHS.
-
-                                                                                                         |
-| `max_age_days`
-
- | date or datetime
-
- | The condition passes if the value on the LHS corresponds to a date at most X days in the past compared to the
-current date, where X is integer numeral specified as the RHS
-
-                                              |
-| `<`, `<=`, `>=`, `>`, `==`
-
- | number
-
-           | Conditions pass if the LHS is, respectively, less than, less than or equal, greater than or equal, greater than,
-or strictly equal, to the number on the RHS. Note that `==` and `is` are equivalent for numeric quantities
-
-  |
-| `in`
-
-               | number or string
-
- | Conditions pass if there is at least one item in the list specified in the RHS which would match the `is`
-condition with respect to the LHS value
-
-                                                                          |
 ### Example conditions
 
 **NOTE**: The conditions shown below are examples, and should not be taken as indicative of standard properties of data
@@ -141,46 +107,29 @@ consumers in the final system.
 
 ### Example condition clauses
 
-| Condition
++------------------------------------------------+---------------------------------------------------------------------------------+
+| Condition                                      | Interpretation                                                                  |
++================================================+=================================================================================+
+| `oe:status is 'active'`                        | passes if the value of `oe:status` is set, and is equal under string comparison |
+|                                                | to `active`                                                                     |
++------------------------------------------------+---------------------------------------------------------------------------------+
+| `oe:membership_expires after 24/10/2022`       | passes if the value of `oe:membership_expires` is either a date or a datetime,  |
+|                                                | and is after the 24th October 2022                                              |
++------------------------------------------------+---------------------------------------------------------------------------------+
+| `oe:terms_signed max_age_days 20`              | passes if the value of `oe:terms_signed` is either a date or a datetime, and is |
+|                                                | at most 20 days from the current datetime. Note that dates with no time         |
+|                                                | component are equivalent to 00:00.00 on the specified date for comparison       |
+|                                                | purposes                                                                        |
++------------------------------------------------+---------------------------------------------------------------------------------+
+| `some_group:membership_level >= 2`             | passes if the value of `some_group:membership_level` is a number and is greater |
+|                                                | to or equal to two.                                                             |
++------------------------------------------------+---------------------------------------------------------------------------------+
+| `oe:org_type in ['council', 'academic']`       | passes if the value of `oe:org_type` would be considered equal to either        |
+|                                                |  `'council'` or `'academic'` as if compared with `is`.                          |
++------------------------------------------------+---------------------------------------------------------------------------------+
+| `oe:member`                                    | passes if the value of `oe:member` is `true`.                                   |
++------------------------------------------------+---------------------------------------------------------------------------------+
 
-        | Interpretation
-
-   |
-| ---------------- | ---------------- |
-| `oe:status is 'active'`
-
- | passes if the value of `oe:status` is set, and is equal under string comparison to `active`
-
- |
-| `oe:membership_expires after 24/10/2022`
-
- | passes if the value of `oe:membership_expires` is either a date or a datetime, and is after the 24th October
-2022
-
- |
-| `oe:terms_signed max_age_days 20`
-
-        | passes if the value of `oe:terms_signed` is either a date or a datetime, and is at most 20 days from the
-current datetime. Note that dates with no time component are equivalent to 00:00.00 on the specified date for
-comparison purposes
-
- |
-| `some_group:membership_level >= 2`
-
-       | passes if the value of `some_group:membership_level` is a number and is greater to or equal to two.
-
-                                                                                                                                        |
-| `oe:org_type in ['council', 'academic']`
-
- | passes if the value of `oe:org_type` would be considered equal to either `'council'` or `'academic'`
-as if compared with `is`.
-
-                                                                                                                   |
-| `oe:member`
-
-                              | passes if the value of `oe:member` is `true`.
-
-                                                                                                                                                                                                |
 ### Specifying multiple conditions
 
 Multiple conditions are separated with `,` characters. All conditions must be satisfied for the rule to pass, there
@@ -211,95 +160,48 @@ are a plausible first cut but should not be considered definitive.
 
 ### Standard capabilities
 
-| Category
++--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
+| Category                 | Capability name                           | Meaning                                                                                |
++==========================+===========================================+========================================================================================+
+| **Use**                  |                                           | **Use the artefact internally**                                                        |
++--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
+|                          | `oe:use_any`                              | For any purpose                                                                        |
++--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
+|                          | `oe:use_dev`                              | For development purposes only (i.e. private or limited development of new              |
+|                          |                                           | works, products or services)                                                           |
++--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
+|                          | `oe:use_noncom`                           | For non-commercial purposes only (e.g. education, research, charity work               |
+|                          |                                           | etc.)                                                                                  |
++--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
+| **Adapt**                |                                           | **Adapt the artefact for internal use**                                                |
++--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
+|                          | `oe:adapt_any`                            | For any purpose                                                                        |
++--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
+|                          | `oe:adapt_dev`                            | For development purposes only (i.e. private or limited development of new              |
+|                          |                                           | works, products or services)                                                           |
++--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
+|                          | `oe:adapt_noncom`                         | For non-commercial purposes only (e.g. education, research, charity work               |
+|                          |                                           | etc.)                                                                                  |
++--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
+| **Combine**              |                                           | **Combine (‘remix’) the artefact**                                                     |
++--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
+|                          | `oe:combine_any`                          | With any other artefacts                                                               |
++--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
+|                          | `oe:combine_external`                     | With other external artefacts                                                          |
++--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
+|                          | `oe:combine_internal`                     | With the Data Consumer’s own products or services                                      |
++--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
+| **Redistribute**         |                                           | **Redistribute (‘onward share’ - including to any customers of the Service Provider)** |
++--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
+|                          | `oe:redistribute_original`                | The original artefact                                                                  |
++--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
+|                          | `oe:redistribute_derived`                 | Derivatives of the original artefact not produced from other data sets, i.e. filtered  |
+|                          |                                           | or cleaned data                                                                        |
++--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
+|                          | `oe:redistribute_combined`                | Derivatives of the artefact produced through artefact combination or use in the Data   |
+|                          |                                           | Consumer’s own products or services                                                    |
++--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
 
-                               | Capability name
-
-                                                                                                                                                                                                                          | Meaning
-
-                                                                                                                                                                                                                  |
-| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Use**
-
-                                    |                                                                                                                                                                                                                                          | **Use the artefact internally**
-
-                                                                                                                                                                                              |
-|                                        | `oe:use_any`
-
-                                                                                                                                                                                                                               | For any purpose
-
-                                                                                                                                                                                                          |
-|                                        | `oe:use_dev`
-
-                                                                                                                                                                                                                               | For development purposes only (i.e. private or limited development of new works, products or services)
-
-                                                                                                                   |
-|                                        | `oe:use_noncom`
-
-                                                                                                                                                                                                                            | For non-commercial purposes only (e.g. education, research, charity work etc.)
-
-                                                                                                                                           |
-| **Adapt**
-
-                                  |                                                                                                                                                                                                                                          | **Adapt the artefact for internal use**
-
-                                                                                                                                                                                      |
-|                                        | `oe:adapt_any`
-
-                                                                                                                                                                                                                             | For any purpose
-
-                                                                                                                                                                                                          |
-|                                        | `oe:adapt_dev`
-
-                                                                                                                                                                                                                             | For development purposes only (i.e. private or limited development of new works, products or services)
-
-                                                                                                                   |
-|                                        | `oe:adapt_noncom`
-
-                                                                                                                                                                                                                          | For non-commercial purposes only (e.g. education, research, charity work etc.)
-
-                                                                                                                                           |
-| **Combine**
-
-                                |                                                                                                                                                                                                                                          | **Combine (‘remix’) the artefact**
-
-                                                                                                                                                                                           |
-|                                        | `oe:combine_any`
-
-                                                                                                                                                                                                                           | With any other artefacts
-
-                                                                                                                                                                                                 |
-|                                        | `oe:combine_external`
-
-                                                                                                                                                                                                                      | With other external artefacts
-
-                                                                                                                                                                                            |
-|                                        | `oe:combine_internal`
-
-                                                                                                                                                                                                                      | With the Data Consumer’s own products or services
-
-                                                                                                                                                                        |
-| **Redistribute**
-
-                           |                                                                                                                                                                                                                                          | **Redistribute (‘onward share’ - including to any customers of the Service Provider)**
-
-                                                                                                                                       |
-|                                        | `oe:redistribute_original`
-
-                                                                                                                                                                                                                 | The original artefact
-
-                                                                                                                                                                                                    |
-|                                        | `oe:redistribute_derived`
-
-                                                                                                                                                                                                                  | Derivatives of the original artefact not produced from other data sets, i.e. filtered or cleaned data
-
-                                                                                                                    |
-|                                        | `oe:redistribute_combined`
-
-                                                                                                                                                                                                                 | Derivatives of the artefact produced through artefact combination or use in the Data Consumer’s own products or
-services
-
-                                                                                                 |
 ### Expressing Open Data licenses with capabilities
 
 The capabilities defined above in Standard capabilities are intended for [shared data](glossary.md#term-Shared-data), but data providers may
@@ -310,38 +212,30 @@ the data are licensed under a known OSI approved open license
 Rules **MUST NOT** grant a mix of capabilities in the `open` namespace and capabilities in other namespaces, as the
 semantics of this are not well defined.
 
-| Capability name
-
-                        | Corresponding open data license
-
-                                                                                                                                                                                                          |
-| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `open:cc_by_1.0` `open:cc_by_2.0` `open:cc_by_2.5` `open:cc_by_3.0` `open:cc_by_4.0`
-
- | [Creative Commons Attribution](https://creativecommons.org/licenses/by/4.0/) (v1.0, v2.0, v2.5, v3.0, v4.0
-respectively)
-
-                                                                                                                                                                 |
-| `open:cc_by_sa_1.0` `open:cc_by_sa_2.0` `open:cc_by_sa_2.5` `open:cc_by_sa_3.0` `open:cc_by_sa_4.0`
-
- | [Creative Commons Attribution ShareAlike](https://creativecommons.org/licenses/by-sa/4.0/) (v1.0, v2.0, v2.5,
-v3.0, v4.0 respectively)
-
-                                                                                                                                                      |
-| `open:cc0`
-
-                                                                                  | [Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/) v1.0
-
-                                                                                                                                                                                                            |
-| `open:gfdl_1.1` `open:gfdl_1.2` `open:gfdl_1.3`
-
-                                                 | [GNU Free Documentation License](http://www.gnu.org/copyleft/fdl.html) (v1.1, 1.2, 1.3 respectively)
-
-                                                                                                                                                                             |
-| `open:fal_1.2` `open:fal1.3`
-
-                                                                  | [Free Art License](http://artlibre.org/licence/lal/en/) (v1.2, v1.3 respectively)
-
++-----------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+| Capability name                               | Corresponding open data license                                                                             |
++===============================================+=============================================================================================================+
+| `open:cc_by_1.0`                              | [Creative Commons Attribution](https://creativecommons.org/licenses/by/4.0/) (v1.0, v2.0, v2.5, v3.0, v4.0  |
+| `open:cc_by_2.0`                              | respectively)                                                                                               |
+| `open:cc_by_2.5`                              |                                                                                                             |
+| `open:cc_by_3.0`                              |                                                                                                             |
+| `open:cc_by_4.0`                              |                                                                                                             |
++-----------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+| `open:cc_by_sa_1.0`                           | [Creative Commons Attribution ShareAlike](https://creativecommons.org/licenses/by-sa/4.0/) (v1.0, v2.0,     |
+| `open:cc_by_sa_2.0`                           | v2.5, v3.0, v4.0 respectively)                                                                              |
+| `open:cc_by_sa_2.5`                           |                                                                                                             |
+| `open:cc_by_sa_3.0`                           |                                                                                                             |
+| `open:cc_by_sa_4.0`                           |                                                                                                             |
++-----------------------------------------------+-------------------------------------------------------------------------------------------------------------+ 
+| `open:cc0`                                    | [Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/) v1.0                         |
++-----------------------------------------------+-------------------------------------------------------------------------------------------------------------+ 
+| `open:gfdl_1.1`                               | [GNU Free Documentation License](http://www.gnu.org/copyleft/fdl.html) (v1.1, 1.2, 1.3 respectively)        |
+| `open:gfdl_1.2`                               |                                                                                                             |
+| `open:gfdl_1.3`                               |                                                                                                             |
++-----------------------------------------------+-------------------------------------------------------------------------------------------------------------+ 
+| `open:fal_1.2`                                | [Free Art License](http://artlibre.org/licence/lal/en/) (v1.2, v1.3 respectively)                           |
+| `open:fal_1.3`                                |                                                                                                             |
++-----------------------------------------------+-------------------------------------------------------------------------------------------------------------+ 
                                                                                                                                                                                                |
 Open data sets **SHOULD** be released under the latest version of any given license.
 
@@ -356,35 +250,16 @@ granted. They are specified as a single **name**.
 
 ### Standard obligations
 
-| Obligation
-
-                                                                                | Name
-
-                                                                                                                                                                                                                                     | Explanation
-
-                                                                                                                                                                                                              |
-| ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Fulltext
-
-                                                                                  | `oe:ft`
-
-                                                                                                                                                                                                                                    | Re-users must display the full text of the license every time they use the work
-
-                                                                                                                                          |
-| Attribution
-
-                                                                               | `oe:by`
-
-                                                                                                                                                                                                                                    | Re-users must attribute the work to the original source when they use it
-
-                                                                                                                                                 |
-| ShareAlike
-
-                                                                                | `oe:sa`
-
-                                                                                                                                                                                                                                    | Re-users who create derivatives of the work must release the derivatives under the same license as the original
-work, if they choose to distribute the derivatives
-
++--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
+| Obligation               | Name                                      | Explanation                                                                            |
++==========================+===========================================+========================================================================================+
+| Fulltext                 | `oe:ft`                                   | Re-users must display the full text of the license every time they use the work        |
++--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
+| Attribution              | `oe:by`                                   | Re-users must attribute the work to the original source when they use it               |
++--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
+| ShareAlike               | `oe:sa`                                   | Re-users who create derivatives of the work must release the derivatives under the     |
+|                          |                                           | same license as the original work, if they choose to distribute the derivatives        |
++--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
                                                        |
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are
 explicitly not included here as it is possible to express this through the access conditions (i.e. rather than

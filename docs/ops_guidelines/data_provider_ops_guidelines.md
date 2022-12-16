@@ -1,6 +1,6 @@
 # Guidance for Data Providers
 
-**NOTE**: This documented is primarily intended for technical and operations teams within organisations wishing
+**NOTE**: This document is primarily intended for technical and operations teams within organisations wishing
 to participate in Open Energy as [Data Providers](../glossary.md#term-Data-Provider).
 
 **NOTE**: The key words **“MUST”**, **“MUST NOT”**, **“REQUIRED”**, **“SHALL”**, **“SHALL NOT”**, **“SHOULD”**,
@@ -186,29 +186,21 @@ of [API](../glossary.md#term-Application-programming-interface) usage to the [OE
 
 Legal keys, and the semantics of their associated values, are as follows:
 
-| Name
++----------------------------------+------------------------------------------------------------------------------------+
+| Name                             | Content                                                                            |
++==================================+====================================================================================+
+| `period_start`                   | **date/time** of the start of the period for which statistics are reported         |
++----------------------------------+------------------------------------------------------------------------------------+
+| `period_end`                     | **date/time** of the end of the period for which statistics are reported, this     |
+|                                  | will typically be the date and time of the heartbeat request                       |
++----------------------------------+------------------------------------------------------------------------------------+
+| `api_call_response_[CODE]_count` | integer number of requests to non-heartbeat endpoints within this data             |
+|                                  | [API](../glossary.md#term-Application-programming-interface) which resulted in a   |
+|                                  | response of type CODE. A distinct key:value pair is sent in the response for each  |
+|                                  | distinct [HTTP](../glossary.md#term-HypterText-Transfer-Protocol) status code      |
+|                                  | returned.                                                                          |
++----------------------------------+------------------------------------------------------------------------------------+
 
- | Content
-
- |
-| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | ---------------------- | -------------------- |  |  |  |  |  |  |  |  |  |  |
-| `period_start`
-
-                                                                                   | **date/time** of the start of the period for which statistics are reported
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| `period_end`
-
-                                                                                     | **date/time** of the end of the period for which statistics are reported, this will typically be the date and
-time of the heartbeat request
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| `api_call_response_[CODE]_count`
-
-                                                                 | integer number of requests to non-heartbeat endpoints within this data [API](../glossary.md#term-Application-programming-interface) which resulted in a response of type
-CODE. A distinct key:value pair is sent in the response for each distinct [HTTP](../glossary.md#term-HypterText-Transfer-Protocol) status code returned.
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 ### API documentation
 
 Data [APIs](../glossary.md#term-Application-programming-interface) **MUST** be described within the transport section of the data set metadata file.

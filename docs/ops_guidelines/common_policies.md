@@ -47,106 +47,59 @@ organisations.
 
 ### data sensitivity classes in the Open Energy ecosystem
 
-| Data Class
++---------------------------+------------------------------------------------------------------------------+---------------------------------------------------------------+----------------------+------------------------+----------------------+
+| Data Class                | Description                                                                  | Example Datasets                                              | Personal Sensitivity | Commercial Sensitivity | Security Sensitivity |
++===========================+==============================================================================+===============================================================+======================+========================+======================+
+| OE-C                      | Closed data - limited to internal organisational                             | Business-critical proprietary information or IP,              | Very High            | Very High              | Very High            |
+|                           | access only or limited, bespoke bilateral contracts                          | critical asset locations, classified information.             |                      |                        |                      |
+|                           | under specific circumstances. May be subject to hard                         |                                                               |                      |                        |                      |
+|                           | legal barriers to sharing. May be security-critical                          |                                                               |                      |                        |                      |
+|                           | information relating to operational technology                               |                                                               |                      |                        |                      |
+|                           | supporting critical national infrastructure owned by                         |                                                               |                      |                        |                      |
+|                           | an Operator of Essential Services.                                           |                                                               |                      |                        |                      |
+|                           |                                                                              |                                                               |                      |                        |                      |
+|                           | **Never suitable to share within the OE ecosystem.**                         |                                                               |                      |                        |                      |
++---------------------------+------------------------------------------------------------------------------+---------------------------------------------------------------+----------------------+------------------------+----------------------+
+| OE-SP                     | Datasets which include personal data, requiring                              | Smart meter data, home temperature preferences,               | Very High            | Medium / High          | Medium / High        |
+|                           | appropriate consent to share, or other legal bases                           | protected characteristics or special category data            |                      |                        |                      |
+|                           | to data processing, as defined by the                                        | (e.g. dependence on power due to health conditions),          |                      |                        |                      |
+|                           | [EU](../glossary.md#term-European-Union)                                     | individual                                                    |                      |                        |                      |
+|                           | [GDPR](../glossary.md#term-General-Data-Protection-Regulation)               | [Electric vehicle](../glossary.md#term-Electric-vehicle)      |                      |                        |                      |
+|                           | and brought into [UK](../glossary.md#term-United-Kingdom)                    | charging records, transaction data.                           |                      |                        |                      |
+|                           | law via the                                                                  |                                                               |                      |                        |                      |
+|                           | [DPA](../glossary.md#term-Data-Protection-Act) 2018.                         |                                                               |                      |                        |                      |
+|                           |                                                                              |                                                               |                      |                        |                      |
+|                           | **Currently not suitable to share within the |OE| ecosystem,                 |                                                               |                      |                        |                      |
+|                           | with future extensibility subject to consultation.**                         |                                                               |                      |                        |                      |
++---------------------------+------------------------------------------------------------------------------+---------------------------------------------------------------+----------------------+------------------------+----------------------+
+| OE-SB                     | Datasets which do not include personal data and which                        | Public                                                        | Medium               | Medium / High          | Medium / High        |
+|                           | can/could be shared, but currently require bilateral                         | [Electric vehicle](../glossary.md#term-Electric-vehicle)      |                      |                        |                      |
+|                           | contract negotiation. May include data currently shared on the               | charge-point performance, generation asset performance,       |                      |                        |                      |
+|                           | basis of group-based, name-based or purpose-limited access.                  | aggregated smart meter data, aggregated, microgeneration      |                      |                        |                      |
+|                           | May include aggregated data about individuals, subject to                    | export profiles, ‘Investment grade’ data (e.g. suitable       |                      |                        |                      |
+|                           | best practice adherence                                                      | granularity for financial decision-making), sensitive         |                      |                        |                      |
+|                           | (e.g. [ICO](../glossary.md#term-Information-Commissioner-s-Office)           | asset data.                                                   |                      |                        |                      |
+|                           | anonymisation code.)                                                         |                                                               |                      |                        |                      |
+|                           |                                                                              |                                                               |                      |                        |                      |
+|                           | **Anonymised data using non-aggregative techniques are currently not         |                                                               |                      |                        |                      |
+|                           | suitable to share within this sensitivity class due to complex risks         |                                                               |                      |                        |                      |
+|                           | related to individual re-identification. Future extensibility to             |                                                               |                      |                        |                      |
+|                           | sharing anonymised data is subject to consultation.**                        |                                                               |                      |                        |                      |
++---------------------------+------------------------------------------------------------------------------+---------------------------------------------------------------+----------------------+------------------------+----------------------+
+| OE-SA                     | Shared data - datasets which can/could be shared, but which require the      | Network capacity, outage data, weather predictions,           | Low                  | Medium                 | Low                  |
+|                           | user to agree to ‘light touch’ T&Cs to access and use (e.g.                  | European space agency data, daily smart meter                 |                      |                        |                      |
+|                           | non-commercial clauses such as those under                                   | installations, geolocation information for non-sensitive      |                      |                        |                      |
+|                           |[CC-BY-NC](../glossary.md#term-Creative-Commons-Attribution-Non-commercial)). | assets (e.g. Renewable Assets,                                |                      |                        |                      |
+|                           |                                                                              | [EPC](../glossary.md#term-Energy-Performance-Certificate)     |                      |                        |                      |
+|                           |                                                                              | certificates).                                                |                      |                        |                      |
++---------------------------+------------------------------------------------------------------------------+---------------------------------------------------------------+----------------------+------------------------+----------------------+
+| OE-O                      | Open Data – full open access, under an open data licence. Free to use, by    | [LSOA](../glossary.md#term-Lower-Layer-Super-Output-Areas)    | Very Low             | Very low               | Very Low             |     
+|                           | anyone, for any purpose.                                                     | IDs, Digest of [UK](../glossary.md#term-United-Kingdom)       |                      |                        |                      |
+|                           |                                                                              | Energy Statistics, regulatory data (e.g. licensing            |                      |                        |                      |
+|                           |                                                                              | categories, institutional charters or Terms of Reference,     |                      |                        |                      |
+|                           |                                                                              | etc.)                                                         |                      |                        |                      |
++---------------------------+------------------------------------------------------------------------------+---------------------------------------------------------------+----------------------+------------------------+----------------------+
 
- | Description
-
- | Example Datasets
-
- | Personal Sensitivity
-
- | Commercial Sensitivity
-
- | Security Sensitivity
-
- |
-| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- | ---------------------- | -------------------- |  |  |  |  |  |  |  |  |
-| [OE-C](../glossary.md#term-Data-sensitivity-class-closed)
-
-                                                                                           | Closed data - limited to internal organisational access only or limited, bespoke bilateral contracts under
-specific circumstances. May be subject to hard legal barriers to sharing. May be security-critical information
-relating to operational technology supporting critical national infrastructure owned by an Operator of
-Essential Services.
-
-**Never suitable to share within the |OE| ecosystem.**
-
-                                                                                                                                                                                                                                                                                                                                          | Business-critical proprietary information or IP, critical asset locations, classified information.
-
-                                                                                                                       | Very High
-
-            | Very High
-
-              | Very High
-
-            |
-| [OE-SP](../glossary.md#term-Data-sensitivity-class-personal)
-
-                                                                                          | Datasets which include personal data, requiring appropriate consent to share, or other legal bases to data
-processing, as defined by the [EU](../glossary.md#term-European-Union) [GDPR](../glossary.md#term-General-Data-Protection-Regulation) and brought into [UK](../glossary.md#term-United-Kingdom) law via the [DPA](../glossary.md#term-Data-Protection-Act) 2018.
-
-**Currently not suitable to share within the |OE| ecosystem, with future extensibility subject to consultation.**
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                         | Smart meter data, home temperature preferences, protected characteristics or special category data (e.g.
-dependence on power due to health conditions), individual [Electric vehicle](../glossary.md#term-Electric-vehicle) charging records, transaction data.
-
-  | Very High
-
-            | Medium / High
-
-          | Medium / High
-
-        |
-| [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B)
-
-                                                                                          | Datasets which do not include personal data and which can/could be shared, but currently require bilateral
-contract negotiation. May include data currently shared on the basis of group-based, name-based or
-purpose-limited access. May include aggregated data about individuals, subject to best practice adherence
-(e.g. [ICO](../glossary.md#term-Information-Commissioner-s-Office) anonymisation code.)
-
-**Anonymised data using non-aggregative techniques are currently not suitable to share within this sensitivity
-class due to complex risks related to individual re-identification. Future extensibility to sharing anonymised
-data is subject to consultation.**
-
-                                                                                                                              | Public [Electric vehicle](../glossary.md#term-Electric-vehicle) charge-point performance, generation asset performance, aggregated smart meter data, aggregated
-microgeneration export profiles, ‘Investment grade’ data (e.g. suitable granularity for financial
-decision-making), sensitive asset data.
-
- | Medium
-
-               | Medium / High
-
-          | Medium / High
-
-        |
-| [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)
-
-                                                                                          | Shared data - datasets which can/could be shared, but which require the user to agree to ‘light touch’ T&Cs to
-access and use (e.g. non-commercial clauses such as those under [CC-BY-NC](../glossary.md#term-Creative-Commons-Attribution-Non-commercial)).
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Network capacity, outage data, weather predictions, European space agency data, daily smart meter installations,
-geolocation information for non-sensitive assets (e.g. Renewable Assets, [EPC](../glossary.md#term-Energy-Performance-Certificate) certificates).
-
-                                                      | Low
-
-                  | Medium
-
-                 | Low
-
-                  |
-| [OE-O](../glossary.md#term-Data-sensitivity-class-open)
-
-                                                                                           | Open Data – full open access, under an open data licence. Free to use, by anyone, for any purpose.
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Lower Super Output Layer [ID](../glossary.md#term-Identification) ([LSOA](../glossary.md#term-Lower-Layer-Super-Output-Areas)), Digest of [UK](../glossary.md#term-United-Kingdom) Energy Statistics, regulatory data (e.g. licensing categories,
-institutional charters or Terms of Reference, etc.)
-
-                                                                                               | Very Low
-
-             | Very Low
-
-               | Very Low
-
-             |
 ## Data Access Conditions
 
 This policy focuses on **data access**. Data access refers to **determining what types of conditions may be specified
@@ -195,141 +148,99 @@ as a cause of cost and friction in energy data sharing.
 
 ### Data sensitivity classes and access conditions in scope
 
-| Data Class
++------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
+| Data Class                                                                   | Access Conditions                                                                                       |
++==============================================================================+=========================================================================================================+
+| [OE-C](../glossary.md#term-Data-sensitivity-class-closed)                    | Determined and governed by the [Data Provider](../glossary.md#term-Data-Provider) only.                 |
++------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
+| [OE-SP](../glossary.md#term-Data-sensitivity-class-personal)                 | Currently determined by legislation including, but not limited to:                                      |
+|                                                                              | [GDPR](../glossary.md#term-General-Data-Protection-Regulation) /                                        |
+|                                                                              | [DPA](../glossary.md#term-Data-Protection-Act) 2018, the Data Access and Privacy Framework, and the     |
+|                                                                              | Smart Energy Code. [Data Providers](../glossary.md#term-Data-Provider) may also apply additional        |
+|                                                                              | non-standard access conditions, such as payment or purpose-based.                                       |
+|                                                                              |                                                                                                         |
+|                                                                              | Determining access conditions for personal data is beyond the capacity of Open Energy in Phase 3        |
+|                                                                              | (February - July 2021) and beyond the scope of this consultation. Future extensibility to be considered |
+|                                                                              | based on consultation in due course.                                                                    |
++------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
+| [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B)                 | Currently non-standardised, determined by bilateral contract and bespoke negotiation.                   |
+|                                                                              |                                                                                                         |
+|                                                                              | Subject of the current policy.                                                                          |
++------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
+| [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)                 | Currently some standardisation, however bespoke arrangements remain common.                             |
+|                                                                              |                                                                                                         |
+|                                                                              | Subject of the current policy.                                                                          |
++------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
+| [OE-O](../glossary.md#term-Data-sensitivity-class-open)                      | No access conditions - free and accessible to all users.                                                |
++------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
 
-                                                                                     | Access Conditions
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [OE-C](../glossary.md#term-Data-sensitivity-class-closed)
-
-                                                                                           | Determined and governed by the [Data Provider](../glossary.md#term-Data-Provider) only.
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| [OE-SP](../glossary.md#term-Data-sensitivity-class-personal)
-
-                                                                                          | Currently determined by legislation including, but not limited to: [GDPR](../glossary.md#term-General-Data-Protection-Regulation) / [DPA](../glossary.md#term-Data-Protection-Act) 2018, the Data Access and
-Privacy Framework, and the Smart Energy Code. [Data Providers](../glossary.md#term-Data-Provider) may also apply additional non-standard access
-conditions, such as payment or purpose-based.
-
-Determining access conditions for personal data is beyond the capacity of Open Energy in Phase 3 (February -
-July 2021) and beyond the scope of this consultation. Future extensibility to be considered based on
-consultation in due course.
-
-                                                                                                                                                                                                                                   |
-| [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B)
-
-                                                                                          | Currently non-standardised, determined by bilateral contract and bespoke negotiation.
-
-Subject of the current policy.
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)
-
-                                                                                          | Currently some standardisation, however bespoke arrangements remain common.
-
-Subject of the current policy.
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| [OE-O](../glossary.md#term-Data-sensitivity-class-open)
-
-                                                                                           | No access conditions - free and accessible to all users.
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 ### Open Energy access conditions
 
-| Condition domain
++---------------------+---------------------------------------------------------------+----------------------------------------------------------------------+
+| Condition domain    | Considerations (examples - not exhaustive)                    | Applicable class                                                     |
++=====================+===============================================================+======================================================================+
+| Payment             | Free or paid data                                             | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and     |
+|                     |                                                               | [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)         |
+|                     | Graduated payment rates (e.g. higher granularity)             |                                                                      |
+|                     |                                                               |                                                                      |
+|                     | One-off or subscription payment rates                         |                                                                      |
++---------------------+---------------------------------------------------------------+----------------------------------------------------------------------+
+| Security compliance | [UK](../glossary.md#term-United-Kingdom) Government Minimum   | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and     |
+|                     | Cybersecurity Standard                                        | [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)         |
+|                     |                                                               |                                                                      |
+|                     | [UK](../glossary.md#term-United-Kingdom) Government  ‘Secure. |                                                                      | 
+|                     | by Design’ IoT guidance                                       |                                                                      |
+|                     |                                                               |                                                                      |
+|                     | Codes of conduct governing Critical National Infrastructure.  |                                                                      |
++---------------------+---------------------------------------------------------------+----------------------------------------------------------------------+
+| Regulatory          | Networks business separation provisions                       | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and     |
+| compliance          |                                                               | [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)         |
+|                     | Competition law                                               |                                                                      |
+|                     |                                                               |                                                                      |
+|                     | Adherence to section 105 of the Utilities Act 2000            |                                                                      |
++---------------------+---------------------------------------------------------------+----------------------------------------------------------------------+
+| Standards           | Meets [MED](../glossary.md#term-Modernising-Energy-Data) Data | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and     |
+| compliance          | Best Practice Guidance                                        | [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)         |
+|                     |                                                               |                                                                      |
+|                     | Meets relevant                                                |                                                                      |
+|                     | [ISO](../glossary.md#term-Independent-System-Operator)        |                                                                      |
+|                     | standards                                                     |                                                                      |
++---------------------+---------------------------------------------------------------+----------------------------------------------------------------------+
+| Organisation type   | Local Authorities                                             | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B)         |
+|                     |                                                               |                                                                      |
+|                     | Energy networks                                               |                                                                      |
+|                     |                                                               |                                                                      |
+|                     | Schools, colleges and universities                            |                                                                      |
+|                     |                                                               |                                                                      |
+|                     | Code signatories                                              |                                                                      |
+|                     |                                                               |                                                                      |
+|                     | Charities                                                     |                                                                      |
+|                     |                                                               |                                                                      |
+|                     | Specific Open Energy membership tiers (e.g.                   |                                                                      |
+|                     | [SME](../glossary.md#term-Small-Medium-Enterprise))           |                                                                      | 
++---------------------+---------------------------------------------------------------+----------------------------------------------------------------------+
+| Group membership    | Certain use cases (e.g. community energy project development) | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B)         |
+|                     |                                                               |                                                                      |
+|                     | Commercial or development partnerships                        |                                                                      |
+|                     |                                                               |                                                                      |
+|                     | Certain purpose-based groups (e.g. consortium of fuel         |                                                                      |
+|                     | poverty-reduction organisations)                              |                                                                      |
+|                     |                                                               |                                                                      |
+|                     | Social housing retrofit                                       |                                                                      |
+|                     |                                                               |                                                                      |
+|                     | Public                                                        |                                                                      |
+|                     | [Electric vehicle](../glossary.md#term-Electric-vehicle)      |                                                                      |
+|                     | charge-point planning                                         |                                                                      |
++---------------------+---------------------------------------------------------------+----------------------------------------------------------------------+
+| Other               | Auditing clauses                                              |  [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and    |
+|                     |                                                               |   OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)        |
+|                     | Individuals handling the data within a                        |                                                                      |
+|                     |  [Data Consumer](../glossary.md#term-Data-Consumer) must.     |                                                                      |
+|                     | have completed certain training (e.g.                         |                                                                      |
+|                     | [ONS](../glossary.md#term-Office-for-National-Statistics)     |                                                                      |
+|                     | Safe Researcher).                                             |                                                                      |
++---------------------+---------------------------------------------------------------+----------------------------------------------------------------------+
 
-                                                                               | Considerations (examples - not exhaustive)
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Applicable class
-
-                                                                                                                                                                                                                                                  |
-| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Payment
-
-                                                                                        | Free or paid data
-
-Graduated payment rates (e.g. higher granularity)
-
-One-off or subscription payment rates
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)
-
-                                                                                                                                                                                                                                                   |
-| Security compliance
-
-                                                                            | [UK](../glossary.md#term-United-Kingdom) Government Minimum Cybersecurity Standard
-
-[UK](../glossary.md#term-United-Kingdom) Government  ‘Secure by Design’ IoT guidance
-
-Codes of conduct governing Critical National Infrastructure
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)
-
-                                                                                                                                                                                                                                                   |
-| Regulatory compliance
-
-                                                                          | Networks business separation provisions
-
-Competition law
-
-Adherence to section 105 of the Utilities Act 2000
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)
-
-                                                                                                                                                                                                                                                   |
-| Standards compliance
-
-                                                                           | Meets [MED](../glossary.md#term-Modernising-Energy-Data) Data Best Practice Guidance
-
-Meets relevant [ISO](../glossary.md#term-Independent-System-Operator) standards
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)
-
-                                                                                                                                                                                                                                                   |
-| Organisation type
-
-                                                                              | Local Authorities
-
-Energy networks
-
-Schools, colleges and universities
-
-Code signatories
-
-Charities
-
-Specific Open Energy membership tiers (e.g. [SME](../glossary.md#term-Small-Medium-Enterprise))
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B)
-
-                                                                                                                                                                                                                                                             |
-| Group membership
-
-                                                                               | Certain use cases (e.g. community energy project development)
-
-Commercial or development partnerships
-
-Certain purpose-based groups (e.g. consortium of fuel poverty-reduction organisations)
-
-Social housing retrofit
-
-Public [Electric vehicle](../glossary.md#term-Electric-vehicle) charge-point planning
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B)
-
-                                                                                                                                                                                                                                                             |
-| Other
-
-                                                                                          | Auditing clauses
-
-Individuals handling the data within a [Data Consumer](../glossary.md#term-Data-Consumer) must have completed certain training (e.g. [ONS](../glossary.md#term-Office-for-National-Statistics) Safe
-Researcher).
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)
-
-                                                                                                                                                                                                                                                   |
 ### Group based access control
 
 There are two ways in which group-based access can be defined.
@@ -549,90 +460,56 @@ involved in testing.
 
 ### Scenario 1
 
-| **Dataset**
++----------------------------+-------------------------------------------------------------------------------------------------------------------+
+| **Dataset**                | [DNO](../glossary.md#term-Distribution-Network-Operator) capacity/constraint data                                 |
++----------------------------+-------------------------------------------------------------------------------------------------------------------+
+| **Sensitivity class**      | [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)                                                      |
++----------------------------+-------------------------------------------------------------------------------------------------------------------+
+| **Access control domains** | Access granted to all Open Energy members equally                                                                 |
++----------------------------+-------------------------------------------------------------------------------------------------------------------+
+| **Access rules**           | `oe:member` unary access condition                                                                                |
++----------------------------+-------------------------------------------------------------------------------------------------------------------+
+| **Capability grants**      | `oe:member grants oe:use_any`, all [Data Consumers](../glossary.md#term-Data-Consumer) who are members of Open    |
+|                            | Energy can access this data set, and receive the right to use for any purpose (see                                |
+|                            | [Standard capabilities](../access_control_specification.md#standard-capabilities) for more detail)                |
++----------------------------+-------------------------------------------------------------------------------------------------------------------+
+| **Obligations**            | Derivatives of the artefact must be accompanied by text stating that the original artefact was used in their      |
+|                            | creation. `oe:member grants oe:use_any requires oe:by` (see                                                       |
+|                            | [Standard obligations](../access_control_specification.md#standard-obligations) for more detail)                  |
++----------------------------+-------------------------------------------------------------------------------------------------------------------+
 
-                                                                                        | [DNO](../glossary.md#term-Distribution-Network-Operator) capacity/constraint data
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| **Sensitivity class**
-
-                                                                              | [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| **Access control domains**
-
-                                                                         | Access granted to all Open Energy members equally
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| **Access rules**
-
-                                                                                   | `oe:member` unary access condition
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| **Capability grants**
-
-                                                                              | `oe:member grants oe:use_any`, all [Data Consumers](../glossary.md#term-Data-Consumer) who are members of Open Energy can access this data set, and
-receive the right to use for any purpose (see [Standard capabilities](../access_control_specification.md#standard-capabilities) for more detail)
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| **Obligations**
-
-                                                                                    | Derivatives of the artefact must be accompanied by text stating that the original artefact was used in their
-creation. `oe:member grants oe:use_any requires oe:by` (see [Standard obligations](../access_control_specification.md#standard-obligations) for more detail)
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 ### Scenario 2
 
-| **Dataset**
++----------------------------+-------------------------------------------------------------------------------------------------------------------+
+| **Dataset**                | Public [Electric vehicle](../glossary.md#term-Electric-vehicle) chargepoint use and economic performance profiles |
++----------------------------+-------------------------------------------------------------------------------------------------------------------+
+| **Sensitivity class**      | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B)                                                      |
++----------------------------+-------------------------------------------------------------------------------------------------------------------+
+| **Access control domains** | Group-based and payment-based access conditions                                                                   |
++----------------------------+-------------------------------------------------------------------------------------------------------------------+
+| **Access rules**           | Two distinct access constraints:                                                                                  |
+|                            |                                                                                                                   |
+|                            | 1. `oe:org_type in ['local_authority', 'academic'], provider:customer_level == 1` -  local authorities and        |
+|                            | educational institutions are granted access if they are paid customers of the                                     |
+|                            | [Data Provider](../glossary.md#term-Data-Provider) at their standard rate                                         |
+|                            | 2. `provider:customer_level >= 2` - energy networks are granted access if they are paid customers of the Data     |
+|                            | Provider at their large business level                                                                            |
++----------------------------+-------------------------------------------------------------------------------------------------------------------+
+| **Capability grants**      | In this scenario it would be technically possible for the [Data Provider](../glossary.md#term-Data-Provider)      |
+|                            | to apply different capability grants to the two different access rules. In this case the                          |
+|                            | [Data Provider](../glossary.md#term-Data-Provider) chooses not to as they have charged commercial entities a      |
+|                            | higher access fee and are therefore happy for all [Data Consumers](../glossary.md#term-Data-Consumer) to be       |
+|                            | granted the same capabilities. The result is the same set of capabilities (the same licence) is applied to both   |
+|                            | access rules.                                                                                                     |
+|                            | `oe:org_type in ['local_authority', 'academic'], provider:customer_level == 1 grants oe:use_any`                  |
+|                            | `provider:customer_level >= 2 grants oe:use_any`                                                                  |
++----------------------------+-------------------------------------------------------------------------------------------------------------------+
+| **Obligations**            | The [Data Provider](../glossary.md#term-Data-Provider) chooses the same obligations to be applied to both access  |
+|                            | rules                                                                                                             |
+|                            | `oe:org_type in ['local_authority', 'academic'], provider:customer_level == 1 grants oe:use_any requires oe:by`   |
+|                            | `provider:customer_level >= 2 grants oe:use_any requires oe:by`                                                   |
++----------------------------+-------------------------------------------------------------------------------------------------------------------+
 
-                                                                                        | Public [Electric vehicle](../glossary.md#term-Electric-vehicle) chargepoint use and economic performance profiles
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| **Sensitivity class**
-
-                                                                              | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B)
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| **Access control domains**
-
-                                                                         | Group-based and payment-based access conditions
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| **Access rules**
-
-                                                                                   | Two distinct access constraints:
-
-
-1. `oe:org_type in ['local_authority', 'academic'], provider:customer_level == 1` -  local authorities and
-educational institutions are granted access if they are paid customers of the [Data Provider](../glossary.md#term-Data-Provider) at their standard
-rate
-
-
-2. `provider:customer_level >= 2` - energy networks are granted access if they are paid customers of the Data
-Provider at their large business level
-
-                                                                                                                                                                                                                                                                                                                                       |
-| **Capability grants**
-
-                                                                              | In this scenario it would be technically possible for the [Data Provider](../glossary.md#term-Data-Provider) to apply different capability grants
-to the two different access rules. In this case the [Data Provider](../glossary.md#term-Data-Provider) chooses not to as they have charged
-commercial entities a higher access fee and are therefore happy for all [Data Consumers](../glossary.md#term-Data-Consumer) to be granted the same
-capabilities. The result is the same set of capabilities (the same licence) is applied to both access rules.
-
-`oe:org_type in ['local_authority', 'academic'], provider:customer_level == 1 grants oe:use_any`
-
-`provider:customer_level >= 2 grants oe:use_any`
-
-                                                                                                                                                     |
-| **Obligations**
-
-                                                                                    | The [Data Provider](../glossary.md#term-Data-Provider) chooses the same obligations to be applied to both access rules
-
-`oe:org_type in ['local_authority', 'academic'], provider:customer_level == 1 grants oe:use_any requires oe:by`
-
-`provider:customer_level >= 2 grants oe:use_any requires oe:by`
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 **NOTE**: **Scenario 2**
 
 This more complex scenario detailed above involves a combination of properties known to Open Energy (the market
@@ -643,63 +520,38 @@ which is not aware of any commercial arrangements between the [Data Provider](..
 
 ### Scenario 3
 
-| **Dataset**
++----------------------------+-------------------------------------------------------------------------------------------------------------------+
+| **Dataset**                | Solar panel performance data                                                                                      |
++----------------------------+-------------------------------------------------------------------------------------------------------------------+
+| **Sensitivity class**      |[OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B)                                                       |
++----------------------------+-------------------------------------------------------------------------------------------------------------------+
+| **Access control domains** | Use case-based and payment-based access conditions                                                                |
++----------------------------+-------------------------------------------------------------------------------------------------------------------+
+| **Access rules**           | Two rules are created:                                                                                            |
+|                            |                                                                                                                   |
+|                            | 1. `oe_group:plymouth_lct` - access to use case participants, here defined as a group `lct` managed by `plymouth` |
+|                            | (the [ID](../glossary.md#term-Identification) of a local council organisation) and administered using the         |
+|                            | [OEGS](../glossary.md#term-Open-Energy-Governance-Service) facilities                                             |
+|                            | 2. `provider:customer` - access to all other Open Energy members if they have a paid account with the             |
+|                            | [Data Provider](../glossary.md#term-Data-Provider)                                                                |
++----------------------------+-------------------------------------------------------------------------------------------------------------------+
+| **Capability grants**      | The [Data Provider](../glossary.md#term-Data-Provider) chooses to apply two different capability grants (dual     |
+|                            | licences) for the two access rules, reflecting the fact that their dataset is commercially sensitive, therefore   |
+|                            | they require payment for its use beyond non-profit or development activities.                                     |
+|                            |                                                                                                                   |
+|                            | 1. `oe_group:plymouth_lct grants oe:use_dev, oe:use_noncom`                                                       |
+|                            | 2. `provider:customer grants oe:use_any, oe:redistribute_combined, oe:combine_any, oe:adapt_any`                  |
++----------------------------+-------------------------------------------------------------------------------------------------------------------+
+| **Obligations**            | 1. The original source of the artefact must be credited in all direct uses, derivatives of the artefact must be.  |
+|                            | accompanied by text stating that the original artefact was used in their creation, and derivatives must be        |
+|                            | licensed under the same terms as the original:                                                                    |
+|                            | `oe_group:plymouth_lct grants oe:use_dev, oe:use_noncom requires oe:sa, oe:by`                                    |
+|                            | 2. The original source of the artefact must be credited in all direct uses, and derivatives of the artefact       |
+|                            | must be accompanied by text stating that the original artefact was used in their creation. There is no            |
+|                            | obligation to license derivatives of the artefact under the same terms as the original:                           |
+|                            | `provider:customer grants oe:use_any, oe:redistribute_combined, oe:combine_any, oe:adapt_any requires oe:by`      |
++----------------------------+-------------------------------------------------------------------------------------------------------------------+
 
-                                                                                        | Solar panel performance data
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| **Sensitivity class**
-
-                                                                              | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B)
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| **Access control domains**
-
-                                                                         | Use case-based and payment-based access conditions
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| **Access rules**
-
-                                                                                   | Two rules are created
-
-
-1. `oe_group:plymouth_lct` - access to use case participants, here defined as a group `lct` managed by
-`plymouth` (the [ID](../glossary.md#term-Identification) of a local council organisation) and administered using the [OEGS](../glossary.md#term-Open-Energy-Governance-Service) facilities
-
-
-2. `provider:customer` - access to all other Open Energy members if they have a paid account with the [Data Provider](../glossary.md#term-Data-Provider)
-
-                                                                                                                                                                                                                                                                                                                                                                                                               |
-| **Capability grants**
-
-                                                                              | The [Data Provider](../glossary.md#term-Data-Provider) chooses to apply two different capability grants (dual licences) for the two access rules,
-reflecting the fact that their dataset is commercially sensitive, therefore they require payment for its use
-beyond non-profit or development activities.
-
-
-1. `oe_group:plymouth_lct grants oe:use_dev, oe:use_noncom`
-
-
-2. `provider:customer grants oe:use_any, oe:redistribute_combined, oe:combine_any, oe:adapt_any`
-
-                                                                                                                                                                                                                                                                                                                       |
-| **Obligations**
-
-                                                                                    | 
-1. The original source of the artefact must be credited in all direct uses, derivatives of the artefact must be
-accompanied by text stating that the original artefact was used in their creation, and derivatives must be
-licensed under the same terms as the original.
-
-`oe_group:plymouth_lct grants oe:use_dev, oe:use_noncom requires oe:sa, oe:by`
-
-
-2. The original source of the artefact must be credited in all direct uses, and derivatives of the artefact
-must be accompanied by text stating that the original artefact was used in their creation. There is no
-obligation to license derivatives of the artefact under the same terms as the original.
-
-`provider:customer grants oe:use_any, oe:redistribute_combined, oe:combine_any, oe:adapt_any requires oe:by`
-
- |
 ### Risks of license proliferation
 
 As outlined in previous consultations, the Open Energy data ecosystem is more complex than Open Banking. We are
