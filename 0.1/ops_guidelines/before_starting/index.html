@@ -8,12 +8,12 @@
       
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/logo.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
-        <title>Considerations Before You Start - Icebreaker One Technical Documentation</title>
+        <title>Considerations before you start - Icebreaker One Technical Documentation</title>
       
     
     
@@ -32,10 +32,12 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -49,12 +51,16 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+    
+    <body dir="ltr" data-md-color-scheme="ib1-light" data-md-color-primary="" data-md-color-accent="">
   
     
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -73,6 +79,18 @@
     
       <div data-md-component="outdated" hidden>
         
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+  You're not viewing the latest version.
+  <a href="../../.."> 
+    <strong>Click here to go to latest.</strong>
+  </a>
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),outdated=__md_get("__outdated",sessionStorage);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
       </div>
     
     
@@ -82,8 +100,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Icebreaker One Technical Documentation" class="md-header__button md-logo" aria-label="Icebreaker One Technical Documentation" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="../../assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -99,12 +116,36 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Considerations Before You Start
+              Considerations before you start
             
           </span>
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="ib1-light" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="ib1-dark" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -168,8 +209,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Icebreaker One Technical Documentation" class="md-nav__button md-logo" aria-label="Icebreaker One Technical Documentation" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="../../assets/logo.png" alt="logo">
 
     </a>
     Icebreaker One Technical Documentation
@@ -185,8 +225,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
-        Open Energy Tech Docs
+      <a href="../introduction/" class="md-nav__link">
+        Introduction to Open Energy
       </a>
     </li>
   
@@ -196,109 +236,6 @@
       
       
 
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../access_control_specification/" class="md-nav__link">
-        Access Control and Capability Grant Language
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../additional_material/" class="md-nav__link">
-        Additional Material
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../architecture/" class="md-nav__link">
-        Open Energy Architecture
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../glossary/" class="md-nav__link">
-        Open Energy Glossary
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../metadata/" class="md-nav__link">
-        Data Set Metadata
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_7">
-          Ops guidelines
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Ops guidelines" data-md-level="1">
-        <label class="md-nav__title" for="__nav_7">
-          <span class="md-nav__icon md-icon"></span>
-          Ops guidelines
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
   
   
     
@@ -313,12 +250,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Considerations Before You Start
+          Considerations before you start
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Considerations Before You Start
+        Considerations before you start
       </a>
       
         
@@ -364,10 +301,11 @@
     </li>
   
 
-            
-          
-            
-              
+    
+      
+      
+      
+
   
   
   
@@ -378,10 +316,11 @@
     </li>
   
 
-            
-          
-            
-              
+    
+      
+      
+      
+
   
   
   
@@ -392,10 +331,11 @@
     </li>
   
 
-            
-          
-            
-              
+    
+      
+      
+      
+
   
   
   
@@ -406,24 +346,11 @@
     </li>
   
 
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../introduction/" class="md-nav__link">
-        Introduction to Open Energy
-      </a>
-    </li>
-  
+    
+      
+      
+      
 
-            
-          
-            
-              
   
   
   
@@ -434,10 +361,78 @@
     </li>
   
 
-            
-          
-        </ul>
-      </nav>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/" class="md-nav__link">
+        Open Energy Architecture
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metadata/" class="md-nav__link">
+        Dataset Metadata
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../access_control_specification/" class="md-nav__link">
+        Access Control and Capability Grant Language
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        Glossary
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additional_material/" class="md-nav__link">
+        Additional Material
+      </a>
     </li>
   
 
@@ -520,247 +515,281 @@ members proactively engage teams or staff members with responsibilities for the 
 prior to joining Open Energy as members. Please note that this section is designed to support members to
 prepare for data sharing. However, sharing of real data will not commence until the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a> goes fully live.</p>
 <h2 id="considerations-for-data-providers">Considerations for Data Providers</h2>
-<p>| Consideration</p>
-<p>| Includes</p>
-<p>| Readiness area(s)</p>
-<p>|
-| ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |  |  |  |  |  |
-| Membership contract and fees</p>
-<pre><code>                                                          |
-</code></pre>
+<table>
+<thead>
+<tr>
+<th colspan="1" rowspan="1">
+<p>Consideration</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Includes</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Readiness area(s)</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Membership contract and fees</p>
+</td>
+<td colspan="1" rowspan="1">
 <ul>
-<li>
-<p>Contract review by legal counsel</p>
-</li>
-<li>
-<p>Contract signature by person with appropriate authority</p>
-</li>
-<li>
-<p>Membership fees paid</p>
-<pre><code>                                                                                                                                                                                                                                                                                                                                                                | Legal, commercial
-
-                                                                                                                                                                                                |
-</code></pre>
-<p>| Onboarding to the Directory</p>
-<pre><code>                                                       |
-</code></pre>
+<li>Contract review by legal counsel</li>
+<li>Contract signature by person with
+appropriate authority</li>
+<li>Membership fees paid</li>
+</ul>
+</td>
+<td colspan="1" rowspan="1">
+<p>Legal, commercial</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Onboarding to the Directory</p>
+</td>
+<td colspan="1" rowspan="1">
 <ul>
-<li>Generic contact email addresses and organisation details provided to Open Energy for publishing in the Directory</li>
+<li>Generic contact email addresses and
+organisation details provided to Open Energy
+for publishing in the Directory</li>
+<li>Software statement created (<a href="https://docs.google.com/document/d/1sypYWTeLFSFyfO_zTW6xKCWnao9gKjAo2JHZZIPs2xI/edit?usp=sharing">instructions</a>)</li>
+<li>Transport certificate created (<a href="https://docs.google.com/document/d/1sypYWTeLFSFyfO_zTW6xKCWnao9gKjAo2JHZZIPs2xI/edit?usp=sharing">instructions</a>)</li>
 </ul>
-</li>
-<li>
-<p>Software statement created (<a href="https://docs.google.com/document/d/1sypYWTeLFSFyfO_zTW6xKCWnao9gKjAo2JHZZIPs2xI/edit?usp=sharing">instructions</a>)</p>
-</li>
-<li>
-<p>Transport certificate created (<a href="https://docs.google.com/document/d/1sypYWTeLFSFyfO_zTW6xKCWnao9gKjAo2JHZZIPs2xI/edit?usp=sharing">instructions</a>)</p>
-<pre><code>                                                                                                                                                                                                                                                                      | Operational, technical
-
-                                                                                                                                                                                           |
-</code></pre>
-<p>| Metadata file creation</p>
-<pre><code>                                                            | Applies to **all** datasets, both [Open Data](../glossary.md#term-Open-data) and [Shared Data](../glossary.md#term-Shared-data):
-</code></pre>
-</li>
-<li>
-<p><a href="../common_policies/#metadata">Metadata</a> file created for each dataset</p>
-</li>
-<li>
-<p>Metadata file published and available on a public web server (such as <a href="https://github.com/icebreakerone/open-energy-metadata-demo/tree/main/metadata_files">public GitHub repo</a>)</p>
-</li>
-<li>
-<p>Records of the metadata file location created (<a href="https://docs.google.com/document/d/1sypYWTeLFSFyfO_zTW6xKCWnao9gKjAo2JHZZIPs2xI/edit?usp=sharing">instructions</a>)</p>
-</li>
-<li>
-<p>Verification that Open Energy automated processes have picked up the file and surfaced contents in <a href="https://openenergy.org.uk">Search</a></p>
-<pre><code>                                                                                                           | Technical
-
-                                                                                                                                                                                                        |
-</code></pre>
-<p>| Secure <a href="../../glossary/#term-Application-programming-interface">API</a> creation and deployment compliant with <a href="../../glossary/#term-Open-Energy">Open Energy</a> subset of <a href="../../glossary/#term-Financial-Grade-API">FAPI</a> specification</p>
-</li>
+</td>
+<td colspan="1" rowspan="1">
+<p>Operational,
+technical</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Metadata file creation</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Applies to <strong>all</strong> datasets, both <a href="../../glossary/#term-Open-data">Open Data</a> and <a href="../../glossary/#term-Shared-data">Shared Data</a>:</p>
+<ul>
+<li><a href="../common_policies/#metadata">Metadata</a> file created for each dataset</li>
+<li>Metadata file published and available on a public web server
+(such as <a href="https://github.com/icebreakerone/open-energy-metadata-demo/tree/main/metadata_files">public GitHub repo</a></li>
+<li>Records of the metadata file location created
+(<a href="https://docs.google.com/document/d/1sypYWTeLFSFyfO_zTW6xKCWnao9gKjAo2JHZZIPs2xI/edit?usp=sharing">instructions</a>)</li>
+<li>Verification that Open Energy automated processes have picked up the file and surfaced contents in <a href="https://openenergy.org.uk">Search</a></li>
 </ul>
-<p>| For example, using one of the following methods:</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Technical</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Secure API creation and
+deployment compliant with
+Open Energy subset of FAPI
+specification</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>For example, using one of the following methods:</p>
 <ol>
-<li>
-<p>Deploy a <a href="../../glossary/#term-Data-Provider">Data Provider</a> <a href="../../glossary/#term-Application-programming-interface">API</a> to <a href="../../glossary/#term-Amazon-Elastic-Cloud-Compute">EC2</a> using the walkthrough <a href="https://icebreakerone.github.io/open-energy-python-infrastructure/ec2.html">here</a></p>
-</li>
-<li>
-<p>Use our <a href="https://icebreakerone.github.io/open-energy-python-infrastructure/">Python Support Library</a> to build
-a <a href="../../glossary/#term-Data-Provider">Data Provider</a> <a href="../../glossary/#term-Application-programming-interface">API</a> on your own infrastructure</p>
-</li>
-<li>
-<p>Create a <a href="../../glossary/#term-Data-Provider">Data Provider</a> based on the <a href="../../glossary/#term-Financial-Grade-API">FAPI</a> subset defined in <a href="../technical_common/#common-security-requirements">Common Security Requirements</a> using your choice of language
-and deployment infrastructure</p>
-<pre><code>                                                                                                                    | Technical
-
-                                                                                                                                                                                                        |
-</code></pre>
-<p>| Creation of a rule, or rules, for each dataset and publication of rule(s) in the metadata file</p>
-</li>
+<li>Deploy a Data Provider API to EC2 using the walkthrough <a href="https://icebreakerone.github.io/open-energy-python-infrastructure/ec2.html">here</a></li>
+<li>Use our Python Support Library(https://icebreakerone.github.io/open-energy-python-infrastructure/) to build a
+Data Provider API on your own infrastructure</li>
+<li>Create a Data Provider based on the FAPI subset defined in <a href="../technical_common/#common-security-requirements">Common Security Requirements</a>
+using your choice of language and deployment infrastructure</li>
 </ol>
-<p>| 
-* Dataset assigned to an Open Energy Sensitivity Class</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Technical</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Creation of a rule, or rules,
+for each dataset and
+publication of rule(s) in the
+metadata file
+</p>
+</td>
+<td colspan="1" rowspan="1">
 <ul>
-<li>
-<p><a href="../../access_control_specification/#access-control-and-capability-grant-language">Access rule</a> or rules created, for each of which:</p>
-<ul>
-<li>
-<p><a href="../common_policies/#data-access-conditions">Data Access Conditions</a> are specified</p>
-</li>
-<li>
-<p>A grant of <a href="../../access_control_specification/#capabilities">Capabilities</a> is articulated</p>
-</li>
-<li>
-<p>Any accompanying <a href="../../access_control_specification/#obligations">Obligations</a> are articulated</p>
-<pre><code>                                                                                                                                                                                                                                         | Operational, commercial, technical
-
-                                                                                                                                                                           |
-</code></pre>
-<p>| Internal legal sign-off for rules</p>
-<pre><code>                                                  |
-</code></pre>
-<ul>
-<li>Internal legal advice sought on converting any existing <a href="../../glossary/#term-Shared-data">Shared data</a> licenses into <a href="../../glossary/#term-Open-Energy">Open Energy</a>
-<a href="../../access_control_specification/#capabilities">Capabilities</a> and <a href="../../access_control_specification/#obligations">Obligations</a></li>
+<li>Dataset assigned to an Open Energy Sensitivity Class</li>
+<li><a href="../../access_control_specification/#access-control-and-capability-grant-language">Access rule</a> or rules created, for each of which:</li>
+<li><a href="../common_policies/#data-access-conditions">Data Access Conditions</a> are specified</li>
+<li>A grant of <a href="../../access_control_specification/#capabilities">Capabilities</a> is articulated</li>
+<li>Any accompanying <a href="../../access_control_specification/#obligations">Obligations</a> are articulated</li>
 </ul>
-</li>
+</td>
+<td colspan="1" rowspan="1">
+<p>Operational,
+commercial,
+technical</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Internal legal sign-off for
+rules</p>
+</td>
+<td colspan="1" rowspan="1">
+<ul>
+<li>Internal legal advice sought on converting any existing <a href="../../glossary/#term-Shared-data">Shared data</a> licenses Introduction
+<a href="../../glossary/#term-Open-Energy">Open Energy</a> <a href="../../access_control_specification/#capabilities">Capabilities</a> and
+<a href="../../access_control_specification/#obligations">Obligations</a></li>
+<li>Internal legal sign-off granted for the creation of all data <a href="../../access_control_specification/">access rules</a></li>
 </ul>
-</li>
-<li>
-<p>Internal legal sign-off granted for the creation of all data ‘access rules <Access Control and Capability Grant Language>’</p>
-<pre><code>                                                                                                                                                                                                                         | Legal
-
-                                                                                                                                                                                                            |
-</code></pre>
-<p>| Skills</p>
-<pre><code>                                                                                 |
-</code></pre>
+</td>
+<td colspan="1" rowspan="1">
+<p>Legal</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Skills</p>
+</td>
+<td colspan="1" rowspan="1">
 <ul>
 <li>Technical personnel can use Python programming language, or adapt existing <a href="../../glossary/#term-Open-Energy">Open Energy</a> code and tooling to
 alternative language(s) that are used internally</li>
+<li>Technical personnel understand the basics of the <a href="../../glossary/#term-Financial-Grade-API">FAPI</a> authorization process as described in
+<a href="../technical_common/#common-security-requirements">Common Security Requirements</a></li>
 </ul>
-</li>
-<li>
-<p>Technical personnel understand the basics of the <a href="../../glossary/#term-Financial-Grade-API">FAPI</a> authorization process as described in <a href="../technical_common/#common-security-requirements">Common Security Requirements</a></p>
-<pre><code>                                                                                                                                                                                          | Technical
-
-                                                                                                                                                                                                        |
-</code></pre>
+</td>
+<td colspan="1" rowspan="1">
+<p>Technical</p>
+</td>
+</tr>
+</tbody>
+</table>
 <h2 id="considerations-for-data-consumers">Considerations for Data Consumers</h2>
-</li>
-</ul>
-<p>| Consideration</p>
-<pre><code>                                                                              | Includes
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Readiness area(s)
-
-                                                                                                                                                                                                    |
-</code></pre>
-<p>| ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Membership contract and fees</p>
-<pre><code>                                                               |
-</code></pre>
+<table>
+<thead>
+<tr>
+<th colspan="1" rowspan="1">
+<p>Consideration</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Includes</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Readiness area(s)</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Membership contract and fees</p>
+</td>
+<td colspan="1" rowspan="1">
 <ul>
-<li>
-<p>Contract review by legal counsel</p>
-</li>
-<li>
-<p>Contract signature by person with appropriate authority</p>
-</li>
-<li>
-<p>Membership fees paid</p>
-<pre><code>                                                                                                                                                                                                                                                                                                                                                                | Legal, commercial
-
-                                                                                                                                                                                                |
-</code></pre>
-<p>| Onboarding to the Directory</p>
-<pre><code>                                                            |
-</code></pre>
+<li>Contract review by legal counsel</li>
+<li>Contract signature by person with appropriate authority</li>
+<li>Membership fees paid</li>
+</ul>
+</td>
+<td colspan="1" rowspan="1">
+<p>Legal,
+commercial
+</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Onboarding to the Directory</p>
+</td>
+<td colspan="1" rowspan="1">
 <ul>
 <li>Generic contact email addresses and organisation details provided to Open Energy for publishing in the Directory</li>
+<li>Software statement created (<a href="https://docs.google.com/document/d/1sypYWTeLFSFyfO_zTW6xKCWnao9gKjAo2JHZZIPs2xI/edit?usp=sharing">instructions</a>).</li>
+<li>Transport certificate created
+(<a href="https://docs.google.com/document/d/1sypYWTeLFSFyfO_zTW6xKCWnao9gKjAo2JHZZIPs2xI/edit?usp=sharing">instructions</a>)</li>
 </ul>
-</li>
-<li>
-<p>Software statement created (<a href="https://docs.google.com/document/d/1sypYWTeLFSFyfO_zTW6xKCWnao9gKjAo2JHZZIPs2xI/edit?usp=sharing">instructions</a>)</p>
-</li>
-<li>
-<p>Transport certificate created (<a href="https://docs.google.com/document/d/1sypYWTeLFSFyfO_zTW6xKCWnao9gKjAo2JHZZIPs2xI/edit?usp=sharing">instructions</a>)</p>
-<pre><code>                                                                                                                                                                                                                                                                      | Operational, technical
-
-                                                                                                                                                                                           |
-</code></pre>
-<p>| Locate Shared data sets</p>
-<pre><code>                                                                | Use of [Open Energy Search](https://openenergy.org.uk)
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Operational, technical
-
-                                                                                                                                                                                           |
-</code></pre>
-<p>| Access <a href="../../glossary/#term-Shared-data">Shared Data</a></p>
-<pre><code>                                                                     | Methods including one of the following:
-</code></pre>
-</li>
-<li>
-<p>Use a web-based Python integrated development environment of your choice (e.g. Jupyter-Lab, Google
-Collab, or similar) to access and display Shared data (<a href="https://www.youtube.com/watch?v=CMI2UVdIxFw">step-by-step video</a>)</p>
-</li>
-<li>
-<p>Use <a href="../../glossary/#term-Open-Energy">Open Energy</a>’s Python library to access <a href="../../glossary/#term-Shared-data">Shared data</a> from your own code
-(<a href="https://icebreakerone.github.io/open-energy-python-infrastructure/service_provider.html">example</a>)</p>
-</li>
-<li>
-<p>Use tools or languages of your choice to access a <a href="../../glossary/#term-Shared-data">Shared Data</a> <a href="../../glossary/#term-Application-programming-interface">API</a>.</p>
-<pre><code>                                                                                                | Technical
-
-                                                                                                                                                                                                        |
-</code></pre>
-<p>| Use <a href="../../glossary/#term-Shared-data">Shared data</a> in compliance with the appropriate licence model</p>
-<pre><code>                       |
-</code></pre>
+</td>
+<td colspan="1" rowspan="1">
+<p>Operational,
+technical</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Locate Shared data sets
+</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Use of <a href="https://openenergy.org.uk">Open Energy Search</a>
+</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Operational,
+technical</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Access Shared Data</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Methods including one of the following:</p>
+<ol>
+<li>Use a web-based Python integrated development environment of your choice (e.g. Jupyter-Lab, Google Collab, or similar) to access and display
+Shared data (<a href="https://www.youtube.com/watch?v=CMI2UVdIxFw">step-by-step video</a>)</li>
+<li>Use <a href="../../glossary/#term-Open-Energy">Open Energy</a>’s Python library to access <a href="../../glossary/#term-Shared-data">Shared data</a> from your own.
+code (<a href="https://icebreakerone.github.io/open-energy-python-infrastructure/service_provider.html">example</a>)</li>
+<li>Use tools or languages of your choice to access a <a href="../../glossary/#term-Shared-data">Shared Data</a>
+<a href="../../glossary/#term-Application-programming-interface">API</a>.</li>
+</ol>
+</td>
+<td colspan="1" rowspan="1">
+<p>Technical</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Use Shared data in compliance
+with the appropriate licence
+model</p>
+</td>
+<td colspan="1" rowspan="1">
 <ul>
 <li>Ensure your organisation - and any individuals handling the data - have a clear understanding of <a href="../../glossary/#term-Open-Energy">Open Energy</a>
-<a href="../../access_control_specification/#capabilities">Capabilities</a> and <a href="../../access_control_specification/#obligations">Obligations</a> for the use of datasets</li>
-</ul>
-</li>
-<li>
-<p>Gain internal legal sign-off for data use, if applicable</p>
-</li>
-<li>
-<p>Payment of related fees to the <a href="../../glossary/#term-Data-Provider">Data Provider</a> if applicable</p>
-</li>
+<a href="../../access_control_specification/#capabilities">Capabilities</a> and <a href="../../access_control_specification/#obligations">Obligations</a> for the use of.
+ datasets</li>
+<li>Gain internal legal sign-off for data use, if applicable</li>
+<li>Payment of related fees to the <a href="../../glossary/#term-Data-Provider">Data Provider</a> if applicable</li>
 </ul>
 <p>For <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> which are also <a href="../../glossary/#term-Service-Provider">Service Providers</a>:</p>
 <ul>
-<li>
-<p>Check your understanding of the onward sharing permissions for any data, or derivatives, you are passing
-onto your customers.</p>
-</li>
-<li>
-<p>Before passing on data or derivatives to your customers, ensure your organisation - and any individuals
-handling the data - have a clear understanding of Open Energy capabilities and obligations associated with
-onward sharing of data, and of the data pyramid.</p>
-</li>
+<li>Check your understanding of the onward sharing permissions for any data, or derivatives, you are passing onto your customers.</li>
+<li>Before passing on data or derivatives to your customers, ensure your organisation - and any individuals handling the data -
+ have a clear understanding of Open Energy capabilities and obligations associated with onward sharing of data, and of the data pyramid.</li>
 </ul>
-<p>| All</p>
-<pre><code>                                                                                                                                                                                                                  |
-</code></pre>
-<p>| Business planning</p>
-<pre><code>                                                                          | For [Data Consumers](../glossary.md#term-Data-Consumer) who are [Service Providers](../glossary.md#term-Service-Provider):
-</code></pre>
+</td>
+<td colspan="1" rowspan="1">
+<p>All</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Business planning</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>For <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> who are <a href="../../glossary/#term-Service-Provider">Service Providers</a>:</p>
 <ul>
-<li>
-<p>Establish or review your business model for providing services based on, or linked to, data access via <a href="../../glossary/#term-Open-Energy">Open Energy</a>
-in alignment with the agreed capabilities and access controls for the datasets the service will rely on.</p>
-</li>
-<li>
-<p>Where a service uses multiple datasets, including those beyond Open Energy, ensure that licences are
-compatible to the service being provided and that all licences are appropriately credited.</p>
-<pre><code>                                                                                                                                                                                                                                                               | Commercial
-
-                                                                                                                                                                                                       |
-</code></pre>
-</li>
+<li>Establish or review your business model for providing services based on, or linked to, data access via
+<a href="../../glossary/#term-Open-Energy">Open Energy</a>  in alignment with the agreed capabilities and access controls for the datasets the service will
+ rely on.</li>
+<li>Where a service uses multiple datasets, including those beyond Open Energy, ensure that licences are compatible to the service
+being provided and that all licences are appropriately credited.</li>
 </ul>
+</td>
+<td colspan="1" rowspan="1">
+<p>Commercial</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -781,7 +810,7 @@ compatible to the service being provided and that all licences are appropriately
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../../metadata/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Data Set Metadata" rel="prev">
+        <a href="../introduction/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction to Open Energy" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -790,7 +819,7 @@ compatible to the service being provided and that all licences are appropriately
               <span class="md-footer__direction">
                 Previous
               </span>
-              Data Set Metadata
+              Introduction to Open Energy
             </div>
           </div>
         </a>

@@ -8,7 +8,7 @@
       
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/logo.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
@@ -32,10 +32,12 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -49,12 +51,16 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+    
+    <body dir="ltr" data-md-color-scheme="ib1-light" data-md-color-primary="" data-md-color-accent="">
   
     
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -73,6 +79,18 @@
     
       <div data-md-component="outdated" hidden>
         
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+  You're not viewing the latest version.
+  <a href="../../.."> 
+    <strong>Click here to go to latest.</strong>
+  </a>
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),outdated=__md_get("__outdated",sessionStorage);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
       </div>
     
     
@@ -82,8 +100,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Icebreaker One Technical Documentation" class="md-header__button md-logo" aria-label="Icebreaker One Technical Documentation" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="../../assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -105,6 +122,30 @@
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="ib1-light" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="ib1-dark" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -168,8 +209,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Icebreaker One Technical Documentation" class="md-nav__button md-logo" aria-label="Icebreaker One Technical Documentation" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="../../assets/logo.png" alt="logo">
 
     </a>
     Icebreaker One Technical Documentation
@@ -185,8 +225,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
-        Open Energy Tech Docs
+      <a href="../introduction/" class="md-nav__link">
+        Introduction to Open Energy
       </a>
     </li>
   
@@ -196,123 +236,21 @@
       
       
 
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../access_control_specification/" class="md-nav__link">
-        Access Control and Capability Grant Language
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../additional_material/" class="md-nav__link">
-        Additional Material
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../architecture/" class="md-nav__link">
-        Open Energy Architecture
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../glossary/" class="md-nav__link">
-        Open Energy Glossary
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../metadata/" class="md-nav__link">
-        Data Set Metadata
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_7">
-          Ops guidelines
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Ops guidelines" data-md-level="1">
-        <label class="md-nav__title" for="__nav_7">
-          <span class="md-nav__icon md-icon"></span>
-          Ops guidelines
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
   
   
   
     <li class="md-nav__item">
       <a href="../before_starting/" class="md-nav__link">
-        Considerations Before You Start
+        Considerations before you start
       </a>
     </li>
   
 
-            
-          
-            
-              
+    
+      
+      
+      
+
   
   
     
@@ -578,10 +516,11 @@
     </li>
   
 
-            
-          
-            
-              
+    
+      
+      
+      
+
   
   
   
@@ -592,10 +531,11 @@
     </li>
   
 
-            
-          
-            
-              
+    
+      
+      
+      
+
   
   
   
@@ -606,24 +546,11 @@
     </li>
   
 
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../introduction/" class="md-nav__link">
-        Introduction to Open Energy
-      </a>
-    </li>
-  
+    
+      
+      
+      
 
-            
-          
-            
-              
   
   
   
@@ -634,10 +561,78 @@
     </li>
   
 
-            
-          
-        </ul>
-      </nav>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/" class="md-nav__link">
+        Open Energy Architecture
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metadata/" class="md-nav__link">
+        Dataset Metadata
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../access_control_specification/" class="md-nav__link">
+        Access Control and Capability Grant Language
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        Glossary
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additional_material/" class="md-nav__link">
+        Additional Material
+      </a>
     </li>
   
 
@@ -939,95 +934,184 @@ with different sensitivity profiles.</p>
 inserted in due course beyond Phase 3. This will follow processes of consultation with Advisory Groups and tester
 organisations.</p>
 <h3 id="data-sensitivity-classes-in-the-open-energy-ecosystem">data sensitivity classes in the Open Energy ecosystem</h3>
-<p>| Data Class</p>
-<p>| Description</p>
-<p>| Example Datasets</p>
-<p>| Personal Sensitivity</p>
-<p>| Commercial Sensitivity</p>
-<p>| Security Sensitivity</p>
-<p>|
-| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- | ---------------------- | -------------------- |  |  |  |  |  |  |  |  |
-| <a href="../../glossary/#term-Data-sensitivity-class-closed">OE-C</a></p>
-<pre><code>                                                                                       | Closed data - limited to internal organisational access only or limited, bespoke bilateral contracts under
-</code></pre>
-<p>specific circumstances. May be subject to hard legal barriers to sharing. May be security-critical information
-relating to operational technology supporting critical national infrastructure owned by an Operator of
-Essential Services.</p>
-<p><strong>Never suitable to share within the |OE| ecosystem.</strong></p>
-<pre><code>                                                                                                                                                                                                                                                                                                                                      | Business-critical proprietary information or IP, critical asset locations, classified information.
-
-                                                                                                                   | Very High
-
-        | Very High
-
-          | Very High
-
-        |
-</code></pre>
-<p>| <a href="../../glossary/#term-Data-sensitivity-class-personal">OE-SP</a></p>
-<pre><code>                                                                                      | Datasets which include personal data, requiring appropriate consent to share, or other legal bases to data
-</code></pre>
-<p>processing, as defined by the <a href="../../glossary/#term-European-Union">EU</a> <a href="../../glossary/#term-General-Data-Protection-Regulation">GDPR</a> and brought into <a href="../../glossary/#term-United-Kingdom">UK</a> law via the <a href="../../glossary/#term-Data-Protection-Act">DPA</a> 2018.</p>
-<p><strong>Currently not suitable to share within the |OE| ecosystem, with future extensibility subject to consultation.</strong></p>
-<pre><code>                                                                                                                                                                                                                                                                                                                                                                                                                                     | Smart meter data, home temperature preferences, protected characteristics or special category data (e.g.
-</code></pre>
-<p>dependence on power due to health conditions), individual <a href="../../glossary/#term-Electric-vehicle">Electric vehicle</a> charging records, transaction data.</p>
-<p>| Very High</p>
-<pre><code>        | Medium / High
-
-      | Medium / High
-
-    |
-</code></pre>
-<p>| <a href="../../glossary/#term-Data-sensitivity-class-shared-B">OE-SB</a></p>
-<pre><code>                                                                                      | Datasets which do not include personal data and which can/could be shared, but currently require bilateral
-</code></pre>
-<p>contract negotiation. May include data currently shared on the basis of group-based, name-based or
-purpose-limited access. May include aggregated data about individuals, subject to best practice adherence
-(e.g. <a href="../../glossary/#term-Information-Commissioner-s-Office">ICO</a> anonymisation code.)</p>
-<p><strong>Anonymised data using non-aggregative techniques are currently not suitable to share within this sensitivity
-class due to complex risks related to individual re-identification. Future extensibility to sharing anonymised
-data is subject to consultation.</strong></p>
-<pre><code>                                                                                                                          | Public [Electric vehicle](../glossary.md#term-Electric-vehicle) charge-point performance, generation asset performance, aggregated smart meter data, aggregated
-</code></pre>
-<p>microgeneration export profiles, ‘Investment grade’ data (e.g. suitable granularity for financial
-decision-making), sensitive asset data.</p>
-<p>| Medium</p>
-<pre><code>           | Medium / High
-
-      | Medium / High
-
-    |
-</code></pre>
-<p>| <a href="../../glossary/#term-Data-sensitivity-class-shared-A">OE-SA</a></p>
-<pre><code>                                                                                      | Shared data - datasets which can/could be shared, but which require the user to agree to ‘light touch’ T&amp;Cs to
-</code></pre>
-<p>access and use (e.g. non-commercial clauses such as those under <a href="../../glossary/#term-Creative-Commons-Attribution-Non-commercial">CC-BY-NC</a>).</p>
-<pre><code>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Network capacity, outage data, weather predictions, European space agency data, daily smart meter installations,
-</code></pre>
-<p>geolocation information for non-sensitive assets (e.g. Renewable Assets, <a href="../../glossary/#term-Energy-Performance-Certificate">EPC</a> certificates).</p>
-<pre><code>                                                  | Low
-
-              | Medium
-
-             | Low
-
-              |
-</code></pre>
-<p>| <a href="../../glossary/#term-Data-sensitivity-class-open">OE-O</a></p>
-<pre><code>                                                                                       | Open Data – full open access, under an open data licence. Free to use, by anyone, for any purpose.
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Lower Super Output Layer [ID](../glossary.md#term-Identification) ([LSOA](../glossary.md#term-Lower-Layer-Super-Output-Areas)), Digest of [UK](../glossary.md#term-United-Kingdom) Energy Statistics, regulatory data (e.g. licensing categories,
-</code></pre>
-<p>institutional charters or Terms of Reference, etc.)</p>
-<pre><code>                                                                                           | Very Low
-
-         | Very Low
-
-           | Very Low
-
-         |
-</code></pre>
+<table>
+<thead>
+<tr>
+<th colspan="1" rowspan="1">
+<p>Data Class</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Description</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Example Datasets</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Personal Sensitivity</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Commercial Sensitivity</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Security Sensitivity</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="1" rowspan="1">
+<p>OE-C</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Closed data - limited to internal organisational
+access only or limited, bespoke bilateral contracts
+under specific circumstances. May be subject to hard
+legal barriers to sharing. May be security-critical
+information relating to operational technology
+supporting critical national infrastructure owned by
+an Operator of Essential Services.</p>
+<p><strong>Never suitable to share within the OE ecosystem.</strong></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Business-critical proprietary information or IP,
+critical asset locations, classified information.</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Very High</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Very High</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Very High</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>OE-SP</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Datasets which include personal data, requiring
+appropriate consent to share, or other legal bases
+to data processing, as defined by the
+<a href="../../glossary/#term-European-Union">EU</a>
+<a href="../../glossary/#term-General-Data-Protection-Regulation">GDPR</a>
+and brought into <a href="../../glossary/#term-United-Kingdom">UK</a>
+law via the
+<a href="../../glossary/#term-Data-Protection-Act">DPA</a> 2018.</p>
+<p><strong>Currently not suitable to share within the |OE| ecosystem,
+with future extensibility subject to consultation.</strong></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Smart meter data, home temperature preferences,
+protected characteristics or special category data
+(e.g. dependence on power due to health conditions),
+individual
+<a href="../../glossary/#term-Electric-vehicle">Electric vehicle</a>
+charging records, transaction data.</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Very High</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Medium / High</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Medium / High</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>OE-SB</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Datasets which do not include personal data and which
+can/could be shared, but currently require bilateral
+contract negotiation. May include data currently shared on the
+basis of group-based, name-based or purpose-limited access.
+May include aggregated data about individuals, subject to
+best practice adherence
+(e.g. <a href="../../glossary/#term-Information-Commissioner-s-Office">ICO</a>
+anonymisation code.)</p>
+<p><strong>Anonymised data using non-aggregative techniques are currently not
+suitable to share within this sensitivity class due to complex risks
+related to individual re-identification. Future extensibility to
+sharing anonymised data is subject to consultation.</strong></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Public
+<a href="../../glossary/#term-Electric-vehicle">Electric vehicle</a>
+charge-point performance, generation asset performance,
+aggregated smart meter data, aggregated, microgeneration
+export profiles, ‘Investment grade’ data (e.g. suitable
+granularity for financial decision-making), sensitive
+asset data.</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Medium</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Medium / High</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Medium / High</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>OE-SA</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Shared data - datasets which can/could be shared, but which require the
+ user to agree to ‘light touch’ T&amp;Cs to access and use (e.g.
+ non-commercial clauses such as those under
+<a href="../../glossary/#term-Creative-Commons-Attribution-Non-commercial">CC-BY-NC</a>).</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Network capacity, outage data, weather predictions,
+European space agency data, daily smart meter
+installations, geolocation information for non-sensitive
+assets (e.g. Renewable Assets,
+<a href="../../glossary/#term-Energy-Performance-Certificate">EPC</a>
+certificates).</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Low</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Medium</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Low</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>OE-O</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Open Data – full open access, under an open data licence. Free to use, by
+anyone, for any purpose.</p>
+</td>
+<td colspan="1" rowspan="1">
+<p><a href="../../glossary/#term-Lower-Layer-Super-Output-Areas">LSOA</a>
+IDs, Digest of <a href="../../glossary/#term-United-Kingdom">UK</a>
+Energy Statistics, regulatory data (e.g. licensing
+categories, institutional charters or Terms of Reference,
+etc.)</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Very Low</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Very low</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Very Low</p>
+</td>
+</tr>
+</tbody>
+</table>
 <h2 id="data-access-conditions">Data Access Conditions</h2>
 <p>This policy focuses on <strong>data access</strong>. Data access refers to <strong>determining what types of conditions may be specified
 for |DCs| to meet in order to gain access</strong> to datasets in different sensitivity classes, and how access rules
@@ -1067,120 +1151,201 @@ sensitivity class. Instead, our policy enables some tailoring within defined par
 the rationale for this guidance - identifying the lack of standardised access conditions for <a href="../../glossary/#term-Data-sensitivity-class-shared-A">OE-SA</a> and <a href="../../glossary/#term-Data-sensitivity-class-shared-B">OE-SB</a> datasets
 as a cause of cost and friction in energy data sharing.</p>
 <h3 id="data-sensitivity-classes-and-access-conditions-in-scope">Data sensitivity classes and access conditions in scope</h3>
-<p>| Data Class</p>
-<pre><code>                                                                                 | Access Conditions
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-</code></pre>
-<p>| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <a href="../../glossary/#term-Data-sensitivity-class-closed">OE-C</a></p>
-<pre><code>                                                                                       | Determined and governed by the [Data Provider](../glossary.md#term-Data-Provider) only.
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-</code></pre>
-<p>| <a href="../../glossary/#term-Data-sensitivity-class-personal">OE-SP</a></p>
-<pre><code>                                                                                      | Currently determined by legislation including, but not limited to: [GDPR](../glossary.md#term-General-Data-Protection-Regulation) / [DPA](../glossary.md#term-Data-Protection-Act) 2018, the Data Access and
-</code></pre>
-<p>Privacy Framework, and the Smart Energy Code. <a href="../../glossary/#term-Data-Provider">Data Providers</a> may also apply additional non-standard access
-conditions, such as payment or purpose-based.</p>
-<p>Determining access conditions for personal data is beyond the capacity of Open Energy in Phase 3 (February -
-July 2021) and beyond the scope of this consultation. Future extensibility to be considered based on
-consultation in due course.</p>
-<pre><code>                                                                                                                                                                                                                               |
-</code></pre>
-<p>| <a href="../../glossary/#term-Data-sensitivity-class-shared-B">OE-SB</a></p>
-<pre><code>                                                                                      | Currently non-standardised, determined by bilateral contract and bespoke negotiation.
-</code></pre>
+<table>
+<thead>
+<tr>
+<th colspan="1" rowspan="1">
+<p>Data Class</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Access Conditions</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="1" rowspan="1">
+<p><a href="../../glossary/#term-Data-sensitivity-class-closed">OE-C</a></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Determined and governed by the <a href="../../glossary/#term-Data-Provider">Data Provider</a> only.</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><a href="../../glossary/#term-Data-sensitivity-class-personal">OE-SP</a></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Currently determined by legislation including, but not limited to:
+<a href="../../glossary/#term-General-Data-Protection-Regulation">GDPR</a> /
+<a href="../../glossary/#term-Data-Protection-Act">DPA</a> 2018, the Data Access and Privacy Framework, and the
+Smart Energy Code. <a href="../../glossary/#term-Data-Provider">Data Providers</a> may also apply additional
+non-standard access conditions, such as payment or purpose-based.</p>
+<p>Determining access conditions for personal data is beyond the capacity of Open Energy in Phase 3
+(February - July 2021) and beyond the scope of this consultation. Future extensibility to be considered
+based on consultation in due course.</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><a href="../../glossary/#term-Data-sensitivity-class-shared-B">OE-SB</a></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Currently non-standardised, determined by bilateral contract and bespoke negotiation.</p>
 <p>Subject of the current policy.</p>
-<pre><code>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-</code></pre>
-<p>| <a href="../../glossary/#term-Data-sensitivity-class-shared-A">OE-SA</a></p>
-<pre><code>                                                                                      | Currently some standardisation, however bespoke arrangements remain common.
-</code></pre>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><a href="../../glossary/#term-Data-sensitivity-class-shared-A">OE-SA</a></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Currently some standardisation, however bespoke arrangements remain common.</p>
 <p>Subject of the current policy.</p>
-<pre><code>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-</code></pre>
-<p>| <a href="../../glossary/#term-Data-sensitivity-class-open">OE-O</a></p>
-<pre><code>                                                                                       | No access conditions - free and accessible to all users.
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-</code></pre>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><a href="../../glossary/#term-Data-sensitivity-class-open">OE-O</a></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>No access conditions - free and accessible to all users.</p>
+</td>
+</tr>
+</tbody>
+</table>
 <h3 id="open-energy-access-conditions">Open Energy access conditions</h3>
-<p>| Condition domain</p>
-<pre><code>                                                                           | Considerations (examples - not exhaustive)
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Applicable class
-
-                                                                                                                                                                                                                                              |
-</code></pre>
-<p>| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Payment</p>
-<pre><code>                                                                                    | Free or paid data
-</code></pre>
+<table>
+<thead>
+<tr>
+<th colspan="1" rowspan="1">
+<p>Condition domain</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Considerations (examples - not exhaustive)</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Applicable class</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Payment</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Free or paid data</p>
 <p>Graduated payment rates (e.g. higher granularity)</p>
 <p>One-off or subscription payment rates</p>
-<pre><code>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)
-
-                                                                                                                                                                                                                                               |
-</code></pre>
-<p>| Security compliance</p>
-<pre><code>                                                                        | [UK](../glossary.md#term-United-Kingdom) Government Minimum Cybersecurity Standard
-</code></pre>
-<p><a href="../../glossary/#term-United-Kingdom">UK</a> Government  ‘Secure by Design’ IoT guidance</p>
-<p>Codes of conduct governing Critical National Infrastructure</p>
-<pre><code>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)
-
-                                                                                                                                                                                                                                               |
-</code></pre>
-<p>| Regulatory compliance</p>
-<pre><code>                                                                      | Networks business separation provisions
-</code></pre>
+</td>
+<td colspan="1" rowspan="1">
+<p><a href="../../glossary/#term-Data-sensitivity-class-shared-B">OE-SB</a> and
+<a href="../../glossary/#term-Data-sensitivity-class-shared-A">OE-SA</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Security compliance</p>
+</td>
+<td colspan="1" rowspan="1">
+<p><a href="../../glossary/#term-United-Kingdom">UK</a> Government Minimum
+Cybersecurity Standard</p>
+<p><a href="../../glossary/#term-United-Kingdom">UK</a> Government  ‘Secure.
+by Design’ IoT guidance</p>
+<p>Codes of conduct governing Critical National Infrastructure.</p>
+</td>
+<td colspan="1" rowspan="1">
+<p><a href="../../glossary/#term-Data-sensitivity-class-shared-B">OE-SB</a> and
+<a href="../../glossary/#term-Data-sensitivity-class-shared-A">OE-SA</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Regulatory
+compliance</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Networks business separation provisions</p>
 <p>Competition law</p>
 <p>Adherence to section 105 of the Utilities Act 2000</p>
-<pre><code>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)
-
-                                                                                                                                                                                                                                               |
-</code></pre>
-<p>| Standards compliance</p>
-<pre><code>                                                                       | Meets [MED](../glossary.md#term-Modernising-Energy-Data) Data Best Practice Guidance
-</code></pre>
-<p>Meets relevant <a href="../../glossary/#term-Independent-System-Operator">ISO</a> standards</p>
-<pre><code>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)
-
-                                                                                                                                                                                                                                               |
-</code></pre>
-<p>| Organisation type</p>
-<pre><code>                                                                          | Local Authorities
-</code></pre>
+</td>
+<td colspan="1" rowspan="1">
+<p><a href="../../glossary/#term-Data-sensitivity-class-shared-B">OE-SB</a> and
+<a href="../../glossary/#term-Data-sensitivity-class-shared-A">OE-SA</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Standards
+compliance</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Meets <a href="../../glossary/#term-Modernising-Energy-Data">MED</a> Data
+Best Practice Guidance</p>
+<p>Meets relevant
+<a href="../../glossary/#term-Independent-System-Operator">ISO</a>
+standards</p>
+</td>
+<td colspan="1" rowspan="1">
+<p><a href="../../glossary/#term-Data-sensitivity-class-shared-B">OE-SB</a> and
+<a href="../../glossary/#term-Data-sensitivity-class-shared-A">OE-SA</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Organisation type</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Local Authorities</p>
 <p>Energy networks</p>
 <p>Schools, colleges and universities</p>
 <p>Code signatories</p>
 <p>Charities</p>
-<p>Specific Open Energy membership tiers (e.g. <a href="../../glossary/#term-Small-Medium-Enterprise">SME</a>)</p>
-<pre><code>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B)
-
-                                                                                                                                                                                                                                                         |
-</code></pre>
-<p>| Group membership</p>
-<pre><code>                                                                           | Certain use cases (e.g. community energy project development)
-</code></pre>
+<p>Specific Open Energy membership tiers (e.g.
+<a href="../../glossary/#term-Small-Medium-Enterprise">SME</a>)</p>
+</td>
+<td colspan="1" rowspan="1">
+<p><a href="../../glossary/#term-Data-sensitivity-class-shared-B">OE-SB</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Group membership</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Certain use cases (e.g. community energy project development)</p>
 <p>Commercial or development partnerships</p>
-<p>Certain purpose-based groups (e.g. consortium of fuel poverty-reduction organisations)</p>
+<p>Certain purpose-based groups (e.g. consortium of fuel
+poverty-reduction organisations)</p>
 <p>Social housing retrofit</p>
-<p>Public <a href="../../glossary/#term-Electric-vehicle">Electric vehicle</a> charge-point planning</p>
-<pre><code>                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B)
-
-                                                                                                                                                                                                                                                         |
-</code></pre>
-<p>| Other</p>
-<pre><code>                                                                                      | Auditing clauses
-</code></pre>
-<p>Individuals handling the data within a <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> must have completed certain training (e.g. <a href="../../glossary/#term-Office-for-National-Statistics">ONS</a> Safe
-Researcher).</p>
-<pre><code>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)
-
-                                                                                                                                                                                                                                               |
-</code></pre>
+<p>Public
+<a href="../../glossary/#term-Electric-vehicle">Electric vehicle</a>
+charge-point planning</p>
+</td>
+<td colspan="1" rowspan="1">
+<p><a href="../../glossary/#term-Data-sensitivity-class-shared-B">OE-SB</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Other</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Auditing clauses</p>
+<p>Individuals handling the data within a
+ <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> must.
+have completed certain training (e.g.
+<a href="../../glossary/#term-Office-for-National-Statistics">ONS</a>
+Safe Researcher).</p>
+</td>
+<td colspan="1" rowspan="1">
+<p><a href="../../glossary/#term-Data-sensitivity-class-shared-B">OE-SB</a> and
+ OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)</p>
+</td>
+</tr>
+</tbody>
+</table>
 <h3 id="group-based-access-control">Group based access control</h3>
 <p>There are two ways in which group-based access can be defined.</p>
 <ol>
@@ -1376,87 +1541,132 @@ in which a Local Authority is seeking data to plan the retrofit of social housin
 Please note that the scenarios are exemplary only and do not necessarily represent the stances of any <a href="../../glossary/#term-Data-Provider">Data Providers</a>
 involved in testing.</p>
 <h3 id="scenario-1">Scenario 1</h3>
-<p>| <strong>Dataset</strong></p>
-<pre><code>                                                                                    | [DNO](../glossary.md#term-Distribution-Network-Operator) capacity/constraint data
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-</code></pre>
-<p>| <strong>Sensitivity class</strong></p>
-<pre><code>                                                                          | [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-</code></pre>
-<p>| <strong>Access control domains</strong></p>
-<pre><code>                                                                     | Access granted to all Open Energy members equally
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-</code></pre>
-<p>| <strong>Access rules</strong></p>
-<pre><code>                                                                               | `oe:member` unary access condition
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-</code></pre>
-<p>| <strong>Capability grants</strong></p>
-<pre><code>                                                                          | `oe:member grants oe:use_any`, all [Data Consumers](../glossary.md#term-Data-Consumer) who are members of Open Energy can access this data set, and
-</code></pre>
-<p>receive the right to use for any purpose (see <a href="../../access_control_specification/#standard-capabilities">Standard capabilities</a> for more detail)</p>
-<pre><code>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-</code></pre>
-<p>| <strong>Obligations</strong></p>
-<pre><code>                                                                                | Derivatives of the artefact must be accompanied by text stating that the original artefact was used in their
-</code></pre>
-<p>creation. <code>oe:member grants oe:use_any requires oe:by</code> (see <a href="../../access_control_specification/#standard-obligations">Standard obligations</a> for more detail)</p>
-<pre><code>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-</code></pre>
+<table>
+<tbody>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>Dataset</strong></p>
+</td>
+<td colspan="1" rowspan="1">
+<p><a href="../../glossary/#term-Distribution-Network-Operator">DNO</a> capacity/constraint data</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>Sensitivity class</strong></p>
+</td>
+<td colspan="1" rowspan="1">
+<p><a href="../../glossary/#term-Data-sensitivity-class-shared-A">OE-SA</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>Access control domains</strong></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Access granted to all Open Energy members equally</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>Access rules</strong></p>
+</td>
+<td colspan="1" rowspan="1">
+<p><code>oe:member</code> unary access condition</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>Capability grants</strong></p>
+</td>
+<td colspan="1" rowspan="1">
+<p><code>oe:member grants oe:use_any</code>, all <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> who are members of Open
+Energy can access this data set, and receive the right to use for any purpose (see
+<a href="../../access_control_specification/#standard-capabilities">Standard capabilities</a> for more detail)</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>Obligations</strong></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Derivatives of the artefact must be accompanied by text stating that the original artefact was used in their
+creation. <code>oe:member grants oe:use_any requires oe:by</code> (see
+<a href="../../access_control_specification/#standard-obligations">Standard obligations</a> for more detail)</p>
+</td>
+</tr>
+</tbody>
+</table>
 <h3 id="scenario-2">Scenario 2</h3>
-<p>| <strong>Dataset</strong></p>
-<pre><code>                                                                                    | Public [Electric vehicle](../glossary.md#term-Electric-vehicle) chargepoint use and economic performance profiles
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-</code></pre>
-<p>| <strong>Sensitivity class</strong></p>
-<pre><code>                                                                          | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B)
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-</code></pre>
-<p>| <strong>Access control domains</strong></p>
-<pre><code>                                                                     | Group-based and payment-based access conditions
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-</code></pre>
-<p>| <strong>Access rules</strong></p>
-<pre><code>                                                                               | Two distinct access constraints:
-</code></pre>
+<table>
+<tbody>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>Dataset</strong></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Public <a href="../../glossary/#term-Electric-vehicle">Electric vehicle</a> chargepoint use and economic performance profiles</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>Sensitivity class</strong></p>
+</td>
+<td colspan="1" rowspan="1">
+<p><a href="../../glossary/#term-Data-sensitivity-class-shared-B">OE-SB</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>Access control domains</strong></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Group-based and payment-based access conditions</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>Access rules</strong></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Two distinct access constraints:</p>
 <ol>
-<li>
-<p><code>oe:org_type in ['local_authority', 'academic'], provider:customer_level == 1</code> -  local authorities and
-educational institutions are granted access if they are paid customers of the <a href="../../glossary/#term-Data-Provider">Data Provider</a> at their standard
-rate</p>
-</li>
-<li>
-<p><code>provider:customer_level &gt;= 2</code> - energy networks are granted access if they are paid customers of the Data
-Provider at their large business level</p>
-<pre><code>                                                                                                                                                                                                                                                                                                                               |
-</code></pre>
-<p>| <strong>Capability grants</strong></p>
-<pre><code>                                                                      | In this scenario it would be technically possible for the [Data Provider](../glossary.md#term-Data-Provider) to apply different capability grants
-</code></pre>
-<p>to the two different access rules. In this case the <a href="../../glossary/#term-Data-Provider">Data Provider</a> chooses not to as they have charged
-commercial entities a higher access fee and are therefore happy for all <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> to be granted the same
-capabilities. The result is the same set of capabilities (the same licence) is applied to both access rules.</p>
-</li>
+<li><code>oe:org_type in ['local_authority', 'academic'], provider:customer_level == 1</code> -  local authorities and
+educational institutions are granted access if they are paid customers of the
+<a href="../../glossary/#term-Data-Provider">Data Provider</a> at their standard rate</li>
+<li><code>provider:customer_level &gt;= 2</code> - energy networks are granted access if they are paid customers of the Data
+Provider at their large business level</li>
 </ol>
-<p><code>oe:org_type in ['local_authority', 'academic'], provider:customer_level == 1 grants oe:use_any</code></p>
-<p><code>provider:customer_level &gt;= 2 grants oe:use_any</code></p>
-<pre><code>                                                                                                                                                 |
-</code></pre>
-<p>| <strong>Obligations</strong></p>
-<pre><code>                                                                                | The [Data Provider](../glossary.md#term-Data-Provider) chooses the same obligations to be applied to both access rules
-</code></pre>
-<p><code>oe:org_type in ['local_authority', 'academic'], provider:customer_level == 1 grants oe:use_any requires oe:by</code></p>
-<p><code>provider:customer_level &gt;= 2 grants oe:use_any requires oe:by</code></p>
-<pre><code>                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-</code></pre>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>Capability grants</strong></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>In this scenario it would be technically possible for the <a href="../../glossary/#term-Data-Provider">Data Provider</a>
+to apply different capability grants to the two different access rules. In this case the
+<a href="../../glossary/#term-Data-Provider">Data Provider</a> chooses not to as they have charged commercial entities a
+higher access fee and are therefore happy for all <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> to be
+granted the same capabilities. The result is the same set of capabilities (the same licence) is applied to both
+access rules.
+<code>oe:org_type in ['local_authority', 'academic'], provider:customer_level == 1 grants oe:use_any</code>
+<code>provider:customer_level &gt;= 2 grants oe:use_any</code></p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>Obligations</strong></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>The <a href="../../glossary/#term-Data-Provider">Data Provider</a> chooses the same obligations to be applied to both access
+rules
+<code>oe:org_type in ['local_authority', 'academic'], provider:customer_level == 1 grants oe:use_any requires oe:by</code>
+<code>provider:customer_level &gt;= 2 grants oe:use_any requires oe:by</code></p>
+</td>
+</tr>
+</tbody>
+</table>
 <p><strong>NOTE</strong>: <strong>Scenario 2</strong></p>
 <p>This more complex scenario detailed above involves a combination of properties known to Open Energy (the market
 sector of the <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> - Local Authority, Educational Institution, or Energy Network) along with properties
@@ -1464,64 +1674,80 @@ which are only known to the <a href="../../glossary/#term-Data-Provider">Data Pr
 rules are evaluated within the <a href="../../glossary/#term-Data-Provider">Data Provider</a>, and not externally within Open Energy’s Governance Service, an entity
 which is not aware of any commercial arrangements between the <a href="../../glossary/#term-Data-Provider">Data Provider</a> and <a href="../../glossary/#term-Data-Consumer">Data Consumer</a>.</p>
 <h3 id="scenario-3">Scenario 3</h3>
-<p>| <strong>Dataset</strong></p>
-<pre><code>                                                                                    | Solar panel performance data
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-</code></pre>
-<p>| <strong>Sensitivity class</strong></p>
-<pre><code>                                                                          | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B)
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-</code></pre>
-<p>| <strong>Access control domains</strong></p>
-<pre><code>                                                                     | Use case-based and payment-based access conditions
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-</code></pre>
-<p>| <strong>Access rules</strong></p>
-<pre><code>                                                                               | Two rules are created
-</code></pre>
+<table>
+<tbody>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>Dataset</strong></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Solar panel performance data</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>Sensitivity class</strong></p>
+</td>
+<td colspan="1" rowspan="1">
+<p><a href="../../glossary/#term-Data-sensitivity-class-shared-B">OE-SB</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>Access control domains</strong></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Use case-based and payment-based access conditions</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>Access rules</strong></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Two rules are created:</p>
 <ol>
-<li>
-<p><code>oe_group:plymouth_lct</code> - access to use case participants, here defined as a group <code>lct</code> managed by
-<code>plymouth</code> (the <a href="../../glossary/#term-Identification">ID</a> of a local council organisation) and administered using the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a> facilities</p>
-</li>
-<li>
-<p><code>provider:customer</code> - access to all other Open Energy members if they have a paid account with the <a href="../../glossary/#term-Data-Provider">Data Provider</a></p>
-<pre><code>                                                                                                                                                                                                                                                                                                                                                                                                       |
-</code></pre>
-<p>| <strong>Capability grants</strong></p>
-<pre><code>                                                                      | The [Data Provider](../glossary.md#term-Data-Provider) chooses to apply two different capability grants (dual licences) for the two access rules,
-</code></pre>
-<p>reflecting the fact that their dataset is commercially sensitive, therefore they require payment for its use
-beyond non-profit or development activities.</p>
-</li>
-<li>
-<p><code>oe_group:plymouth_lct grants oe:use_dev, oe:use_noncom</code></p>
-</li>
-<li>
-<p><code>provider:customer grants oe:use_any, oe:redistribute_combined, oe:combine_any, oe:adapt_any</code></p>
-<pre><code>                                                                                                                                                                                                                                                                                                               |
-</code></pre>
-<p>| <strong>Obligations</strong></p>
-<pre><code>                                                                            |
-</code></pre>
+<li><code>oe_group:plymouth_lct</code> - access to use case participants, here defined as a group <code>lct</code> managed by <code>plymouth</code>
+(the <a href="../../glossary/#term-Identification">ID</a> of a local council organisation) and administered using the
+<a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a> facilities</li>
+<li><code>provider:customer</code> - access to all other Open Energy members if they have a paid account with the
+<a href="../../glossary/#term-Data-Provider">Data Provider</a></li>
+</ol>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>Capability grants</strong></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>The <a href="../../glossary/#term-Data-Provider">Data Provider</a> chooses to apply two different capability grants (dual
+licences) for the two access rules, reflecting the fact that their dataset is commercially sensitive, therefore
+they require payment for its use beyond non-profit or development activities.</p>
 <ol>
-<li>The original source of the artefact must be credited in all direct uses, derivatives of the artefact must be
+<li><code>oe_group:plymouth_lct grants oe:use_dev, oe:use_noncom</code></li>
+<li><code>provider:customer grants oe:use_any, oe:redistribute_combined, oe:combine_any, oe:adapt_any</code></li>
+</ol>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>Obligations</strong></p>
+</td>
+<td colspan="1" rowspan="1">
+<ol>
+<li>The original source of the artefact must be credited in all direct uses, derivatives of the artefact must be.
 accompanied by text stating that the original artefact was used in their creation, and derivatives must be
-licensed under the same terms as the original.</li>
-</ol>
-</li>
-</ol>
-<p><code>oe_group:plymouth_lct grants oe:use_dev, oe:use_noncom requires oe:sa, oe:by</code></p>
-<ol>
+licensed under the same terms as the original:
+<code>oe_group:plymouth_lct grants oe:use_dev, oe:use_noncom requires oe:sa, oe:by</code></li>
 <li>The original source of the artefact must be credited in all direct uses, and derivatives of the artefact
 must be accompanied by text stating that the original artefact was used in their creation. There is no
-obligation to license derivatives of the artefact under the same terms as the original.</li>
+obligation to license derivatives of the artefact under the same terms as the original:
+<code>provider:customer grants oe:use_any, oe:redistribute_combined, oe:combine_any, oe:adapt_any requires oe:by</code></li>
 </ol>
-<p><code>provider:customer grants oe:use_any, oe:redistribute_combined, oe:combine_any, oe:adapt_any requires oe:by</code></p>
-<p>|</p>
+</td>
+</tr>
+</tbody>
+</table>
 <h3 id="risks-of-license-proliferation">Risks of license proliferation</h3>
 <p>As outlined in previous consultations, the Open Energy data ecosystem is more complex than Open Banking. We are
 therefore proposing a different approach to licensing in order to balance a wide range of needs and data types. The
@@ -1612,7 +1838,7 @@ inform future service and policy design, alongside consultation activity.</p>
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../before_starting/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Considerations Before You Start" rel="prev">
+        <a href="../before_starting/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Considerations before you start" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1621,7 +1847,7 @@ inform future service and policy design, alongside consultation activity.</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Considerations Before You Start
+              Considerations before you start
             </div>
           </div>
         </a>
