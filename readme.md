@@ -105,3 +105,11 @@ Finally, assuning you were working in `master`, check out `master` again so you 
 ```
 git checkout master
 ```
+## Updating the glossary
+
+The Python script `build_glossary.py` retrieves the glossary from our gdrive and writes it to `docs/glossary.md`. `mkdocs` doesn't have 
+any glossary autobuild capabilities so you will need to add links to defined terms manually in the docs. The `Term` field from the 
+glossary spreadsheet is parsed by the Python script to create an anchor tag on the item in the `glossary.md` file. The ID of the tag is
+the term with punctuation renoved and whitespace replaced by "-". For example "Data sensitivity class - shared (A)" has the tag 
+`Data-sensitivity-class-shared-A` and a link to it would look like 
+`[Data sensitivity class - shared (A)](glossary.md#Data-sensitivity-class-shared-A)`
