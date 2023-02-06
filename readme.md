@@ -4,22 +4,39 @@ build of the technical documentation, including operational guidelines, for the 
 
 ## Viewing the docs
 
-This documentation is rendered at https://docs.icebreakerone.org
+Once released, this documentation will be hosted at https://docs.icebreakerone.org
 
 ## Installation
 
 Building the documentation requires [Python 3](https://www.python.org/) or later.
 
-Activate virtual environment and install Python dependencies
+### Activate virtual environment and install Python dependencies
 
+#### MacOS
 ```
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
+#### Windows
+```
+python -m venv venv
+. venv/Scripts/activate
+pip install -r requirements.txt
+```
 
 ## Local editing and testing
 
+### Activate the virtual environment (only required once)
+
+#### MacOS
+```
+source venv/bin/activate
+```
+#### Windows
+```
+. venv/Scripts/activate
+```
 
 ### Building a local version of the docs
 The documentation uses [mike](https://github.com/jimporter/mike) to manage versioning. This includes a local webserver you can use to test your changes.
@@ -113,3 +130,11 @@ glossary spreadsheet is parsed by the Python script to create an anchor tag on t
 the term with punctuation renoved and whitespace replaced by "-". For example "Data sensitivity class - shared (A)" has the tag 
 `Data-sensitivity-class-shared-A` and a link to it would look like 
 `[Data sensitivity class - shared (A)](glossary.md#Data-sensitivity-class-shared-A)`
+
+### Deactivating the virtual environment
+
+When you've finished editing, you can deactivate the virtual environment, or just close the Terminal window
+
+```
+deactivate
+```
