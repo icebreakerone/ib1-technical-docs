@@ -178,17 +178,13 @@ To operationalise Data Access conditions above, the Trust Framework defines a sy
 A data licence is a legal instrument setting out what a [Data Consumer](../glossary.md#term-Data-Consumer) can do with a particular artefact (e.g.
 dataset). This grants certain ‘capabilities’ to the [Data Consumer](../glossary.md#term-Data-Consumer), comprising a clear expression of things they can do with the artefact. Capability grants are accompanied by any obligations that the [Data Consumer](../glossary.md#term-Data-Consumer) must abide by when exercising a capability. The capabilities and obligations associated with each [API](../glossary.md#term-Application-programming-interface) call will be converted into a licence through the Trust Framework Governance Service ([TFGS](../glossary.md#term-Trust-Framework-Governance-Service)).
 
-[Open Energy](../glossary.md#term-Open-Energy) operates through a range of standardised capability grants and obligations. Standardisation
-includes legal text, ‘human readable’ text and summary notation. [Data Providers](../glossary.md#term-Data-Provider) must specify which capabilities
-and obligations are associated with each access rule, and publish this transparently in the dataset metadata.
+The IB1 Trust Framework operates through a range of standardised capability grants and obligations. Standardisation includes legal text, ‘human readable’ text and summary notation. [Data Providers](../glossary.md#term-Data-Provider) must specify which capabilities and obligations are associated with each access rule, and publish this transparently in the dataset metadata.
 
 ## Future development of the guidelines
 
-This version of the guidelines contains details of operational requirements defined within Phase 3
-(ending 31 July 2021). The guidelines are designed as an iterative document that will develop in
-accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
-guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
+The guidelines are designed as an iterative document that will develop in
+accordance with future phases of the IB1 Trust Framework. If you have any suggestions regarding areas of the operational guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org) TODO check this email.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIzNTAzNzM4LDExNzU0OTE2MjEsMTEyOD
-I4MTI4MF19
+eyJoaXN0b3J5IjpbMTY0MTc0NTkyOCwxMTc1NDkxNjIxLDExMj
+gyODEyODBdfQ==
 -->
