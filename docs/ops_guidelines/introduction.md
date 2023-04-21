@@ -31,20 +31,13 @@ to consider in order to meet operational requirements.
 
 [Guidance for Data Consumers](data_consumer_ops_guidelines.md#guidance-for-data-consumers) and [Guidance for Data Providers](data_provider_ops_guidelines.md#guidance-for-data-providers): guidelines outlining how [Data Providers](../glossary.md#term-Data-Provider) can share data safely and securely via the Trust Framework while retaining strong control, provide appropriate and timely metadata, and design safe and effective [APIs](../glossary.md#term-Application-programming-interface) enabling data-sharing. Guidelines outlining how [Data Consumers](../glossary.md#term-Data-Consumer) can meet the requirements for offering data services, access and licensing conditions for different data classes, and best practice with regards to testing, security, ethics and dispute management.
 
-[Additional Material](../additional_material.md#additional-material): links to other relevant documentation (e.g. technical, legal, etc.) sitting
-outside the operational guidelines.
+[Additional Material](../additional_material.md#additional-material): links to other relevant documentation (e.g. technical, legal, etc.) sitting outside the operational guidelines.
 
-**WARNING**: **Disclaimer**: The contents of the Operational Guidelines do not constitute legal advice. While they have been
-drafted with regard to relevant regulatory provisions and best practice, they are not a complete list of the
-regulatory or legal obligations that apply to members and users of Open Energy. Although intended to be consistent
-with relevant regulations and laws, in the event of any conflict, those regulations and laws will take priority.
-Participants are responsible for their own compliance with all applicable regulations and laws, including but not
-limited to: data protection and privacy, consumer protection laws, and energy sector licences and codes
-(where applicable). The Open Energy operational guidelines will be revised in future in accordance with further
-development of services offered in the ecosystem, or changes to the regulatory and policy environment in which
-it operates. Please ensure that you are referring to the most current version of the guidelines prior to reading.
+**Disclaimer**: The contents of the Operational Guidelines do not constitute legal advice. While they have been drafted with regard to relevant regulatory provisions and best practice, they are not a complete list of the regulatory or legal obligations that apply to members and users of Open Energy. Although intended to be consistent with relevant regulations and laws, in the event of any conflict, those regulations and laws will take priority.
 
-## What is Open Energy, how was it made and who is it for?
+Participants are responsible for their own compliance with all applicable regulations and laws, including but not limited to: data protection and privacy, consumer protection laws, and energy sector licences and codes (where applicable). The IB1 Trust Framework operational guidelines will be revised in future in accordance with further development of services offered in the ecosystem, or changes to the regulatory and policy environment in which it operates. Please ensure that you are referring to the most current version of the guidelines prior to reading.
+
+## What is the Icebreaker One Trust Framework, how was it made and who is it for?
 
 Open Energy is an ambitious, non-profit project working with the energy industry, government and the regulator
 to modernise access to energy data and break down barriers to data sharing. Open Energy makes it easier to
@@ -247,5 +240,5 @@ This version of the guidelines contains details of operational requirements defi
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUxNzk2Mjg2XX0=
+eyJoaXN0b3J5IjpbLTM4MjU4MzgzNF19
 -->
