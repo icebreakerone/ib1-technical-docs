@@ -17,6 +17,7 @@ on this site.
 
 ## Technical
 
+### Deprecated Open Energy information
 
 * [Open Energy Beta Testing Round 2 Onboarding Pack](https://docs.google.com/document/u/0/d/11JCbeoKOKJyYojaw6XERudsYhDajJP53brw5NRGX3eY/edit)
 
@@ -60,5 +61,5 @@ on this site.
 
 * Open Energy email - [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4ODYyMjkyOV19
+eyJoaXN0b3J5IjpbMjExNjgwMzI2MV19
 -->
