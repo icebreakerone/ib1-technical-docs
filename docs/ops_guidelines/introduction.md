@@ -154,16 +154,11 @@ Members of the Trust Framework have different roles: [Data Providers](../glossar
 
 #### Service Providers
 
-[Data Consumers](../glossary.md#term-Data-Consumer) who access data to serve external customers, potentially including customers outside the Open Energy
-ecosystem, are categorised as a specific type of [Data Consumer](../glossary.md#term-Data-Consumer) called a [Service Provider](../glossary.md#term-Service-Provider). See [Data Consumer vs Service Provider](data_consumer_ops_guidelines.md#data-consumer-vs-service-provider).
+[Data Consumers](../glossary.md#term-Data-Consumer) who access data to serve external customers, potentially including customers outside the IB1 Trust Framework, are categorised as a specific type of [Data Consumer](../glossary.md#term-Data-Consumer) called a [Service Provider](../glossary.md#term-Service-Provider). See [Data Consumer vs Service Provider](data_consumer_ops_guidelines.md#data-consumer-vs-service-provider).
 
 ### Dual Roles
 
-Organisations wishing to both provide and access data through the Open Energy ecosystem are able to do so, so long
-as they fulfill the responsibilities of both roles. [Data Providers](../glossary.md#term-Data-Provider) who do not want to register as [Data Consumers](../glossary.md#term-Data-Consumer),
-but who wish to access Open Energy datasets, are able to do so by using the services of a Service Provider (a
-type of [Data Consumer](../glossary.md#term-Data-Consumer) in the Open Energy ecosystem that provides services to customers, potentially including non
-Open Energy members).
+Organisations wishing to both provide and access data through the IB1 Trust Framework are able to do so, so long as they fulfill the responsibilities of both roles. [Data Providers](../glossary.md#term-Data-Provider) who do not want to register as [Data Consumers](../glossary.md#term-Data-Consumer), but who wish to access IB1 Trust Framework datasets, are able to do so by using the services of a Service Provider (a type of [Data Consumer](../glossary.md#term-Data-Consumer) in the IB1 Trust Framework that provides services to customers, potentially including non-Trust Framework members).
 
 ## How does dataset access and licensing operate under Open Energy?
 
@@ -203,6 +198,6 @@ This version of the guidelines contains details of operational requirements defi
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyNzg0Nzk1OSwxMTc1NDkxNjIxLDExMj
+eyJoaXN0b3J5IjpbMTE3MTg2MDY5NCwxMTc1NDkxNjIxLDExMj
 gyODEyODBdfQ==
 -->
