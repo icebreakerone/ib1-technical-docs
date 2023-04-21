@@ -61,20 +61,13 @@ With this said, we would encourage [Data Providers](../glossary.md#term-Data-Pro
 
 ### Responsibility - Metadata provision
 
-[Data Providers](../glossary.md#term-Data-Provider) are responsible for creating, and publishing, metadata for each exposed data set. This provides visibility of each data set within the Open Energy Governance Service ([OEGS](../glossary.md#term-Open-Energy-Governance-Service)) Registry.
+[Data Providers](../glossary.md#term-Data-Provider) are responsible for creating, and publishing, metadata for each exposed data set. This provides visibility of each data set within the Trust Framework Governance Service ([TFGS](../glossary.md#term-Trust-Framework-Governance-Service)) Registry.
 
 The metadata file covers, for each provided data set, whether shared or open:
 
-
 * Semantic content
-
-
 * Access rules and licensing of the data set
-
-
 * Transport mechanism specification
-
-
 * Syntactic content
 
 The content and format of the metadata file can be found at [Data Set Metadata](../metadata.md#data-set-metadata).
@@ -84,9 +77,9 @@ The [Data Provider](../glossary.md#term-Data-Provider) is responsible for the ac
 ### Responsibility - API availability
 
 [Data Providers](../glossary.md#term-Data-Provider) are responsible for availability of their published data [APIs](../glossary.md#term-Application-programming-interface). Availability will be monitored automatically by the
-[OEGS](../glossary.md#term-Open-Energy-Governance-Service), availability information will form part of the metadata for each data set record in the [OEGS](../glossary.md#term-Open-Energy-Governance-Service) Registry.
+[TFGS](../glossary.md#term-Trust-Framework-Governance-Service), availability information will form part of the metadata for each data set record in the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) Registry.
 
-The [OEGS](../glossary.md#term-Open-Energy-Governance-Service) will provide a mechanism for [Data Providers](../glossary.md#term-Data-Provider) to announce scheduled downtime when planned, and to report unscheduled
+The [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) will provide a mechanism for [Data Providers](../glossary.md#term-Data-Provider) to announce scheduled downtime when planned, and to report unscheduled
 downtime when necessary.
 
 ### Responsibility - API stability and change management
@@ -272,5 +265,5 @@ while providing better performance on a newer version).
 [API](../glossary.md#term-Application-programming-interface) Credentials associated with an [API](../glossary.md#term-Application-programming-interface) should be version agnostic. Therefore, a [Data Consumer](../glossary.md#term-Data-Consumer) accessing v1.0, v1.1 or v2.0 should
 be able to use the same [API](../glossary.md#term-Application-programming-interface) Credentials across all available [API](../glossary.md#term-Application-programming-interface) endpoints.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMjAyNzQzNV19
+eyJoaXN0b3J5IjpbMTI5ODU5NTE3NV19
 -->
