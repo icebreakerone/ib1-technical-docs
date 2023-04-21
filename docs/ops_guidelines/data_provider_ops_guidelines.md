@@ -31,29 +31,23 @@ To support this role, [Data Providers](../glossary.md#term-Data-Provider) have c
 
 ### Responsibility - Access and licensing specification
 
-[Data Providers](../glossary.md#term-Data-Provider) are responsible for creating access rules for each dataset shared via the IB1 Trust Frameowkr. For each data set, the [Data Provider](../glossary.md#term-Data-Provider) must
-create a set of one or more access rules as defined in [Data Set Metadata](../metadata.md#data-set-metadata). These rules specify the conditions under which access will be
-granted, along with the capabilities forming the license grant should those conditions be satisfied.
+[Data Providers](../glossary.md#term-Data-Provider) are responsible for creating access rules for each dataset shared via the IB1 Trust Framework. For each data set, the [Data Provider](../glossary.md#term-Data-Provider) must
+create a set of one or more access rules as defined in [Data Set Metadata](../metadata.md#data-set-metadata). These rules specify the conditions under which access will be granted, along with the capabilities forming the license grant should those conditions be satisfied.
 
 
 * [Data Providers](../glossary.md#term-Data-Provider) **MUST** ensure that access conditions and capability grants are non-discriminatory and fair to Data Consumers
 
-
-* [Data Providers](../glossary.md#term-Data-Provider) **SHOULD** ensure that the validity time bounds of any published capability grants are sufficient for
-reasonable commercial operation of a data consumer
+* [Data Providers](../glossary.md#term-Data-Provider) **SHOULD** ensure that the validity time bounds of any published capability grants are sufficient for reasonable commercial operation of a data consumer
 
 ### Responsibility - Data provision
 
-[Data Providers](../glossary.md#term-Data-Provider) are responsible for providing a data [API](../glossary.md#term-Application-programming-interface) for each data set, and for configuring and securing each [API](../glossary.md#term-Application-programming-interface) in accordance
-with the kinds of data it exposes (along with any other access conditions deemed necessary and appropriate by the [Data Provider](../glossary.md#term-Data-Provider)
-on a per-data-set basis)
+[Data Providers](../glossary.md#term-Data-Provider) are responsible for providing a data [API](../glossary.md#term-Application-programming-interface) for each data set, and for configuring and securing each [API](../glossary.md#term-Application-programming-interface) in accordance with the kinds of data it exposes (along with any other access conditions deemed necessary and appropriate by the [Data Provider](../glossary.md#term-Data-Provider) on a per-data-set basis)
 
 
 * Open data **MUST** be made available with no authentication or authorization requirements
 
 
-* Shared data **MUST** made available through a [FAPI](../glossary.md#term-Financial-Grade-API) compliant resource server connected to the [OEGS](../glossary.md#term-Open-Energy-Governance-Service)’s authorization
-service (see [Common Security Requirements](technical_common.md#common-security-requirements) for more details)
+* Shared data **MUST** made available through a [FAPI](../glossary.md#term-Financial-Grade-API) compliant resource server connected to the [TFGS](../glossary.md#term-Open-Energy-Governance-Service)’s authorization service (see [Common Security Requirements](technical_common.md#common-security-requirements) for more details)
 
 #### Data formats
 
@@ -285,5 +279,5 @@ while providing better performance on a newer version).
 [API](../glossary.md#term-Application-programming-interface) Credentials associated with an [API](../glossary.md#term-Application-programming-interface) should be version agnostic. Therefore, a [Data Consumer](../glossary.md#term-Data-Consumer) accessing v1.0, v1.1 or v2.0 should
 be able to use the same [API](../glossary.md#term-Application-programming-interface) Credentials across all available [API](../glossary.md#term-Application-programming-interface) endpoints.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDU4MDk4NTNdfQ==
+eyJoaXN0b3J5IjpbLTM2NzUwNzcxOV19
 -->
