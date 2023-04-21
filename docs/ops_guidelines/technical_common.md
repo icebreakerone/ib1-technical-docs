@@ -1,8 +1,6 @@
 # Common Security Requirements
 
-**NOTE**: The key words **“MUST”**, **“MUST NOT”**, **“REQUIRED”**, **“SHALL”**, **“SHALL NOT”**, **“SHOULD”**,
-**“SHOULD NOT”**, **“RECOMMENDED”**, **“MAY”**, and **“OPTIONAL”** in this document are to be interpreted
-as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
+**NOTE**: The key words **“MUST”**, **“MUST NOT”**, **“REQUIRED”**, **“SHALL”**, **“SHALL NOT”**, **“SHOULD”**, **“SHOULD NOT”**, **“RECOMMENDED”**, **“MAY”**, and **“OPTIONAL”** in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
 The Icebreaker One (IB1) Trust Framework defines a security and trust model for shared data [APIs](../glossary.md#term-Application-programming-interface). Three parties are involved in each shared data request:
 
@@ -10,8 +8,7 @@ The Icebreaker One (IB1) Trust Framework defines a security and trust model for 
 1. The [Data Consumer](../glossary.md#term-Data-Consumer) wishing to access the [shared data](../glossary.md#term-Shared-data) [API](../glossary.md#term-Application-programming-interface)
 
 
-2. The [authorization](../glossary.md#term-Authorization) server, as part of the governance service ([TFGS](../glossary.md#term-Trust-Framework-Governance-Service)), with knowledge about the
-[Data Consumer](../glossary.md#term-Data-Consumer) as represented by an organisation account within the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service)
+2. The [authorization](../glossary.md#term-Authorization) server, as part of the governance service ([TFGS](../glossary.md#term-Trust-Framework-Governance-Service)), with knowledge about the [Data Consumer](../glossary.md#term-Data-Consumer) as represented by an organisation account within the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service)
 
 
 3. The [Data Provider](../glossary.md#term-Data-Provider) responsible for supplying shared data through its shared data [API](../glossary.md#term-Application-programming-interface)
@@ -41,11 +38,9 @@ e.g. `token_endpoint` refer to properties discoverable in this fashion.
 
 ## Token acquisition
 
-In order to access a shared data [API](../glossary.md#term-Application-programming-interface), a [Data Consumer](../glossary.md#term-Data-Consumer) must first acquire an access token. This is done by sending an
-[HTTP](../glossary.md#term-HypterText-Transfer-Protocol) request to the authorization server (part of the [OEGS](../glossary.md#term-Open-Energy-Governance-Service)). The [Data Consumer](../glossary.md#term-Data-Consumer) **MUST**:
+In order to access a shared data [API](../glossary.md#term-Application-programming-interface), a [Data Consumer](../glossary.md#term-Data-Consumer) must first acquire an access token. This is done by sending an [HTTP](../glossary.md#term-HypterText-Transfer-Protocol) request to the authorization server (part of the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service)). The [Data Consumer](../glossary.md#term-Data-Consumer) **MUST**:
 
-
-* Use Mutual [TLS](../glossary.md#term-Transport-Layer-Security), presenting a client certificate when requested. This is the `tls_client_auth` authentication method
+* Use [MTLS](../glossary.md#term-Mutual-Transport-Layer-Security), presenting a client certificate when requested. This is the `tls_client_auth` authentication method
 described in section 2 of [RFC8705](../glossary.md#term-OAuth-2.0-Mutual-TLS-Client-Authentication-and-Certificate-Bound-Access-Tokens).
 
 > 
@@ -240,5 +235,5 @@ More information on the Open Energy specific access control language can be foun
 [Access Control and Capability Grant Language](../access_control_specification.md#access-control-and-capability-grant-language), and its expression in the metadata file at [Data Set Metadata](../metadata.md#data-set-metadata) in the
 [Access Block](../metadata.md#access-block) section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjYyMDI4NDddfQ==
+eyJoaXN0b3J5IjpbLTg5MTkwNjkzMV19
 -->
