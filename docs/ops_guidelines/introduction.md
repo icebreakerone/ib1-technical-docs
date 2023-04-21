@@ -1,17 +1,13 @@
-# Introduction to Open Energy
+# Introduction to the Icebreaker One Trust Framework
 
 ## Overview and purpose of the guidelines
 
-The [Open Energy](../glossary.md#term-Open-Energy) operational guidelines aim to provide practical advice to all types of actors participating in
-the [Open Energy](../glossary.md#term-Open-Energy) ecosystem. The guidelines are supplemented by links to more detailed technical and membership
-documentation.
+These operational guidelines aim to provide practical advice to all types of actors participating in the Icebreaker One (IB1) Trust Framework ecosystem. The guidelines are supplemented by links to more detailed technical and membership documentation.
 
 Overarching aims of these operational guidelines:
 
-
-* To deliver a safe and effective Open Energy ecosystem that meets the needs of members and supports the broader
+* To deliver a safe and effective Trust Framework ecosystem that meets the needs of members and supports the broader
 sector transition to Net Zero by enabling better discovery and sharing of data via a robust trust framework.
-
 
 * To support the operational requirements of [Data Providers](../glossary.md#term-Data-Provider) and [Data Consumers](../glossary.md#term-Data-Consumer), stimulating an active Open Energy
 ecosystem. This includes ensuring that all members understand the sensitivity classes, access, and licensing models
@@ -269,3 +265,6 @@ This version of the guidelines contains details of operational requirements defi
 (ending 31 July 2021). The guidelines are designed as an iterative document that will develop in
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTA5MTg0MzIwMF19
+-->
