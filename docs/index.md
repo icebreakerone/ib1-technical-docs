@@ -1,17 +1,17 @@
 # Icebreaker One Trust Framework Technical Documentation
 
-Technical documentation for the [IcebreakerOne](https://icebreakerone.org) [Trust Framework](https://icebreakerone.org/).
+Technical documentation for the [IcebreakerOne](https://icebreakerone.org) [Trust Framework](https://icebreakerone.org/ib1-trust-framework-for-data-sharing/).
 
 ## Contents
 
 
-* [Introduction to Open Energy](ops_guidelines/introduction.md)
+* [Introduction to the Trust Framework](ops_guidelines/introduction.md)
 
 
     * [Overview and purpose of the guidelines](ops_guidelines/introduction.md#overview-and-purpose-of-the-guidelines)
 
 
-    * [What is Open Energy, how was it made and who is it for?](ops_guidelines/introduction.md#what-is-open-energy-how-was-it-made-and-who-is-it-for)
+    * [What is a Trust Framework, how was it made and who is it for?](ops_guidelines/introduction.md#what-is-open-energy-how-was-it-made-and-who-is-it-for)
 
 
     * [How is Open Energy Structured?](ops_guidelines/introduction.md#how-is-open-energy-structured)
@@ -454,5 +454,5 @@ Technical documentation for the [IcebreakerOne](https://icebreakerone.org) [Trus
 
     * [Engagement](additional_material.md#engagement)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNzA1MDA0NV19
+eyJoaXN0b3J5IjpbLTEzNDc1NzY1ODZdfQ==
 -->
