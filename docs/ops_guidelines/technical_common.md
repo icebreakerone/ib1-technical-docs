@@ -40,19 +40,13 @@ e.g. `token_endpoint` refer to properties discoverable in this fashion.
 
 In order to access a shared data [API](../glossary.md#term-Application-programming-interface), a [Data Consumer](../glossary.md#term-Data-Consumer) must first acquire an access token. This is done by sending an [HTTP](../glossary.md#term-HypterText-Transfer-Protocol) request to the authorization server (part of the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service)). The [Data Consumer](../glossary.md#term-Data-Consumer) **MUST**:
 
-* Use [MTLS](../glossary.md#term-Mutual-Transport-Layer-Security), presenting a client certificate when requested. This is the `tls_client_auth` authentication method
-described in section 2 of [RFC8705](../glossary.md#term-OAuth-2.0-Mutual-TLS-Client-Authentication-and-Certificate-Bound-Access-Tokens).
+* Use [MTLS](../glossary.md#term-Mutual-Transport-Layer-Security), presenting a client certificate when requested. This is the `tls_client_auth` authentication method described in section 2 of [RFC8705](../glossary.md#term-OAuth-2.0-Mutual-TLS-Client-Authentication-and-Certificate-Bound-Access-Tokens).
 
-> 
->     * In our implementation, this certificate is acquired by creating a `transport certificate` in a
-> `software statement` within the [OEGS](../glossary.md#term-Open-Energy-Governance-Service) directory
-
+     * In our implementation, this certificate is acquired by creating a `transport certificate` in a `software statement` within the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) directory
 
 * Use the `client_credentials` grant type
 
-
-* Send a `POST` request to the `token_endpoint` of the authorization server containing the following properties
-as `application/x-www-form-urlencoded` key / value pairs:
+* Send a `POST` request to the `token_endpoint` of the authorization server containing the following properties as `application/x-www-form-urlencoded` key / value pairs:
 
 ```default
 client_id : <CLIENT_ID>
@@ -235,5 +229,5 @@ More information on the Open Energy specific access control language can be foun
 [Access Control and Capability Grant Language](../access_control_specification.md#access-control-and-capability-grant-language), and its expression in the metadata file at [Data Set Metadata](../metadata.md#data-set-metadata) in the
 [Access Block](../metadata.md#access-block) section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MTkwNjkzMV19
+eyJoaXN0b3J5IjpbMTA5NjEwNDA0N119
 -->
