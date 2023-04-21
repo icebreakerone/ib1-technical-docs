@@ -118,19 +118,15 @@ Protected data endpoints **MAY** use the token introspection mechanism provided 
 
 All data [APIs](../glossary.md#term-Application-programming-interface) **SHOULD** include a [FAPI](../glossary.md#term-Financial-Grade-API) protected heartbeat infrastructure endpoint. This serves two purposes:
 
-
-* It allows the [OEGS](../glossary.md#term-Open-Energy-Governance-Service) to monitor the liveness of the data [API](../glossary.md#term-Application-programming-interface)
-
+* It allows the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) to monitor the liveness of the data [API](../glossary.md#term-Application-programming-interface)
 
 * It provides some level of verification that the resource server has been correctly configured
 
-The heartbeat endpoint location is defined within the data set metadata file, if specified it **MUST** respond to
-`GET` requests from the [OEGS](../glossary.md#term-Open-Energy-Governance-Service) monitoring system with a `200` status code.
+The heartbeat endpoint location is defined within the data set metadata file, if specified it **MUST** respond to `GET` requests from the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) monitoring system with a `200` status code.
 
-If the heartbeat response contains a body, the body will be interpreted by the [OEGS](../glossary.md#term-Open-Energy-Governance-Service) monitoring system as a [JSON](../glossary.md#term-Javascript-Object-Notation)
-dictionary containing statistics for the period between the most recent two successful calls to the heartbeat
-endpoint (including the call to which this is a response). This response is **RECOMMENDED** as it provides oversight
-of [API](../glossary.md#term-Application-programming-interface) usage to the [OEGS](../glossary.md#term-Open-Energy-Governance-Service).
+If the heartbeat response contains a body, the body will be interpreted by the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) monitoring system as a [JSON](../glossary.md#term-Javascript-Object-Notation)
+dictionary containing statistics for the period between the most recent two successful calls to the heartbeat endpoint (including the call to which this is a response). This response is **RECOMMENDED** as it provides oversight
+of [API](../glossary.md#term-Application-programming-interface) usage to the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service).
 
 Legal keys, and the semantics of their associated values, are as follows:
 
@@ -251,5 +247,5 @@ while providing better performance on a newer version).
 [API](../glossary.md#term-Application-programming-interface) Credentials associated with an [API](../glossary.md#term-Application-programming-interface) should be version agnostic. Therefore, a [Data Consumer](../glossary.md#term-Data-Consumer) accessing v1.0, v1.1 or v2.0 should
 be able to use the same [API](../glossary.md#term-Application-programming-interface) Credentials across all available [API](../glossary.md#term-Application-programming-interface) endpoints.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMDY2NTQyOF19
+eyJoaXN0b3J5IjpbLTE0MTc1NDQ0XX0=
 -->
