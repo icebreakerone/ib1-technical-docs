@@ -13,7 +13,7 @@ on this site.
 
 ## Search Related
 
-* [Open Energy Search](http://openenergy.org.uk)
+* [Open Net Zero Search](https://opennetzero.org)
 
 ## Technical
 
@@ -59,3 +59,6 @@ on this site.
 
 
 * Open Energy email - [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTg4ODYyMjkyOV19
+-->
