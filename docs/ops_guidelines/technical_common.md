@@ -40,7 +40,7 @@ e.g. `token_endpoint` refer to properties discoverable in this fashion.
 
 In order to access a shared data [API](../glossary.md#term-Application-programming-interface), a [Data Consumer](../glossary.md#term-Data-Consumer) must first acquire an access token. This is done by sending an [HTTP](../glossary.md#term-HypterText-Transfer-Protocol) request to the authorization server (part of the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service)). The [Data Consumer](../glossary.md#term-Data-Consumer) **MUST**:
 
-* Use [MTLS](../glossary.md#term-Mutual-Transport-Layer-Security), presenting a client certificate when requested. This is the `tls_client_auth` authentication method described in section 2 of [RFC8705](../glossary.md#term-OAuth-2.0-Mutual-TLS-Client-Authentication-and-Certificate-Bound-Access-Tokens).
+* Use [MTLS](../glossary.md#term-Mutual-TLS-authentication), presenting a client certificate when requested. This is the `tls_client_auth` authentication method described in section 2 of [RFC8705](../glossary.md#term-OAuth-2.0-Mutual-TLS-Client-Authentication-and-Certificate-Bound-Access-Tokens).
 
      * In our implementation, this certificate is acquired by creating a `transport certificate` in a `software statement` within the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) directory
 
@@ -67,8 +67,7 @@ A successful call to the `token_endpoint` is indicated by a `200` response code,
 
 To call a shared data [API](../glossary.md#term-Application-programming-interface) within a [Data Provider](../glossary.md#term-Data-Provider), the [Data Consumer](../glossary.md#term-Data-Consumer) MUST:
 
-* Use [MTLS](../glossary.md#term-Mutual-Transport-Layer-Security) as previously described
-
+* Use [MTLS](../glossary.md#term-Mutual-TLS-authentication) as previously described
 
 * Pass the previously acquired bearer token in an [HTTP](../glossary.md#term-HypterText-Transfer-Protocol) header:
 
@@ -78,29 +77,23 @@ Authorization: Bearer <TOKEN>
 
 In addition, the [Data Consumer](../glossary.md#term-Data-Consumer) **SHOULD**:
 
-
 * Specify an interaction [ID](../glossary.md#term-Identification) for this call in an [HTTP](../glossary.md#term-HypterText-Transfer-Protocol) header:
 
 ```default
 x-fapi-interaction-id: <UUID>
 ```
 
-This allows for tracking of transactions between clients and resource servers, aiding troubleshooting. We use a [UUID4](../glossary.md#term-Universally-unique-identififer-v4)
-in our reference implementation
+This allows for tracking of transactions between clients and resource servers, aiding troubleshooting. We use a [UUID4](../glossary.md#term-Universally-unique-identififer-v4) in our reference implementation
 
 ## Request validation
 
 To participate in the Open Energy ecosystem, a [Data Provider](../glossary.md#term-Data-Provider) **MUST**:
 
-
 * Expose an [HTTPS](../glossary.md#term-Secure-HTTP) [API](../glossary.md#term-Application-programming-interface)
-
 
 * Perform validation on any requests to this [API](../glossary.md#term-Application-programming-interface)
 
-
-    * Reject any requests which do not present a valid client certificate. Client certificates are validated in the
-context of the root CAs provided by the [OEGS](../glossary.md#term-Open-Energy-Governance-Service) directory.
+    * Reject any requests which do not present a valid client certificate. Client certificates are validated in the context of the root CAs provided by the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) directory.
 
 
     * Reject any requests which do not provide an `Authorization` header containing a `Bearer` token as described
@@ -223,5 +216,5 @@ More information on the Open Energy specific access control language can be foun
 [Access Control and Capability Grant Language](../access_control_specification.md#access-control-and-capability-grant-language), and its expression in the metadata file at [Data Set Metadata](../metadata.md#data-set-metadata) in the
 [Access Block](../metadata.md#access-block) section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNjMxODE2MF19
+eyJoaXN0b3J5IjpbMTIwNzc4MTc0XX0=
 -->
