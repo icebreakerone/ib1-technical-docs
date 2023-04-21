@@ -118,8 +118,7 @@ client_id: <CLIENT_ID>
 
 ### Introspection response validation
 
-The response body of this introspection call contains a [JSON](../glossary.md#term-Javascript-Object-Notation) object with information about the entity which requested
-the supplied token from the authorization server, as well as properties of the token itself. An example introspection
+The response body of this introspection call contains a [JSON](../glossary.md#term-Javascript-Object-Notation) object with information about the entity which requested the supplied token from the authorization server, as well as properties of the token itself. An example introspection
 response is shown below:
 
 ```json
@@ -140,7 +139,7 @@ response is shown below:
   "client_id": "kZuAsn7UyZ98Wwh29hDpf",
   "exp": 1626279245,
   "iat": 1626278645,
-  "iss": "https://auth.directory.energydata.org.uk",
+  "iss": "https://auth.directory.sandbox.trust.icebreakerone.org",
   "scope": "directory:software",
   "cnf": {
     "x5t#S256": "rP_-9u3ZyVo4ryQxg-bn4rr6gJGNu1dTowEeppOuIt8"
@@ -149,13 +148,11 @@ response is shown below:
 }
 ```
 
-The following elements of the introspection response **MUST** be validated further before any Open Energy specific
-processing is performed:
+The following elements of the introspection response **MUST** be validated further before any Open Energy specific processing is performed:
 
 #### active
 
-If the introspection response does not contain the key `active`, or the value of this key is anything other than the
-boolean `true` value, the [Data Provider](../glossary.md#term-Data-Provider) **MUST** reject the request and cease further processing.
+If the introspection response does not contain the key `active`, or the value of this key is anything other than the boolean `true` value, the [Data Provider](../glossary.md#term-Data-Provider) **MUST** reject the request and cease further processing.
 
 If the `active` key was not present, it **SHOULD** respond with `400 invalid_request`
 
@@ -163,21 +160,15 @@ If the `active` key was present but not `true` it **SHOULD** respond with `401 i
 
 #### time ranges
 
-If the introspection response contains `iat` this is interpreted as a number of seconds since the epoch at which the
-token was issued. If this is in the future the [Data Provider](../glossary.md#term-Data-Provider) **MUST** reject the request and cease further processing. It
-SHOULD respond with a `401 invalid_token`.
+If the introspection response contains `iat` this is interpreted as a number of seconds since the epoch at which the token was issued. If this is in the future the [Data Provider](../glossary.md#term-Data-Provider) **MUST** reject the request and cease further processing. It SHOULD respond with a `401 invalid_token`.
 
-**NOTE**: The [Data Provider](../glossary.md#term-Data-Provider) **SHOULD** allow for a reasonable degree of clock skew when interpreting the `iat` timestamp, an
-allowance of no more than 10 seconds should cover all reasonable cases.
+**NOTE**: The [Data Provider](../glossary.md#term-Data-Provider) **SHOULD** allow for a reasonable degree of clock skew when interpreting the `iat` timestamp, an allowance of no more than 10 seconds should cover all reasonable cases.
 
-If the introspection response contains `exp` this is interpreted as a number of seconds since the epoch after which
-the token should be considered invalid. If this is in the past, the [Data Provider](../glossary.md#term-Data-Provider) **MUST** reject the request and cease
-further processing. It **SHOULD** respond with a `401 invalid_token`
+If the introspection response contains `exp` this is interpreted as a number of seconds since the epoch after which the token should be considered invalid. If this is in the past, the [Data Provider](../glossary.md#term-Data-Provider) **MUST** reject the request and cease further processing. It **SHOULD** respond with a `401 invalid_token`
 
 #### certificate thumbprint
 
-Open Energy uses certificate pinning combined with MTLS on all requests between [Data Consumers](../glossary.md#term-Data-Consumer) and [Data Providers](../glossary.md#term-Data-Provider). This
-ensures that a token issued to one client cannot be re-used by another client. [Data Providers](../glossary.md#term-Data-Provider) **MUST** check that the
+Open Energy uses certificate pinning combined with MTLS on all requests between [Data Consumers](../glossary.md#term-Data-Consumer) and [Data Providers](../glossary.md#term-Data-Provider). This ensures that a token issued to one client cannot be re-used by another client. [Data Providers](../glossary.md#term-Data-Provider) **MUST** check that the
 thumbprint of the presented client certificate matches that provided within the introspection response.
 
 The introspection response contains the SHA256 thumbprint of the certificate used to acquire the token as a nested
@@ -208,5 +199,5 @@ More information on the Open Energy specific access control language can be foun
 [Access Control and Capability Grant Language](../access_control_specification.md#access-control-and-capability-grant-language), and its expression in the metadata file at [Data Set Metadata](../metadata.md#data-set-metadata) in the
 [Access Block](../metadata.md#access-block) section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMjU3ODM2NF19
+eyJoaXN0b3J5IjpbMzcwOTA3NjBdfQ==
 -->
