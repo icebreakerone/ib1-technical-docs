@@ -42,16 +42,13 @@ Participants are responsible for their own compliance with all applicable regula
 The Icebreaker One (IB1) Trust Framework is an ambitious, non-profit project working with across industry, finance, government and regulators to modernise access to data and break down barriers to data sharing. The Trust Framework makes it easier to
 discover, share, access and use datasets, supporting the drive towards decarbonisation and its related social and economic benefits.
 
-Open Energy received initial development funding from the Modernising Energy Data Access competition, backed by
+The Trust Framework is a generalisation of the Open Energy project, which received initial development funding from the Modernising Energy Data Access competition, backed by
 the Office for Gas and Electricity Markets (Ofgem), the Department for Business, Energy and Industrial Strategy
-([BEIS](../glossary.md#term-Department-for-Business-Energy-and-Industrial-Strategy)), and [Innovate UK](https://www.gov.uk/government/organisations/innovate-uk). The project has built on
-learning from Open Banking - identifying which elements are
-transferable to the energy sector, and which require adaptation or fresh thinking. Throughout this process, the
-Open Energy team has engaged in extensive consultation with the energy sector, in order to ensure that the project
-meets the widest possible variety of needs. The ethos of Open Energy will remain grounded in sector engagement
-and a collaborative approach as the project moves forward.
+([BEIS](../glossary.md#term-Department-for-Business-Energy-and-Industrial-Strategy)), and [Innovate UK](https://www.gov.uk/government/organisations/innovate-uk). Open Energy in turn built on learning from Open Banking - identifying which elements are transferable to the energy sector, and which require adaptation or fresh thinking. 
 
-Open Energy aims to serve all actors in the energy sector, and appropriate parts of allied sectors, who are looking
+Throughout this process, the Icebreaker One team has engaged in extensive consultation with all sectors involved, in order to ensure that the project meets the widest possible variety of needs. The ethos of the IB1 Trust Framework will remain grounded in sector engagement and a collaborative approach as the project moves forward.
+
+The IB1 Trust Fra aims to serve all actors in the energy sector, and appropriate parts of allied sectors, who are looking
 to share data, access data, or both. Membership is open to a wide range of organisations - from large corporations
 through to charities, researchers, or community groups. Both [Open](../glossary.md#term-Open-data): and [Shared Data](../glossary.md#term-Shared-data) can
 flow within the Open Energy ecosystem.
@@ -238,5 +235,5 @@ This version of the guidelines contains details of operational requirements defi
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0NTIxMzk2NF19
+eyJoaXN0b3J5IjpbMTM2NzQ4MDYyN119
 -->
