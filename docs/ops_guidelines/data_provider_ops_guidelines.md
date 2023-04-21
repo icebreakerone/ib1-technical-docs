@@ -1,23 +1,15 @@
 # Guidance for Data Providers
 
-**NOTE**: This document is primarily intended for technical and operations teams within organisations wishing
-to participate in Open Energy as [Data Providers](../glossary.md#term-Data-Provider).
+**NOTE**: This document is primarily intended for technical and operations teams within organisations wishing to participate in the IB1 Trust Framework as [Data Providers](../glossary.md#term-Data-Provider).
 
-**NOTE**: The key words **“MUST”**, **“MUST NOT”**, **“REQUIRED”**, **“SHALL”**, **“SHALL NOT”**, **“SHOULD”**,
-**“SHOULD NOT”**, **“RECOMMENDED”**, **“MAY”**, and **“OPTIONAL”** in this document are to be interpreted
-as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
+**NOTE**: The key words **“MUST”**, **“MUST NOT”**, **“REQUIRED”**, **“SHALL”**, **“SHALL NOT”**, **“SHOULD”**, **“SHOULD NOT”**, **“RECOMMENDED”**, **“MAY”**, and **“OPTIONAL”** in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
 ## Data Provider Role and Responsibilities
 
-[Data Providers](../glossary.md#term-Data-Provider) are Open Energy members which make data sets available to:
+[Data Providers](../glossary.md#term-Data-Provider) are IB1 Trust Framework members which make data sets available to:
 
-
-* [Data Consumers](../glossary.md#term-Data-Consumer) within the Open Energy ecosystem
-
-
+* [Data Consumers](../glossary.md#term-Data-Consumer) within the Trust Framework
     * Applies to shared data sets
-
-
     * Data [APIs](../glossary.md#term-Application-programming-interface) secured using Financial-grade [API](../glossary.md#term-Application-programming-interface) security ([FAPI](../glossary.md#term-Financial-Grade-API))
 
 
@@ -302,3 +294,6 @@ while providing better performance on a newer version).
 
 [API](../glossary.md#term-Application-programming-interface) Credentials associated with an [API](../glossary.md#term-Application-programming-interface) should be version agnostic. Therefore, a [Data Consumer](../glossary.md#term-Data-Consumer) accessing v1.0, v1.1 or v2.0 should
 be able to use the same [API](../glossary.md#term-Application-programming-interface) Credentials across all available [API](../glossary.md#term-Application-programming-interface) endpoints.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNTIwNjA5ODg0XX0=
+-->
