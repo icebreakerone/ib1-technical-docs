@@ -86,13 +86,12 @@ Agree data needs that represent **materiality** of the challenge area that can b
   
 Develop the **business, value and impact cases** for the programme and its impact on policy targets, businesses and financial instruments. Where relevant, identify relevant net zero **reporting** standards and frameworks.
 
-#### Technical infrastructure
+#### Technical infrastructure Advisory Group
+Agree **technical data and metadata standards** for publishing data, including machine-readable standards and data access (e.g. APIs).
+ 
+Operational **technical systems** that enable data sharing (trust framework) and processing (e.g. calculation).
 
-
-The membership of these groups was designed to represent a range of different types of organisations in the
-energy sector, and broader digital sector where relevant. Open Energy is guided by our principle of
-‘by the sector, for the sector’ and we will review our governance beyond Phase 3 to ensure we continue to align
-with this principle. Open Energy members can apply to join the Advisory and Steering Groups. However, membership
+The membership of these groups is designed to represent a range of different types of organisations, and broader digital sector where relevant. Icebreaker One is guided by our principle of. Open Energy members can apply to join the Advisory and Steering Groups. However, membership
 of these groups will not be restricted to members only and non-members may be invited to join in order to balance
 representation. If you are interested in participating in future Open Energy governance mechanisms please contact
 [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
@@ -219,6 +218,6 @@ This version of the guidelines contains details of operational requirements defi
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIzODI3MTg3LDExNzU0OTE2MjEsMTEyOD
+eyJoaXN0b3J5IjpbNzAwMjYxNTIzLDExNzU0OTE2MjEsMTEyOD
 I4MTI4MF19
 -->
