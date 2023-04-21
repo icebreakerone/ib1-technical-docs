@@ -74,7 +74,7 @@ For providers of Shared data, the Governance Service offers a secure and effecti
 Service provides a mechanism to reduce friction and bilateral contract negotiation, even when requesting access to multiple datasets from different providers.
 
 ### Project Governance
-The IB1 Trust Framework sets the "rules of the road" for 
+The IB1 Trust Framework, and Trust Frameworks that build upon it, have a Steering Group and, ideally, five Advisory Groups to ensure that the market value of the Trust Framework is being delivered.
 
 **Steering Group**: Provide governance, strategic and tactical leadership, and oversee market-wide communications. Appoint and direct Advisory Groups. Discuss, review and ratify plans.
 
@@ -217,6 +217,6 @@ This version of the guidelines contains details of operational requirements defi
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDMyNDEwMDUsMTE3NTQ5MTYyMSwxMT
-I4MjgxMjgwXX0=
+eyJoaXN0b3J5IjpbLTMxMDUwNzEzMywxMTc1NDkxNjIxLDExMj
+gyODEyODBdfQ==
 -->
