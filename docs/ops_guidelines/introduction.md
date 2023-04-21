@@ -64,8 +64,7 @@ specifically to search for datasets, with options to search by different paramet
 
 It can also be used to discover datasets adjacent to searches; helping users to build up a more rounded picture of the net-zero data landscape in their sphere of interest. Open Net Zero is free, available to all, and will remain so. Access pathways to Open and Shared data are described in the following section.
 
-Datasets provided by IB1 Trust Framework members ([Data Providers](../glossary.md#term-Data-Provider)) and non-Trust Framework members (e.g. web scraped Open Data) may both be visible in Open Net Zero. Datasets provided by an Open Energy member will be demarcated with a
-green tick to indicate that the provenance of the dataset has been verified, uptime is monitored, documentation
+Datasets provided by IB1 Trust Framework members ([Data Providers](../glossary.md#term-Data-Provider)) and non-Trust Framework members (e.g. web scraped Open Data) may both be visible in Open Net Zero. Datasets provided by an Icebreaker One member will be marked with a green tick to indicate that the provenance of the dataset has been verified, uptime is monitored, documentation
 format is known, and users have a mechanism to provide feedback on the dataset if issues are detected. (Please
 note that this does not indicate that Open Energy has carried out further, more extensive checks on data quality
 within members’ datasets.)
@@ -228,5 +227,5 @@ This version of the guidelines contains details of operational requirements defi
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyODI4MTI4MF19
+eyJoaXN0b3J5IjpbLTE3NDc0NjQxNzksMTEyODI4MTI4MF19
 -->
