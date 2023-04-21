@@ -100,24 +100,19 @@ We refer to endpoints used to retrieve data as data endpoints, and others as inf
 
 ### Date and time formats
 
-Whenever date or time quantities are accepted or returned from a data [API](../glossary.md#term-Application-programming-interface), these values MUST conform to
-[|RFC| 3339](https://tools.ietf.org/html/rfc3339). This is referenced elsewhere in this document as **date/time**
+Whenever date or time quantities are accepted or returned from a data [API](../glossary.md#term-Application-programming-interface), these values MUST conform to [|RFC| 3339](https://tools.ietf.org/html/rfc3339). This is referenced elsewhere in this document as **date/time**
 
 ### Endpoint security
 
 #### Open data endpoints
 
-Data endpoints which provide access to open data (in class [OE-O](../glossary.md#term-Data-sensitivity-class-open)) **MUST NOT** require any form of authentication
-prior to access. This includes allowing access to entities which are not members of the open energy ecosystem.
+Data endpoints which provide access to open data (in class [IB1-O](../glossary.md#term-Data-sensitivity-class-open)) **MUST NOT** require any form of authentication prior to access. This includes allowing access to entities which are not members of the open energy ecosystem.
 
 #### Shared data endpoints
 
-Data endpoints which provide access to shared data (in classes [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A) and [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B)) **MUST** implement the subset
-of the resource server part of the [FAPI](../glossary.md#term-Financial-Grade-API) specification used within Open Energy as described in
-[Common Security Requirements](technical_common.md#common-security-requirements), and authorize against the [OEGS](../glossary.md#term-Open-Energy-Governance-Service) authorization service.
+Data endpoints which provide access to shared data (in classes [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A) and [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B)) **MUST** implement the subset of the resource server part of the [FAPI](../glossary.md#term-Financial-Grade-API) specification used within the IB1 Trust Framework as described in [Common Security Requirements](technical_common.md#common-security-requirements), and authorize against the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) authorization service.
 
-Protected data endpoints **MAY** use the token introspection mechanism provided by [FAPI](../glossary.md#term-Financial-Grade-API) to gather additional
-information about the client making the request prior to any access decision.
+Protected data endpoints **MAY** use the token introspection mechanism provided by [FAPI](../glossary.md#term-Financial-Grade-API) to gather additional information about the client making the request prior to any access decision.
 
 ### Heartbeat and monitoring endpoint
 
@@ -256,5 +251,5 @@ while providing better performance on a newer version).
 [API](../glossary.md#term-Application-programming-interface) Credentials associated with an [API](../glossary.md#term-Application-programming-interface) should be version agnostic. Therefore, a [Data Consumer](../glossary.md#term-Data-Consumer) accessing v1.0, v1.1 or v2.0 should
 be able to use the same [API](../glossary.md#term-Application-programming-interface) Credentials across all available [API](../glossary.md#term-Application-programming-interface) endpoints.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzQ0MzczODNdfQ==
+eyJoaXN0b3J5IjpbLTgwMDY2NTQyOF19
 -->
