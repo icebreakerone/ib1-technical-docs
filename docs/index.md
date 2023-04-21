@@ -176,7 +176,7 @@ Technical documentation for the [IcebreakerOne](https://icebreakerone.org) (IB1)
         * [Dispute resolution for access control and capability grant policies](ops_guidelines/data_consumer_ops_guidelines.md#dispute-resolution-for-access-control-and-capability-grant-policies)
 
 
-        * [OEGS support](ops_guidelines/data_consumer_ops_guidelines.md#oegs-support)
+        * [OEGS support CHECK](ops_guidelines/data_consumer_ops_guidelines.md#oegs-support)
 
 
 * [Guidance for Data Providers](ops_guidelines/data_provider_ops_guidelines.md)
@@ -454,5 +454,5 @@ Technical documentation for the [IcebreakerOne](https://icebreakerone.org) (IB1)
 
     * [Engagement](additional_material.md#engagement)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzcxMjE0Mjg3XX0=
+eyJoaXN0b3J5IjpbNzUzNjY4NTY3LDM3MTIxNDI4N119
 -->
