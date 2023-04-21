@@ -48,14 +48,13 @@ the Office for Gas and Electricity Markets (Ofgem), the Department for Business,
 
 Throughout this process, the Icebreaker One team has engaged in extensive consultation with all sectors involved, in order to ensure that the project meets the widest possible variety of needs. The ethos of the IB1 Trust Framework will remain grounded in sector engagement and a collaborative approach as the project moves forward.
 
-The IB1 Trust Fra aims to serve all actors in the energy sector, and appropriate parts of allied sectors, who are looking
-to share data, access data, or both. Membership is open to a wide range of organisations - from large corporations
-through to charities, researchers, or community groups. Both [Open](../glossary.md#term-Open-data): and [Shared Data](../glossary.md#term-Shared-data) can
-flow within the Open Energy ecosystem.
+The IB1 Trust Framework aims to serve all actors across sectors who are looking to share data, access data, or both.  Membership is open to a wide range of organisations - from large corporations through to charities, researchers, or community groups. Both [Open](../glossary.md#term-Open-data): and [Shared Data](../glossary.md#term-Shared-data) can
+flow within the Trust Framework.
 
-## How is Open Energy Structured?
+## How is the IB1 Trust Framework Structured?
 
-Open Energy consists of two core functions: dataset search and discovery, and the Open Energy Governance Service.
+The IB1 Trust Framework consists of two core functions: dataset search and discovery, and the Trust Framework Governance Service (TFGS).
+
 These functions are described below.
 
 ### Dataset Search
@@ -235,5 +234,5 @@ This version of the guidelines contains details of operational requirements defi
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NzQ4MDYyN119
+eyJoaXN0b3J5IjpbMTE4MjI3ODg4Nl19
 -->
