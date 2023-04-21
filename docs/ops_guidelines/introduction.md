@@ -132,21 +132,17 @@ Shared data is defined as: ‘Data that is neither open nor closed, but can be s
 
 Due to the sheer diversity of data types, the IB1 Trust Framework does not yet cover all Sensitivity Classes. At present, the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) can facilitate the sharing of non-personal Shared data classes only. This means that currently, sharing of non-aggregated personal data (including datasets using forms of anonymisation other than aggregation conforming to [ICO](../glossary.md#term-Information-Commissioner-s-Office) / [ONS](../glossary.md#term-Office-for-National-Statistics) best practice) is not permitted in the IB1 Trust Framework. Functionality to share personal data (class [OE-SP](../glossary.md#term-Data-sensitivity-class-personal)), and data that has been anonymised using techniques other than aggregation, are planned for the future subject to further consultation.
 
-The metadata and sensitivity class of Shared datasets are listed on Open Net Zero and are visible to any user. Shared datasets provided by IB1 Trust Framework members ([Data Providers](../glossary.md#term-Data-Provider)) and non-members are both visible (where the latter are known), as described later in this section. Access to Shared datasets provided by IB1 Trust Framework members is moderated through the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service), on the basis of preemptive licensing. Access to Shared data listed on the Search that is not provided by an IB1 Trust  member is not supported - users should
-contact the non-member organisation directly to arrange access.
+The metadata and sensitivity class of Shared datasets are listed on Open Net Zero and are visible to any user. Shared datasets provided by IB1 Trust Framework members ([Data Providers](../glossary.md#term-Data-Provider)) and non-members are both visible (where the latter are known), as described later in this section. Access to Shared datasets provided by IB1 Trust Framework members is moderated through the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service), on the basis of preemptive licensing. Access to Shared data listed on the Search that is not provided by an IB1 Trust Framework member is not supported - users should contact the non-member organisation directly to arrange access.
 
 ### Closed data
 
-Closed data is defined in the Open Energy ecosystem as: ‘Data that either cannot be shared or requires a per-use,
-custom licence negotiated on a case-by-case basis’. Under our current model, closed data is never suitable to share
-within the Open Energy ecosystem and is not visible through Open Energy Search. While we acknowledge industry
-feedback flagging potential value in using Open Energy infrastructure to privately share Closed data not listed in
-the Search or [OEGS](../glossary.md#term-Open-Energy-Governance-Service) Directory, this is not a focus of project development in the present phase. Any extensibility of
+Closed data is defined as: ‘Data that either cannot be shared or requires a per-use, custom licence negotiated on a case-by-case basis’. Under our current model, closed data is never suitable to share within the IB1 Trust Framework and is not visible through Open Net Zero. While we acknowledge industry
+feedback flagging potential value in using Open Net Zero infrastructure to privately share Closed data not listed in the Search or [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) Directory, this is not a focus of project development at this time. Any extensibility of
 this function in future will be subject to consultation.
 
-## What role does your organisation play in the Open Energy ecosystem?
+## What role does your organisation play in the IB1 Trust Framework?
 
-Members of the Open Energy ecosystem have different roles: [Data Providers](../glossary.md#term-Data-Provider), [Data Consumers](../glossary.md#term-Data-Consumer), or both. This section
+Members of the Trust Framework have different roles: [Data Providers](../glossary.md#term-Data-Provider), [Data Consumers](../glossary.md#term-Data-Consumer), or both. This section
 outlines the meaning of the different roles and outlines their basic responsibilities.
 
 ### [Data Providers](../glossary.md#term-Data-Provider)
@@ -215,6 +211,6 @@ This version of the guidelines contains details of operational requirements defi
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMTg5ODA4NSwxMTc1NDkxNjIxLDExMj
-gyODEyODBdfQ==
+eyJoaXN0b3J5IjpbLTE3NDkyNzc4OTksMTE3NTQ5MTYyMSwxMT
+I4MjgxMjgwXX0=
 -->
