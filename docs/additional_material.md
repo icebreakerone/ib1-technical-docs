@@ -3,11 +3,9 @@
 This section provides a list of additional resources and links that may be useful to supplement content found elsewhere
 on this site.
 
-## Membership
+## Membership TODO
 
-* [Membership expression of interest form](http://bit.ly/ib1-oe-20210621)
-
-* [Membership proposition and fee structure](https://docs.google.com/presentation/d/1U6mfxSXmC5srgQqueNbiml3l5HW8UqRjr5IjPDP4PFU/edit#slide=id.gdbef3612af_0_64)
+* [Become a member of Icebreaker One](https://icebreakerone.org/join/)
 
 * [Definition of active membership](https://docs.google.com/spreadsheets/d/1Lb8G15sKzxVPcwrrrdh5soNJXteagBmLN557AQPHKTY/edit#gid=0)
 
@@ -51,15 +49,15 @@ on this site.
 ## Reporting
 
 
-* [Phase 3 Final Report](https://docs.google.com/document/d/1GjWJOZuvBqyjjWa_f4PuWpcVmhWlIBLm3nqzkymOUgA/edit#)
+* [Open Energy Phase 3 Final Report](https://docs.google.com/document/d/1GjWJOZuvBqyjjWa_f4PuWpcVmhWlIBLm3nqzkymOUgA/edit#)
 
 ## Engagement
 
 
-* [Open Energy Project website](https://energy.icebreakerone.org/)
+* [Open Energy Project website](https://icebreakerone.org/energy)
 
 
 * Open Energy email - [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNjgwMzI2MV19
+eyJoaXN0b3J5IjpbLTg4MjE3MTc1MF19
 -->
