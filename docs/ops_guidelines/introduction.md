@@ -130,15 +130,9 @@ Open data is visible via Open Net Zero, which is free and open to all users. Ope
 
 Shared data is defined as: ‘Data that is neither open nor closed, but can be shared under specific terms and conditions.’ Examples of datasets currently licensed as Shared data include (non-exhaustive): primary substation capacity, network outage data, weather predictions, European space agency data, Electralink daily smart meter installations, certain geolocation information for energy assets and building typologies. As illustrated in these examples, Shared data is extremely diverse and can include datasets with a range of different commercial, personal and security sensitivity levels. To provide nuance in this area, Icebreaker One consultations have established a set of five data sensitivity classes, in which three classes describe separate categories of Shared data.
 
-Due to the sheer diversity of data types, the IB1 Trust Framework has a limited.
-At present, the [OEGS](../glossary.md#term-Open-Energy-Governance-Service) can facilitate the sharing of non-personal Shared data classes only. This means that currently,
-sharing of non-aggregated personal data (including datasets using forms of anonymisation other than aggregation conforming
-to [ICO](../glossary.md#term-Information-Commissioner-s-Office) / [ONS](../glossary.md#term-Office-for-National-Statistics) best practice) is not permitted in the Open Energy ecosystem. Functionality to share personal data
-(class [OE-SP](../glossary.md#term-Data-sensitivity-class-personal)), and data that has been anonymised using techniques other than aggregation, may be extensible
-in future subject to further consultation.
+Due to the sheer diversity of data types, the IB1 Trust Framework does not yet cover all Sensitivity Classes. At present, the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) can facilitate the sharing of non-personal Shared data classes only. This means that currently, sharing of non-aggregated personal data (including datasets using forms of anonymisation other than aggregation conforming to [ICO](../glossary.md#term-Information-Commissioner-s-Office) / [ONS](../glossary.md#term-Office-for-National-Statistics) best practice) is not permitted in the IB1 Trust Framework. Functionality to share personal data (class [OE-SP](../glossary.md#term-Data-sensitivity-class-personal)), and data that has been anonymised using techniques other than aggregation, are planned for the future subject to further consultation.
 
-The metadata and sensitivity class of Shared datasets are listed in Open Energy Search and are visible to any user.
-Shared datasets provided by Open Energy members ([Data Providers](../glossary.md#term-Data-Provider)) and non-Open Energy members are both visible
+The metadata and sensitivity class of Shared datasets are listed on Open Net Zero and are visible to any user. Shared datasets provided by Open Energy members ([Data Providers](../glossary.md#term-Data-Provider)) and non-Open Energy members are both visible
 (where the latter are known), as described later in this section. Access to Shared datasets provided by Open Energy
 members is moderated through the Open Energy Governance Service, on the basis of preemptive licensing. Access to
 Shared data listed on the Search that is not provided by an Open Energy member is not supported - users should
@@ -224,6 +218,6 @@ This version of the guidelines contains details of operational requirements defi
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg0MjA0NDk2LDExNzU0OTE2MjEsMTEyOD
+eyJoaXN0b3J5IjpbODQwMTQ2OTA1LDExNzU0OTE2MjEsMTEyOD
 I4MTI4MF19
 -->
