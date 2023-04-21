@@ -27,14 +27,9 @@ Introduction (this section): background to the IB1 Trust Framework project, clar
 [Considerations Before You Start](before_starting.md#considerations-before-you-start): ‘at a glance’ list of items that all types of new members will need
 to consider in order to meet operational requirements.
 
-[Core Policies](common_policies.md#core-policies): operational principles and policies central to Open Energy function. Includes policies
-governing data sensitivity classification, access controls, and licensing.
+[Core Policies](common_policies.md#core-policies): operational principles and policies central to Trust Framework function. Includes policies governing data sensitivity classification, access controls, and licensing.
 
-[Guidance for Data Consumers](data_consumer_ops_guidelines.md#guidance-for-data-consumers) and [Guidance for Data Providers](data_provider_ops_guidelines.md#guidance-for-data-providers): guidelines outlining how [Data Providers](../glossary.md#term-Data-Provider) can share data safely and
-securely via the Open Energy ecosystem while retaining strong control, provide appropriate and timely metadata,
-and design safe and effective [APIs](../glossary.md#term-Application-programming-interface) enabling data-sharing. Guidelines outlining how [Data Consumers](../glossary.md#term-Data-Consumer) can meet the
-requirements for offering data services, access and licensing conditions for different data classes, and best
-practice with regards to testing, security, ethics and dispute management.
+[Guidance for Data Consumers](data_consumer_ops_guidelines.md#guidance-for-data-consumers) and [Guidance for Data Providers](data_provider_ops_guidelines.md#guidance-for-data-providers): guidelines outlining how [Data Providers](../glossary.md#term-Data-Provider) can share data safely and securely via the Trust Framework while retaining strong control, provide appropriate and timely metadata, and design safe and effective [APIs](../glossary.md#term-Application-programming-interface) enabling data-sharing. Guidelines outlining how [Data Consumers](../glossary.md#term-Data-Consumer) can meet the requirements for offering data services, access and licensing conditions for different data classes, and best practice with regards to testing, security, ethics and dispute management.
 
 [Additional Material](../additional_material.md#additional-material): links to other relevant documentation (e.g. technical, legal, etc.) sitting
 outside the operational guidelines.
@@ -252,5 +247,5 @@ This version of the guidelines contains details of operational requirements defi
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MTQ2NjU4OF19
+eyJoaXN0b3J5IjpbNDUxNzk2Mjg2XX0=
 -->
