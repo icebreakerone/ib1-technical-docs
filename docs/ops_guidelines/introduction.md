@@ -39,10 +39,8 @@ Participants are responsible for their own compliance with all applicable regula
 
 ## What is the Icebreaker One Trust Framework, how was it made and who is it for?
 
-Open Energy is an ambitious, non-profit project working with the energy industry, government and the regulator
-to modernise access to energy data and break down barriers to data sharing. Open Energy makes it easier to
-discover, share, access and use energy and related datasets, supporting the sector’s drive towards decarbonisation
-and its related social and economic benefits.
+The Icebreaker One (IB1) Trust Framework is an ambitious, non-profit project working with across industry, finance, government and regulators to modernise access to data and break down barriers to data sharing. The Trust Framework makes it easier to
+discover, share, access and use datasets, supporting the drive towards decarbonisation and its related social and economic benefits.
 
 Open Energy received initial development funding from the Modernising Energy Data Access competition, backed by
 the Office for Gas and Electricity Markets (Ofgem), the Department for Business, Energy and Industrial Strategy
@@ -240,5 +238,5 @@ This version of the guidelines contains details of operational requirements defi
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MjU4MzgzNF19
+eyJoaXN0b3J5IjpbMTY0NTIxMzk2NF19
 -->
