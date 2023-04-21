@@ -122,18 +122,13 @@ types of organisations, and broader digital sector where relevant. Icebreaker On
 
 ### Open data
 
-Open data is defined by Ice as: ‘Data that anyone can use, for any purpose, for free and is
-accessible under an Open data licence’. Examples of open datasets include (non-exhaustive): Lower Super Output
-Layer [ID](../glossary.md#term-Identification) ([LSOA](../glossary.md#term-Lower-Layer-Super-Output-Areas)) data, Digest of [UK](../glossary.md#term-United-Kingdom) Energy Statistics, and OpenStreetMap data.
+Open data is defined as: ‘Data that anyone can use, for any purpose, for free and is accessible under an Open data licence’. Examples of open datasets include (non-exhaustive): Lower Super Output Layer [ID](../glossary.md#term-Identification) ([LSOA](../glossary.md#term-Lower-Layer-Super-Output-Areas)) data, Digest of [UK](../glossary.md#term-United-Kingdom) Energy Statistics, and OpenStreetMap data.
 
-Open data is visible via Open Energy Search, which is free and open to all users. Open datasets provided by Open
-Energy members ([Data Providers](../glossary.md#term-Data-Provider)) and non-Open Energy members will both be visible. There are no barriers to accessing
-Open data once it is discovered - users are directed to an appropriate [URL](../glossary.md#term-Uniform-Resource-Locator) or [API](../glossary.md#term-Application-programming-interface) to access the data themselves.
-Open data access is not moderated via the [OEGS](../glossary.md#term-Open-Energy-Governance-Service) as no additional access controls are required.
+Open data is visible via Open Net Zero, which is free and open to all users. Open datasets provided by IB1 Trust Framework members ([Data Providers](../glossary.md#term-Data-Provider)) and non-Open Energy members will both be visible. There are no barriers to accessing Open data once it is discovered - users are directed to an appropriate [URL](../glossary.md#term-Uniform-Resource-Locator) or [API](../glossary.md#term-Application-programming-interface) to access the data themselves. Open data access is not moderated via the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) as no additional access controls are required.
 
 ### Shared data
 
-Shared data is defined in the Open Energy ecosystem as: ‘Data that is neither open nor closed, but can be shared
+Shared data is defined as: ‘Data that is neither open nor closed, but can be shared
 under specific terms and conditions.’ Examples of datasets currently licensed as Shared data include
 (non-exhaustive): primary substation capacity, network outage data, weather predictions, European space agency
 data, Electralink daily smart meter installations, certain geolocation information for energy assets and building
@@ -236,6 +231,6 @@ This version of the guidelines contains details of operational requirements defi
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDQ0MzI0NDksMTE3NTQ5MTYyMSwxMT
-I4MjgxMjgwXX0=
+eyJoaXN0b3J5IjpbODMzNDkzNTg2LDExNzU0OTE2MjEsMTEyOD
+I4MTI4MF19
 -->
