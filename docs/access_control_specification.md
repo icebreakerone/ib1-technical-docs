@@ -107,10 +107,10 @@ consumers in the final system.
 
 ### Example condition clauses
 
-+------------------------------------------------+---------------------------------------------------------------------------------+
++------------------------------------------------+----------------------------------------------------------------------------------+
 | Condition                                      | Interpretation                                                                  |
 +================================================+=================================================================================+
-| `oe:status is 'active'`                        | passes if the value of `oe:status` is set, and is equal under string comparison |
+| `ib1:status is 'active'`                       | passes if the value of `ib1:status` is set, and is equal under string comparison |
 |                                                | to `active`                                                                     |
 +------------------------------------------------+---------------------------------------------------------------------------------+
 | `oe:membership_expires after 24/10/2022`       | passes if the value of `oe:membership_expires` is either a date or a datetime,  |
@@ -267,5 +267,5 @@ declaring that a data set is only available for non-commercial usage it is bette
 entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield
 of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMDA4NTI4Ml19
+eyJoaXN0b3J5IjpbLTQwMjIxNjU1XX0=
 -->
