@@ -54,16 +54,11 @@ scope: <REQUESTED_SCOPES>
 grant_type: client_credentials
 ```
 
-Scope may be omitted, for most uses within Open Energy there is no requirement to specify a scope. `CLIENT_ID` can
-be obtained from the `software statement` within the directory corresponding to this client
+Scope may be omitted, for most uses within the IB1 Trust Framework there is no requirement to specify a scope. `CLIENT_ID` can be obtained from the `software statement` within the directory corresponding to this client.
 
-A successful call to the `token_endpoint` is indicated by a `200` response code, in which case the body of the
-response will contain a [JSON](../glossary.md#term-Javascript-Object-Notation) object with at least two properties:
+A successful call to the `token_endpoint` is indicated by a `200` response code, in which case the body of the response will contain a [JSON](../glossary.md#term-Javascript-Object-Notation) object with at least two properties:
 
-
-1. `access_token` is an opaque string to be used as a bearer token for requests to resource servers
-(a [Data Consumer](../glossary.md#term-Data-Consumer) [shared data](../glossary.md#term-Shared-data) [API](../glossary.md#term-Application-programming-interface) in our context)
-
+1. `access_token` is an opaque string to be used as a bearer token for requests to resource servers (a [Data Consumer](../glossary.md#term-Data-Consumer) [shared data](../glossary.md#term-Shared-data) [API](../glossary.md#term-Application-programming-interface) in our context)
 
 2. `expires_in` is an integer number of seconds from the current time, after which the token will no longer be valid
 - after this point the [Data Consumer](../glossary.md#term-Data-Consumer) **MUST** request a new token in order to continue to access shared data resources
@@ -72,8 +67,7 @@ response will contain a [JSON](../glossary.md#term-Javascript-Object-Notation) o
 
 To call a shared data [API](../glossary.md#term-Application-programming-interface) within a [Data Provider](../glossary.md#term-Data-Provider), the [Data Consumer](../glossary.md#term-Data-Consumer) MUST:
 
-
-* Use Mutual [TLS](../glossary.md#term-Transport-Layer-Security) as previously described
+* Use [MTLS](../glossary.md#term-Mutual-Transport-Layer-Security) as previously described
 
 
 * Pass the previously acquired bearer token in an [HTTP](../glossary.md#term-HypterText-Transfer-Protocol) header:
@@ -229,5 +223,5 @@ More information on the Open Energy specific access control language can be foun
 [Access Control and Capability Grant Language](../access_control_specification.md#access-control-and-capability-grant-language), and its expression in the metadata file at [Data Set Metadata](../metadata.md#data-set-metadata) in the
 [Access Block](../metadata.md#access-block) section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NjEwNDA0N119
+eyJoaXN0b3J5IjpbMTgyNjMxODE2MF19
 -->
