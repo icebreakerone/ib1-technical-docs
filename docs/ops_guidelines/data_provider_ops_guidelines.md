@@ -61,8 +61,7 @@ With this said, we would encourage [Data Providers](../glossary.md#term-Data-Pro
 
 ### Responsibility - Metadata provision
 
-[Data Providers](../glossary.md#term-Data-Provider) are responsible for creating, and publishing, metadata for each exposed data set. This provides visibility of each
-data set within the Open Energy Governance Service ([OEGS](../glossary.md#term-Open-Energy-Governance-Service)) Registry.
+[Data Providers](../glossary.md#term-Data-Provider) are responsible for creating, and publishing, metadata for each exposed data set. This provides visibility of each data set within the Open Energy Governance Service ([OEGS](../glossary.md#term-Open-Energy-Governance-Service)) Registry.
 
 The metadata file covers, for each provided data set, whether shared or open:
 
@@ -273,5 +272,5 @@ while providing better performance on a newer version).
 [API](../glossary.md#term-Application-programming-interface) Credentials associated with an [API](../glossary.md#term-Application-programming-interface) should be version agnostic. Therefore, a [Data Consumer](../glossary.md#term-Data-Consumer) accessing v1.0, v1.1 or v2.0 should
 be able to use the same [API](../glossary.md#term-Application-programming-interface) Credentials across all available [API](../glossary.md#term-Application-programming-interface) endpoints.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzE5MDI5MDldfQ==
+eyJoaXN0b3J5IjpbLTgxMjAyNzQzNV19
 -->
