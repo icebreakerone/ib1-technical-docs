@@ -62,11 +62,9 @@ These functions are described below.
 The IB1 Trust Framework’s first core function - [Open Net Zero](https://opennetzero.org) - enables dataset search and discovery. Open Net Zero empowers users to find out what datasets exist and who owns/controls them. Search results also outline the [sensitivity class](common_policies.md#data-sensitivity-classes), [access rules](common_policies.md#data-access-conditions), and [capability grants](common_policies.md#data-licensing) associated with a certain dataset, meaning that access and licensing details are transparent. This works through a search engine designed
 specifically to search for datasets, with options to search by different parameters in order to refine results.
 
-It can also be used to discover datasets adjacent to searches; helping users to build up a more rounded picture of the net-zero data landscape in their sphere of interest. Open Energy search is free, available to all, and will
-remain so. Access pathways to Open and Shared data are described in the following section.
+It can also be used to discover datasets adjacent to searches; helping users to build up a more rounded picture of the net-zero data landscape in their sphere of interest. Open Net Zero is free, available to all, and will remain so. Access pathways to Open and Shared data are described in the following section.
 
-Datasets provided by Open Energy members ([Data Providers](../glossary.md#term-Data-Provider)) and non-Open Energy members (e.g. web scraped Open Data)
-may both be visible in Open Energy Search. Datasets provided by an Open Energy member will be demarcated with a
+Datasets provided by IB1 Trust Framework members ([Data Providers](../glossary.md#term-Data-Provider)) and non-Trust Framework members (e.g. web scraped Open Data) may both be visible in Open Net Zero. Datasets provided by an Open Energy member will be demarcated with a
 green tick to indicate that the provenance of the dataset has been verified, uptime is monitored, documentation
 format is known, and users have a mechanism to provide feedback on the dataset if issues are detected. (Please
 note that this does not indicate that Open Energy has carried out further, more extensive checks on data quality
@@ -230,5 +228,5 @@ This version of the guidelines contains details of operational requirements defi
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDg5NTAyNDRdfQ==
+eyJoaXN0b3J5IjpbMTEyODI4MTI4MF19
 -->
