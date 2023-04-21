@@ -75,6 +75,10 @@ Service provides a mechanism to reduce friction and bilateral contract negotiati
 
 ### Project Governance
 
+
+
+**Steering Group**: Supported the overarching strategy, ensured the delivery of our objectives, and helping to disseminate work.
+
 During Phase 3, Open Energy was governed by two Advisory Groups (Membership and Delivery) and a Steering Group.
 The groups met once a month and a brief description of each group’s activities is given below.
 
@@ -86,8 +90,6 @@ ongoing governance.
 and usage. Fed into the requirements for technical delivery of the Open Energy Governance Service and the Energy
 Data Search to ensure they meet user needs. Alongside this, examined the day-to-day operational aspects of Open Energy including security and systems.
 
-**Steering Group**: Supported the overarching strategy, ensured the delivery of our objectives, and helped
-disseminate work.
 
 The membership of these groups was designed to represent a range of different types of organisations in the
 energy sector, and broader digital sector where relevant. Open Energy is guided by our principle of
@@ -219,6 +221,6 @@ This version of the guidelines contains details of operational requirements defi
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE2OTMxNzk4LDExNzU0OTE2MjEsMTEyOD
-I4MTI4MF19
+eyJoaXN0b3J5IjpbMTg5NzE2OTQ1NCwxMTc1NDkxNjIxLDExMj
+gyODEyODBdfQ==
 -->
