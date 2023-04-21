@@ -91,10 +91,9 @@ Agree **technical data and metadata standards** for publishing data, including m
  
 Operational **technical systems** that enable data sharing (trust framework) and processing (e.g. calculation).
 
-The membership of these groups is designed to represent a range of different types of organisations, and broader digital sector where relevant. Icebreaker One is guided by our principle of. Open Energy members can apply to join the Advisory and Steering Groups. However, membership
-of these groups will not be restricted to members only and non-members may be invited to join in order to balance
-representation. If you are interested in participating in future Open Energy governance mechanisms please contact
-[openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
+#### Data Licensing & Legal
+
+The membership of these groups is designed to represent a range of different types of organisations, and broader digital sector where relevant. Icebreaker One members can apply to join the Advisory and Steering Groups. However, membership of these groups will not be restricted to members only and non-members may be invited to join in order to balance representation. If you are interested in participating in future Icebreaker One governance mechanisms please contact [info@icebreakerone.org](mailto:info@icebreakerone.org) TODO check this email.
 
 ## What data can be found and used through Open Energy?
 
@@ -218,6 +217,6 @@ This version of the guidelines contains details of operational requirements defi
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzAwMjYxNTIzLDExNzU0OTE2MjEsMTEyOD
-I4MTI4MF19
+eyJoaXN0b3J5IjpbMTAwNDE3Mzg4NywxMTc1NDkxNjIxLDExMj
+gyODEyODBdfQ==
 -->
