@@ -14,7 +14,7 @@ Technical documentation for the [IcebreakerOne](https://icebreakerone.org) (IB1)
     * [What is the IB1 Trust Framework, how was it made and who is it for?](ops_guidelines/introduction.md#what-is-the-ib1-trust-framework-how-was-it-made-and-who-is-it-for)
 
 
-    * [How is the IB1 Trust Framework Structured?](ops_guidelines/introduction.md#how-is-open-energy-structured)
+    * [How is the IB1 Trust Framework Structured?](ops_guidelines/introduction.md#how-is-the-ib1-trust-framework-structured)
 
 
         * [Dataset Search](ops_guidelines/introduction.md#dataset-search)
@@ -454,5 +454,5 @@ Technical documentation for the [IcebreakerOne](https://icebreakerone.org) (IB1)
 
     * [Engagement](additional_material.md#engagement)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTEyNDA0NzAwXX0=
+eyJoaXN0b3J5IjpbMzcxMjE0Mjg3XX0=
 -->
