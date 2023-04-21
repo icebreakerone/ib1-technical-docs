@@ -171,17 +171,12 @@ The IB1 Trust Framework defines a set of conditions which may be specified for [
 
 ### Creating Access Rules (Introduction)
 
-To operationalise Data Access conditions above, we propose a system whereby access grants are determined, for each
-request to the [API](../glossary.md#term-Application-programming-interface) of a [Data Provider](../glossary.md#term-Data-Provider), on the basis of a set of rules defined and published by that [Data Provider](../glossary.md#term-Data-Provider) in the
-dataset metadata.
+To operationalise Data Access conditions above, the Trust Framework defines a system whereby access grants are determined, for each request to the [API](../glossary.md#term-Application-programming-interface) of a [Data Provider](../glossary.md#term-Data-Provider), on the basis of a set of rules defined and published by that [Data Provider](../glossary.md#term-Data-Provider) in the dataset metadata.
 
 ### Data Licensing (Introduction)
 
 A data licence is a legal instrument setting out what a [Data Consumer](../glossary.md#term-Data-Consumer) can do with a particular artefact (e.g.
-dataset). This grants certain ‘capabilities’ to the [Data Consumer](../glossary.md#term-Data-Consumer), comprising a clear expression of things they
-can do with the artefact. Capability grants are accompanied by any obligations that the [Data Consumer](../glossary.md#term-Data-Consumer) must abide
-by when exercising a capability. The capabilities and obligations associated with each [API](../glossary.md#term-Application-programming-interface) call will be converted
-into a licence through the Open Energy Governance Service ([OEGS](../glossary.md#term-Open-Energy-Governance-Service)).
+dataset). This grants certain ‘capabilities’ to the [Data Consumer](../glossary.md#term-Data-Consumer), comprising a clear expression of things they can do with the artefact. Capability grants are accompanied by any obligations that the [Data Consumer](../glossary.md#term-Data-Consumer) must abide by when exercising a capability. The capabilities and obligations associated with each [API](../glossary.md#term-Application-programming-interface) call will be converted into a licence through the Trust Framework Governance Service ([TFGS](../glossary.md#term-Trust-Framework-Governance-Service)).
 
 [Open Energy](../glossary.md#term-Open-Energy) operates through a range of standardised capability grants and obligations. Standardisation
 includes legal text, ‘human readable’ text and summary notation. [Data Providers](../glossary.md#term-Data-Provider) must specify which capabilities
@@ -194,6 +189,6 @@ This version of the guidelines contains details of operational requirements defi
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODgyOTIwODg1LDExNzU0OTE2MjEsMTEyOD
+eyJoaXN0b3J5IjpbNzIzNTAzNzM4LDExNzU0OTE2MjEsMTEyOD
 I4MTI4MF19
 -->
