@@ -7,8 +7,6 @@ on this site.
 
 * [Become a member of Icebreaker One](https://icebreakerone.org/join/)
 
-* [Definition of active membership](https://docs.google.com/spreadsheets/d/1Lb8G15sKzxVPcwrrrdh5soNJXteagBmLN557AQPHKTY/edit#gid=0)
-
 ## Search Related
 
 * [Open Net Zero Search](https://opennetzero.org)
@@ -59,5 +57,5 @@ on this site.
 
 * Open Energy email - [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4MjE3MTc1MF19
+eyJoaXN0b3J5IjpbLTExMTA5NjQ5NTZdfQ==
 -->
