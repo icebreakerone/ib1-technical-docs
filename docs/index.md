@@ -1,6 +1,6 @@
 # Icebreaker One Trust Framework Technical Documentation
 
-Technical documentation for the [IcebreakerOne](https://icebreakerone.org) [Trust Framework](https://icebreakerone.org/ib1-trust-framework-for-data-sharing/).
+Technical documentation for the [IcebreakerOne](https://icebreakerone.org) (IB1) [Trust Framework](https://icebreakerone.org/ib1-trust-framework-for-data-sharing/).
 
 ## Contents
 
@@ -11,10 +11,10 @@ Technical documentation for the [IcebreakerOne](https://icebreakerone.org) [Trus
     * [Overview and purpose of the guidelines](ops_guidelines/introduction.md#overview-and-purpose-of-the-guidelines)
 
 
-    * [What is a Trust Framework, how was it made and who is it for?](ops_guidelines/introduction.md#what-is-open-energy-how-was-it-made-and-who-is-it-for)
+    * [What is the IB1 Trust Framework, how was it made and who is it for?](ops_guidelines/introduction.md#what-is-open-energy-how-was-it-made-and-who-is-it-for)
 
 
-    * [How is Open Energy Structured?](ops_guidelines/introduction.md#how-is-open-energy-structured)
+    * [How is the IB1 Trust Framework Structured?](ops_guidelines/introduction.md#how-is-open-energy-structured)
 
 
         * [Dataset Search](ops_guidelines/introduction.md#dataset-search)
@@ -26,7 +26,7 @@ Technical documentation for the [IcebreakerOne](https://icebreakerone.org) [Trus
         * [Project Governance](ops_guidelines/introduction.md#project-governance)
 
 
-    * [What data can be found and used through Open Energy?](ops_guidelines/introduction.md#what-data-can-be-found-and-used-through-open-energy)
+    * [What data can be found and used through Open Net Zero?](ops_guidelines/introduction.md#what-data-can-be-found-and-used-through-open-net-zero)
 
 
         * [Open data](ops_guidelines/introduction.md#open-data)
@@ -38,7 +38,7 @@ Technical documentation for the [IcebreakerOne](https://icebreakerone.org) [Trus
         * [Closed data](ops_guidelines/introduction.md#closed-data)
 
 
-    * [What role does your organisation play in the Open Energy ecosystem?](ops_guidelines/introduction.md#what-role-does-your-organisation-play-in-the-open-energy-ecosystem)
+    * [What role does your organisation play in the IB1 Trust ecosystem?](ops_guidelines/introduction.md#what-role-does-your-organisation-play-in-the-open-energy-ecosystem)
 
 
         * [Data Providers](ops_guidelines/introduction.md#dps)
@@ -454,5 +454,5 @@ Technical documentation for the [IcebreakerOne](https://icebreakerone.org) [Trus
 
     * [Engagement](additional_material.md#engagement)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDc1NzY1ODZdfQ==
+eyJoaXN0b3J5IjpbMTcwNzI0MjMxNV19
 -->
