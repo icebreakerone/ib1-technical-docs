@@ -84,28 +84,19 @@ downtime when necessary.
 
 ### Responsibility - API stability and change management
 
-[Data Providers](../glossary.md#term-Data-Provider) are responsible for managing any change to the data [APIs](../glossary.md#term-Application-programming-interface) such that disruption to [Data Consumers](../glossary.md#term-Data-Consumer) is minimised. This is handled
-through:
-
+[Data Providers](../glossary.md#term-Data-Provider) are responsible for managing any change to the data [APIs](../glossary.md#term-Application-programming-interface) such that disruption to [Data Consumers](../glossary.md#term-Data-Consumer) is minimised. This is handled through:
 
 * Semantic versioning of all [API](../glossary.md#term-Application-programming-interface) methods
-
-
-* Publication of anticipated changes and retirement of [API](../glossary.md#term-Application-programming-interface) versions through the [OEGS](../glossary.md#term-Open-Energy-Governance-Service)
-
-
+* Publication of anticipated changes and retirement of [API](../glossary.md#term-Application-programming-interface) versions through the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service)
 * Changeover periods where new and prior [API](../glossary.md#term-Application-programming-interface) versions are run in parallel
 
 ## Data API Requirements
 
-Unlike open banking, open energy does not mandate particular [APIs](../glossary.md#term-Application-programming-interface) for data provision - it is expected that there will
-be a variety of mechanisms to expose data, with varying inputs (from a single data set [ID](../glossary.md#term-Identification) to a complex query object)
-and varying kinds of output dependent on the information exposed.
+Unlike open banking, open energy does not mandate particular [APIs](../glossary.md#term-Application-programming-interface) for data provision - it is expected that there will be a variety of mechanisms to expose data, with varying inputs (from a single data set [ID](../glossary.md#term-Identification) to a complex query object) and varying kinds of output dependent on the information exposed.
 
-With that said, there are certain properties that all data [APIs](../glossary.md#term-Application-programming-interface) must satisfy to interoperate successfully with other
-parties within the open energy ecosystem.
+With that said, there are certain properties that all data [APIs](../glossary.md#term-Application-programming-interface) must satisfy to interoperate successfully with other parties within the IB1 Trust Framework.
 
-We refer to endpoints used to retrieve energy data as data endpoints, and others as infrastructure endpoints.
+We refer to endpoints used to retrieve data as data endpoints, and others as infrastructure endpoints.
 
 ### Date and time formats
 
@@ -265,5 +256,5 @@ while providing better performance on a newer version).
 [API](../glossary.md#term-Application-programming-interface) Credentials associated with an [API](../glossary.md#term-Application-programming-interface) should be version agnostic. Therefore, a [Data Consumer](../glossary.md#term-Data-Consumer) accessing v1.0, v1.1 or v2.0 should
 be able to use the same [API](../glossary.md#term-Application-programming-interface) Credentials across all available [API](../glossary.md#term-Application-programming-interface) endpoints.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5ODU5NTE3NV19
+eyJoaXN0b3J5IjpbLTIwNzQ0MzczODNdfQ==
 -->
