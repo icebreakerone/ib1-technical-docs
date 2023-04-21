@@ -253,11 +253,11 @@ granted. They are specified as a single **name**.
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
 | Obligation               | Name                                      | Explanation                                                                            |
 +==========================+===========================================+========================================================================================+
-| Fulltext                 | `oe:ft`                                   | Re-users must display the full text of the license every time they use the work        |
+| Fulltext                 | `ib1:ft`                                   | Re-users must display the full text of the license every time they use the work        |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-| Attribution              | `oe:by`                                   | Re-users must attribute the work to the original source when they use it               |
+| Attribution              | `ib1:by`                                   | Re-users must attribute the work to the original source when they use it               |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-| ShareAlike               | `oe:sa`                                   | Re-users who create derivatives of the work must release the derivatives under the     |
+| ShareAlike               | `ib1:sa`                                   | Re-users who create derivatives of the work must release the derivatives under the     |
 |                          |                                           | same license as the original work, if they choose to distribute the derivatives        |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
 
@@ -267,5 +267,5 @@ declaring that a data set is only available for non-commercial usage it is bette
 entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield
 of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMzgzODgwOSwtMTk2OTEzODgyMl19
+eyJoaXN0b3J5IjpbMTE3NjE5MDkwMSwtMTk2OTEzODgyMl19
 -->
