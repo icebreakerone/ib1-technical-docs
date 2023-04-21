@@ -124,10 +124,10 @@ consumers in the final system.
 | `some_group:membership_level >= 2`             | passes if the value of `some_group:membership_level` is a number and is greater |
 |                                                | to or equal to two.                                                             |
 +------------------------------------------------+---------------------------------------------------------------------------------+
-| `oe:org_type in ['council', 'academic']`       | passes if the value of `oe:org_type` would be considered equal to either        |
+| `ib1:org_type in ['council', 'academic']`       | passes if the value of `ib1:org_type` would be considered equal to either        |
 |                                                |  `'council'` or `'academic'` as if compared with `is`.                          |
 +------------------------------------------------+---------------------------------------------------------------------------------+
-| `oe:member`                                    | passes if the value of `oe:member` is `true`.                                   |
+| `ib1:member`                                    | passes if the value of `ib1:member` is `true`.                                   |
 +------------------------------------------------+---------------------------------------------------------------------------------+
 
 ### Specifying multiple conditions
@@ -136,7 +136,7 @@ Multiple conditions are separated with `,` characters. All conditions must be sa
 are no sub-clauses or boolean operators. Any number of space characters are allowed before and after the `,` in a
 condition list.
 
-For example, `oe:status is 'active', some_group:membership_level >=2` is the union of those two example conditions
+For example, `ib1:status is 'active', some_group:membership_level >=2` is the union of those two example conditions
 from the previous section and will only be satisfied if both conditions are individually satisfiable.
 
 ## Capabilities
@@ -146,13 +146,13 @@ There **MUST** be at least one **name** in this list, an empty capability grant 
 
 ### Standard capabilities
 
-These are capabilities where the namespace part of the **name** is `oe`, indicating that they are defined as part
-of the open energy project. Data providers **SHOULD NOT**, create their own capabilities unless absolutely
+These are capabilities where the namespace part of the **name** is `ib1`, indicating that they are defined as part
+of the Icebreaker One Trust Framework. Data providers **SHOULD NOT**, create their own capabilities unless absolutely
 necessary as doing so acts against the aim of easy interoperability and comprehension of access and licensing rules.
 
 Any additional capabilities designed **MUST** be prefixed with the organisation ID of the data provider responsible
 for their definition, and any such data provider **MUST** publish a clear, legally valid, definition of any such
-capabilities. In addition, data providers creating custom capabilities **MUST** inform the [OEGS](glossary.md#term-Open-Energy-Governance-Service) of this, providing
+capabilities. In addition, data providers creating custom capabilities **MUST** inform the [TFGS](glossary.md#term-Trust-Framework-Governance-Service) of this, providing
 links to the aforementioned documentation.
 
 **WARNING**: This section is provisional, the exact final set of base capabilities has yet to be determined. Those shown below
@@ -267,5 +267,5 @@ declaring that a data set is only available for non-commercial usage it is bette
 entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield
 of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMDA0MDI3MF19
+eyJoaXN0b3J5IjpbLTE5NjkxMzg4MjJdfQ==
 -->
