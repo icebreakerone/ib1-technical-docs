@@ -68,15 +68,10 @@ Datasets provided by IB1 Trust Framework members ([Data Providers](../glossary.m
 
 ### Governance Service
 
-The  second core function - the Trust Framework Governance Service ([OEGS](../glossary.md#term-Open-Energy-Governance-Service)) - supports members to provide, share and
-access different classes of Shared data (see [Data Sensitivity Classes](common_policies.md#data-sensitivity-classes)) on the basis of preemptive licensing
-(see [Data Licensing](common_policies.md#data-licensing)). Shared Data accessed via the [OEGS](../glossary.md#term-Open-Energy-Governance-Service) will be provided by members only
-([Data Providers](../glossary.md#term-Data-Provider)). The Governance Service aims to provide a secure, trusted mechanism to improve data sharing
-across the sector by reducing the time and financial costs currently associated with accessing Shared data.
-For providers of Shared data, the Governance Service offers a secure and effective way to list datasets and
-set appropriate access and licensing requirements. For actors wishing to access Shared data, the Governance
-Service provides a mechanism to reduce friction and bilateral contract negotiation, even when requesting
-access to multiple datasets from different providers.
+The  second core function - the Trust Framework Governance Service ([TFGS](../glossary.md#term-Trust-Framework-Governance-Service)) - supports members to provide, share and access different classes of Shared data (see [Data Sensitivity Classes](common_policies.md#data-sensitivity-classes)) on the basis of preemptive licensing (see [Data Licensing](common_policies.md#data-licensing)). Shared Data accessed via the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) will be provided by Trust Framework members only ([Data Providers](../glossary.md#term-Data-Provider)). The Governance Service aims to provide a secure, trusted mechanism to improve data sharing across the sector by reducing the time and financial costs currently associated with accessing Shared data.
+
+For providers of Shared data, the Governance Service offers a secure and effective way to list datasets and set appropriate access and licensing requirements. For actors wishing to access Shared data, the Governance
+Service provides a mechanism to reduce friction and bilateral contract negotiation, even when requesting access to multiple datasets from different providers.
 
 ### Project Governance
 
@@ -224,6 +219,6 @@ This version of the guidelines contains details of operational requirements defi
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1OTE1NjY0MCwxMTc1NDkxNjIxLDExMj
-gyODEyODBdfQ==
+eyJoaXN0b3J5IjpbMjE2OTMxNzk4LDExNzU0OTE2MjEsMTEyOD
+I4MTI4MF19
 -->
