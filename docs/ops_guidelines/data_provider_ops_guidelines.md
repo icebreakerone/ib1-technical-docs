@@ -47,23 +47,18 @@ create a set of one or more access rules as defined in [Data Set Metadata](../me
 * Open data **MUST** be made available with no authentication or authorization requirements
 
 
-* Shared data **MUST** made available through a [FAPI](../glossary.md#term-Financial-Grade-API) compliant resource server connected to the [TFGS](../glossary.md#term-Open-Energy-Governance-Service)’s authorization service (see [Common Security Requirements](technical_common.md#common-security-requirements) for more details)
+* Shared data **MUST** made available through a [FAPI](../glossary.md#term-Financial-Grade-API) compliant resource server connected to the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service)’s authorization service (see [Common Security Requirements](technical_common.md#common-security-requirements) for more details)
 
 #### Data formats
 
-Open Energy does not define or mandate individual data formats to be returned from data [APIs](../glossary.md#term-Application-programming-interface) - the diversity of kinds
-of information in the sector renders this impractical, and the additional overhead imposed on data providers would be
-undesirable.
+The IB1 Trust Framework does not define or mandate individual data formats to be returned from data [APIs](../glossary.md#term-Application-programming-interface) - the diversity of kinds of information in the sector renders this impractical, and the additional overhead imposed on data providers would be undesirable.
 
-With this said, we would encourage [Data Providers](../glossary.md#term-Data-Provider) to consider likely automated consumption of data when designing their
-data [APIs](../glossary.md#term-Application-programming-interface) - this implies using machine readable formats such as [CSV](../glossary.md#term-Comma-Separated-Value), [JSON](../glossary.md#term-Javascript-Object-Notation) and similar, with a preference for those
-formats compatible with existing software tools and libraries.
+With this said, we would encourage [Data Providers](../glossary.md#term-Data-Provider) to consider likely automated consumption of data when designing their data [APIs](../glossary.md#term-Application-programming-interface) - this implies using machine readable formats such as [CSV](../glossary.md#term-Comma-Separated-Value), [JSON](../glossary.md#term-Javascript-Object-Notation) and similar, with a preference for those formats compatible with existing software tools and libraries.
 
 ### Responsibility - Data integrity and correctness
 
-[Data Providers](../glossary.md#term-Data-Provider) are responsible for the correctness of data returned by their published data [APIs](../glossary.md#term-Application-programming-interface). The [OEGS](../glossary.md#term-Open-Energy-Governance-Service) will provide a
-mechanism by which [Data Consumers](../glossary.md#term-Data-Consumer) can report any data quality issues, and will convey any such reports to a nominated contact
-within the [Data Provider](../glossary.md#term-Data-Provider).
+[Data Providers](../glossary.md#term-Data-Provider) are responsible for the correctness of data returned by their published data [APIs](../glossary.md#term-Application-programming-interface). We plan for the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) or Oopwill provide a
+mechanism by which [Data Consumers](../glossary.md#term-Data-Consumer) can report any data quality issues, and will convey any such reports to a nominated contact within the [Data Provider](../glossary.md#term-Data-Provider).
 
 ### Responsibility - Metadata provision
 
@@ -279,5 +274,5 @@ while providing better performance on a newer version).
 [API](../glossary.md#term-Application-programming-interface) Credentials associated with an [API](../glossary.md#term-Application-programming-interface) should be version agnostic. Therefore, a [Data Consumer](../glossary.md#term-Data-Consumer) accessing v1.0, v1.1 or v2.0 should
 be able to use the same [API](../glossary.md#term-Application-programming-interface) Credentials across all available [API](../glossary.md#term-Application-programming-interface) endpoints.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NzUwNzcxOV19
+eyJoaXN0b3J5IjpbLTEyNTI0NzYwMzFdfQ==
 -->
