@@ -1,6 +1,6 @@
-# Open Energy Technical Documentation
+# Icebreaker One Trust Framework Technical Documentation
 
-Technical documentation for the [IcebreakerOne](https://icebreakerone.org) Open Energy project.
+Technical documentation for the [IcebreakerOne](https://icebreakerone.org) [Trust Framework](https://icebreakerone.org/).
 
 ## Contents
 
@@ -453,3 +453,6 @@ Technical documentation for the [IcebreakerOne](https://icebreakerone.org) Open 
 
 
     * [Engagement](additional_material.md#engagement)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTgxNzA1MDA0NV19
+-->
