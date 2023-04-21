@@ -105,18 +105,18 @@ comma separated list of strings surrounded by `[` and `]` characters. Lists are 
 **NOTE**: The conditions shown below are examples, and should not be taken as indicative of standard properties of data
 consumers in the final system.
 
-### Example condition clauses
+### Example condition clauses TODO Fix table
 
 +------------------------------------------------+----------------------------------------------------------------------------------+
-| Condition                                      | Interpretation                                                                  |
-+================================================+=================================================================================+
+| Condition                                      | Interpretation                                                                   |
++================================================+==================================================================================+
 | `ib1:status is 'active'`                       | passes if the value of `ib1:status` is set, and is equal under string comparison |
-|                                                | to `active`                                                                     |
-+------------------------------------------------+---------------------------------------------------------------------------------+
-| `oe:membership_expires after 24/10/2022`       | passes if the value of `oe:membership_expires` is either a date or a datetime,  |
+|                                                | to `active`                                                                      |
++------------------------------------------------+----------------------------------------------------------------------------------+
+| `ib1:membership_expires after 24/10/2022`      | passes if the value of `ib1:membership_expires` is either a date or a datetime,  |
 |                                                | and is after the 24th October 2022                                              |
 +------------------------------------------------+---------------------------------------------------------------------------------+
-| `oe:terms_signed max_age_days 20`              | passes if the value of `oe:terms_signed` is either a date or a datetime, and is |
+| `ib1:terms_signed max_age_days 20`              | passes if the value of `ib1:terms_signed` is either a date or a datetime, and is |
 |                                                | at most 20 days from the current datetime. Note that dates with no time         |
 |                                                | component are equivalent to 00:00.00 on the specified date for comparison       |
 |                                                | purposes                                                                        |
@@ -267,5 +267,5 @@ declaring that a data set is only available for non-commercial usage it is bette
 entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield
 of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMjIxNjU1XX0=
+eyJoaXN0b3J5IjpbMTMyMDA0MDI3MF19
 -->
