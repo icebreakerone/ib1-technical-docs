@@ -160,18 +160,14 @@ Members of the Trust Framework have different roles: [Data Providers](../glossar
 
 Organisations wishing to both provide and access data through the IB1 Trust Framework are able to do so, so long as they fulfill the responsibilities of both roles. [Data Providers](../glossary.md#term-Data-Provider) who do not want to register as [Data Consumers](../glossary.md#term-Data-Consumer), but who wish to access IB1 Trust Framework datasets, are able to do so by using the services of a Service Provider (a type of [Data Consumer](../glossary.md#term-Data-Consumer) in the IB1 Trust Framework that provides services to customers, potentially including non-Trust Framework members).
 
-## How does dataset access and licensing operate under Open Energy?
+## How does dataset access and licensing operate under the Trust Framework?
 
-Open Energy has consulted publicly and with industry on policies pertaining to: the types of conditions on which
-data access controls can be based, the process by which [Data Providers](../glossary.md#term-Data-Provider) establish access rules for a dataset, and
-the model for associating access rules with the grant of particular capabilities and obligations (licensing model).
+Icebreaker One has consulted publicly and with industry on policies pertaining to: the types of conditions on which data access controls can be based, the process by which [Data Providers](../glossary.md#term-Data-Provider) establish access rules for a dataset, and the model for associating access rules with the grant of particular capabilities and obligations (licensing model).
 These policies are outlined briefly below, and set out in full detail in Section 3 of the Operational Guidelines.
 
 ### Types of Access Conditions
 
-Open Energy has established a set of conditions which may be specified for [Data Consumers](../glossary.md#term-Data-Consumer) to meet in order to gain
-access to datasets in different sensitivity classes. These include, but are not limited to: payment, security
-compliance, regulatory compliance, standards compliance, group-based access, and use case-based access.
+The IB1 Trust Framework defines a set of conditions which may be specified for [Data Consumers](../glossary.md#term-Data-Consumer) to meet in order to gain access to datasets in different sensitivity classes. These include, but are not limited to: payment, security compliance, regulatory compliance, standards compliance, group-based access, and use case-based access.
 
 ### Creating Access Rules (Introduction)
 
@@ -198,6 +194,6 @@ This version of the guidelines contains details of operational requirements defi
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3MTg2MDY5NCwxMTc1NDkxNjIxLDExMj
-gyODEyODBdfQ==
+eyJoaXN0b3J5IjpbODgyOTIwODg1LDExNzU0OTE2MjEsMTEyOD
+I4MTI4MF19
 -->
