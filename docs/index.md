@@ -308,7 +308,7 @@ Technical documentation for the [IcebreakerOne](https://icebreakerone.org) (IB1)
         * [Other validation](ops_guidelines/technical_common.md#other-validation)
 
 
-* [Open Energy Architecture](architecture.md)
+* [Trust Framework Architecture](architecture.md)
 
 
 * [Data Set Metadata](metadata.md)
@@ -386,7 +386,7 @@ Technical documentation for the [IcebreakerOne](https://icebreakerone.org) (IB1)
         * [Standard obligations](access_control_specification.md#standard-obligations)
 
 
-* [Open Energy Glossary](glossary.md)
+* [IB1 Trust Framework Glossary](glossary.md)
 
 
     * [Commercial](glossary.md#commercial)
@@ -454,5 +454,5 @@ Technical documentation for the [IcebreakerOne](https://icebreakerone.org) (IB1)
 
     * [Engagement](additional_material.md#engagement)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUzNjY4NTY3LDM3MTIxNDI4N119
+eyJoaXN0b3J5IjpbLTExNjM3MTM2NDksMzcxMjE0Mjg3XX0=
 -->
