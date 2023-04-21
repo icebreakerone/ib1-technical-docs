@@ -172,13 +172,11 @@ Problem resolution documentation, [Frequently Asked Questions](../glossary.md#te
 
 ### Dispute resolution for access control and capability grant policies (Data Providers)
 
-In cases where a [Data Consumer](../glossary.md#term-Data-Consumer) believes that access conditions or capability grant rules are being applied unfairly, the [OEGS](../glossary.md#term-Open-Energy-Governance-Service)
-will act as a mediating party.
+In cases where a [Data Consumer](../glossary.md#term-Data-Consumer) believes that access conditions or capability grant rules are being applied unfairly, the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) will act as a mediating party.
 
-### OEGS support (Data Providers)
+### TFGS support (Data Providers)
 
-The [OEGS](../glossary.md#term-Open-Energy-Governance-Service) Service Desk will provide participants with a supplementary ticket management process and supports [Data Providers](../glossary.md#term-Data-Provider) in
-communicating problems to ecosystem participants via the noticeboard.
+The [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) Service Desk will provide participants with a supplementary ticket management process and supports [Data Providers](../glossary.md#term-Data-Provider) in communicating problems to ecosystem participants via the noticeboard.
 
 ## Change Management
 
@@ -188,15 +186,11 @@ implementing a change and communicating to [Data Consumers](../glossary.md#term-
 ### Downtime
 
 Planned downtime, by definition, is something that a [Data Provider](../glossary.md#term-Data-Provider) anticipates and therefore is able to give advance notice to [Data Consumers](../glossary.md#term-Data-Consumer).
-It is not generally possible to give advance notice of unplanned downtime, but [Data Providers](../glossary.md#term-Data-Provider) should give notice as soon as they
-are aware of the downtime.
+It is not generally possible to give advance notice of unplanned downtime, but [Data Providers](../glossary.md#term-Data-Provider) should give notice as soon as they are aware of the downtime.
 
-When providing notifications, [Data Providers](../glossary.md#term-Data-Provider) **SHOULD** provide a specific time period, so [Data Consumers](../glossary.md#term-Data-Consumer) are aware that the data [API](../glossary.md#term-Application-programming-interface) will be
-unavailable for that time, or upon a subsequent notification to confirm that the service has been reinstated sooner
-than anticipated.
+When providing notifications, [Data Providers](../glossary.md#term-Data-Provider) **SHOULD** provide a specific time period, so [Data Consumers](../glossary.md#term-Data-Consumer) are aware that the data [API](../glossary.md#term-Application-programming-interface) will be unavailable for that time, or upon a subsequent notification to confirm that the service has been reinstated sooner than anticipated.
 
-[OEGS](../glossary.md#term-Open-Energy-Governance-Service) Support Services can assist [Data Providers](../glossary.md#term-Data-Provider) with the dissemination of downtime information to the wider Open Energy ecosystem
-via its central noticeboard facility.
+[TFGS](../glossary.md#term-Open-Energy-Governance-Service) Support Services can assist [Data Providers](../glossary.md#term-Data-Provider) with the dissemination of downtime information to the wider Icebreaker One ecosy via its central noticeboard facility.
 
 Planned downtime should be given at least five business days before the event. Apart from cancelling the planned
 downtime, no changes should be made to the planned downtime notification within the five business day period. Where
@@ -236,5 +230,5 @@ while providing better performance on a newer version).
 [API](../glossary.md#term-Application-programming-interface) Credentials associated with an [API](../glossary.md#term-Application-programming-interface) should be version agnostic. Therefore, a [Data Consumer](../glossary.md#term-Data-Consumer) accessing v1.0, v1.1 or v2.0 should
 be able to use the same [API](../glossary.md#term-Application-programming-interface) Credentials across all available [API](../glossary.md#term-Application-programming-interface) endpoints.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODE0Njk0NDJdfQ==
+eyJoaXN0b3J5IjpbLTgxOTk3MDYwOF19
 -->
