@@ -204,24 +204,17 @@ Planned downtime should be given at least five business days before the event. A
 
 #### Dual running and deprecation
 
-[Data Providers](../glossary.md#term-Data-Provider) **SHOULD** support a minimum of two non-compatible [API](../glossary.md#term-Application-programming-interface) versions in a production context, providing both versions were previously supported by the [Data Provider](../glossary.md#term-Data-Provider), for a period of time long enough to ensure that [Data Consumers](../glossary.md#term-Data-Consumer) have had sufficient time to
-successfully test the new version and migrate their applications and customers. [OEGS](../glossary.md#term-Open-Energy-Governance-Service) recommends dual running for at
-least six months for a major version, and three months for a minor version. Where a [Data Provider](../glossary.md#term-Data-Provider) implements a data [API](../glossary.md#term-Application-programming-interface) for the
+[Data Providers](../glossary.md#term-Data-Provider) **SHOULD** support a minimum of two non-compatible [API](../glossary.md#term-Application-programming-interface) versions in a production context, providing both versions were previously supported by the [Data Provider](../glossary.md#term-Data-Provider), for a period of time long enough to ensure that [Data Consumers](../glossary.md#term-Data-Consumer) have had sufficient time to successfully test the new version and migrate their applications and customers. [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) recommends dual running for at least six months for a major version, and three months for a minor version. Where a [Data Provider](../glossary.md#term-Data-Provider) implements a data [API](../glossary.md#term-Application-programming-interface) for the
 first time, they will only need to support this one version to start with.
 
-The deprecation of unsupported versions is at the [Data Provider](../glossary.md#term-Data-Provider)’s discretion – based on usage metrics. However, the [OEGS](../glossary.md#term-Open-Energy-Governance-Service) may
-recommend that any specific version (major, minor, or patch) should be deprecated at any time, and this should be
-implemented within three months of notification by the [OEGS](../glossary.md#term-Open-Energy-Governance-Service). This is to cater for critical defects, especially those
-relating to security. In exceptional circumstances it may be agreed by [OEGS](../glossary.md#term-Open-Energy-Governance-Service) that support for a specific version is
-terminated earlier.
+The deprecation of unsupported versions is at the [Data Provider](../glossary.md#term-Data-Provider)’s discretion – based on usage metrics. However, the [OEGS](../glossary.md#term-Open-Energy-Governance-Service) may recommend that any specific version (major, minor, or patch) should be deprecated at any time, and this should be implemented within three months of notification by the [OEGS](../glossary.md#term-Open-Energy-Governance-Service). This is to cater for critical defects, especially those
+relating to security. In exceptional circumstances it may be agreed by [OEGS](../glossary.md#term-Open-Energy-Governance-Service) that support for a specific version is terminated earlier.
 
-[Data Providers](../glossary.md#term-Data-Provider) must not apply any measures to induce [Data Consumers](../glossary.md#term-Data-Consumer) to adopt a new version of the [APIs](../glossary.md#term-Application-programming-interface) (e.g. rate limiting the older version
-while providing better performance on a newer version).
+[Data Providers](../glossary.md#term-Data-Provider) must not apply any measures to induce [Data Consumers](../glossary.md#term-Data-Consumer) to adopt a new version of the [APIs](../glossary.md#term-Application-programming-interface) (e.g. rate limiting the older version while providing better performance on a newer version).
 
 #### API credentials, consent and authorisation
 
-[API](../glossary.md#term-Application-programming-interface) Credentials associated with an [API](../glossary.md#term-Application-programming-interface) should be version agnostic. Therefore, a [Data Consumer](../glossary.md#term-Data-Consumer) accessing v1.0, v1.1 or v2.0 should
-be able to use the same [API](../glossary.md#term-Application-programming-interface) Credentials across all available [API](../glossary.md#term-Application-programming-interface) endpoints.
+[API](../glossary.md#term-Application-programming-interface) Credentials associated with an [API](../glossary.md#term-Application-programming-interface) should be version agnostic. Therefore, a [Data Consumer](../glossary.md#term-Data-Consumer) accessing v1.0, v1.1 or v2.0 should be able to use the same [API](../glossary.md#term-Application-programming-interface) Credentials across all available [API](../glossary.md#term-Application-programming-interface) endpoints.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODU4MjkyNzldfQ==
+eyJoaXN0b3J5IjpbNDkyODMwNDVdfQ==
 -->
