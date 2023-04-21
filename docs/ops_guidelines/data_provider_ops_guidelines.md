@@ -9,39 +9,29 @@
 [Data Providers](../glossary.md#term-Data-Provider) are IB1 Trust Framework members which make data sets available to:
 
 * [Data Consumers](../glossary.md#term-Data-Consumer) within the Trust Framework
+
     * Applies to shared data sets
     * Data [APIs](../glossary.md#term-Application-programming-interface) secured using Financial-grade [API](../glossary.md#term-Application-programming-interface) security ([FAPI](../glossary.md#term-Financial-Grade-API))
 
-
 * Any third party, in the case of open data
 
-
     * Open data sets are made available through publicly accessible [APIs](../glossary.md#term-Application-programming-interface)
-
-
     * Data are made available under an appropriate open license agreement
 
-In this context, Data [APIs](../glossary.md#term-Application-programming-interface) can be anything from a simple link to a [CSV](../glossary.md#term-Comma-Separated-Value) or other file (for open data) to a complex
-query system returning custom output on demand.
+In this context, Data [APIs](../glossary.md#term-Application-programming-interface) can be anything from a simple link to a [CSV](../glossary.md#term-Comma-Separated-Value) or other file (for open data) to a complex query system returning custom output on demand.
 
 To support this role, [Data Providers](../glossary.md#term-Data-Provider) have certain responsibilities:
 
 ### Responsibility - Data classification
 
-[Data Providers](../glossary.md#term-Data-Provider) are responsible for classification of their data sets by data sensitivity class, and for ensuring that
-data are shared, or not shared, as appropriate.
+[Data Providers](../glossary.md#term-Data-Provider) are responsible for classification of their data sets by data sensitivity class, and for ensuring that data are shared, or not shared, as appropriate.
 
-
-* Any data classed as [OE-C](../glossary.md#term-Data-sensitivity-class-closed) (Closed) or [OE-SP](../glossary.md#term-Data-sensitivity-class-personal) (Personal) **MUST NOT** be shared within the Open Energy ecosystem
-at present.
-
-
-* Data in [OE-O](../glossary.md#term-Data-sensitivity-class-open), [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A), and [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) **MAY** be shared within the Open Energy ecosystem as described in the
-following sections
+* Any data classed as [OE-C](../glossary.md#term-Data-sensitivity-class-closed) (Closed) or [OE-SP](../glossary.md#term-Data-sensitivity-class-personal) (Personal) **MUST NOT** be shared within the IB1 Trust Framework at present.
+* Data in [OE-O](../glossary.md#term-Data-sensitivity-class-open), [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A), and [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) **MAY** be shared within the IB1 Trust Framework as described in the following sections
 
 ### Responsibility - Access and licensing specification
 
-[Data Providers](../glossary.md#term-Data-Provider) are responsible for creating access rules for each dataset shared via Open Energy. For each data set, the [Data Provider](../glossary.md#term-Data-Provider) must
+[Data Providers](../glossary.md#term-Data-Provider) are responsible for creating access rules for each dataset shared via the IB1 Trust Frameowkr. For each data set, the [Data Provider](../glossary.md#term-Data-Provider) must
 create a set of one or more access rules as defined in [Data Set Metadata](../metadata.md#data-set-metadata). These rules specify the conditions under which access will be
 granted, along with the capabilities forming the license grant should those conditions be satisfied.
 
@@ -295,5 +285,5 @@ while providing better performance on a newer version).
 [API](../glossary.md#term-Application-programming-interface) Credentials associated with an [API](../glossary.md#term-Application-programming-interface) should be version agnostic. Therefore, a [Data Consumer](../glossary.md#term-Data-Consumer) accessing v1.0, v1.1 or v2.0 should
 be able to use the same [API](../glossary.md#term-Application-programming-interface) Credentials across all available [API](../glossary.md#term-Application-programming-interface) endpoints.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIwNjA5ODg0XX0=
+eyJoaXN0b3J5IjpbLTE1MDU4MDk4NTNdfQ==
 -->
