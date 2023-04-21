@@ -128,16 +128,9 @@ Open data is visible via Open Net Zero, which is free and open to all users. Ope
 
 ### Shared data
 
-Shared data is defined as: ‘Data that is neither open nor closed, but can be shared
-under specific terms and conditions.’ Examples of datasets currently licensed as Shared data include
-(non-exhaustive): primary substation capacity, network outage data, weather predictions, European space agency
-data, Electralink daily smart meter installations, certain geolocation information for energy assets and building
-typologies. As illustrated in these examples, Shared data is extremely diverse and can include datasets with a
-range of different commercial, personal and security sensitivity levels. To provide nuance in this area, Open
-Energy consultations have established a set of five data sensitivity classes, in which three classes describe
-separate categories of Shared data.
+Shared data is defined as: ‘Data that is neither open nor closed, but can be shared under specific terms and conditions.’ Examples of datasets currently licensed as Shared data include (non-exhaustive): primary substation capacity, network outage data, weather predictions, European space agency data, Electralink daily smart meter installations, certain geolocation information for energy assets and building typologies. As illustrated in these examples, Shared data is extremely diverse and can include datasets with a range of different commercial, personal and security sensitivity levels. To provide nuance in this area, Icebreaker One consultations have established a set of five data sensitivity classes, in which three classes describe separate categories of Shared data.
 
-Due to the sheer diversity of data types in the energy sector, Open Energy had to limit focus for Phase 3 development.
+Due to the sheer diversity of data types, the IB1 Trust Framework has a limited.
 At present, the [OEGS](../glossary.md#term-Open-Energy-Governance-Service) can facilitate the sharing of non-personal Shared data classes only. This means that currently,
 sharing of non-aggregated personal data (including datasets using forms of anonymisation other than aggregation conforming
 to [ICO](../glossary.md#term-Information-Commissioner-s-Office) / [ONS](../glossary.md#term-Office-for-National-Statistics) best practice) is not permitted in the Open Energy ecosystem. Functionality to share personal data
@@ -231,6 +224,6 @@ This version of the guidelines contains details of operational requirements defi
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMzNDkzNTg2LDExNzU0OTE2MjEsMTEyOD
+eyJoaXN0b3J5IjpbNjg0MjA0NDk2LDExNzU0OTE2MjEsMTEyOD
 I4MTI4MF19
 -->
