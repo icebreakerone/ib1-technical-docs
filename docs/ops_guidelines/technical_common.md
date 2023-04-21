@@ -4,15 +4,15 @@
 **“SHOULD NOT”**, **“RECOMMENDED”**, **“MAY”**, and **“OPTIONAL”** in this document are to be interpreted
 as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
-Open Energy defines a security and trust model for shared data [APIs](../glossary.md#term-Application-programming-interface). Three
+The Icebreaker One (IB1) Trust Framework defines a security and trust model for shared data [APIs](../glossary.md#term-Application-programming-interface). Three
 parties are involved in each shared data request:
 
 
 1. The [Data Consumer](../glossary.md#term-Data-Consumer) wishing to access the [shared data](../glossary.md#term-Shared-data) [API](../glossary.md#term-Application-programming-interface)
 
 
-2. The [authorization](../glossary.md#term-Authorization) server, as part of the governance service ([OEGS](../glossary.md#term-Open-Energy-Governance-Service)), with knowledge about the
-[Data Consumer](../glossary.md#term-Data-Consumer) as represented by an organisation account within the [OEGS](../glossary.md#term-Open-Energy-Governance-Service)
+2. The [authorization](../glossary.md#term-Authorization) server, as part of the governance service ([TFGS](../glossary.md#term-Trust-Framework-Governance-Service)), with knowledge about the
+[Data Consumer](../glossary.md#term-Data-Consumer) as represented by an organisation account within the [TFGS](../glossary.md#term-Trust-Governance-Service)
 
 
 3. The [Data Provider](../glossary.md#term-Data-Provider) responsible for supplying shared data through its shared data [API](../glossary.md#term-Application-programming-interface)
@@ -244,3 +244,6 @@ identify the organisation of the [Data Consumer](../glossary.md#term-Data-Consum
 More information on the Open Energy specific access control language can be found in
 [Access Control and Capability Grant Language](../access_control_specification.md#access-control-and-capability-grant-language), and its expression in the metadata file at [Data Set Metadata](../metadata.md#data-set-metadata) in the
 [Access Block](../metadata.md#access-block) section.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTQ0NTUwNjMxMl19
+-->
