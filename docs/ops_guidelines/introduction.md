@@ -142,23 +142,15 @@ this function in future will be subject to consultation.
 
 ## What role does your organisation play in the IB1 Trust Framework?
 
-Members of the Trust Framework have different roles: [Data Providers](../glossary.md#term-Data-Provider), [Data Consumers](../glossary.md#term-Data-Consumer), or both. This section
-outlines the meaning of the different roles and outlines their basic responsibilities.
+Members of the Trust Framework have different roles: [Data Providers](../glossary.md#term-Data-Provider), [Data Consumers](../glossary.md#term-Data-Consumer), or both. This section outlines the meaning of the different roles and outlines their basic responsibilities.
 
 ### [Data Providers](../glossary.md#term-Data-Provider)
 
-[Data Providers](../glossary.md#term-Data-Provider) are organisations that control datasets that they wish to make visible and/or accessible through the
-Open Energy ecosystem. [Data Providers](../glossary.md#term-Data-Provider) can provide Open and/or Shared datasets. [Data Providers](../glossary.md#term-Data-Provider) are responsible for:
-data sensitivity classification, creation of access rules, creation of capability grants, data provision, data
-integrity and correctness, metadata provision, and [API](../glossary.md#term-Application-programming-interface) availability, stability and change management. Full guidance
-regarding [Data Provider](../glossary.md#term-Data-Provider) responsibilities can be found in [Guidance for Data Providers](data_provider_ops_guidelines.md#guidance-for-data-providers).
+[Data Providers](../glossary.md#term-Data-Provider) are organisations that control datasets that they wish to make visible and/or accessible through the IB1 Trust Framework. [Data Providers](../glossary.md#term-Data-Provider) can provide Open and/or Shared datasets. [Data Providers](../glossary.md#term-Data-Provider) are responsible for: data sensitivity classification, creation of access rules, creation of capability grants, data provision, data integrity and correctness, metadata provision, and [API](../glossary.md#term-Application-programming-interface) availability, stability and change management. Full guidance regarding [Data Provider](../glossary.md#term-Data-Provider) responsibilities can be found in [Guidance for Data Providers](data_provider_ops_guidelines.md#guidance-for-data-providers).
 
 ### Data Consumers
 
-[Data Consumers](../glossary.md#term-Data-Consumer) are organisations that seek to find and access datasets through the Open Energy Governance Service
-Service. [Data Consumers](../glossary.md#term-Data-Consumer) can be established to serve internal organisational needs, to serve external customers,
-or both. [Data Consumers](../glossary.md#term-Data-Consumer) is a catch-all term referring to all parties accessing data via the [OEGS](../glossary.md#term-Open-Energy-Governance-Service). Full guidance can be found
-in [Guidance for Data Consumers](data_consumer_ops_guidelines.md#guidance-for-data-consumers)
+[Data Consumers](../glossary.md#term-Data-Consumer) are organisations that seek to find and access datasets through the Trust Framework Governance Service (TFGS). [Data Consumers](../glossary.md#term-Data-Consumer) can be established to serve internal organisational needs, to serve external customers, or both. [Data Consumers](../glossary.md#term-Data-Consumer) is a catch-all term referring to all parties accessing data via the [OEGS](../glossary.md#term-Open-Energy-Governance-Service). Full guidance can be found in [Guidance for Data Consumers](data_consumer_ops_guidelines.md#guidance-for-data-consumers)
 
 #### Service Providers
 
@@ -211,6 +203,6 @@ This version of the guidelines contains details of operational requirements defi
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDkyNzc4OTksMTE3NTQ5MTYyMSwxMT
-I4MjgxMjgwXX0=
+eyJoaXN0b3J5IjpbMTUyNzg0Nzk1OSwxMTc1NDkxNjIxLDExMj
+gyODEyODBdfQ==
 -->
