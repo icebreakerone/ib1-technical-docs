@@ -92,8 +92,15 @@ Agree **technical data and metadata standards** for publishing data, including m
 Operational **technical systems** that enable data sharing (trust framework) and processing (e.g. calculation).
 
 #### Data Licensing & Legal
+Develop standard legal data licences that allow restricted data to flow securely across the market, with consent, in alignment with [Data Sensitivity Classes](https://icebreakerone.org/data-sensitivity-classes/).
 
-The membership of these groups is designed to represent a range of different types of organisations, and broader digital sector where relevant. Icebreaker One members can apply to join the Advisory and Steering Groups. However, membership of these groups will not be restricted to members only and non-members may be invited to join in order to balance representation. If you are interested in participating in future Icebreaker One governance mechanisms please contact [info@icebreakerone.org](mailto:info@icebreakerone.org) TODO check this email.
+This includes key policies, such as conditions for participation, roles and responsibilities.
+
+Outputs of this group address the necessary licences and requirements for a functioning access control.
+
+#### Group makeup
+The membership of these groups is designed to represent a range of different 
+types of organisations, and broader digital sector where relevant. Icebreaker One members can apply to join the Advisory and Steering Groups. However, membership of these groups will not be restricted to members only and non-members may be invited to join in order to balance representation. If you are interested in participating in future Icebreaker One governance mechanisms please contact [info@icebreakerone.org](mailto:info@icebreakerone.org) TODO check this email.
 
 ## What data can be found and used through Open Energy?
 
@@ -217,6 +224,6 @@ This version of the guidelines contains details of operational requirements defi
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNDE3Mzg4NywxMTc1NDkxNjIxLDExMj
+eyJoaXN0b3J5IjpbMjAzNTA0NTEwMiwxMTc1NDkxNjIxLDExMj
 gyODEyODBdfQ==
 -->
