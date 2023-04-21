@@ -12,21 +12,15 @@ sector transition to Net Zero by enabling better discovery and sharing of data v
 * To support the operational requirements of [Data Providers](../glossary.md#term-Data-Provider) and [Data Consumers](../glossary.md#term-Data-Consumer), stimulating an active data sharing ecosystem. This includes ensuring that all members understand the sensitivity classes, access, and licensing models
 for data shared in the ecosystem, and are incentivised towards transparency and interoperability.
 
-* To ensure positive member experiences that demonstrate the Icebreaker  and encourage them to continue
-participating in the ecosystem.
+* To ensure positive member experiences that demonstrate the [Icebreaker Principles](https://icebreakerone.org/icebreaker-principles/) and encourage them to continue participating in the ecosystem.
 
+* To minimise potential costs associated with insufficient [API](../glossary.md#term-Application-programming-interface) or other technical system testing, downtime, or other common faults.
 
-* To minimise potential costs associated with insufficient [API](../glossary.md#term-Application-programming-interface) or other technical system testing, downtime, or
-other common faults.
-
-
-* To reduce any reputational risks associated with individual members, incorrect application of core policies, or
-the [Open Energy](../glossary.md#term-Open-Energy) ecosystem as a whole.
+* To reduce any reputational risks associated with individual members, incorrect application of core policies, or the Icebreaker One ecosystem as a whole.
 
 These guidelines are structured in six sections, outlining:
 
-Introduction (this section): background to the Open Energy project, clarifications of the roles and responsibilities
-of different types of actors operating in the Open Energy ecosystem.
+Introduction (this section): background to the IB1 Trust Framework project, clarifications of the roles and responsibilities of different types of actors operating in the Trust Framework ecosystem.
 
 [Open Energy Glossary](../glossary.md#open-energy-glossary): definitions of common acronyms, terminology, and technical tools used in [Open Energy](../glossary.md#term-Open-Energy)
 documentation.
@@ -261,5 +255,5 @@ This version of the guidelines contains details of operational requirements defi
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzMwMjY0NzNdfQ==
+eyJoaXN0b3J5IjpbMTE5MzI3MzEzOV19
 -->
