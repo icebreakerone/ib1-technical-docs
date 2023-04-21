@@ -38,7 +38,7 @@ Technical documentation for the [IcebreakerOne](https://icebreakerone.org) (IB1)
         * [Closed data](ops_guidelines/introduction.md#closed-data)
 
 
-    * [What role does your organisation play in the IB1 Trust ecosystem?](ops_guidelines/introduction.md#what-role-does-your-organisation-play-in-the-open-energy-ecosystem)
+    * [What role does your organisation play in the IB1 Trust ecosystem?](ops_guidelines/introduction.md#what-role-does-your-organisation-play-in-the-ib1-trust-ecosystem)
 
 
         * [Data Providers](ops_guidelines/introduction.md#dps)
@@ -53,7 +53,7 @@ Technical documentation for the [IcebreakerOne](https://icebreakerone.org) (IB1)
         * [Dual Roles](ops_guidelines/introduction.md#dual-roles)
 
 
-    * [How does dataset access and licensing operate under Open Energy?](ops_guidelines/introduction.md#how-does-dataset-access-and-licensing-operate-under-open-energy)
+    * [How does dataset access and licensing operate under the IB1 Trust Framework?](ops_guidelines/introduction.md#how-does-dataset-access-and-licensing-operate-under-the-ib1-trust-framework)
 
 
         * [Types of Access Conditions](ops_guidelines/introduction.md#types-of-access-conditions)
@@ -454,5 +454,5 @@ Technical documentation for the [IcebreakerOne](https://icebreakerone.org) (IB1)
 
     * [Engagement](additional_material.md#engagement)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwNzI0MjMxNV19
+eyJoaXN0b3J5IjpbODM3NjEzOTExXX0=
 -->
