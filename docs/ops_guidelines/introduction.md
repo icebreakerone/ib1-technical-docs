@@ -92,11 +92,21 @@ Agree **technical data and metadata standards** for publishing data, including m
 Operational **technical systems** that enable data sharing (trust framework) and processing (e.g. calculation).
 
 #### Data Licensing & Legal
-Develop standard legal data licences that allow restricted data to flow securely across the market, with consent, in alignment with [Data Sensitivity Classes](https://icebreakerone.org/data-sensitivity-classes/).
+Develop standard legal data licences that allow restricted data to flow securely across the market, with consent, in alignment with [Data Sensitivity Classes](common_policies.md#Data-Sensitivity-Classes).
 
 This includes key policies, such as conditions for participation, roles and responsibilities.
 
 Outputs of this group address the necessary licences and requirements for a functioning access control.
+
+#### Engagement & Communications
+Convene and bring people together to ensure common understanding of what is being done, why and how.
+
+  
+
+Address the user experience (whether business or consumer), signposting and addressing how to inspire behavioural change.
+
+  
+Create **awareness**, **engagement** and impact with stakeholders.
 
 #### Group makeup
 The membership of these groups is designed to represent a range of different 
@@ -224,6 +234,6 @@ This version of the guidelines contains details of operational requirements defi
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNTA0NTEwMiwxMTc1NDkxNjIxLDExMj
+eyJoaXN0b3J5IjpbMTYwNDk2NTQ1OSwxMTc1NDkxNjIxLDExMj
 gyODEyODBdfQ==
 -->
