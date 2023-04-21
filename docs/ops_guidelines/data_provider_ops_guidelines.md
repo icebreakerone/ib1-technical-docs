@@ -190,28 +190,21 @@ It is not generally possible to give advance notice of unplanned downtime, but [
 
 When providing notifications, [Data Providers](../glossary.md#term-Data-Provider) **SHOULD** provide a specific time period, so [Data Consumers](../glossary.md#term-Data-Consumer) are aware that the data [API](../glossary.md#term-Application-programming-interface) will be unavailable for that time, or upon a subsequent notification to confirm that the service has been reinstated sooner than anticipated.
 
-[TFGS](../glossary.md#term-Open-Energy-Governance-Service) Support Services can assist [Data Providers](../glossary.md#term-Data-Provider) with the dissemination of downtime information to the wider Icebreaker One ecosy via its central noticeboard facility.
+In future, [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) Support Services will be able assist [Data Providers](../glossary.md#term-Data-Provider) with the dissemination of downtime information to the wider Icebreaker One ecosystem via its central noticeboard facility.
 
-Planned downtime should be given at least five business days before the event. Apart from cancelling the planned
-downtime, no changes should be made to the planned downtime notification within the five business day period. Where
-practical, [Data Providers](../glossary.md#term-Data-Provider) should give advance notice via their own website, developer portal or [OEGS](../glossary.md#term-Open-Energy-Governance-Service) of any planned downtime one
-calendar month in advance.
+Planned downtime should be given at least five business days before the event. Apart from cancelling the planned downtime, no changes should be made to the planned downtime notification within the five business day period. Where practical, [Data Providers](../glossary.md#term-Data-Provider) should give advance notice via their own website, developer portal or [TFGS](../glossary.md#term-Trust-Framwork-Governance-Service) of any planned downtime one calendar month in advance.
 
 ### Licensing and access control changes
 
-[Data Providers](../glossary.md#term-Data-Provider) **MUST** provide advance notice of any changes to access control and capability grant policies. This is normally
-covered by the time-bounded nature of these grants, but [Data Providers](../glossary.md#term-Data-Provider) **MAY** also use any notification services provided by the [OEGS](../glossary.md#term-Open-Energy-Governance-Service)
-to publish additional information about changes.
+[Data Providers](../glossary.md#term-Data-Provider) **MUST** provide advance notice of any changes to access control and capability grant policies. This is normally covered by the time-bounded nature of these grants, but [Data Providers](../glossary.md#term-Data-Provider) **MAY** also use any notification services provided by the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) to publish additional information about changes.
 
 ### Data API changes
 
-[Data Providers](../glossary.md#term-Data-Provider) may periodically wish to upgrade and / or to deprecate versions of their data [APIs](../glossary.md#term-Application-programming-interface). The following
-mitigation measures will reduce the impact on service providers of these changes.
+[Data Providers](../glossary.md#term-Data-Provider) may periodically wish to upgrade and / or to deprecate versions of their data [APIs](../glossary.md#term-Application-programming-interface). The following mitigation measures will reduce the impact on service providers of these changes.
 
 #### Dual running and deprecation
 
-[Data Providers](../glossary.md#term-Data-Provider) **SHOULD** support a minimum of two non-compatible [API](../glossary.md#term-Application-programming-interface) versions in a production context, providing both versions
-were previously supported by the [Data Provider](../glossary.md#term-Data-Provider), for a period of time long enough to ensure that [Data Consumers](../glossary.md#term-Data-Consumer) have had sufficient time to
+[Data Providers](../glossary.md#term-Data-Provider) **SHOULD** support a minimum of two non-compatible [API](../glossary.md#term-Application-programming-interface) versions in a production context, providing both versions were previously supported by the [Data Provider](../glossary.md#term-Data-Provider), for a period of time long enough to ensure that [Data Consumers](../glossary.md#term-Data-Consumer) have had sufficient time to
 successfully test the new version and migrate their applications and customers. [OEGS](../glossary.md#term-Open-Energy-Governance-Service) recommends dual running for at
 least six months for a major version, and three months for a minor version. Where a [Data Provider](../glossary.md#term-Data-Provider) implements a data [API](../glossary.md#term-Application-programming-interface) for the
 first time, they will only need to support this one version to start with.
@@ -230,5 +223,5 @@ while providing better performance on a newer version).
 [API](../glossary.md#term-Application-programming-interface) Credentials associated with an [API](../glossary.md#term-Application-programming-interface) should be version agnostic. Therefore, a [Data Consumer](../glossary.md#term-Data-Consumer) accessing v1.0, v1.1 or v2.0 should
 be able to use the same [API](../glossary.md#term-Application-programming-interface) Credentials across all available [API](../glossary.md#term-Application-programming-interface) endpoints.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxOTk3MDYwOF19
+eyJoaXN0b3J5IjpbLTEzODU4MjkyNzldfQ==
 -->
