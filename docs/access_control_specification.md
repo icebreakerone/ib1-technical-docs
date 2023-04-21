@@ -158,47 +158,47 @@ links to the aforementioned documentation.
 **WARNING**: This section is provisional, the exact final set of base capabilities has yet to be determined. Those shown below
 are a plausible first cut but should not be considered definitive.
 
-### Standard capabilities
+### Standard capabilities TODO fix table
 
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
 | Category                 | Capability name                           | Meaning                                                                                |
 +==========================+===========================================+========================================================================================+
 | **Use**                  |                                           | **Use the artefact internally**                                                        |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `oe:use_any`                              | For any purpose                                                                        |
+|                          | `ib1:use_any`                              | For any purpose                                                                        |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `oe:use_dev`                              | For development purposes only (i.e. private or limited development of new              |
+|                          | `ib1:use_dev`                              | For development purposes only (i.e. private or limited development of new              |
 |                          |                                           | works, products or services)                                                           |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `oe:use_noncom`                           | For non-commercial purposes only (e.g. education, research, charity work               |
+|                          | `ib1:use_noncom`                           | For non-commercial purposes only (e.g. education, research, charity work               |
 |                          |                                           | etc.)                                                                                  |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
 | **Adapt**                |                                           | **Adapt the artefact for internal use**                                                |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `oe:adapt_any`                            | For any purpose                                                                        |
+|                          | `ib1:adapt_any`                            | For any purpose                                                                        |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `oe:adapt_dev`                            | For development purposes only (i.e. private or limited development of new              |
+|                          | `ib1:adapt_dev`                            | For development purposes only (i.e. private or limited development of new              |
 |                          |                                           | works, products or services)                                                           |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `oe:adapt_noncom`                         | For non-commercial purposes only (e.g. education, research, charity work               |
+|                          | `ib1:adapt_noncom`                         | For non-commercial purposes only (e.g. education, research, charity work               |
 |                          |                                           | etc.)                                                                                  |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
 | **Combine**              |                                           | **Combine (‘remix’) the artefact**                                                     |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `oe:combine_any`                          | With any other artefacts                                                               |
+|                          | `ib1:combine_any`                          | With any other artefacts                                                               |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `oe:combine_external`                     | With other external artefacts                                                          |
+|                          | `ib1:combine_external`                     | With other external artefacts                                                          |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `oe:combine_internal`                     | With the Data Consumer’s own products or services                                      |
+|                          | `ib1:combine_internal`                     | With the Data Consumer’s own products or services                                      |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
 | **Redistribute**         |                                           | **Redistribute (‘onward share’ - including to any customers of the Service Provider)** |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `oe:redistribute_original`                | The original artefact                                                                  |
+|                          | `ib1:redistribute_original`                | The original artefact                                                                  |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `oe:redistribute_derived`                 | Derivatives of the original artefact not produced from other data sets, i.e. filtered  |
+|                          | `ib1:redistribute_derived`                 | Derivatives of the original artefact not produced from other data sets, i.e. filtered  |
 |                          |                                           | or cleaned data                                                                        |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `oe:redistribute_combined`                | Derivatives of the artefact produced through artefact combination or use in the Data   |
+|                          | `ib1:redistribute_combined`                | Derivatives of the artefact produced through artefact combination or use in the Data   |
 |                          |                                           | Consumer’s own products or services                                                    |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
 
@@ -267,5 +267,5 @@ declaring that a data set is only available for non-commercial usage it is bette
 entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield
 of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjkxMzg4MjJdfQ==
+eyJoaXN0b3J5IjpbLTgzMzgzODgwOSwtMTk2OTEzODgyMl19
 -->
