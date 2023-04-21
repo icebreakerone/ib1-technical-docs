@@ -74,13 +74,17 @@ For providers of Shared data, the Governance Service offers a secure and effecti
 Service provides a mechanism to reduce friction and bilateral contract negotiation, even when requesting access to multiple datasets from different providers.
 
 ### Project Governance
-The IB1 Trust Framework, and Trust Frameworks that build upon it, have a Steering Group and five Advisory Groups (the latter may be combined into fewer groups that together cover the function of the five AG.
+The IB1 Trust Framework, and Trust Frameworks that build upon it, have a Steering Group (SG) and five Advisory Groups (AGs). The latter may be combined into fewer groups that together cover the function of the five AGs.
 
-**Steering Group**: Provide governance, strategic and tactical leadership, and oversee market-wide communications. Appoint and direct Advisory Groups. Discuss, review and ratify plans.
+**Steering Group**
+Provide governance, strategic and tactical leadership, and oversee market-wide communications. Appoint and direct Advisory Groups. Discuss, review and ratify plans.
 
-**Membership Advisory Group**: Consulted on the Membership contract, key policies, including conditions to participate,
-roles, responsibilities and liabilities, draft preemptive licence, funding model, operational guidelines, and
-ongoing governance.
+**User Needs,  Materiality, Impact Advisory Group**
+Explore, prioritise and work through use cases (identifying users, their needs, mapping the data value chain).
+
+Agree data needs that represent materiality of the challenge area that can be linked to market impact.
+  
+Develop the business, value and impact cases for the programme and its impact on policy targets, businesses and financial instruments. Where relevant, identify relevant net zero reporting standards and frameworks.
 
 **Delivery Advisory Group**: Consulted on the drafting of operational guidelines and understanding data production
 and usage. Fed into the requirements for technical delivery of the Open Energy Governance Service and the Energy
@@ -217,6 +221,6 @@ This version of the guidelines contains details of operational requirements defi
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY5NTQ2NDQwLDExNzU0OTE2MjEsMTEyOD
+eyJoaXN0b3J5IjpbNjQwNDY5MTgzLDExNzU0OTE2MjEsMTEyOD
 I4MTI4MF19
 -->
