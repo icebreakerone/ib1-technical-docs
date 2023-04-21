@@ -4,15 +4,14 @@
 **“SHOULD NOT”**, **“RECOMMENDED”**, **“MAY”**, and **“OPTIONAL”** in this document are to be interpreted
 as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
-The Icebreaker One (IB1) Trust Framework defines a security and trust model for shared data [APIs](../glossary.md#term-Application-programming-interface). Three
-parties are involved in each shared data request:
+The Icebreaker One (IB1) Trust Framework defines a security and trust model for shared data [APIs](../glossary.md#term-Application-programming-interface). Three parties are involved in each shared data request:
 
 
 1. The [Data Consumer](../glossary.md#term-Data-Consumer) wishing to access the [shared data](../glossary.md#term-Shared-data) [API](../glossary.md#term-Application-programming-interface)
 
 
 2. The [authorization](../glossary.md#term-Authorization) server, as part of the governance service ([TFGS](../glossary.md#term-Trust-Framework-Governance-Service)), with knowledge about the
-[Data Consumer](../glossary.md#term-Data-Consumer) as represented by an organisation account within the [TFGS](../glossary.md#term-Trust-Governance-Service)
+[Data Consumer](../glossary.md#term-Data-Consumer) as represented by an organisation account within the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service)
 
 
 3. The [Data Provider](../glossary.md#term-Data-Provider) responsible for supplying shared data through its shared data [API](../glossary.md#term-Application-programming-interface)
@@ -21,9 +20,7 @@ The interactions are shown graphically below in the form of a sequence diagram.
 
 ## Applicable standards
 
-We use a strict sub-set of the [FAPI](../glossary.md#term-Financial-Grade-API) specification for interactions between [Data Providers](../glossary.md#term-Data-Provider) and [Data Consumers](../glossary.md#term-Data-Consumer). The
-applicable standards are linked here for reference, we reference the precise elements of these standards in later
-sections.
+We use a strict sub-set of the [FAPI](../glossary.md#term-Financial-Grade-API) specification for interactions between [Data Providers](../glossary.md#term-Data-Provider) and [Data Consumers](../glossary.md#term-Data-Consumer). The applicable standards are linked here for reference, we reference the precise elements of these standards in later sections.
 
 
 * [RFC6749 The OAuth 2.0 Authorization Framework](https://datatracker.ietf.org/doc/html/rfc6749)
@@ -39,9 +36,7 @@ sections.
 
 ### Discovery of endpoint URLs
 
-While not strictly necessary, the authorization server deployed as part of the [OEGS](../glossary.md#term-Open-Energy-Governance-Service) implements the OpenID Connect
-Discovery provider configuration information endpoint as described
-[here](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfig), references in this document to
+While not strictly necessary, the authorization server deployed as part of the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) implements the OpenID Connect Discovery provider configuration information endpoint as described [here](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfig), references in this document to
 e.g. `token_endpoint` refer to properties discoverable in this fashion.
 
 ## Token acquisition
@@ -245,5 +240,5 @@ More information on the Open Energy specific access control language can be foun
 [Access Control and Capability Grant Language](../access_control_specification.md#access-control-and-capability-grant-language), and its expression in the metadata file at [Data Set Metadata](../metadata.md#data-set-metadata) in the
 [Access Block](../metadata.md#access-block) section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NTUwNjMxMl19
+eyJoaXN0b3J5IjpbLTE3NjYyMDI4NDddfQ==
 -->
