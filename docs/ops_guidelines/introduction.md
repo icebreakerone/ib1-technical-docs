@@ -22,13 +22,10 @@ These guidelines are structured in six sections, outlining:
 
 Introduction (this section): background to the IB1 Trust Framework project, clarifications of the roles and responsibilities of different types of actors operating in the Trust Framework ecosystem.
 
-[Open Energy Glossary](../glossary.md#open-energy-glossary): definitions of common acronyms, terminology, and technical tools used in [Open Energy](../glossary.md#term-Open-Energy)
-documentation.
+[Glossary](../glossary.md): definitions of common acronyms, terminology, and technical tools used in the Trust Framework documentation.
 
 [Considerations Before You Start](before_starting.md#considerations-before-you-start): ‘at a glance’ list of items that all types of new members will need
 to consider in order to meet operational requirements.
-
-**NOTE**: The *Considerations before you start* is still in review and so is not present in this version of the documentation
 
 [Core Policies](common_policies.md#core-policies): operational principles and policies central to Open Energy function. Includes policies
 governing data sensitivity classification, access controls, and licensing.
@@ -255,5 +252,5 @@ This version of the guidelines contains details of operational requirements defi
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MzI3MzEzOV19
+eyJoaXN0b3J5IjpbMTk2MTQ2NjU4OF19
 -->
