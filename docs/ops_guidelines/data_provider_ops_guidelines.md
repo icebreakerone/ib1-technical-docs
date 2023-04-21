@@ -57,8 +57,7 @@ With this said, we would encourage [Data Providers](../glossary.md#term-Data-Pro
 
 ### Responsibility - Data integrity and correctness
 
-[Data Providers](../glossary.md#term-Data-Provider) are responsible for the correctness of data returned by their published data [APIs](../glossary.md#term-Application-programming-interface). We plan for the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) or Oopwill provide a
-mechanism by which [Data Consumers](../glossary.md#term-Data-Consumer) can report any data quality issues, and will convey any such reports to a nominated contact within the [Data Provider](../glossary.md#term-Data-Provider).
+[Data Providers](../glossary.md#term-Data-Provider) are responsible for the correctness of data returned by their published data [APIs](../glossary.md#term-Application-programming-interface). We plan for the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) or Open Net Zero to provide a mechanism by which [Data Consumers](../glossary.md#term-Data-Consumer) can report any data quality issues, which will be forwared to a nominated contact within the [Data Provider](../glossary.md#term-Data-Provider).
 
 ### Responsibility - Metadata provision
 
@@ -274,5 +273,5 @@ while providing better performance on a newer version).
 [API](../glossary.md#term-Application-programming-interface) Credentials associated with an [API](../glossary.md#term-Application-programming-interface) should be version agnostic. Therefore, a [Data Consumer](../glossary.md#term-Data-Consumer) accessing v1.0, v1.1 or v2.0 should
 be able to use the same [API](../glossary.md#term-Application-programming-interface) Credentials across all available [API](../glossary.md#term-Application-programming-interface) endpoints.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTI0NzYwMzFdfQ==
+eyJoaXN0b3J5IjpbMjEwNjMxMTczNF19
 -->
