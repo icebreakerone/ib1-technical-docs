@@ -59,14 +59,10 @@ These functions are described below.
 
 ### Dataset Search
 
-Open Energy’s first core function - Open Energy Search - enables dataset search and discovery. Open Energy Search
-empowers users to find out what datasets exist and who owns/controls them. Search results also outline the
-[sensitivity class](common_policies.md#data-sensitivity-classes), [access rules](common_policies.md#data-access-conditions), and
-[capability grants](common_policies.md#data-licensing) associated with a certain dataset, meaning that access and
-licensing details are transparent. This works through a search engine designed
+The IB1 Trust Framework’s first core function - [Open Net Zero](https://opennetzero.org) - enables dataset search and discovery. Open Net Zero empowers users to find out what datasets exist and who owns/controls them. Search results also outline the [sensitivity class](common_policies.md#data-sensitivity-classes), [access rules](common_policies.md#data-access-conditions), and [capability grants](common_policies.md#data-licensing) associated with a certain dataset, meaning that access and licensing details are transparent. This works through a search engine designed
 specifically to search for datasets, with options to search by different parameters in order to refine results.
-It can also be used to discover datasets adjacent to searches; helping users to build up a more rounded picture
-of the energy data landscape in their sphere of interest. Open Energy search is free, available to all, and will
+
+It can also be used to discover datasets adjacent to searches; helping users to build up a more rounded picture of the net-zero data landscape in their sphere of interest. Open Energy search is free, available to all, and will
 remain so. Access pathways to Open and Shared data are described in the following section.
 
 Datasets provided by Open Energy members ([Data Providers](../glossary.md#term-Data-Provider)) and non-Open Energy members (e.g. web scraped Open Data)
@@ -234,5 +230,5 @@ This version of the guidelines contains details of operational requirements defi
 accordance with future phases of Open Energy. If you have any suggestions regarding areas of the operational
 guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MjI3ODg4Nl19
+eyJoaXN0b3J5IjpbLTE2NDg5NTAyNDRdfQ==
 -->
