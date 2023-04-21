@@ -99,25 +99,17 @@ To participate in the Open Energy ecosystem, a [Data Provider](../glossary.md#te
     * Reject any requests which do not provide an `Authorization` header containing a `Bearer` token as described
 above
 
-If any of the above checks fail, the [Data Provider](../glossary.md#term-Data-Provider) **MUST NOT** continue processing the request, and **SHOULD** respond with
-an error response as defined in [this section](https://datatracker.ietf.org/doc/html/rfc6750#section-6.2) of [RFC6750](../glossary.md#term-The-OAuth-2.0-Authorization-Framework-Bearer-Token-Usage)
+If any of the above checks fail, the [Data Provider](../glossary.md#term-Data-Provider) **MUST NOT** continue processing the request, and **SHOULD** respond with an error response as defined in [this section](https://datatracker.ietf.org/doc/html/rfc6750#section-6.2) of [RFC6750](../glossary.md#term-The-OAuth-2.0-Authorization-Framework-Bearer-Token-Usage)
 
 ### Token introspection
 
-If all the above checks pass, the [Data Provider](../glossary.md#term-Data-Provider) **MUST** then validate the presented token. Tokens in our case are opaque
-identifiers (as opposed to JWTs) and must be passed to the `introspection_endpoint` of the authorization server to
-obtain additional information. To obtain this introspection response, the [Data Provider](../glossary.md#term-Data-Provider) **MUST**:
-
+If all the above checks pass, the [Data Provider](../glossary.md#term-Data-Provider) **MUST** then validate the presented token. Tokens in our case are opaque identifiers (as opposed to JWTs) and must be passed to the `introspection_endpoint` of the authorization server to obtain additional information. To obtain this introspection response, the [Data Provider](../glossary.md#term-Data-Provider) **MUST**:
 
 * Make a `POST` request to the `introspection_endpoint` of the authorization server
 
+* Use [MTLS](../glossary.md#term-Mutual-TLS-authentication), this means [Data Providers](../glossary.md#term-Data-Provider) must also have a provisioned client within the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) directory in the form of a `software statement` and corresponding transport certificate
 
-* Use Mutual [TLS](../glossary.md#term-Transport-Layer-Security), this means [Data Providers](../glossary.md#term-Data-Provider) must also have a provisioned client within the [OEGS](../glossary.md#term-Open-Energy-Governance-Service) directory in the form
-of a `software statement` and corresponding transport certificate
-
-
-* Send the bearer token and client [ID](../glossary.md#term-Identification) of the [Data Provider](../glossary.md#term-Data-Provider) as an `application/x-www-form-urlencoded` body with the
-following values:
+* Send the bearer token and client [ID](../glossary.md#term-Identification) of the [Data Provider](../glossary.md#term-Data-Provider) as an `application/x-www-form-urlencoded` body with the following values:
 
 ```default
 token: <BEARER_TOKEN>
@@ -216,5 +208,5 @@ More information on the Open Energy specific access control language can be foun
 [Access Control and Capability Grant Language](../access_control_specification.md#access-control-and-capability-grant-language), and its expression in the metadata file at [Data Set Metadata](../metadata.md#data-set-metadata) in the
 [Access Block](../metadata.md#access-block) section.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNzc4MTc0XX0=
+eyJoaXN0b3J5IjpbMTQwMjU3ODM2NF19
 -->
