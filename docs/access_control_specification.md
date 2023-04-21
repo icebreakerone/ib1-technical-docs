@@ -54,7 +54,7 @@ This is typically used to denote a particular property such as *Open Energy curr
 existence of the property is sufficient to accept the data consumer.
 
 ```json
- {"oe:member" : true}
+ {"ib1:member" : true}
 ```
 
 ### Binary clauses
@@ -266,3 +266,6 @@ explicitly not included here as it is possible to express this through the acces
 declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial
 entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield
 of defining ‘non commercial use’.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTMwMDA4NTI4Ml19
+-->
