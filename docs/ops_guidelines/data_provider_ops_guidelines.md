@@ -151,35 +151,24 @@ Data [APIs](../glossary.md#term-Application-programming-interface) **MUST** be d
 
 ### Versioning
 
-All data [APIs](../glossary.md#term-Application-programming-interface) **MUST** include a version number in the path of each data endpoint. This version SHOULD use semantic
-versioning to differentiate between breaking and backwards compatible changes. This **MUST** be documented within the
-Open|API| transport section of the metadata file.
+All data [APIs](../glossary.md#term-Application-programming-interface) **MUST** include a version number in the path of each data endpoint. This version SHOULD use semantic versioning to differentiate between breaking and backwards compatible changes. This **MUST** be documented within the OpenAPI transport section of the metadata file.
 
 ## Problem Resolution (Data Providers)
 
 ### Effective resolution of problems (Data Providers)
 
-A [Data Provider](../glossary.md#term-Data-Provider) **MUST** create documentation to clearly outline the policies, processes and systems it has in place for problem
-resolution and its respective service level objectives. This framework should enable the effective resolution of [Data Consumer](../glossary.md#term-Data-Consumer)
-issues and therefore cater for problems that relate specifically to a [Data Consumer](../glossary.md#term-Data-Consumer)’s use of a [Data Provider](../glossary.md#term-Data-Provider)’s data [APIs](../glossary.md#term-Application-programming-interface). In the event that a
-[Data Consumer](../glossary.md#term-Data-Consumer) is unable to resolve an issue with a [Data Provider](../glossary.md#term-Data-Provider), the issue **MAY** be flagged to the [OEGS](../glossary.md#term-Open-Energy-Governance-Service) Dispute Resolution function for
+A [Data Provider](../glossary.md#term-Data-Provider) **MUST** create documentation to clearly outline the policies, processes and systems it has in place for problem resolution and its respective service level objectives. This framework should enable the effective resolution of [Data Consumer](../glossary.md#term-Data-Consumer) issues and therefore cater for problems that relate specifically to a [Data Consumer](../glossary.md#term-Data-Consumer)’s use of a [Data Provider](../glossary.md#term-Data-Provider)’s data [APIs](../glossary.md#term-Application-programming-interface). In the event that a [Data Consumer](../glossary.md#term-Data-Consumer) is unable to resolve an issue with a [Data Provider](../glossary.md#term-Data-Provider), the issue **MAY** be flagged to the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) Dispute Resolution function for
 independent support.
 
 ### Online support
 
-[Data Providers](../glossary.md#term-Data-Provider) **SHOULD** provide [Frequently Asked Questions](../glossary.md#term-Frequently-Asked-Question), which address areas that may be specific to [Data Consumers](../glossary.md#term-Data-Consumer) such as technical advice or test facility
-guidance. They should also consider a means of identifying recurring questions or user-error issues so these can be
-collated into [Frequently Asked Questions](../glossary.md#term-Frequently-Asked-Question) to support the early resolution of problems.
+[Data Providers](../glossary.md#term-Data-Provider) **SHOULD** provide [Frequently Asked Questions](../glossary.md#term-Frequently-Asked-Question), which address areas that may be specific to [Data Consumers](../glossary.md#term-Data-Consumer) such as technical advice or test facility guidance. They should also consider a means of identifying recurring questions or user-error issues so these can be collated into [Frequently Asked Questions](../glossary.md#term-Frequently-Asked-Question) to support the early resolution of problems.
 
-Problem resolution documentation, [Frequently Asked Questions](../glossary.md#term-Frequently-Asked-Question), contact details, opening times and out of hours support **SHOULD** be published
-and easily accessible in one collective area on the [Data Provider](../glossary.md#term-Data-Provider)’s website.
+Problem resolution documentation, [Frequently Asked Questions](../glossary.md#term-Frequently-Asked-Question), contact details, opening times and out of hours support **SHOULD** be published and easily accessible in one collective area on the [Data Provider](../glossary.md#term-Data-Provider)’s website.
 
 ### Ticket management process
 
-[Data Providers](../glossary.md#term-Data-Provider) **MUST** ensure they have a functioning ticket management system which enables them to respond to issues and
-problems raised within clearly defined service level targets. A successful problem resolution framework will enable the
-efficient identification and resolution of problems which specifically impact [Data Consumers](../glossary.md#term-Data-Consumer). The system for raising and reporting
-on tickets should be transparent in order to fully inform users and engender trust across the ecosystem.
+[Data Providers](../glossary.md#term-Data-Provider) **MUST** ensure they have a functioning ticket management system which enables them to respond to issues and problems raised within clearly defined service level targets. A successful problem resolution framework will enable the efficient identification and resolution of problems which specifically impact [Data Consumers](../glossary.md#term-Data-Consumer). The system for raising and reporting on tickets should be transparent in order to fully inform users and engender trust across the ecosystem.
 
 ### Dispute resolution for access control and capability grant policies (Data Providers)
 
@@ -247,5 +236,5 @@ while providing better performance on a newer version).
 [API](../glossary.md#term-Application-programming-interface) Credentials associated with an [API](../glossary.md#term-Application-programming-interface) should be version agnostic. Therefore, a [Data Consumer](../glossary.md#term-Data-Consumer) accessing v1.0, v1.1 or v2.0 should
 be able to use the same [API](../glossary.md#term-Application-programming-interface) Credentials across all available [API](../glossary.md#term-Application-programming-interface) endpoints.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTc1NDQ0XX0=
+eyJoaXN0b3J5IjpbLTEyODE0Njk0NDJdfQ==
 -->
