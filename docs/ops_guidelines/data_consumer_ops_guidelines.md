@@ -1,19 +1,14 @@
 # Guidance for Data Consumers
 
-**NOTE**: This documented is primarily intended for technical and operations teams within organisations wishing
-to participate in Open Energy as Data Consumers.
+**NOTE**: This documented is primarily intended for technical and operations teams within organisations wishing to participate in the Icebreaker One Trust Framework as Data Consumers.
 
-**NOTE**: The key words **“MUST”**, **“MUST NOT”**, **“REQUIRED”**, **“SHALL”**, **“SHALL NOT”**, **“SHOULD”**,
-**“SHOULD NOT”**, **“RECOMMENDED”**, **“MAY”**, and **“OPTIONAL”** in this document are to be interpreted
-as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
+**NOTE**: The key words **“MUST”**, **“MUST NOT”**, **“REQUIRED”**, **“SHALL”**, **“SHALL NOT”**, **“SHOULD”**, **“SHOULD NOT”**, **“RECOMMENDED”**, **“MAY”**, and **“OPTIONAL”** in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
 ## Data Consumer Role and Responsibilities
 
-[Data Consumers](../glossary.md#term-Data-Consumer) are Open Energy members which can consume Shared Data (classes [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A) and [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) in our
-[Data Sensitivity Classes](common_policies.md#data-sensitivity-classes)) from [APIs](../glossary.md#term-Application-programming-interface) produced and maintained by [Data Providers](../glossary.md#term-Data-Provider).
+[Data Consumers](../glossary.md#term-Data-Consumer) are IB1 Trust Framework members that can consume Shared Data (classes [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A) and [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B) in our [Data Sensitivity Classes](common_policies.md#data-sensitivity-classes)) from [APIs](../glossary.md#term-Application-programming-interface) produced and maintained by [Data Providers](../glossary.md#term-Data-Provider).
 
-In the figure below, we expect [Data Consumers](../glossary.md#term-Data-Consumer) to occupy a number of roles from the lowest in the diagram upwards - they
-are organisations able to configure their infrastructure (in terms of the consumer parts of the
+In the figure below, we expect [Data Consumers](../glossary.md#term-Data-Consumer) to occupy a number of roles from the lowest in the diagram upwards - theyare organisations able to configure their infrastructure (in terms of the consumer parts of the
 [Common Security Requirements](technical_common.md#common-security-requirements), specifically [Token acquisition](technical_common.md#token-acquisition) and [Token usage - calling a shared data API](technical_common.md#token-usage-calling-a-shared-data-api)). This
 is covered by the bottom two boxes.
 
@@ -56,3 +51,6 @@ will act as a mediating party.
 
 The [OEGS](../glossary.md#term-Open-Energy-Governance-Service) Service Desk will provide participants with a supplementary ticket management process and supports [Data Consumers](../glossary.md#term-Data-Consumer)
 in communicating problems to ecosystem participants via the noticeboard.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbOTg1MTcwNzU2XX0=
+-->
