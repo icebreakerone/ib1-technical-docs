@@ -14,15 +14,11 @@ In the figure below, we expect [Data Consumers](../glossary.md#term-Data-Consume
 
 The IB1 Trust Framework does not differentiate between [Data Consumers](../glossary.md#term-Data-Consumer) that access data to solve a problem internal to their organisation and those (known as [Service Providers](../glossary.md#term-Service-Provider)) which offer this as a service to other organisations. A [Data Consumer](../glossary.md#term-Data-Consumer) may also be a [Data Provider](../glossary.md#term-Data-Provider), the roles are not mutually exclusive.
 
-In a similar vein, it would be entirely normal for a [Data Consumer](../glossary.md#term-Data-Consumer) to also access [Open Data](../glossary.md#term-Open-data), and to use the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service)
-search system to locate data sets of interest, both open and shared.
+In a similar vein, it would be entirely normal for a [Data Consumer](../glossary.md#term-Data-Consumer) to also access [Open Data](../glossary.md#term-Open-data), and to use [Open Net Zero](https://opennetzero.org) to locate data sets of interest, both open and shared.
 
 ### Responsibility - Data consumption
 
-The definition of a [Data Consumer](../glossary.md#term-Data-Consumer) is that it consumes data from [shared data](../glossary.md#term-Shared-data) [APIs](../glossary.md#term-Application-programming-interface). To do this, the organisation **MUST**
-create cryptographic key material, and maintain a record within the [OEGS](../glossary.md#term-Open-Energy-Governance-Service) directory. It is responsible for the
-integrity of this key material, and **MUST** put appropriate policies in place to ensure that this material is not
-misused.
+The definition of a [Data Consumer](../glossary.md#term-Data-Consumer) is that it consumes data from [shared data](../glossary.md#term-Shared-data) [APIs](../glossary.md#term-Application-programming-interface). To do this, the organisation **MUST** create cryptographic key material, and maintain a record within the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) directory. It is responsible for the integrity of this key material, and **MUST** put appropriate policies in place to ensure that this material is not misused.
 
 ### Responsibility - Data licensing
 
@@ -48,5 +44,5 @@ will act as a mediating party.
 The [OEGS](../glossary.md#term-Open-Energy-Governance-Service) Service Desk will provide participants with a supplementary ticket management process and supports [Data Consumers](../glossary.md#term-Data-Consumer)
 in communicating problems to ecosystem participants via the noticeboard.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI3NTYwNDMxXX0=
+eyJoaXN0b3J5IjpbMTMwODU5NDU1OCw3Mjc1NjA0MzFdfQ==
 -->
