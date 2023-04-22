@@ -2,20 +2,15 @@
 
 ## Introduction (Core Policies)
 
-This section aims to outline core policies and principles with implications for all members of the Icebreaker One Trust Framework. Please note that it is beyond the scope of Open Energy Phase 3 to produce 
-accompanying all policies in this section. Development of these resources is a priority for future development and
-will be approached openly; using consultation with [Advisory Groups](../glossary.md#term-Advisory-Group), tester organisations and members to ensure that
-resources meet member needs. All terminology used in this section is outlined in the [Open Energy Glossary](../glossary.md#open-energy-glossary).
+This section aims to outline core policies and principles with implications for all members of the Icebreaker One Trust Framework. Development of detailed guidance and tooling to accompany the policies in this section is a priority for future development and will be approached openly; using consultation with [Advisory Groups](../glossary.md#term-Advisory-Group), tester organisations and members to ensure that resources meet member needs. All terminology used in this section is outlined in the [Glossary](../glossary.md).
 
 ## Metadata
 
-Data sets are described by [Data Providers](../glossary.md#term-Data-Provider) through metadata files. The format for these can be
-found at [Data Set Metadata](../metadata.md#data-set-metadata)
+Data sets are described by [Data Providers](../glossary.md#term-Data-Provider) through metadata files. The format for these can be found at [Data Set Metadata](../metadata.md#data-set-metadata)
 
 ## Data Sensitivity Classes
 
-The Open Energy ecosystem incorporates a range of categories of data that have varied levels of sensitivity. In order
-to handle this complexity, and to ensure data is appropriately protected, Open Energy has developed a system of data
+The IB1 Trust Framework incorporates a range of categories of data that have varied levels of sensitivity. In order to handle this complexity, and to ensure data is appropriately protected, Open Energy has developed a system of data
 sensitivity classification.
 
 In Open Energy Phase 2 (September - December 2020), the Policy and Membership Advisory Group established that a system
@@ -638,5 +633,5 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5MzA4NDY0OV19
+eyJoaXN0b3J5IjpbLTEzOTY5MDgxNDZdfQ==
 -->
