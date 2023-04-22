@@ -2,8 +2,7 @@
 
 ## Introduction (Core Policies)
 
-This section aims to outline core policies and principles with implications for all members of the Open Energy
-ecosystem. Please note that it is beyond the scope of Open Energy Phase 3 to produce detailed guidance and tooling
+This section aims to outline core policies and principles with implications for all members of the Icebreaker One Trust Framework. Please note that it is beyond the scope of Open Energy Phase 3 to produce 
 accompanying all policies in this section. Development of these resources is a priority for future development and
 will be approached openly; using consultation with [Advisory Groups](../glossary.md#term-Advisory-Group), tester organisations and members to ensure that
 resources meet member needs. All terminology used in this section is outlined in the [Open Energy Glossary](../glossary.md#open-energy-glossary).
@@ -638,3 +637,6 @@ remains an active area for future development. Given the complexity of this topi
 consultation will be used to shape the future service. In the meantime, members will be requested to use a specific
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTQ5MzA4NDY0OV19
+-->
