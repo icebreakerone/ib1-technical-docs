@@ -22,27 +22,21 @@ The definition of a [Data Consumer](../glossary.md#term-Data-Consumer) is that i
 
 ### Responsibility - Data licensing
 
-[Data Consumers](../glossary.md#term-Data-Consumer) are responsible for honouring the licenses for any data obtained through [shared data](../glossary.md#term-Shared-data) [APIs](../glossary.md#term-Application-programming-interface). Where the [OEGS](../glossary.md#term-Open-Energy-Governance-Service)
-provides technical measures such as cryptographically signed receipts binding data and license conditions together, the
-[Data Consumer](../glossary.md#term-Data-Consumer) is responsible for retaining and storing such receipts.
+[Data Consumers](../glossary.md#term-Data-Consumer) are responsible for honouring the licenses for any data obtained through [shared data](../glossary.md#term-Shared-data) [APIs](../glossary.md#term-Application-programming-interface). Where the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) provides technical measures such as cryptographically signed receipts binding data and license conditions together, the [Data Consumer](../glossary.md#term-Data-Consumer) is responsible for retaining and storing such receipts.
 
 ## Problem Resolution (Data Consumers)
 
 ### Effective resolution of problems (Data Consumers)
 
-We encourage [Data Consumers](../glossary.md#term-Data-Consumer) to direct any problems with data [APIs](../glossary.md#term-Application-programming-interface) first to the [Data Provider](../glossary.md#term-Data-Provider) concerned. In the event
-that a [Data Consumer](../glossary.md#term-Data-Consumer) is unable to resolve an issue with a [Data Provider](../glossary.md#term-Data-Provider), the issue MAY be flagged to the [OEGS](../glossary.md#term-Open-Energy-Governance-Service) Dispute
-Resolution function for independent support.
+We encourage [Data Consumers](../glossary.md#term-Data-Consumer) to direct any problems with data [APIs](../glossary.md#term-Application-programming-interface) first to the [Data Provider](../glossary.md#term-Data-Provider) concerned. In the event that a [Data Consumer](../glossary.md#term-Data-Consumer) is unable to resolve an issue with a [Data Provider](../glossary.md#term-Data-Provider), the issue MAY be flagged to the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) Dispute Resolution function for independent support.
 
 ### Dispute resolution for access control and capability grant policies
 
-In cases where a [Data Consumer](../glossary.md#term-Data-Consumer) believes that access conditions or capability grant rules are being applied unfairly, the [OEGS](../glossary.md#term-Open-Energy-Governance-Service)
-will act as a mediating party.
+In cases where a [Data Consumer](../glossary.md#term-Data-Consumer) believes that access conditions or capability grant rules are being applied unfairly, the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) will act as a mediating party.
 
-### OEGS support
+### TFGS support
 
-The [OEGS](../glossary.md#term-Open-Energy-Governance-Service) Service Desk will provide participants with a supplementary ticket management process and supports [Data Consumers](../glossary.md#term-Data-Consumer)
-in communicating problems to ecosystem participants via the noticeboard.
+The [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) Service Desk will provide participants with a supplementary ticket management process and supports [Data Consumers](../glossary.md#term-Data-Consumer) in communicating problems to ecosystem participants via the noticeboard.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwODU5NDU1OCw3Mjc1NjA0MzFdfQ==
+eyJoaXN0b3J5IjpbLTE2Mjk4MTEzNTIsNzI3NTYwNDMxXX0=
 -->
