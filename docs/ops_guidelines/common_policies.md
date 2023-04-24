@@ -437,27 +437,20 @@ licence-changes as this remains within the legal rights of the [Data Provider](.
 
 ### Where are these rules specified?
 
-The access control, capability, and obligation grants form part of the metadata for a dataset. This is expressed in a
-file, hosted and maintained by the [Data Provider](../glossary.md#term-Data-Provider) responsible for the data set. The provisional structure of the entire
-file can be found at [Data Set Metadata](../metadata.md#data-set-metadata), in particular the section on the [Access Block](../metadata.md#access-block)
+The access control, capability, and obligation grants form part of the metadata for a dataset. This is expressed in a file, hosted and maintained by the [Data Provider](../glossary.md#term-Data-Provider) responsible for the data set. The provisional structure of the entire file can be found at [Data Set Metadata](../metadata.md#data-set-metadata), in particular the section on the [Access Block](../metadata.md#access-block)
 
 ### Where are these rules evaluated, and by whom?
 
-Following our guiding principle that [Data Providers](../glossary.md#term-Data-Provider) remain in control of their data at all times, these rules are
-evaluated within the [Data Provider](../glossary.md#term-Data-Provider) [API](../glossary.md#term-Application-programming-interface) implementation. This is necessary to allow for decisions predicated on
-information only known to the [Data Provider](../glossary.md#term-Data-Provider), but this could impose additional complexity when setting up and
-implementing a [Data Provider](../glossary.md#term-Data-Provider). To mitigate this, we will provide clear specifications and semantics for the rules
-language, along with a reference implementation in the Python language.
+Following our guiding principle that [Data Providers](../glossary.md#term-Data-Provider) remain in control of their data at all times, these rules are evaluated within the [Data Provider](../glossary.md#term-Data-Provider) [API](../glossary.md#term-Application-programming-interface) implementation. This is necessary to allow for decisions predicated on information only known to the [Data Provider](../glossary.md#term-Data-Provider), but this could impose additional complexity when setting up and implementing a [Data Provider](../glossary.md#term-Data-Provider). To mitigate this, we provide clear specifications and semantics for the rules language, along with a reference implementation in the Python language.
 
-The current language specification can be found at [Access Control and Capability Grant Language](../access_control_specification.md#access-control-and-capability-grant-language), the time bounds
-and other properties form part of the [Access Block](../metadata.md#access-block) specification in the metadata file format.
+The current language specification can be found at [Access Control and Capability Grant Language](../access_control_specification.md#access-control-and-capability-grant-language), the time bounds and other properties form part of the [Access Block](../metadata.md#access-block) specification in the metadata file format.
 
 ## Service Desk and Notifications
 
-Open Energy acknowledges industry feedback regarding the need to develop a Service Desk and notifications function.
-Developing the full function is beyond the scope of project Phase 3, however it remains an active area for future
+Icebreaker One acknowledges industry feedback regarding the need to develop a Service Desk and notifications function.
+Developing the full function is an active area for future
 development. In the meantime, members will be directed to use a specific email address to catalogue emerging needs and
-discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. We proposed to use learning from this prototype to inform future service and policy
+discuss appropriate [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) support. We propose to use learning from this prototype to inform future service and policy
 design.
 
 ## Dispute Resolution
@@ -469,6 +462,6 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzA0OTIyNTQsLTE0NjUzNTY0NCw5MD
-M4Mzg4ODddfQ==
+eyJoaXN0b3J5IjpbLTM5MzU0NzUyNSwtMTQ2NTM1NjQ0LDkwMz
+gzODg4N119
 -->
