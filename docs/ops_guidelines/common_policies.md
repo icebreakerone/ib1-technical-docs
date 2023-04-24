@@ -301,30 +301,16 @@ artefact was used in their creation.
 
 * Establish a limit in liability for use of the data in its current state.
 
-We propose to use this list as the building blocks for our system of obligations accompanying capability grants;
-whereby the range of associations, associated legal text, and ‘human readable’ notation/icons is standardised within
-the Open Energy ecosystem.
+We propose to use this list as the building blocks for our system of obligations accompanying capability grants; whereby the range of associations, associated legal text, and ‘human readable’ notation/icons is standardised within the IB1 Trust Framework.
 
 ### Why are we proposing this approach?
 
-Constructing a single licence for each dataset, designed to govern all possible scenarios for its use, has to date
-resulted in the creation of long, complex licensing agreements that are not easily readable by [Data Consumers](../glossary.md#term-Data-Consumer). Industry
-feedback indicates that this creates friction and costs, for example associated with data-related legal support or
-accidental misuse of licensed data. These issues are further compounded by growth in the creation of bespoke licences
-that include non-standard capabilities or legal wording.
+Constructing a single licence for each dataset, designed to govern all possible scenarios for its use, has to date resulted in the creation of long, complex licensing agreements that are not easily readable by [Data Consumers](../glossary.md#term-Data-Consumer). Industry feedback indicates that this creates friction and costs, for example associated with data-related legal support or accidental misuse of licensed data. These issues are further compounded by growth in the creation of bespoke licences that include non-standard capabilities or legal wording.
 
-Open Energy has identified an alternative approach to single data licences, which is currently more commonly used within
-data science and software development communities outside of the energy sector. This approach permits dual or multiple
-licensing of an artefact, whereby the individual licences are kept as simple as possible. For example, dual licensing
-is commonly used in circumstances where software code is released for free under one licence, then to paying customers
-under a more permissive licence.
+Icebreaker One has identified an alternative approach to single data licences, which is currently more commonly used within
+data science and software development communities outside of the energy sector. This approach permits dual or multiple licensing of an artefact, whereby the individual licences are kept as simple as possible. For example, dual licensing is commonly used in circumstances where software code is released for free under one licence, then to paying customers under a more permissive licence.
 
-Our approach accepts that a degree of licence pluralism is necessary, and indeed valuable, in supporting a diversity of
-data types, actors and use-cases within the energy data ecosystem. We are aware that a multiple licensing approach may
-prompt some concern regarding a risk of licence proliferation and/or opacity. However, our approach can reduce these
-risks by rationalising and standardising the parameters in which licensing occurs. To do this, Open Energy will work to
-standardise the range of capabilities offered, the legal text governing how these capabilities are expressed, and the
-‘human-readable’ ways in which these capabilities are communicated to [Data Consumers](../glossary.md#term-Data-Consumer). Beyond Phase 3, we will further
+Our approach accepts that a degree of licence pluralism is necessary, and indeed valuable, in supporting a diversity of data types, actors and use-cases within the energy data ecosystem. We are aware that a multiple licensing approach may prompt some concern regarding a risk of licence proliferation and/or opacity. However, our approach can reduce these risks by rationalising and standardising the parameters in which licensing occurs. To do this, Icebreaker One will work to standardise the range of capabilities offered, the legal text governing how these capabilities are expressed, and the ‘human-readable’ ways in which these capabilities are  ommunicated to [Data Consumers](../glossary.md#term-Data-Consumer). In future, we will further
 develop guidance for [Data Providers](../glossary.md#term-Data-Provider) encouraging simplicity and discouraging unnecessary protectionism, while also
 maintaining appropriate protections for higher sensitivity classes of data.
 
@@ -523,5 +509,5 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjUyMjkxNTE0LDkwMzgzODg4N119
+eyJoaXN0b3J5IjpbOTgwNjY0OTc2LDkwMzgzODg4N119
 -->
