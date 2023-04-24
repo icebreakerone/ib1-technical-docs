@@ -310,23 +310,14 @@ Constructing a single licence for each dataset, designed to govern all possible 
 Icebreaker One has identified an alternative approach to single data licences, which is currently more commonly used within
 data science and software development communities outside of the energy sector. This approach permits dual or multiple licensing of an artefact, whereby the individual licences are kept as simple as possible. For example, dual licensing is commonly used in circumstances where software code is released for free under one licence, then to paying customers under a more permissive licence.
 
-Our approach accepts that a degree of licence pluralism is necessary, and indeed valuable, in supporting a diversity of data types, actors and use-cases within the energy data ecosystem. We are aware that a multiple licensing approach may prompt some concern regarding a risk of licence proliferation and/or opacity. However, our approach can reduce these risks by rationalising and standardising the parameters in which licensing occurs. To do this, Icebreaker One will work to standardise the range of capabilities offered, the legal text governing how these capabilities are expressed, and the ‘human-readable’ ways in which these capabilities are  ommunicated to [Data Consumers](../glossary.md#term-Data-Consumer). In future, we will further
-develop guidance for [Data Providers](../glossary.md#term-Data-Provider) encouraging simplicity and discouraging unnecessary protectionism, while also
-maintaining appropriate protections for higher sensitivity classes of data.
+Our approach accepts that a degree of licence pluralism is necessary, and indeed valuable, in supporting a diversity of data types, actors and use-cases within the energy data ecosystem. We are aware that a multiple licensing approach may prompt some concern regarding a risk of licence proliferation and/or opacity. However, our approach can reduce these risks by rationalising and standardising the parameters in which licensing occurs. To do this, Icebreaker One will work to standardise the range of capabilities offered, the legal text governing how these capabilities are expressed, and the ‘human-readable’ ways in which these capabilities are  communicated to [Data Consumers](../glossary.md#term-Data-Consumer). In future, we will further develop guidance for [Data Providers](../glossary.md#term-Data-Provider) encouraging simplicity and discouraging unnecessary protectionism, while also maintaining appropriate protections for higher sensitivity classes of data.
 
 Early feedback from Advisory Groups and critical friends has suggested that benefits of this approach could include
-reduced legal, staff and time costs associated with improved searchability, transparency, readability and
-standardisation of capability grants. By making licensing simpler and faster, it could also help level the digital
-playing field by offering particular benefits to new, small or ‘public interest’ actors lacking in-house expertise
-or budget. In the longer term, adoption of this approach could have benefits across the sector as new data markets
-incentivise [Data Providers](../glossary.md#term-Data-Provider) to align with Open Energy standardisation.
+reduced legal, staff and time costs associated with improved searchability, transparency, readability and standardisation of capability grants. By making licensing simpler and faster, it could also help level the digital playing field by offering particular benefits to new, small or ‘public interest’ actors lacking in-house expertise or budget. In the longer term, adoption of this approach could have benefits across the sector as new data markets incentivise [Data Providers](../glossary.md#term-Data-Provider) to align with IB1 Trust Framework standardisation.
 
 ### Example access control and capability grant scenarios
 
-**NOTE**: These scenarios have been created to reflect decisions that could be faced by [Data Providers](../glossary.md#term-Data-Provider) in our Phase 3 use-case,
-in which a Local Authority is seeking data to plan the retrofit of social housing with low carbon technologies.
-Please note that the scenarios are exemplary only and do not necessarily represent the stances of any [Data Providers](../glossary.md#term-Data-Provider)
-involved in testing.
+**NOTE**: These scenarios have been created to reflect decisions that could be faced by [Data Providers](../glossary.md#term-Data-Provider) in the Open Energy Phase 3 use-case, in which a Local Authority is seeking data to plan the retrofit of social housing with low carbon technologies. Please note that the scenarios are exemplary only and do not necessarily represent the stances of any [Data Providers](../glossary.md#term-Data-Provider) involved in testing.
 
 ### Scenario 1
 
@@ -509,5 +500,5 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgwNjY0OTc2LDkwMzgzODg4N119
+eyJoaXN0b3J5IjpbLTE0NjUzNTY0NCw5MDM4Mzg4ODddfQ==
 -->
