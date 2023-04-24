@@ -418,31 +418,21 @@ We are aware of concerns within the industry that multiple licensing could prese
 
 Firstly, some stakeholders have suggested that IB1 should take a ‘modular approach’ to building a ‘single IB1 licence’. This suggestion outlines a permissive core or standard licence that is presented to all [Data Providers](../glossary.md#term-Data-Provider) as the default option for publishing their data. If this is not appropriate for a particular dataset, [Data Providers](../glossary.md#term-Data-Provider) would then have the option of adding restrictions (i.e. removing capabilities) by adding modular sections of legal text. In practice however, a modular approach doesn’t reduce licence plurality as each modification of a licence (e.g. addition of modular text) is viewed legally as the creation of a new licence. Icebreaker One’s approach instead accepts a degree of licence plurality, but will work to standardise the discoverability, scope and ease of understanding of that pluralism by offering a limited, standardised and searchable range of capabilities. This will be accompanied in due course by guidance for [Data Providers](../glossary.md#term-Data-Provider), tailored to each sensitivity class, encouraging as much openness as possible while publishing data safely and creating a thriving marketplace.
 
-Secondly, we acknowledge that the data landscape already incorporates a significant degree of licence proliferation. For example, it is already common for energy system actors to publish data under bespoke licences containing non-standard clauses and/or legal wording. In standardising the range and expression of capabilities,
-> Open Energy aims to rationalise some unnecessary forms of licence proliferation in the sector and reduce legal
-> costs to [Data Providers](../glossary.md#term-Data-Provider) by reducing the circumstances under which bespoke licences are necessary.
+Secondly, we acknowledge that the data landscape already incorporates a significant degree of licence proliferation. For example, it is already common for system actors to publish data under bespoke licences containing non-standard clauses and/or legal wording. In standardising the range and expression of capabilities, Icebreaker One aims to rationalise some unnecessary forms of licence proliferation in the sector and reduce legal costs to [Data Providers](../glossary.md#term-Data-Provider) by reducing the circumstances under which bespoke licences are necessary.
 
 ### Is there a risk of licences changing too frequently or without notice?
 
-In any licensing model that is not explicitly time-bound, there is a risk that the [Data Provider](../glossary.md#term-Data-Provider) may choose to change
-the licence arbitrarily. We have received feedback that bespoke licensing in the energy sector already produces
-insecurity for [Data Consumers](../glossary.md#term-Data-Consumer), who are concerned about the longevity of particular licences in a changeable
+In any licensing model that is not explicitly time-bound, there is a risk that the [Data Provider](../glossary.md#term-Data-Provider) may choose to change the licence arbitrarily. We have received feedback that bespoke licensing in the energy sector already produces insecurity for [Data Consumers](../glossary.md#term-Data-Consumer), who are concerned about the longevity of particular licences in a changeable
 environment. For example, an energy forecasting company relies on predictable access to, and capabilities to use, a
-range of datasets (e.g. weather data). Changes to the capabilities granted for any of these datasets undermine this
-kind of business model, with additional proxy consequences for carbon savings that could be achieved as a result of
-better integration of renewable energy generation.
+range of datasets (e.g. weather data). Changes to the capabilities granted for any of these datasets undermine this kind of business model, with additional proxy consequences for carbon savings that could be achieved as a result of better integration of renewable energy generation.
 
-Open Energy aims to address this problem by encouraging [Data Providers](../glossary.md#term-Data-Provider) to indicate the length of time they commit to
-retaining the same capability grant for a particular access rule. Although this will be optional, we hope that Data
-Providers will be incentivised to do so as this encourages confidence in the market. We are also exploring the
-possibility of building a notification system to alert [Data Consumers](../glossary.md#term-Data-Consumer) either to upcoming or new changes in capability
-grants to ensure this is done transparently and with adequate warning where possible.
+Icebreaker One aims to address this problem by encouraging [Data Providers](../glossary.md#term-Data-Provider) to indicate the length of time they commit to retaining the same capability grant for a particular access rule. Although this will be optional, we hope that Data Providers will be incentivised to do so as this encourages confidence in the market. We are also exploring the
+possibility of building a notification system to alert [Data Consumers](../glossary.md#term-Data-Consumer) either to upcoming or new changes in capability grants to ensure this is done transparently and with adequate warning where possible.
 
 **NOTE**: The time ranges described above are NOT a time limit on the capabilities granted in response to a single request,
-it instead specifies a range within which the access rules and their corresponding capability grants will not
-change.
+it instead specifies a range within which the access rules and their corresponding capability grants will not change.
 
-Beyond designing positive behavioural and market incentives, it is beyond the scope of Open Energy to control
+Beyond designing positive behavioural and market incentives, it is beyond the scope of the IB1 Trust Framework to control
 licence-changes as this remains within the legal rights of the [Data Provider](../glossary.md#term-Data-Provider).
 
 ### Where are these rules specified?
@@ -479,6 +469,6 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDMzNTcwMTksLTE0NjUzNTY0NCw5MD
+eyJoaXN0b3J5IjpbLTE1NzA0OTIyNTQsLTE0NjUzNTY0NCw5MD
 M4Mzg4ODddfQ==
 -->
