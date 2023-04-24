@@ -81,12 +81,12 @@ The tables below outline considerations for [Data Providers](../glossary.md#term
 |                                |                                                                                                                                                   |                   | 
 |                                | 1. Use a web-based Python integrated development environment of your choice (e.g. Jupyter-Lab, Google Collab, or similar) to access and display   |                   |
 |                                | Shared data ([step-by-step video](https://www.youtube.com/watch?v=CMI2UVdIxFw))                                                                   |                   | 
-|                                | 2. Use [Open Energy](../glossary.md#term-Open-Energy)’s Python library to access [Shared data](../glossary.md#term-Shared-data) from your own.    |                   | 
+|                                | 2. Use Icebreaker One’s Python library to access [Shared data](../glossary.md#term-Shared-data) from your own.    |                   | 
 |                                | code ([example](https://icebreakerone.github.io/open-energy-python-infrastructure/service_provider.html))                                         |                   | 
 |                                | 3. Use tools or languages of your choice to access a [Shared Data](../glossary.md#term-Shared-data)                                               |                   | 
 |                                | [API](../glossary.md#term-Application-programming-interface).                                                                                     |                   |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
-| Use Shared data in compliance  | * Ensure your organisation - and any individuals handling the data - have a clear understanding of [Open Energy](../glossary.md#term-Open-Energy) | All               |
+| Use Shared data in compliance  | * Ensure your organisation - and any individuals handling the data - have a clear understanding of [The IB1 Trust Framework](../glossary.md#term-Icebreaker-One-Trust-Framework) | All               |
 | with the appropriate licence   |[Capabilities](../access_control_specification.md#capabilities) and [Obligations](../access_control_specification.md#obligations) for the use of.  |                   |
 | model                          | datasets                                                                                                                                          |                   |
 |                                | * Gain internal legal sign-off for data use, if applicable                                                                                        |                   | 
@@ -96,16 +96,16 @@ The tables below outline considerations for [Data Providers](../glossary.md#term
 |                                |                                                                                                                                                   |                   | 
 |                                | * Check your understanding of the onward sharing permissions for any data, or derivatives, you are passing onto your customers.                   |                   | 
 |                                | * Before passing on data or derivatives to your customers, ensure your organisation - and any individuals handling the data -                     |                   | 
-|                                | have a clear understanding of Open Energy capabilities and obligations associated with onward sharing of data, and of the data pyramid.           |                   |
+|                                | have a clear understanding of IB1 Trust Framework capabilities and obligations associated with onward sharing of data, and of the data pyramid.           |                   |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
 | Business planning              | For [Data Consumers](../glossary.md#term-Data-Consumer) who are [Service Providers](../glossary.md#term-Service-Provider):                        | Commercial        |
 |                                |                                                                                                                                                   |                   | 
 |                                | * Establish or review your business model for providing services based on, or linked to, data access via                                          |                   | 
-|                                | [Open Energy](../glossary.md#term-Open-Energy)  in alignment with the agreed capabilities and access controls for the datasets the service will   |                   | 
+|                                | the [IB1 Trust Framework](../glossary.md#term-Icebreaker-One-Trust-Framework)  in alignment with the agreed capabilities and access controls for the datasets the service will   |                   | 
 |                                |  rely on.                                                                                                                                         |                   | 
 |                                | * Where a service uses multiple datasets, including those beyond Open Energy, ensure that licences are compatible to the service                  |                   | 
 |                                | being provided and that all licences are appropriately credited.                                                                                  |                   | 
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0NDIxNzk2OSwtMTgyOTAwMzU3OF19
+eyJoaXN0b3J5IjpbODY5NDM0Mjc2LC0xODI5MDAzNTc4XX0=
 -->
