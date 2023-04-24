@@ -695,8 +695,8 @@
     dct:description: This is a free text description of the data set
     dcat:version: 0.1.2
     dcat:versionNotes: This is a note on this particular version of the dataset
-    oe:sensitivityClass: IB1-SA
-    oe:dataSetStableIdentifier: myData
+    ib1:sensitivityClass: IB1-SA
+    ib1:dataSetStableIdentifier: myData
 </code></pre>
 <p>These are the minimum properties every data set must define, they include terms from the <a href="https://dublincore.org/">Dublic Core</a> (<code>dct</code>) and <a href="https://www.w3.org/TR/vocab-dcat-2/">Data Catalog</a> (<code>dcat</code>) vocabularies, as well as from the Icebreaker One core ontology. Prefixes are defined in the <a href="../glossary/#term-JavaScript-Object-Notation-for-Linked-Data">JSON-LD</a> <code>@context</code> object as in the example above.</p>
 <h2 id="mandatory-data-content-metadata-fields">Mandatory data content metadata fields</h2>
@@ -804,11 +804,11 @@ activities</p>
 </ol>
 <pre><code class="language-yaml">access:
   # Access constraint to licensing predicates
-  - rule: oe:verified, oe:last_update max_age_days 60 grants oe:use_any
+  - rule: ib1:verified, ib1:last_update max_age_days 60 grants ib1:use_any
     sufficient: true
     appliesFrom: 2023-04-22
     appliesTo: 2024-04-22
-  - rule: group:some_group grants oe:use_any, oe:adapt_any
+  - rule: group:some_group grants ib1:use_any, ib1:adapt_any
     sufficient: false
     appliesFrom: 2023-04-22
     appliesTo: 2024-04-22
