@@ -363,34 +363,31 @@ reduced legal, staff and time costs associated with improved searchability, tran
 |                            | granted the same capabilities. The result is the same set of capabilities (the same licence) is applied to both   |
 |                            | access rules.                                                                                                     |
 |                            | `ib1:org_type in ['local_authority', 'academic'], provider:customer_level == 1 grants ib1:use_any`                  |
-|                            | `provider:customer_level >= 2 grants oe:use_any`                                                                  |
+|                            | `provider:customer_level >= 2 grants ib1:use_any`                                                                  |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 | **Obligations**            | The [Data Provider](../glossary.md#term-Data-Provider) chooses the same obligations to be applied to both access  |
 |                            | rules                                                                                                             |
-|                            | `oe:org_type in ['local_authority', 'academic'], provider:customer_level == 1 grants oe:use_any requires oe:by`   |
-|                            | `provider:customer_level >= 2 grants oe:use_any requires oe:by`                                                   |
+|                            | `ib1:org_type in ['local_authority', 'academic'], provider:customer_level == 1 grants ib1:use_any requires ib1:by`   |
+|                            | `provider:customer_level >= 2 grants ib1:use_any requires ib1:by`                                                   |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 
 **NOTE**: **Scenario 2**
 
 This more complex scenario detailed above involves a combination of properties known to Open Energy (the market
-sector of the [Data Consumer](../glossary.md#term-Data-Consumer) - Local Authority, Educational Institution, or Energy Network) along with properties
-which are only known to the [Data Provider](../glossary.md#term-Data-Provider) (the payment status of the [Data Consumer](../glossary.md#term-Data-Consumer)). We can do this because the
-rules are evaluated within the [Data Provider](../glossary.md#term-Data-Provider), and not externally within Open Energy’s Governance Service, an entity
-which is not aware of any commercial arrangements between the [Data Provider](../glossary.md#term-Data-Provider) and [Data Consumer](../glossary.md#term-Data-Consumer).
+sector of the [Data Consumer](../glossary.md#term-Data-Consumer) - Local Authority, Educational Institution, or Energy Network) along with properties which are only known to the [Data Provider](../glossary.md#term-Data-Provider) (the payment status of the [Data Consumer](../glossary.md#term-Data-Consumer)). We can do this because the rules are evaluated within the [Data Provider](../glossary.md#term-Data-Provider), and not externally within the Trust Framework's Governance Service, an entity which is not aware of any commercial arrangements between the [Data Provider](../glossary.md#term-Data-Provider) and [Data Consumer](../glossary.md#term-Data-Consumer).
 
-### Scenario 3
+### Scenario 3 TODO fix this table
 
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 | **Dataset**                | Solar panel performance data                                                                                      |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
-| **Sensitivity class**      |[OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B)                                                       |
+| **Sensitivity class**      |[IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B)                                                       |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 | **Access control domains** | Use case-based and payment-based access conditions                                                                |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 | **Access rules**           | Two rules are created:                                                                                            |
 |                            |                                                                                                                   |
-|                            | 1. `oe_group:plymouth_lct` - access to use case participants, here defined as a group `lct` managed by `plymouth` |
+|                            | 1. `_group:plymouth_lct` - access to use case participants, here defined as a group `lct` managed by `plymouth` |
 |                            | (the [ID](../glossary.md#term-Identification) of a local council organisation) and administered using the         |
 |                            | [OEGS](../glossary.md#term-Open-Energy-Governance-Service) facilities                                             |
 |                            | 2. `provider:customer` - access to all other Open Energy members if they have a paid account with the             |
@@ -500,6 +497,6 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NzEwNDY5NSwtMTQ2NTM1NjQ0LDkwMz
+eyJoaXN0b3J5IjpbLTg5NDYzNjExOSwtMTQ2NTM1NjQ0LDkwMz
 gzODg4N119
 -->
