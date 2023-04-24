@@ -101,10 +101,9 @@ Our approach must serve the goal of reducing friction in sharing  data, while al
 As such, we define a standardised range of access condition types as a mechanism to balance the factors outlined above.
 This acknowledges the need for more nuance than would be captured under a ‘one size fits all’ approach for each sensitivity class. Instead, our policy enables some tailoring within defined parameters.
 
-The table below describes access conditions for each of the data sensitivity classes. It also demonstrates the rationale for this guidance - identifying the lack of standardised access conditions for [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A) and [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) datasets
-as a cause of cost and friction in energy data sharing.
+The table below describes access conditions for each of the data sensitivity classes. It also demonstrates the rationale for this guidance - identifying the lack of standardised access conditions for [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A) and [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) datasets as a cause of cost and friction in data sharing.
 
-### Data sensitivity classes and access conditions in scope
+### Data sensitivity classes and access conditions in scope TODO fix table
 
 +------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
 | Data Class                                                                   | Access Conditions                                                                                       |
@@ -117,8 +116,8 @@ as a cause of cost and friction in energy data sharing.
 |                                                                              | Smart Energy Code. [Data Providers](../glossary.md#term-Data-Provider) may also apply additional        |
 |                                                                              | non-standard access conditions, such as payment or purpose-based.                                       |
 |                                                                              |                                                                                                         |
-|                                                                              | Determining access conditions for personal data is beyond the capacity of Open Energy in Phase 3        |
-|                                                                              | (February - July 2021) and beyond the scope of this consultation. Future extensibility to be considered |
+|                                                                              | Determining access conditions for personal data is not currently in scope       |
+|                                                                              | (Future extensibility to be considered |
 |                                                                              | based on consultation in due course.                                                                    |
 +------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
 | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B)                 | Currently non-standardised, determined by bilateral contract and bespoke negotiation.                   |
@@ -132,7 +131,7 @@ as a cause of cost and friction in energy data sharing.
 | [OE-O](../glossary.md#term-Data-sensitivity-class-open)                      | No access conditions - free and accessible to all users.                                                |
 +------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
 
-### Open Energy access conditions
+### IB1 Trust Framework access conditions
 
 +---------------------+---------------------------------------------------------------+----------------------------------------------------------------------+
 | Condition domain    | Considerations (examples - not exhaustive)                    | Applicable class                                                     |
@@ -597,5 +596,5 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNDA0NTg1OSw5MDM4Mzg4ODddfQ==
+eyJoaXN0b3J5IjpbLTU4MTg1ODE0NCw5MDM4Mzg4ODddfQ==
 -->
