@@ -87,32 +87,21 @@ The Trust Framework Governance Service ([TFGS](../glossary.md#term-Trust-Framewo
 
 It is expected that [Data Providers](../glossary.md#term-Data-Provider) will grant access reliably and fairly, in line with the access conditions that they specify. In the event that access is refused, there will be a mechanism for flagging this with the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) for review and dispute management. [Data Providers](../glossary.md#term-Data-Provider) must be able to show clear justification for access refusal. Repeat refusal or non-compliance with specified access conditions may result in penalties (to be determined after Phase 3).
 
-This policy focuses on access conditions for classes [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A) and [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) only. Personal data ([OE-SP](../glossary.md#term-Data-sensitivity-class-personal)) are out of scope for
-development during Phase 3. Future extensibility of the Open Energy ecosystem to [OE-SP](../glossary.md#term-Data-sensitivity-class-personal) data will be consulted on in
-future phases of project development.
+This policy focuses on access conditions for classes [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A) and [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) only. Personal data ([OE-SP](../glossary.md#term-Data-sensitivity-class-personal)) are currently out of scope. Future extensibility of the IB1 Trust Framework to [OE-SP](../glossary.md#term-Data-sensitivity-class-personal) data will be consulted on in future phases of project development.
 
 ### Policy details (Data access conditions)
 
-[Data Providers](../glossary.md#term-Data-Provider) will allocate each of their datasets to a sensitivity class prior to sharing them within the Open
-Energy ecosystem. Data access conditions will then be applied in a manner that is proportionate to the sensitivity
-profile of each class. We propose to use the data sensitivity classes previously established as a basis for considering
-access conditions, but not as a complete determinant.
+[Data Providers](../glossary.md#term-Data-Provider) will allocate each of their datasets to a sensitivity class prior to sharing them within the IB1 Trust Framework. Data access conditions will then be applied in a manner that is proportionate to the sensitivity profile of each class. We propose to use the data sensitivity classes previously established as a basis for considering access conditions, but not as a complete determinant.
 
-Our approach must serve the goal of reducing friction in sharing energy data, while also balancing two distinct
-sets of needs:
-
+Our approach must serve the goal of reducing friction in sharing  data, while also balancing two distinct sets of needs:
 
 1. [Data Providers](../glossary.md#term-Data-Provider): to retain control over their data.
-
-
 2. [Data Consumers](../glossary.md#term-Data-Consumer) and [Service Providers](../glossary.md#term-Service-Provider): to access multiple datasets in a clear and manageable way.
 
 As such, we define a standardised range of access condition types as a mechanism to balance the factors outlined above.
-This acknowledges the need for more nuance than would be captured under a ‘one size fits all’ approach for each
-sensitivity class. Instead, our policy enables some tailoring within defined parameters.
+This acknowledges the need for more nuance than would be captured under a ‘one size fits all’ approach for each sensitivity class. Instead, our policy enables some tailoring within defined parameters.
 
-The table below describes access conditions for each of the Open Energy data sensitivity classes. It also demonstrates
-the rationale for this guidance - identifying the lack of standardised access conditions for [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A) and [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) datasets
+The table below describes access conditions for each of the data sensitivity classes. It also demonstrates the rationale for this guidance - identifying the lack of standardised access conditions for [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A) and [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) datasets
 as a cause of cost and friction in energy data sharing.
 
 ### Data sensitivity classes and access conditions in scope
@@ -608,5 +597,5 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg4NTMxMjIyLDkwMzgzODg4N119
+eyJoaXN0b3J5IjpbMTMzNDA0NTg1OSw5MDM4Mzg4ODddfQ==
 -->
