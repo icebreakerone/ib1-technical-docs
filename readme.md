@@ -112,7 +112,7 @@ You need to rebase all your recent local changes on the last meaningful commit -
 and then re-commit and push that to `gh-pages` on the remote.
 
 ```
-git rebase --soft xxxxxxxxxxxxxxxxxxxx1
+git reset --soft xxxxxxxxxxxxxxxxxxxx1
 git commit -m “My meaningful commit”
 git push
 ```
