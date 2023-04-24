@@ -226,7 +226,7 @@
   
     <li class="md-nav__item">
       <a href="../ops_guidelines/introduction/" class="md-nav__link">
-        Introduction to Open Energy
+        Introduction to the IB1 Trust framework
       </a>
     </li>
   
@@ -316,7 +316,7 @@
   
     <li class="md-nav__item">
       <a href="../architecture/" class="md-nav__link">
-        Open Energy Architecture
+        Trust Framework Architecture
       </a>
     </li>
   
@@ -476,13 +476,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#standard-capabilities_1" class="md-nav__link">
-    Standard capabilities
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#expressing-open-data-licenses-with-capabilities" class="md-nav__link">
     Expressing Open Data licenses with capabilities
   </a>
@@ -504,13 +497,6 @@
         
           <li class="md-nav__item">
   <a href="#standard-obligations" class="md-nav__link">
-    Standard obligations
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#standard-obligations_1" class="md-nav__link">
     Standard obligations
   </a>
   
@@ -683,13 +669,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#standard-capabilities_1" class="md-nav__link">
-    Standard capabilities
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#expressing-open-data-licenses-with-capabilities" class="md-nav__link">
     Expressing Open Data licenses with capabilities
   </a>
@@ -711,13 +690,6 @@
         
           <li class="md-nav__item">
   <a href="#standard-obligations" class="md-nav__link">
-    Standard obligations
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#standard-obligations_1" class="md-nav__link">
     Standard obligations
   </a>
   
@@ -752,17 +724,12 @@ precise syntax and values that can be used.</p>
 <li>One or more capability grants to the data consumer if access is granted</li>
 <li>Zero or more obligations falling on the data consumer if access is granted</li>
 </ol>
-<p>They are applied to properties of a <a href="../glossary/#term-Data-Consumer">Data Consumer</a> while processing a request for data from a
-<a href="../glossary/#term-Data-Provider">Data Provider</a>. These properties can be modelled as a map of names to values; some values may be inferred by
-joining on the <a href="../glossary/#term-Identification">ID</a> of the data consumer, some may be directly provided in the <a href="../ops_guidelines/technical_common/#token-introspection">Token introspection</a> response.</p>
+<p>They are applied to properties of a <a href="../glossary/#term-Data-Consumer">Data Consumer</a> while processing a request for data from a <a href="../glossary/#term-Data-Provider">Data Provider</a>. These properties can be modelled as a map of names to values; some values may be inferred by joining on the <a href="../glossary/#term-Identification">ID</a> of the data consumer, some may be directly provided in the <a href="../ops_guidelines/technical_common/#token-introspection">Token introspection</a> response.</p>
 <h2 id="syntax">Syntax</h2>
 <h3 id="names">Names</h3>
-<p><strong>Names</strong> consist of a namespace (<code>[a-z0-9_]+</code>), a <code>:</code> character, and a suffix (<code>[a-z0-9_.]+</code>). For example,
-<code>oe:some_value</code>. Values asserted by Open Energy will always have a namespace <code>oe</code>. The suffix may contain <code>.</code>
-characters, the namespace may not.</p>
+<p><strong>Names</strong> consist of a namespace (<code>[a-z0-9_]+</code>), a <code>:</code> character, and a suffix (<code>[a-z0-9_.]+</code>). For example, <code>ib1:some_value</code>. Values asserted by Icebreaker One will always have a namespace <code>ib1</code>. The suffix may contain <code>.</code> characters, the namespace may not.</p>
 <h3 id="rule-syntax">Rule syntax</h3>
-<p>An access rule is represented as a single line string containing a comma separated list of zero or more Conditions,
-the literal string <code>grants</code>, and then a comma separated list of one or more Capabilities. Optionally, this may
+<p>An access rule is represented as a single line string containing a comma separated list of zero or more Conditions, the literal string <code>grants</code>, and then a comma separated list of one or more Capabilities. Optionally, this may
 be followed by the literal <code>requires</code> and one or more Obligations in a comma separated list.</p>
 <pre><code class="language-default">[CONDITION]? [&quot;,&quot; CONDITION]* &quot;grants&quot; CAPABILITY [&quot;,&quot; CAPABILITY]* [&quot;requires&quot; OBLIGATION+ [&quot;,&quot; OBLIGATION]
 </code></pre>
@@ -773,24 +740,17 @@ be followed by the literal <code>requires</code> and one or more Obligations in 
 <p>See the following sections for specification of conditions and capabilities.</p>
 <h2 id="conditions">Conditions</h2>
 <p>Conditions are unary or binary clauses.</p>
-<p>All conditions must be satisfied within a rule for that rule to be applied. There are no explicit boolean operators
-such as <code>or</code> or similar. For cases where alternative sets of rules could be applied the expectation is that data
+<p>All conditions must be satisfied within a rule for that rule to be applied. There are no explicit boolean operators such as <code>or</code> or similar. For cases where alternative sets of rules could be applied the expectation is that data
 providers will specify multiple, potentially overlapping, rules to express this.</p>
 <h3 id="unary-clauses">Unary clauses</h3>
-<p>Unary clauses consist of a single <strong>named</strong> condition. The clause is satisfied if that condition is <code>true</code>.
-This is typically used to denote a particular property such as <em>Open Energy current membership</em> or similar where the
-existence of the property is sufficient to accept the data consumer.</p>
-<pre><code class="language-json"> {&quot;oe:member&quot; : true}
+<p>Unary clauses consist of a single <strong>named</strong> condition. The clause is satisfied if that condition is <code>true</code>. This is typically used to denote a particular property such as <em>Icebreaker One Trust Framework membership</em> or similar where the existence of the property is sufficient to accept the data consumer.</p>
+<pre><code class="language-json"> {&quot;ib1:member&quot; : true}
 </code></pre>
 <h3 id="binary-clauses">Binary clauses</h3>
-<p>Binary clauses consist of a <strong>name</strong> on the left hand side, an <strong>operator</strong>, and a <strong>value</strong> on the right hand side.
-The valid <strong>operators</strong> are shown in the table below. LHS, operator, and RHS are separated with at least one
+<p>Binary clauses consist of a <strong>name</strong> on the left hand side, an <strong>operator</strong>, and a <strong>value</strong> on the right hand side. The valid <strong>operators</strong> are shown in the table below. LHS, operator, and RHS are separated with at least one
 space character.</p>
-<p><strong>Values</strong> can be numerals, dates, quoted strings, or homogeneous lists of these three types. Dates are specified as
-<code>dd/mm/yyyy</code>, we do not need a higher level of precision in any of our envisaged use cases, but if this is needed
-a datetime must be specified as a string compliant with <a href="https://datatracker.ietf.org/doc/html/rfc3339">RFC3339</a>. To
-simplify expression in <a href="../glossary/#term-Javascript-Object-Notation">JSON</a>, quoted strings should be enclosed in single quote <code>'</code> characters. Lists are written as a
-comma separated list of strings surrounded by <code>[</code> and <code>]</code> characters. Lists are only valid RHS values for the
+<p><strong>Values</strong> can be numerals, dates, quoted strings, or homogeneous lists of these three types. Dates are specified as <code>dd/mm/yyyy</code>, we do not need a higher level of precision in any of our envisaged use cases, but if this is needed
+a datetime must be specified as a string compliant with <a href="https://datatracker.ietf.org/doc/html/rfc3339">RFC3339</a>. To simplify expression in <a href="../glossary/#term-Javascript-Object-Notation">JSON</a>, quoted strings should be enclosed in single quote <code>'</code> characters. Lists are written as a comma separated list of strings surrounded by <code>[</code> and <code>]</code> characters. Lists are only valid RHS values for the
 <code>in</code> operator.</p>
 <h3 id="operators">Operators</h3>
 <table>
@@ -910,31 +870,31 @@ consumers in the final system.</p>
 <tbody>
 <tr>
 <td colspan="1" rowspan="1">
-<p><code>oe:status is 'active'</code>
+<p><code>ib1:status is 'active'</code>
 </p>
 </td>
 <td colspan="1" rowspan="1">
-<p>passes if the value of <code>oe:status</code> is set, and is equal under string comparison
+<p>passes if the value of <code>ib1:status</code> is set, and is equal under string comparison
 to <code>active</code></p>
 </td>
 </tr>
 <tr>
 <td colspan="1" rowspan="1">
-<p><code>oe:membership_expires after 24/10/2022</code>
+<p><code>ib1:membership_expires after 24/10/2022</code>
 </p>
 </td>
 <td colspan="1" rowspan="1">
-<p>passes if the value of <code>oe:membership_expires</code> is either a date or a datetime,
+<p>passes if the value of <code>ib1:membership_expires</code> is either a date or a datetime,
 and is after the 24th October 2022</p>
 </td>
 </tr>
 <tr>
 <td colspan="1" rowspan="1">
-<p><code>oe:terms_signed max_age_days 20</code></p>
+<p><code>ib1:terms_signed max_age_days 20</code></p>
 </td>
 <td colspan="1" rowspan="1">
-<p>passes if the value of <code>oe:terms_signed</code> is either a date or a datetime, and is
-at most 20 days from the current datetime. Note that dates with no time
+<p>passes if the value of <code>ib1:terms_signed</code> is either a date or a datetime, and
+is at most 20 days from the current datetime. Note that dates with no time
 component are equivalent to 00:00.00 on the specified date for comparison
 purposes</p>
 </td>
@@ -951,44 +911,34 @@ to or equal to two.</p>
 </tr>
 <tr>
 <td colspan="1" rowspan="1">
-<p><code>oe:org_type in ['council', 'academic']</code>
+<p><code>ib1:org_type in ['council', 'academic']</code>
 </p>
 </td>
 <td colspan="1" rowspan="1">
-<p>passes if the value of <code>oe:org_type</code> would be considered equal to either
+<p>passes if the value of <code>ib1:org_type</code> would be considered equal to either
  <code>'council'</code> or <code>'academic'</code> as if compared with <code>is</code>.</p>
 </td>
 </tr>
 <tr>
 <td colspan="1" rowspan="1">
-<p><code>oe:member</code></p>
+<p><code>ib1:member</code></p>
 </td>
 <td colspan="1" rowspan="1">
-<p>passes if the value of <code>oe:member</code> is <code>true</code>.</p>
+<p>passes if the value of <code>ib1:member</code> is <code>true</code>.</p>
 </td>
 </tr>
 </tbody>
 </table>
 <h3 id="specifying-multiple-conditions">Specifying multiple conditions</h3>
-<p>Multiple conditions are separated with <code>,</code> characters. All conditions must be satisfied for the rule to pass, there
-are no sub-clauses or boolean operators. Any number of space characters are allowed before and after the <code>,</code> in a
+<p>Multiple conditions are separated with <code>,</code> characters. All conditions must be satisfied for the rule to pass, there are no sub-clauses or boolean operators. Any number of space characters are allowed before and after the <code>,</code> in a
 condition list.</p>
-<p>For example, <code>oe:status is 'active', some_group:membership_level &gt;=2</code> is the union of those two example conditions
-from the previous section and will only be satisfied if both conditions are individually satisfiable.</p>
+<p>For example, <code>ib1:status is 'active', some_group:membership_level &gt;=2</code> is the union of those two example conditions from the previous section and will only be satisfied if both conditions are individually satisfiable.</p>
 <h2 id="capabilities">Capabilities</h2>
-<p>Capability grants for a given set of access conditions are specified as a comma (<code>,</code>) separated list of <strong>names</strong>.
-There <strong>MUST</strong> be at least one <strong>name</strong> in this list, an empty capability grant list is not considered valid.</p>
+<p>Capability grants for a given set of access conditions are specified as a comma (<code>,</code>) separated list of <strong>names</strong>. There <strong>MUST</strong> be at least one <strong>name</strong> in this list, an empty capability grant list is not considered valid.</p>
 <h3 id="standard-capabilities">Standard capabilities</h3>
-<p>These are capabilities where the namespace part of the <strong>name</strong> is <code>oe</code>, indicating that they are defined as part
-of the open energy project. Data providers <strong>SHOULD NOT</strong>, create their own capabilities unless absolutely
-necessary as doing so acts against the aim of easy interoperability and comprehension of access and licensing rules.</p>
-<p>Any additional capabilities designed <strong>MUST</strong> be prefixed with the organisation ID of the data provider responsible
-for their definition, and any such data provider <strong>MUST</strong> publish a clear, legally valid, definition of any such
-capabilities. In addition, data providers creating custom capabilities <strong>MUST</strong> inform the <a href="../glossary/#term-Open-Energy-Governance-Service">OEGS</a> of this, providing
-links to the aforementioned documentation.</p>
-<p><strong>WARNING</strong>: This section is provisional, the exact final set of base capabilities has yet to be determined. Those shown below
-are a plausible first cut but should not be considered definitive.</p>
-<h3 id="standard-capabilities_1">Standard capabilities</h3>
+<p>These are capabilities where the namespace part of the <strong>name</strong> is <code>ib1</code>, indicating that they are defined as part of the Icebreaker One Trust Framework. Data providers <strong>SHOULD NOT</strong>, create their own capabilities unless absolutely necessary as doing so acts against the aim of easy interoperability and comprehension of access and licensing rules.</p>
+<p>Any additional capabilities designed <strong>MUST</strong> be prefixed with the organisation ID of the data provider responsible for their definition, and any such data provider <strong>MUST</strong> publish a clear, legally valid, definition of any such capabilities. In addition, data providers creating custom capabilities <strong>MUST</strong> inform the <a href="../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> of this, providing links to the aforementioned documentation.</p>
+<p><strong>WARNING</strong>: This section is provisional, the exact final set of base capabilities has yet to be determined. Those shown below are a plausible first cut but should not be considered definitive.</p>
 <table>
 <thead>
 <tr>
@@ -1016,7 +966,7 @@ are a plausible first cut but should not be considered definitive.</p>
 <tr>
 <td colspan="1" rowspan="1"></td>
 <td colspan="1" rowspan="1">
-<p><code>oe:use_any</code></p>
+<p><code>ib1:use_any</code></p>
 </td>
 <td colspan="1" rowspan="1">
 <p>For any purpose</p>
@@ -1025,7 +975,7 @@ are a plausible first cut but should not be considered definitive.</p>
 <tr>
 <td colspan="1" rowspan="1"></td>
 <td colspan="1" rowspan="1">
-<p><code>oe:use_dev</code>
+<p><code>ib1:use_dev</code>
 </p>
 </td>
 <td colspan="1" rowspan="1">
@@ -1036,7 +986,7 @@ works, products or services)</p>
 <tr>
 <td colspan="1" rowspan="1"></td>
 <td colspan="1" rowspan="1">
-<p><code>oe:use_noncom</code>
+<p><code>ib1:use_noncom</code>
 </p>
 </td>
 <td colspan="1" rowspan="1">
@@ -1056,7 +1006,7 @@ etc.)</p>
 <tr>
 <td colspan="1" rowspan="1"></td>
 <td colspan="1" rowspan="1">
-<p><code>oe:adapt_any</code></p>
+<p><code>ib1:adapt_any</code></p>
 </td>
 <td colspan="1" rowspan="1">
 <p>For any purpose</p>
@@ -1065,7 +1015,7 @@ etc.)</p>
 <tr>
 <td colspan="1" rowspan="1"></td>
 <td colspan="1" rowspan="1">
-<p><code>oe:adapt_dev</code>
+<p><code>ib1:adapt_dev</code>
 </p>
 </td>
 <td colspan="1" rowspan="1">
@@ -1076,7 +1026,7 @@ works, products or services)</p>
 <tr>
 <td colspan="1" rowspan="1"></td>
 <td colspan="1" rowspan="1">
-<p><code>oe:adapt_noncom</code>
+<p><code>ib1:adapt_noncom</code>
 </p>
 </td>
 <td colspan="1" rowspan="1">
@@ -1096,7 +1046,7 @@ etc.)</p>
 <tr>
 <td colspan="1" rowspan="1"></td>
 <td colspan="1" rowspan="1">
-<p><code>oe:combine_any</code></p>
+<p><code>ib1:combine_any</code></p>
 </td>
 <td colspan="1" rowspan="1">
 <p>With any other artefacts</p>
@@ -1105,7 +1055,7 @@ etc.)</p>
 <tr>
 <td colspan="1" rowspan="1"></td>
 <td colspan="1" rowspan="1">
-<p><code>oe:combine_external</code></p>
+<p><code>ib1:combine_external</code></p>
 </td>
 <td colspan="1" rowspan="1">
 <p>With other external artefacts</p>
@@ -1114,7 +1064,7 @@ etc.)</p>
 <tr>
 <td colspan="1" rowspan="1"></td>
 <td colspan="1" rowspan="1">
-<p><code>oe:combine_internal</code></p>
+<p><code>ib1:combine_internal</code></p>
 </td>
 <td colspan="1" rowspan="1">
 <p>With the Data Consumer’s own products or services</p>
@@ -1132,7 +1082,7 @@ etc.)</p>
 <tr>
 <td colspan="1" rowspan="1"></td>
 <td colspan="1" rowspan="1">
-<p><code>oe:redistribute_original</code></p>
+<p><code>ib1:redistribute_original</code></p>
 </td>
 <td colspan="1" rowspan="1">
 <p>The original artefact</p>
@@ -1141,7 +1091,7 @@ etc.)</p>
 <tr>
 <td colspan="1" rowspan="1"></td>
 <td colspan="1" rowspan="1">
-<p><code>oe:redistribute_derived</code>
+<p><code>ib1:redistribute_derived</code>
 </p>
 </td>
 <td colspan="1" rowspan="1">
@@ -1152,7 +1102,7 @@ or cleaned data</p>
 <tr>
 <td colspan="1" rowspan="1"></td>
 <td colspan="1" rowspan="1">
-<p><code>oe:redistribute_combined</code>
+<p><code>ib1:redistribute_combined</code>
 </p>
 </td>
 <td colspan="1" rowspan="1">
@@ -1163,12 +1113,8 @@ Consumer’s own products or services</p>
 </tbody>
 </table>
 <h3 id="expressing-open-data-licenses-with-capabilities">Expressing Open Data licenses with capabilities</h3>
-<p>The capabilities defined above in Standard capabilities are intended for <a href="../glossary/#term-Shared-data">shared data</a>, but data providers may
-also publish <a href="../glossary/#term-Open-data">open data</a>. An open data set by definition has no access conditions, so any access rules for such
-data sets <strong>MUST</strong> have an empty access condition list, and must use one of the following capabilities to declare that
-the data are licensed under a known OSI approved open license</p>
-<p>Rules <strong>MUST NOT</strong> grant a mix of capabilities in the <code>open</code> namespace and capabilities in other namespaces, as the
-semantics of this are not well defined.</p>
+<p>The capabilities defined above in Standard capabilities are intended for <a href="../glossary/#term-Shared-data">shared data</a>, but data providers may also publish <a href="../glossary/#term-Open-data">open data</a>. An open data set by definition has no access conditions, so any access rules for such data sets <strong>MUST</strong> have an empty access condition list, and must use one of the following capabilities to declare that the data are licensed under a known OSI approved open license</p>
+<p>Rules <strong>MUST NOT</strong> grant a mix of capabilities in the <code>open</code> namespace and capabilities in other namespaces, as the semantics of this are not well defined.</p>
 <table>
 <thead>
 <tr>
@@ -1239,11 +1185,9 @@ v2.5, v3.0, v4.0 respectively)</p>
 </table>
 <p>Open data sets <strong>SHOULD</strong> be released under the latest version of any given license.</p>
 <h2 id="obligations">Obligations</h2>
-<p>Obligations are constraints on what the data consumer can do with the data, restricting or specialising the capabilities
-granted. They are specified as a single <strong>name</strong>.</p>
+<p>Obligations are constraints on what the data consumer can do with the data, restricting or specialising the capabilities granted. They are specified as a single <strong>name</strong>.</p>
 <h3 id="standard-obligations">Standard obligations</h3>
 <p><strong>WARNING</strong>: This set of standard obligations is provisional and may be subject to change</p>
-<h3 id="standard-obligations_1">Standard obligations</h3>
 <table>
 <thead>
 <tr>
@@ -1264,7 +1208,7 @@ granted. They are specified as a single <strong>name</strong>.</p>
 <p>Fulltext</p>
 </td>
 <td colspan="1" rowspan="1">
-<p><code>oe:ft</code></p>
+<p><code>ib1:ft</code></p>
 </td>
 <td colspan="1" rowspan="1">
 <p>Re-users must display the full text of the license every time they use the work</p>
@@ -1275,7 +1219,7 @@ granted. They are specified as a single <strong>name</strong>.</p>
 <p>Attribution</p>
 </td>
 <td colspan="1" rowspan="1">
-<p><code>oe:by</code></p>
+<p><code>ib1:by</code></p>
 </td>
 <td colspan="1" rowspan="1">
 <p>Re-users must attribute the work to the original source when they use it</p>
@@ -1287,7 +1231,7 @@ granted. They are specified as a single <strong>name</strong>.</p>
 </p>
 </td>
 <td colspan="1" rowspan="1">
-<p><code>oe:sa</code>
+<p><code>ib1:sa</code>
 </p>
 </td>
 <td colspan="1" rowspan="1">
@@ -1297,11 +1241,10 @@ same license as the original work, if they choose to distribute the derivatives<
 </tr>
 </tbody>
 </table>
-<p><strong>NOTE</strong>: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are
-explicitly not included here as it is possible to express this through the access conditions (i.e. rather than
-declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial
-entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield
-of defining ‘non commercial use’.</p>
+<p><strong>NOTE</strong>: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.</p>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTE3NjE5MDkwMSwtMTk2OTEzODgyMl19
+-->
 
 
 

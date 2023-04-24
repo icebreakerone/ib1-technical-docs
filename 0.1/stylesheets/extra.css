@@ -55,4 +55,8 @@
   /* General text */
   --md-typeset-color:                  #ffffff;
   --md-typeset-a-color:                #C8D4DE;
+
+  /* Code snippets */
+  --md-code-fg-color:                  #ffffff;
+  --md-code-bg-color:                  #5A7084;
 }

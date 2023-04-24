@@ -226,7 +226,7 @@
   
     <li class="md-nav__item">
       <a href="../introduction/" class="md-nav__link">
-        Introduction to Open Energy
+        Introduction to the IB1 Trust framework
       </a>
     </li>
   
@@ -360,8 +360,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#oegs-support" class="md-nav__link">
-    OEGS support
+  <a href="#tfgs-support" class="md-nav__link">
+    TFGS support
   </a>
   
 </li>
@@ -418,7 +418,7 @@
   
     <li class="md-nav__item">
       <a href="../../architecture/" class="md-nav__link">
-        Open Energy Architecture
+        Trust Framework Architecture
       </a>
     </li>
   
@@ -567,8 +567,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#oegs-support" class="md-nav__link">
-    OEGS support
+  <a href="#tfgs-support" class="md-nav__link">
+    TFGS support
   </a>
   
 </li>
@@ -594,44 +594,28 @@
 
 
 <h1 id="guidance-for-data-consumers">Guidance for Data Consumers</h1>
-<p><strong>NOTE</strong>: This documented is primarily intended for technical and operations teams within organisations wishing
-to participate in Open Energy as Data Consumers.</p>
-<p><strong>NOTE</strong>: The key words <strong>“MUST”</strong>, <strong>“MUST NOT”</strong>, <strong>“REQUIRED”</strong>, <strong>“SHALL”</strong>, <strong>“SHALL NOT”</strong>, <strong>“SHOULD”</strong>,
-<strong>“SHOULD NOT”</strong>, <strong>“RECOMMENDED”</strong>, <strong>“MAY”</strong>, and <strong>“OPTIONAL”</strong> in this document are to be interpreted
-as described in <a href="https://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a>.</p>
+<p><strong>NOTE</strong>: This documented is primarily intended for technical and operations teams within organisations wishing to participate in the Icebreaker One Trust Framework as Data Consumers.</p>
+<p><strong>NOTE</strong>: The key words <strong>“MUST”</strong>, <strong>“MUST NOT”</strong>, <strong>“REQUIRED”</strong>, <strong>“SHALL”</strong>, <strong>“SHALL NOT”</strong>, <strong>“SHOULD”</strong>, <strong>“SHOULD NOT”</strong>, <strong>“RECOMMENDED”</strong>, <strong>“MAY”</strong>, and <strong>“OPTIONAL”</strong> in this document are to be interpreted as described in <a href="https://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a>.</p>
 <h2 id="data-consumer-role-and-responsibilities">Data Consumer Role and Responsibilities</h2>
-<p><a href="../../glossary/#term-Data-Consumer">Data Consumers</a> are Open Energy members which can consume Shared Data (classes <a href="../../glossary/#term-Data-sensitivity-class-shared-A">OE-SA</a> and <a href="../../glossary/#term-Data-sensitivity-class-shared-B">OE-SB</a> in our
-<a href="../common_policies/#data-sensitivity-classes">Data Sensitivity Classes</a>) from <a href="../../glossary/#term-Application-programming-interface">APIs</a> produced and maintained by <a href="../../glossary/#term-Data-Provider">Data Providers</a>.</p>
-<p>In the figure below, we expect <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> to occupy a number of roles from the lowest in the diagram upwards - they
-are organisations able to configure their infrastructure (in terms of the consumer parts of the
-<a href="../technical_common/#common-security-requirements">Common Security Requirements</a>, specifically <a href="../technical_common/#token-acquisition">Token acquisition</a> and <a href="../technical_common/#token-usage-calling-a-shared-data-api">Token usage - calling a shared data API</a>). This
-is covered by the bottom two boxes.</p>
+<p><a href="../../glossary/#term-Data-Consumer">Data Consumers</a> are IB1 Trust Framework members that can consume Shared Data (classes <a href="../../glossary/#term-Data-sensitivity-class-shared-A">IB1-SA</a> and <a href="../../glossary/#term-Data-sensitivity-class-shared-B">IB1-SB</a> in our <a href="../common_policies/#data-sensitivity-classes">Data Sensitivity Classes</a>) from <a href="../../glossary/#term-Application-programming-interface">APIs</a> produced and maintained by <a href="../../glossary/#term-Data-Provider">Data Providers</a>.</p>
+<p>In the figure below, we expect <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> to occupy a number of roles from the lowest in the diagram upwards - they are organisations able to configure their infrastructure (in terms of the consumer parts of the <a href="../technical_common/#common-security-requirements">Common Security Requirements</a>, specifically <a href="../technical_common/#token-acquisition">Token acquisition</a> and <a href="../technical_common/#token-usage-calling-a-shared-data-api">Token usage - calling a shared data API</a>). This is covered by the bottom two boxes.</p>
 <h3 id="data-consumer-vs-service-provider">Data Consumer vs Service Provider</h3>
-<p>Open Energy does not differentiate between <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> that access data to solve a problem internal to their
-organisation and those (known as <a href="../../glossary/#term-Service-Provider">Service Providers</a>) which offer this as a service to other organisations. A <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> may also be a <a href="../../glossary/#term-Data-Provider">Data Provider</a>
-, the roles are not mutually exclusive.</p>
-<p>In a similar vein, it would be entirely normal for a <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> to also access <a href="../../glossary/#term-Open-data">Open Data</a>, and to use the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a>
-search system to locate data sets of interest, both open and shared.</p>
+<p>The IB1 Trust Framework does not differentiate between <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> that access data to solve a problem internal to their organisation and those (known as <a href="../../glossary/#term-Service-Provider">Service Providers</a>) which offer this as a service to other organisations. A <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> may also be a <a href="../../glossary/#term-Data-Provider">Data Provider</a>, the roles are not mutually exclusive.</p>
+<p>In a similar vein, it would be entirely normal for a <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> to also access <a href="../../glossary/#term-Open-data">Open Data</a>, and to use <a href="https://opennetzero.org">Open Net Zero</a> to locate data sets of interest, both open and shared.</p>
 <h3 id="responsibility-data-consumption">Responsibility - Data consumption</h3>
-<p>The definition of a <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> is that it consumes data from <a href="../../glossary/#term-Shared-data">shared data</a> <a href="../../glossary/#term-Application-programming-interface">APIs</a>. To do this, the organisation <strong>MUST</strong>
-create cryptographic key material, and maintain a record within the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a> directory. It is responsible for the
-integrity of this key material, and <strong>MUST</strong> put appropriate policies in place to ensure that this material is not
-misused.</p>
+<p>The definition of a <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> is that it consumes data from <a href="../../glossary/#term-Shared-data">shared data</a> <a href="../../glossary/#term-Application-programming-interface">APIs</a>. To do this, the organisation <strong>MUST</strong> create cryptographic key material, and maintain a record within the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> directory. It is responsible for the integrity of this key material, and <strong>MUST</strong> put appropriate policies in place to ensure that this material is not misused.</p>
 <h3 id="responsibility-data-licensing">Responsibility - Data licensing</h3>
-<p><a href="../../glossary/#term-Data-Consumer">Data Consumers</a> are responsible for honouring the licenses for any data obtained through <a href="../../glossary/#term-Shared-data">shared data</a> <a href="../../glossary/#term-Application-programming-interface">APIs</a>. Where the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a>
-provides technical measures such as cryptographically signed receipts binding data and license conditions together, the
-<a href="../../glossary/#term-Data-Consumer">Data Consumer</a> is responsible for retaining and storing such receipts.</p>
+<p><a href="../../glossary/#term-Data-Consumer">Data Consumers</a> are responsible for honouring the licenses for any data obtained through <a href="../../glossary/#term-Shared-data">shared data</a> <a href="../../glossary/#term-Application-programming-interface">APIs</a>. Where the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> provides technical measures such as cryptographically signed receipts binding data and license conditions together, the <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> is responsible for retaining and storing such receipts.</p>
 <h2 id="problem-resolution-data-consumers">Problem Resolution (Data Consumers)</h2>
 <h3 id="effective-resolution-of-problems-data-consumers">Effective resolution of problems (Data Consumers)</h3>
-<p>We encourage <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> to direct any problems with data <a href="../../glossary/#term-Application-programming-interface">APIs</a> first to the <a href="../../glossary/#term-Data-Provider">Data Provider</a> concerned. In the event
-that a <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> is unable to resolve an issue with a <a href="../../glossary/#term-Data-Provider">Data Provider</a>, the issue MAY be flagged to the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a> Dispute
-Resolution function for independent support.</p>
+<p>We encourage <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> to direct any problems with data <a href="../../glossary/#term-Application-programming-interface">APIs</a> first to the <a href="../../glossary/#term-Data-Provider">Data Provider</a> concerned. In the event that a <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> is unable to resolve an issue with a <a href="../../glossary/#term-Data-Provider">Data Provider</a>, the issue MAY be flagged to the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> Dispute Resolution function for independent support.</p>
 <h3 id="dispute-resolution-for-access-control-and-capability-grant-policies">Dispute resolution for access control and capability grant policies</h3>
-<p>In cases where a <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> believes that access conditions or capability grant rules are being applied unfairly, the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a>
-will act as a mediating party.</p>
-<h3 id="oegs-support">OEGS support</h3>
-<p>The <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a> Service Desk will provide participants with a supplementary ticket management process and supports <a href="../../glossary/#term-Data-Consumer">Data Consumers</a>
-in communicating problems to ecosystem participants via the noticeboard.</p>
+<p>In cases where a <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> believes that access conditions or capability grant rules are being applied unfairly, the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> will act as a mediating party.</p>
+<h3 id="tfgs-support">TFGS support</h3>
+<p>The <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> Service Desk will provide participants with a supplementary ticket management process and supports <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> in communicating problems to ecosystem participants via the noticeboard.</p>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE2Mjk4MTEzNTIsNzI3NTYwNDMxXX0=
+-->
 
 
 

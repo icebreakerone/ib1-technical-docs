@@ -226,7 +226,7 @@
   
     <li class="md-nav__item">
       <a href="../introduction/" class="md-nav__link">
-        Introduction to Open Energy
+        Introduction to the IB1 Trust framework
       </a>
     </li>
   
@@ -452,7 +452,7 @@
   
     <li class="md-nav__item">
       <a href="../../architecture/" class="md-nav__link">
-        Open Energy Architecture
+        Trust Framework Architecture
       </a>
     </li>
   
@@ -662,18 +662,14 @@
 
 
 <h1 id="common-security-requirements">Common Security Requirements</h1>
-<p><strong>NOTE</strong>: The key words <strong>“MUST”</strong>, <strong>“MUST NOT”</strong>, <strong>“REQUIRED”</strong>, <strong>“SHALL”</strong>, <strong>“SHALL NOT”</strong>, <strong>“SHOULD”</strong>,
-<strong>“SHOULD NOT”</strong>, <strong>“RECOMMENDED”</strong>, <strong>“MAY”</strong>, and <strong>“OPTIONAL”</strong> in this document are to be interpreted
-as described in <a href="https://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a>.</p>
-<p>Open Energy defines a security and trust model for shared data <a href="../../glossary/#term-Application-programming-interface">APIs</a>. Three
-parties are involved in each shared data request:</p>
+<p><strong>NOTE</strong>: The key words <strong>“MUST”</strong>, <strong>“MUST NOT”</strong>, <strong>“REQUIRED”</strong>, <strong>“SHALL”</strong>, <strong>“SHALL NOT”</strong>, <strong>“SHOULD”</strong>, <strong>“SHOULD NOT”</strong>, <strong>“RECOMMENDED”</strong>, <strong>“MAY”</strong>, and <strong>“OPTIONAL”</strong> in this document are to be interpreted as described in <a href="https://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a>.</p>
+<p>The Icebreaker One (IB1) Trust Framework defines a security and trust model for shared data <a href="../../glossary/#term-Application-programming-interface">APIs</a>. Three parties are involved in each shared data request:</p>
 <ol>
 <li>
 <p>The <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> wishing to access the <a href="../../glossary/#term-Shared-data">shared data</a> <a href="../../glossary/#term-Application-programming-interface">API</a></p>
 </li>
 <li>
-<p>The <a href="../../glossary/#term-Authorization">authorization</a> server, as part of the governance service (<a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a>), with knowledge about the
-<a href="../../glossary/#term-Data-Consumer">Data Consumer</a> as represented by an organisation account within the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a></p>
+<p>The <a href="../../glossary/#term-Authorization">authorization</a> server, as part of the governance service (<a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a>), with knowledge about the <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> as represented by an organisation account within the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a></p>
 </li>
 <li>
 <p>The <a href="../../glossary/#term-Data-Provider">Data Provider</a> responsible for supplying shared data through its shared data <a href="../../glossary/#term-Application-programming-interface">API</a></p>
@@ -681,9 +677,7 @@ parties are involved in each shared data request:</p>
 </ol>
 <p>The interactions are shown graphically below in the form of a sequence diagram.</p>
 <h2 id="applicable-standards">Applicable standards</h2>
-<p>We use a strict sub-set of the <a href="../../glossary/#term-Financial-Grade-API">FAPI</a> specification for interactions between <a href="../../glossary/#term-Data-Provider">Data Providers</a> and <a href="../../glossary/#term-Data-Consumer">Data Consumers</a>. The
-applicable standards are linked here for reference, we reference the precise elements of these standards in later
-sections.</p>
+<p>We use a strict sub-set of the <a href="../../glossary/#term-Financial-Grade-API">FAPI</a> specification for interactions between <a href="../../glossary/#term-Data-Provider">Data Providers</a> and <a href="../../glossary/#term-Data-Consumer">Data Consumers</a>. The applicable standards are linked here for reference, we reference the precise elements of these standards in later sections.</p>
 <ul>
 <li>
 <p><a href="https://datatracker.ietf.org/doc/html/rfc6749">RFC6749 The OAuth 2.0 Authorization Framework</a></p>
@@ -699,43 +693,33 @@ sections.</p>
 </li>
 </ul>
 <h3 id="discovery-of-endpoint-urls">Discovery of endpoint URLs</h3>
-<p>While not strictly necessary, the authorization server deployed as part of the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a> implements the OpenID Connect
-Discovery provider configuration information endpoint as described
-<a href="https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfig">here</a>, references in this document to
+<p>While not strictly necessary, the authorization server deployed as part of the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> implements the OpenID Connect Discovery provider configuration information endpoint as described <a href="https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfig">here</a>, references in this document to
 e.g. <code>token_endpoint</code> refer to properties discoverable in this fashion.</p>
 <h2 id="token-acquisition">Token acquisition</h2>
-<p>In order to access a shared data <a href="../../glossary/#term-Application-programming-interface">API</a>, a <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> must first acquire an access token. This is done by sending an
-<a href="../../glossary/#term-HypterText-Transfer-Protocol">HTTP</a> request to the authorization server (part of the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a>). The <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> <strong>MUST</strong>:</p>
+<p>In order to access a shared data <a href="../../glossary/#term-Application-programming-interface">API</a>, a <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> must first acquire an access token. This is done by sending an <a href="../../glossary/#term-HypterText-Transfer-Protocol">HTTP</a> request to the authorization server (part of the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a>). The <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> <strong>MUST</strong>:</p>
 <ul>
-<li>Use Mutual <a href="../../glossary/#term-Transport-Layer-Security">TLS</a>, presenting a client certificate when requested. This is the <code>tls_client_auth</code> authentication method
-described in section 2 of <a href="../../glossary/#term-OAuth-2.0-Mutual-TLS-Client-Authentication-and-Certificate-Bound-Access-Tokens">RFC8705</a>.</li>
+<li>
+<p>Use <a href="../../glossary/#term-Mutual-TLS-authentication">MTLS</a>, presenting a client certificate when requested. This is the <code>tls_client_auth</code> authentication method described in section 2 of <a href="../../glossary/#term-OAuth-2.0-Mutual-TLS-Client-Authentication-and-Certificate-Bound-Access-Tokens">RFC8705</a>.</p>
+<ul>
+<li>In our implementation, this certificate is acquired by creating a <code>transport certificate</code> in a <code>software statement</code> within the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> directory</li>
 </ul>
-<blockquote>
-<pre><code>* In our implementation, this certificate is acquired by creating a `transport certificate` in a
-</code></pre>
-<p><code>software statement</code> within the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a> directory</p>
-</blockquote>
-<ul>
+</li>
 <li>
 <p>Use the <code>client_credentials</code> grant type</p>
 </li>
 <li>
-<p>Send a <code>POST</code> request to the <code>token_endpoint</code> of the authorization server containing the following properties
-as <code>application/x-www-form-urlencoded</code> key / value pairs:</p>
+<p>Send a <code>POST</code> request to the <code>token_endpoint</code> of the authorization server containing the following properties as <code>application/x-www-form-urlencoded</code> key / value pairs:</p>
 </li>
 </ul>
 <pre><code class="language-default">client_id : &lt;CLIENT_ID&gt;
 scope: &lt;REQUESTED_SCOPES&gt;
 grant_type: client_credentials
 </code></pre>
-<p>Scope may be omitted, for most uses within Open Energy there is no requirement to specify a scope. <code>CLIENT_ID</code> can
-be obtained from the <code>software statement</code> within the directory corresponding to this client</p>
-<p>A successful call to the <code>token_endpoint</code> is indicated by a <code>200</code> response code, in which case the body of the
-response will contain a <a href="../../glossary/#term-Javascript-Object-Notation">JSON</a> object with at least two properties:</p>
+<p>Scope may be omitted, for most uses within the IB1 Trust Framework there is no requirement to specify a scope. <code>CLIENT_ID</code> can be obtained from the <code>software statement</code> within the directory corresponding to this client.</p>
+<p>A successful call to the <code>token_endpoint</code> is indicated by a <code>200</code> response code, in which case the body of the response will contain a <a href="../../glossary/#term-Javascript-Object-Notation">JSON</a> object with at least two properties:</p>
 <ol>
 <li>
-<p><code>access_token</code> is an opaque string to be used as a bearer token for requests to resource servers
-(a <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> <a href="../../glossary/#term-Shared-data">shared data</a> <a href="../../glossary/#term-Application-programming-interface">API</a> in our context)</p>
+<p><code>access_token</code> is an opaque string to be used as a bearer token for requests to resource servers (a <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> <a href="../../glossary/#term-Shared-data">shared data</a> <a href="../../glossary/#term-Application-programming-interface">API</a> in our context)</p>
 </li>
 <li>
 <p><code>expires_in</code> is an integer number of seconds from the current time, after which the token will no longer be valid</p>
@@ -746,7 +730,7 @@ response will contain a <a href="../../glossary/#term-Javascript-Object-Notation
 <p>To call a shared data <a href="../../glossary/#term-Application-programming-interface">API</a> within a <a href="../../glossary/#term-Data-Provider">Data Provider</a>, the <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> MUST:</p>
 <ul>
 <li>
-<p>Use Mutual <a href="../../glossary/#term-Transport-Layer-Security">TLS</a> as previously described</p>
+<p>Use <a href="../../glossary/#term-Mutual-TLS-authentication">MTLS</a> as previously described</p>
 </li>
 <li>
 <p>Pass the previously acquired bearer token in an <a href="../../glossary/#term-HypterText-Transfer-Protocol">HTTP</a> header:</p>
@@ -760,10 +744,9 @@ response will contain a <a href="../../glossary/#term-Javascript-Object-Notation
 </ul>
 <pre><code class="language-default">x-fapi-interaction-id: &lt;UUID&gt;
 </code></pre>
-<p>This allows for tracking of transactions between clients and resource servers, aiding troubleshooting. We use a <a href="../../glossary/#term-Universally-unique-identififer-v4">UUID4</a>
-in our reference implementation</p>
+<p>This allows for tracking of transactions between clients and resource servers, aiding troubleshooting. We use a <a href="../../glossary/#term-Universally-unique-identififer-v4">UUID4</a> in our reference implementation</p>
 <h2 id="request-validation">Request validation</h2>
-<p>To participate in the Open Energy ecosystem, a <a href="../../glossary/#term-Data-Provider">Data Provider</a> <strong>MUST</strong>:</p>
+<p>To participate in the IB1 Trust Framework, a <a href="../../glossary/#term-Data-Provider">Data Provider</a> <strong>MUST</strong>:</p>
 <ul>
 <li>
 <p>Expose an <a href="../../glossary/#term-Secure-HTTP">HTTPS</a> <a href="../../glossary/#term-Application-programming-interface">API</a></p>
@@ -772,8 +755,7 @@ in our reference implementation</p>
 <p>Perform validation on any requests to this <a href="../../glossary/#term-Application-programming-interface">API</a></p>
 <ul>
 <li>
-<p>Reject any requests which do not present a valid client certificate. Client certificates are validated in the
-context of the root CAs provided by the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a> directory.</p>
+<p>Reject any requests which do not present a valid client certificate. Client certificates are validated in the context of the root CAs provided by the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> directory.</p>
 </li>
 <li>
 <p>Reject any requests which do not provide an <code>Authorization</code> header containing a <code>Bearer</code> token as described
@@ -782,32 +764,25 @@ above</p>
 </ul>
 </li>
 </ul>
-<p>If any of the above checks fail, the <a href="../../glossary/#term-Data-Provider">Data Provider</a> <strong>MUST NOT</strong> continue processing the request, and <strong>SHOULD</strong> respond with
-an error response as defined in <a href="https://datatracker.ietf.org/doc/html/rfc6750#section-6.2">this section</a> of <a href="../../glossary/#term-The-OAuth-2.0-Authorization-Framework-Bearer-Token-Usage">RFC6750</a></p>
+<p>If any of the above checks fail, the <a href="../../glossary/#term-Data-Provider">Data Provider</a> <strong>MUST NOT</strong> continue processing the request, and <strong>SHOULD</strong> respond with an error response as defined in <a href="https://datatracker.ietf.org/doc/html/rfc6750#section-6.2">this section</a> of <a href="../../glossary/#term-The-OAuth-2.0-Authorization-Framework-Bearer-Token-Usage">RFC6750</a></p>
 <h3 id="token-introspection">Token introspection</h3>
-<p>If all the above checks pass, the <a href="../../glossary/#term-Data-Provider">Data Provider</a> <strong>MUST</strong> then validate the presented token. Tokens in our case are opaque
-identifiers (as opposed to JWTs) and must be passed to the <code>introspection_endpoint</code> of the authorization server to
-obtain additional information. To obtain this introspection response, the <a href="../../glossary/#term-Data-Provider">Data Provider</a> <strong>MUST</strong>:</p>
+<p>If all the above checks pass, the <a href="../../glossary/#term-Data-Provider">Data Provider</a> <strong>MUST</strong> then validate the presented token. Tokens in our case are opaque identifiers (as opposed to JWTs) and must be passed to the <code>introspection_endpoint</code> of the authorization server to obtain additional information. To obtain this introspection response, the <a href="../../glossary/#term-Data-Provider">Data Provider</a> <strong>MUST</strong>:</p>
 <ul>
 <li>
 <p>Make a <code>POST</code> request to the <code>introspection_endpoint</code> of the authorization server</p>
 </li>
 <li>
-<p>Use Mutual <a href="../../glossary/#term-Transport-Layer-Security">TLS</a>, this means <a href="../../glossary/#term-Data-Provider">Data Providers</a> must also have a provisioned client within the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a> directory in the form
-of a <code>software statement</code> and corresponding transport certificate</p>
+<p>Use <a href="../../glossary/#term-Mutual-TLS-authentication">MTLS</a>, this means <a href="../../glossary/#term-Data-Provider">Data Providers</a> must also have a provisioned client within the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> directory in the form of a <code>software statement</code> and corresponding transport certificate</p>
 </li>
 <li>
-<p>Send the bearer token and client <a href="../../glossary/#term-Identification">ID</a> of the <a href="../../glossary/#term-Data-Provider">Data Provider</a> as an <code>application/x-www-form-urlencoded</code> body with the
-following values:</p>
+<p>Send the bearer token and client <a href="../../glossary/#term-Identification">ID</a> of the <a href="../../glossary/#term-Data-Provider">Data Provider</a> as an <code>application/x-www-form-urlencoded</code> body with the following values:</p>
 </li>
 </ul>
 <pre><code class="language-default">token: &lt;BEARER_TOKEN&gt;
 client_id: &lt;CLIENT_ID&gt;
 </code></pre>
 <h3 id="introspection-response-validation">Introspection response validation</h3>
-<p>The response body of this introspection call contains a <a href="../../glossary/#term-Javascript-Object-Notation">JSON</a> object with information about the entity which requested
-the supplied token from the authorization server, as well as properties of the token itself. An example introspection
-response is shown below:</p>
+<p>The response body of this introspection call contains a <a href="../../glossary/#term-Javascript-Object-Notation">JSON</a> object with information about the entity which requested the supplied token from the authorization server, as well as properties of the token itself. An example introspection response is shown below:</p>
 <pre><code class="language-json">{
   &quot;active&quot;: true,
   &quot;organisation_id&quot;: &quot;8&quot;,
@@ -825,7 +800,7 @@ response is shown below:</p>
   &quot;client_id&quot;: &quot;kZuAsn7UyZ98Wwh29hDpf&quot;,
   &quot;exp&quot;: 1626279245,
   &quot;iat&quot;: 1626278645,
-  &quot;iss&quot;: &quot;https://auth.directory.energydata.org.uk&quot;,
+  &quot;iss&quot;: &quot;https://auth.directory.sandbox.trust.icebreakerone.org&quot;,
   &quot;scope&quot;: &quot;directory:software&quot;,
   &quot;cnf&quot;: {
     &quot;x5t#S256&quot;: &quot;rP_-9u3ZyVo4ryQxg-bn4rr6gJGNu1dTowEeppOuIt8&quot;
@@ -833,46 +808,28 @@ response is shown below:</p>
   &quot;token_type&quot;: &quot;Bearer&quot;
 }
 </code></pre>
-<p>The following elements of the introspection response <strong>MUST</strong> be validated further before any Open Energy specific
-processing is performed:</p>
+<p>The following elements of the introspection response <strong>MUST</strong> be validated further before any Trust Framework-specific processing is performed:</p>
 <h4 id="active">active</h4>
-<p>If the introspection response does not contain the key <code>active</code>, or the value of this key is anything other than the
-boolean <code>true</code> value, the <a href="../../glossary/#term-Data-Provider">Data Provider</a> <strong>MUST</strong> reject the request and cease further processing.</p>
+<p>If the introspection response does not contain the key <code>active</code>, or the value of this key is anything other than the boolean <code>true</code> value, the <a href="../../glossary/#term-Data-Provider">Data Provider</a> <strong>MUST</strong> reject the request and cease further processing.</p>
 <p>If the <code>active</code> key was not present, it <strong>SHOULD</strong> respond with <code>400 invalid_request</code></p>
 <p>If the <code>active</code> key was present but not <code>true</code> it <strong>SHOULD</strong> respond with <code>401 invalid_token</code></p>
 <h4 id="time-ranges">time ranges</h4>
-<p>If the introspection response contains <code>iat</code> this is interpreted as a number of seconds since the epoch at which the
-token was issued. If this is in the future the <a href="../../glossary/#term-Data-Provider">Data Provider</a> <strong>MUST</strong> reject the request and cease further processing. It
-SHOULD respond with a <code>401 invalid_token</code>.</p>
-<p><strong>NOTE</strong>: The <a href="../../glossary/#term-Data-Provider">Data Provider</a> <strong>SHOULD</strong> allow for a reasonable degree of clock skew when interpreting the <code>iat</code> timestamp, an
-allowance of no more than 10 seconds should cover all reasonable cases.</p>
-<p>If the introspection response contains <code>exp</code> this is interpreted as a number of seconds since the epoch after which
-the token should be considered invalid. If this is in the past, the <a href="../../glossary/#term-Data-Provider">Data Provider</a> <strong>MUST</strong> reject the request and cease
-further processing. It <strong>SHOULD</strong> respond with a <code>401 invalid_token</code></p>
+<p>If the introspection response contains <code>iat</code> this is interpreted as a number of seconds since the epoch at which the token was issued. If this is in the future the <a href="../../glossary/#term-Data-Provider">Data Provider</a> <strong>MUST</strong> reject the request and cease further processing. It SHOULD respond with a <code>401 invalid_token</code>.</p>
+<p><strong>NOTE</strong>: The <a href="../../glossary/#term-Data-Provider">Data Provider</a> <strong>SHOULD</strong> allow for a reasonable degree of clock skew when interpreting the <code>iat</code> timestamp, an allowance of no more than 10 seconds should cover all reasonable cases.</p>
+<p>If the introspection response contains <code>exp</code> this is interpreted as a number of seconds since the epoch after which the token should be considered invalid. If this is in the past, the <a href="../../glossary/#term-Data-Provider">Data Provider</a> <strong>MUST</strong> reject the request and cease further processing. It <strong>SHOULD</strong> respond with a <code>401 invalid_token</code></p>
 <h4 id="certificate-thumbprint">certificate thumbprint</h4>
-<p>Open Energy uses certificate pinning combined with MTLS on all requests between <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> and <a href="../../glossary/#term-Data-Provider">Data Providers</a>. This
-ensures that a token issued to one client cannot be re-used by another client. <a href="../../glossary/#term-Data-Provider">Data Providers</a> <strong>MUST</strong> check that the
-thumbprint of the presented client certificate matches that provided within the introspection response.</p>
-<p>The introspection response contains the SHA256 thumbprint of the certificate used to acquire the token as a nested
-property <code>['cnf']['x5t#S256']</code>. This <strong>MUST</strong> be equal to the SHA256 thumbprint of the client certificate, if this is
-not the case the <a href="../../glossary/#term-Data-Provider">Data Provider</a> <strong>MUST</strong> reject the request and cease any further processing, responding with a
-<code>401 invalid_token</code></p>
+<p>The IB1 Trust Framework uses certificate pinning combined with MTLS on all requests between <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> and <a href="../../glossary/#term-Data-Provider">Data Providers</a>. This ensures that a token issued to one client cannot be re-used by another client. <a href="../../glossary/#term-Data-Provider">Data Providers</a> <strong>MUST</strong> check that the thumbprint of the presented client certificate matches that provided within the introspection response.</p>
+<p>The introspection response contains the SHA256 thumbprint of the certificate used to acquire the token as a nested property <code>['cnf']['x5t#S256']</code>. This <strong>MUST</strong> be equal to the SHA256 thumbprint of the client certificate, if this is not the case the <a href="../../glossary/#term-Data-Provider">Data Provider</a> <strong>MUST</strong> reject the request and cease any further processing, responding with a <code>401 invalid_token</code></p>
 <h3 id="interaction-header">Interaction header</h3>
-<p>If the <code>x-fapi-interaction-id</code> header is set in the request, it <strong>MUST</strong> be set to the same value in the response
-header of the same name. If not set, a new ID <strong>MUST</strong> be generated and set in the response header.</p>
+<p>If the <code>x-fapi-interaction-id</code> header is set in the request, it <strong>MUST</strong> be set to the same value in the response header of the same name. If not set, a new ID <strong>MUST</strong> be generated and set in the response header.</p>
 <h3 id="other-validation">Other validation</h3>
-<p>If all the above checks have passed, the <a href="../../glossary/#term-Data-Provider">Data Provider</a> can service the request and return whatever data were requested.
-It <strong>MAY</strong>, however, apply additional checks based on information in the introspection response about the client. This
-is where any Open Energy specific access control and licensing policies are applied.</p>
-<p>To inform any additional processing, the <a href="../../glossary/#term-Data-Provider">Data Provider</a> <strong>MAY</strong> make use of the
-<code>['additional_client_metadata']['metadata']</code> key within the introspection response. This contains a <a href="../../glossary/#term-Javascript-Object-Notation">JSON</a> object with
-properties asserted about the <a href="../../glossary/#term-Data-Consumer">Data Consumer</a>. The exact set of properties is not defined here, please see the access
-control language specification for more information about what could be specified.</p>
-<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> <strong>MAY</strong> make use of the <code>organisation_id</code> field in the token introspection response to uniquely and consistently
-identify the organisation of the <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> where required, for example to reference a customer record within the <a href="../../glossary/#term-Data-Provider">Data Provider</a>.</p>
-<p>More information on the Open Energy specific access control language can be found in
-<a href="../../access_control_specification/#access-control-and-capability-grant-language">Access Control and Capability Grant Language</a>, and its expression in the metadata file at <a href="../../metadata/#data-set-metadata">Data Set Metadata</a> in the
-<a href="../../metadata/#access-block">Access Block</a> section.</p>
+<p>If all the above checks have passed, the <a href="../../glossary/#term-Data-Provider">Data Provider</a> can service the request and return whatever data were requested. It <strong>MAY</strong>, however, apply additional checks based on information in the introspection response about the client. This is where any IB1 Trust Framework specific access control and licensing policies are applied.</p>
+<p>To inform any additional processing, the <a href="../../glossary/#term-Data-Provider">Data Provider</a> <strong>MAY</strong> make use of the <code>['additional_client_metadata']['metadata']</code> key within the introspection response. This contains a <a href="../../glossary/#term-Javascript-Object-Notation">JSON</a> object with properties asserted about the <a href="../../glossary/#term-Data-Consumer">Data Consumer</a>. The exact set of properties is not defined here, please see the access control language specification for more information about what could be specified.</p>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> <strong>MAY</strong> make use of the <code>organisation_id</code> field in the token introspection response to uniquely and consistently identify the organisation of the <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> where required, for example to reference a customer record within the <a href="../../glossary/#term-Data-Provider">Data Provider</a>.</p>
+<p>More information on the IB1 Trust Framework specific access control language can be found in <a href="../../access_control_specification/#access-control-and-capability-grant-language">Access Control and Capability Grant Language</a>, and its expression in the metadata file at <a href="../../metadata/#data-set-metadata">Data Set Metadata</a> in the <a href="../../metadata/#access-block">Access Block</a> section.</p>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjM0Nzg4N119
+-->
 
 
 
@@ -909,13 +866,13 @@ identify the organisation of the <a href="../../glossary/#term-Data-Consumer">Da
       
       
         
-        <a href="../../architecture/" class="md-footer__link md-footer__link--next" aria-label="Next: Open Energy Architecture" rel="next">
+        <a href="../../architecture/" class="md-footer__link md-footer__link--next" aria-label="Next: Trust Framework Architecture" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Open Energy Architecture
+              Trust Framework Architecture
             </div>
           </div>
           <div class="md-footer__button md-icon">
