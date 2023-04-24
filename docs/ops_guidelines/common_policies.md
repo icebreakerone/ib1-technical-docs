@@ -234,24 +234,20 @@ Grants are based on three sources of information:
 
 2. Information known by the [Data Provider](../glossary.md#term-Data-Provider) (separately from the Trust Framework) about the [Data Consumer](../glossary.md#term-Data-Consumer) making the request, such as customer status, commercial relationships, bilateral agreements, active payments/subscriptions or similar
 
-3. Rules defined by the [Data Provider](../glossary.md#term-Data-Provider) - predicated on information provided by [OEGS](../glossary.md#term-Open-Energy-Governance-Service) and/or, where necessary to preserve privacy or security, properties known to the [Data Provider](../glossary.md#term-Data-Provider) only
+3. Rules defined by the [Data Provider](../glossary.md#term-Data-Provider) - predicated on information provided by [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) and/or, where necessary to preserve privacy or security, properties known to the [Data Provider](../glossary.md#term-Data-Provider) only
 
-Information provided by [OEGS](../glossary.md#term-Open-Energy-Governance-Service) to [Data Providers](../glossary.md#term-Data-Provider) can cover two kinds of properties:
+Information provided by [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) to [Data Providers](../glossary.md#term-Data-Provider) can cover two kinds of properties:
 
-
-* **Inherently true** properties known to Open Energy, such as:
-
+* **Inherently true** properties known to the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service), such as:
 
     * The unique [ID](../glossary.md#term-Identification) of the [Data Consumer](../glossary.md#term-Data-Consumer)
 
-
     * The [Data Consumer](../glossary.md#term-Data-Consumer) represents a Local Authority / [SME](../glossary.md#term-Small-Medium-Enterprise) / Enterprise / Community Organisation / Academic group, etc
-
 
     * The [Data Consumer](../glossary.md#term-Data-Consumer) has a particular identity such as a registered name
 
 
-    * Open Energy has performed identity assurance to a particular level
+    * The [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) has performed identity assurance to a particular level
 
 
 * **Transient, time-bounded** properties known to Open Energy, such as:
@@ -564,5 +560,5 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMzU3OTI3Myw5MDM4Mzg4ODddfQ==
+eyJoaXN0b3J5IjpbLTE5MTMzOTQ1MzcsOTAzODM4ODg3XX0=
 -->
