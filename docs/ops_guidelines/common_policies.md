@@ -387,23 +387,23 @@ sector of the [Data Consumer](../glossary.md#term-Data-Consumer) - Local Authori
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 | **Access rules**           | Two rules are created:                                                                                            |
 |                            |                                                                                                                   |
-|                            | 1. `_group:plymouth_lct` - access to use case participants, here defined as a group `lct` managed by `plymouth` |
+|                            | 1. `ib1_group:plymouth_lct` - access to use case participants, here defined as a group `lct` managed by `plymouth` |
 |                            | (the [ID](../glossary.md#term-Identification) of a local council organisation) and administered using the         |
-|                            | [OEGS](../glossary.md#term-Open-Energy-Governance-Service) facilities                                             |
-|                            | 2. `provider:customer` - access to all other Open Energy members if they have a paid account with the             |
+|                            | [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) facilities                                             |
+|                            | 2. `provider:customer` - access to all other Trust Framework members if they have a paid account with the             |
 |                            | [Data Provider](../glossary.md#term-Data-Provider)                                                                |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 | **Capability grants**      | The [Data Provider](../glossary.md#term-Data-Provider) chooses to apply two different capability grants (dual     |
 |                            | licences) for the two access rules, reflecting the fact that their dataset is commercially sensitive, therefore   |
 |                            | they require payment for its use beyond non-profit or development activities.                                     |
 |                            |                                                                                                                   |
-|                            | 1. `oe_group:plymouth_lct grants oe:use_dev, oe:use_noncom`                                                       |
-|                            | 2. `provider:customer grants oe:use_any, oe:redistribute_combined, oe:combine_any, oe:adapt_any`                  |
+|                            | 1. `ib1_group:plymouth_lct grants ib1:use_dev, ib1:use_noncom`                                                       |
+|                            | 2. `provider:customer grants ib1:use_any, ib1:redistribute_combined, ib1:combine_any, ib1:adapt_any`                  |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 | **Obligations**            | 1. The original source of the artefact must be credited in all direct uses, derivatives of the artefact must be.  |
 |                            | accompanied by text stating that the original artefact was used in their creation, and derivatives must be        |
 |                            | licensed under the same terms as the original:                                                                    |
-|                            | `oe_group:plymouth_lct grants oe:use_dev, oe:use_noncom requires oe:sa, oe:by`                                    |
+|                            | `ib1_group:plymouth_lct grants ib1:use_dev, ib1:use_noncom requires ib1:sa, ib1:by`                                    |
 |                            | 2. The original source of the artefact must be credited in all direct uses, and derivatives of the artefact       |
 |                            | must be accompanied by text stating that the original artefact was used in their creation. There is no            |
 |                            | obligation to license derivatives of the artefact under the same terms as the original:                           |
@@ -497,6 +497,6 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5NDYzNjExOSwtMTQ2NTM1NjQ0LDkwMz
-gzODg4N119
+eyJoaXN0b3J5IjpbLTEwODAzMTM3MDEsLTE0NjUzNTY0NCw5MD
+M4Mzg4ODddfQ==
 -->
