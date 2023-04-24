@@ -37,20 +37,20 @@ The tables below outline considerations for [Data Providers](../glossary.md#term
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
 | Secure API creation and        | For example, using one of the following methods:                                                                                                  | Technical         |
 | deployment compliant with      |                                                                                                                                                   |                   |
-| Open Energy subset of FAPI     | 1. Deploy a Data Provider API to EC2 using the walkthrough [here](https://icebreakerone.github.io/open-energy-python-infrastructure/ec2.html)     |                   |
+| Trust Framework subset of FAPI     | 1. Deploy a Data Provider API to EC2 using the walkthrough [here](https://icebreakerone.github.io/open-energy-python-infrastructure/ec2.html)     |                   |
 | specification                  | 2. Use our Python Support Library(https://icebreakerone.github.io/open-energy-python-infrastructure/) to build a                                  |                   |
 |                                | Data Provider API on your own infrastructure                                                                                                      |                   |
 |                                | 3. Create a Data Provider based on the FAPI subset defined in [Common Security Requirements](technical_common.md#common-security-requirements)    |                   |
 |                                | using your choice of language and deployment infrastructure                                                                                       |                   |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
-| Creation of a rule, or rules,  | * Dataset assigned to an Open Energy Sensitivity Class                                                                                            | Operational,      |
+| Creation of a rule, or rules,  | * Dataset assigned to a Trust Framework Sensitivity Class                                                                                            | Operational,      |
 | for each dataset and           | * [Access rule](../access_control_specification.md#access-control-and-capability-grant-language) or rules created, for each of which:             | commercial,       |
 | publication of rule(s) in the  | * [Data Access Conditions](common_policies.md#data-access-conditions) are specified                                                               | technical         |
 | metadata file                  | * A grant of [Capabilities](../access_control_specification.md#capabilities) is articulated                                                       |                   |
 |                                | * Any accompanying [Obligations](../access_control_specification.md#obligations) are articulated                                                  |                   |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
 | Internal legal sign-off for    | * Internal legal advice sought on converting any existing [Shared data](../glossary.md#term-Shared-data) licenses Introduction                    | Legal             |
-| rules                          | [Open Energy](../glossary.md#term-Open-Energy) [Capabilities](../access_control_specification.md#capabilities) and                                |                   |
+| rules                          | [Trust Framework](../glossary.md#term-Trust-Framework) [Capabilities](../access_control_specification.md#capabilities) and                                |                   |
 |                                | [Obligations](../access_control_specification.md#obligations)                                                                                     |                   |
 |                                | * Internal legal sign-off granted for the creation of all data [access rules](../access_control_specification.md)                                 |                   |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
@@ -107,5 +107,5 @@ The tables below outline considerations for [Data Providers](../glossary.md#term
 |                                | being provided and that all licences are appropriately credited.                                                                                  |                   | 
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODczNzQ0Nl19
+eyJoaXN0b3J5IjpbLTE4MjkwMDM1NzhdfQ==
 -->
