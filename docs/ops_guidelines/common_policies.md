@@ -407,25 +407,16 @@ sector of the [Data Consumer](../glossary.md#term-Data-Consumer) - Local Authori
 |                            | 2. The original source of the artefact must be credited in all direct uses, and derivatives of the artefact       |
 |                            | must be accompanied by text stating that the original artefact was used in their creation. There is no            |
 |                            | obligation to license derivatives of the artefact under the same terms as the original:                           |
-|                            | `provider:customer grants oe:use_any, oe:redistribute_combined, oe:combine_any, oe:adapt_any requires oe:by`      |
+|                            | `provider:customer grants ib1:use_any, ib1:redistribute_combined, ib1:combine_any, ib1:adapt_any requires ib1:by`      |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 
 ### Risks of license proliferation
 
-As outlined in previous consultations, the Open Energy data ecosystem is more complex than Open Banking. We are
-therefore proposing a different approach to licensing in order to balance a wide range of needs and data types. The
-approach further responds to feedback from our Advisory Groups and Review Track that data access and licensing cannot
-be served by a one size fits all approach as this would risk restricting the diversity of the ecosystem and potentially
-undermining the strength of the trust framework.
+As outlined in previous consultations, the general case of data ecosystems is more complex than Open Banking. We are therefore proposing a different approach to licensing in order to balance a wide range of needs and data types. The approach further responds to feedback from our Advisory Groups and Review Track that data access and licensing cannot be served by a one size fits all approach as this would risk restricting the diversity of the ecosystem and potentially undermining the strength of the trust framework.
 
-We are aware of concerns within the industry that multiple licensing could present risks of licence proliferation,
-introducing complexity to the landscape which can act as a barrier for data consumption. Open Energy acknowledges this
-risk and presents the following points of response:
+We are aware of concerns within the industry that multiple licensing could present risks of licence proliferation, introducing complexity to the landscape which can act as a barrier for data consumption. Icebreaker One acknowledges this risk and presents the following points of response:
 
-> Firstly, some stakeholders have suggested that Open Energy should take a ‘modular approach’ to building a
-> ‘single Open Energy licence’. This suggestion outlines a permissive core or standard licence that is presented
-> to all [Data Providers](../glossary.md#term-Data-Provider) as the default option for publishing their data. If this is not appropriate for a particular
-> dataset, [Data Providers](../glossary.md#term-Data-Provider) would then have the option of adding restrictions (i.e. removing capabilities) by adding
+> Firstly, some stakeholders have suggested that Open Energy should take a ‘modular approach’ to building a ‘single Open Energy licence’. This suggestion outlines a permissive core or standard licence that is presented to all [Data Providers](../glossary.md#term-Data-Provider) as the default option for publishing their data. If this is not appropriate for a particular dataset, [Data Providers](../glossary.md#term-Data-Provider) would then have the option of adding restrictions (i.e. removing capabilities) by adding
 > modular sections of legal text. In practice however, a modular approach doesn’t reduce licence plurality as each
 > modification of a licence (e.g. addition of modular text) is viewed legally as the creation of a new licence.
 > Open Energy’s approach instead accepts a degree of licence plurality, but will work to standardise the
@@ -497,6 +488,6 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODAzMTM3MDEsLTE0NjUzNTY0NCw5MD
-M4Mzg4ODddfQ==
+eyJoaXN0b3J5IjpbLTI3NDY4NjczNCwtMTQ2NTM1NjQ0LDkwMz
+gzODg4N119
 -->
