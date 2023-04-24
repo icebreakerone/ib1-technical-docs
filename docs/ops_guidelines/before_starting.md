@@ -1,13 +1,10 @@
 # Considerations Before You Start
 
-**NOTE**: This section is designed primarily as a summary tool and should **not** be used in place of more
-detailed operational and technical documentation elsewhere in this site.
+**NOTE**: This section is designed primarily as a summary tool and should **not** be used in place of more detailed operational and technical documentation elsewhere in this site.
 
 ## Introduction (Before you start)
 
-This section provides ‘at a glance’ lists of items that new members will need to consider in order to meet
-operational requirements. It may also be useful for existing members to revisit when they publish ([Data Providers](../glossary.md#term-Data-Provider)) or access
-([Data Consumers](../glossary.md#term-Data-Consumer)) a new dataset.
+This section provides ‘at a glance’ lists of items that new members will need to consider in order to meet operational requirements. It may also be useful for existing members to revisit when they publish ([Data Providers](../glossary.md#term-Data-Provider)) or access ([Data Consumers](../glossary.md#term-Data-Consumer)) a new dataset.
 
 As [Open Energy](../glossary.md#term-Open-Energy) evolves, this section will be updated to form a definitive checklist for compliance. At present however,
 it is designed to outline general considerations regarding skills, capabilities and tasks that organisations will
@@ -115,3 +112,6 @@ prepare for data sharing. However, sharing of real data will not commence until 
 |                                | * Where a service uses multiple datasets, including those beyond Open Energy, ensure that licences are compatible to the service                  |                   | 
 |                                | being provided and that all licences are appropriately credited.                                                                                  |                   | 
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNzE1NzU3MzIwXX0=
+-->
