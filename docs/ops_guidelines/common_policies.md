@@ -150,20 +150,20 @@ The table below describes access conditions for each of the data sensitivity cla
 |                     |                                                               |                                                                      |
 |                     | Codes of conduct governing Critical National Infrastructure.  |                                                                      |
 +---------------------+---------------------------------------------------------------+----------------------------------------------------------------------+
-| Regulatory          | Networks business separation provisions                       | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and     |
-| compliance          |                                                               | [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)         |
+| Regulatory          | Networks business separation provisions                       | [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and     |
+| compliance          |                                                               | [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A)         |
 |                     | Competition law                                               |                                                                      |
 |                     |                                                               |                                                                      |
 |                     | Adherence to section 105 of the Utilities Act 2000            |                                                                      |
 +---------------------+---------------------------------------------------------------+----------------------------------------------------------------------+
-| Standards           | Meets [MED](../glossary.md#term-Modernising-Energy-Data) Data | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and     |
-| compliance          | Best Practice Guidance                                        | [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)         |
+| Standards           | Meets [MED](../glossary.md#term-Modernising-Energy-Data) Data | [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and     |
+| compliance          | Best Practice Guidance                                        | [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A)         |
 |                     |                                                               |                                                                      |
 |                     | Meets relevant                                                |                                                                      |
 |                     | [ISO](../glossary.md#term-Independent-System-Operator)        |                                                                      |
 |                     | standards                                                     |                                                                      |
 +---------------------+---------------------------------------------------------------+----------------------------------------------------------------------+
-| Organisation type   | Local Authorities                                             | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B)         |
+| Organisation type   | Local Authorities                                             | [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B)         |
 |                     |                                                               |                                                                      |
 |                     | Energy networks                                               |                                                                      |
 |                     |                                                               |                                                                      |
@@ -176,7 +176,7 @@ The table below describes access conditions for each of the data sensitivity cla
 |                     | Specific Open Energy membership tiers (e.g.                   |                                                                      |
 |                     | [SME](../glossary.md#term-Small-Medium-Enterprise))           |                                                                      | 
 +---------------------+---------------------------------------------------------------+----------------------------------------------------------------------+
-| Group membership    | Certain use cases (e.g. community energy project development) | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B)         |
+| Group membership    | Certain use cases (e.g. community energy project development) | [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B)         |
 |                     |                                                               |                                                                      |
 |                     | Commercial or development partnerships                        |                                                                      |
 |                     |                                                               |                                                                      |
@@ -189,8 +189,8 @@ The table below describes access conditions for each of the data sensitivity cla
 |                     | [Electric vehicle](../glossary.md#term-Electric-vehicle)      |                                                                      |
 |                     | charge-point planning                                         |                                                                      |
 +---------------------+---------------------------------------------------------------+----------------------------------------------------------------------+
-| Other               | Auditing clauses                                              |  [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and    |
-|                     |                                                               |   OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)        |
+| Other               | Auditing clauses                                              |  [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and    |
+|                     |                                                               |   [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A)        |
 |                     | Individuals handling the data within a                        |                                                                      |
 |                     |  [Data Consumer](../glossary.md#term-Data-Consumer) must.     |                                                                      |
 |                     | have completed certain training (e.g.                         |                                                                      |
@@ -202,11 +202,7 @@ The table below describes access conditions for each of the data sensitivity cla
 
 There are two ways in which group-based access can be defined.
 
-
-1. The group can be externally defined. In this case, an external source provides documentation group membership and
-duration. For example, a group could be created that encompasses all [UK](../glossary.md#term-United-Kingdom) retail energy suppliers licensed by Ofgem,
-or the members of a research consortium listed on a particular grant. In both cases, group membership is clearly
-defined by an external document (e.g. Ofgem licensee list, grant contract) applicable for a defined time period.
+1. The group can be externally defined. In this case, an external source provides documentation group membership and duration. For example, a group could be created that encompasses all [UK](../glossary.md#term-United-Kingdom) retail energy suppliers licensed by Ofgem, or the members of a research consortium listed on a particular grant. In both cases, group membership is clearly defined by an external document (e.g. Ofgem licensee list, grant contract) applicable for a defined time period.
 
 
 2. The group can be self-defined. In this case, documentation of group membership and duration is provided by group
@@ -596,5 +592,5 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMTIwMjk3Nyw5MDM4Mzg4ODddfQ==
+eyJoaXN0b3J5IjpbLTE1ODMyMzc4NTAsOTAzODM4ODg3XX0=
 -->
