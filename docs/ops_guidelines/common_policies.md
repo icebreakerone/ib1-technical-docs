@@ -250,25 +250,15 @@ Information provided by [TFGS](../glossary.md#term-Trust-Framework-Governance-Se
     * The [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) has performed identity assurance to a particular level
 
 
-* **Transient, time-bounded** properties known to Open Energy, such as:
+* **Transient, time-bounded** properties known to the Trust Framework, such as:
 
+    * The [Data Consumer](../glossary.md#term-Data-Consumer) is a member of a particular scheme, group, or consortium (e.g. a two-year academic research project under a particular named grant)
 
-    * The [Data Consumer](../glossary.md#term-Data-Consumer) is a member of a particular scheme, group, or consortium (e.g. a two-year academic research
-project under a particular named grant)
+    * The [Data Consumer](../glossary.md#term-Data-Consumer) has signed a particular document on a particular date (e.g. documentation of a research partnership)
 
+When defining an access rule, [Data Providers](../glossary.md#term-Data-Provider) will also be required to confirm whether the rule is definitive or indicative. Definitive rules stipulate that a [Data Consumer](../glossary.md#term-Data-Consumer) satisfying the stated conditions will be given access. Indicative rules stipulate that a [Data Consumer](../glossary.md#term-Data-Consumer) satisfying the stated conditions may be given access, but there may also be other conditions (e.g. the existence of a payment or bilateral agreement) that must be confirmed by the Data Provider outside the Trust Framework before access is granted. 
 
-    * The [Data Consumer](../glossary.md#term-Data-Consumer) has signed a particular document on a particular date (e.g. documentation of a research
-partnership)
-
-When defining an access rule, [Data Providers](../glossary.md#term-Data-Provider) will also be required to confirm whether the rule is definitive or
-indicative. Definitive rules stipulate that a [Data Consumer](../glossary.md#term-Data-Consumer) satisfying the stated conditions will be given access.
-Indicative rules stipulate that a [Data Consumer](../glossary.md#term-Data-Consumer) satisfying the stated conditions may be given access, but there may
-also be other conditions (e.g. the existence of a payment or bilateral agreement) that must be confirmed by the Data
-Provider outside the Open Energy ecosystem before access is granted. If access requests are refused, [Data Providers](../glossary.md#term-Data-Provider)
-must be able to demonstrate a justifiable reason for doing so. [Data Consumers](../glossary.md#term-Data-Consumer) can challenge access refusals through
-a dispute-resolution mechanism (part of the [OEGS](../glossary.md#term-Open-Energy-Governance-Service)) if this is required. Guidance regarding acceptable/unacceptable
-reasons for access refusal, the dispute-resolution mechanism, and [OEGS](../glossary.md#term-Open-Energy-Governance-Service) dispute-resolution processes will be developed
-and published in Phase 4 of the project.
+If access requests are refused, [Data Providers](../glossary.md#term-Data-Provider) must be able to demonstrate a justifiable reason for doing so. [Data Consumers](../glossary.md#term-Data-Consumer) can challenge access refusals through a dispute-resolution mechanism (part of the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service)) if this is required. Guidance regarding acceptable/unacceptable reasons for access refusal, the dispute-resolution mechanism, and [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) dispute-resolution processes will be developed and published in Phase 4 of the project.
 
 The flow of information associated with access control is shown below - this assumes the [Data Consumer](../glossary.md#term-Data-Consumer) has already
 acquired an access token from the authorization server. Access control and capability grants are processed on a
@@ -560,5 +550,5 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTMzOTQ1MzcsOTAzODM4ODg3XX0=
+eyJoaXN0b3J5IjpbMTk0MDI2MTk5Niw5MDM4Mzg4ODddfQ==
 -->
