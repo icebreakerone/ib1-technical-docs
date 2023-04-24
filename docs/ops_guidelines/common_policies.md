@@ -10,13 +10,7 @@ Data sets are described by [Data Providers](../glossary.md#term-Data-Provider) t
 
 ## Data Sensitivity Classes
 
-The IB1 Trust Framework incorporates a range of categories of data that have varied levels of sensitivity. In order to handle this complexity, and to ensure data is appropriately protected, Open Energy has developed a system of data
-sensitivity classification.
-
-In Open Energy Phase 2 (September - December 2020), the Policy and Membership Advisory Group established that a system
-of data classes should be used to distinguish data of different sensitivities shared within the Open Energy ecosystem.
-This policy builds from Phase 2 foundations and has been created with input from the Open Energy Advisory Groups,
-Review Track, and public consultation responses.
+The IB1 Trust Framework incorporates a range of categories of data that have varied levels of sensitivity. In order to handle this complexity, and to ensure data is appropriately protected, Icebreaker One has developed a system of data sensitivity classification.
 
 ### Policy details
 
@@ -633,5 +627,5 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTY5MDgxNDZdfQ==
+eyJoaXN0b3J5IjpbOTAzODM4ODg3XX0=
 -->
