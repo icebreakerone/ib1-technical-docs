@@ -23,7 +23,7 @@ Data Sensitivity Classes are designed to supplement, not replace, the [Modernisi
 (Point 12) determining whether data should be made Open, Shared or Closed. In particular, The Data Sensitivity Classes are
 designed to provide further nuance to the category of Shared data - identifying three different classes in this space, with different sensitivity profiles.
 
-### Data sensitivity classes in the IB Trust Framework
+### Data sensitivity classes in the IB Trust Framework TODO fix this table
 
 +---------------------------+------------------------------------------------------------------------------+---------------------------------------------------------------+----------------------+------------------------+----------------------+
 | Data Class                | Description                                                                  | Example Datasets                                              | Personal Sensitivity | Commercial Sensitivity | Security Sensitivity |
@@ -36,7 +36,7 @@ designed to provide further nuance to the category of Shared data - identifying 
 |                           | supporting critical national infrastructure owned by                         |                                                               |                      |                        |                      |
 |                           | an Operator of Essential Services.                                           |                                                               |                      |                        |                      |
 |                           |                                                                              |                                                               |                      |                        |                      |
-|                           | **Never suitable to share within the IB1 ecosystem.**                         |                                                               |                      |                        |                      |
+|                           | **Never suitable to share within the IB1 Trust Framework**                         |                                                               |                      |                        |                      |
 +---------------------------+------------------------------------------------------------------------------+---------------------------------------------------------------+----------------------+------------------------+----------------------+
 | OE-SP                     | Datasets which include personal data, requiring                              | Smart meter data, home temperature preferences,               | Very High            | Medium / High          | Medium / High        |
 |                           | appropriate consent to share, or other legal bases                           | protected characteristics or special category data            |                      |                        |                      |
@@ -47,7 +47,7 @@ designed to provide further nuance to the category of Shared data - identifying 
 |                           | law via the                                                                  |                                                               |                      |                        |                      |
 |                           | [DPA](../glossary.md#term-Data-Protection-Act) 2018.                         |                                                               |                      |                        |                      |
 |                           |                                                                              |                                                               |                      |                        |                      |
-|                           | **Currently not suitable to share within the |OE| ecosystem,                 |                                                               |                      |                        |                      |
+|                           | **Currently not suitable to share within the IB1 Trust Framework                |                                                               |                      |                        |                      |
 |                           | with future extensibility subject to consultation.**                         |                                                               |                      |                        |                      |
 +---------------------------+------------------------------------------------------------------------------+---------------------------------------------------------------+----------------------+------------------------+----------------------+
 | OE-SB                     | Datasets which do not include personal data and which                        | Public                                                        | Medium               | Medium / High          | Medium / High        |
@@ -81,7 +81,7 @@ designed to provide further nuance to the category of Shared data - identifying 
 ## Data Access Conditions
 
 This policy focuses on **data access**. Data access refers to **determining what types of conditions may be specified
-for |DCs| to meet in order to gain access** to datasets in different sensitivity classes, and how access rules
+for DCs to meet in order to gain access** to datasets in different sensitivity classes, and how access rules
 are articulated. This policy has been created with input from the Open Energy Advisory Groups, Review Track, and public
 consultation responses.
 
@@ -617,5 +617,5 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTQ3NzU0MTAsOTAzODM4ODg3XX0=
+eyJoaXN0b3J5IjpbLTI2NzcwMjE4NSw5MDM4Mzg4ODddfQ==
 -->
