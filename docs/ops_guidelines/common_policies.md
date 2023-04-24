@@ -217,38 +217,24 @@ As such, it is proposed that use case-based access could also be facilitated thr
 
 ### Prioritisation
 
-Inclusion of all access conditions outlined above will require significant technical build. In the near future, Icebreaker One may prioritise the establishment of access conditions that industry feedback has indicated take priority.
-These include: payment, security compliance, regulatory compliance and externally defined groups. As flagged above,
-in order to maintain robust governance and the Open Energy trust framework, development of additional access conditions
-may require further policy work.
+Inclusion of all access conditions outlined above will require significant technical build. In the near future, Icebreaker One may prioritise the establishment of access conditions that industry feedback has indicated take priority. These include: payment, security compliance, regulatory compliance and externally defined groups. As flagged above, in order to maintain robust governance and the IB1 Trust Framework, development of additional access conditions may require further policy work.
 
 ## Data Licensing
 
-This policy has been created with input from the Open Energy Advisory Groups, Review Track, and public consultation
-responses. These policies are presented jointly as they unite the processes of determining who can access a particular
-dataset and what can be done with that dataset. Please note that this policy does not outline draft legal text of the
-final licences - this is being developed separately with legal support. All ideas outlined in this document remain
-subject to legal assessment.
+This policy has been created with input from the IB1 Trust Framework Advisory Groups, Review Track, and public consultation responses. These policies are presented jointly as they unite the processes of determining who can access a particular dataset and what can be done with that dataset. Please note that this policy does not outline draft legal text of the final licences - this is being developed separately with legal support. All ideas outlined in this document remain subject to legal assessment.
 
 ### Creating access rules
 
 The previous section on Data Access established a set of concerns (e.g. group-based access, payment-based access etc.)
-which may be considered when determining who can access a dataset. To facilitate this policy, we propose a system
-whereby access and capability grants are determined, for each request to a [Data Provider](../glossary.md#term-Data-Provider)’s [API](../glossary.md#term-Application-programming-interface), on the basis of a set
-of rules defined and published by that [Data Provider](../glossary.md#term-Data-Provider).
+which may be considered when determining who can access a dataset. To facilitate this policy, we propose a system whereby access and capability grants are determined, for each request to a [Data Provider](../glossary.md#term-Data-Provider)’s [API](../glossary.md#term-Application-programming-interface), on the basis of a set of rules defined and published by that [Data Provider](../glossary.md#term-Data-Provider).
 
 Grants are based on three sources of information:
 
+1. Information from the Trust Framework Governance Service ([TFGS](../glossary.md#term-Open-Energy-Governance-Service)) about the [Data Consumer](../glossary.md#term-Data-Consumer) making the request
 
-1. Information from the Open Energy Governance Service ([OEGS](../glossary.md#term-Open-Energy-Governance-Service)) about the [Data Consumer](../glossary.md#term-Data-Consumer) making the request
+2. Information known by the [Data Provider](../glossary.md#term-Data-Provider) (separately from the Trust Framework) about the [Data Consumer](../glossary.md#term-Data-Consumer) making the request, such as customer status, commercial relationships, bilateral agreements, active payments/subscriptions or similar
 
-
-2. Information known by the [Data Provider](../glossary.md#term-Data-Provider) (separately from Open Energy) about the [Data Consumer](../glossary.md#term-Data-Consumer) making the request,
-such as customer status, commercial relationships, bilateral agreements, active payments/subscriptions or similar
-
-
-3. Rules defined by the [Data Provider](../glossary.md#term-Data-Provider) - predicated on information provided by [OEGS](../glossary.md#term-Open-Energy-Governance-Service) and/or, where necessary to preserve
-privacy or security, properties known to the [Data Provider](../glossary.md#term-Data-Provider) only
+3. Rules defined by the [Data Provider](../glossary.md#term-Data-Provider) - predicated on information provided by [OEGS](../glossary.md#term-Open-Energy-Governance-Service) and/or, where necessary to preserve privacy or security, properties known to the [Data Provider](../glossary.md#term-Data-Provider) only
 
 Information provided by [OEGS](../glossary.md#term-Open-Energy-Governance-Service) to [Data Providers](../glossary.md#term-Data-Provider) can cover two kinds of properties:
 
@@ -578,5 +564,5 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3NjU3MzYzNiw5MDM4Mzg4ODddfQ==
+eyJoaXN0b3J5IjpbMjAyMzU3OTI3Myw5MDM4Mzg4ODddfQ==
 -->
