@@ -10,7 +10,7 @@ import requests
 import string
 
 # Default document ID, points to the v0.2 OE3 Acronyms and terms sheet from our google drive.
-GLOSSARY_ID = '1iCZOLBREnliGQfoj2hGbObc7DKiq8le6t7oCNfbc7ko'
+GLOSSARY_ID = '1W4mk3hGTmVg8tt5wA0Ce8c7q69LdIxJQX1IMSQkeLuE'
 
 
 @dataclass(frozen=True)
@@ -110,7 +110,7 @@ def substitutions(entries: List[GlossaryEntry], min_acronym_length=3) -> str:
     :param min_acronym_length:
         Minimum length of acronym. Below this we replace the acronym in substitutions with the full
         text of the entry, above this it will appear as the acronym. This means we can have e.g. DP
-        expanding to Data Provider while OEGS remains as OEGS on the page. Open energy policy is currently
+        expanding to Data Provider while TFGS remains as TFGS on the page. IB1 Trust Framework policy is currently
         to always avoid two letter acronyms.
     :return:
         String containing RST substitution rules
@@ -187,8 +187,7 @@ def build_glossary_files():
 parser = ArgumentParser()
 
 parser.add_argument('-i', '--sheet', type=str, help=f'ID of google sheet to use',
-                    default='1bFH57PWT6da4cqJyWn9JWIcEjGqrAupjjj3Ib9-66_c')
+                    default='1W4mk3hGTmVg8tt5wA0Ce8c7q69LdIxJQX1IMSQkeLuE')
 parser.add_argument('-g', '--gid', type=str, help='GID of page in google sheet', default='0')
-parser.add_argument('-o', '--output-dir', type=str, help='Output directory', default='./glossaries')
 
 build_glossary_files()

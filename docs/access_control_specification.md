@@ -10,22 +10,17 @@ An access rule contains:
 2. One or more capability grants to the data consumer if access is granted
 3. Zero or more obligations falling on the data consumer if access is granted
 
-They are applied to properties of a [Data Consumer](glossary.md#term-Data-Consumer) while processing a request for data from a
-[Data Provider](glossary.md#term-Data-Provider). These properties can be modelled as a map of names to values; some values may be inferred by
-joining on the [ID](glossary.md#term-Identification) of the data consumer, some may be directly provided in the [Token introspection](ops_guidelines/technical_common.md#token-introspection) response.
+They are applied to properties of a [Data Consumer](glossary.md#term-Data-Consumer) while processing a request for data from a [Data Provider](glossary.md#term-Data-Provider). These properties can be modelled as a map of names to values; some values may be inferred by joining on the [ID](glossary.md#term-Identification) of the data consumer, some may be directly provided in the [Token introspection](ops_guidelines/technical_common.md#token-introspection) response.
 
 ## Syntax
 
 ### Names
 
-**Names** consist of a namespace (`[a-z0-9_]+`), a `:` character, and a suffix (`[a-z0-9_.]+`). For example,
-`oe:some_value`. Values asserted by Open Energy will always have a namespace `oe`. The suffix may contain `.`
-characters, the namespace may not.
+**Names** consist of a namespace (`[a-z0-9_]+`), a `:` character, and a suffix (`[a-z0-9_.]+`). For example, `ib1:some_value`. Values asserted by Icebreaker One will always have a namespace `ib1`. The suffix may contain `.` characters, the namespace may not.
 
 ### Rule syntax
 
-An access rule is represented as a single line string containing a comma separated list of zero or more Conditions,
-the literal string `grants`, and then a comma separated list of one or more Capabilities. Optionally, this may
+An access rule is represented as a single line string containing a comma separated list of zero or more Conditions, the literal string `grants`, and then a comma separated list of one or more Capabilities. Optionally, this may
 be followed by the literal `requires` and one or more Obligations in a comma separated list.
 
 ```default
@@ -43,15 +38,12 @@ See the following sections for specification of conditions and capabilities.
 
 Conditions are unary or binary clauses.
 
-All conditions must be satisfied within a rule for that rule to be applied. There are no explicit boolean operators
-such as `or` or similar. For cases where alternative sets of rules could be applied the expectation is that data
+All conditions must be satisfied within a rule for that rule to be applied. There are no explicit boolean operators such as `or` or similar. For cases where alternative sets of rules could be applied the expectation is that data
 providers will specify multiple, potentially overlapping, rules to express this.
 
 ### Unary clauses
 
-Unary clauses consist of a single **named** condition. The clause is satisfied if that condition is `true`.
-This is typically used to denote a particular property such as *Open Energy current membership* or similar where the
-existence of the property is sufficient to accept the data consumer.
+Unary clauses consist of a single **named** condition. The clause is satisfied if that condition is `true`. This is typically used to denote a particular property such as *Icebreaker One Trust Framework membership* or similar where the existence of the property is sufficient to accept the data consumer.
 
 ```json
  {"ib1:member" : true}
@@ -59,15 +51,11 @@ existence of the property is sufficient to accept the data consumer.
 
 ### Binary clauses
 
-Binary clauses consist of a **name** on the left hand side, an **operator**, and a **value** on the right hand side.
-The valid **operators** are shown in the table below. LHS, operator, and RHS are separated with at least one
+Binary clauses consist of a **name** on the left hand side, an **operator**, and a **value** on the right hand side. The valid **operators** are shown in the table below. LHS, operator, and RHS are separated with at least one
 space character.
 
-**Values** can be numerals, dates, quoted strings, or homogeneous lists of these three types. Dates are specified as
-`dd/mm/yyyy`, we do not need a higher level of precision in any of our envisaged use cases, but if this is needed
-a datetime must be specified as a string compliant with [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339). To
-simplify expression in [JSON](glossary.md#term-Javascript-Object-Notation), quoted strings should be enclosed in single quote `'` characters. Lists are written as a
-comma separated list of strings surrounded by `[` and `]` characters. Lists are only valid RHS values for the
+**Values** can be numerals, dates, quoted strings, or homogeneous lists of these three types. Dates are specified as `dd/mm/yyyy`, we do not need a higher level of precision in any of our envisaged use cases, but if this is needed
+a datetime must be specified as a string compliant with [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339). To simplify expression in [JSON](glossary.md#term-Javascript-Object-Notation), quoted strings should be enclosed in single quote `'` characters. Lists are written as a comma separated list of strings surrounded by `[` and `]` characters. Lists are only valid RHS values for the
 `in` operator.
 
 ### Operators
@@ -105,7 +93,7 @@ comma separated list of strings surrounded by `[` and `]` characters. Lists are 
 **NOTE**: The conditions shown below are examples, and should not be taken as indicative of standard properties of data
 consumers in the final system.
 
-### Example condition clauses TODO Fix table
+### Example condition clauses
 
 +------------------------------------------------+----------------------------------------------------------------------------------+
 | Condition                                      | Interpretation                                                                   |
@@ -114,103 +102,88 @@ consumers in the final system.
 |                                                | to `active`                                                                      |
 +------------------------------------------------+----------------------------------------------------------------------------------+
 | `ib1:membership_expires after 24/10/2022`      | passes if the value of `ib1:membership_expires` is either a date or a datetime,  |
-|                                                | and is after the 24th October 2022                                              |
-+------------------------------------------------+---------------------------------------------------------------------------------+
-| `ib1:terms_signed max_age_days 20`              | passes if the value of `ib1:terms_signed` is either a date or a datetime, and is |
-|                                                | at most 20 days from the current datetime. Note that dates with no time         |
-|                                                | component are equivalent to 00:00.00 on the specified date for comparison       |
-|                                                | purposes                                                                        |
-+------------------------------------------------+---------------------------------------------------------------------------------+
-| `some_group:membership_level >= 2`             | passes if the value of `some_group:membership_level` is a number and is greater |
-|                                                | to or equal to two.                                                             |
-+------------------------------------------------+---------------------------------------------------------------------------------+
-| `ib1:org_type in ['council', 'academic']`       | passes if the value of `ib1:org_type` would be considered equal to either        |
-|                                                |  `'council'` or `'academic'` as if compared with `is`.                          |
-+------------------------------------------------+---------------------------------------------------------------------------------+
-| `ib1:member`                                    | passes if the value of `ib1:member` is `true`.                                   |
-+------------------------------------------------+---------------------------------------------------------------------------------+
+|                                                | and is after the 24th October 2022                                               |
++------------------------------------------------+----------------------------------------------------------------------------------+
+| `ib1:terms_signed max_age_days 20`             | passes if the value of `ib1:terms_signed` is either a date or a datetime, and    |
+|                                                | is at most 20 days from the current datetime. Note that dates with no time       |
+|                                                | component are equivalent to 00:00.00 on the specified date for comparison        |
+|                                                | purposes                                                                         |
++------------------------------------------------+----------------------------------------------------------------------------------+
+| `some_group:membership_level >= 2`             | passes if the value of `some_group:membership_level` is a number and is greater  |
+|                                                | to or equal to two.                                                              |
++------------------------------------------------+----------------------------------------------------------------------------------+
+| `ib1:org_type in ['council', 'academic']`      | passes if the value of `ib1:org_type` would be considered equal to either        |
+|                                                |  `'council'` or `'academic'` as if compared with `is`.                           |
++------------------------------------------------+----------------------------------------------------------------------------------+
+| `ib1:member`                                   | passes if the value of `ib1:member` is `true`.                                   |
++------------------------------------------------+----------------------------------------------------------------------------------+
 
 ### Specifying multiple conditions
 
-Multiple conditions are separated with `,` characters. All conditions must be satisfied for the rule to pass, there
-are no sub-clauses or boolean operators. Any number of space characters are allowed before and after the `,` in a
+Multiple conditions are separated with `,` characters. All conditions must be satisfied for the rule to pass, there are no sub-clauses or boolean operators. Any number of space characters are allowed before and after the `,` in a
 condition list.
 
-For example, `ib1:status is 'active', some_group:membership_level >=2` is the union of those two example conditions
-from the previous section and will only be satisfied if both conditions are individually satisfiable.
+For example, `ib1:status is 'active', some_group:membership_level >=2` is the union of those two example conditions from the previous section and will only be satisfied if both conditions are individually satisfiable.
 
 ## Capabilities
 
-Capability grants for a given set of access conditions are specified as a comma (`,`) separated list of **names**.
-There **MUST** be at least one **name** in this list, an empty capability grant list is not considered valid.
+Capability grants for a given set of access conditions are specified as a comma (`,`) separated list of **names**. There **MUST** be at least one **name** in this list, an empty capability grant list is not considered valid.
 
 ### Standard capabilities
 
-These are capabilities where the namespace part of the **name** is `ib1`, indicating that they are defined as part
-of the Icebreaker One Trust Framework. Data providers **SHOULD NOT**, create their own capabilities unless absolutely
-necessary as doing so acts against the aim of easy interoperability and comprehension of access and licensing rules.
+These are capabilities where the namespace part of the **name** is `ib1`, indicating that they are defined as part of the Icebreaker One Trust Framework. Data providers **SHOULD NOT**, create their own capabilities unless absolutely necessary as doing so acts against the aim of easy interoperability and comprehension of access and licensing rules.
 
-Any additional capabilities designed **MUST** be prefixed with the organisation ID of the data provider responsible
-for their definition, and any such data provider **MUST** publish a clear, legally valid, definition of any such
-capabilities. In addition, data providers creating custom capabilities **MUST** inform the [TFGS](glossary.md#term-Trust-Framework-Governance-Service) of this, providing
-links to the aforementioned documentation.
+Any additional capabilities designed **MUST** be prefixed with the organisation ID of the data provider responsible for their definition, and any such data provider **MUST** publish a clear, legally valid, definition of any such capabilities. In addition, data providers creating custom capabilities **MUST** inform the [TFGS](glossary.md#term-Trust-Framework-Governance-Service) of this, providing links to the aforementioned documentation.
 
-**WARNING**: This section is provisional, the exact final set of base capabilities has yet to be determined. Those shown below
-are a plausible first cut but should not be considered definitive.
-
-### Standard capabilities TODO fix table
+**WARNING**: This section is provisional, the exact final set of base capabilities has yet to be determined. Those shown below are a plausible first cut but should not be considered definitive.
 
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
 | Category                 | Capability name                           | Meaning                                                                                |
 +==========================+===========================================+========================================================================================+
 | **Use**                  |                                           | **Use the artefact internally**                                                        |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `ib1:use_any`                              | For any purpose                                                                        |
+|                          | `ib1:use_any`                             | For any purpose                                                                        |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `ib1:use_dev`                              | For development purposes only (i.e. private or limited development of new              |
+|                          | `ib1:use_dev`                             | For development purposes only (i.e. private or limited development of new              |
 |                          |                                           | works, products or services)                                                           |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `ib1:use_noncom`                           | For non-commercial purposes only (e.g. education, research, charity work               |
+|                          | `ib1:use_noncom`                          | For non-commercial purposes only (e.g. education, research, charity work               |
 |                          |                                           | etc.)                                                                                  |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
 | **Adapt**                |                                           | **Adapt the artefact for internal use**                                                |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `ib1:adapt_any`                            | For any purpose                                                                        |
+|                          | `ib1:adapt_any`                           | For any purpose                                                                        |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `ib1:adapt_dev`                            | For development purposes only (i.e. private or limited development of new              |
+|                          | `ib1:adapt_dev`                           | For development purposes only (i.e. private or limited development of new              |
 |                          |                                           | works, products or services)                                                           |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `ib1:adapt_noncom`                         | For non-commercial purposes only (e.g. education, research, charity work               |
+|                          | `ib1:adapt_noncom`                        | For non-commercial purposes only (e.g. education, research, charity work               |
 |                          |                                           | etc.)                                                                                  |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
 | **Combine**              |                                           | **Combine (‘remix’) the artefact**                                                     |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `ib1:combine_any`                          | With any other artefacts                                                               |
+|                          | `ib1:combine_any`                         | With any other artefacts                                                               |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `ib1:combine_external`                     | With other external artefacts                                                          |
+|                          | `ib1:combine_external`                    | With other external artefacts                                                          |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `ib1:combine_internal`                     | With the Data Consumer’s own products or services                                      |
+|                          | `ib1:combine_internal`                    | With the Data Consumer’s own products or services                                      |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
 | **Redistribute**         |                                           | **Redistribute (‘onward share’ - including to any customers of the Service Provider)** |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `ib1:redistribute_original`                | The original artefact                                                                  |
+|                          | `ib1:redistribute_original`               | The original artefact                                                                  |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `ib1:redistribute_derived`                 | Derivatives of the original artefact not produced from other data sets, i.e. filtered  |
+|                          | `ib1:redistribute_derived`                | Derivatives of the original artefact not produced from other data sets, i.e. filtered  |
 |                          |                                           | or cleaned data                                                                        |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `ib1:redistribute_combined`                | Derivatives of the artefact produced through artefact combination or use in the Data   |
+|                          | `ib1:redistribute_combined`               | Derivatives of the artefact produced through artefact combination or use in the Data   |
 |                          |                                           | Consumer’s own products or services                                                    |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
 
 ### Expressing Open Data licenses with capabilities
 
-The capabilities defined above in Standard capabilities are intended for [shared data](glossary.md#term-Shared-data), but data providers may
-also publish [open data](glossary.md#term-Open-data). An open data set by definition has no access conditions, so any access rules for such
-data sets **MUST** have an empty access condition list, and must use one of the following capabilities to declare that
-the data are licensed under a known OSI approved open license
+The capabilities defined above in Standard capabilities are intended for [shared data](glossary.md#term-Shared-data), but data providers may also publish [open data](glossary.md#term-Open-data). An open data set by definition has no access conditions, so any access rules for such data sets **MUST** have an empty access condition list, and must use one of the following capabilities to declare that the data are licensed under a known OSI approved open license
 
-Rules **MUST NOT** grant a mix of capabilities in the `open` namespace and capabilities in other namespaces, as the
-semantics of this are not well defined.
+Rules **MUST NOT** grant a mix of capabilities in the `open` namespace and capabilities in other namespaces, as the semantics of this are not well defined.
 
 +-----------------------------------------------+-------------------------------------------------------------------------------------------------------------+
 | Capability name                               | Corresponding open data license                                                                             |
@@ -241,31 +214,24 @@ Open data sets **SHOULD** be released under the latest version of any given lice
 
 ## Obligations
 
-Obligations are constraints on what the data consumer can do with the data, restricting or specialising the capabilities
-granted. They are specified as a single **name**.
+Obligations are constraints on what the data consumer can do with the data, restricting or specialising the capabilities granted. They are specified as a single **name**.
 
 ### Standard obligations
 
 **WARNING**: This set of standard obligations is provisional and may be subject to change
 
-### Standard obligations
-
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
 | Obligation               | Name                                      | Explanation                                                                            |
 +==========================+===========================================+========================================================================================+
-| Fulltext                 | `ib1:ft`                                   | Re-users must display the full text of the license every time they use the work        |
+| Fulltext                 | `ib1:ft`                                  | Re-users must display the full text of the license every time they use the work        |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-| Attribution              | `ib1:by`                                   | Re-users must attribute the work to the original source when they use it               |
+| Attribution              | `ib1:by`                                  | Re-users must attribute the work to the original source when they use it               |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-| ShareAlike               | `ib1:sa`                                   | Re-users who create derivatives of the work must release the derivatives under the     |
+| ShareAlike               | `ib1:sa`                                  | Re-users who create derivatives of the work must release the derivatives under the     |
 |                          |                                           | same license as the original work, if they choose to distribute the derivatives        |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
 
-**NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are
-explicitly not included here as it is possible to express this through the access conditions (i.e. rather than
-declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial
-entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield
-of defining ‘non commercial use’.
+**NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTE3NjE5MDkwMSwtMTk2OTEzODgyMl19
 -->

@@ -87,7 +87,7 @@ This allows for tracking of transactions between clients and resource servers, a
 
 ## Request validation
 
-To participate in the Open Energy ecosystem, a [Data Provider](../glossary.md#term-Data-Provider) **MUST**:
+To participate in the IB1 Trust Framework, a [Data Provider](../glossary.md#term-Data-Provider) **MUST**:
 
 * Expose an [HTTPS](../glossary.md#term-Secure-HTTP) [API](../glossary.md#term-Application-programming-interface)
 
@@ -118,8 +118,7 @@ client_id: <CLIENT_ID>
 
 ### Introspection response validation
 
-The response body of this introspection call contains a [JSON](../glossary.md#term-Javascript-Object-Notation) object with information about the entity which requested the supplied token from the authorization server, as well as properties of the token itself. An example introspection
-response is shown below:
+The response body of this introspection call contains a [JSON](../glossary.md#term-Javascript-Object-Notation) object with information about the entity which requested the supplied token from the authorization server, as well as properties of the token itself. An example introspection response is shown below:
 
 ```json
 {
@@ -148,7 +147,7 @@ response is shown below:
 }
 ```
 
-The following elements of the introspection response **MUST** be validated further before any Open Energy specific processing is performed:
+The following elements of the introspection response **MUST** be validated further before any Trust Framework-specific processing is performed:
 
 #### active
 
@@ -168,8 +167,7 @@ If the introspection response contains `exp` this is interpreted as a number of 
 
 #### certificate thumbprint
 
-The IB1 Trust Framework uses certificate pinning combined with MTLS on all requests between [Data Consumers](../glossary.md#term-Data-Consumer) and [Data Providers](../glossary.md#term-Data-Provider). This ensures that a token issued to one client cannot be re-used by another client. [Data Providers](../glossary.md#term-Data-Provider) **MUST** check that the
-thumbprint of the presented client certificate matches that provided within the introspection response.
+The IB1 Trust Framework uses certificate pinning combined with MTLS on all requests between [Data Consumers](../glossary.md#term-Data-Consumer) and [Data Providers](../glossary.md#term-Data-Provider). This ensures that a token issued to one client cannot be re-used by another client. [Data Providers](../glossary.md#term-Data-Provider) **MUST** check that the thumbprint of the presented client certificate matches that provided within the introspection response.
 
 The introspection response contains the SHA256 thumbprint of the certificate used to acquire the token as a nested property `['cnf']['x5t#S256']`. This **MUST** be equal to the SHA256 thumbprint of the client certificate, if this is not the case the [Data Provider](../glossary.md#term-Data-Provider) **MUST** reject the request and cease any further processing, responding with a `401 invalid_token`
 
@@ -179,14 +177,13 @@ If the `x-fapi-interaction-id` header is set in the request, it **MUST** be set 
 
 ### Other validation
 
-If all the above checks have passed, the [Data Provider](../glossary.md#term-Data-Provider) can service the request and return whatever data were requested. It **MAY**, however, apply additional checks based on information in the introspection response about the client. This
-is where any Open Energy specific access control and licensing policies are applied.
+If all the above checks have passed, the [Data Provider](../glossary.md#term-Data-Provider) can service the request and return whatever data were requested. It **MAY**, however, apply additional checks based on information in the introspection response about the client. This is where any IB1 Trust Framework specific access control and licensing policies are applied.
 
 To inform any additional processing, the [Data Provider](../glossary.md#term-Data-Provider) **MAY** make use of the `['additional_client_metadata']['metadata']` key within the introspection response. This contains a [JSON](../glossary.md#term-Javascript-Object-Notation) object with properties asserted about the [Data Consumer](../glossary.md#term-Data-Consumer). The exact set of properties is not defined here, please see the access control language specification for more information about what could be specified.
 
 [Data Providers](../glossary.md#term-Data-Provider) **MAY** make use of the `organisation_id` field in the token introspection response to uniquely and consistently identify the organisation of the [Data Consumer](../glossary.md#term-Data-Consumer) where required, for example to reference a customer record within the [Data Provider](../glossary.md#term-Data-Provider).
 
-More information on the Open Energy specific access control language can be found in [Access Control and Capability Grant Language](../access_control_specification.md#access-control-and-capability-grant-language), and its expression in the metadata file at [Data Set Metadata](../metadata.md#data-set-metadata) in the [Access Block](../metadata.md#access-block) section.
+More information on the IB1 Trust Framework specific access control language can be found in [Access Control and Capability Grant Language](../access_control_specification.md#access-control-and-capability-grant-language), and its expression in the metadata file at [Data Set Metadata](../metadata.md#data-set-metadata) in the [Access Block](../metadata.md#access-block) section.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMjM0Nzg4N119
 -->

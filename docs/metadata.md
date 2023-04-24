@@ -1,11 +1,9 @@
 # Data Set Metadata
 
-Each [Data Provider](glossary.md#term-Data-Provider) ([Data Provider](glossary.md#term-Data-Provider)) maintains a set of one or more metadata files, each of which can describe one or more
-distinct data sets. These descriptions serve several purposes:
+Each [Data Provider](glossary.md#term-Data-Provider) ([Data Provider](glossary.md#term-Data-Provider)) maintains a set of one or more metadata files, each of which can describe one or more distinct data sets. These descriptions serve several purposes:
 
 
-1. They drive discovery descriptions are ingested into our search system and made available to a [Data Consumer](glossary.md#term-Data-Consumer)
-searching for particular kinds of data.
+1. They drive discovery descriptions are ingested into our search system and made available to a [Data Consumer](glossary.md#term-Data-Consumer) searching for particular kinds of data.
 
 
 2. They inform consumption of that data, providing information on:
@@ -24,8 +22,7 @@ searching for particular kinds of data.
 
 ## Metadata File Structure
 
-**NOTE**: The examples below use [YAML](glossary.md#term-YAML-Ain-t-Markup-Language) format for compactness and increased readability. Data providers may present this
-information either in [YAML](glossary.md#term-YAML-Ain-t-Markup-Language) or in [JSON](glossary.md#term-Javascript-Object-Notation) form.
+**NOTE**: The examples below use [YAML](glossary.md#term-YAML-Ain-t-Markup-Language) format for compactness and increased readability. Data providers may present this information either in [YAML](glossary.md#term-YAML-Ain-t-Markup-Language) or in [JSON](glossary.md#term-Javascript-Object-Notation) form.
 
 The overall structure of the metadata file is a list of objects, each of which has the following structure:
 
@@ -42,8 +39,7 @@ The overall structure of the metadata file is a list of objects, each of which h
 
 ## Content Block
 
-The `content` key contains a block of [JSON-LD](glossary.md#term-JavaScript-Object-Notation-for-Linked-Data) compatible information describing the conceptual content of the dataset.
-A simple example is shown below:
+The `content` key contains a block of [JSON-LD](glossary.md#term-JavaScript-Object-Notation-for-Linked-Data) compatible information describing the conceptual content of the dataset. A simple example is shown below:
 
 ```yaml
 - content:
@@ -51,19 +47,16 @@ A simple example is shown below:
     "@context":
        dcat: http://www.w3.org/ns/dcat#
        dct: http://purl.org/dc/terms/
-       oe: http://energydata.org.uk/oe/terms/
+       ib1: http://icebreakerone.org/ib1/terms/
     dct:title: My amazing data set
     dct:description: This is a free text description of the data set
     dcat:version: 0.1.2
     dcat:versionNotes: This is a note on this particular version of the dataset
-    oe:sensitivityClass: OE-SA
-    oe:dataSetStableIdentifier: myData
+    ib1:sensitivityClass: IB1-SA
+    ib1:dataSetStableIdentifier: myData
 ```
 
-These are the minimum properties every data set must define, they include terms from the
-[Dublic Core](https://dublincore.org/) (`dct`) and [Data Catalog](https://www.w3.org/TR/vocab-dcat-2/) (`dcat`)
-vocabularies, as well as from the Open Energy core ontology. Prefixes are defined in the [JSON-LD](glossary.md#term-JavaScript-Object-Notation-for-Linked-Data) `@context` object
-as in the example above.
+These are the minimum properties every data set must define, they include terms from the [Dublic Core](https://dublincore.org/) (`dct`) and [Data Catalog](https://www.w3.org/TR/vocab-dcat-2/) (`dcat`) vocabularies, as well as from the Icebreaker One core ontology. Prefixes are defined in the [JSON-LD](glossary.md#term-JavaScript-Object-Notation-for-Linked-Data) `@context` object as in the example above.
 
 ## Mandatory data content metadata fields
 
@@ -83,32 +76,25 @@ as in the example above.
 +---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
 | [dcat:versionNotes](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version_notes)                | Notes used to explain any changes to this version                                                           |
 +---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| `oe:sensitivityClass`                                                                                   | The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this data set. In the current Open |
-|                                                                                                         | Energy system this should always be one of [OE-O](glossary.md#term-Data-sensitivity-class-open),            |
-|                                                                                                         | [OE-SA](glossary.md#term-Data-sensitivity-class-shared-A), or                                               |
-|                                                                                                         | [OE-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of     |
+| `ib1:sensitivityClass`                                                                                  | The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this data set. In the current IB1  |
+|                                                                                                         | Trust Framework system this should always be one of [IB1-O](glossary.md#term-Data-sensitivity-class-open),  |
+|                                                                                                         | [IB1-SA](glossary.md#term-Data-sensitivity-class-shared-A), or                                              |
+|                                                                                                         | [IB!-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of    |
 |                                                                                                         | this property also determines the level of [API](glossary.md#term-Application-programming-interface)        |
-|                                                                                                         | security imposed, with [OE-O](glossary.md#term-Data-sensitivity-class-open) data sets being open data with  |
+|                                                                                                         | security imposed, with [IB1-O](glossary.md#term-Data-sensitivity-class-open) data sets being open data with |
 |                                                                                                         | no additional security, and the two shared data classes mandating                                           |
-|                                                                                                         | [FAPI](glossary.md#term-Financial-Grade-API) security using the Open Energy trust services.                 |
+|                                                                                                         | [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework services.               |
 +---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| `oe:dataSetStableIdentifier`                                                                            | An identifier, unique to this [Data Provider](glossary.md#term-Data-Provider), which will not be changed,   |
+| `ib1:dataSetStableIdentifier`                                                                           | An identifier, unique to this [Data Provider](glossary.md#term-Data-Provider), which will not be changed,   |
 |                                                                                                         | and which will be used along with the data provider’s own ID to create a unique identifier for this data    |
-|                                                                                                         | set within the Open Energy search system.                                                                   |
+|                                                                                                         | set within [Open Net Zero](https://opennetzero.org)                                                         |
 +---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
 
 ### Additional metadata
 
-The information above is the minimum needed to ensure that a data set is visible in the Open Energy search system. There
-are, however, other properties of a data set which may be useful to potential data consumers. Where such information can
-be provided, it should be provided in as standard a form as possible - in practice this translates to making use of
-existing ontologies such as DCAT and Dublin Core by preference, then shared, industry-specific, ontologies, and only
-using internal or custom representation when absolutely necessary.
+The information above is the minimum needed to ensure that a data set is visible in [Open Net Zero](https://opennetzero.org). There are, however, other properties of a data set which may be useful to potential data consumers. Where such information can be provided, it should be provided in as standard a form as possible - in practice this translates to making use of existing ontologies such as DCAT and Dublin Core by preference, then shared, industry-specific, ontologies, and only using internal or custom representation when absolutely necessary.
 
-Of particular note, and something we would like to ultimately expose in our search interface, is information about the
-geospatial and temporal ranges of entries within a data set. This is a complex subject, but one that has already been
-handled by DCAT. If you need to express this kind of information, please do so according to the standards laid out
-[here](https://www.w3.org/TR/vocab-dcat-2/#time-and-space).
+Of particular note, and something we would like to ultimately expose in Open Net Zero, is information about the geospatial and temporal ranges of entries within a data set. This is a complex subject, but one that has already been handled by DCAT. If you need to express this kind of information, please do so according to the standards laid out [here](https://www.w3.org/TR/vocab-dcat-2/#time-and-space).
 
 We encourage use of the `dcat:keyword` list for data sets. These translate to “tags” in our web interface and are useful to group data sets around specific topics.
 
@@ -121,44 +107,38 @@ dcat:keyword:
 
 ## Access Block
 
-This section describes the kinds of licensing, expressed as sets of capabilities, and what, if any, conditions must be
-satisfied before a [data consumer](glossary.md#term-Data-Consumer) can acquire these data.
+This section describes the kinds of licensing, expressed as sets of capabilities, and what, if any, conditions must be satisfied before a [data consumer](glossary.md#term-Data-Consumer) can acquire these data.
 
 Each item within this section contains:
 
 
-1. A statement describing a set of conditions which must be satisfied to grant access, and the set of capabilities
-granted should access be provided by this set of conditions. The exact specification for these statements can be
+1. A statement describing a set of conditions which must be satisfied to grant access, and the set of capabilities granted should access be provided by this set of conditions. The exact specification for these statements can be
 found at [Access Control and Capability Grant Language](access_control_specification.md#access-control-and-capability-grant-language)
 
 
-2. A boolean property indicating whether the access conditions in [1] are sufficient (`true`), or simply indicative
-(`false`). In the former case, a [data consumer](glossary.md#term-Data-Consumer) which satisfies all the conditions *will* be granted access,
-in the latter they *may* be granted access, but there may be additional requirements not fully described here
+2. A boolean property indicating whether the access conditions in [1] are sufficient (`true`), or simply indicative (`false`). In the former case, a [data consumer](glossary.md#term-Data-Consumer) which satisfies all the conditions *will* be granted access, in the latter they *may* be granted access, but there may be additional requirements not fully described here
 
 
-3. A pair of dates indicating the time range for which this access condition is valid. Data providers are encouraged to
-commit to access and license conditions with a reasonable timeframe to allow potential consumers to plan their own
+3. A pair of dates indicating the time range for which this access condition is valid. Data providers are encouraged to commit to access and license conditions with a reasonable timeframe to allow potential consumers to plan their own
 activities
 
 ```yaml
 access:
   # Access constraint to licensing predicates
-  - rule: oe:verified, oe:last_update max_age_days 60 grants oe:use_any
+  - rule: ib1:verified, ib1:last_update max_age_days 60 grants ib1:use_any
     sufficient: true
-    appliesFrom: 2021-04-22
-    appliesTo: 2022-04-22
-  - rule: group:some_group grants oe:use_any, oe:adapt_any
+    appliesFrom: 2023-04-22
+    appliesTo: 2024-04-22
+  - rule: group:some_group grants ib1:use_any, ib1:adapt_any
     sufficient: false
-    appliesFrom: 2021-04-22
-    appliesTo: 2022-04-22
+    appliesFrom: 2023-04-22
+    appliesTo: 2024-04-22
 ```
 
 ## Transport Block
 
-This section describes the on the wire transport protocol, normally HTTP, but with scope to describe out-of-band
-transports with an initial HTTP negotiation process. It contains at least a single `http` key, the value of which
-must be valid [Open|API|](https://swagger.io/specification/)
+This section describes the on the wire transport protocol, normally HTTP, but with scope to describe out-of-band transports with an initial HTTP negotiation process. It contains at least a single `http` key, the value of which
+must be valid [OpenAPI](https://swagger.io/specification/) 
 
 For example:
 
@@ -169,7 +149,7 @@ transport:
     # HTTP endpoints (depending on data class)
     openapi: 3.0.0
     info:
-      title: Sample |API|
+      title: Sample API
       description: CSV format data
       version: 0.1.0
     servers:
@@ -185,32 +165,24 @@ transport:
               description: CSV data stream
 ```
 
-**NOTE**: Because [API](glossary.md#term-Application-programming-interface) security is defined in relation to the data sensitivity class of the data set, it is not necessary to
-define the security of any presented [API](glossary.md#term-Application-programming-interface) in this section. Data sets in class [OE-O](glossary.md#term-Data-sensitivity-class-open) must expose an [API](glossary.md#term-Application-programming-interface) with no extra
-security measures, and those in [OE-SA](glossary.md#term-Data-sensitivity-class-shared-A) and [OE-SB](glossary.md#term-Data-sensitivity-class-shared-B) must be secured by [FAPI](glossary.md#term-Financial-Grade-API) using the Open Energy trust services.
+**NOTE**: Because [API](glossary.md#term-Application-programming-interface) security is defined in relation to the data sensitivity class of the data set, it is not necessary to define the security of any presented [API](glossary.md#term-Application-programming-interface) in this section. Data sets in class [IB1-O](glossary.md#term-Data-sensitivity-class-open) must expose an [API](glossary.md#term-Application-programming-interface) with no extra
+security measures, and those in [IB1-SA](glossary.md#term-Data-sensitivity-class-shared-A) and [IB1-SB](glossary.md#term-Data-sensitivity-class-shared-B) must be secured by [FAPI](glossary.md#term-Financial-Grade-API) using the Ib1 Trust Framework services.
 
 ### Heartbeat URL
 
-Data providers **SHOULD** create a secured endpoint to act as a heartbeat - if this is specifed then the [OEGS](glossary.md#term-Open-Energy-Governance-Service) will
-periodically call it to assertain liveness and optionally gather metrics as described in
-[Heartbeat and monitoring endpoint](ops_guidelines/data_provider_ops_guidelines.md#heartbeat-and-monitoring-endpoint)
+Data providers **SHOULD** create a secured endpoint to act as a heartbeat - if this is specifed then the [TFGS](glossary.md#term-Trust-Framework-Governance-Service) will periodically call it to assertain liveness and optionally gather metrics as described in[Heartbeat and monitoring endpoint](ops_guidelines/data_provider_ops_guidelines.md#heartbeat-and-monitoring-endpoint)
 
-A hearbeat URL can be specified as a single key `heartbeat_url` with the value being the fully qualified URL at which
-the hearbeat response is exposed.
+A hearbeat URL can be specified as a single key `heartbeat_url` with the value being the fully qualified URL at which the hearbeat response is exposed.
 
 ## Representation Block
 
-This section describes the format of any data received by a [data consumer](glossary.md#term-Data-Consumer) from this data set. Open Energy does
-not mandate particular formats, so this section is guidance rather than specification.
+This section describes the format of any data received by a [data consumer](glossary.md#term-Data-Consumer) from this data set. The IB1 Trust Framework does not mandate particular formats, so this section is guidance rather than specification.
 
-The only required element in this section is a key `mime` which should contain the
-[media type](https://en.wikipedia.org/wiki/Media_type) of the returned data. At a bare minimum this allows a client to
-load data into some kind of tooling. Depending on this value, other objects may be present.
+The only required element in this section is a key `mime` which should contain the [media type](https://en.wikipedia.org/wiki/Media_type) of the returned data. At a bare minimum this allows a client to load data into some kind of tooling. Depending on this value, other objects may be present.
 
 ### text/csv
 
-This type indicates that data is presented in CSV format. In this case, an optional key `csvw` may be defined, and
-should contain valid [JSON-LD](glossary.md#term-JavaScript-Object-Notation-for-Linked-Data) following the [CSV for the Web](https://www.w3.org/TR/tabular-data-primer/) guidelines:
+This type indicates that data is presented in CSV format. In this case, an optional key `csvw` may be defined, and should contain valid [JSON-LD](glossary.md#term-JavaScript-Object-Notation-for-Linked-Data) following the [CSV for the Web](https://www.w3.org/TR/tabular-data-primer/) guidelines:
 
 ```yaml
 representation:
@@ -231,15 +203,12 @@ representation:
 
 ### Other types
 
-This is currently open for consultation, we would like to be able to guide data providers towards particular
-representation types for particular kinds of information, and make use of any existing ontologies or standards such as
-the [Common Information Model](https://en.wikipedia.org/wiki/Common_Information_Model_(electricity)) where such
-standards will aid interoperability between Open Energy participants and the wider community.
+This is currently open for consultation, we would like to be able to guide data providers towards particular representation types for particular kinds of information, and make use of any existing ontologies or standards such as
+the [Common Information Model](https://en.wikipedia.org/wiki/Common_Information_Model_(electricity)) where such standards will aid interoperability between IB1 Trust Framework participants and the wider community.
 
 ## Full Example
 
-Putting together all the fragments from previous sections produces the following - this represents a single data set,
-in the full metadata file this would be contained within a list. [YAML](glossary.md#term-YAML-Ain-t-Markup-Language) form:
+Putting together all the fragments from previous sections produces the following - this represents a single data set, in the full metadata file this would be contained within a list. [YAML](glossary.md#term-YAML-Ain-t-Markup-Language) form:
 
 ```yaml
 - content:
@@ -247,23 +216,23 @@ in the full metadata file this would be contained within a list. [YAML](glossary
     "@context":
       dcat: http://www.w3.org/ns/dcat#
       dct: http://purl.org/dc/terms/
-      oe: http://energydata.org.uk/oe/terms/
+      ib1: http://icebreakerone.org/ib1/terms/
     dct:title: My amazing data set
     dct:description: This is a free text description of the data set
     dcat:version: 0.1.2
     dcat:versionNotes: This is a note on this particular version of the dataset
-    oe:sensitivityClass: OE-SA
-    oe:dataSetStableIdentifier: myData
+    ib1:sensitivityClass: IB1-SA
+    ib1:dataSetStableIdentifier: myData
   access:
     # Access constraint to licensing predicates
-    - rule: oe:verified, oe:last_update max_age_days 60 grants oe:use_any
+    - rule: ib1:verified, ib1:last_update max_age_days 60 grants ib1:use_any
       sufficient: true
-      appliesFrom: 2021-04-22
-      appliesTo: 2022-04-22
-    - rule: group:some_group grants oe:use_any, oe:adapt_any
+      appliesFrom: 2023-04-22
+      appliesTo: 2024-04-22
+    - rule: group:some_group grants ib1:use_any, ib1:adapt_any
       sufficient: false
-      appliesFrom: 2021-04-22
-      appliesTo: 2022-04-22
+      appliesFrom: 2023-04-22
+      appliesTo: 2024-04-22
   transport:
     http:
       # This block is mandatory, and contains the Open|API| spec for the secured or open
@@ -310,34 +279,34 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
       "@context": {
         "dcat": "http://www.w3.org/ns/dcat#",
         "dct": "http://purl.org/dc/terms/",
-        "oe": "http://energydata.org.uk/oe/terms/"
+        "ib1": "http://icebreakerone.org/ib1/terms/"
       },
       "dct:title": "My amazing data set",
       "dct:description": "This is a free text description of the data set",
       "dcat:version": "0.1.2",
       "dcat:versionNotes": "This is a note on this particular version of the dataset",
-      "oe:sensitivityClass": "|OE-SA|",
-      "oe:dataSetStableIdentifier": "myData"
+      "ib1:sensitivityClass": "IB1-SA",
+      "ib1:dataSetStableIdentifier": "myData"
     },
     "access": [
       {
-        "rule": "oe:verified, oe:last_update max_age_days 60 grants oe:use_any",
+        "rule": "ib1:verified, ib1:last_update max_age_days 60 grants ib1:use_any",
         "sufficient": true,
-        "appliesFrom": "2021-04-22T00:00:00.000Z",
-        "appliesTo": "2022-04-22T00:00:00.000Z"
+        "appliesFrom": "2023-04-22T00:00:00.000Z",
+        "appliesTo": "2024-04-22T00:00:00.000Z"
       },
       {
-        "rule": "group:some_group grants oe:use_any, oe:adapt_any",
+        "rule": "group:some_group grants ib1:use_any, ib1:adapt_any",
         "sufficient": false,
-        "appliesFrom": "2021-04-22T00:00:00.000Z",
-        "appliesTo": "2022-04-22T00:00:00.000Z"
+        "appliesFrom": "2023-04-22T00:00:00.000Z",
+        "appliesTo": "2024-04-22T00:00:00.000Z"
       }
     ],
     "transport": {
       "http": {
         "openapi": "3.0.0",
         "info": {
-          "title": "Sample |API|",
+          "title": "Sample API",
           "description": "CSV format data",
           "version": "0.1.0"
         },

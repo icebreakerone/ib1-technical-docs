@@ -23,12 +23,12 @@ Data Sensitivity Classes are designed to supplement, not replace, the [Modernisi
 (Point 12) determining whether data should be made Open, Shared or Closed. In particular, The Data Sensitivity Classes are
 designed to provide further nuance to the category of Shared data - identifying three different classes in this space, with different sensitivity profiles.
 
-### Data sensitivity classes in the IB Trust Framework TODO fix this table
+### Data sensitivity classes in the IB1 Trust Framework
 
 +---------------------------+------------------------------------------------------------------------------+---------------------------------------------------------------+----------------------+------------------------+----------------------+
 | Data Class                | Description                                                                  | Example Datasets                                              | Personal Sensitivity | Commercial Sensitivity | Security Sensitivity |
 +===========================+==============================================================================+===============================================================+======================+========================+======================+
-| OE-C                      | Closed data - limited to internal organisational                             | Business-critical proprietary information or IP,              | Very High            | Very High              | Very High            |
+| IB1-C                     | Closed data - limited to internal organisational                             | Business-critical proprietary information or IP,              | Very High            | Very High              | Very High            |
 |                           | access only or limited, bespoke bilateral contracts                          | critical asset locations, classified information.             |                      |                        |                      |
 |                           | under specific circumstances. May be subject to hard                         |                                                               |                      |                        |                      |
 |                           | legal barriers to sharing. May be security-critical                          |                                                               |                      |                        |                      |
@@ -36,9 +36,9 @@ designed to provide further nuance to the category of Shared data - identifying 
 |                           | supporting critical national infrastructure owned by                         |                                                               |                      |                        |                      |
 |                           | an Operator of Essential Services.                                           |                                                               |                      |                        |                      |
 |                           |                                                                              |                                                               |                      |                        |                      |
-|                           | **Never suitable to share within the IB1 Trust Framework**                         |                                                               |                      |                        |                      |
+|                           | **Never suitable to share within the IB1 Trust Framework**                   |                                                               |                      |                        |                      |
 +---------------------------+------------------------------------------------------------------------------+---------------------------------------------------------------+----------------------+------------------------+----------------------+
-| OE-SP                     | Datasets which include personal data, requiring                              | Smart meter data, home temperature preferences,               | Very High            | Medium / High          | Medium / High        |
+| IB1-SP                    | Datasets which include personal data, requiring                              | Smart meter data, home temperature preferences,               | Very High            | Medium / High          | Medium / High        |
 |                           | appropriate consent to share, or other legal bases                           | protected characteristics or special category data            |                      |                        |                      |
 |                           | to data processing, as defined by the                                        | (e.g. dependence on power due to health conditions),          |                      |                        |                      |
 |                           | [EU](../glossary.md#term-European-Union)                                     | individual                                                    |                      |                        |                      |
@@ -47,10 +47,10 @@ designed to provide further nuance to the category of Shared data - identifying 
 |                           | law via the                                                                  |                                                               |                      |                        |                      |
 |                           | [DPA](../glossary.md#term-Data-Protection-Act) 2018.                         |                                                               |                      |                        |                      |
 |                           |                                                                              |                                                               |                      |                        |                      |
-|                           | **Currently not suitable to share within the IB1 Trust Framework                |                                                               |                      |                        |                      |
+|                           | **Currently not suitable to share within the IB1 Trust Framework             |                                                               |                      |                        |                      |
 |                           | with future extensibility subject to consultation.**                         |                                                               |                      |                        |                      |
 +---------------------------+------------------------------------------------------------------------------+---------------------------------------------------------------+----------------------+------------------------+----------------------+
-| OE-SB                     | Datasets which do not include personal data and which                        | Public                                                        | Medium               | Medium / High          | Medium / High        |
+| IB1-SB                    | Datasets which do not include personal data and which                        | Public                                                        | Medium               | Medium / High          | Medium / High        |
 |                           | can/could be shared, but currently require bilateral                         | [Electric vehicle](../glossary.md#term-Electric-vehicle)      |                      |                        |                      |
 |                           | contract negotiation. May include data currently shared on the               | charge-point performance, generation asset performance,       |                      |                        |                      |
 |                           | basis of group-based, name-based or purpose-limited access.                  | aggregated smart meter data, aggregated, microgeneration      |                      |                        |                      |
@@ -64,14 +64,14 @@ designed to provide further nuance to the category of Shared data - identifying 
 |                           | related to individual re-identification. Future extensibility to             |                                                               |                      |                        |                      |
 |                           | sharing anonymised data is subject to consultation.**                        |                                                               |                      |                        |                      |
 +---------------------------+------------------------------------------------------------------------------+---------------------------------------------------------------+----------------------+------------------------+----------------------+
-| OE-SA                     | Shared data - datasets which can/could be shared, but which require the      | Network capacity, outage data, weather predictions,           | Low                  | Medium                 | Low                  |
+| IB1-SA                    | Shared data - datasets which can/could be shared, but which require the      | Network capacity, outage data, weather predictions,           | Low                  | Medium                 | Low                  |
 |                           | user to agree to ‘light touch’ T&Cs to access and use (e.g.                  | European space agency data, daily smart meter                 |                      |                        |                      |
 |                           | non-commercial clauses such as those under                                   | installations, geolocation information for non-sensitive      |                      |                        |                      |
 |                           |[CC-BY-NC](../glossary.md#term-Creative-Commons-Attribution-Non-commercial)). | assets (e.g. Renewable Assets,                                |                      |                        |                      |
 |                           |                                                                              | [EPC](../glossary.md#term-Energy-Performance-Certificate)     |                      |                        |                      |
 |                           |                                                                              | certificates).                                                |                      |                        |                      |
 +---------------------------+------------------------------------------------------------------------------+---------------------------------------------------------------+----------------------+------------------------+----------------------+
-| OE-O                      | Open Data – full open access, under an open data licence. Free to use, by    | [LSOA](../glossary.md#term-Lower-Layer-Super-Output-Areas)    | Very Low             | Very low               | Very Low             |     
+| IB1-O                     | Open Data – full open access, under an open data licence. Free to use, by    | [LSOA](../glossary.md#term-Lower-Layer-Super-Output-Areas)    | Very Low             | Very low               | Very Low             |     
 |                           | anyone, for any purpose.                                                     | IDs, Digest of [UK](../glossary.md#term-United-Kingdom)       |                      |                        |                      |
 |                           |                                                                              | Energy Statistics, regulatory data (e.g. licensing            |                      |                        |                      |
 |                           |                                                                              | categories, institutional charters or Terms of Reference,     |                      |                        |                      |
@@ -80,14 +80,13 @@ designed to provide further nuance to the category of Shared data - identifying 
 
 ## Data Access Conditions
 
-This policy focuses on **data access**. Data access refers to determining what types of conditions may be specified for Data Consumers to meet in order to gain access to datasets in different sensitivity classes, and how access rules are articulated. This policy has been created with input from the IB1 Trust Framework Advisory Groups, Review Track, and public
-consultation responses.
+This policy focuses on **data access**. Data access refers to determining what types of conditions may be specified for Data Consumers to meet in order to gain access to datasets in different sensitivity classes, and how access rules are articulated. This policy has been created with input from the IB1 Trust Framework Advisory Groups, Review Track, and public consultation responses.
 
 The Trust Framework Governance Service ([TFGS](../glossary.md#term-Trust-Framework-Governance-Service)) is responsible for providing [Data Providers](../glossary.md#term-Data-Provider) with verified information about [Data Consumers](../glossary.md#term-Data-Consumer), in line with specified access conditions for each dataset. However, the [Data Provider](../glossary.md#term-Data-Provider) is solely responsible for determining whether any given [API](../glossary.md#term-Application-programming-interface) request should be honoured (i.e. data access granted), and the licensing terms for any data returned in response to that request. This is due to requirements for control to rest with the [Data Provider](../glossary.md#term-Data-Provider) only.
 
 It is expected that [Data Providers](../glossary.md#term-Data-Provider) will grant access reliably and fairly, in line with the access conditions that they specify. In the event that access is refused, there will be a mechanism for flagging this with the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) for review and dispute management. [Data Providers](../glossary.md#term-Data-Provider) must be able to show clear justification for access refusal. Repeat refusal or non-compliance with specified access conditions may result in penalties (to be determined after Phase 3).
 
-This policy focuses on access conditions for classes [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A) and [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) only. Personal data ([OE-SP](../glossary.md#term-Data-sensitivity-class-personal)) are currently out of scope. Future extensibility of the IB1 Trust Framework to [OE-SP](../glossary.md#term-Data-sensitivity-class-personal) data will be consulted on in future phases of project development.
+This policy focuses on access conditions for classes [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A) and [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B) only. Personal data ([IB1-SP](../glossary.md#term-Data-sensitivity-class-personal)) are currently out of scope. Future extensibility of the IB1 Trust Framework to [IB1-SP](../glossary.md#term-Data-sensitivity-class-personal) data will be consulted on in future phases of project development.
 
 ### Policy details (Data access conditions)
 
@@ -98,85 +97,78 @@ Our approach must serve the goal of reducing friction in sharing  data, while al
 1. [Data Providers](../glossary.md#term-Data-Provider): to retain control over their data.
 2. [Data Consumers](../glossary.md#term-Data-Consumer) and [Service Providers](../glossary.md#term-Service-Provider): to access multiple datasets in a clear and manageable way.
 
-As such, we define a standardised range of access condition types as a mechanism to balance the factors outlined above.
-This acknowledges the need for more nuance than would be captured under a ‘one size fits all’ approach for each sensitivity class. Instead, our policy enables some tailoring within defined parameters.
+As such, we define a standardised range of access condition types as a mechanism to balance the factors outlined above. This acknowledges the need for more nuance than would be captured under a ‘one size fits all’ approach for each sensitivity class. Instead, our policy enables some tailoring within defined parameters.
 
-The table below describes access conditions for each of the data sensitivity classes. It also demonstrates the rationale for this guidance - identifying the lack of standardised access conditions for [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A) and [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) datasets as a cause of cost and friction in data sharing.
+The table below describes access conditions for each of the data sensitivity classes. It also demonstrates the rationale for this guidance - identifying the lack of standardised access conditions for [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A) and [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B) datasets as a cause of cost and friction in data sharing.
 
-### Data sensitivity classes and access conditions in scope TODO fix table
+### Data sensitivity classes and access conditions in scope
 
 +------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
 | Data Class                                                                   | Access Conditions                                                                                       |
 +==============================================================================+=========================================================================================================+
-| [IB1-C](../glossary.md#term-Data-sensitivity-class-closed)                    | Determined and governed by the [Data Provider](../glossary.md#term-Data-Provider) only.                 |
+| [IB1-C](../glossary.md#term-Data-sensitivity-class-closed)                   | Determined and governed by the [Data Provider](../glossary.md#term-Data-Provider) only.                 |
 +------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-| [IB1-SP](../glossary.md#term-Data-sensitivity-class-personal)                 | Currently determined by legislation including, but not limited to:                                      |
+| [IB1-SP](../glossary.md#term-Data-sensitivity-class-personal)                | Currently determined by legislation including, but not limited to:                                      |
 |                                                                              | [GDPR](../glossary.md#term-General-Data-Protection-Regulation) /                                        |
 |                                                                              | [DPA](../glossary.md#term-Data-Protection-Act) 2018, the Data Access and Privacy Framework, and the     |
 |                                                                              | Smart Energy Code. [Data Providers](../glossary.md#term-Data-Provider) may also apply additional        |
 |                                                                              | non-standard access conditions, such as payment or purpose-based.                                       |
 |                                                                              |                                                                                                         |
-|                                                                              | Determining access conditions for personal data is not currently in scope       |
-|                                                                              | (Future extensibility to be considered |
-|                                                                              | based on consultation in due course.                                                                    |
+|                                                                              | Determining access conditions for personal data is not currently in scope                               |
+|                                                                              | (Future extensibility to be considered based on consultation in due course.                             |
 +------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-| [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B)                 | Currently non-standardised, determined by bilateral contract and bespoke negotiation.                   |
+| [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B)                | Currently non-standardised, determined by bilateral contract and bespoke negotiation.                   |
 |                                                                              |                                                                                                         |
 |                                                                              | Subject of the current policy.                                                                          |
 +------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-| [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A)                 | Currently some standardisation, however bespoke arrangements remain common.                             |
+| [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A)                | Currently some standardisation, however bespoke arrangements remain common.                             |
 |                                                                              |                                                                                                         |
 |                                                                              | Subject of the current policy.                                                                          |
 +------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-| [IB1-O](../glossary.md#term-Data-sensitivity-class-open)                      | No access conditions - free and accessible to all users.                                                |
+| [IB1-O](../glossary.md#term-Data-sensitivity-class-open)                     | No access conditions - free and accessible to all users.                                                |
 +------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
 
-### IB1 Trust Framework access conditions TODO fix table
+### IB1 Trust Framework access conditions
 
 +---------------------+---------------------------------------------------------------+----------------------------------------------------------------------+
 | Condition domain    | Considerations (examples - not exhaustive)                    | Applicable class                                                     |
 +=====================+===============================================================+======================================================================+
-| Payment             | Free or paid data                                             | [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and     |
-|                     |                                                               | [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A)         |
+| Payment             | Free or paid data                                             | [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and    |
+|                     |                                                               | [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A)        |
 |                     | Graduated payment rates (e.g. higher granularity)             |                                                                      |
 |                     |                                                               |                                                                      |
 |                     | One-off or subscription payment rates                         |                                                                      |
 +---------------------+---------------------------------------------------------------+----------------------------------------------------------------------+
-| Security compliance | [UK](../glossary.md#term-United-Kingdom) Government Minimum   | [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and     |
-|                     | Cybersecurity Standard                                        | [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A)         |
+| Security compliance | [UK](../glossary.md#term-United-Kingdom) Government Minimum   | [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and    |
+|                     | Cybersecurity Standard                                        | [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A)        |
 |                     |                                                               |                                                                      |
 |                     | [UK](../glossary.md#term-United-Kingdom) Government  ‘Secure. |                                                                      | 
 |                     | by Design’ IoT guidance                                       |                                                                      |
 |                     |                                                               |                                                                      |
 |                     | Codes of conduct governing Critical National Infrastructure.  |                                                                      |
 +---------------------+---------------------------------------------------------------+----------------------------------------------------------------------+
-| Regulatory          | Networks business separation provisions                       | [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and     |
-| compliance          |                                                               | [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A)         |
+| Regulatory          | Networks business separation provisions                       | [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and    |
+| compliance          |                                                               | [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A)        |
 |                     | Competition law                                               |                                                                      |
 |                     |                                                               |                                                                      |
 |                     | Adherence to section 105 of the Utilities Act 2000            |                                                                      |
 +---------------------+---------------------------------------------------------------+----------------------------------------------------------------------+
-| Standards           | Meets [MED](../glossary.md#term-Modernising-Energy-Data) Data | [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and     |
-| compliance          | Best Practice Guidance                                        | [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A)         |
+| Standards           | Meets [MED](../glossary.md#term-Modernising-Energy-Data) Data | [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and    |
+| compliance          | Best Practice Guidance                                        | [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A)        |
 |                     |                                                               |                                                                      |
 |                     | Meets relevant                                                |                                                                      |
 |                     | [ISO](../glossary.md#term-Independent-System-Operator)        |                                                                      |
 |                     | standards                                                     |                                                                      |
 +---------------------+---------------------------------------------------------------+----------------------------------------------------------------------+
-| Organisation type   | Local Authorities                                             | [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B)         |
-|                     |                                                               |                                                                      |
+| Organisation type   | Local Authorities                                             | [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B)        |
 |                     | Energy networks                                               |                                                                      |
-|                     |                                                               |                                                                      |
 |                     | Schools, colleges and universities                            |                                                                      |
-|                     |                                                               |                                                                      |
 |                     | Code signatories                                              |                                                                      |
-|                     |                                                               |                                                                      |
 |                     | Charities                                                     |                                                                      |
-|                     |                                                               |                                                                      |
-|                     | Specific Open Energy membership tiers (e.g.                   |                                                                      |
+|                     | Specific Icebreaker One membership tiers (e.g.                |                                                                      |
 |                     | [SME](../glossary.md#term-Small-Medium-Enterprise))           |                                                                      | 
 +---------------------+---------------------------------------------------------------+----------------------------------------------------------------------+
-| Group membership    | Certain use cases (e.g. community energy project development) | [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B)         |
+| Group membership    | Certain use cases (e.g. community energy project development) | [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B)        |
 |                     |                                                               |                                                                      |
 |                     | Commercial or development partnerships                        |                                                                      |
 |                     |                                                               |                                                                      |
@@ -189,8 +181,8 @@ The table below describes access conditions for each of the data sensitivity cla
 |                     | [Electric vehicle](../glossary.md#term-Electric-vehicle)      |                                                                      |
 |                     | charge-point planning                                         |                                                                      |
 +---------------------+---------------------------------------------------------------+----------------------------------------------------------------------+
-| Other               | Auditing clauses                                              |  [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and    |
-|                     |                                                               |   [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A)        |
+| Other               | Auditing clauses                                              |  [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and   |
+|                     |                                                               |   [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A)      |
 |                     | Individuals handling the data within a                        |                                                                      |
 |                     |  [Data Consumer](../glossary.md#term-Data-Consumer) must.     |                                                                      |
 |                     | have completed certain training (e.g.                         |                                                                      |
@@ -210,8 +202,7 @@ Further policy-development is required to ensure the inclusion of self-defining 
 
 ### Use case based access control
 
-This type of access condition is difficult to design due to inherent subjectivity in defining the bounds and meaning of
-particular use cases. While some [Data Providers](../glossary.md#term-Data-Provider) could be comfortable granting access on the basis of broadly defined use cases, such as fuel poverty reduction, this may not be appropriate to all [Data Providers](../glossary.md#term-Data-Provider) or for more sensitive datasets. 
+This type of access condition is difficult to design due to inherent subjectivity in defining the bounds and meaning of particular use cases. While some [Data Providers](../glossary.md#term-Data-Provider) could be comfortable granting access on the basis of broadly defined use cases, such as fuel poverty reduction, this may not be appropriate to all [Data Providers](../glossary.md#term-Data-Provider) or for more sensitive datasets. 
 
 As such, it is proposed that use case-based access could also be facilitated through the creation of either externally-defined or self-defined groups as outlined above. For example, partners within a Local Authority social housing retrofit project could form a group. This group would be accompanied by information about the specific use case it represents - for example participants, timescale, activities, commercial status etc.) enabling [Data Providers](../glossary.md#term-Data-Provider) to make an informed decision regarding whether to grant access. Any future consideration of access based on more broadly-defined use-cases would be subject to consultation and further policy development.
 
@@ -225,8 +216,7 @@ This policy has been created with input from the IB1 Trust Framework Advisory Gr
 
 ### Creating access rules
 
-The previous section on Data Access established a set of concerns (e.g. group-based access, payment-based access etc.)
-which may be considered when determining who can access a dataset. To facilitate this policy, we propose a system whereby access and capability grants are determined, for each request to a [Data Provider](../glossary.md#term-Data-Provider)’s [API](../glossary.md#term-Application-programming-interface), on the basis of a set of rules defined and published by that [Data Provider](../glossary.md#term-Data-Provider).
+The previous section on Data Access established a set of concerns (e.g. group-based access, payment-based access etc.) which may be considered when determining who can access a dataset. To facilitate this policy, we propose a system whereby access and capability grants are determined, for each request to a [Data Provider](../glossary.md#term-Data-Provider)’s [API](../glossary.md#term-Application-programming-interface), on the basis of a set of rules defined and published by that [Data Provider](../glossary.md#term-Data-Provider).
 
 Grants are based on three sources of information:
 
@@ -245,7 +235,6 @@ Information provided by [TFGS](../glossary.md#term-Trust-Framework-Governance-Se
     * The [Data Consumer](../glossary.md#term-Data-Consumer) represents a Local Authority / [SME](../glossary.md#term-Small-Medium-Enterprise) / Enterprise / Community Organisation / Academic group, etc
 
     * The [Data Consumer](../glossary.md#term-Data-Consumer) has a particular identity such as a registered name
-
 
     * The [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) has performed identity assurance to a particular level
 
@@ -319,38 +308,38 @@ reduced legal, staff and time costs associated with improved searchability, tran
 
 **NOTE**: These scenarios have been created to reflect decisions that could be faced by [Data Providers](../glossary.md#term-Data-Provider) in the Open Energy Phase 3 ([OE3](../glossary.md#term-Open-Energy-Phase-3)) use-case, in which a Local Authority is seeking data to plan the retrofit of social housing with low carbon technologies. Please note that the scenarios are exemplary only and do not necessarily represent the stances of any [Data Providers](../glossary.md#term-Data-Provider) involved in testing.
 
-### Scenario 1 TODO fix this table
+### Scenario 1
 
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 | **Dataset**                | [DNO](../glossary.md#term-Distribution-Network-Operator) capacity/constraint data                                 |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
-| **Sensitivity class**      | [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A)                                                      |
+| **Sensitivity class**      | [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A)                                                     |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
-| **Access control domains** | Access granted to all Trust Framework members equally                                                                 |
+| **Access control domains** | Access granted to all Trust Framework members equally                                                             |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
-| **Access rules**           | `oe:member` unary access condition                                                                                |
+| **Access rules**           | `ib1:member` unary access condition                                                                                |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
-| **Capability grants**      | `oe:member grants ib1:use_any`, all [Data Consumers](../glossary.md#term-Data-Consumer) who are members of the Trust    |
-|                            | Framework can access this data set, and receive the right to use for any purpose (see                                |
+| **Capability grants**      | `ib1:member grants ib1:use_any`, all [Data Consumers](../glossary.md#term-Data-Consumer) who are members of the    |
+|                            | Trust Framework can access this data set, and receive the right to use for any purpose (see                       |
 |                            | [Standard capabilities](../access_control_specification.md#standard-capabilities) for more detail)                |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 | **Obligations**            | Derivatives of the artefact must be accompanied by text stating that the original artefact was used in their      |
-|                            | creation. `ib1:member grants ib1:use_any requires ib1:by` (see                                                       |
+|                            | creation. `ib1:member grants ib1:use_any requires ib1:by` (see                                                    |
 |                            | [Standard obligations](../access_control_specification.md#standard-obligations) for more detail)                  |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 
-### Scenario 2 TODO fix this table
+### Scenario 2
 
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 | **Dataset**                | Public [Electric vehicle](../glossary.md#term-Electric-vehicle) chargepoint use and economic performance profiles |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
-| **Sensitivity class**      | [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B)                                                      |
+| **Sensitivity class**      | [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B)                                                     |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 | **Access control domains** | Group-based and payment-based access conditions                                                                   |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 | **Access rules**           | Two distinct access constraints:                                                                                  |
 |                            |                                                                                                                   |
-|                            | 1. `ib1:org_type in ['local_authority', 'academic'], provider:customer_level == 1` -  local authorities and        |
+|                            | 1. `ib1:org_type in ['local_authority', 'academic'], provider:customer_level == 1` -  local authorities and       |
 |                            | educational institutions are granted access if they are paid customers of the                                     |
 |                            | [Data Provider](../glossary.md#term-Data-Provider) at their standard rate                                         |
 |                            | 2. `provider:customer_level >= 2` - energy networks are granted access if they are paid customers of the Data     |
@@ -362,53 +351,52 @@ reduced legal, staff and time costs associated with improved searchability, tran
 |                            | higher access fee and are therefore happy for all [Data Consumers](../glossary.md#term-Data-Consumer) to be       |
 |                            | granted the same capabilities. The result is the same set of capabilities (the same licence) is applied to both   |
 |                            | access rules.                                                                                                     |
-|                            | `ib1:org_type in ['local_authority', 'academic'], provider:customer_level == 1 grants ib1:use_any`                  |
-|                            | `provider:customer_level >= 2 grants ib1:use_any`                                                                  |
+|                            | `ib1:org_type in ['local_authority', 'academic'], provider:customer_level == 1 grants ib1:use_any`                |
+|                            | `provider:customer_level >= 2 grants ib1:use_any`                                                                 |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 | **Obligations**            | The [Data Provider](../glossary.md#term-Data-Provider) chooses the same obligations to be applied to both access  |
 |                            | rules                                                                                                             |
-|                            | `ib1:org_type in ['local_authority', 'academic'], provider:customer_level == 1 grants ib1:use_any requires ib1:by`   |
-|                            | `provider:customer_level >= 2 grants ib1:use_any requires ib1:by`                                                   |
+|                            | `ib1:org_type in ['local_authority', 'academic'], provider:customer_level == 1 grants ib1:use_any requires ib1:by`|
+|                            | `provider:customer_level >= 2 grants ib1:use_any requires ib1:by`                                                 |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 
 **NOTE**: **Scenario 2**
 
-This more complex scenario detailed above involves a combination of properties known to Open Energy (the market
-sector of the [Data Consumer](../glossary.md#term-Data-Consumer) - Local Authority, Educational Institution, or Energy Network) along with properties which are only known to the [Data Provider](../glossary.md#term-Data-Provider) (the payment status of the [Data Consumer](../glossary.md#term-Data-Consumer)). We can do this because the rules are evaluated within the [Data Provider](../glossary.md#term-Data-Provider), and not externally within the Trust Framework's Governance Service, an entity which is not aware of any commercial arrangements between the [Data Provider](../glossary.md#term-Data-Provider) and [Data Consumer](../glossary.md#term-Data-Consumer).
+This more complex scenario detailed above involves a combination of properties known to the IB1 Trust Framework (the market sector of the [Data Consumer](../glossary.md#term-Data-Consumer) - Local Authority, Educational Institution, or Energy Network) along with properties which are only known to the [Data Provider](../glossary.md#term-Data-Provider) (the payment status of the [Data Consumer](../glossary.md#term-Data-Consumer)). We can do this because the rules are evaluated within the [Data Provider](../glossary.md#term-Data-Provider), and not externally within the Trust Framework's Governance Service, an entity which is not aware of any commercial arrangements between the [Data Provider](../glossary.md#term-Data-Provider) and [Data Consumer](../glossary.md#term-Data-Consumer).
 
-### Scenario 3 TODO fix this table
+### Scenario 3
 
-+----------------------------+-------------------------------------------------------------------------------------------------------------------+
-| **Dataset**                | Solar panel performance data                                                                                      |
-+----------------------------+-------------------------------------------------------------------------------------------------------------------+
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| **Dataset**                | Solar panel performance data                                                                                       |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
 | **Sensitivity class**      |[IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B)                                                       |
-+----------------------------+-------------------------------------------------------------------------------------------------------------------+
-| **Access control domains** | Use case-based and payment-based access conditions                                                                |
-+----------------------------+-------------------------------------------------------------------------------------------------------------------+
-| **Access rules**           | Two rules are created:                                                                                            |
-|                            |                                                                                                                   |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| **Access control domains** | Use case-based and payment-based access conditions                                                                 |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| **Access rules**           | Two rules are created:                                                                                             |
+|                            |                                                                                                                    |
 |                            | 1. `ib1_group:plymouth_lct` - access to use case participants, here defined as a group `lct` managed by `plymouth` |
-|                            | (the [ID](../glossary.md#term-Identification) of a local council organisation) and administered using the         |
-|                            | [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) facilities                                             |
-|                            | 2. `provider:customer` - access to all other Trust Framework members if they have a paid account with the             |
-|                            | [Data Provider](../glossary.md#term-Data-Provider)                                                                |
-+----------------------------+-------------------------------------------------------------------------------------------------------------------+
-| **Capability grants**      | The [Data Provider](../glossary.md#term-Data-Provider) chooses to apply two different capability grants (dual     |
-|                            | licences) for the two access rules, reflecting the fact that their dataset is commercially sensitive, therefore   |
-|                            | they require payment for its use beyond non-profit or development activities.                                     |
-|                            |                                                                                                                   |
-|                            | 1. `ib1_group:plymouth_lct grants ib1:use_dev, ib1:use_noncom`                                                       |
-|                            | 2. `provider:customer grants ib1:use_any, ib1:redistribute_combined, ib1:combine_any, ib1:adapt_any`                  |
-+----------------------------+-------------------------------------------------------------------------------------------------------------------+
-| **Obligations**            | 1. The original source of the artefact must be credited in all direct uses, derivatives of the artefact must be.  |
-|                            | accompanied by text stating that the original artefact was used in their creation, and derivatives must be        |
-|                            | licensed under the same terms as the original:                                                                    |
-|                            | `ib1_group:plymouth_lct grants ib1:use_dev, ib1:use_noncom requires ib1:sa, ib1:by`                                    |
-|                            | 2. The original source of the artefact must be credited in all direct uses, and derivatives of the artefact       |
-|                            | must be accompanied by text stating that the original artefact was used in their creation. There is no            |
-|                            | obligation to license derivatives of the artefact under the same terms as the original:                           |
-|                            | `provider:customer grants ib1:use_any, ib1:redistribute_combined, ib1:combine_any, ib1:adapt_any requires ib1:by`      |
-+----------------------------+-------------------------------------------------------------------------------------------------------------------+
+|                            | (the [ID](../glossary.md#term-Identification) of a local council organisation) and administered using the          |
+|                            | [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) facilities                                          |
+|                            | 2. `provider:customer` - access to all other Trust Framework members if they have a paid account with the          |
+|                            | [Data Provider](../glossary.md#term-Data-Provider)                                                                 |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| **Capability grants**      | The [Data Provider](../glossary.md#term-Data-Provider) chooses to apply two different capability grants (dual      |
+|                            | licences) for the two access rules, reflecting the fact that their dataset is commercially sensitive, therefore    |
+|                            | they require payment for its use beyond non-profit or development activities.                                      |
+|                            |                                                                                                                    |
+|                            | 1. `ib1_group:plymouth_lct grants ib1:use_dev, ib1:use_noncom`                                                     |
+|                            | 2. `provider:customer grants ib1:use_any, ib1:redistribute_combined, ib1:combine_any, ib1:adapt_any`               |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| **Obligations**            | 1. The original source of the artefact must be credited in all direct uses, derivatives of the artefact must be.   |
+|                            | accompanied by text stating that the original artefact was used in their creation, and derivatives must be         |
+|                            | licensed under the same terms as the original:                                                                     |
+|                            | `ib1_group:plymouth_lct grants ib1:use_dev, ib1:use_noncom requires ib1:sa, ib1:by`                                |
+|                            | 2. The original source of the artefact must be credited in all direct uses, and derivatives of the artefact        |
+|                            | must be accompanied by text stating that the original artefact was used in their creation. There is no             |
+|                            | obligation to license derivatives of the artefact under the same terms as the original:                            |
+|                            | `provider:customer grants ib1:use_any, ib1:redistribute_combined, ib1:combine_any, ib1:adapt_any requires ib1:by`  |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
 
 ### Risks of license proliferation
 
@@ -429,11 +417,9 @@ range of datasets (e.g. weather data). Changes to the capabilities granted for a
 Icebreaker One aims to address this problem by encouraging [Data Providers](../glossary.md#term-Data-Provider) to indicate the length of time they commit to retaining the same capability grant for a particular access rule. Although this will be optional, we hope that Data Providers will be incentivised to do so as this encourages confidence in the market. We are also exploring the
 possibility of building a notification system to alert [Data Consumers](../glossary.md#term-Data-Consumer) either to upcoming or new changes in capability grants to ensure this is done transparently and with adequate warning where possible.
 
-**NOTE**: The time ranges described above are NOT a time limit on the capabilities granted in response to a single request,
-it instead specifies a range within which the access rules and their corresponding capability grants will not change.
+**NOTE**: The time ranges described above are NOT a time limit on the capabilities granted in response to a single request, it instead specifies a range within which the access rules and their corresponding capability grants will not change.
 
-Beyond designing positive behavioural and market incentives, it is beyond the scope of the IB1 Trust Framework to control
-licence-changes as this remains within the legal rights of the [Data Provider](../glossary.md#term-Data-Provider).
+Beyond designing positive behavioural and market incentives, it is beyond the scope of the IB1 Trust Framework to control licence-changes as this remains within the legal rights of the [Data Provider](../glossary.md#term-Data-Provider).
 
 ### Where are these rules specified?
 
@@ -447,16 +433,11 @@ The current language specification can be found at [Access Control and Capabilit
 
 ## Service Desk and Notifications
 
-Icebreaker One acknowledges industry feedback regarding the need to develop a Service Desk and notifications function.
-Developing the full function is an active area for future
-development. In the meantime, members will be directed to use a specific email address to catalogue emerging needs and
-discuss appropriate [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) support. We propose to use learning from this prototype to inform future service and policy
-design.
+Icebreaker One acknowledges industry feedback regarding the need to develop a Service Desk and notifications function. Developing the full function is an active area for future development. In the meantime, members will be directed to use a specific email address to catalogue emerging needs and discuss appropriate [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) support. We propose to use learning from this prototype to inform future service and policy design.
 
 ## Dispute Resolution
 
-Icebreaker One acknowledges industry feedback regarding the need to develop a dispute resolution function as part of the
-[TFGS](../glossary.md#term-Trust-Framework-Governance-Service). Developing the full function of dispute resolution is an active area for future development. Given the complexity of this topic, ongoing stakeholder engagement and consultation will be used to shape the future service. In the meantime, members will be requested to use a specific email address to catalogue any difficulties and discuss appropriate [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) support. Learning from this prototype will inform future service and policy design, alongside consultation activity.
+Icebreaker One acknowledges industry feedback regarding the need to develop a dispute resolution function as part of the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service). Developing the full function of dispute resolution is an active area for future development. Given the complexity of this topic, ongoing stakeholder engagement and consultation will be used to shape the future service. In the meantime, members will be requested to use a specific email address to catalogue any difficulties and discuss appropriate [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) support. Learning from this prototype will inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTI5NTUyMjA2NywtMTQ2NTM1NjQ0LDkwMz
 gzODg4N119

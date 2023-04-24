@@ -176,7 +176,7 @@ Technical documentation for the [IcebreakerOne](https://icebreakerone.org) (IB1)
         * [Dispute resolution for access control and capability grant policies](ops_guidelines/data_consumer_ops_guidelines.md#dispute-resolution-for-access-control-and-capability-grant-policies)
 
 
-        * [OEGS support TODO](ops_guidelines/data_consumer_ops_guidelines.md#oegs-support)
+        * [TFGS support](ops_guidelines/data_consumer_ops_guidelines.md#tfgs-support)
 
 
 * [Guidance for Data Providers](ops_guidelines/data_provider_ops_guidelines.md)
@@ -395,10 +395,12 @@ Technical documentation for the [IcebreakerOne](https://icebreakerone.org) (IB1)
     * [Data](glossary.md#data)
 
 
+    * [Energy Technology](glossary.md#energy-technology)
+
     * [Legal](glossary.md#legal)
 
 
-    * [Open Energy ecosystem](glossary.md#open-energy-ecosystem)
+    * [Icebreaker One Trust Framework](glossary.md#trust-framework)
 
 
     * [Operational](glossary.md#operational)

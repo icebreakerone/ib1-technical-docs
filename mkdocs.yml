@@ -1,12 +1,12 @@
 site_name: Icebreaker One Technical Documentation
 nav:
-  - 'Introduction to Open Energy': 'ops_guidelines/introduction.md'
+  - 'Introduction to the IB1 Trust framework': 'ops_guidelines/introduction.md'
   - 'Considerations before you start': 'ops_guidelines/before_starting.md'
   - 'Core Policies': 'ops_guidelines/common_policies.md'
   - 'Guidance for Data Consumers': 'ops_guidelines/data_consumer_ops_guidelines.md'
   - 'Guidance for Data Providers': 'ops_guidelines/data_provider_ops_guidelines.md'
   - 'Common Security Requirements': 'ops_guidelines/technical_common.md'
-  - 'Open Energy Architecture': 'architecture.md'
+  - 'Trust Framework Architecture': 'architecture.md'
   - 'Dataset Metadata': 'metadata.md'
   - 'Access Control and Capability Grant Language': 'access_control_specification.md'
   - 'Glossary': 'glossary.md'

@@ -26,8 +26,8 @@ To support this role, [Data Providers](../glossary.md#term-Data-Provider) have c
 
 [Data Providers](../glossary.md#term-Data-Provider) are responsible for classification of their data sets by data sensitivity class, and for ensuring that data are shared, or not shared, as appropriate.
 
-* Any data classed as [OE-C](../glossary.md#term-Data-sensitivity-class-closed) (Closed) or [OE-SP](../glossary.md#term-Data-sensitivity-class-personal) (Personal) **MUST NOT** be shared within the IB1 Trust Framework at present.
-* Data in [OE-O](../glossary.md#term-Data-sensitivity-class-open), [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A), and [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) **MAY** be shared within the IB1 Trust Framework as described in the following sections
+* Any data classed as [IB1-C](../glossary.md#term-Data-sensitivity-class-closed) (Closed) or [IB1-SP](../glossary.md#term-Data-sensitivity-class-personal) (Personal) **MUST NOT** be shared within the IB1 Trust Framework at present.
+* Data in [IB1-O](../glossary.md#term-Data-sensitivity-class-open), [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A), and [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B) **MAY** be shared within the IB1 Trust Framework as described in the following sections
 
 ### Responsibility - Access and licensing specification
 
@@ -92,7 +92,7 @@ downtime when necessary.
 
 ## Data API Requirements
 
-Unlike open banking, open energy does not mandate particular [APIs](../glossary.md#term-Application-programming-interface) for data provision - it is expected that there will be a variety of mechanisms to expose data, with varying inputs (from a single data set [ID](../glossary.md#term-Identification) to a complex query object) and varying kinds of output dependent on the information exposed.
+Unlike Open Banking, the IB1 Trust Framework does not mandate particular [APIs](../glossary.md#term-Application-programming-interface) for data provision - it is expected that there will be a variety of mechanisms to expose data, with varying inputs (from a single data set [ID](../glossary.md#term-Identification) to a complex query object) and varying kinds of output dependent on the information exposed.
 
 With that said, there are certain properties that all data [APIs](../glossary.md#term-Application-programming-interface) must satisfy to interoperate successfully with other parties within the IB1 Trust Framework.
 
@@ -106,7 +106,7 @@ Whenever date or time quantities are accepted or returned from a data [API](../g
 
 #### Open data endpoints
 
-Data endpoints which provide access to open data (in class [IB1-O](../glossary.md#term-Data-sensitivity-class-open)) **MUST NOT** require any form of authentication prior to access. This includes allowing access to entities which are not members of the open energy ecosystem.
+Data endpoints which provide access to open data (in class [IB1-O](../glossary.md#term-Data-sensitivity-class-open)) **MUST NOT** require any form of authentication prior to access. This includes allowing access to entities which are not members of the IB1 Trust Framework.
 
 #### Shared data endpoints
 
@@ -157,8 +157,7 @@ All data [APIs](../glossary.md#term-Application-programming-interface) **MUST** 
 
 ### Effective resolution of problems (Data Providers)
 
-A [Data Provider](../glossary.md#term-Data-Provider) **MUST** create documentation to clearly outline the policies, processes and systems it has in place for problem resolution and its respective service level objectives. This framework should enable the effective resolution of [Data Consumer](../glossary.md#term-Data-Consumer) issues and therefore cater for problems that relate specifically to a [Data Consumer](../glossary.md#term-Data-Consumer)’s use of a [Data Provider](../glossary.md#term-Data-Provider)’s data [APIs](../glossary.md#term-Application-programming-interface). In the event that a [Data Consumer](../glossary.md#term-Data-Consumer) is unable to resolve an issue with a [Data Provider](../glossary.md#term-Data-Provider), the issue **MAY** be flagged to the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) Dispute Resolution function for
-independent support.
+A [Data Provider](../glossary.md#term-Data-Provider) **MUST** create documentation to clearly outline the policies, processes and systems it has in place for problem resolution and its respective service level objectives. This framework should enable the effective resolution of [Data Consumer](../glossary.md#term-Data-Consumer) issues and therefore cater for problems that relate specifically to a [Data Consumer](../glossary.md#term-Data-Consumer)’s use of a [Data Provider](../glossary.md#term-Data-Provider)’s data [APIs](../glossary.md#term-Application-programming-interface). In the event that a [Data Consumer](../glossary.md#term-Data-Consumer) is unable to resolve an issue with a [Data Provider](../glossary.md#term-Data-Provider), the issue **MAY** be flagged to the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) Dispute Resolution function for independent support.
 
 ### Online support
 
@@ -180,13 +179,11 @@ The [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) Service Desk 
 
 ## Change Management
 
-This section outlines various change scenarios that may impact [Data Consumers](../glossary.md#term-Data-Consumer), and provides guidance for a [Data Provider](../glossary.md#term-Data-Provider) to consider when
-implementing a change and communicating to [Data Consumers](../glossary.md#term-Data-Consumer).
+This section outlines various change scenarios that may impact [Data Consumers](../glossary.md#term-Data-Consumer), and provides guidance for a [Data Provider](../glossary.md#term-Data-Provider) to consider when implementing a change and communicating to [Data Consumers](../glossary.md#term-Data-Consumer).
 
 ### Downtime
 
-Planned downtime, by definition, is something that a [Data Provider](../glossary.md#term-Data-Provider) anticipates and therefore is able to give advance notice to [Data Consumers](../glossary.md#term-Data-Consumer).
-It is not generally possible to give advance notice of unplanned downtime, but [Data Providers](../glossary.md#term-Data-Provider) should give notice as soon as they are aware of the downtime.
+Planned downtime, by definition, is something that a [Data Provider](../glossary.md#term-Data-Provider) anticipates and therefore is able to give advance notice to [Data Consumers](../glossary.md#term-Data-Consumer). It is not generally possible to give advance notice of unplanned downtime, but [Data Providers](../glossary.md#term-Data-Provider) should give notice as soon as they are aware of the downtime.
 
 When providing notifications, [Data Providers](../glossary.md#term-Data-Provider) **SHOULD** provide a specific time period, so [Data Consumers](../glossary.md#term-Data-Consumer) are aware that the data [API](../glossary.md#term-Application-programming-interface) will be unavailable for that time, or upon a subsequent notification to confirm that the service has been reinstated sooner than anticipated.
 

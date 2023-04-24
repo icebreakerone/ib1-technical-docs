@@ -11,9 +11,15 @@ on this site.
 
 * [Open Net Zero Search](https://opennetzero.org)
 
-## Technical
+## Engagement
 
-### Deprecated Open Energy information
+* [Icebreaker One website](https://icebreakerone.org/
+
+* Contact us - [opennetzero@icebreakerone.org](mailto:opennetzero@icebreakerone.org)
+
+## Historical Open Energy information
+
+### Technical
 
 * [Open Energy Beta Testing Round 2 Onboarding Pack](https://docs.google.com/document/u/0/d/11JCbeoKOKJyYojaw6XERudsYhDajJP53brw5NRGX3eY/edit)
 
@@ -39,23 +45,15 @@ on this site.
     * [Setting up a Shared data connection](https://colab.research.google.com/github/icebreakerone/open-energy-python-infrastructure/blob/main/examples/jupyter/setting_up_a_shared_data_connection.ipynb)
     * [Searching and accessing Shared data](https://colab.research.google.com/github/icebreakerone/open-energy-python-infrastructure/blob/main/examples/jupyter/shared_dataset_retrieval.ipynb)
 
-## Policy
-
+### Policy
 
 * [Icebreaker One response to Ofgem Data Best Practice consultation (June 2021)](https://docs.google.com/document/d/1FW01hAH6JioiIP_ue_Z5KBz-VNECtCNzemRreaApp4o/edit)
 
-## Reporting
-
+### Reporting
 
 * [Open Energy Phase 3 Final Report](https://docs.google.com/document/d/1GjWJOZuvBqyjjWa_f4PuWpcVmhWlIBLm3nqzkymOUgA/edit#)
 
-## Engagement
 
-
-* [Open Energy Project website](https://icebreakerone.org/energy)
-
-
-* Open Energy email - [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTExMTA5NjQ5NTZdfQ==
 -->

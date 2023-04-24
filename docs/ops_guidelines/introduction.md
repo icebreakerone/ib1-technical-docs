@@ -33,23 +33,19 @@ to consider in order to meet operational requirements.
 
 [Additional Material](../additional_material.md#additional-material): links to other relevant documentation (e.g. technical, legal, etc.) sitting outside the operational guidelines.
 
-**Disclaimer**: The contents of the Operational Guidelines do not constitute legal advice. While they have been drafted with regard to relevant regulatory provisions and best practice, they are not a complete list of the regulatory or legal obligations that apply to members and users of Open Energy. Although intended to be consistent with relevant regulations and laws, in the event of any conflict, those regulations and laws will take priority.
+**Disclaimer**: The contents of the Operational Guidelines do not constitute legal advice. While they have been drafted with regard to relevant regulatory provisions and best practice, they are not a complete list of the regulatory or legal obligations that apply to members and users of the IB1 Trust Framework. Although intended to be consistent with relevant regulations and laws, in the event of any conflict, those regulations and laws will take priority.
 
 Participants are responsible for their own compliance with all applicable regulations and laws, including but not limited to: data protection and privacy, consumer protection laws, and energy sector licences and codes (where applicable). The IB1 Trust Framework operational guidelines will be revised in future in accordance with further development of services offered in the ecosystem, or changes to the regulatory and policy environment in which it operates. Please ensure that you are referring to the most current version of the guidelines prior to reading.
 
 ## What is the Icebreaker One Trust Framework, how was it made and who is it for?
 
-The Icebreaker One (IB1) Trust Framework is an ambitious, non-profit project working with across industry, finance, government and regulators to modernise access to data and break down barriers to data sharing. The Trust Framework makes it easier to
-discover, share, access and use datasets, supporting the drive towards decarbonisation and its related social and economic benefits.
+The Icebreaker One (IB1) Trust Framework is an ambitious, non-profit project working with across industry, finance, government and regulators to modernise access to data and break down barriers to data sharing. The Trust Framework makes it easier to discover, share, access and use datasets, supporting the drive towards decarbonisation and its related social and economic benefits.
 
-The Trust Framework is a generalisation of the Open Energy project, which received initial development funding from the Modernising Energy Data Access competition, backed by
-the Office for Gas and Electricity Markets (Ofgem), the Department for Business, Energy and Industrial Strategy
-([BEIS](../glossary.md#term-Department-for-Business-Energy-and-Industrial-Strategy)), and [Innovate UK](https://www.gov.uk/government/organisations/innovate-uk). Open Energy in turn built on learning from Open Banking - identifying which elements are transferable to the energy sector, and which require adaptation or fresh thinking. 
+The Trust Framework is a generalisation of the Open Energy project, which received initial development funding from the Modernising Energy Data Access competition, backed by the Office for Gas and Electricity Markets (Ofgem), the Department for Business, Energy and Industrial Strategy ([BEIS](../glossary.md#term-Department-for-Business-Energy-and-Industrial-Strategy)), and [Innovate UK](https://www.gov.uk/government/organisations/innovate-uk). Open Energy in turn built on learning from Open Banking - identifying which elements are transferable to the energy sector, and which require adaptation or fresh thinking. 
 
 Throughout this process, the Icebreaker One team has engaged in extensive consultation with all sectors involved, in order to ensure that the project meets the widest possible variety of needs. The ethos of the IB1 Trust Framework will remain grounded in sector engagement and a collaborative approach as the project moves forward.
 
-The IB1 Trust Framework aims to serve all actors across sectors who are looking to share data, access data, or both.  Membership is open to a wide range of organisations - from large corporations through to charities, researchers, or community groups. Both [Open](../glossary.md#term-Open-data): and [Shared Data](../glossary.md#term-Shared-data) can
-flow within the Trust Framework.
+The IB1 Trust Framework aims to serve all actors across sectors who are looking to share data, access data, or both.  Membership is open to a wide range of organisations - from large corporations through to charities, researchers, or community groups. Both [Open](../glossary.md#term-Open-data): and [Shared Data](../glossary.md#term-Shared-data) can flow within the Trust Framework.
 
 ## How is the IB1 Trust Framework Structured?
 
@@ -113,8 +109,7 @@ From a business perspective, this may include potential for corporate policy or 
 From a government perspective, this may include policy, regulatory or code-based interventions.
 
 #### Group makeup
-The membership of these groups is designed to represent a range of different 
-types of organisations, and broader digital sector where relevant. Icebreaker One members can apply to join the Advisory and Steering Groups. However, membership of these groups will not be restricted to members only and non-members may be invited to join in order to balance representation. If you are interested in participating in future Icebreaker One governance mechanisms please contact [info@icebreakerone.org](mailto:info@icebreakerone.org) TODO check this email.
+The membership of these groups is designed to represent a range of different types of organisations, and broader digital sector where relevant. Icebreaker One members can apply to join the Advisory and Steering Groups. However, membership of these groups will not be restricted to members only and non-members may be invited to join in order to balance representation. If you are interested in participating in future Icebreaker One governance mechanisms please contact [info@icebreakerone.org](mailto:info@icebreakerone.org) TODO check this email.
 
 ## What data can be found and used through Open Net Zero?
 
@@ -124,21 +119,19 @@ types of organisations, and broader digital sector where relevant. Icebreaker On
 
 Open data is defined as: ‘Data that anyone can use, for any purpose, for free and is accessible under an Open data licence’. Examples of open datasets include (non-exhaustive): Lower Super Output Layer [ID](../glossary.md#term-Identification) ([LSOA](../glossary.md#term-Lower-Layer-Super-Output-Areas)) data, Digest of [UK](../glossary.md#term-United-Kingdom) Energy Statistics, and OpenStreetMap data.
 
-Open data is visible via Open Net Zero, which is free and open to all users. Open datasets provided by IB1 Trust Framework members ([Data Providers](../glossary.md#term-Data-Provider)) and non-Open Energy members will both be visible. There are no barriers to accessing Open data once it is discovered - users are directed to an appropriate [URL](../glossary.md#term-Uniform-Resource-Locator) or [API](../glossary.md#term-Application-programming-interface) to access the data themselves. Open data access is not moderated via the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) as no additional access controls are required.
+Open data is visible via Open Net Zero, which is free and open to all users. Open datasets provided by IB1 Trust Framework members ([Data Providers](../glossary.md#term-Data-Provider)) and non-IB1 Trust Framework members will both be visible. There are no barriers to accessing Open data once it is discovered - users are directed to an appropriate [URL](../glossary.md#term-Uniform-Resource-Locator) or [API](../glossary.md#term-Application-programming-interface) to access the data themselves. Open data access is not moderated via the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) as no additional access controls are required.
 
 ### Shared data
 
 Shared data is defined as: ‘Data that is neither open nor closed, but can be shared under specific terms and conditions.’ Examples of datasets currently licensed as Shared data include (non-exhaustive): primary substation capacity, network outage data, weather predictions, European space agency data, Electralink daily smart meter installations, certain geolocation information for energy assets and building typologies. As illustrated in these examples, Shared data is extremely diverse and can include datasets with a range of different commercial, personal and security sensitivity levels. To provide nuance in this area, Icebreaker One consultations have established a set of five data sensitivity classes, in which three classes describe separate categories of Shared data.
 
-Due to the sheer diversity of data types, the IB1 Trust Framework does not yet cover all Sensitivity Classes. At present, the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) can facilitate the sharing of non-personal Shared data classes only. This means that currently, sharing of non-aggregated personal data (including datasets using forms of anonymisation other than aggregation conforming to [ICO](../glossary.md#term-Information-Commissioner-s-Office) / [ONS](../glossary.md#term-Office-for-National-Statistics) best practice) is not permitted in the IB1 Trust Framework. Functionality to share personal data (class [OE-SP](../glossary.md#term-Data-sensitivity-class-personal)), and data that has been anonymised using techniques other than aggregation, are planned for the future subject to further consultation.
+Due to the sheer diversity of data types, the IB1 Trust Framework does not yet cover all Sensitivity Classes. At present, the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) can facilitate the sharing of non-personal Shared data classes only. This means that currently, sharing of non-aggregated personal data (including datasets using forms of anonymisation other than aggregation conforming to [ICO](../glossary.md#term-Information-Commissioner-s-Office) / [ONS](../glossary.md#term-Office-for-National-Statistics) best practice) is not permitted in the IB1 Trust Framework. Functionality to share personal data (class [IB1-SP](../glossary.md#term-Data-sensitivity-class-personal)), and data that has been anonymised using techniques other than aggregation, are planned for the future subject to further consultation.
 
 The metadata and sensitivity class of Shared datasets are listed on Open Net Zero and are visible to any user. Shared datasets provided by IB1 Trust Framework members ([Data Providers](../glossary.md#term-Data-Provider)) and non-members are both visible (where the latter are known), as described later in this section. Access to Shared datasets provided by IB1 Trust Framework members is moderated through the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service), on the basis of preemptive licensing. Access to Shared data listed on the Search that is not provided by an IB1 Trust Framework member is not supported - users should contact the non-member organisation directly to arrange access.
 
 ### Closed data
 
-Closed data is defined as: ‘Data that either cannot be shared or requires a per-use, custom licence negotiated on a case-by-case basis’. Under our current model, closed data is never suitable to share within the IB1 Trust Framework and is not visible through Open Net Zero. While we acknowledge industry
-feedback flagging potential value in using Open Net Zero infrastructure to privately share Closed data not listed in the Search or [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) Directory, this is not a focus of project development at this time. Any extensibility of
-this function in future will be subject to consultation.
+Closed data is defined as: ‘Data that either cannot be shared or requires a per-use, custom licence negotiated on a case-by-case basis’. Under our current model, closed data is never suitable to share within the IB1 Trust Framework and is not visible through Open Net Zero. While we acknowledge industry feedback flagging potential value in using Open Net Zero infrastructure to privately share Closed data not listed in the Search or [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) Directory, this is not a focus of project development at this time. Any extensibility of this function in future will be subject to consultation.
 
 ## What role does your organisation play in the IB1 Trust Framework?
 
@@ -182,8 +175,7 @@ The IB1 Trust Framework operates through a range of standardised capability gran
 
 ## Future development of the guidelines
 
-The guidelines are designed as an iterative document that will develop in
-accordance with future phases of the IB1 Trust Framework. If you have any suggestions regarding areas of the operational guidelines that could benefit from further development, please contact [openenergy@icebreakerone.org](mailto:openenergy@icebreakerone.org) TODO check this email.
+The guidelines are designed as an iterative document that will develop in accordance with future phases of the IB1 Trust Framework. If you have any suggestions regarding areas of the operational guidelines that could benefit from further development, please contact [opennetzero@icebreakerone.org](mailto:opennetzero@icebreakerone.org) .
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTY0MTc0NTkyOCwxMTc1NDkxNjIxLDExMj
 gyODEyODBdfQ==
