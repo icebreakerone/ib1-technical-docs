@@ -276,18 +276,11 @@ reuse of the licensed artefact for any purpose, redistribution of the artefact, 
 
 By contrast, the [CC-BY-ND](../glossary.md#term-Creative-Commons-Attribution-No-derivatives) 4.0 Creative Commons licence grants the capability to reuse the licensed artefact for any purpose, however it does not grant the capability to redistribute derivatives of the artefact.
 
-### How will capability grants work in practice?
+### How do capability grants work in practice?
 
-Each time a [Data Consumer](../glossary.md#term-Data-Consumer) makes an [API](../glossary.md#term-Application-programming-interface) call, the data returned will be associated with a particular set of capability grants. These can be bound to the data through a non-repudiable digital signature, designed to ensure transparency in the event of any disputes regarding data use. Capability grants will be converted into a licence through the Open Energy Governance Service ([OEGS](../glossary.md#term-Open-Energy-Governance-Service)). Alongside the legal text of the licence, the [OEGS](../glossary.md#term-Open-Energy-Governance-Service) will make details of capabilities available
-to [Data Consumers](../glossary.md#term-Data-Consumer) as an easy to understand set of notation/icons. Open Energy Search will also show the license
-(capabilities and obligations) associated with a dataset in the search results, allowing for searches to be filtered by
-license in order to promote transparency from the outset.
+Each time a [Data Consumer](../glossary.md#term-Data-Consumer) makes an [API](../glossary.md#term-Application-programming-interface) call, the data returned will be associated with a particular set of capability grants. These can be bound to the data through a non-repudiable digital signature, designed to ensure transparency in the event of any disputes regarding data use. Capability grants will be converted into a licence through the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service). Alongside the legal text of the licence, the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) will make details of capabilities available to [Data Consumers](../glossary.md#term-Data-Consumer) as an easy to understand set of notation/icons. Open Net Zero will also show the license (capabilities and obligations) associated with a dataset in the search results, allowing for searches to be filtered by license in order to promote transparency from the outset.
 
-Open Energy defines a set of common capabilities - [Data Providers](../glossary.md#term-Data-Provider) may create custom capabilities, but we strongly
-suggest that this should only be done in exceptional cases. The common initial set of capabilities can be found at
-[Standard capabilities](../access_control_specification.md#standard-capabilities). We propose to use this list as the building blocks for our system of capability grants; whereby
-the range of capabilities, associated legal text, and ‘human readable’ notation/icons is standardised within the Open
-Energy ecosystem.
+The IB1 Trust Framework defines a set of common capabilities - [Data Providers](../glossary.md#term-Data-Provider) may create custom capabilities, but we strongly suggest that this should only be done in exceptional cases. The common initial set of capabilities can be found at [Standard capabilities](../access_control_specification.md#standard-capabilities). We propose to use this list as the building blocks for our system of capability grants; whereby the range of capabilities, associated legal text, and ‘human readable’ notation/icons is standardised within the IB1 Trust Framework.
 
 **NOTE**: There is potential for redistribution of derivatives to be managed in more granularity through use of the data
 pyramid (see Figure 2 below). This could permit [Data Providers](../glossary.md#term-Data-Provider) to specify what level of derivative insights can be
@@ -541,5 +534,5 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU0OTg1MjU1LDkwMzgzODg4N119
+eyJoaXN0b3J5IjpbMjA4NjAxNjM0NCw5MDM4Mzg4ODddfQ==
 -->
