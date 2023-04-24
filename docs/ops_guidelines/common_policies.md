@@ -80,12 +80,10 @@ designed to provide further nuance to the category of Shared data - identifying 
 
 ## Data Access Conditions
 
-This policy focuses on **data access**. Data access refers to **determining what types of conditions may be specified
-for DCs to meet in order to gain access** to datasets in different sensitivity classes, and how access rules
-are articulated. This policy has been created with input from the Open Energy Advisory Groups, Review Track, and public
+This policy focuses on **data access**. Data access refers to determining what types of conditions may be specified for Data Consumers to meet in order to gain access to datasets in different sensitivity classes, and how access rules are articulated. This policy has been created with input from the IB1 Trust Framework Advisory Groups, Review Track, and public
 consultation responses.
 
-The Open Energy Governance Service ([OEGS](../glossary.md#term-Open-Energy-Governance-Service)) is responsible for providing [Data Providers](../glossary.md#term-Data-Provider) with verified information about
+The Trust Framework Governance Service ([TFGS](../glossary.md#term-Trust-Framework-Governance-Service)) is responsible for providing [Data Providers](../glossary.md#term-Data-Provider) with verified information about
 [Data Consumers](../glossary.md#term-Data-Consumer), in line with specified access conditions for each dataset. However, the [Data Provider](../glossary.md#term-Data-Provider) is solely
 responsible for determining whether any given [API](../glossary.md#term-Application-programming-interface) request should be honoured (i.e. data access granted), and the
 licensing terms for any data returned in response to that request. This is due to requirements for control to rest
@@ -617,5 +615,5 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2NzcwMjE4NSw5MDM4Mzg4ODddfQ==
+eyJoaXN0b3J5IjpbNjE3NTUyNzMyLDkwMzgzODg4N119
 -->
