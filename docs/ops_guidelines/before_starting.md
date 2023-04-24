@@ -6,7 +6,7 @@
 
 This section provides ‘at a glance’ lists of items that new members will need to consider in order to meet operational requirements. It may also be useful for existing members to revisit when they publish ([Data Providers](../glossary.md#term-Data-Provider)) or access ([Data Consumers](../glossary.md#term-Data-Consumer)) a new dataset.
 
-As [Open Energy](../glossary.md#term-Open-Energy) evolves, this section will be updated to form a definitive checklist for compliance. At present however,
+As the [Icebreaker One Trust Framework](../glossary.md#term-Open-Energy) evolves, this section will be updated to form a definitive checklist for compliance. At present however,
 it is designed to outline general considerations regarding skills, capabilities and tasks that organisations will
 require in order to take part in the [Open Energy](../glossary.md#term-Open-Energy) ecosystem.
 
@@ -113,5 +113,5 @@ prepare for data sharing. However, sharing of real data will not commence until 
 |                                | being provided and that all licences are appropriately credited.                                                                                  |                   | 
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE1NzU3MzIwXX0=
+eyJoaXN0b3J5IjpbLTIwMjIwNDc5NThdfQ==
 -->
