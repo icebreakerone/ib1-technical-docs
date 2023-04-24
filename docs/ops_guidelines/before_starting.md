@@ -54,7 +54,7 @@ The tables below outline considerations for [Data Providers](../glossary.md#term
 |                                | [Obligations](../access_control_specification.md#obligations)                                                                                     |                   |
 |                                | * Internal legal sign-off granted for the creation of all data [access rules](../access_control_specification.md)                                 |                   |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
-| Skills                         | * Technical personnel can use Python programming language, or adapt existing [Open Energy](../glossary.md#term-Open-Energy) code and tooling to   | Technical         |
+| Skills                         | * Technical personnel can use Python programming language, or adapt existing [IB1 Trust Framework](../glossary.md#term-Icebreaker-One-Trust-Framework) code and tooling to   | Technical         |
 |                                | alternative language(s) that are used internally                                                                                                  |                   |
 |                                | * Technical personnel understand the basics of the [FAPI](../glossary.md#term-Financial-Grade-API) authorization process as described in          |                   |
 |                                | [Common Security Requirements](technical_common.md#common-security-requirements)                                                                  |                   |
@@ -69,12 +69,12 @@ The tables below outline considerations for [Data Providers](../glossary.md#term
 |                                | * Contract signature by person with appropriate authority                                                                                         | commercial        |
 |                                | * Membership fees paid                                                                                                                            |                   |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
-| Onboarding to the Directory    | * Generic contact email addresses and organisation details provided to Open Energy for publishing in the Directory                                | Operational,      |
+| Onboarding to the Directory    | * Generic contact email addresses and organisation details provided to Icebreaker One for publishing in the Directory                                | Operational,      |
 |                                | * Software statement created ([instructions](https://docs.google.com/document/d/1sypYWTeLFSFyfO_zTW6xKCWnao9gKjAo2JHZZIPs2xI/edit?usp=sharing)).  | technical         |
 |                                | * Transport certificate created                                                                                                                   |                   |
 |                                | ([instructions](https://docs.google.com/document/d/1sypYWTeLFSFyfO_zTW6xKCWnao9gKjAo2JHZZIPs2xI/edit?usp=sharing))                                |                   | 
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
-| Locate Shared data sets        | Use of [Open Energy Search](https://openenergy.org.uk)                                                                                            | Operational,      |
+| Locate Shared data sets        | Use of [Open Net Zero](https://opennetzero.org)                                                                                            | Operational,      |
 |                                |                                                                                                                                                   | technical         |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
 | Access Shared Data             | Methods including one of the following:                                                                                                           | Technical         |
@@ -107,6 +107,5 @@ The tables below outline considerations for [Data Providers](../glossary.md#term
 |                                | being provided and that all licences are appropriately credited.                                                                                  |                   | 
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDQ5MDA2NzcsLTE4MjkwMDM1NzhdfQ
-==
+eyJoaXN0b3J5IjpbLTg0NDIxNzk2OSwtMTgyOTAwMzU3OF19
 -->
