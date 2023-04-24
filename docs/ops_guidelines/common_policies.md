@@ -17,7 +17,7 @@ The IB1 Trust Framework incorporates a range of categories of data that have var
 The IB1 Trust Framework operates a system of five data sensitivity classes, graded across three dimensions of sensitivity: personal, commercial, and security. Personal sensitivity considers data defined as ‘personal data’ by the [UK](../glossary.md#term-United-Kingdom) [DPA](../glossary.md#term-Data-Protection-Act) 2018, and related privacy and consumer protection implications. Commercial sensitivity considers intellectual property, risk and commerciality. Security sensitivity includes critical national infrastructure and cybersecurity.
 
 Classes are presented in the table below. A definition, specification and dataset examples for each class is
-provided in the IB1 Trust Framework Operational Guidelines. [Data Providers](../glossary.md#term-Data-Provider) will then assess their datasets using the Operational Guidelines and allocate them to a class, prior to sharing them via the Open Energy ecosystem.
+provided in the IB1 Trust Framework Operational Guidelines. [Data Providers](../glossary.md#term-Data-Provider) assess their datasets using the Operational Guidelines and allocate them to a class, prior to sharing them via the Trust Framework.
 
 Open Energy data classes are designed to supplement, not replace, the
 [Modernising Energy Data Best Practice Guidance](https://modernisingenergydata.atlassian.net/wiki/spaces/MED/pages/69042178/Data+Best+Practice+latest+release+v0.21)
@@ -623,5 +623,5 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNDMyNjgyNyw5MDM4Mzg4ODddfQ==
+eyJoaXN0b3J5IjpbLTE5MDI1MzM5MzQsOTAzODM4ODg3XX0=
 -->
