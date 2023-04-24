@@ -33,7 +33,7 @@ The tables below outline considerations for [Data Providers](../glossary.md#term
 |                                | (such as [public GitHub repo](https://github.com/icebreakerone/open-energy-metadata-demo/tree/main/metadata_files)                                |                   |
 |                                | * Records of the metadata file location created                                                                                                   |                   |
 |                                | ([instructions](https://docs.google.com/document/d/1sypYWTeLFSFyfO_zTW6xKCWnao9gKjAo2JHZZIPs2xI/edit?usp=sharing))                                |                   |
-|                                | * Verification that Open Energy automated processes have picked up the file and surfaced contents in [Search](https://openenergy.org.uk)          |                   |
+|                                | * Verification that automated processes have picked up the file and display the datasets on [Open Net Zero](https://opennetzero.org)         |                   |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
 | Secure API creation and        | For example, using one of the following methods:                                                                                                  | Technical         |
 | deployment compliant with      |                                                                                                                                                   |                   |
@@ -107,5 +107,5 @@ The tables below outline considerations for [Data Providers](../glossary.md#term
 |                                | being provided and that all licences are appropriately credited.                                                                                  |                   | 
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NTU1ODQyM119
+eyJoaXN0b3J5IjpbLTE0ODczNzQ0Nl19
 -->
