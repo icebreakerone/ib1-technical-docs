@@ -266,25 +266,19 @@ The flow of information associated with access control is shown below - this ass
 
 In the IB1 Trust Framework model, licensing is expressed as the grant of a set of capabilities and associated obligations, scoped to the results of a single [API](../glossary.md#term-Application-programming-interface) call and verified through a non-repudiable digital signature.
 
-This is defined using a rules language, the details of which can be found at
-[Access Control and Capability Grant Language](../access_control_specification.md#access-control-and-capability-grant-language)
+This is defined using a rules language, the details of which can be found at [Access Control and Capability Grant Language](../access_control_specification.md#access-control-and-capability-grant-language)
 
 ### What are licenses and capabilities?
 
-A data licence is a legal instrument setting out what a [Data Consumer](../glossary.md#term-Data-Consumer) can do with a particular artefact (e.g. dataset).
-This grants certain ‘capabilities’ to the [Data Consumer](../glossary.md#term-Data-Consumer), comprising a clear expression of things they can do with the
-artefact. For example, the [CC-BY](../glossary.md#term-Creative-Commons-Attribution) 4.0 Creative Commons licence is highly permissive, granting capabilities such as:
-reuse of the licensed artefact for any purpose, redistribution of the artefact, and sharing derivatives of the artefact
-- so long as the author is credited with the original. By contrast, the [CC-BY-ND](../glossary.md#term-Creative-Commons-Attribution-No-derivatives) 4.0 Creative Commons licence grants
-the capability to reuse the licensed artefact for any purpose, however it does not grant the capability to redistribute
-derivatives of the artefact.
+A data licence is a legal instrument setting out what a [Data Consumer](../glossary.md#term-Data-Consumer) can do with a particular artefact (e.g. dataset). This grants certain ‘capabilities’ to the [Data Consumer](../glossary.md#term-Data-Consumer), comprising a clear expression of things they can do with the artefact. For example, the [CC-BY](../glossary.md#term-Creative-Commons-Attribution) 4.0 Creative Commons licence is highly permissive, granting capabilities such as:
+
+reuse of the licensed artefact for any purpose, redistribution of the artefact, and sharing derivatives of the artefact - so long as the author is credited with the original. 
+
+By contrast, the [CC-BY-ND](../glossary.md#term-Creative-Commons-Attribution-No-derivatives) 4.0 Creative Commons licence grants the capability to reuse the licensed artefact for any purpose, however it does not grant the capability to redistribute derivatives of the artefact.
 
 ### How will capability grants work in practice?
 
-Each time a [Data Consumer](../glossary.md#term-Data-Consumer) makes an [API](../glossary.md#term-Application-programming-interface) call, the data returned will be associated with a particular set of capability
-grants. These can be bound to the data through a non-repudiable digital signature, designed to ensure transparency in
-the event of any disputes regarding data use. Capability grants will be converted into a licence through the Open Energy
-Governance Service ([OEGS](../glossary.md#term-Open-Energy-Governance-Service)). Alongside the legal text of the licence, the [OEGS](../glossary.md#term-Open-Energy-Governance-Service) will make details of capabilities available
+Each time a [Data Consumer](../glossary.md#term-Data-Consumer) makes an [API](../glossary.md#term-Application-programming-interface) call, the data returned will be associated with a particular set of capability grants. These can be bound to the data through a non-repudiable digital signature, designed to ensure transparency in the event of any disputes regarding data use. Capability grants will be converted into a licence through the Open Energy Governance Service ([OEGS](../glossary.md#term-Open-Energy-Governance-Service)). Alongside the legal text of the licence, the [OEGS](../glossary.md#term-Open-Energy-Governance-Service) will make details of capabilities available
 to [Data Consumers](../glossary.md#term-Data-Consumer) as an easy to understand set of notation/icons. Open Energy Search will also show the license
 (capabilities and obligations) associated with a dataset in the search results, allowing for searches to be filtered by
 license in order to promote transparency from the outset.
@@ -547,5 +541,5 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MTEzNjA1Nyw5MDM4Mzg4ODddfQ==
+eyJoaXN0b3J5IjpbNDU0OTg1MjU1LDkwMzgzODg4N119
 -->
