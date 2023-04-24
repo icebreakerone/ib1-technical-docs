@@ -330,27 +330,27 @@ reduced legal, staff and time costs associated with improved searchability, tran
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 | **Access rules**           | `oe:member` unary access condition                                                                                |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
-| **Capability grants**      | `oe:member grants oe:use_any`, all [Data Consumers](../glossary.md#term-Data-Consumer) who are members of Open    |
-|                            | Energy can access this data set, and receive the right to use for any purpose (see                                |
+| **Capability grants**      | `oe:member grants ib1:use_any`, all [Data Consumers](../glossary.md#term-Data-Consumer) who are members of the Trust    |
+|                            | Framework can access this data set, and receive the right to use for any purpose (see                                |
 |                            | [Standard capabilities](../access_control_specification.md#standard-capabilities) for more detail)                |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 | **Obligations**            | Derivatives of the artefact must be accompanied by text stating that the original artefact was used in their      |
-|                            | creation. `oe:member grants oe:use_any requires oe:by` (see                                                       |
+|                            | creation. `ib1:member grants ib1:use_any requires ib1:by` (see                                                       |
 |                            | [Standard obligations](../access_control_specification.md#standard-obligations) for more detail)                  |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 
-### Scenario 2
+### Scenario 2 TODO fix this table
 
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 | **Dataset**                | Public [Electric vehicle](../glossary.md#term-Electric-vehicle) chargepoint use and economic performance profiles |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
-| **Sensitivity class**      | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B)                                                      |
+| **Sensitivity class**      | [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B)                                                      |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 | **Access control domains** | Group-based and payment-based access conditions                                                                   |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 | **Access rules**           | Two distinct access constraints:                                                                                  |
 |                            |                                                                                                                   |
-|                            | 1. `oe:org_type in ['local_authority', 'academic'], provider:customer_level == 1` -  local authorities and        |
+|                            | 1. `ib1:org_type in ['local_authority', 'academic'], provider:customer_level == 1` -  local authorities and        |
 |                            | educational institutions are granted access if they are paid customers of the                                     |
 |                            | [Data Provider](../glossary.md#term-Data-Provider) at their standard rate                                         |
 |                            | 2. `provider:customer_level >= 2` - energy networks are granted access if they are paid customers of the Data     |
@@ -362,7 +362,7 @@ reduced legal, staff and time costs associated with improved searchability, tran
 |                            | higher access fee and are therefore happy for all [Data Consumers](../glossary.md#term-Data-Consumer) to be       |
 |                            | granted the same capabilities. The result is the same set of capabilities (the same licence) is applied to both   |
 |                            | access rules.                                                                                                     |
-|                            | `oe:org_type in ['local_authority', 'academic'], provider:customer_level == 1 grants oe:use_any`                  |
+|                            | `ib1:org_type in ['local_authority', 'academic'], provider:customer_level == 1 grants ib1:use_any`                  |
 |                            | `provider:customer_level >= 2 grants oe:use_any`                                                                  |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 | **Obligations**            | The [Data Provider](../glossary.md#term-Data-Provider) chooses the same obligations to be applied to both access  |
@@ -500,6 +500,6 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDc5NDMwNjksLTE0NjUzNTY0NCw5MD
-M4Mzg4ODddfQ==
+eyJoaXN0b3J5IjpbMTI4NzEwNDY5NSwtMTQ2NTM1NjQ0LDkwMz
+gzODg4N119
 -->
