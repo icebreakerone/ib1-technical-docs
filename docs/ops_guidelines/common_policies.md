@@ -19,17 +19,11 @@ The IB1 Trust Framework operates a system of five data sensitivity classes, grad
 Classes are presented in the table below. A definition, specification and dataset examples for each class is
 provided in the IB1 Trust Framework Operational Guidelines. [Data Providers](../glossary.md#term-Data-Provider) assess their datasets using the Operational Guidelines and allocate them to a class, prior to sharing them via the Trust Framework.
 
-Open Energy data classes are designed to supplement, not replace, the
-[Modernising Energy Data Best Practice Guidance](https://modernisingenergydata.atlassian.net/wiki/spaces/MED/pages/69042178/Data+Best+Practice+latest+release+v0.21)
-(Point 12) determining whether data should be made Open, Shared or Closed. In particular, Open Energy data classes are
-designed to provide further nuance to the category of Shared data - identifying three different classes in this space,
-with different sensitivity profiles.
+Data Sensitivity Classes are designed to supplement, not replace, the [Modernising Energy Data Best Practice Guidance](https://modernisingenergydata.atlassian.net/wiki/spaces/MED/pages/69042178/Data+Best+Practice+latest+release+v0.21)
+(Point 12) determining whether data should be made Open, Shared or Closed. In particular, The Data Sensitivity Classes are
+designed to provide further nuance to the category of Shared data - identifying three different classes in this space, with different sensitivity profiles.
 
-Detailed guidance and tooling, designed to support [Data Providers](../glossary.md#term-Data-Provider) to classify datasets consistently and fairly, will be
-inserted in due course beyond Phase 3. This will follow processes of consultation with Advisory Groups and tester
-organisations.
-
-### data sensitivity classes in the Open Energy ecosystem
+### Data sensitivity classes in the IB Trust Framework
 
 +---------------------------+------------------------------------------------------------------------------+---------------------------------------------------------------+----------------------+------------------------+----------------------+
 | Data Class                | Description                                                                  | Example Datasets                                              | Personal Sensitivity | Commercial Sensitivity | Security Sensitivity |
@@ -42,7 +36,7 @@ organisations.
 |                           | supporting critical national infrastructure owned by                         |                                                               |                      |                        |                      |
 |                           | an Operator of Essential Services.                                           |                                                               |                      |                        |                      |
 |                           |                                                                              |                                                               |                      |                        |                      |
-|                           | **Never suitable to share within the OE ecosystem.**                         |                                                               |                      |                        |                      |
+|                           | **Never suitable to share within the IB1 ecosystem.**                         |                                                               |                      |                        |                      |
 +---------------------------+------------------------------------------------------------------------------+---------------------------------------------------------------+----------------------+------------------------+----------------------+
 | OE-SP                     | Datasets which include personal data, requiring                              | Smart meter data, home temperature preferences,               | Very High            | Medium / High          | Medium / High        |
 |                           | appropriate consent to share, or other legal bases                           | protected characteristics or special category data            |                      |                        |                      |
@@ -623,5 +617,5 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDI1MzM5MzQsOTAzODM4ODg3XX0=
+eyJoaXN0b3J5IjpbLTE0OTQ3NzU0MTAsOTAzODM4ODg3XX0=
 -->
