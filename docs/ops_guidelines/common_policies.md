@@ -83,16 +83,9 @@ designed to provide further nuance to the category of Shared data - identifying 
 This policy focuses on **data access**. Data access refers to determining what types of conditions may be specified for Data Consumers to meet in order to gain access to datasets in different sensitivity classes, and how access rules are articulated. This policy has been created with input from the IB1 Trust Framework Advisory Groups, Review Track, and public
 consultation responses.
 
-The Trust Framework Governance Service ([TFGS](../glossary.md#term-Trust-Framework-Governance-Service)) is responsible for providing [Data Providers](../glossary.md#term-Data-Provider) with verified information about
-[Data Consumers](../glossary.md#term-Data-Consumer), in line with specified access conditions for each dataset. However, the [Data Provider](../glossary.md#term-Data-Provider) is solely
-responsible for determining whether any given [API](../glossary.md#term-Application-programming-interface) request should be honoured (i.e. data access granted), and the
-licensing terms for any data returned in response to that request. This is due to requirements for control to rest
-with the [Data Provider](../glossary.md#term-Data-Provider) only.
+The Trust Framework Governance Service ([TFGS](../glossary.md#term-Trust-Framework-Governance-Service)) is responsible for providing [Data Providers](../glossary.md#term-Data-Provider) with verified information about [Data Consumers](../glossary.md#term-Data-Consumer), in line with specified access conditions for each dataset. However, the [Data Provider](../glossary.md#term-Data-Provider) is solely responsible for determining whether any given [API](../glossary.md#term-Application-programming-interface) request should be honoured (i.e. data access granted), and the licensing terms for any data returned in response to that request. This is due to requirements for control to rest with the [Data Provider](../glossary.md#term-Data-Provider) only.
 
-It is expected that [Data Providers](../glossary.md#term-Data-Provider) will grant access reliably and fairly, in line with the access conditions that they
-specify. In the event that access is refused, there will be a mechanism for flagging this with the [OEGS](../glossary.md#term-Open-Energy-Governance-Service) for review and
-dispute management. [Data Providers](../glossary.md#term-Data-Provider) must be able to show clear justification for access refusal. Repeat refusal or
-non-compliance with specified access conditions may result in penalties (to be determined after Phase 3).
+It is expected that [Data Providers](../glossary.md#term-Data-Provider) will grant access reliably and fairly, in line with the access conditions that they specify. In the event that access is refused, there will be a mechanism for flagging this with the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) for review and dispute management. [Data Providers](../glossary.md#term-Data-Provider) must be able to show clear justification for access refusal. Repeat refusal or non-compliance with specified access conditions may result in penalties (to be determined after Phase 3).
 
 This policy focuses on access conditions for classes [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A) and [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) only. Personal data ([OE-SP](../glossary.md#term-Data-sensitivity-class-personal)) are out of scope for
 development during Phase 3. Future extensibility of the Open Energy ecosystem to [OE-SP](../glossary.md#term-Data-sensitivity-class-personal) data will be consulted on in
@@ -615,5 +608,5 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE3NTUyNzMyLDkwMzgzODg4N119
+eyJoaXN0b3J5IjpbODg4NTMxMjIyLDkwMzgzODg4N119
 -->
