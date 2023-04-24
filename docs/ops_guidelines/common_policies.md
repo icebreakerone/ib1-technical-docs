@@ -455,13 +455,9 @@ design.
 
 ## Dispute Resolution
 
-Open Energy acknowledges industry feedback regarding the need to develop a dispute resolution function as part of the
-[OEGS](../glossary.md#term-Open-Energy-Governance-Service). While developing the full function of dispute resolution falls beyond the scope of Open Energy Phase 3, this
-remains an active area for future development. Given the complexity of this topic, ongoing stakeholder engagement and
-consultation will be used to shape the future service. In the meantime, members will be requested to use a specific
-email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
-inform future service and policy design, alongside consultation activity.
+Icebreaker One acknowledges industry feedback regarding the need to develop a dispute resolution function as part of the
+[TFGS](../glossary.md#term-Trust-Framework-Governance-Service). Developing the full function of dispute resolution is an active area for future development. Given the complexity of this topic, ongoing stakeholder engagement and consultation will be used to shape the future service. In the meantime, members will be requested to use a specific email address to catalogue any difficulties and discuss appropriate [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) support. Learning from this prototype will inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MzU0NzUyNSwtMTQ2NTM1NjQ0LDkwMz
+eyJoaXN0b3J5IjpbMTI5NTUyMjA2NywtMTQ2NTM1NjQ0LDkwMz
 gzODg4N119
 -->
