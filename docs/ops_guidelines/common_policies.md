@@ -204,34 +204,20 @@ There are two ways in which group-based access can be defined.
 
 1. The group can be externally defined. In this case, an external source provides documentation group membership and duration. For example, a group could be created that encompasses all [UK](../glossary.md#term-United-Kingdom) retail energy suppliers licensed by Ofgem, or the members of a research consortium listed on a particular grant. In both cases, group membership is clearly defined by an external document (e.g. Ofgem licensee list, grant contract) applicable for a defined time period.
 
+2. The group can be self-defined. In this case, documentation of group membership and duration is provided by group members themselves. For example, a set of organisations partnering on a particular use-case or commercial partnership may be able to self-define as a group. Documentation may comprise a project plan or multilateral commercial agreement.
 
-2. The group can be self-defined. In this case, documentation of group membership and duration is provided by group
-members themselves. For example, a set of organisations partnering on a particular use-case or commercial
-partnership may be able to self-define as a group. Documentation may comprise a project plan or multilateral
-commercial agreement.
-
-Further policy-development is required to ensure the inclusion of self-defining groups in the Open Energy ecosystem is
-fair and transparent. Appropriate governance arrangements will also need to be established, for example to prevent
-confusion for [Data Providers](../glossary.md#term-Data-Provider) or instability associated with too-frequent changes in group creation or membership. As
-such, it is likely that group-based access defined through authoritative external sources will be explored first in
-[OEGS](../glossary.md#term-Open-Energy-Governance-Service) development going forward.
+Further policy-development is required to ensure the inclusion of self-defining groups in the IB1 Trust Framework is fair and transparent. Appropriate governance arrangements will also need to be established, for example to prevent confusion for [Data Providers](../glossary.md#term-Data-Provider) or instability associated with too-frequent changes in group creation or membership. As such, it is likely that group-based access defined through authoritative external sources will be explored first in [TFGS](../glossary.md#term-Trust Framework-Governance-Service) development going forward.
 
 ### Use case based access control
 
 This type of access condition is difficult to design due to inherent subjectivity in defining the bounds and meaning of
-particular use cases. While some [Data Providers](../glossary.md#term-Data-Provider) could be comfortable granting access on the basis of broadly defined use
-cases, such as fuel poverty reduction, this may not be appropriate to all [Data Providers](../glossary.md#term-Data-Provider) or for more sensitive datasets.
-As such, it is proposed that use case-based access could also be facilitated through the creation of either
-externally-defined or self-defined groups as outlined above. For example, partners within a Local Authority social
-housing retrofit project could form a group. This group would be accompanied by information about the specific use case
-it represents - for example participants, timescale, activities, commercial status etc.) enabling [Data Providers](../glossary.md#term-Data-Provider) to make
-an informed decision regarding whether to grant access. Any future consideration of access based on more broadly-defined
-use-cases would be subject to consultation and further policy development.
+particular use cases. While some [Data Providers](../glossary.md#term-Data-Provider) could be comfortable granting access on the basis of broadly defined use cases, such as fuel poverty reduction, this may not be appropriate to all [Data Providers](../glossary.md#term-Data-Provider) or for more sensitive datasets. 
+
+As such, it is proposed that use case-based access could also be facilitated through the creation of either externally-defined or self-defined groups as outlined above. For example, partners within a Local Authority social housing retrofit project could form a group. This group would be accompanied by information about the specific use case it represents - for example participants, timescale, activities, commercial status etc.) enabling [Data Providers](../glossary.md#term-Data-Provider) to make an informed decision regarding whether to grant access. Any future consideration of access based on more broadly-defined use-cases would be subject to consultation and further policy development.
 
 ### Prioritisation
 
-Inclusion of all access conditions outlined above will require significant technical build. In the near future,
-Open Energy may prioritise the establishment of access conditions that industry feedback has indicated take priority.
+Inclusion of all access conditions outlined above will require significant technical build. In the near future, Icebreaker One may prioritise the establishment of access conditions that industry feedback has indicated take priority.
 These include: payment, security compliance, regulatory compliance and externally defined groups. As flagged above,
 in order to maintain robust governance and the Open Energy trust framework, development of additional access conditions
 may require further policy work.
@@ -592,5 +578,5 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODMyMzc4NTAsOTAzODM4ODg3XX0=
+eyJoaXN0b3J5IjpbMTc3NjU3MzYzNiw5MDM4Mzg4ODddfQ==
 -->
