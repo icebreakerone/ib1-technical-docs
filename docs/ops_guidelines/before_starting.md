@@ -103,9 +103,9 @@ The tables below outline considerations for [Data Providers](../glossary.md#term
 |                                | * Establish or review your business model for providing services based on, or linked to, data access via                                          |                   | 
 |                                | the [IB1 Trust Framework](../glossary.md#term-Icebreaker-One-Trust-Framework)  in alignment with the agreed capabilities and access controls for the datasets the service will   |                   | 
 |                                |  rely on.                                                                                                                                         |                   | 
-|                                | * Where a service uses multiple datasets, including those beyond Open Energy, ensure that licences are compatible to the service                  |                   | 
+|                                | * Where a service uses multiple datasets, including those beyond the IB1 Trust Framework, ensure that licences are compatible to the service                  |                   | 
 |                                | being provided and that all licences are appropriately credited.                                                                                  |                   | 
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY5NDM0Mjc2LC0xODI5MDAzNTc4XX0=
+eyJoaXN0b3J5IjpbLTk3NjMwNzAzNSwtMTgyOTAwMzU3OF19
 -->
