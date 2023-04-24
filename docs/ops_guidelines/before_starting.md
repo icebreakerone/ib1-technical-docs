@@ -6,17 +6,11 @@
 
 This section provides ‘at a glance’ lists of items that new members will need to consider in order to meet operational requirements. It may also be useful for existing members to revisit when they publish ([Data Providers](../glossary.md#term-Data-Provider)) or access ([Data Consumers](../glossary.md#term-Data-Consumer)) a new dataset.
 
-As the [Icebreaker One Trust Framework](../glossary.md#term-Open-Energy) evolves, this section will be updated to form a definitive checklist for compliance. At present however,
-it is designed to outline general considerations regarding skills, capabilities and tasks that organisations will
-require in order to take part in the [Open Energy](../glossary.md#term-Open-Energy) ecosystem.
+As the [Icebreaker One (IB1) Trust Framework](../glossary.md#term-Trust-Framework) evolves, this section will be updated to form a definitive checklist for compliance. At present however, it is designed to outline general considerations regarding skills, capabilities and tasks that organisations will require in order to take part in the IB1 Trust Framework.
 
-The tables below outline considerations for [Data Providers](../glossary.md#term-Data-Provider) and [Data Consumers](../glossary.md#term-Data-Consumer). Each item includes a suggestion of its relevance
-to different areas of readiness: commercial, operational, technical, and legal. It is suggested that prospective
-members proactively engage teams or staff members with responsibilities for the above four areas of readiness
-prior to joining Open Energy as members. Please note that this section is designed to support members to
-prepare for data sharing. However, sharing of real data will not commence until the [OEGS](../glossary.md#term-Open-Energy-Governance-Service) goes fully live.
+The tables below outline considerations for [Data Providers](../glossary.md#term-Data-Provider) and [Data Consumers](../glossary.md#term-Data-Consumer). Each item includes a suggestion of its relevance to different areas of readiness: commercial, operational, technical, and legal. It is suggested that prospective members proactively engage teams or staff members with responsibilities for the above four areas of readiness prior to joining the IB1 Trust Framework as members. Please note that this section is designed to support members to prepare for data sharing. However, sharing of real data will not commence until the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) goes fully live.
 
-## Considerations for Data Providers
+## Considerations for Data Providers TODO fix this table
 
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
 | Consideration                  | Includes                                                                                                                                          | Readiness area(s) |
@@ -113,5 +107,5 @@ prepare for data sharing. However, sharing of real data will not commence until 
 |                                | being provided and that all licences are appropriately credited.                                                                                  |                   | 
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjIwNDc5NThdfQ==
+eyJoaXN0b3J5IjpbMTk1NTU1ODQyM119
 -->
