@@ -317,9 +317,9 @@ reduced legal, staff and time costs associated with improved searchability, tran
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 | **Access control domains** | Access granted to all Trust Framework members equally                                                             |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
-| **Access rules**           | `ib1:member` unary access condition                                                                                |
+| **Access rules**           | `ib1:member` unary access condition                                                                               |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
-| **Capability grants**      | `ib1:member grants ib1:use_any`, all [Data Consumers](../glossary.md#term-Data-Consumer) who are members of the    |
+| **Capability grants**      | `ib1:member grants ib1:use_any`, all [Data Consumers](../glossary.md#term-Data-Consumer) who are members of the   |
 |                            | Trust Framework can access this data set, and receive the right to use for any purpose (see                       |
 |                            | [Standard capabilities](../access_control_specification.md#standard-capabilities) for more detail)                |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
