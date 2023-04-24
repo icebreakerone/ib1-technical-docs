@@ -113,7 +113,7 @@ and then re-commit and push that to `gh-pages` on the remote.
 
 ```
 git reset --soft xxxxxxxxxxxxxxxxxxxx1
-git commit -m “My meaningful commit”
+git commit -m "My meaningful commit"
 git push
 ```
 
