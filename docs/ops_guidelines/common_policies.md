@@ -317,16 +317,16 @@ reduced legal, staff and time costs associated with improved searchability, tran
 
 ### Example access control and capability grant scenarios
 
-**NOTE**: These scenarios have been created to reflect decisions that could be faced by [Data Providers](../glossary.md#term-Data-Provider) in the Open Energy Phase 3 use-case, in which a Local Authority is seeking data to plan the retrofit of social housing with low carbon technologies. Please note that the scenarios are exemplary only and do not necessarily represent the stances of any [Data Providers](../glossary.md#term-Data-Provider) involved in testing.
+**NOTE**: These scenarios have been created to reflect decisions that could be faced by [Data Providers](../glossary.md#term-Data-Provider) in the Open Energy Phase 3 ([OE3](../glossary.md#term-Open-Energy-Phase-3)) use-case, in which a Local Authority is seeking data to plan the retrofit of social housing with low carbon technologies. Please note that the scenarios are exemplary only and do not necessarily represent the stances of any [Data Providers](../glossary.md#term-Data-Provider) involved in testing.
 
-### Scenario 1
+### Scenario 1 TODO fix this table
 
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 | **Dataset**                | [DNO](../glossary.md#term-Distribution-Network-Operator) capacity/constraint data                                 |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
-| **Sensitivity class**      | [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)                                                      |
+| **Sensitivity class**      | [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A)                                                      |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
-| **Access control domains** | Access granted to all Open Energy members equally                                                                 |
+| **Access control domains** | Access granted to all Trust Framework members equally                                                                 |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
 | **Access rules**           | `oe:member` unary access condition                                                                                |
 +----------------------------+-------------------------------------------------------------------------------------------------------------------+
@@ -500,5 +500,6 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjUzNTY0NCw5MDM4Mzg4ODddfQ==
+eyJoaXN0b3J5IjpbLTExMDc5NDMwNjksLTE0NjUzNTY0NCw5MD
+M4Mzg4ODddfQ==
 -->
