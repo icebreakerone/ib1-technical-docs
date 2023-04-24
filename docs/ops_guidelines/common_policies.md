@@ -416,18 +416,9 @@ As outlined in previous consultations, the general case of data ecosystems is mo
 
 We are aware of concerns within the industry that multiple licensing could present risks of licence proliferation, introducing complexity to the landscape which can act as a barrier for data consumption. Icebreaker One acknowledges this risk and presents the following points of response:
 
-> Firstly, some stakeholders have suggested that Open Energy should take a ‘modular approach’ to building a ‘single Open Energy licence’. This suggestion outlines a permissive core or standard licence that is presented to all [Data Providers](../glossary.md#term-Data-Provider) as the default option for publishing their data. If this is not appropriate for a particular dataset, [Data Providers](../glossary.md#term-Data-Provider) would then have the option of adding restrictions (i.e. removing capabilities) by adding
-> modular sections of legal text. In practice however, a modular approach doesn’t reduce licence plurality as each
-> modification of a licence (e.g. addition of modular text) is viewed legally as the creation of a new licence.
-> Open Energy’s approach instead accepts a degree of licence plurality, but will work to standardise the
-> discoverability, scope and ease of understanding of that pluralism by offering a limited, standardised and
-> searchable range of capabilities. This will be accompanied in due course by guidance for [Data Providers](../glossary.md#term-Data-Provider),
-> tailored to each sensitivity class, encouraging as much openness as possible while publishing data safely and
-> creating a thriving marketplace.
+Firstly, some stakeholders have suggested that IB1 should take a ‘modular approach’ to building a ‘single IB1 licence’. This suggestion outlines a permissive core or standard licence that is presented to all [Data Providers](../glossary.md#term-Data-Provider) as the default option for publishing their data. If this is not appropriate for a particular dataset, [Data Providers](../glossary.md#term-Data-Provider) would then have the option of adding restrictions (i.e. removing capabilities) by adding modular sections of legal text. In practice however, a modular approach doesn’t reduce licence plurality as each modification of a licence (e.g. addition of modular text) is viewed legally as the creation of a new licence. Icebreaker One’s approach instead accepts a degree of licence plurality, but will work to standardise the discoverability, scope and ease of understanding of that pluralism by offering a limited, standardised and searchable range of capabilities. This will be accompanied in due course by guidance for [Data Providers](../glossary.md#term-Data-Provider), tailored to each sensitivity class, encouraging as much openness as possible while publishing data safely and creating a thriving marketplace.
 
-> Secondly, we acknowledge that the energy data landscape already incorporates a significant degree of licence
-> proliferation. For example, it is already common for energy system actors to publish data under bespoke licences
-> containing non-standard clauses and/or legal wording. In standardising the range and expression of capabilities,
+Secondly, we acknowledge that the data landscape already incorporates a significant degree of licence proliferation. For example, it is already common for energy system actors to publish data under bespoke licences containing non-standard clauses and/or legal wording. In standardising the range and expression of capabilities,
 > Open Energy aims to rationalise some unnecessary forms of licence proliferation in the sector and reduce legal
 > costs to [Data Providers](../glossary.md#term-Data-Provider) by reducing the circumstances under which bespoke licences are necessary.
 
@@ -488,6 +479,6 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NDY4NjczNCwtMTQ2NTM1NjQ0LDkwMz
-gzODg4N119
+eyJoaXN0b3J5IjpbLTIwMDMzNTcwMTksLTE0NjUzNTY0NCw5MD
+M4Mzg4ODddfQ==
 -->
