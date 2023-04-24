@@ -260,14 +260,11 @@ When defining an access rule, [Data Providers](../glossary.md#term-Data-Provider
 
 If access requests are refused, [Data Providers](../glossary.md#term-Data-Provider) must be able to demonstrate a justifiable reason for doing so. [Data Consumers](../glossary.md#term-Data-Consumer) can challenge access refusals through a dispute-resolution mechanism (part of the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service)) if this is required. Guidance regarding acceptable/unacceptable reasons for access refusal, the dispute-resolution mechanism, and [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) dispute-resolution processes will be developed and published in Phase 4 of the project.
 
-The flow of information associated with access control is shown below - this assumes the [Data Consumer](../glossary.md#term-Data-Consumer) has already
-acquired an access token from the authorization server. Access control and capability grants are processed on a
-pre-request basis, within the [Data Provider](../glossary.md#term-Data-Provider), in the box *Make access and license decision based on details*:
+The flow of information associated with access control is shown below - this assumes the [Data Consumer](../glossary.md#term-Data-Consumer) has already acquired an access token from the authorization server. Access control and capability grants are processed on a per-request basis, within the [Data Provider](../glossary.md#term-Data-Provider).
 
 ### Associating access rules with capabilities
 
-In the Open Energy model, licensing is expressed as the grant of a set of capabilities and associated obligations,
-scoped to the results of a single [API](../glossary.md#term-Application-programming-interface) call and verified through a non-repudiable digital signature.
+In the IB1 Trust Framework model, licensing is expressed as the grant of a set of capabilities and associated obligations, scoped to the results of a single [API](../glossary.md#term-Application-programming-interface) call and verified through a non-repudiable digital signature.
 
 This is defined using a rules language, the details of which can be found at
 [Access Control and Capability Grant Language](../access_control_specification.md#access-control-and-capability-grant-language)
@@ -550,5 +547,5 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0MDI2MTk5Niw5MDM4Mzg4ODddfQ==
+eyJoaXN0b3J5IjpbLTg1MTEzNjA1Nyw5MDM4Mzg4ODddfQ==
 -->
