@@ -108,9 +108,9 @@ The table below describes access conditions for each of the data sensitivity cla
 +------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
 | Data Class                                                                   | Access Conditions                                                                                       |
 +==============================================================================+=========================================================================================================+
-| [OE-C](../glossary.md#term-Data-sensitivity-class-closed)                    | Determined and governed by the [Data Provider](../glossary.md#term-Data-Provider) only.                 |
+| [IB1-C](../glossary.md#term-Data-sensitivity-class-closed)                    | Determined and governed by the [Data Provider](../glossary.md#term-Data-Provider) only.                 |
 +------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-| [OE-SP](../glossary.md#term-Data-sensitivity-class-personal)                 | Currently determined by legislation including, but not limited to:                                      |
+| [IB1-SP](../glossary.md#term-Data-sensitivity-class-personal)                 | Currently determined by legislation including, but not limited to:                                      |
 |                                                                              | [GDPR](../glossary.md#term-General-Data-Protection-Regulation) /                                        |
 |                                                                              | [DPA](../glossary.md#term-Data-Protection-Act) 2018, the Data Access and Privacy Framework, and the     |
 |                                                                              | Smart Energy Code. [Data Providers](../glossary.md#term-Data-Provider) may also apply additional        |
@@ -120,30 +120,30 @@ The table below describes access conditions for each of the data sensitivity cla
 |                                                                              | (Future extensibility to be considered |
 |                                                                              | based on consultation in due course.                                                                    |
 +------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-| [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B)                 | Currently non-standardised, determined by bilateral contract and bespoke negotiation.                   |
+| [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B)                 | Currently non-standardised, determined by bilateral contract and bespoke negotiation.                   |
 |                                                                              |                                                                                                         |
 |                                                                              | Subject of the current policy.                                                                          |
 +------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-| [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)                 | Currently some standardisation, however bespoke arrangements remain common.                             |
+| [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A)                 | Currently some standardisation, however bespoke arrangements remain common.                             |
 |                                                                              |                                                                                                         |
 |                                                                              | Subject of the current policy.                                                                          |
 +------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-| [OE-O](../glossary.md#term-Data-sensitivity-class-open)                      | No access conditions - free and accessible to all users.                                                |
+| [IB1-O](../glossary.md#term-Data-sensitivity-class-open)                      | No access conditions - free and accessible to all users.                                                |
 +------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
 
-### IB1 Trust Framework access conditions
+### IB1 Trust Framework access conditions TODO fix table
 
 +---------------------+---------------------------------------------------------------+----------------------------------------------------------------------+
 | Condition domain    | Considerations (examples - not exhaustive)                    | Applicable class                                                     |
 +=====================+===============================================================+======================================================================+
-| Payment             | Free or paid data                                             | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and     |
-|                     |                                                               | [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)         |
+| Payment             | Free or paid data                                             | [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and     |
+|                     |                                                               | [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A)         |
 |                     | Graduated payment rates (e.g. higher granularity)             |                                                                      |
 |                     |                                                               |                                                                      |
 |                     | One-off or subscription payment rates                         |                                                                      |
 +---------------------+---------------------------------------------------------------+----------------------------------------------------------------------+
-| Security compliance | [UK](../glossary.md#term-United-Kingdom) Government Minimum   | [OE-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and     |
-|                     | Cybersecurity Standard                                        | [OE-SA](../glossary.md#term-Data-sensitivity-class-shared-A)         |
+| Security compliance | [UK](../glossary.md#term-United-Kingdom) Government Minimum   | [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B) and     |
+|                     | Cybersecurity Standard                                        | [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A)         |
 |                     |                                                               |                                                                      |
 |                     | [UK](../glossary.md#term-United-Kingdom) Government  ‘Secure. |                                                                      | 
 |                     | by Design’ IoT guidance                                       |                                                                      |
@@ -596,5 +596,5 @@ consultation will be used to shape the future service. In the meantime, members 
 email address to catalogue any difficulties and discuss appropriate [OEGS](../glossary.md#term-Open-Energy-Governance-Service) support. Learning from this prototype will
 inform future service and policy design, alongside consultation activity.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MTg1ODE0NCw5MDM4Mzg4ODddfQ==
+eyJoaXN0b3J5IjpbMTEzMTIwMjk3Nyw5MDM4Mzg4ODddfQ==
 -->
