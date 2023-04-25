@@ -49,4 +49,5 @@ plugins:
       cards_color:
         fill: "#0D1C22" 
         text: "#FFFFFF"
-      cards_font: Open Sans
+  - mike:
+      redirect_template: "mike/redirect.html"
