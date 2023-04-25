@@ -700,35 +700,80 @@ A simple example is shown below:</p>
 vocabularies, as well as from the Icebreaker OneOpen Energy core ontology. Prefixes are defined in the <a href="../glossary/#term-JavaScript-Object-Notation-for-Linked-Data">JSON-LD</a> <code>@context</code> object 
 as in the example above.</p>
 <h2 id="mandatory-data-content-metadata-fields">Mandatory data content metadata fields</h2>
-<pre class="grid-table-error">+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| Key                                                                                                     | Value                                                                                                       |
-+=========================================================================================================+=============================================================================================================+
-| <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/title/">dct:title</a>              | Short title for this data set                                                                               |
-+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/description/">dct:description</a>  | Longer form description of this data set. This is used in combination with the title and tags when people   |
-|                                                                                                         | search for data sets, so aim to include probable search words in the description.                           |
-+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version">dcat:version</a>                           | Version number of the data set, this should preferably follow <a href="https://semver.org/">semantic versioning</a> if |
-|                                                                                                         | possible. Versioning of the data set should be used to indicate changes in delivery mechanism, or in        |
-|                                                                                                         | representation, rather than for changes in the underlying data. For example, this should not be used to     |
-|                                                                                                         | differentiate between data sets from different years, rather it should be used to indicate whether a        |
-|                                                                                                         | potential data consumer might need to alter how it processes any returned data.                             |
-+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version_notes">dcat:versionNotes</a>                | Notes used to explain any changes to this version                                                           |
-+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| <code>ib1oe:sensitivityClass</code>                                                                                   | The <a href="../glossary/#term-Data-sensitivity-class">data sensitivity class</a> of this data set. In the current IB1 Open |
-|                                                                                                         | Trust FrameworkEnergy system this should always be one of <a href="../glossary/#term-Data-sensitivity-class-open">IB1OE-O</a>,            |
-|                                                                                                         | <a href="../glossary/#term-Data-sensitivity-class-shared-A">IB1OE-SA</a>, or                                               |
-|                                                                                                         | <a href="../glossary/#term-Data-sensitivity-class-shared-B">IB!OE-SB</a>, no other classes are permitted. The value of     |
-|                                                                                                         | this property also determines the level of <a href="../glossary/#term-Application-programming-interface">API</a>        |
-|                                                                                                         | security imposed, with <a href="../glossary/#term-Data-sensitivity-class-open">IB1OE-O</a> data sets being open data with  |
-|                                                                                                         | no additional security, and the two shared data classes mandating                                           |
-|                                                                                                         | <a href="../glossary/#term-Financial-Grade-API">FAPI</a> security using the IB1 Trust FrameworkOpen Energy trust services.                 |
-+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| <code>ib1oe:dataSetStableIdentifier</code>                                                                            | An identifier, unique to this <a href="../glossary/#term-Data-Provider">Data Provider</a>, which will not be changed,   |
-|                                                                                                         | and which will be used along with the data provider’s own ID to create a unique identifier for this data    |
-|                                                                                                         | set within <a href="https://opennetzero.org">the Open Net Zero</a>Energy search system.                                                                   |
-+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+</pre>
+<table>
+<thead>
+<tr>
+<th colspan="1" rowspan="1">
+<p>Key</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Value</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="1" rowspan="1">
+<p><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/title/">dct:title</a></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Short title for this data set</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/description/">dct:description</a>
+</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Longer form description of this data set. This is used in combination with the title and tags when people
+search for data sets, so aim to include probable search words in the description.</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version">dcat:version</a></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Version number of the data set, this should preferably follow <a href="https://semver.org/">semantic versioning</a> if
+possible. Versioning of the data set should be used to indicate changes in delivery mechanism, or in
+representation, rather than for changes in the underlying data. For example, this should not be used to
+differentiate between data sets from different years, rather it should be used to indicate whether a
+potential data consumer might need to alter how it processes any returned data.</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version_notes">dcat:versionNotes</a></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Notes used to explain any changes to this version</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><code>ib1:sensitivityClass</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>The <a href="../glossary/#term-Data-sensitivity-class">data sensitivity class</a> of this data set. In the current IB1
+Trust Framework this should always be one of <a href="../glossary/#term-Data-sensitivity-class-open">IB1-O</a>,
+<a href="../glossary/#term-Data-sensitivity-class-shared-A">IB1-SA</a>, or
+<a href="../glossary/#term-Data-sensitivity-class-shared-B">IB1-SB</a>, no other classes are permitted. The value of
+this property also determines the level of <a href="../glossary/#term-Application-programming-interface">API</a>
+security imposed, with <a href="../glossary/#term-Data-sensitivity-class-open">IB1-O</a> data sets being open data with
+no additional security, and the two shared data classes mandating
+<a href="../glossary/#term-Financial-Grade-API">FAPI</a> security using the IB1 Trust Framework.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2" rowspan="1">
+<p><code>ib1:dataSetStableIdentifier</code>                                                                            | An identifier, unique to this <a href="../glossary/#term-Data-Provider">Data Provider</a>, which will not be changed,
+                                                                                                        | and which will be used along with the data provider’s own ID to create a unique identifier for this data
+                                                                                                        | set within <a href="https://opennetzero.org">the Open Net Zero</a></p>
+</td>
+</tr>
+</tbody>
+</table>
 <h3 id="additional-metadata">Additional metadata</h3>
 <p>The information above is the minimum needed to ensure that a data set is visible in <a href="https://opennetzero.org">the Open Net Zero</a>Energy search system. There 
 are, however, other properties of a data set which may be useful to potential data consumers. Where such information can 
