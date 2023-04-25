@@ -45,6 +45,32 @@
 
     
     
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Dataset Metadata - Icebreaker One Technical Documentation" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="./assets/images/social/metadata.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="None" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Dataset Metadata - Icebreaker One Technical Documentation" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="./assets/images/social/metadata.png" >
+      
+    
     
   </head>
   
@@ -148,39 +174,6 @@
       </form>
     
     
-    
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     
     
   </nav>
@@ -648,10 +641,12 @@
 
 
 <h1 id="data-set-metadata">Data Set Metadata</h1>
-<p>Each <a href="../glossary/#term-Data-Provider">Data Provider</a> (<a href="../glossary/#term-Data-Provider">Data Provider</a>) maintains a set of one or more metadata files, each of which can describe one or more distinct data sets. These descriptions serve several purposes:</p>
+<p>Each <a href="../glossary/#term-Data-Provider">Data Provider</a> (<a href="../glossary/#term-Data-Provider">Data Provider</a>) maintains a set of one or more metadata files, each of which can describe one or more 
+distinct data sets. These descriptions serve several purposes:</p>
 <ol>
 <li>
-<p>They drive discovery descriptions are ingested into our search system and made available to a <a href="../glossary/#term-Data-Consumer">Data Consumer</a> searching for particular kinds of data.</p>
+<p>They drive discovery descriptions are ingested into our search system and made available to a <a href="../glossary/#term-Data-Consumer">Data Consumer</a> 
+searching for particular kinds of data.</p>
 </li>
 <li>
 <p>They inform consumption of that data, providing information on:</p>
@@ -672,7 +667,8 @@
 </li>
 </ol>
 <h2 id="metadata-file-structure">Metadata File Structure</h2>
-<p><strong>NOTE</strong>: The examples below use <a href="../glossary/#term-YAML-Ain-t-Markup-Language">YAML</a> format for compactness and increased readability. Data providers may present this information either in <a href="../glossary/#term-YAML-Ain-t-Markup-Language">YAML</a> or in <a href="../glossary/#term-Javascript-Object-Notation">JSON</a> form.</p>
+<p><strong>NOTE</strong>: The examples below use <a href="../glossary/#term-YAML-Ain-t-Markup-Language">YAML</a> format for compactness and increased readability. Data providers may present this 
+information either in <a href="../glossary/#term-YAML-Ain-t-Markup-Language">YAML</a> or in <a href="../glossary/#term-Javascript-Object-Notation">JSON</a> form.</p>
 <p>The overall structure of the metadata file is a list of objects, each of which has the following structure:</p>
 <pre><code class="language-yaml">- content:
     # Discovery information
@@ -684,102 +680,65 @@
     # Data format information
 </code></pre>
 <h2 id="content-block">Content Block</h2>
-<p>The <code>content</code> key contains a block of <a href="../glossary/#term-JavaScript-Object-Notation-for-Linked-Data">JSON-LD</a> compatible information describing the conceptual content of the dataset. A simple example is shown below:</p>
+<p>The <code>content</code> key contains a block of <a href="../glossary/#term-JavaScript-Object-Notation-for-Linked-Data">JSON-LD</a> compatible information describing the conceptual content of the dataset. 
+A simple example is shown below:</p>
 <pre><code class="language-yaml">- content:
     &quot;@type&quot;: &quot;dcat:Dataset&quot;
     &quot;@context&quot;:
        dcat: http://www.w3.org/ns/dcat#
        dct: http://purl.org/dc/terms/
-       ib1: http://icebreakerone.org/ib1/terms/
+       ib1oe: http://icebreakerone.org/ib1energydata.org.uk/oe/terms/
     dct:title: My amazing data set
     dct:description: This is a free text description of the data set
     dcat:version: 0.1.2
     dcat:versionNotes: This is a note on this particular version of the dataset
-    ib1:sensitivityClass: IB1-SA
-    ib1:dataSetStableIdentifier: myData
+    ib1oe:sensitivityClass: IB1OE-SA
+    ib1oe:dataSetStableIdentifier: myData
 </code></pre>
-<p>These are the minimum properties every data set must define, they include terms from the <a href="https://dublincore.org/">Dublic Core</a> (<code>dct</code>) and <a href="https://www.w3.org/TR/vocab-dcat-2/">Data Catalog</a> (<code>dcat</code>) vocabularies, as well as from the Icebreaker One core ontology. Prefixes are defined in the <a href="../glossary/#term-JavaScript-Object-Notation-for-Linked-Data">JSON-LD</a> <code>@context</code> object as in the example above.</p>
+<p>These are the minimum properties every data set must define, they include terms from the 
+<a href="https://dublincore.org/">Dublic Core</a> (<code>dct</code>) and <a href="https://www.w3.org/TR/vocab-dcat-2/">Data Catalog</a> (<code>dcat</code>) 
+vocabularies, as well as from the Icebreaker OneOpen Energy core ontology. Prefixes are defined in the <a href="../glossary/#term-JavaScript-Object-Notation-for-Linked-Data">JSON-LD</a> <code>@context</code> object 
+as in the example above.</p>
 <h2 id="mandatory-data-content-metadata-fields">Mandatory data content metadata fields</h2>
-<table>
-<thead>
-<tr>
-<th colspan="1" rowspan="1">
-<p>Key</p>
-</th>
-<th colspan="1" rowspan="1">
-<p>Value</p>
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td colspan="1" rowspan="1">
-<p><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/title/">dct:title</a></p>
-</td>
-<td colspan="1" rowspan="1">
-<p>Short title for this data set</p>
-</td>
-</tr>
-<tr>
-<td colspan="1" rowspan="1">
-<p><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/description/">dct:description</a>
-</p>
-</td>
-<td colspan="1" rowspan="1">
-<p>Longer form description of this data set. This is used in combination with the title and tags when people
-search for data sets, so aim to include probable search words in the description.</p>
-</td>
-</tr>
-<tr>
-<td colspan="1" rowspan="1">
-<p><a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version">dcat:version</a></p>
-</td>
-<td colspan="1" rowspan="1">
-<p>Version number of the data set, this should preferably follow <a href="https://semver.org/">semantic versioning</a> if
-possible. Versioning of the data set should be used to indicate changes in delivery mechanism, or in
-representation, rather than for changes in the underlying data. For example, this should not be used to
-differentiate between data sets from different years, rather it should be used to indicate whether a
-potential data consumer might need to alter how it processes any returned data.</p>
-</td>
-</tr>
-<tr>
-<td colspan="1" rowspan="1">
-<p><a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version_notes">dcat:versionNotes</a></p>
-</td>
-<td colspan="1" rowspan="1">
-<p>Notes used to explain any changes to this version</p>
-</td>
-</tr>
-<tr>
-<td colspan="1" rowspan="1">
-<p><code>ib1:sensitivityClass</code></p>
-</td>
-<td colspan="1" rowspan="1">
-<p>The <a href="../glossary/#term-Data-sensitivity-class">data sensitivity class</a> of this data set. In the current IB1
-Trust Framework system this should always be one of <a href="../glossary/#term-Data-sensitivity-class-open">IB1-O</a>,
-<a href="../glossary/#term-Data-sensitivity-class-shared-A">IB1-SA</a>, or
-<a href="../glossary/#term-Data-sensitivity-class-shared-B">IB!-SB</a>, no other classes are permitted. The value of
-this property also determines the level of <a href="../glossary/#term-Application-programming-interface">API</a>
-security imposed, with <a href="../glossary/#term-Data-sensitivity-class-open">IB1-O</a> data sets being open data with
-no additional security, and the two shared data classes mandating
-<a href="../glossary/#term-Financial-Grade-API">FAPI</a> security using the IB1 Trust Framework services.</p>
-</td>
-</tr>
-<tr>
-<td colspan="1" rowspan="1">
-<p><code>ib1:dataSetStableIdentifier</code></p>
-</td>
-<td colspan="1" rowspan="1">
-<p>An identifier, unique to this <a href="../glossary/#term-Data-Provider">Data Provider</a>, which will not be changed,
-and which will be used along with the data provider’s own ID to create a unique identifier for this data
-set within <a href="https://opennetzero.org">Open Net Zero</a></p>
-</td>
-</tr>
-</tbody>
-</table>
+<pre class="grid-table-error">+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+| Key                                                                                                     | Value                                                                                                       |
++=========================================================================================================+=============================================================================================================+
+| <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/title/">dct:title</a>              | Short title for this data set                                                                               |
++---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+| <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/description/">dct:description</a>  | Longer form description of this data set. This is used in combination with the title and tags when people   |
+|                                                                                                         | search for data sets, so aim to include probable search words in the description.                           |
++---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+| <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version">dcat:version</a>                           | Version number of the data set, this should preferably follow <a href="https://semver.org/">semantic versioning</a> if |
+|                                                                                                         | possible. Versioning of the data set should be used to indicate changes in delivery mechanism, or in        |
+|                                                                                                         | representation, rather than for changes in the underlying data. For example, this should not be used to     |
+|                                                                                                         | differentiate between data sets from different years, rather it should be used to indicate whether a        |
+|                                                                                                         | potential data consumer might need to alter how it processes any returned data.                             |
++---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+| <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version_notes">dcat:versionNotes</a>                | Notes used to explain any changes to this version                                                           |
++---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+| <code>ib1oe:sensitivityClass</code>                                                                                   | The <a href="../glossary/#term-Data-sensitivity-class">data sensitivity class</a> of this data set. In the current IB1 Open |
+|                                                                                                         | Trust FrameworkEnergy system this should always be one of <a href="../glossary/#term-Data-sensitivity-class-open">IB1OE-O</a>,            |
+|                                                                                                         | <a href="../glossary/#term-Data-sensitivity-class-shared-A">IB1OE-SA</a>, or                                               |
+|                                                                                                         | <a href="../glossary/#term-Data-sensitivity-class-shared-B">IB!OE-SB</a>, no other classes are permitted. The value of     |
+|                                                                                                         | this property also determines the level of <a href="../glossary/#term-Application-programming-interface">API</a>        |
+|                                                                                                         | security imposed, with <a href="../glossary/#term-Data-sensitivity-class-open">IB1OE-O</a> data sets being open data with  |
+|                                                                                                         | no additional security, and the two shared data classes mandating                                           |
+|                                                                                                         | <a href="../glossary/#term-Financial-Grade-API">FAPI</a> security using the IB1 Trust FrameworkOpen Energy trust services.                 |
++---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+| <code>ib1oe:dataSetStableIdentifier</code>                                                                            | An identifier, unique to this <a href="../glossary/#term-Data-Provider">Data Provider</a>, which will not be changed,   |
+|                                                                                                         | and which will be used along with the data provider’s own ID to create a unique identifier for this data    |
+|                                                                                                         | set within <a href="https://opennetzero.org">the Open Net Zero</a>Energy search system.                                                                   |
++---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+</pre>
 <h3 id="additional-metadata">Additional metadata</h3>
-<p>The information above is the minimum needed to ensure that a data set is visible in <a href="https://opennetzero.org">Open Net Zero</a>. There are, however, other properties of a data set which may be useful to potential data consumers. Where such information can be provided, it should be provided in as standard a form as possible - in practice this translates to making use of existing ontologies such as DCAT and Dublin Core by preference, then shared, industry-specific, ontologies, and only using internal or custom representation when absolutely necessary.</p>
-<p>Of particular note, and something we would like to ultimately expose in Open Net Zero, is information about the geospatial and temporal ranges of entries within a data set. This is a complex subject, but one that has already been handled by DCAT. If you need to express this kind of information, please do so according to the standards laid out <a href="https://www.w3.org/TR/vocab-dcat-2/#time-and-space">here</a>.</p>
+<p>The information above is the minimum needed to ensure that a data set is visible in <a href="https://opennetzero.org">the Open Net Zero</a>Energy search system. There 
+are, however, other properties of a data set which may be useful to potential data consumers. Where such information can 
+be provided, it should be provided in as standard a form as possible - in practice this translates to making use of 
+existing ontologies such as DCAT and Dublin Core by preference, then shared, industry-specific, ontologies, and only 
+using internal or custom representation when absolutely necessary.</p>
+<p>Of particular note, and something we would like to ultimately expose in Open Net Zeroour search interface, is information about the 
+geospatial and temporal ranges of entries within a data set. This is a complex subject, but one that has already been 
+handled by DCAT. If you need to express this kind of information, please do so according to the standards laid out 
+<a href="https://www.w3.org/TR/vocab-dcat-2/#time-and-space">here</a>.</p>
 <p>We encourage use of the <code>dcat:keyword</code> list for data sets. These translate to “tags” in our web interface and are useful to group data sets around specific topics.</p>
 <pre><code class="language-yaml">dcat:keyword:
   - solar
@@ -787,35 +746,41 @@ set within <a href="https://opennetzero.org">Open Net Zero</a></p>
   - retrofit
 </code></pre>
 <h2 id="access-block">Access Block</h2>
-<p>This section describes the kinds of licensing, expressed as sets of capabilities, and what, if any, conditions must be satisfied before a <a href="../glossary/#term-Data-Consumer">data consumer</a> can acquire these data.</p>
+<p>This section describes the kinds of licensing, expressed as sets of capabilities, and what, if any, conditions must be 
+satisfied before a <a href="../glossary/#term-Data-Consumer">data consumer</a> can acquire these data.</p>
 <p>Each item within this section contains:</p>
 <ol>
 <li>
-<p>A statement describing a set of conditions which must be satisfied to grant access, and the set of capabilities granted should access be provided by this set of conditions. The exact specification for these statements can be
+<p>A statement describing a set of conditions which must be satisfied to grant access, and the set of capabilities 
+granted should access be provided by this set of conditions. The exact specification for these statements can be
 found at <a href="../access_control_specification/#access-control-and-capability-grant-language">Access Control and Capability Grant Language</a></p>
 </li>
 <li>
-<p>A boolean property indicating whether the access conditions in [1] are sufficient (<code>true</code>), or simply indicative (<code>false</code>). In the former case, a <a href="../glossary/#term-Data-Consumer">data consumer</a> which satisfies all the conditions <em>will</em> be granted access, in the latter they <em>may</em> be granted access, but there may be additional requirements not fully described here</p>
+<p>A boolean property indicating whether the access conditions in [1] are sufficient (<code>true</code>), or simply indicative 
+(<code>false</code>). In the former case, a <a href="../glossary/#term-Data-Consumer">data consumer</a> which satisfies all the conditions <em>will</em> be granted access, 
+in the latter they <em>may</em> be granted access, but there may be additional requirements not fully described here</p>
 </li>
 <li>
-<p>A pair of dates indicating the time range for which this access condition is valid. Data providers are encouraged to commit to access and license conditions with a reasonable timeframe to allow potential consumers to plan their own
+<p>A pair of dates indicating the time range for which this access condition is valid. Data providers are encouraged to 
+commit to access and license conditions with a reasonable timeframe to allow potential consumers to plan their own
 activities</p>
 </li>
 </ol>
 <pre><code class="language-yaml">access:
   # Access constraint to licensing predicates
-  - rule: ib1:verified, ib1:last_update max_age_days 60 grants ib1:use_any
+  - rule: ib1oe:verified, ib1oe:last_update max_age_days 60 grants ib1oe:use_any
     sufficient: true
-    appliesFrom: 2023-04-22
-    appliesTo: 2024-04-22
-  - rule: group:some_group grants ib1:use_any, ib1:adapt_any
+    appliesFrom: 20231-04-22
+    appliesTo: 20242-04-22
+  - rule: group:some_group grants ib1oe:use_any, ib1oe:adapt_any
     sufficient: false
-    appliesFrom: 2023-04-22
-    appliesTo: 2024-04-22
+    appliesFrom: 20231-04-22
+    appliesTo: 20242-04-22
 </code></pre>
 <h2 id="transport-block">Transport Block</h2>
-<p>This section describes the on the wire transport protocol, normally HTTP, but with scope to describe out-of-band transports with an initial HTTP negotiation process. It contains at least a single <code>http</code> key, the value of which
-must be valid <a href="https://swagger.io/specification/">OpenAPI</a> </p>
+<p>This section describes the on the wire transport protocol, normally HTTP, but with scope to describe out-of-band 
+transports with an initial HTTP negotiation process. It contains at least a single <code>http</code> key, the value of which
+must be valid <a href="https://swagger.io/specification/">Open|API|</a> </p>
 <p>For example:</p>
 <pre><code class="language-yaml">transport:
   http:
@@ -823,7 +788,7 @@ must be valid <a href="https://swagger.io/specification/">OpenAPI</a> </p>
     # HTTP endpoints (depending on data class)
     openapi: 3.0.0
     info:
-      title: Sample API
+      title: Sample |API|
       description: CSV format data
       version: 0.1.0
     servers:
@@ -838,16 +803,24 @@ must be valid <a href="https://swagger.io/specification/">OpenAPI</a> </p>
             '200':
               description: CSV data stream
 </code></pre>
-<p><strong>NOTE</strong>: Because <a href="../glossary/#term-Application-programming-interface">API</a> security is defined in relation to the data sensitivity class of the data set, it is not necessary to define the security of any presented <a href="../glossary/#term-Application-programming-interface">API</a> in this section. Data sets in class <a href="../glossary/#term-Data-sensitivity-class-open">IB1-O</a> must expose an <a href="../glossary/#term-Application-programming-interface">API</a> with no extra
-security measures, and those in <a href="../glossary/#term-Data-sensitivity-class-shared-A">IB1-SA</a> and <a href="../glossary/#term-Data-sensitivity-class-shared-B">IB1-SB</a> must be secured by <a href="../glossary/#term-Financial-Grade-API">FAPI</a> using the Ib1 Trust Framework services.</p>
+<p><strong>NOTE</strong>: Because <a href="../glossary/#term-Application-programming-interface">API</a> security is defined in relation to the data sensitivity class of the data set, it is not necessary to 
+define the security of any presented <a href="../glossary/#term-Application-programming-interface">API</a> in this section. Data sets in class <a href="../glossary/#term-Data-sensitivity-class-open">IB1OE-O</a> must expose an <a href="../glossary/#term-Application-programming-interface">API</a> with no extra
+security measures, and those in <a href="../glossary/#term-Data-sensitivity-class-shared-A">IB1OE-SA</a> and <a href="../glossary/#term-Data-sensitivity-class-shared-B">IB1OE-SB</a> must be secured by <a href="../glossary/#term-Financial-Grade-API">FAPI</a> using the Ib1 Trust FrameworkOpen Energy trust services.</p>
 <h3 id="heartbeat-url">Heartbeat URL</h3>
-<p>Data providers <strong>SHOULD</strong> create a secured endpoint to act as a heartbeat - if this is specifed then the <a href="../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> will periodically call it to assertain liveness and optionally gather metrics as described in<a href="../ops_guidelines/data_provider_ops_guidelines/#heartbeat-and-monitoring-endpoint">Heartbeat and monitoring endpoint</a></p>
-<p>A hearbeat URL can be specified as a single key <code>heartbeat_url</code> with the value being the fully qualified URL at which the hearbeat response is exposed.</p>
+<p>Data providers <strong>SHOULD</strong> create a secured endpoint to act as a heartbeat - if this is specifed then the <a href="../glossary/#term-Trust-FrameworkOpen-Energy-Governance-Service">TFOEGS</a> will 
+periodically call it to assertain liveness and optionally gather metrics as described in
+<a href="../ops_guidelines/data_provider_ops_guidelines/#heartbeat-and-monitoring-endpoint">Heartbeat and monitoring endpoint</a></p>
+<p>A hearbeat URL can be specified as a single key <code>heartbeat_url</code> with the value being the fully qualified URL at which 
+the hearbeat response is exposed.</p>
 <h2 id="representation-block">Representation Block</h2>
-<p>This section describes the format of any data received by a <a href="../glossary/#term-Data-Consumer">data consumer</a> from this data set. The IB1 Trust Framework does not mandate particular formats, so this section is guidance rather than specification.</p>
-<p>The only required element in this section is a key <code>mime</code> which should contain the <a href="https://en.wikipedia.org/wiki/Media_type">media type</a> of the returned data. At a bare minimum this allows a client to load data into some kind of tooling. Depending on this value, other objects may be present.</p>
+<p>This section describes the format of any data received by a <a href="../glossary/#term-Data-Consumer">data consumer</a> from this data set. The IB1 Trust FrameworkOpen Energy does 
+not mandate particular formats, so this section is guidance rather than specification.</p>
+<p>The only required element in this section is a key <code>mime</code> which should contain the 
+<a href="https://en.wikipedia.org/wiki/Media_type">media type</a> of the returned data. At a bare minimum this allows a client to 
+load data into some kind of tooling. Depending on this value, other objects may be present.</p>
 <h3 id="textcsv">text/csv</h3>
-<p>This type indicates that data is presented in CSV format. In this case, an optional key <code>csvw</code> may be defined, and should contain valid <a href="../glossary/#term-JavaScript-Object-Notation-for-Linked-Data">JSON-LD</a> following the <a href="https://www.w3.org/TR/tabular-data-primer/">CSV for the Web</a> guidelines:</p>
+<p>This type indicates that data is presented in CSV format. In this case, an optional key <code>csvw</code> may be defined, and 
+should contain valid <a href="../glossary/#term-JavaScript-Object-Notation-for-Linked-Data">JSON-LD</a> following the <a href="https://www.w3.org/TR/tabular-data-primer/">CSV for the Web</a> guidelines:</p>
 <pre><code class="language-yaml">representation:
   mime: text/csv
   csvw:
@@ -864,32 +837,35 @@ security measures, and those in <a href="../glossary/#term-Data-sensitivity-clas
         - titles: longitude
 </code></pre>
 <h3 id="other-types">Other types</h3>
-<p>This is currently open for consultation, we would like to be able to guide data providers towards particular representation types for particular kinds of information, and make use of any existing ontologies or standards such as
-the <a href="https://en.wikipedia.org/wiki/Common_Information_Model_(electricity)">Common Information Model</a> where such standards will aid interoperability between IB1 Trust Framework participants and the wider community.</p>
+<p>This is currently open for consultation, we would like to be able to guide data providers towards particular 
+representation types for particular kinds of information, and make use of any existing ontologies or standards such as
+the <a href="https://en.wikipedia.org/wiki/Common_Information_Model_(electricity)">Common Information Model</a> where such 
+standards will aid interoperability between IB1 Trust FrameworkOpen Energy participants and the wider community.</p>
 <h2 id="full-example">Full Example</h2>
-<p>Putting together all the fragments from previous sections produces the following - this represents a single data set, in the full metadata file this would be contained within a list. <a href="../glossary/#term-YAML-Ain-t-Markup-Language">YAML</a> form:</p>
+<p>Putting together all the fragments from previous sections produces the following - this represents a single data set, 
+in the full metadata file this would be contained within a list. <a href="../glossary/#term-YAML-Ain-t-Markup-Language">YAML</a> form:</p>
 <pre><code class="language-yaml">- content:
     &quot;@type&quot;: &quot;dcat:Dataset&quot;
     &quot;@context&quot;:
       dcat: http://www.w3.org/ns/dcat#
       dct: http://purl.org/dc/terms/
-      ib1: http://icebreakerone.org/ib1/terms/
+      ib1oe: http://icebreakerone.org/ib1energydata.org.uk/oe/terms/
     dct:title: My amazing data set
     dct:description: This is a free text description of the data set
     dcat:version: 0.1.2
     dcat:versionNotes: This is a note on this particular version of the dataset
-    ib1:sensitivityClass: IB1-SA
-    ib1:dataSetStableIdentifier: myData
+    ib1oe:sensitivityClass: IB1OE-SA
+    ib1oe:dataSetStableIdentifier: myData
   access:
     # Access constraint to licensing predicates
-    - rule: ib1:verified, ib1:last_update max_age_days 60 grants ib1:use_any
+    - rule: ib1oe:verified, ib1oe:last_update max_age_days 60 grants ib1oe:use_any
       sufficient: true
-      appliesFrom: 2023-04-22
-      appliesTo: 2024-04-22
-    - rule: group:some_group grants ib1:use_any, ib1:adapt_any
+      appliesFrom: 20231-04-22
+      appliesTo: 20242-04-22
+    - rule: group:some_group grants ib1oe:use_any, ib1oe:adapt_any
       sufficient: false
-      appliesFrom: 2023-04-22
-      appliesTo: 2024-04-22
+      appliesFrom: 20231-04-22
+      appliesTo: 20242-04-22
   transport:
     http:
       # This block is mandatory, and contains the Open|API| spec for the secured or open
@@ -933,34 +909,34 @@ the <a href="https://en.wikipedia.org/wiki/Common_Information_Model_(electricity
       &quot;@context&quot;: {
         &quot;dcat&quot;: &quot;http://www.w3.org/ns/dcat#&quot;,
         &quot;dct&quot;: &quot;http://purl.org/dc/terms/&quot;,
-        &quot;ib1&quot;: &quot;http://icebreakerone.org/ib1/terms/&quot;
+        &quot;ib1oe&quot;: &quot;http://icebreakerone.org/ib1energydata.org.uk/oe/terms/&quot;
       },
       &quot;dct:title&quot;: &quot;My amazing data set&quot;,
       &quot;dct:description&quot;: &quot;This is a free text description of the data set&quot;,
       &quot;dcat:version&quot;: &quot;0.1.2&quot;,
       &quot;dcat:versionNotes&quot;: &quot;This is a note on this particular version of the dataset&quot;,
-      &quot;ib1:sensitivityClass&quot;: &quot;IB1-SA&quot;,
-      &quot;ib1:dataSetStableIdentifier&quot;: &quot;myData&quot;
+      &quot;ib1oe:sensitivityClass&quot;: &quot;IB1|OE-SA|&quot;,
+      &quot;ib1oe:dataSetStableIdentifier&quot;: &quot;myData&quot;
     },
     &quot;access&quot;: [
       {
-        &quot;rule&quot;: &quot;ib1:verified, ib1:last_update max_age_days 60 grants ib1:use_any&quot;,
+        &quot;rule&quot;: &quot;ib1oe:verified, ib1oe:last_update max_age_days 60 grants ib1oe:use_any&quot;,
         &quot;sufficient&quot;: true,
-        &quot;appliesFrom&quot;: &quot;2023-04-22T00:00:00.000Z&quot;,
-        &quot;appliesTo&quot;: &quot;2024-04-22T00:00:00.000Z&quot;
+        &quot;appliesFrom&quot;: &quot;20231-04-22T00:00:00.000Z&quot;,
+        &quot;appliesTo&quot;: &quot;20242-04-22T00:00:00.000Z&quot;
       },
       {
-        &quot;rule&quot;: &quot;group:some_group grants ib1:use_any, ib1:adapt_any&quot;,
+        &quot;rule&quot;: &quot;group:some_group grants ib1oe:use_any, ib1oe:adapt_any&quot;,
         &quot;sufficient&quot;: false,
-        &quot;appliesFrom&quot;: &quot;2023-04-22T00:00:00.000Z&quot;,
-        &quot;appliesTo&quot;: &quot;2024-04-22T00:00:00.000Z&quot;
+        &quot;appliesFrom&quot;: &quot;20231-04-22T00:00:00.000Z&quot;,
+        &quot;appliesTo&quot;: &quot;20242-04-22T00:00:00.000Z&quot;
       }
     ],
     &quot;transport&quot;: {
       &quot;http&quot;: {
         &quot;openapi&quot;: &quot;3.0.0&quot;,
         &quot;info&quot;: {
-          &quot;title&quot;: &quot;Sample API&quot;,
+          &quot;title&quot;: &quot;Sample |API|&quot;,
           &quot;description&quot;: &quot;CSV format data&quot;,
           &quot;version&quot;: &quot;0.1.0&quot;
         },
@@ -1019,6 +995,9 @@ the <a href="https://en.wikipedia.org/wiki/Common_Information_Model_(electricity
   }
 ]
 </code></pre>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE3Njg0MTMzMjZdfQ==
+-->
 
 
 
@@ -1095,9 +1074,29 @@ the <a href="https://en.wikipedia.org/wiki/Common_Information_Model_(electricity
     <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
+  
       <script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
       
     
+
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["disableCookies"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stats.openenergy.org.uk/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '9']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
     
   </body>
 </html>
