@@ -17,7 +17,7 @@ MarkupSafe==2.1.2
 mergedeep==1.3.4
 mike @ git+https://github.com/jimporter/mike@master
 mkdocs==1.4.2
-mkdocs-material==9.1.8
+mkdocs-material @ git+https://github.com/icebreakerone/mkdocs-material@master
 mkdocs-material-extensions==1.1.1
 packaging==23.1
 Pillow==9.5.0

@@ -2,7 +2,7 @@ site_name: Icebreaker One Trust Framework Documentation
 site_url: https://docs.icebreakerone.org
 repo_url: https://github.com/icebreakerone/ib1-technical-docs
 nav:
-  - 'Introduction to the IB1 Trust framework': 'ops_guidelines/introduction.md'
+  - 'Introduction to the IB1 Trust Framework': 'ops_guidelines/introduction.md'
   - 'Considerations before you start': 'ops_guidelines/before_starting.md'
   - 'Core Policies': 'ops_guidelines/common_policies.md'
   - 'Guidance for Data Consumers': 'ops_guidelines/data_consumer_ops_guidelines.md'
@@ -50,4 +50,5 @@ plugins:
         fill: "#0D1C22" 
         text: "#FFFFFF"
   - mike:
-      redirect_template: "mike/redirect.html"
+      alias_type: redirect
+      redirect_template: "./mike/redirect.html"

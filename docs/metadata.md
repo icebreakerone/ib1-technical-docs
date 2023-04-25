@@ -92,7 +92,7 @@ as in the example above.
 |                                                                                                         | no additional security, and the two shared data classes mandating                                           |
 |                                                                                                         | [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.                        |
 +---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| `ib1:dataSetStableIdentifier`                                                                            | An identifier, unique to this [Data Provider](glossary.md#term-Data-Provider), which will not be changed,  |
+| `ib1:dataSetStableIdentifier`                                                                           | An identifier, unique to this [Data Provider](glossary.md#term-Data-Provider), which will not be changed,   |
 |                                                                                                         | and which will be used along with the data provider’s own ID to create a unique identifier for this data    |
 |                                                                                                         | set within [the Open Net Zero](https://opennetzero.org)                                                     |
 +---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
