@@ -1,0 +1,1116 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.icebreakerone.org/0.1/ops_guidelines/introduction/">
+      
+      
+      
+        <link rel="next" href="../before_starting/">
+      
+      <link rel="icon" href="../../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8">
+    
+    
+      
+        <title>Introduction to the IB1 Trust Framework - Icebreaker One Trust Framework Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ded33207.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Introduction to the IB1 Trust Framework - Icebreaker One Trust Framework Documentation" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="https://docs.icebreakerone.org/0.1/assets/images/social/ops_guidelines/introduction.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://docs.icebreakerone.org/0.1/ops_guidelines/introduction/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Introduction to the IB1 Trust Framework - Icebreaker One Trust Framework Documentation" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="https://docs.icebreakerone.org/0.1/assets/images/social/ops_guidelines/introduction.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="ib1-light" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction-to-the-icebreaker-one-trust-framework" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+  You're not viewing the latest version.
+  <a href="../../.."> 
+    <strong>Click here to go to latest.</strong>
+  </a>
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),outdated=__md_get("__outdated",sessionStorage);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Icebreaker One Trust Framework Documentation" class="md-header__button md-logo" aria-label="Icebreaker One Trust Framework Documentation" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Icebreaker One Trust Framework Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Introduction to the IB1 Trust Framework
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="ib1-light" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="ib1-dark" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/icebreakerone/ib1-technical-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Icebreaker One Trust Framework Documentation" class="md-nav__button md-logo" aria-label="Icebreaker One Trust Framework Documentation" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Icebreaker One Trust Framework Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/icebreakerone/ib1-technical-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Introduction to the IB1 Trust Framework
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Introduction to the IB1 Trust Framework
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview-and-purpose-of-the-guidelines" class="md-nav__link">
+    Overview and purpose of the guidelines
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-icebreaker-one-trust-framework-how-was-it-made-and-who-is-it-for" class="md-nav__link">
+    What is the Icebreaker One Trust Framework, how was it made and who is it for?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-is-the-ib1-trust-framework-structured" class="md-nav__link">
+    How is the IB1 Trust Framework Structured?
+  </a>
+  
+    <nav class="md-nav" aria-label="How is the IB1 Trust Framework Structured?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataset-search" class="md-nav__link">
+    Dataset Search
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#governance-service" class="md-nav__link">
+    Governance Service
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-governance" class="md-nav__link">
+    Project Governance
+  </a>
+  
+    <nav class="md-nav" aria-label="Project Governance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steering-group" class="md-nav__link">
+    Steering Group
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-needs-materiality-impact-advisory-group" class="md-nav__link">
+    User Needs,  Materiality, Impact Advisory Group
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-infrastructure-advisory-group" class="md-nav__link">
+    Technical infrastructure Advisory Group
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-licensing-legal" class="md-nav__link">
+    Data Licensing &amp; Legal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#engagement-communications" class="md-nav__link">
+    Engagement &amp; Communications
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#policy" class="md-nav__link">
+    Policy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-makeup" class="md-nav__link">
+    Group makeup
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-data-can-be-found-and-used-through-open-net-zero" class="md-nav__link">
+    What data can be found and used through Open Net Zero?
+  </a>
+  
+    <nav class="md-nav" aria-label="What data can be found and used through Open Net Zero?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-data" class="md-nav__link">
+    Open data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shared-data" class="md-nav__link">
+    Shared data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#closed-data" class="md-nav__link">
+    Closed data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-role-does-your-organisation-play-in-the-ib1-trust-framework" class="md-nav__link">
+    What role does your organisation play in the IB1 Trust Framework?
+  </a>
+  
+    <nav class="md-nav" aria-label="What role does your organisation play in the IB1 Trust Framework?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-providers" class="md-nav__link">
+    Data Providers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-consumers" class="md-nav__link">
+    Data Consumers
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Consumers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#service-providers" class="md-nav__link">
+    Service Providers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dual-roles" class="md-nav__link">
+    Dual Roles
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-dataset-access-and-licensing-operate-under-the-trust-framework" class="md-nav__link">
+    How does dataset access and licensing operate under the Trust Framework?
+  </a>
+  
+    <nav class="md-nav" aria-label="How does dataset access and licensing operate under the Trust Framework?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-access-conditions" class="md-nav__link">
+    Types of Access Conditions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-access-rules-introduction" class="md-nav__link">
+    Creating Access Rules (Introduction)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-licensing-introduction" class="md-nav__link">
+    Data Licensing (Introduction)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#future-development-of-the-guidelines" class="md-nav__link">
+    Future development of the guidelines
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../before_starting/" class="md-nav__link">
+        Considerations before you start
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common_policies/" class="md-nav__link">
+        Core Policies
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_consumer_ops_guidelines/" class="md-nav__link">
+        Guidance for Data Consumers
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_provider_ops_guidelines/" class="md-nav__link">
+        Guidance for Data Providers
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../technical_common/" class="md-nav__link">
+        Common Security Requirements
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/" class="md-nav__link">
+        Trust Framework Architecture
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metadata/" class="md-nav__link">
+        Dataset Metadata
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../access_control_specification/" class="md-nav__link">
+        Access Control and Capability Grant Language
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        Glossary
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additional_material/" class="md-nav__link">
+        Additional Material
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview-and-purpose-of-the-guidelines" class="md-nav__link">
+    Overview and purpose of the guidelines
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-icebreaker-one-trust-framework-how-was-it-made-and-who-is-it-for" class="md-nav__link">
+    What is the Icebreaker One Trust Framework, how was it made and who is it for?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-is-the-ib1-trust-framework-structured" class="md-nav__link">
+    How is the IB1 Trust Framework Structured?
+  </a>
+  
+    <nav class="md-nav" aria-label="How is the IB1 Trust Framework Structured?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataset-search" class="md-nav__link">
+    Dataset Search
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#governance-service" class="md-nav__link">
+    Governance Service
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-governance" class="md-nav__link">
+    Project Governance
+  </a>
+  
+    <nav class="md-nav" aria-label="Project Governance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steering-group" class="md-nav__link">
+    Steering Group
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-needs-materiality-impact-advisory-group" class="md-nav__link">
+    User Needs,  Materiality, Impact Advisory Group
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-infrastructure-advisory-group" class="md-nav__link">
+    Technical infrastructure Advisory Group
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-licensing-legal" class="md-nav__link">
+    Data Licensing &amp; Legal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#engagement-communications" class="md-nav__link">
+    Engagement &amp; Communications
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#policy" class="md-nav__link">
+    Policy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-makeup" class="md-nav__link">
+    Group makeup
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-data-can-be-found-and-used-through-open-net-zero" class="md-nav__link">
+    What data can be found and used through Open Net Zero?
+  </a>
+  
+    <nav class="md-nav" aria-label="What data can be found and used through Open Net Zero?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-data" class="md-nav__link">
+    Open data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shared-data" class="md-nav__link">
+    Shared data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#closed-data" class="md-nav__link">
+    Closed data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-role-does-your-organisation-play-in-the-ib1-trust-framework" class="md-nav__link">
+    What role does your organisation play in the IB1 Trust Framework?
+  </a>
+  
+    <nav class="md-nav" aria-label="What role does your organisation play in the IB1 Trust Framework?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-providers" class="md-nav__link">
+    Data Providers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-consumers" class="md-nav__link">
+    Data Consumers
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Consumers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#service-providers" class="md-nav__link">
+    Service Providers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dual-roles" class="md-nav__link">
+    Dual Roles
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-dataset-access-and-licensing-operate-under-the-trust-framework" class="md-nav__link">
+    How does dataset access and licensing operate under the Trust Framework?
+  </a>
+  
+    <nav class="md-nav" aria-label="How does dataset access and licensing operate under the Trust Framework?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-access-conditions" class="md-nav__link">
+    Types of Access Conditions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-access-rules-introduction" class="md-nav__link">
+    Creating Access Rules (Introduction)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-licensing-introduction" class="md-nav__link">
+    Data Licensing (Introduction)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#future-development-of-the-guidelines" class="md-nav__link">
+    Future development of the guidelines
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="introduction-to-the-icebreaker-one-trust-framework">Introduction to the Icebreaker One Trust Framework</h1>
+<h2 id="overview-and-purpose-of-the-guidelines">Overview and purpose of the guidelines</h2>
+<p>These operational guidelines aim to provide practical advice to all types of actors participating in the Icebreaker One (IB1) Trust Framework ecosystem. The guidelines are supplemented by links to more detailed technical and membership documentation.</p>
+<p>Overarching aims of these operational guidelines:</p>
+<ul>
+<li>
+<p>To deliver a safe and effective Trust Framework ecosystem that meets the needs of members and supports the broader
+sector transition to Net Zero by enabling better discovery and sharing of data via a robust trust framework.</p>
+</li>
+<li>
+<p>To support the operational requirements of <a href="../../glossary/#term-Data-Provider">Data Providers</a> and <a href="../../glossary/#term-Data-Consumer">Data Consumers</a>, stimulating an active data sharing ecosystem. This includes ensuring that all members understand the sensitivity classes, access, and licensing models
+for data shared in the ecosystem, and are incentivised towards transparency and interoperability.</p>
+</li>
+<li>
+<p>To ensure positive member experiences that demonstrate the <a href="https://icebreakerone.org/icebreaker-principles/">Icebreaker Principles</a> and encourage them to continue participating in the ecosystem.</p>
+</li>
+<li>
+<p>To minimise potential costs associated with insufficient <a href="../../glossary/#term-Application-programming-interface">API</a> or other technical system testing, downtime, or other common faults.</p>
+</li>
+<li>
+<p>To reduce any reputational risks associated with individual members, incorrect application of core policies, or the Icebreaker One ecosystem as a whole.</p>
+</li>
+</ul>
+<p>These guidelines are structured in six sections, outlining:</p>
+<p>Introduction (this section): background to the IB1 Trust Framework project, clarifications of the roles and responsibilities of different types of actors operating in the Trust Framework ecosystem.</p>
+<p><a href="../../glossary/">Glossary</a>: definitions of common acronyms, terminology, and technical tools used in the Trust Framework documentation.</p>
+<p><a href="../before_starting/#considerations-before-you-start">Considerations Before You Start</a>: ‘at a glance’ list of items that all types of new members will need
+to consider in order to meet operational requirements.</p>
+<p><a href="../common_policies/#core-policies">Core Policies</a>: operational principles and policies central to Trust Framework function. Includes policies governing data sensitivity classification, access controls, and licensing.</p>
+<p><a href="../data_consumer_ops_guidelines/#guidance-for-data-consumers">Guidance for Data Consumers</a> and <a href="../data_provider_ops_guidelines/#guidance-for-data-providers">Guidance for Data Providers</a>: guidelines outlining how <a href="../../glossary/#term-Data-Provider">Data Providers</a> can share data safely and securely via the Trust Framework while retaining strong control, provide appropriate and timely metadata, and design safe and effective <a href="../../glossary/#term-Application-programming-interface">APIs</a> enabling data-sharing. Guidelines outlining how <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> can meet the requirements for offering data services, access and licensing conditions for different data classes, and best practice with regards to testing, security, ethics and dispute management.</p>
+<p><a href="../../additional_material/#additional-material">Additional Material</a>: links to other relevant documentation (e.g. technical, legal, etc.) sitting outside the operational guidelines.</p>
+<p><strong>Disclaimer</strong>: The contents of the Operational Guidelines do not constitute legal advice. While they have been drafted with regard to relevant regulatory provisions and best practice, they are not a complete list of the regulatory or legal obligations that apply to members and users of the IB1 Trust Framework. Although intended to be consistent with relevant regulations and laws, in the event of any conflict, those regulations and laws will take priority.</p>
+<p>Participants are responsible for their own compliance with all applicable regulations and laws, including but not limited to: data protection and privacy, consumer protection laws, and energy sector licences and codes (where applicable). The IB1 Trust Framework operational guidelines will be revised in future in accordance with further development of services offered in the ecosystem, or changes to the regulatory and policy environment in which it operates. Please ensure that you are referring to the most current version of the guidelines prior to reading.</p>
+<h2 id="what-is-the-icebreaker-one-trust-framework-how-was-it-made-and-who-is-it-for">What is the Icebreaker One Trust Framework, how was it made and who is it for?</h2>
+<p>The Icebreaker One (IB1) Trust Framework is an ambitious, non-profit project working with across industry, finance, government and regulators to modernise access to data and break down barriers to data sharing. The Trust Framework makes it easier to discover, share, access and use datasets, supporting the drive towards decarbonisation and its related social and economic benefits.</p>
+<p>The Trust Framework is a generalisation of the Open Energy project, which received initial development funding from the Modernising Energy Data Access competition, backed by the Office for Gas and Electricity Markets (Ofgem), the Department for Business, Energy and Industrial Strategy (<a href="../../glossary/#term-Department-for-Business-Energy-and-Industrial-Strategy">BEIS</a>), and <a href="https://www.gov.uk/government/organisations/innovate-uk">Innovate UK</a>. Open Energy in turn built on learning from Open Banking - identifying which elements are transferable to the energy sector, and which require adaptation or fresh thinking. </p>
+<p>Throughout this process, the Icebreaker One team has engaged in extensive consultation with all sectors involved, in order to ensure that the project meets the widest possible variety of needs. The ethos of the IB1 Trust Framework will remain grounded in sector engagement and a collaborative approach as the project moves forward.</p>
+<p>The IB1 Trust Framework aims to serve all actors across sectors who are looking to share data, access data, or both.  Membership is open to a wide range of organisations - from large corporations through to charities, researchers, or community groups. Both <a href="../../glossary/#term-Open-data">Open</a>: and <a href="../../glossary/#term-Shared-data">Shared Data</a> can flow within the Trust Framework.</p>
+<h2 id="how-is-the-ib1-trust-framework-structured">How is the IB1 Trust Framework Structured?</h2>
+<p>The IB1 Trust Framework consists of two core functions: dataset search and discovery, and the Trust Framework Governance Service (TFGS).</p>
+<p>These functions are described below.</p>
+<h3 id="dataset-search">Dataset Search</h3>
+<p>The IB1 Trust Framework’s first core function - <a href="https://opennetzero.org">Open Net Zero</a> - enables dataset search and discovery. Open Net Zero empowers users to find out what datasets exist and who owns/controls them. Search results also outline the <a href="../common_policies/#data-sensitivity-classes">sensitivity class</a>, <a href="../common_policies/#data-access-conditions">access rules</a>, and <a href="../common_policies/#data-licensing">capability grants</a> associated with a certain dataset, meaning that access and licensing details are transparent. This works through a search engine designed
+specifically to search for datasets, with options to search by different parameters in order to refine results.</p>
+<p>It can also be used to discover datasets adjacent to searches; helping users to build up a more rounded picture of the net-zero data landscape in their sphere of interest. Open Net Zero is free, available to all, and will remain so. Access pathways to Open and Shared data are described in the following section.</p>
+<p>Datasets provided by IB1 Trust Framework members (<a href="../../glossary/#term-Data-Provider">Data Providers</a>) and non-Trust Framework members (e.g. web scraped Open Data) may both be visible in Open Net Zero. Datasets provided by an IB1 Trust Framework member will be marked with a badge to indicate that the provenance of the dataset has been verified, uptime is monitored, documentation format is known, and users have a mechanism to provide feedback on the dataset if issues are detected. (Please note that this does not indicate that Icebreaker One has carried out further, more extensive checks on data quality within members’ datasets.)</p>
+<h3 id="governance-service">Governance Service</h3>
+<p>The  second core function - the Trust Framework Governance Service (<a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a>) - supports members to provide, share and access different classes of Shared data (see <a href="../common_policies/#data-sensitivity-classes">Data Sensitivity Classes</a>) on the basis of preemptive licensing (see <a href="../common_policies/#data-licensing">Data Licensing</a>). Shared Data accessed via the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> will be provided by Trust Framework members only (<a href="../../glossary/#term-Data-Provider">Data Providers</a>). The Governance Service aims to provide a secure, trusted mechanism to improve data sharing across the sector by reducing the time and financial costs currently associated with accessing Shared data.</p>
+<p>For providers of Shared data, the Governance Service offers a secure and effective way to list datasets and set appropriate access and licensing requirements. For actors wishing to access Shared data, the Governance
+Service provides a mechanism to reduce friction and bilateral contract negotiation, even when requesting access to multiple datasets from different providers.</p>
+<h3 id="project-governance">Project Governance</h3>
+<p>The IB1 Trust Framework, and Trust Frameworks that build upon it, have a Steering Group (SG) and five Advisory Groups (AGs). The latter may be combined into fewer groups that together cover the function of the five AGs.</p>
+<h4 id="steering-group">Steering Group</h4>
+<p>Provide governance, strategic and tactical leadership, and oversee market-wide communications. Appoint and direct Advisory Groups. Discuss, review and ratify plans.</p>
+<h4 id="user-needs-materiality-impact-advisory-group">User Needs,  Materiality, Impact Advisory Group</h4>
+<p>Explore, prioritise and work through <strong>use cases</strong> (identifying users, their needs, mapping the data value chain).</p>
+<p>Agree data needs that represent <strong>materiality</strong> of the challenge area that can be linked to <strong>market impact</strong>.</p>
+<p>Develop the <strong>business, value and impact cases</strong> for the programme and its impact on policy targets, businesses and financial instruments. Where relevant, identify relevant net zero <strong>reporting</strong> standards and frameworks.</p>
+<h4 id="technical-infrastructure-advisory-group">Technical infrastructure Advisory Group</h4>
+<p>Agree <strong>technical data and metadata standards</strong> for publishing data, including machine-readable standards and data access (e.g. APIs).</p>
+<p>Operational <strong>technical systems</strong> that enable data sharing (trust framework) and processing (e.g. calculation).</p>
+<h4 id="data-licensing-legal">Data Licensing &amp; Legal</h4>
+<p>Develop standard <strong>legal</strong> data licences that allow restricted data to flow securely across the market, with consent, in alignment with <a href="../common_policies/#Data-Sensitivity-Classes">Data Sensitivity Classes</a>.</p>
+<p>This includes key policies, such as conditions for participation, roles and responsibilities.</p>
+<p>Outputs of this group address the necessary licences and requirements for a functioning access control.</p>
+<h4 id="engagement-communications">Engagement &amp; Communications</h4>
+<p><strong>Convene</strong> and bring people together to ensure common understanding of what is being done, why and how.</p>
+<p>Address the user experience (whether business or consumer), signposting and addressing how to inspire behavioural change.</p>
+<p>Create <strong>awareness</strong>, <strong>engagement</strong> and <strong>impact</strong> with stakeholders.</p>
+<h4 id="policy">Policy</h4>
+<p>Address potential <strong>policy</strong> interventions.</p>
+<p>From a business perspective, this may include potential for corporate policy or changes in procurement.</p>
+<p>From a government perspective, this may include policy, regulatory or code-based interventions.</p>
+<h4 id="group-makeup">Group makeup</h4>
+<p>The membership of these groups is designed to represent a range of different types of organisations, and broader digital sector where relevant. Icebreaker One members can apply to join the Advisory and Steering Groups. However, membership of these groups will not be restricted to members only and non-members may be invited to join in order to balance representation. If you are interested in participating in future Icebreaker One governance mechanisms please contact <a href="mailto:info@icebreakerone.org">info@icebreakerone.org</a> TODO check this email.</p>
+<h2 id="what-data-can-be-found-and-used-through-open-net-zero">What data can be found and used through Open Net Zero?</h2>
+<p><a href="https://opennetzero.org">Open Net Zero</a> supports both Open and Shared datasets. Different classes of data, assessed by their levels of sensitivity, are described in <a href="../common_policies/#data-sensitivity-classes">Data Sensitivity Classes</a>.</p>
+<h3 id="open-data">Open data</h3>
+<p>Open data is defined as: ‘Data that anyone can use, for any purpose, for free and is accessible under an Open data licence’. Examples of open datasets include (non-exhaustive): Lower Super Output Layer <a href="../../glossary/#term-Identification">ID</a> (<a href="../../glossary/#term-Lower-Layer-Super-Output-Areas">LSOA</a>) data, Digest of <a href="../../glossary/#term-United-Kingdom">UK</a> Energy Statistics, and OpenStreetMap data.</p>
+<p>Open data is visible via Open Net Zero, which is free and open to all users. Open datasets provided by IB1 Trust Framework members (<a href="../../glossary/#term-Data-Provider">Data Providers</a>) and non-IB1 Trust Framework members will both be visible. There are no barriers to accessing Open data once it is discovered - users are directed to an appropriate <a href="../../glossary/#term-Uniform-Resource-Locator">URL</a> or <a href="../../glossary/#term-Application-programming-interface">API</a> to access the data themselves. Open data access is not moderated via the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> as no additional access controls are required.</p>
+<h3 id="shared-data">Shared data</h3>
+<p>Shared data is defined as: ‘Data that is neither open nor closed, but can be shared under specific terms and conditions.’ Examples of datasets currently licensed as Shared data include (non-exhaustive): primary substation capacity, network outage data, weather predictions, European space agency data, Electralink daily smart meter installations, certain geolocation information for energy assets and building typologies. As illustrated in these examples, Shared data is extremely diverse and can include datasets with a range of different commercial, personal and security sensitivity levels. To provide nuance in this area, Icebreaker One consultations have established a set of five data sensitivity classes, in which three classes describe separate categories of Shared data.</p>
+<p>Due to the sheer diversity of data types, the IB1 Trust Framework does not yet cover all Sensitivity Classes. At present, the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> can facilitate the sharing of non-personal Shared data classes only. This means that currently, sharing of non-aggregated personal data (including datasets using forms of anonymisation other than aggregation conforming to <a href="../../glossary/#term-Information-Commissioner-s-Office">ICO</a> / <a href="../../glossary/#term-Office-for-National-Statistics">ONS</a> best practice) is not permitted in the IB1 Trust Framework. Functionality to share personal data (class <a href="../../glossary/#term-Data-sensitivity-class-personal">IB1-SP</a>), and data that has been anonymised using techniques other than aggregation, are planned for the future subject to further consultation.</p>
+<p>The metadata and sensitivity class of Shared datasets are listed on Open Net Zero and are visible to any user. Shared datasets provided by IB1 Trust Framework members (<a href="../../glossary/#term-Data-Provider">Data Providers</a>) and non-members are both visible (where the latter are known), as described later in this section. Access to Shared datasets provided by IB1 Trust Framework members is moderated through the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a>, on the basis of preemptive licensing. Access to Shared data listed on the Search that is not provided by an IB1 Trust Framework member is not supported - users should contact the non-member organisation directly to arrange access.</p>
+<h3 id="closed-data">Closed data</h3>
+<p>Closed data is defined as: ‘Data that either cannot be shared or requires a per-use, custom licence negotiated on a case-by-case basis’. Under our current model, closed data is never suitable to share within the IB1 Trust Framework and is not visible through Open Net Zero. While we acknowledge industry feedback flagging potential value in using Open Net Zero infrastructure to privately share Closed data not listed in the Search or <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> Directory, this is not a focus of project development at this time. Any extensibility of this function in future will be subject to consultation.</p>
+<h2 id="what-role-does-your-organisation-play-in-the-ib1-trust-framework">What role does your organisation play in the IB1 Trust Framework?</h2>
+<p>Members of the Trust Framework have different roles: <a href="../../glossary/#term-Data-Provider">Data Providers</a>, <a href="../../glossary/#term-Data-Consumer">Data Consumers</a>, or both. This section outlines the meaning of the different roles and outlines their basic responsibilities.</p>
+<h3 id="data-providers"><a href="../../glossary/#term-Data-Provider">Data Providers</a></h3>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> are organisations that control datasets that they wish to make visible and/or accessible through the IB1 Trust Framework. <a href="../../glossary/#term-Data-Provider">Data Providers</a> can provide Open and/or Shared datasets. <a href="../../glossary/#term-Data-Provider">Data Providers</a> are responsible for: data sensitivity classification, creation of access rules, creation of capability grants, data provision, data integrity and correctness, metadata provision, and <a href="../../glossary/#term-Application-programming-interface">API</a> availability, stability and change management. Full guidance regarding <a href="../../glossary/#term-Data-Provider">Data Provider</a> responsibilities can be found in <a href="../data_provider_ops_guidelines/#guidance-for-data-providers">Guidance for Data Providers</a>.</p>
+<h3 id="data-consumers">Data Consumers</h3>
+<p><a href="../../glossary/#term-Data-Consumer">Data Consumers</a> are organisations that seek to find and access datasets through the Trust Framework Governance Service (TFGS). <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> can be established to serve internal organisational needs, to serve external customers, or both. <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> is a catch-all term referring to all parties accessing data via the <a href="../../glossary/#term-Open-Energy-Governance-Service">OEGS</a>. Full guidance can be found in <a href="../data_consumer_ops_guidelines/#guidance-for-data-consumers">Guidance for Data Consumers</a></p>
+<h4 id="service-providers">Service Providers</h4>
+<p><a href="../../glossary/#term-Data-Consumer">Data Consumers</a> who access data to serve external customers, potentially including customers outside the IB1 Trust Framework, are categorised as a specific type of <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> called a <a href="../../glossary/#term-Service-Provider">Service Provider</a>. See <a href="../data_consumer_ops_guidelines/#data-consumer-vs-service-provider">Data Consumer vs Service Provider</a>.</p>
+<h3 id="dual-roles">Dual Roles</h3>
+<p>Organisations wishing to both provide and access data through the IB1 Trust Framework are able to do so, so long as they fulfill the responsibilities of both roles. <a href="../../glossary/#term-Data-Provider">Data Providers</a> who do not want to register as <a href="../../glossary/#term-Data-Consumer">Data Consumers</a>, but who wish to access IB1 Trust Framework datasets, are able to do so by using the services of a Service Provider (a type of <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> in the IB1 Trust Framework that provides services to customers, potentially including non-Trust Framework members).</p>
+<h2 id="how-does-dataset-access-and-licensing-operate-under-the-trust-framework">How does dataset access and licensing operate under the Trust Framework?</h2>
+<p>Icebreaker One has consulted publicly and with industry on policies pertaining to: the types of conditions on which data access controls can be based, the process by which <a href="../../glossary/#term-Data-Provider">Data Providers</a> establish access rules for a dataset, and the model for associating access rules with the grant of particular capabilities and obligations (licensing model).
+These policies are outlined briefly below, and set out in full detail in Section 3 of the Operational Guidelines.</p>
+<h3 id="types-of-access-conditions">Types of Access Conditions</h3>
+<p>The IB1 Trust Framework defines a set of conditions which may be specified for <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> to meet in order to gain access to datasets in different sensitivity classes. These include, but are not limited to: payment, security compliance, regulatory compliance, standards compliance, group-based access, and use case-based access.</p>
+<h3 id="creating-access-rules-introduction">Creating Access Rules (Introduction)</h3>
+<p>To operationalise Data Access conditions above, the Trust Framework defines a system whereby access grants are determined, for each request to the <a href="../../glossary/#term-Application-programming-interface">API</a> of a <a href="../../glossary/#term-Data-Provider">Data Provider</a>, on the basis of a set of rules defined and published by that <a href="../../glossary/#term-Data-Provider">Data Provider</a> in the dataset metadata.</p>
+<h3 id="data-licensing-introduction">Data Licensing (Introduction)</h3>
+<p>A data licence is a legal instrument setting out what a <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> can do with a particular artefact (e.g.
+dataset). This grants certain ‘capabilities’ to the <a href="../../glossary/#term-Data-Consumer">Data Consumer</a>, comprising a clear expression of things they can do with the artefact. Capability grants are accompanied by any obligations that the <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> must abide by when exercising a capability. The capabilities and obligations associated with each <a href="../../glossary/#term-Application-programming-interface">API</a> call will be converted into a licence through the Trust Framework Governance Service (<a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a>).</p>
+<p>The IB1 Trust Framework operates through a range of standardised capability grants and obligations. Standardisation includes legal text, ‘human readable’ text and summary notation. <a href="../../glossary/#term-Data-Provider">Data Providers</a> must specify which capabilities and obligations are associated with each access rule, and publish this transparently in the dataset metadata.</p>
+<h2 id="future-development-of-the-guidelines">Future development of the guidelines</h2>
+<p>The guidelines are designed as an iterative document that will develop in accordance with future phases of the IB1 Trust Framework. If you have any suggestions regarding areas of the operational guidelines that could benefit from further development, please contact <a href="mailto:opennetzero@icebreakerone.org">opennetzero@icebreakerone.org</a> .</p>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTY0MTc0NTkyOCwxMTc1NDkxNjIxLDExMj
+gyODEyODBdfQ==
+-->
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+  
+      <script src="../../assets/javascripts/bundle.51198bba.min.js"></script>
+      
+    
+
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["disableCookies"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stats.openenergy.org.uk/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '9']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+  </body>
+</html>

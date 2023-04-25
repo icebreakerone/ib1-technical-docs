@@ -1,0 +1,1343 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.icebreakerone.org/0.1/access_control_specification/">
+      
+      
+        <link rel="prev" href="../metadata/">
+      
+      
+        <link rel="next" href="../glossary/">
+      
+      <link rel="icon" href="../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8">
+    
+    
+      
+        <title>Access Control and Capability Grant Language - Icebreaker One Trust Framework Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ded33207.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Access Control and Capability Grant Language - Icebreaker One Trust Framework Documentation" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="https://docs.icebreakerone.org/0.1/assets/images/social/access_control_specification.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://docs.icebreakerone.org/0.1/access_control_specification/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Access Control and Capability Grant Language - Icebreaker One Trust Framework Documentation" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="https://docs.icebreakerone.org/0.1/assets/images/social/access_control_specification.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="ib1-light" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#access-control-and-capability-grant-language" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+  You're not viewing the latest version.
+  <a href="../.."> 
+    <strong>Click here to go to latest.</strong>
+  </a>
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),outdated=__md_get("__outdated",sessionStorage);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Icebreaker One Trust Framework Documentation" class="md-header__button md-logo" aria-label="Icebreaker One Trust Framework Documentation" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Icebreaker One Trust Framework Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Access Control and Capability Grant Language
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="ib1-light" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="ib1-dark" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/icebreakerone/ib1-technical-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Icebreaker One Trust Framework Documentation" class="md-nav__button md-logo" aria-label="Icebreaker One Trust Framework Documentation" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Icebreaker One Trust Framework Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/icebreakerone/ib1-technical-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ops_guidelines/introduction/" class="md-nav__link">
+        Introduction to the IB1 Trust Framework
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ops_guidelines/before_starting/" class="md-nav__link">
+        Considerations before you start
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ops_guidelines/common_policies/" class="md-nav__link">
+        Core Policies
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ops_guidelines/data_consumer_ops_guidelines/" class="md-nav__link">
+        Guidance for Data Consumers
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ops_guidelines/data_provider_ops_guidelines/" class="md-nav__link">
+        Guidance for Data Providers
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ops_guidelines/technical_common/" class="md-nav__link">
+        Common Security Requirements
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/" class="md-nav__link">
+        Trust Framework Architecture
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metadata/" class="md-nav__link">
+        Dataset Metadata
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Access Control and Capability Grant Language
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Access Control and Capability Grant Language
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    Syntax
+  </a>
+  
+    <nav class="md-nav" aria-label="Syntax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#names" class="md-nav__link">
+    Names
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rule-syntax" class="md-nav__link">
+    Rule syntax
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditions" class="md-nav__link">
+    Conditions
+  </a>
+  
+    <nav class="md-nav" aria-label="Conditions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unary-clauses" class="md-nav__link">
+    Unary clauses
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binary-clauses" class="md-nav__link">
+    Binary clauses
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operators" class="md-nav__link">
+    Operators
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-conditions" class="md-nav__link">
+    Example conditions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-condition-clauses" class="md-nav__link">
+    Example condition clauses
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#specifying-multiple-conditions" class="md-nav__link">
+    Specifying multiple conditions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#capabilities" class="md-nav__link">
+    Capabilities
+  </a>
+  
+    <nav class="md-nav" aria-label="Capabilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-capabilities" class="md-nav__link">
+    Standard capabilities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expressing-open-data-licenses-with-capabilities" class="md-nav__link">
+    Expressing Open Data licenses with capabilities
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obligations" class="md-nav__link">
+    Obligations
+  </a>
+  
+    <nav class="md-nav" aria-label="Obligations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-obligations" class="md-nav__link">
+    Standard obligations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        Glossary
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../additional_material/" class="md-nav__link">
+        Additional Material
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    Syntax
+  </a>
+  
+    <nav class="md-nav" aria-label="Syntax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#names" class="md-nav__link">
+    Names
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rule-syntax" class="md-nav__link">
+    Rule syntax
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditions" class="md-nav__link">
+    Conditions
+  </a>
+  
+    <nav class="md-nav" aria-label="Conditions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unary-clauses" class="md-nav__link">
+    Unary clauses
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binary-clauses" class="md-nav__link">
+    Binary clauses
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operators" class="md-nav__link">
+    Operators
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-conditions" class="md-nav__link">
+    Example conditions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-condition-clauses" class="md-nav__link">
+    Example condition clauses
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#specifying-multiple-conditions" class="md-nav__link">
+    Specifying multiple conditions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#capabilities" class="md-nav__link">
+    Capabilities
+  </a>
+  
+    <nav class="md-nav" aria-label="Capabilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-capabilities" class="md-nav__link">
+    Standard capabilities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expressing-open-data-licenses-with-capabilities" class="md-nav__link">
+    Expressing Open Data licenses with capabilities
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obligations" class="md-nav__link">
+    Obligations
+  </a>
+  
+    <nav class="md-nav" aria-label="Obligations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-obligations" class="md-nav__link">
+    Standard obligations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="access-control-and-capability-grant-language">Access Control and Capability Grant Language</h1>
+<p>Access rules, capability grants, and obligations are explained in <a href="../ops_guidelines/common_policies/#data-access-conditions">Data Access Conditions</a>, this document specifies the
+precise syntax and values that can be used.</p>
+<p>An access rule contains:</p>
+<ol>
+<li>Zero or more conditions for access</li>
+<li>One or more capability grants to the data consumer if access is granted</li>
+<li>Zero or more obligations falling on the data consumer if access is granted</li>
+</ol>
+<p>They are applied to properties of a <a href="../glossary/#term-Data-Consumer">Data Consumer</a> while processing a request for data from a <a href="../glossary/#term-Data-Provider">Data Provider</a>. These properties can be modelled as a map of names to values; some values may be inferred by joining on the <a href="../glossary/#term-Identification">ID</a> of the data consumer, some may be directly provided in the <a href="../ops_guidelines/technical_common/#token-introspection">Token introspection</a> response.</p>
+<h2 id="syntax">Syntax</h2>
+<h3 id="names">Names</h3>
+<p><strong>Names</strong> consist of a namespace (<code>[a-z0-9_]+</code>), a <code>:</code> character, and a suffix (<code>[a-z0-9_.]+</code>). For example, <code>ib1:some_value</code>. Values asserted by Icebreaker One will always have a namespace <code>ib1</code>. The suffix may contain <code>.</code> characters, the namespace may not.</p>
+<h3 id="rule-syntax">Rule syntax</h3>
+<p>An access rule is represented as a single line string containing a comma separated list of zero or more Conditions, the literal string <code>grants</code>, and then a comma separated list of one or more Capabilities. Optionally, this may
+be followed by the literal <code>requires</code> and one or more Obligations in a comma separated list.</p>
+<pre><code class="language-default">[CONDITION]? [&quot;,&quot; CONDITION]* &quot;grants&quot; CAPABILITY [&quot;,&quot; CAPABILITY]* [&quot;requires&quot; OBLIGATION+ [&quot;,&quot; OBLIGATION]
+</code></pre>
+<p><strong>NOTE</strong>: 
+* A rule with no conditions is valid, and is satisfied by all requests
+* All rules must grant at least one capability
+* Rules may have zero or more obligations</p>
+<p>See the following sections for specification of conditions and capabilities.</p>
+<h2 id="conditions">Conditions</h2>
+<p>Conditions are unary or binary clauses.</p>
+<p>All conditions must be satisfied within a rule for that rule to be applied. There are no explicit boolean operators such as <code>or</code> or similar. For cases where alternative sets of rules could be applied the expectation is that data
+providers will specify multiple, potentially overlapping, rules to express this.</p>
+<h3 id="unary-clauses">Unary clauses</h3>
+<p>Unary clauses consist of a single <strong>named</strong> condition. The clause is satisfied if that condition is <code>true</code>. This is typically used to denote a particular property such as <em>Icebreaker One Trust Framework membership</em> or similar where the existence of the property is sufficient to accept the data consumer.</p>
+<pre><code class="language-json"> {&quot;ib1:member&quot; : true}
+</code></pre>
+<h3 id="binary-clauses">Binary clauses</h3>
+<p>Binary clauses consist of a <strong>name</strong> on the left hand side, an <strong>operator</strong>, and a <strong>value</strong> on the right hand side. The valid <strong>operators</strong> are shown in the table below. LHS, operator, and RHS are separated with at least one
+space character.</p>
+<p><strong>Values</strong> can be numerals, dates, quoted strings, or homogeneous lists of these three types. Dates are specified as <code>dd/mm/yyyy</code>, we do not need a higher level of precision in any of our envisaged use cases, but if this is needed
+a datetime must be specified as a string compliant with <a href="https://datatracker.ietf.org/doc/html/rfc3339">RFC3339</a>. To simplify expression in <a href="../glossary/#term-Javascript-Object-Notation">JSON</a>, quoted strings should be enclosed in single quote <code>'</code> characters. Lists are written as a comma separated list of strings surrounded by <code>[</code> and <code>]</code> characters. Lists are only valid RHS values for the
+<code>in</code> operator.</p>
+<h3 id="operators">Operators</h3>
+<table>
+<thead>
+<tr>
+<th colspan="1" rowspan="1">
+<p>Operator</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Range</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="1" rowspan="1">
+<p><code>is</code>
+</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Any
+</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>The condition passes if the value of the property on the LHS is exactly
+equal to the value in the RHS</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><code>before</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>date or datetime</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>The condition passes if the value of the property on the LHS is before
+the date or datetime specifed as the RHS. Where a date needs to be
+coerced to a datetime, it is done by setting it to 00:00.00 with the
+same date</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><code>after</code>
+</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>date or datetime
+</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>As above, but passes if the value of the property on the LHS is after
+the date or datetime specified on the RHS.</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><code>max_age_days</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>date or datetime</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>The condition passes if the value on the LHS corresponds to a date at
+most X days in the past compared to the current date, where X is integer
+numeral specified as the RHS</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><code>&lt;</code>, <code>&lt;=</code>, <code>&gt;=</code>, <code>&gt;</code>, <code>==</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>number</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Conditions pass if the LHS is, respectively, less than, less than or
+equal, greater than or equal, greater than, or strictly equal, to the
+number on the RHS. Note that <code>==</code> and <code>is</code> are equivalent for numeric
+quantities</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><code>in</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>number or string</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Conditions pass if there is at least one item in the list specified in
+the RHS which would match the <code>is</code> condition with respect to the LHS
+value</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example-conditions">Example conditions</h3>
+<p><strong>NOTE</strong>: The conditions shown below are examples, and should not be taken as indicative of standard properties of data
+consumers in the final system.</p>
+<h3 id="example-condition-clauses">Example condition clauses</h3>
+<table>
+<thead>
+<tr>
+<th colspan="1" rowspan="1">
+<p>Condition</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Interpretation</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="1" rowspan="1">
+<p><code>ib1:status is 'active'</code>
+</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>passes if the value of <code>ib1:status</code> is set, and is equal under string comparison
+to <code>active</code></p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><code>ib1:membership_expires after 24/10/2022</code>
+</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>passes if the value of <code>ib1:membership_expires</code> is either a date or a datetime,
+and is after the 24th October 2022</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><code>ib1:terms_signed max_age_days 20</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>passes if the value of <code>ib1:terms_signed</code> is either a date or a datetime, and
+is at most 20 days from the current datetime. Note that dates with no time
+component are equivalent to 00:00.00 on the specified date for comparison
+purposes</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><code>some_group:membership_level &gt;= 2</code>
+</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>passes if the value of <code>some_group:membership_level</code> is a number and is greater
+to or equal to two.</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><code>ib1:org_type in ['council', 'academic']</code>
+</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>passes if the value of <code>ib1:org_type</code> would be considered equal to either
+ <code>'council'</code> or <code>'academic'</code> as if compared with <code>is</code>.</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><code>ib1:member</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>passes if the value of <code>ib1:member</code> is <code>true</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="specifying-multiple-conditions">Specifying multiple conditions</h3>
+<p>Multiple conditions are separated with <code>,</code> characters. All conditions must be satisfied for the rule to pass, there are no sub-clauses or boolean operators. Any number of space characters are allowed before and after the <code>,</code> in a
+condition list.</p>
+<p>For example, <code>ib1:status is 'active', some_group:membership_level &gt;=2</code> is the union of those two example conditions from the previous section and will only be satisfied if both conditions are individually satisfiable.</p>
+<h2 id="capabilities">Capabilities</h2>
+<p>Capability grants for a given set of access conditions are specified as a comma (<code>,</code>) separated list of <strong>names</strong>. There <strong>MUST</strong> be at least one <strong>name</strong> in this list, an empty capability grant list is not considered valid.</p>
+<h3 id="standard-capabilities">Standard capabilities</h3>
+<p>These are capabilities where the namespace part of the <strong>name</strong> is <code>ib1</code>, indicating that they are defined as part of the Icebreaker One Trust Framework. Data providers <strong>SHOULD NOT</strong>, create their own capabilities unless absolutely necessary as doing so acts against the aim of easy interoperability and comprehension of access and licensing rules.</p>
+<p>Any additional capabilities designed <strong>MUST</strong> be prefixed with the organisation ID of the data provider responsible for their definition, and any such data provider <strong>MUST</strong> publish a clear, legally valid, definition of any such capabilities. In addition, data providers creating custom capabilities <strong>MUST</strong> inform the <a href="../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> of this, providing links to the aforementioned documentation.</p>
+<p><strong>WARNING</strong>: This section is provisional, the exact final set of base capabilities has yet to be determined. Those shown below are a plausible first cut but should not be considered definitive.</p>
+<table>
+<thead>
+<tr>
+<th colspan="1" rowspan="1">
+<p>Category</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Capability name</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Meaning</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>Use</strong></p>
+</td>
+<td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">
+<p><strong>Use the artefact internally</strong></p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">
+<p><code>ib1:use_any</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>For any purpose</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">
+<p><code>ib1:use_dev</code>
+</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>For development purposes only (i.e. private or limited development of new
+works, products or services)</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">
+<p><code>ib1:use_noncom</code>
+</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>For non-commercial purposes only (e.g. education, research, charity work
+etc.)</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>Adapt</strong></p>
+</td>
+<td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">
+<p><strong>Adapt the artefact for internal use</strong></p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">
+<p><code>ib1:adapt_any</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>For any purpose</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">
+<p><code>ib1:adapt_dev</code>
+</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>For development purposes only (i.e. private or limited development of new
+works, products or services)</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">
+<p><code>ib1:adapt_noncom</code>
+</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>For non-commercial purposes only (e.g. education, research, charity work
+etc.)</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>Combine</strong></p>
+</td>
+<td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">
+<p><strong>Combine (‘remix’) the artefact</strong></p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">
+<p><code>ib1:combine_any</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>With any other artefacts</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">
+<p><code>ib1:combine_external</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>With other external artefacts</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">
+<p><code>ib1:combine_internal</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>With the Data Consumer’s own products or services</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><strong>Redistribute</strong></p>
+</td>
+<td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">
+<p><strong>Redistribute (‘onward share’ - including to any customers of the Service Provider)</strong></p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">
+<p><code>ib1:redistribute_original</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>The original artefact</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">
+<p><code>ib1:redistribute_derived</code>
+</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Derivatives of the original artefact not produced from other data sets, i.e. filtered
+or cleaned data</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">
+<p><code>ib1:redistribute_combined</code>
+</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Derivatives of the artefact produced through artefact combination or use in the Data
+Consumer’s own products or services</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="expressing-open-data-licenses-with-capabilities">Expressing Open Data licenses with capabilities</h3>
+<p>The capabilities defined above in Standard capabilities are intended for <a href="../glossary/#term-Shared-data">shared data</a>, but data providers may also publish <a href="../glossary/#term-Open-data">open data</a>. An open data set by definition has no access conditions, so any access rules for such data sets <strong>MUST</strong> have an empty access condition list, and must use one of the following capabilities to declare that the data are licensed under a known OSI approved open license</p>
+<p>Rules <strong>MUST NOT</strong> grant a mix of capabilities in the <code>open</code> namespace and capabilities in other namespaces, as the semantics of this are not well defined.</p>
+<table>
+<thead>
+<tr>
+<th colspan="1" rowspan="1">
+<p>Capability name</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Corresponding open data license</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="1" rowspan="1">
+<p><code>open:cc_by_1.0</code>
+<code>open:cc_by_2.0</code>
+<code>open:cc_by_2.5</code>
+<code>open:cc_by_3.0</code>
+<code>open:cc_by_4.0</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p><a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</a> (v1.0, v2.0, v2.5, v3.0, v4.0
+respectively)</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><code>open:cc_by_sa_1.0</code>
+<code>open:cc_by_sa_2.0</code>
+<code>open:cc_by_sa_2.5</code>
+<code>open:cc_by_sa_3.0</code>
+<code>open:cc_by_sa_4.0</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p><a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution ShareAlike</a> (v1.0, v2.0,
+v2.5, v3.0, v4.0 respectively)</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><code>open:cc0</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p><a href="https://creativecommons.org/publicdomain/zero/1.0/">Public Domain Dedication</a> v1.0</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><code>open:gfdl_1.1</code>
+<code>open:gfdl_1.2</code>
+<code>open:gfdl_1.3</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p><a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a> (v1.1, 1.2, 1.3 respectively)</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><code>open:fal_1.2</code>
+<code>open:fal_1.3</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p><a href="http://artlibre.org/licence/lal/en/">Free Art License</a> (v1.2, v1.3 respectively)
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Open data sets <strong>SHOULD</strong> be released under the latest version of any given license.</p>
+<h2 id="obligations">Obligations</h2>
+<p>Obligations are constraints on what the data consumer can do with the data, restricting or specialising the capabilities granted. They are specified as a single <strong>name</strong>.</p>
+<h3 id="standard-obligations">Standard obligations</h3>
+<p><strong>WARNING</strong>: This set of standard obligations is provisional and may be subject to change</p>
+<table>
+<thead>
+<tr>
+<th colspan="1" rowspan="1">
+<p>Obligation</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Name</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Explanation</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Fulltext</p>
+</td>
+<td colspan="1" rowspan="1">
+<p><code>ib1:ft</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Re-users must display the full text of the license every time they use the work</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>Attribution</p>
+</td>
+<td colspan="1" rowspan="1">
+<p><code>ib1:by</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Re-users must attribute the work to the original source when they use it</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p>ShareAlike
+</p>
+</td>
+<td colspan="1" rowspan="1">
+<p><code>ib1:sa</code>
+</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Re-users who create derivatives of the work must release the derivatives under the
+same license as the original work, if they choose to distribute the derivatives</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>NOTE</strong>: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.</p>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTE3NjE5MDkwMSwtMTk2OTEzODgyMl19
+-->
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+  
+      <script src="../assets/javascripts/bundle.51198bba.min.js"></script>
+      
+    
+
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["disableCookies"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stats.openenergy.org.uk/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '9']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+  </body>
+</html>
