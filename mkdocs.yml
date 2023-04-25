@@ -1,4 +1,6 @@
-site_name: Icebreaker One Technical Documentation
+site_name: Icebreaker One Trust Framework Technical Documentation
+site_url: https://docs.icebreakerone.org
+repo_url: https://github.com/icebreakerone/ib1-technical-docs
 nav:
   - 'Introduction to the IB1 Trust framework': 'ops_guidelines/introduction.md'
   - 'Considerations before you start': 'ops_guidelines/before_starting.md'
@@ -42,3 +44,8 @@ markdown_extensions:
   - markdown_grid_tables
   - tables
   - attr_list
+plugins:
+  - social:
+      cards_color:
+        fill: "#0D1C22" 
+        text: "#FFFFFF"
