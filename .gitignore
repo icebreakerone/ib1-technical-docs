@@ -9,3 +9,4 @@ venv
 /site
 /.cache
 /mike
+mkdocs.yml
