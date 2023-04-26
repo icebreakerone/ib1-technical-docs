@@ -52,3 +52,4 @@ plugins:
   - mike:
       alias_type: redirect
       redirect_template: "./mike/redirect.html"
+      deploy_prefix: "pubsite"
