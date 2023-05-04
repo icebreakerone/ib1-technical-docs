@@ -2,8 +2,6 @@
 
 Technical documentation for the [Icebreaker One](https://icebreakerone.org) (IB1) [Trust Framework](https://icebreakerone.org/ib1-trust-framework-for-data-sharing/).
 
-Hello Karthryn
-
 ## Contents
 
 * [Introduction to the IB1 Trust Framework](ops_guidelines/introduction.md)
@@ -451,6 +449,6 @@ Hello Karthryn
 
     * [Engagement](additional_material.md#engagement)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMjE4MzM3Nyw5NTcyODIyNDYsLTEzMj
-U5NjkxLDM3MTIxNDI4N119
+eyJoaXN0b3J5IjpbOTU3MjgyMjQ2LDk1NzI4MjI0NiwtMTMyNT
+k2OTEsMzcxMjE0Mjg3XX0=
 -->
