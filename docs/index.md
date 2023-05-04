@@ -2,7 +2,7 @@
 
 Technical documentation for the [Icebreaker One](https://icebreakerone.org) (IB1) [Trust Framework](https://icebreakerone.org/ib1-trust-framework-for-data-sharing/).
 
-Hello Karthry
+Hello Karthryn
 
 ## Contents
 
@@ -451,6 +451,6 @@ Hello Karthry
 
     * [Engagement](additional_material.md#engagement)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTc4MDk0MzUsOTU3MjgyMjQ2LC0xMz
-I1OTY5MSwzNzEyMTQyODddfQ==
+eyJoaXN0b3J5IjpbLTcwMjE4MzM3Nyw5NTcyODIyNDYsLTEzMj
+U5NjkxLDM3MTIxNDI4N119
 -->
