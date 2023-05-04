@@ -4,7 +4,6 @@ Technical documentation for the [Icebreaker One](https://icebreakerone.org) (IB1
 
 ## Contents
 
-
 * [Introduction to the IB1 Trust Framework](ops_guidelines/introduction.md)
 
 
@@ -456,5 +455,6 @@ Technical documentation for the [Icebreaker One](https://icebreakerone.org) (IB1
 
     * [Engagement](additional_material.md#engagement)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjU5NjkxLDM3MTIxNDI4N119
+eyJoaXN0b3J5IjpbMTM1NTE3OTg4MiwtMTMyNTk2OTEsMzcxMj
+E0Mjg3XX0=
 -->
