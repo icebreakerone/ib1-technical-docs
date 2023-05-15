@@ -46,9 +46,9 @@ markdown_extensions:
   - attr_list
 plugins:
   - social:
-      cards_color:
-        fill: "#0D1C22" 
-        text: "#FFFFFF"
+      cards_layout_options:
+        background_color: "#0D1C22" 
+        color: "#FFFFFF"
   - mike:
       alias_type: redirect
       redirect_template: "./mike/redirect.html"
