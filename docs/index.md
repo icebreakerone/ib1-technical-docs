@@ -4,16 +4,9 @@ Technical documentation for the [Icebreaker One](https://icebreakerone.org) (IB1
 
 ## Contents
 
-
 * [Introduction to the IB1 Trust Framework](ops_guidelines/introduction.md)
-
-
     * [Overview and purpose of the guidelines](ops_guidelines/introduction.md#overview-and-purpose-of-the-guidelines)
-
-
     * [What is the IB1 Trust Framework, how was it made and who is it for?](ops_guidelines/introduction.md#what-is-the-icerbreaker-one-trust-framework-how-was-it-made-and-who-is-it-for)
-
-
     * [How is the IB1 Trust Framework Structured?](ops_guidelines/introduction.md#how-is-the-ib1-trust-framework-structured)
 
 
@@ -456,5 +449,6 @@ Technical documentation for the [Icebreaker One](https://icebreakerone.org) (IB1
 
     * [Engagement](additional_material.md#engagement)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjU5NjkxLDM3MTIxNDI4N119
+eyJoaXN0b3J5IjpbOTU3MjgyMjQ2LDk1NzI4MjI0NiwtMTMyNT
+k2OTEsMzcxMjE0Mjg3XX0=
 -->
