@@ -105,9 +105,7 @@ be provided, it should be provided in as standard a form as possible - in practi
 existing ontologies such as DCAT and Dublin Core by preference, then shared, industry-specific, ontologies, and only 
 using internal or custom representation when absolutely necessary.
 
-Of particular note, and something we would like to ultimately expose in Open Net Zeroour search interface, is information about the 
-geospatial and temporal ranges of entries within a data set. This is a complex subject, but one that has already been 
-handled by DCAT. If you need to express this kind of information, please do so according to the standards laid out 
+Of particular note, and something we would like to ultimately expose in the Open Net Zero search interface, is information about the geospatial and temporal ranges of entries within a data set. This is a complex subject, but one that has already been handled by DCAT. If you need to express this kind of information, please do so according to the standards laid out 
 [here](https://www.w3.org/TR/vocab-dcat-2/#time-and-space).
 
 We encourage use of the `dcat:keyword` list for data sets. These translate to “tags” in our web interface and are useful to group data sets around specific topics.
@@ -247,16 +245,16 @@ in the full metadata file this would be contained within a list. [YAML](glossary
     "@context":
       dcat: http://www.w3.org/ns/dcat#
       dct: http://purl.org/dc/terms/
-      ib1oe: http://icebreakerone.org/ib1energydata.org.uk/oe/terms/
+      ib1: http://ib1.org/terms/
     dct:title: My amazing data set
     dct:description: This is a free text description of the data set
     dcat:version: 0.1.2
     dcat:versionNotes: This is a note on this particular version of the dataset
-    ib1oe:sensitivityClass: IB1OE-SA
-    ib1oe:dataSetStableIdentifier: myData
+    ib1:sensitivityClass: IB1-SA
+    ib1:dataSetStableIdentifier: myData
   access:
     # Access constraint to licensing predicates
-    - rule: ib1oe:verified, ib1oe:last_update max_age_days 60 grants ib1oe:use_any
+    - rule: ib1:verified, ib1:last_update max_age_days 60 grants ib1oe:use_any
       sufficient: true
       appliesFrom: 20231-04-22
       appliesTo: 20242-04-22
@@ -397,5 +395,5 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NTgxMTIxLC0xNzY4NDEzMzI2XX0=
+eyJoaXN0b3J5IjpbODk5MDk4OTkzLC0xNzY4NDEzMzI2XX0=
 -->
