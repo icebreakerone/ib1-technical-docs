@@ -56,8 +56,9 @@ A simple example is shown below:
     dct:description: This is a free text description of the data set
     dcat:version: 0.1.2
     dcat:versionNotes: This is a note on this particular version of the dataset
-    ib1oe:sensitivityClass: IB1OE-SA
-    ib1oe:dataSetStableIdentifier: myData
+    ib1:sensitivityClass: IB1-SA
+    ib1:datasetAssurance: 
+    ib1:dataSetStableIdentifier: myData
 ```
 
 These are the minimum properties every data set must define, they include terms from the 
@@ -397,5 +398,6 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Njg0MTMzMjZdfQ==
+eyJoaXN0b3J5IjpbLTEyMDQzOTExODUsLTE3Njg0MTMzMjZdfQ
+==
 -->
