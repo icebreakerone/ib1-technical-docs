@@ -254,7 +254,7 @@ in the full metadata file this would be contained within a list. [YAML](glossary
     ib1:dataSetStableIdentifier: myData
   access:
     # Access constraint to licensing predicates
-    - rule: ib1:verified, ib1:last_update max_age_days 60 grants ib1oe:use_any
+    - rule: ib1:verified, ib1:last_update max_age_days 60 grants ib1:use_any
       sufficient: true
       appliesFrom: 20231-04-22
       appliesTo: 20242-04-22
@@ -308,24 +308,24 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
       "@context": {
         "dcat": "http://www.w3.org/ns/dcat#",
         "dct": "http://purl.org/dc/terms/",
-        "ib1oe": "http://icebreakerone.org/ib1energydata.org.uk/oe/terms/"
+        "ib1": "http://ib1.org/terms/"
       },
       "dct:title": "My amazing data set",
       "dct:description": "This is a free text description of the data set",
       "dcat:version": "0.1.2",
       "dcat:versionNotes": "This is a note on this particular version of the dataset",
-      "ib1oe:sensitivityClass": "IB1|OE-SA|",
+      "ib1:sensitivityClass": "IB1-SA",
       "ib1oe:dataSetStableIdentifier": "myData"
     },
     "access": [
       {
-        "rule": "ib1oe:verified, ib1oe:last_update max_age_days 60 grants ib1oe:use_any",
+        "rule": "ib1:verified, ib1:last_update max_age_days 60 grants ib1:use_any",
         "sufficient": true,
         "appliesFrom": "20231-04-22T00:00:00.000Z",
         "appliesTo": "20242-04-22T00:00:00.000Z"
       },
       {
-        "rule": "group:some_group grants ib1oe:use_any, ib1oe:adapt_any",
+        "rule": "group:some_group grants ib1:use_any, ib1:adapt_any",
         "sufficient": false,
         "appliesFrom": "20231-04-22T00:00:00.000Z",
         "appliesTo": "20242-04-22T00:00:00.000Z"
@@ -395,5 +395,5 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk5MDk4OTkzLC0xNzY4NDEzMzI2XX0=
+eyJoaXN0b3J5IjpbMTIxNTE5NTIxNiwtMTc2ODQxMzMyNl19
 -->
