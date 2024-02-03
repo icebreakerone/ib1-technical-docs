@@ -51,19 +51,18 @@ A simple example is shown below:
     "@context":
        dcat: http://www.w3.org/ns/dcat#
        dct: http://purl.org/dc/terms/
-       ib1oe: http://icebreakerone.org/ib1energydata.org.uk/oe/terms/
+       ib1: http://ib1.org/terms/
     dct:title: My amazing data set
     dct:description: This is a free text description of the data set
     dcat:version: 0.1.2
     dcat:versionNotes: This is a note on this particular version of the dataset
     ib1:sensitivityClass: IB1-SA
-    ib1:datasetAssurance: IcebreakerOne.DatasetLevel1
     ib1:dataSetStableIdentifier: myData
 ```
 
 These are the minimum properties every data set must define, they include terms from the 
 [Dublic Core](https://dublincore.org/) (`dct`) and [Data Catalog](https://www.w3.org/TR/vocab-dcat-2/) (`dcat`) 
-vocabularies, as well as from the Icebreaker OneOpen Energy core ontology. Prefixes are defined in the [JSON-LD](glossary.md#term-JavaScript-Object-Notation-for-Linked-Data) `@context` object 
+vocabularies, as well as from the Icebreaker One core ontology. Prefixes are defined in the [JSON-LD](glossary.md#term-JavaScript-Object-Notation-for-Linked-Data) `@context` object 
 as in the example above.
 
 ## Mandatory data content metadata fields
@@ -398,5 +397,5 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NDQ4MjI3LC0xNzY4NDEzMzI2XX0=
+eyJoaXN0b3J5IjpbLTY2NTgxMTIxLC0xNzY4NDEzMzI2XX0=
 -->
