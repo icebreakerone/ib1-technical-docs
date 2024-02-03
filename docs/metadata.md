@@ -57,7 +57,7 @@ A simple example is shown below:
     dcat:version: 0.1.2
     dcat:versionNotes: This is a note on this particular version of the dataset
     ib1:sensitivityClass: IB1-SA
-    ib1:datasetAssurance: 
+    ib1:datasetAssurance: IcebreakerOne.DatasetLevel1
     ib1:dataSetStableIdentifier: myData
 ```
 
@@ -398,6 +398,5 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDQzOTExODUsLTE3Njg0MTMzMjZdfQ
-==
+eyJoaXN0b3J5IjpbMTU4NDQ4MjI3LC0xNzY4NDEzMzI2XX0=
 -->
