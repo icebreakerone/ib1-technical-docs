@@ -54,6 +54,8 @@ Datasets are represented as Dataset DCAT objects with one or more Distributions.
 
 Data Services are represented as Data Service DCAT objects, with OpenAPI specifications of the API and the format of the data in the responses.
 
+The URL of the DCAT object inside the RDF representation is the stable identifer of the Dataset or Data Service which must remain constant each time the metadata file is fetched and over updates to the metadata.
+
 ## Mandatory data content metadata fields
 
 +---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
@@ -384,8 +386,8 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk0OTIxNjY1LDExNDk3NzE3NDAsLTI1ND
-I5ODc0OCwyMTI5NjczMzczLDEwMzA5MzM2ODcsLTE5MjIxNTky
-NTgsMTk2MTM0OTcxMywxNTE5NzU2MDAzLC04NDAyNTg2OTUsMT
-IxNTE5NTIxNiwtMTc2ODQxMzMyNl19
+eyJoaXN0b3J5IjpbMjEyMDE3MDQzLDU5NDkyMTY2NSwxMTQ5Nz
+cxNzQwLC0yNTQyOTg3NDgsMjEyOTY3MzM3MywxMDMwOTMzNjg3
+LC0xOTIyMTU5MjU4LDE5NjEzNDk3MTMsMTUxOTc1NjAwMywtOD
+QwMjU4Njk1LDEyMTUxOTUyMTYsLTE3Njg0MTMzMjZdfQ==
 -->
