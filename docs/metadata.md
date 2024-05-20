@@ -175,12 +175,12 @@ dcat:keyword "solar"@en, "electricity"@en, "retrofit"@en ;
 
 <https://data-provider-example.com/generation-report/oct2024>
     a dcat:Dataset ;
-    dcterms:title "Generation Report"@en ;
+    dcterms:title "Generation Report Oct 2024"@en ;
     dcterms:description "Data report on generation"@en ;
     dcterms:publisher <https://registry.ib1.org/member/my-energy-company> ;
     dcterms:conformsTo <https://registry.ib1.org/class/generation-report> ; 
     dcat:version "0.1.2" ;
-    dcat:inSeries <>;
+    dcat:inSeries <https://data-provider-example.com/generation-report>;
     dcat:distribution <https://data-provider-example.com/generation-report/oct2024/csv> ;
     ib1:sensitivityClass "IB1OE-SA" ;
     ib1:dataSetStableIdentifier: "MYENERGYCOMPANY/DS9871/OCT2024" ;
@@ -199,13 +199,16 @@ dcat:keyword "solar"@en, "electricity"@en, "retrofit"@en ;
 	ib1:dataSchema <https://registry.ib1.org/format/generation-report/v2> ;
 .
 
+<https://data-provider-example.com/generation-report>
     a dcat:DatasetSeries ;
+    dcterms:title "Generation Reports from My Energy Company"@en ;
+.
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MjQ4ODcyMywtMTQ3MDQzMzM2MywxNz
-UxMjM0OTkwLC02MTE3OTM1MTAsMTUxNzk1OTM4OCwxMTg5MzQy
-MzY2LDM1MTI3Njc4MCw1OTQ5MjE2NjUsMTE0OTc3MTc0MCwtMj
-U0Mjk4NzQ4LDIxMjk2NzMzNzMsMTAzMDkzMzY4NywtMTkyMjE1
-OTI1OCwxOTYxMzQ5NzEzLDE1MTk3NTYwMDMsLTg0MDI1ODY5NS
-wxMjE1MTk1MjE2LC0xNzY4NDEzMzI2XX0=
+eyJoaXN0b3J5IjpbLTEzNjM2MzE0MDEsLTE0NzA0MzMzNjMsMT
+c1MTIzNDk5MCwtNjExNzkzNTEwLDE1MTc5NTkzODgsMTE4OTM0
+MjM2NiwzNTEyNzY3ODAsNTk0OTIxNjY1LDExNDk3NzE3NDAsLT
+I1NDI5ODc0OCwyMTI5NjczMzczLDEwMzA5MzM2ODcsLTE5MjIx
+NTkyNTgsMTk2MTM0OTcxMywxNTE5NzU2MDAzLC04NDAyNTg2OT
+UsMTIxNTE5NTIxNiwtMTc2ODQxMzMyNl19
 -->
