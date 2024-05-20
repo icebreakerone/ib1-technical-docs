@@ -121,7 +121,9 @@ dcat:keyword "solar"@en, "electricity"@en, "retrofit"@en ;
 : The URL of this specific instances, interpolated with the `endpointURL` variable in the OpenAPI server `url`.
 
 `ib1:heartbeatDescription`
-: The URL of an OpenAPI file (with Server specified as `dcat:endpointDescription
+: The URL of an OpenAPI file (with Server specified as `dcat:endpointDescription`), which contains a single Path with a 200 response defined.
+
+
 
 ## Access Block
 
@@ -401,9 +403,9 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTU4NDgzNDksMTUxNzk1OTM4OCwxMT
-g5MzQyMzY2LDM1MTI3Njc4MCw1OTQ5MjE2NjUsMTE0OTc3MTc0
-MCwtMjU0Mjk4NzQ4LDIxMjk2NzMzNzMsMTAzMDkzMzY4NywtMT
-kyMjE1OTI1OCwxOTYxMzQ5NzEzLDE1MTk3NTYwMDMsLTg0MDI1
-ODY5NSwxMjE1MTk1MjE2LC0xNzY4NDEzMzI2XX0=
+eyJoaXN0b3J5IjpbNDkwMjc4ODQ5LDE1MTc5NTkzODgsMTE4OT
+M0MjM2NiwzNTEyNzY3ODAsNTk0OTIxNjY1LDExNDk3NzE3NDAs
+LTI1NDI5ODc0OCwyMTI5NjczMzczLDEwMzA5MzM2ODcsLTE5Mj
+IxNTkyNTgsMTk2MTM0OTcxMywxNTE5NzU2MDAzLC04NDAyNTg2
+OTUsMTIxNTE5NTIxNiwtMTc2ODQxMzMyNl19
 -->
