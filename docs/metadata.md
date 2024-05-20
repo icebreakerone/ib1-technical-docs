@@ -72,7 +72,7 @@ Additional fields will be made mandatory for Scheme-confirming data sources by t
 ## Conformance and access control metadata fields
 
 `dcterms:conformsTo`
-
+: The URL of a 
 
 ## Data Service metadata fields
 
@@ -413,9 +413,10 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMTc5MzUxMCwxNTE3OTU5Mzg4LDExOD
-kzNDIzNjYsMzUxMjc2NzgwLDU5NDkyMTY2NSwxMTQ5NzcxNzQw
-LC0yNTQyOTg3NDgsMjEyOTY3MzM3MywxMDMwOTMzNjg3LC0xOT
-IyMTU5MjU4LDE5NjEzNDk3MTMsMTUxOTc1NjAwMywtODQwMjU4
-Njk1LDEyMTUxOTUyMTYsLTE3Njg0MTMzMjZdfQ==
+eyJoaXN0b3J5IjpbMTkxNTE5ODcwMCwtNjExNzkzNTEwLDE1MT
+c5NTkzODgsMTE4OTM0MjM2NiwzNTEyNzY3ODAsNTk0OTIxNjY1
+LDExNDk3NzE3NDAsLTI1NDI5ODc0OCwyMTI5NjczMzczLDEwMz
+A5MzM2ODcsLTE5MjIxNTkyNTgsMTk2MTM0OTcxMywxNTE5NzU2
+MDAzLC04NDAyNTg2OTUsMTIxNTE5NTIxNiwtMTc2ODQxMzMyNl
+19
 -->
