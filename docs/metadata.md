@@ -180,6 +180,9 @@ dcat:keyword "solar"@en, "electricity"@en, "retrofit"@en ;
     dcterms:publisher <https://registry.ib1.org/member/my-energy-company> ;
     dcterms:conformsTo <https://registry.ib1.org/class/generation-report> ; 
     dcat:version "0.1.2" ;
+    dcat:distribution <```
+https://data-provider-example.com/generation-report/oct2024
+`
     ib1:sensitivityClass "IB1OE-SA" ;
     ib1:dataSetStableIdentifier: "MYENERGYCOMPANY/DS9871/OCT2024" ;
     ib1:access [ a ib1:AccessRule ;
@@ -190,7 +193,7 @@ dcat:keyword "solar"@en, "electricity"@en, "retrofit"@en ;
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MDEyNjE3NywxNzUxMjM0OTkwLC02MT
+eyJoaXN0b3J5IjpbMTkwMDM3NDQ3NSwxNzUxMjM0OTkwLC02MT
 E3OTM1MTAsMTUxNzk1OTM4OCwxMTg5MzQyMzY2LDM1MTI3Njc4
 MCw1OTQ5MjE2NjUsMTE0OTc3MTc0MCwtMjU0Mjk4NzQ4LDIxMj
 k2NzMzNzMsMTAzMDkzMzY4NywtMTkyMjE1OTI1OCwxOTYxMzQ5
