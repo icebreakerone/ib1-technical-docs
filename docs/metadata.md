@@ -100,8 +100,11 @@ dcat:keyword "solar"@en, "electricity"@en, "retrofit"@en ;
 ## Data Service metadata fields
 
 `dcat:endpointDescription`
-: The URL of an OpenAPI file, which fully documents the request and responses. The file may only contain a single Server object, where the         
-        -   url is "{endpointURL}", and variables sets the default to "https://endpointurl-not-specified.ib1.org"
+: The URL of an OpenAPI file, which fully documents the request parameters and responses, which must be XML or JSON. To allow the OpenAPI file to be used by multiple Data Providers, the file may only contain a single Server object, where the `url` is `"{endpointURL}"`, and `variables` sets the default to `"https://endpointurl-not-specified.ib1.org"`.
+
+`dcat:endpointURL`
+: 
+
 
 
 ## Access Block
@@ -382,9 +385,9 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyODEzNzY3MCwxNTE3OTU5Mzg4LDExOD
-kzNDIzNjYsMzUxMjc2NzgwLDU5NDkyMTY2NSwxMTQ5NzcxNzQw
-LC0yNTQyOTg3NDgsMjEyOTY3MzM3MywxMDMwOTMzNjg3LC0xOT
-IyMTU5MjU4LDE5NjEzNDk3MTMsMTUxOTc1NjAwMywtODQwMjU4
-Njk1LDEyMTUxOTUyMTYsLTE3Njg0MTMzMjZdfQ==
+eyJoaXN0b3J5IjpbNTE4ODg1OTI5LDE1MTc5NTkzODgsMTE4OT
+M0MjM2NiwzNTEyNzY3ODAsNTk0OTIxNjY1LDExNDk3NzE3NDAs
+LTI1NDI5ODc0OCwyMTI5NjczMzczLDEwMzA5MzM2ODcsLTE5Mj
+IxNTkyNTgsMTk2MTM0OTcxMywxNTE5NzU2MDAzLC04NDAyNTg2
+OTUsMTIxNTE5NTIxNiwtMTc2ODQxMzMyNl19
 -->
