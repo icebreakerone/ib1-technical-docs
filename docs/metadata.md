@@ -61,22 +61,17 @@ The URL of the DCAT object inside the RDF representation is the stable identifer
 [dct:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/title/)
 : Short title for this data set
 
-[dct:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/description/)  | Longer form description of this data set. This is used in combination with the title and tags when people   |
-|                                                                                                         | search for data sets, so aim to include probable search words in the description.                           |
-+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| [dcat:version](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version)                           | Version number of the data set, this should preferably follow [semantic versioning](https://semver.org/) if |
-|                                                                                                         | possible. Versioning of the data set should be used to indicate changes in delivery mechanism, or in        |
-|                                                                                                         | representation, rather than for changes in the underlying data. For example, this should not be used to     |
-|                                                                                                         | differentiate between data sets from different years, rather it should be used to indicate whether a        |
-|                                                                                                         | potential data consumer might need to alter how it processes any returned data.                             |
-+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| [dcat:versionNotes](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version_notes)                | Notes used to explain any changes to this version                                                           |
-+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| `ib1:sensitivityClass`                                                                                  | The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this data set. In the current IB1  |
-|                                                                                                         | Trust Framework this should always be one of [IB1-O](glossary.md#term-Data-sensitivity-class-open),         |
-|                                                                                                         | [IB1-SA](glossary.md#term-Data-sensitivity-class-shared-A), or                                              |
-|                                                                                                         | [IB1-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of    |
-|                                                                                                         | this property also determines the level of [API](glossary.md#term-Application-programming-interface)        |
+[dct:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/description/)
+: Longer form description of this data set. This is used in combination with the title and tags when people search for data sets, so aim to include probable search words in the description.
+
+[dcat:version](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version)
+: Version number of the data set, this should preferably follow [semantic versioning](https://semver.org/) if possible. Versioning of the data set should be used to indicate changes in delivery mechanism, or in representation, rather than for changes in the underlying data. For example, this should not be used to differentiate between data sets from different years, rather it should be used to indicate whether a potential data consumer might need to alter how it processes any returned data. 
+
+[dcat:versionNotes](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version_notes)
+: Notes used to explain any changes to this version.
+
+`ib1:sensitivityClass`
+: The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this data set. In the current IB1 Trust Framework this should always be one of [IB1-O](glossary.md#term-Data-sensitivity-class-open), [IB1-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](glossary.md#term-Application-programming-interface)        |
 |                                                                                                         | security imposed, with [IB1-O](glossary.md#term-Data-sensitivity-class-open) data sets being open data with |
 |                                                                                                         | no additional security, and the two shared data classes mandating                                           |
 |                                                                                                         | [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.                        |
@@ -384,8 +379,8 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjc0NTczMjUsNTk0OTIxNjY1LDExND
-k3NzE3NDAsLTI1NDI5ODc0OCwyMTI5NjczMzczLDEwMzA5MzM2
-ODcsLTE5MjIxNTkyNTgsMTk2MTM0OTcxMywxNTE5NzU2MDAzLC
-04NDAyNTg2OTUsMTIxNTE5NTIxNiwtMTc2ODQxMzMyNl19
+eyJoaXN0b3J5IjpbMTQyMjk3ODcxNyw1OTQ5MjE2NjUsMTE0OT
+c3MTc0MCwtMjU0Mjk4NzQ4LDIxMjk2NzMzNzMsMTAzMDkzMzY4
+NywtMTkyMjE1OTI1OCwxOTYxMzQ5NzEzLDE1MTk3NTYwMDMsLT
+g0MDI1ODY5NSwxMjE1MTk1MjE2LC0xNzY4NDEzMzI2XX0=
 -->
