@@ -56,9 +56,7 @@ Data Services are represented as Data Service DCAT objects, with OpenAPI specifi
 
 The URL of the DCAT object inside the RDF representation is the stable identifer of the Dataset or Data Service. This must remain constant each time the metadata file is fetched and over updates to the metadata.
 
-## Dataset mandatory data content metadata fields
-
-Datasets are most likely 
+## Mandatory data content metadata fields
 
 [dcterms:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/title/)
 : Short title for this data set
@@ -73,7 +71,9 @@ Datasets are most likely
 : Notes used to explain any changes to this version.
 
 `ib1:sensitivityClass`
-: The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this data set. In the current IB1 Trust Framework this should always be one of [IB1-O](glossary.md#term-Data-sensitivity-class-open), [IB1-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](glossary.md#term-Application-programming-interface) security imposed, with [IB1-O](glossary.md#term-Data-sensitivity-class-open) data sets being open data with no additional security, and the two shared data classes mandating [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.
+: The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this data set. In the current IB1 Trust Framework this should always be one of [IB1-O](glossary.md#term-Data-sensitivity-class-open),  [IB1-SA](glossary.md#term-Data-sensitivity-class-shared-A) or [IB1-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](glossary.md#term-Application-programming-interface) security imposed, with [IB1-O](glossary.md#term-Data-sensitivity-class-open) data sets being open data with no additional security, and the two shared data classes mandating [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.
+
+## Dataset 
 
 ### Additional metadata
 
@@ -373,9 +373,9 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4OTM0MjM2NiwzNTEyNzY3ODAsNTk0OT
-IxNjY1LDExNDk3NzE3NDAsLTI1NDI5ODc0OCwyMTI5NjczMzcz
-LDEwMzA5MzM2ODcsLTE5MjIxNTkyNTgsMTk2MTM0OTcxMywxNT
-E5NzU2MDAzLC04NDAyNTg2OTUsMTIxNTE5NTIxNiwtMTc2ODQx
-MzMyNl19
+eyJoaXN0b3J5IjpbLTYxODcwNjAxNywxMTg5MzQyMzY2LDM1MT
+I3Njc4MCw1OTQ5MjE2NjUsMTE0OTc3MTc0MCwtMjU0Mjk4NzQ4
+LDIxMjk2NzMzNzMsMTAzMDkzMzY4NywtMTkyMjE1OTI1OCwxOT
+YxMzQ5NzEzLDE1MTk3NTYwMDMsLTg0MDI1ODY5NSwxMjE1MTk1
+MjE2LC0xNzY4NDEzMzI2XX0=
 -->
