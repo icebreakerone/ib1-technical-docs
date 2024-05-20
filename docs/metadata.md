@@ -45,7 +45,7 @@ Most Datasets and Data Services are Scheme-conforming. A Data Provider may publi
 
 ## Metadata File Structure
 
-The metadata 
+The metadata is a standard DCAT Catalog entry.
 
 **NOTE**: The examples below use [YAML](glossary.md#term-YAML-Ain-t-Markup-Language) format for compactness and increased readability. Data providers may present this 
 information either in [YAML](glossary.md#term-YAML-Ain-t-Markup-Language) or in [JSON](glossary.md#term-Javascript-Object-Notation) form.
@@ -418,7 +418,7 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIwODc2NzEzLDEwMzA5MzM2ODcsLTE5Mj
-IxNTkyNTgsMTk2MTM0OTcxMywxNTE5NzU2MDAzLC04NDAyNTg2
-OTUsMTIxNTE5NTIxNiwtMTc2ODQxMzMyNl19
+eyJoaXN0b3J5IjpbLTIwNTI0NDQ4NDYsMTAzMDkzMzY4NywtMT
+kyMjE1OTI1OCwxOTYxMzQ5NzEzLDE1MTk3NTYwMDMsLTg0MDI1
+ODY5NSwxMjE1MTk1MjE2LC0xNzY4NDEzMzI2XX0=
 -->
