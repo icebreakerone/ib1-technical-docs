@@ -1,7 +1,7 @@
 # Dataset & Data Service Metadata
 
 Each [Data Provider](glossary.md#term-Data-Provider) maintains a set of one or more metadata files, each of which can describe one or more 
-distinct data sets. These descriptions serve several purposes:
+distinct sources of data. These descriptions serve several purposes:
 
 
 1. They drive discovery descriptions are ingested into our search system and made available to a [Data Consumer](glossary.md#term-Data-Consumer) 
@@ -22,7 +22,13 @@ searching for particular kinds of data.
 
     4. Representation and internal semantics of expressions of the data
 
-Data is a Dataset if it is one or more downloadable files which may be updated periodically. If it is 
+## Dataset or Data Service?
+
+A Dataset is:
+* it is one or more downloadable files which may be updated periodically.
+
+A Data
+If it is provided as an API to query the data, or requires consent from a data subject external to the Trust Framework, then it is a Data Service.
 
 ## Metadata File Structure
 
@@ -397,6 +403,6 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1Mjc5OTUxNywxNTE5NzU2MDAzLC04ND
+eyJoaXN0b3J5IjpbMTE0NjgxMjc3NSwxNTE5NzU2MDAzLC04ND
 AyNTg2OTUsMTIxNTE5NTIxNiwtMTc2ODQxMzMyNl19
 -->
