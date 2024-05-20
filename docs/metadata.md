@@ -93,10 +93,12 @@ Of particular note, and something we would like to ultimately expose in the Open
 
 We encourage use of the `dcat:keyword` list for data sets. These translate to “tags” in our web interface and are useful to group data sets around specific topics.
 
-```ya
+```
+dcat:keyword "solar"@en, "transparency"@en, "payments"@en ;
+  dcat:keyword "responsabilidad"@es, "transparencia"@es, "pagos"@es ;
 dcat:keyword:
-  - solar
-  - electricity
+  - 
+  - 
   - retrofit
 ```
 
@@ -378,9 +380,9 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NTI3OTk4MiwxMTg5MzQyMzY2LDM1MT
-I3Njc4MCw1OTQ5MjE2NjUsMTE0OTc3MTc0MCwtMjU0Mjk4NzQ4
-LDIxMjk2NzMzNzMsMTAzMDkzMzY4NywtMTkyMjE1OTI1OCwxOT
-YxMzQ5NzEzLDE1MTk3NTYwMDMsLTg0MDI1ODY5NSwxMjE1MTk1
-MjE2LC0xNzY4NDEzMzI2XX0=
+eyJoaXN0b3J5IjpbODg2MjQxNzQsMTE4OTM0MjM2NiwzNTEyNz
+Y3ODAsNTk0OTIxNjY1LDExNDk3NzE3NDAsLTI1NDI5ODc0OCwy
+MTI5NjczMzczLDEwMzA5MzM2ODcsLTE5MjIxNTkyNTgsMTk2MT
+M0OTcxMywxNTE5NzU2MDAzLC04NDAyNTg2OTUsMTIxNTE5NTIx
+NiwtMTc2ODQxMzMyNl19
 -->
