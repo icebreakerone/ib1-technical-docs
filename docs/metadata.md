@@ -47,8 +47,10 @@ Most Datasets and Data Services are Scheme-conforming. A Data Provider may publi
 
 The metadata is a standard [DCAT](https://www.w3.org/TR/vocab-dcat-3/) RDF file representing one or more sources of data. 
 
-**NOTE**: The examples below use [Turtle](https://www.w3.org/TR/turtle/) format for compactness and increased readability. Data providers may present this 
-information either in [YAML](glossary.md#term-YAML-Ain-t-Markup-Language) or in [JSON](glossary.md#term-Javascript-Object-Notation) form.
+**NOTE**: The examples below use the [Turtle](https://www.w3.org/TR/turtle/) format for compactness and increased readability. Data providers may present this 
+information in Turtle, RDF/XML, JSON-LD or N3 formats.
+
+Dataset are represented as Dataset DCAT objects with one or more Distri
 
 The overall structure of the metadata file is a list of objects, each of which has the following structure:
 
@@ -418,7 +420,7 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMjM4NDM4MiwxMDMwOTMzNjg3LC0xOT
-IyMTU5MjU4LDE5NjEzNDk3MTMsMTUxOTc1NjAwMywtODQwMjU4
-Njk1LDEyMTUxOTUyMTYsLTE3Njg0MTMzMjZdfQ==
+eyJoaXN0b3J5IjpbLTIwMzgyODQ3OTcsMTAzMDkzMzY4NywtMT
+kyMjE1OTI1OCwxOTYxMzQ5NzEzLDE1MTk3NTYwMDMsLTg0MDI1
+ODY5NSwxMjE1MTk1MjE2LC0xNzY4NDEzMzI2XX0=
 -->
