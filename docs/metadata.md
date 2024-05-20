@@ -139,8 +139,38 @@ dcat:keyword "solar"@en, "electricity"@en, "retrofit"@en ;
 
 ## Full Example
 
+### Data Service
+
+```
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ib1: <http://registry.ib1.org/ns/1.0/> .
+
+<https://data-provider-example.com/supply-voltage/v0>
+    a dcat:DataService ;
+    dcterms:title "Electricity Supply Voltage"@en ;
+    dcterms:description "API to query supply voltage across the grid"@en ;
+    dcterms:publisher <https://registry.ib1.org/member/my-energy-company> ;
+    dcterms:conformsTo <https://registry.ib1.org/class/supply-voltage> ; 
+    dcat:version "0.1.2" ;
+    dcat:endpointDescription <https://registry.ib1.org/api/electricty-voltage> ;
+    ib1:heartbeatDescription <https://registry.ib1.org/api/heartbeat-simple> ;
+    dcat:endpointURL <https://data-provider-example.com/supply-voltage/v0> ;
+    ib1:sensitivityClass "IB1OE-SA" ;
+    ib1:dataSetStableIdentifier: "MYENERGYCOMPANY/DS188" ;
+    ib1:access [ a ib1:AccessRule ;
+        ib1:group "group1" ;
+        ib1:group "group2" ;
+        ib1:licence "https://creativecommons.org/licenses/by/4.0/" ;
+    ];
+.
+```
+
+### Dataset with Distributions and Data Series
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMTI1OTQ0MiwtNjExNzkzNTEwLDE1MT
+eyJoaXN0b3J5IjpbMTc1MTIzNDk5MCwtNjExNzkzNTEwLDE1MT
 c5NTkzODgsMTE4OTM0MjM2NiwzNTEyNzY3ODAsNTk0OTIxNjY1
 LDExNDk3NzE3NDAsLTI1NDI5ODc0OCwyMTI5NjczMzczLDEwMz
 A5MzM2ODcsLTE5MjIxNTkyNTgsMTk2MTM0OTcxMywxNTE5NzU2
