@@ -79,12 +79,12 @@ As Datasets will be discovered by browsing an index, they need additional metada
 [dcat:versionNotes](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version_notes)
 : Notes used to explain any changes to this version.
 
-#
+### Distribution metadata fields
 
-To specify how the data may be 
+To specify how the data may be downloaded, one or more associated `dcat:Distribution` objects must be included which contain:
 
 [dcat:downloadURL](https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_download_url)
-
+: A stable URL for download of the dataset, subject to access 
 
 ### Additional metadata for Datasets
 
@@ -391,7 +391,7 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MzA2MjcyOCwxNTE3OTU5Mzg4LDExOD
+eyJoaXN0b3J5IjpbMjAyNzM3NjYwNywxNTE3OTU5Mzg4LDExOD
 kzNDIzNjYsMzUxMjc2NzgwLDU5NDkyMTY2NSwxMTQ5NzcxNzQw
 LC0yNTQyOTg3NDgsMjEyOTY3MzM3MywxMDMwOTMzNjg3LC0xOT
 IyMTU5MjU4LDE5NjEzNDk3MTMsMTUxOTc1NjAwMywtODQwMjU4
