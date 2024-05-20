@@ -1,4 +1,4 @@
-# Data Set Metadata
+# Dataset Metadata
 
 Each [Data Provider](glossary.md#term-Data-Provider) maintains a set of one or more metadata files, each of which can describe one or more 
 distinct data sets. These descriptions serve several purposes:
@@ -395,6 +395,6 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MDI1ODY5NSwxMjE1MTk1MjE2LC0xNz
-Y4NDEzMzI2XX0=
+eyJoaXN0b3J5IjpbMTUxOTc1NjAwMywtODQwMjU4Njk1LDEyMT
+UxOTUyMTYsLTE3Njg0MTMzMjZdfQ==
 -->
