@@ -1,4 +1,4 @@
-# Dataset Metadata
+# Dataset & Data Service Metadata
 
 Each [Data Provider](glossary.md#term-Data-Provider) maintains a set of one or more metadata files, each of which can describe one or more 
 distinct data sets. These descriptions serve several purposes:
@@ -21,6 +21,8 @@ searching for particular kinds of data.
 
 
     4. Representation and internal semantics of expressions of the data
+
+Data is a Dataset if it is one or more downloadable files which may be updated periodically. If it is 
 
 ## Metadata File Structure
 
@@ -395,6 +397,6 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxOTc1NjAwMywtODQwMjU4Njk1LDEyMT
-UxOTUyMTYsLTE3Njg0MTMzMjZdfQ==
+eyJoaXN0b3J5IjpbLTk1Mjc5OTUxNywxNTE5NzU2MDAzLC04ND
+AyNTg2OTUsMTIxNTE5NTIxNiwtMTc2ODQxMzMyNl19
 -->
