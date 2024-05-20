@@ -180,9 +180,7 @@ dcat:keyword "solar"@en, "electricity"@en, "retrofit"@en ;
     dcterms:publisher <https://registry.ib1.org/member/my-energy-company> ;
     dcterms:conformsTo <https://registry.ib1.org/class/generation-report> ; 
     dcat:version "0.1.2" ;
-    dcat:distribution <```
-https://data-provider-example.com/generation-report/oct2024
-`
+    dcat:distribution <https://data-provider-example.com/generation-report/oct2024/download> ;
     ib1:sensitivityClass "IB1OE-SA" ;
     ib1:dataSetStableIdentifier: "MYENERGYCOMPANY/DS9871/OCT2024" ;
     ib1:access [ a ib1:AccessRule ;
@@ -191,12 +189,17 @@ https://data-provider-example.com/generation-report/oct2024
         ib1:licence "https://creativecommons.org/licenses/by/4.0/" ;
     ];
 .
+
+<https://data-provider-example.com/generation-report/oct2024/download>
+	a dcat:Distribution ;
+	dcterms:description "CSV"@en ;
+	
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMDM3NDQ3NSwxNzUxMjM0OTkwLC02MT
-E3OTM1MTAsMTUxNzk1OTM4OCwxMTg5MzQyMzY2LDM1MTI3Njc4
-MCw1OTQ5MjE2NjUsMTE0OTc3MTc0MCwtMjU0Mjk4NzQ4LDIxMj
-k2NzMzNzMsMTAzMDkzMzY4NywtMTkyMjE1OTI1OCwxOTYxMzQ5
-NzEzLDE1MTk3NTYwMDMsLTg0MDI1ODY5NSwxMjE1MTk1MjE2LC
-0xNzY4NDEzMzI2XX0=
+eyJoaXN0b3J5IjpbNjU1MDM5NDU4LDE3NTEyMzQ5OTAsLTYxMT
+c5MzUxMCwxNTE3OTU5Mzg4LDExODkzNDIzNjYsMzUxMjc2Nzgw
+LDU5NDkyMTY2NSwxMTQ5NzcxNzQwLC0yNTQyOTg3NDgsMjEyOT
+Y3MzM3MywxMDMwOTMzNjg3LC0xOTIyMTU5MjU4LDE5NjEzNDk3
+MTMsMTUxOTc1NjAwMywtODQwMjU4Njk1LDEyMTUxOTUyMTYsLT
+E3Njg0MTMzMjZdfQ==
 -->
