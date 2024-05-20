@@ -79,6 +79,8 @@ As Datasets will be discovered by browsing an index, they need additional metada
 [dcat:versionNotes](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version_notes)
 : Notes used to explain any changes to this version.
 
+[dcat:downloadURL](https://www.w3.org/TR/vocab-dcat-3/#Property:download_url)
+
 
 ### Additional metadata for Datasets
 
@@ -103,7 +105,7 @@ dcat:keyword "solar"@en, "electricity"@en, "retrofit"@en ;
 : The URL of an OpenAPI file, which fully documents the request parameters and responses, which must be XML or JSON. To allow the OpenAPI file to be used by multiple Data Providers, the file may only contain a single Server object, where the `url` is `"{endpointURL}"`, and `variables` sets the default to `"https://endpointurl-not-specified.ib1.org"`.
 
 `dcat:endpointURL`
-: 
+: The URL of this specific instances, interpolated with the `endpointURL` variable in the OpenAPI server `url`.
 
 
 
@@ -385,7 +387,7 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE4ODg1OTI5LDE1MTc5NTkzODgsMTE4OT
+eyJoaXN0b3J5IjpbNzgyNDY3MDM5LDE1MTc5NTkzODgsMTE4OT
 M0MjM2NiwzNTEyNzY3ODAsNTk0OTIxNjY1LDExNDk3NzE3NDAs
 LTI1NDI5ODc0OCwyMTI5NjczMzczLDEwMzA5MzM2ODcsLTE5Mj
 IxNTkyNTgsMTk2MTM0OTcxMywxNTE5NzU2MDAzLC04NDAyNTg2
