@@ -72,7 +72,10 @@ Additional fields will be made mandatory for Scheme-confirming data sources by t
 ## Conformance and access control metadata fields
 
 `dcterms:conformsTo`
-: The URL of a 
+: The URL of a Scheme Catalog Requirements Document in the Scheme Registry. Most metadata files will include this field.
+
+`ib1:access`
+: A list of `ib1:AccessRule` bnodes which specify the Groups of participants which may access th
 
 ## Data Service metadata fields
 
@@ -413,7 +416,7 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNTE5ODcwMCwtNjExNzkzNTEwLDE1MT
+eyJoaXN0b3J5IjpbMTA4OTM5MjE3MywtNjExNzkzNTEwLDE1MT
 c5NTkzODgsMTE4OTM0MjM2NiwzNTEyNzY3ODAsNTk0OTIxNjY1
 LDExNDk3NzE3NDAsLTI1NDI5ODc0OCwyMTI5NjczMzczLDEwMz
 A5MzM2ODcsLTE5MjIxNTkyNTgsMTk2MTM0OTcxMywxNTE5NzU2
