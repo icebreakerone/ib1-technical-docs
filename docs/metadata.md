@@ -25,10 +25,14 @@ searching for particular kinds of data.
 ## Dataset or Data Service?
 
 A Dataset is:
-* it is one or more downloadable files which may be updated periodically.
+* is provided as one or more downloadable files,
+* and may be updated periodically.
 
-A Data
-If it is provided as an API to query the data, or requires consent from a data subject external to the Trust Framework, then it is a Data Service.
+A Data Service is:
+* an API to query some data which uses parameters to specify a subs
+* is specified formally by a machine readable API description,
+* 
+*  or requires consent from a data subject external to the Trust Framework, then it is a Data Service.
 
 ## Metadata File Structure
 
@@ -403,6 +407,6 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0NjgxMjc3NSwxNTE5NzU2MDAzLC04ND
-AyNTg2OTUsMTIxNTE5NTIxNiwtMTc2ODQxMzMyNl19
+eyJoaXN0b3J5IjpbNzM2ODEzNDAyLDE1MTk3NTYwMDMsLTg0MD
+I1ODY5NSwxMjE1MTk1MjE2LC0xNzY4NDEzMzI2XX0=
 -->
