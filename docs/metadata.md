@@ -71,15 +71,7 @@ The URL of the DCAT object inside the RDF representation is the stable identifer
 : Notes used to explain any changes to this version.
 
 `ib1:sensitivityClass`
-: The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this data set. In the current IB1 Trust Framework this should always be one of [IB1-O](glossary.md#term-Data-sensitivity-class-open), [IB1-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](glossary.md#term-Application-programming-interface)        |
-|                                                                                                         | security imposed, with [IB1-O](glossary.md#term-Data-sensitivity-class-open) data sets being open data with |
-|                                                                                                         | no additional security, and the two shared data classes mandating                                           |
-|                                                                                                         | [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.                        |
-+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| `ib1:dataSetStableIdentifier`                                                                           | An identifier, unique to this [Data Provider](glossary.md#term-Data-Provider), which will not be changed,   |
-|                                                                                                         | and which will be used along with the data provider’s own ID to create a unique identifier for this data    |
-|                                                                                                         | set within [the Open Net Zero](https://opennetzero.org)                                                     |
-+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+: The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this data set. In the current IB1 Trust Framework this should always be one of [IB1-O](glossary.md#term-Data-sensitivity-class-open), [IB1-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](glossary.md#term-Application-programming-interface) security imposed, with [IB1-O](glossary.md#term-Data-sensitivity-class-open) data sets being open data with no additional security, and the two shared data classes mandating [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.
 
 ### Additional metadata
 
@@ -379,8 +371,8 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMjk3ODcxNyw1OTQ5MjE2NjUsMTE0OT
-c3MTc0MCwtMjU0Mjk4NzQ4LDIxMjk2NzMzNzMsMTAzMDkzMzY4
-NywtMTkyMjE1OTI1OCwxOTYxMzQ5NzEzLDE1MTk3NTYwMDMsLT
-g0MDI1ODY5NSwxMjE1MTk1MjE2LC0xNzY4NDEzMzI2XX0=
+eyJoaXN0b3J5IjpbMzUxMjc2NzgwLDU5NDkyMTY2NSwxMTQ5Nz
+cxNzQwLC0yNTQyOTg3NDgsMjEyOTY3MzM3MywxMDMwOTMzNjg3
+LC0xOTIyMTU5MjU4LDE5NjEzNDk3MTMsMTUxOTc1NjAwMywtOD
+QwMjU4Njk1LDEyMTUxOTUyMTYsLTE3Njg0MTMzMjZdfQ==
 -->
