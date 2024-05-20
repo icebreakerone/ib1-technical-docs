@@ -80,7 +80,7 @@ As Datasets will be discovered by browsing an index, they need additional metada
 : Notes used to explain any changes to this version.
 
 
-### Additional metadata for datasets
+### Additional metadata for Datasets
 
 The information above is the minimum needed to ensure that a data set is visible in [the Open Net Zero](https://opennetzero.org) search system. There 
 are, however, other properties of a data set which may be useful to potential data consumers. Where such information can 
@@ -380,9 +380,9 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNzk1OTM4OCwxMTg5MzQyMzY2LDM1MT
-I3Njc4MCw1OTQ5MjE2NjUsMTE0OTc3MTc0MCwtMjU0Mjk4NzQ4
-LDIxMjk2NzMzNzMsMTAzMDkzMzY4NywtMTkyMjE1OTI1OCwxOT
-YxMzQ5NzEzLDE1MTk3NTYwMDMsLTg0MDI1ODY5NSwxMjE1MTk1
-MjE2LC0xNzY4NDEzMzI2XX0=
+eyJoaXN0b3J5IjpbLTE0NjcxODU5MjQsMTUxNzk1OTM4OCwxMT
+g5MzQyMzY2LDM1MTI3Njc4MCw1OTQ5MjE2NjUsMTE0OTc3MTc0
+MCwtMjU0Mjk4NzQ4LDIxMjk2NzMzNzMsMTAzMDkzMzY4NywtMT
+kyMjE1OTI1OCwxOTYxMzQ5NzEzLDE1MTk3NTYwMDMsLTg0MDI1
+ODY5NSwxMjE1MTk1MjE2LC0xNzY4NDEzMzI2XX0=
 -->
