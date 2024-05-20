@@ -45,9 +45,9 @@ Most Datasets and Data Services are Scheme-conforming. A Data Provider may publi
 
 ## Metadata File Structure
 
-The metadata is a standard DCAT Catalog entry.
+The metadata is a standard [DCAT](https://www.w3.org/TR/vocab-dcat-3/) RDF file representing one or more sources of data. 
 
-**NOTE**: The examples below use [YAML](glossary.md#term-YAML-Ain-t-Markup-Language) format for compactness and increased readability. Data providers may present this 
+**NOTE**: The examples below use [Turtle](https://www.w3.org/TR/turtle/) format for compactness and increased readability. Data providers may present this 
 information either in [YAML](glossary.md#term-YAML-Ain-t-Markup-Language) or in [JSON](glossary.md#term-Javascript-Object-Notation) form.
 
 The overall structure of the metadata file is a list of objects, each of which has the following structure:
@@ -418,7 +418,7 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTI0NDQ4NDYsMTAzMDkzMzY4NywtMT
-kyMjE1OTI1OCwxOTYxMzQ5NzEzLDE1MTk3NTYwMDMsLTg0MDI1
-ODY5NSwxMjE1MTk1MjE2LC0xNzY4NDEzMzI2XX0=
+eyJoaXN0b3J5IjpbMTUyMjM4NDM4MiwxMDMwOTMzNjg3LC0xOT
+IyMTU5MjU4LDE5NjEzNDk3MTMsMTUxOTc1NjAwMywtODQwMjU4
+Njk1LDEyMTUxOTUyMTYsLTE3Njg0MTMzMjZdfQ==
 -->
