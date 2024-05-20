@@ -68,7 +68,7 @@ Additional fields will be made mandatory for Scheme-confirming data sources by t
 
 ## Dataset metadata fields
 
-As Datasets will be discovered by browsing an index, they need additional metadata to aid discovery. The following fields are mandatory:
+As Datasets will be discovered by browsing an index, they need additional metadata for discovery. The following fields are mandatory:
 
 [dcterms:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/description/)
 : Longer form description of this data set. This is used in combination with the title and tags when people search for data sets, so aim to include probable search words in the description.
@@ -80,7 +80,7 @@ As Datasets will be discovered by browsing an index, they need additional metada
 : Notes used to explain any changes to this version.
 
 
-### Additional metadata
+### Additional metadata for datasets
 
 The information above is the minimum needed to ensure that a data set is visible in [the Open Net Zero](https://opennetzero.org) search system. There 
 are, however, other properties of a data set which may be useful to potential data consumers. Where such information can 
@@ -94,13 +94,13 @@ Of particular note, and something we would like to ultimately expose in the Open
 We encourage use of the `dcat:keyword` list for data sets. These translate to “tags” in our web interface and are useful to group data sets around specific topics.
 
 ```
-dcat:keyword "solar"@en, "transparency"@en, "payments"@en ;
-  dcat:keyword "responsabilidad"@es, "transparencia"@es, "pagos"@es ;
-dcat:keyword:
-  - 
-  - 
-  - retrofit
+dcat:keyword "solar"@en, "electricity"@en, "retrofit"@en ;
 ```
+
+## Data Service metadata fields
+
+
+
 
 ## Access Block
 
@@ -380,9 +380,9 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg2MjQxNzQsMTE4OTM0MjM2NiwzNTEyNz
-Y3ODAsNTk0OTIxNjY1LDExNDk3NzE3NDAsLTI1NDI5ODc0OCwy
-MTI5NjczMzczLDEwMzA5MzM2ODcsLTE5MjIxNTkyNTgsMTk2MT
-M0OTcxMywxNTE5NzU2MDAzLC04NDAyNTg2OTUsMTIxNTE5NTIx
-NiwtMTc2ODQxMzMyNl19
+eyJoaXN0b3J5IjpbMTUxNzk1OTM4OCwxMTg5MzQyMzY2LDM1MT
+I3Njc4MCw1OTQ5MjE2NjUsMTE0OTc3MTc0MCwtMjU0Mjk4NzQ4
+LDIxMjk2NzMzNzMsMTAzMDkzMzY4NywtMTkyMjE1OTI1OCwxOT
+YxMzQ5NzEzLDE1MTk3NTYwMDMsLTg0MDI1ODY5NSwxMjE1MTk1
+MjE2LC0xNzY4NDEzMzI2XX0=
 -->
