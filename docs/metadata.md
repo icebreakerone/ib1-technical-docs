@@ -37,7 +37,7 @@ They are described by slightly different information in metadata files.
 
 ## Scheme-conforming
 
-A Dataset or Data Service is Scheme-conforming when it is an agreed standard f
+A Dataset or Data Service is Scheme-conforming when it is  agreed standard f
 
 ## Metadata File Structure
 
@@ -412,7 +412,7 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjQ5MDY1OTksMTk2MTM0OTcxMywxNT
+eyJoaXN0b3J5IjpbLTE5MjIxNTkyNTgsMTk2MTM0OTcxMywxNT
 E5NzU2MDAzLC04NDAyNTg2OTUsMTIxNTE5NTIxNiwtMTc2ODQx
 MzMyNl19
 -->
