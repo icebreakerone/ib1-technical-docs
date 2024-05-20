@@ -56,12 +56,14 @@ Data Services are represented as Data Service DCAT objects, with OpenAPI specifi
 
 The URL of the DCAT object inside the RDF representation is the stable identifer of the Dataset or Data Service. This must remain constant each time the metadata file is fetched and over updates to the metadata.
 
-## Mandatory data content metadata fields
+## Dataset mandatory data content metadata fields
 
-[dct:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/title/)
+Datasets are most likely 
+
+[dcterms:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/title/)
 : Short title for this data set
 
-[dct:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/description/)
+[dcterms:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/description/)
 : Longer form description of this data set. This is used in combination with the title and tags when people search for data sets, so aim to include probable search words in the description.
 
 [dcat:version](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version)
@@ -371,8 +373,9 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUxMjc2NzgwLDU5NDkyMTY2NSwxMTQ5Nz
-cxNzQwLC0yNTQyOTg3NDgsMjEyOTY3MzM3MywxMDMwOTMzNjg3
-LC0xOTIyMTU5MjU4LDE5NjEzNDk3MTMsMTUxOTc1NjAwMywtOD
-QwMjU4Njk1LDEyMTUxOTUyMTYsLTE3Njg0MTMzMjZdfQ==
+eyJoaXN0b3J5IjpbMTE4OTM0MjM2NiwzNTEyNzY3ODAsNTk0OT
+IxNjY1LDExNDk3NzE3NDAsLTI1NDI5ODc0OCwyMTI5NjczMzcz
+LDEwMzA5MzM2ODcsLTE5MjIxNTkyNTgsMTk2MTM0OTcxMywxNT
+E5NzU2MDAzLC04NDAyNTg2OTUsMTIxNTE5NTIxNiwtMTc2ODQx
+MzMyNl19
 -->
