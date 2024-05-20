@@ -50,7 +50,9 @@ The metadata is a standard [DCAT](https://www.w3.org/TR/vocab-dcat-3/) RDF file 
 **NOTE**: The examples below use the [Turtle](https://www.w3.org/TR/turtle/) format for compactness and increased readability. Data providers may present this 
 information in Turtle, RDF/XML, JSON-LD or N3 formats.
 
-Dataset are represented as Dataset DCAT objects with one or more Distri
+Dataset are represented as Dataset DCAT objects with one or more Distributions. If the data measures the same thing over periods of time, then these must be linked together with a Data Series object.
+
+Data Services are represented as Data Service DC
 
 The overall structure of the metadata file is a list of objects, each of which has the following structure:
 
@@ -420,7 +422,7 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzgyODQ3OTcsMTAzMDkzMzY4NywtMT
-kyMjE1OTI1OCwxOTYxMzQ5NzEzLDE1MTk3NTYwMDMsLTg0MDI1
-ODY5NSwxMjE1MTk1MjE2LC0xNzY4NDEzMzI2XX0=
+eyJoaXN0b3J5IjpbMTMwOTExMzIwOCwxMDMwOTMzNjg3LC0xOT
+IyMTU5MjU4LDE5NjEzNDk3MTMsMTUxOTc1NjAwMywtODQwMjU4
+Njk1LDEyMTUxOTUyMTYsLTE3Njg0MTMzMjZdfQ==
 -->
