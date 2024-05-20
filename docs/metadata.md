@@ -88,7 +88,7 @@ Data Services are represented as Data Service DCAT objects, with OpenAPI specifi
 
 ### Additional metadata
 
-The information above is the minimum needed to ensure that a data set is visible in [the Open Net Zero](https://opennetzero.org)Energy search system. There 
+The information above is the minimum needed to ensure that a data set is visible in [the Open Net Zero](https://opennetzero.org) search system. There 
 are, however, other properties of a data set which may be useful to potential data consumers. Where such information can 
 be provided, it should be provided in as standard a form as possible - in practice this translates to making use of 
 existing ontologies such as DCAT and Dublin Core by preference, then shared, industry-specific, ontologies, and only 
@@ -384,8 +384,8 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1NDI5ODc0OCwyMTI5NjczMzczLDEwMz
-A5MzM2ODcsLTE5MjIxNTkyNTgsMTk2MTM0OTcxMywxNTE5NzU2
-MDAzLC04NDAyNTg2OTUsMTIxNTE5NTIxNiwtMTc2ODQxMzMyNl
-19
+eyJoaXN0b3J5IjpbMTE0OTc3MTc0MCwtMjU0Mjk4NzQ4LDIxMj
+k2NzMzNzMsMTAzMDkzMzY4NywtMTkyMjE1OTI1OCwxOTYxMzQ5
+NzEzLDE1MTk3NTYwMDMsLTg0MDI1ODY5NSwxMjE1MTk1MjE2LC
+0xNzY4NDEzMzI2XX0=
 -->
