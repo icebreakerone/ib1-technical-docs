@@ -90,7 +90,10 @@ To specify how the data may be downloaded, one or more associated `dcat:Distribu
 : The MIME type of the download file.
 
 `ib1:dataSchema`
-: The URL of a schema file specifying the format of the downloadable file. The type of schema depends on the `dcat
+: The URL of a schema file specifying the format of the downloadable file. The type of schema depends on the `dcat:mediaType`:
+`application/json` are documented by JSON Schema files,
+`application/xml` by XSD 1.1 files, and
+`text/csv` by [CSVW](https://www.w3.org/ns/csvw) files.
 
 ### Additional metadata for Datasets
 
@@ -397,7 +400,7 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTQ3MjIyODcsMTUxNzk1OTM4OCwxMT
+eyJoaXN0b3J5IjpbLTEyOTU4ODEyODksMTUxNzk1OTM4OCwxMT
 g5MzQyMzY2LDM1MTI3Njc4MCw1OTQ5MjE2NjUsMTE0OTc3MTc0
 MCwtMjU0Mjk4NzQ4LDIxMjk2NzMzNzMsMTAzMDkzMzY4NywtMT
 kyMjE1OTI1OCwxOTYxMzQ5NzEzLDE1MTk3NTYwMDMsLTg0MDI1
