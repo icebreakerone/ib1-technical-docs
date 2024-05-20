@@ -1,6 +1,6 @@
 # Data Set Metadata
 
-Each [Data Provider](glossary.md#term-Data-Provider) ([Data Provider](glossary.md#term-Data-Provider)) maintains a set of one or more metadata files, each of which can describe one or more 
+Each [Data Provider](glossary.md#term-Data-Provider) maintains a set of one or more metadata files, each of which can describe one or more 
 distinct data sets. These descriptions serve several purposes:
 
 
@@ -185,11 +185,11 @@ transport:
 
 **NOTE**: Because [API](glossary.md#term-Application-programming-interface) security is defined in relation to the data sensitivity class of the data set, it is not necessary to 
 define the security of any presented [API](glossary.md#term-Application-programming-interface) in this section. Data sets in class [IB1OE-O](glossary.md#term-Data-sensitivity-class-open) must expose an [API](glossary.md#term-Application-programming-interface) with no extra
-security measures, and those in [IB1OE-SA](glossary.md#term-Data-sensitivity-class-shared-A) and [IB1OE-SB](glossary.md#term-Data-sensitivity-class-shared-B) must be secured by [FAPI](glossary.md#term-Financial-Grade-API) using the Ib1 Trust FrameworkOpen Energy trust services.
+security measures, and those in [IB1OE-SA](glossary.md#term-Data-sensitivity-class-shared-A) and [IB1OE-SB](glossary.md#term-Data-sensitivity-class-shared-B) must be secured by [FAPI](glossary.md#term-Financial-Grade-API) using the IB1 Trust Framework trust services.
 
 ### Heartbeat URL
 
-Data providers **SHOULD** create a secured endpoint to act as a heartbeat - if this is specifed then the [TFOEGS](glossary.md#term-Trust-FrameworkOpen-Energy-Governance-Service) will 
+Data providers **SHOULD** create a secured endpoint to act as a heartbeat - if this is specifed then the [TFOEGS](glossary.md#term-Trust-Framework-Governance-Service) will 
 periodically call it to assertain liveness and optionally gather metrics as described in
 [Heartbeat and monitoring endpoint](ops_guidelines/data_provider_ops_guidelines.md#heartbeat-and-monitoring-endpoint)
 
@@ -395,5 +395,6 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxNTE5NTIxNiwtMTc2ODQxMzMyNl19
+eyJoaXN0b3J5IjpbLTE4NTgxMzc3NTksMTIxNTE5NTIxNiwtMT
+c2ODQxMzMyNl19
 -->
