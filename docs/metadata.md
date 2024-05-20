@@ -198,7 +198,7 @@ the hearbeat response is exposed.
 
 ## Representation Block
 
-This section describes the format of any data received by a [data consumer](glossary.md#term-Data-Consumer) from this data set. The IB1 Trust FrameworkOpen Energy does 
+This section describes the format of any data received by a [data consumer](glossary.md#term-Data-Consumer) from this data set. The IB1 Trust Framework does 
 not mandate particular formats, so this section is guidance rather than specification.
 
 The only required element in this section is a key `mime` which should contain the 
@@ -395,6 +395,6 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTgxMzc3NTksMTIxNTE5NTIxNiwtMT
-c2ODQxMzMyNl19
+eyJoaXN0b3J5IjpbLTg0MDI1ODY5NSwxMjE1MTk1MjE2LC0xNz
+Y4NDEzMzI2XX0=
 -->
