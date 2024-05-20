@@ -33,7 +33,11 @@ A Data Service:
 * is specified formally by a machine readable API description, and
 * may require consent from a data subject external to the Trust Framework.
 
-These require 
+They are described by slightly different information in metadata files.
+
+## Scheme-conforming
+
+
 
 ## Metadata File Structure
 
@@ -408,6 +412,6 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDU0OTY1NywxNTE5NzU2MDAzLC04ND
+eyJoaXN0b3J5IjpbMTk2MTM0OTcxMywxNTE5NzU2MDAzLC04ND
 AyNTg2OTUsMTIxNTE5NTIxNiwtMTc2ODQxMzMyNl19
 -->
