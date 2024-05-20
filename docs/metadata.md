@@ -50,7 +50,7 @@ The metadata is a standard [DCAT](https://www.w3.org/TR/vocab-dcat-3/) RDF file 
 **NOTE**: The examples below use the [Turtle](https://www.w3.org/TR/turtle/) format for compactness and increased readability. Data providers may present this 
 information in Turtle, RDF/XML, JSON-LD or N3 formats.
 
-Datasets are represented as Dataset DCAT objects with one or more Distributions. If the data measures the same thing over periods of time, then these must be linked together with a Data Series object. The format of the data is described by 
+Datasets are represented as Dataset DCAT objects with one or more Distributions. If the data measures the same thing over periods of time, then these must be linked together with a Data Series object. The format of the data is described by JSON Schema, XSD 1.1 or CSV
 
 Data Services are represented as Data Service DCAT objects, with OpenAPI specifications of the API and the format of the data in the responses.
 
@@ -422,7 +422,8 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyOTY3MzM3MywxMDMwOTMzNjg3LC0xOT
-IyMTU5MjU4LDE5NjEzNDk3MTMsMTUxOTc1NjAwMywtODQwMjU4
-Njk1LDEyMTUxOTUyMTYsLTE3Njg0MTMzMjZdfQ==
+eyJoaXN0b3J5IjpbLTEzNjMwMjIwNDYsMjEyOTY3MzM3MywxMD
+MwOTMzNjg3LC0xOTIyMTU5MjU4LDE5NjEzNDk3MTMsMTUxOTc1
+NjAwMywtODQwMjU4Njk1LDEyMTUxOTUyMTYsLTE3Njg0MTMzMj
+ZdfQ==
 -->
