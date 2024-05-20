@@ -54,16 +54,14 @@ Datasets are represented as Dataset DCAT objects with one or more Distributions.
 
 Data Services are represented as Data Service DCAT objects, with OpenAPI specifications of the API and the format of the data in the responses.
 
-The URL of the DCAT object inside the RDF representation is the stable identifer of the Dataset or Data Service which must remain constant each time the metadata file is fetched and over updates to the metadata.
+The URL of the DCAT object inside the RDF representation is the stable identifer of the Dataset or Data Service. This must remain constant each time the metadata file is fetched and over updates to the metadata.
 
 ## Mandatory data content metadata fields
 
-+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| Key                                                                                                     | Value                                                                                                       |
-+=========================================================================================================+=============================================================================================================+
-| [dct:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/title/)              | Short title for this data set                                                                               |
-+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| [dct:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/description/)  | Longer form description of this data set. This is used in combination with the title and tags when people   |
+[dct:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/title/)
+: Short title for this data set
+
+[dct:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/description/)  | Longer form description of this data set. This is used in combination with the title and tags when people   |
 |                                                                                                         | search for data sets, so aim to include probable search words in the description.                           |
 +---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
 | [dcat:version](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version)                           | Version number of the data set, this should preferably follow [semantic versioning](https://semver.org/) if |
@@ -386,8 +384,8 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMDE3MDQzLDU5NDkyMTY2NSwxMTQ5Nz
-cxNzQwLC0yNTQyOTg3NDgsMjEyOTY3MzM3MywxMDMwOTMzNjg3
-LC0xOTIyMTU5MjU4LDE5NjEzNDk3MTMsMTUxOTc1NjAwMywtOD
-QwMjU4Njk1LDEyMTUxOTUyMTYsLTE3Njg0MTMzMjZdfQ==
+eyJoaXN0b3J5IjpbLTIwNjc0NTczMjUsNTk0OTIxNjY1LDExND
+k3NzE3NDAsLTI1NDI5ODc0OCwyMTI5NjczMzczLDEwMzA5MzM2
+ODcsLTE5MjIxNTkyNTgsMTk2MTM0OTcxMywxNTE5NzU2MDAzLC
+04NDAyNTg2OTUsMTIxNTE5NTIxNiwtMTc2ODQxMzMyNl19
 -->
