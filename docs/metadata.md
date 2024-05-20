@@ -41,7 +41,7 @@ A Scheme-conforming Dataset or Data Service meets a common standard across a Sch
 
 These requirements are published by the Scheme Registry as machine readable Scheme Catalog Requirements Documents, and metadata files link to them to show their conformance.
 
-Most Datasets and Data Services are Scheme-conforming. A Data Provider may publish data which is not Scheme-conforming to use the Trust Framework auth
+Most Datasets and Data Services are Scheme-conforming. A Data Provider may publish data which is not Scheme-conforming to use the Trust Framework access control to share ad-hoc data amongst Trust Framework participants, and the Catalog to include Open Data in a public index.
 
 ## Metadata File Structure
 
@@ -416,7 +416,7 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2Mjg4MTgwOCwtMTkyMjE1OTI1OCwxOT
+eyJoaXN0b3J5IjpbMTAzMDkzMzY4NywtMTkyMjE1OTI1OCwxOT
 YxMzQ5NzEzLDE1MTk3NTYwMDMsLTg0MDI1ODY5NSwxMjE1MTk1
 MjE2LC0xNzY4NDEzMzI2XX0=
 -->
