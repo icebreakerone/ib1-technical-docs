@@ -37,7 +37,7 @@ They are described by slightly different information in metadata files.
 
 ## Scheme-conforming
 
-A Scheme-conforming Dataset or Data Service meets a common standard across a Scheme to provide the same format and meaning of data across all Data Providers. This standard includes the format of the data or API and access controls.
+A Scheme-conforming Dataset or Data Service meets a common standard across a Scheme to provide the same format and meaning of data across all Data Providers. This standard includes the format of the data or API, and the role who can access it under which licenses.
 
 These requirements are published by the Scheme Registry as machine readable Scheme Catalog Requirements Documents, and metadata files link to them to show their conformance.
 
@@ -384,8 +384,8 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0OTc3MTc0MCwtMjU0Mjk4NzQ4LDIxMj
-k2NzMzNzMsMTAzMDkzMzY4NywtMTkyMjE1OTI1OCwxOTYxMzQ5
-NzEzLDE1MTk3NTYwMDMsLTg0MDI1ODY5NSwxMjE1MTk1MjE2LC
-0xNzY4NDEzMzI2XX0=
+eyJoaXN0b3J5IjpbNTk0OTIxNjY1LDExNDk3NzE3NDAsLTI1ND
+I5ODc0OCwyMTI5NjczMzczLDEwMzA5MzM2ODcsLTE5MjIxNTky
+NTgsMTk2MTM0OTcxMywxNTE5NzU2MDAzLC04NDAyNTg2OTUsMT
+IxNTE5NTIxNiwtMTc2ODQxMzMyNl19
 -->
