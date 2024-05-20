@@ -84,7 +84,13 @@ As Datasets will be discovered by browsing an index, they need additional metada
 To specify how the data may be downloaded, one or more associated `dcat:Distribution` objects must be included which contain:
 
 [dcat:downloadURL](https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_download_url)
-: A stable URL for download of the dataset, subject to access 
+: A stable URL for download of the dataset, subject to access controls specified in the Dataset object.
+
+[dcat:media_type](https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_media_type)
+: The MIME type of the download file.
+
+`ib1:dataSchema`
+: The URL of a schema file specifying the format of the downloadable file. The type of schema depends on the `dcat
 
 ### Additional metadata for Datasets
 
@@ -391,9 +397,9 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyNzM3NjYwNywxNTE3OTU5Mzg4LDExOD
-kzNDIzNjYsMzUxMjc2NzgwLDU5NDkyMTY2NSwxMTQ5NzcxNzQw
-LC0yNTQyOTg3NDgsMjEyOTY3MzM3MywxMDMwOTMzNjg3LC0xOT
-IyMTU5MjU4LDE5NjEzNDk3MTMsMTUxOTc1NjAwMywtODQwMjU4
-Njk1LDEyMTUxOTUyMTYsLTE3Njg0MTMzMjZdfQ==
+eyJoaXN0b3J5IjpbLTEzOTQ3MjIyODcsMTUxNzk1OTM4OCwxMT
+g5MzQyMzY2LDM1MTI3Njc4MCw1OTQ5MjE2NjUsMTE0OTc3MTc0
+MCwtMjU0Mjk4NzQ4LDIxMjk2NzMzNzMsMTAzMDkzMzY4NywtMT
+kyMjE1OTI1OCwxOTYxMzQ5NzEzLDE1MTk3NTYwMDMsLTg0MDI1
+ODY5NSwxMjE1MTk1MjE2LC0xNzY4NDEzMzI2XX0=
 -->
