@@ -50,47 +50,9 @@ The metadata is a standard [DCAT](https://www.w3.org/TR/vocab-dcat-3/) RDF file 
 **NOTE**: The examples below use the [Turtle](https://www.w3.org/TR/turtle/) format for compactness and increased readability. Data providers may present this 
 information in Turtle, RDF/XML, JSON-LD or N3 formats.
 
-Datasets are represented as Dataset DCAT objects with one or more Distributions. If the data measures the same thing over periods of time, then these must be linked together with a Data Series object. The format of the data is described by JSON Schema, XSD 1.1 or CSV
+Datasets are represented as Dataset DCAT objects with one or more Distributions. If the data measures the same thing over periods of time, then these must be linked together with a Data Series object. The format of the data is described by JSON Schema, XSD 1.1 or CSVW schemas.
 
 Data Services are represented as Data Service DCAT objects, with OpenAPI specifications of the API and the format of the data in the responses.
-
-The overall structure of the metadata file is a list of objects, each of which has the following structure:
-
-```yaml
-- content:
-    # Discovery information
-  access:
-    # Access control and licensing information
-  transport:
-    # |API| information
-  representation:
-    # Data format information
-```
-
-## Content Block
-
-The `content` key contains a block of [JSON-LD](glossary.md#term-JavaScript-Object-Notation-for-Linked-Data) compatible information describing the conceptual content of the dataset. 
-A simple example is shown below:
-
-```yaml
-- content:
-    "@type": "dcat:Dataset"
-    "@context":
-       dcat: http://www.w3.org/ns/dcat#
-       dct: http://purl.org/dc/terms/
-       ib1: http://ib1.org/terms/
-    dct:title: My amazing data set
-    dct:description: This is a free text description of the data set
-    dcat:version: 0.1.2
-    dcat:versionNotes: This is a note on this particular version of the dataset
-    ib1:sensitivityClass: IB1-SA
-    ib1:dataSetStableIdentifier: myData
-```
-
-These are the minimum properties every data set must define, they include terms from the 
-[Dublic Core](https://dublincore.org/) (`dct`) and [Data Catalog](https://www.w3.org/TR/vocab-dcat-2/) (`dcat`) 
-vocabularies, as well as from the Icebreaker One core ontology. Prefixes are defined in the [JSON-LD](glossary.md#term-JavaScript-Object-Notation-for-Linked-Data) `@context` object 
-as in the example above.
 
 ## Mandatory data content metadata fields
 
@@ -422,8 +384,8 @@ Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
 ]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjMwMjIwNDYsMjEyOTY3MzM3MywxMD
-MwOTMzNjg3LC0xOTIyMTU5MjU4LDE5NjEzNDk3MTMsMTUxOTc1
-NjAwMywtODQwMjU4Njk1LDEyMTUxOTUyMTYsLTE3Njg0MTMzMj
-ZdfQ==
+eyJoaXN0b3J5IjpbLTI1NDI5ODc0OCwyMTI5NjczMzczLDEwMz
+A5MzM2ODcsLTE5MjIxNTkyNTgsMTk2MTM0OTcxMywxNTE5NzU2
+MDAzLC04NDAyNTg2OTUsMTIxNTE5NTIxNiwtMTc2ODQxMzMyNl
+19
 -->
