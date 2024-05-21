@@ -82,6 +82,8 @@ Additional fields will be made mandatory for Scheme-confirming data sources by t
 
 ## Data Service metadata fields
 
+Data Services are represented by `dcat:DataService` objects with the common mandatory fields and Data Service specific fields.
+
 `dcat:endpointDescription`
 : The URL of an OpenAPI file, which fully documents the request parameters and responses, which must be XML or JSON. To allow the OpenAPI file to be used by multiple Data Providers, the file may only contain a single Server object, where the `url` is `"{endpointURL}"`, and `variables` sets the default to `"https://endpointurl-not-specified.ib1.org"`.
 
@@ -95,7 +97,9 @@ Additional metadata may be added.
 
 ## Dataset metadata fields
 
-As Datasets will be discovered by browsing an index, they need additional metadata for discovery. The following fields are mandatory:
+Data Services are represented by `dcat:DataService` objects with the common mandatory fields and Data Service specific fields.
+
+As Datasets will be discovered by browsing an index, they need additional dmetadata for discovery. The following fields are mandatory:
 
 [dcterms:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/description/)
 : Longer form description of this data set. This is used in combination with the title and tags when people search for data sets, so aim to include probable search words in the description.
@@ -207,7 +211,7 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MDk2NDIzMCwtMTM2MzYzMTQwMSwtMT
+eyJoaXN0b3J5IjpbMTk1MzEwMTI3OCwtMTM2MzYzMTQwMSwtMT
 Q3MDQzMzM2MywxNzUxMjM0OTkwLC02MTE3OTM1MTAsMTUxNzk1
 OTM4OCwxMTg5MzQyMzY2LDM1MTI3Njc4MCw1OTQ5MjE2NjUsMT
 E0OTc3MTc0MCwtMjU0Mjk4NzQ4LDIxMjk2NzMzNzMsMTAzMDkz
