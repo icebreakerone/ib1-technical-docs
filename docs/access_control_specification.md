@@ -59,16 +59,13 @@ The document is one or more `ib1:LicenceInterpretation` objects.
 ```
 
 `ib1:permission`
-: The URL of a permission, with the meaning defined in the contracts which govern the Trust Framework.
+: The URL of a permission, with the meaning defined in the contracts which govern the Trust Framework. A consumer may ignore any Permission that they do not understand and use the licence.
 
 `ib1:obligation`
-: The URL of a obligation, with the meaning defined in the contracts which govern the Trust Framework.
+: The URL of a obligation, with the meaning defined in the contracts which govern the Trust Framework. A consumer must not use a licence if it includes an Obligation that they do not understand.
 
-A consumer of this documentation must ig
 
 ## Permissions
-
-Permission grants for a given set of access conditions are specified as a comma (`,`) separated list of **names**. There **MUST** be at least one **name** in this list, an empty capability grant list is not considered valid.
 
 ### Standard permissions
 
@@ -174,7 +171,7 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NzI3NDg4OSwtMjEzMzk3OTQ2MywtNz
+eyJoaXN0b3J5IjpbLTM5NzQwMzg2OSwtMjEzMzk3OTQ2MywtNz
 QxMTM2MDkwLDkzNTA4Mzc0NywtOTY5MzAxMjUwLDExNzYxOTA5
 MDEsLTE5NjkxMzg4MjJdfQ==
 -->
