@@ -15,18 +15,18 @@ They are applied to properties of a [Data Consumer](glossary.md#term-Data-Consum
 
 ## Permissions
 
-Permissio grants for a given set of access conditions are specified as a comma (`,`) separated list of **names**. There **MUST** be at least one **name** in this list, an empty capability grant list is not considered valid.
+Permission grants for a given set of access conditions are specified as a comma (`,`) separated list of **names**. There **MUST** be at least one **name** in this list, an empty capability grant list is not considered valid.
 
-### Standard capabilities
+### Standard permissions
 
-These are capabilities where the namespace part of the **name** is `ib1`, indicating that they are defined as part of the Icebreaker One Trust Framework. Data providers **SHOULD NOT**, create their own capabilities unless absolutely necessary as doing so acts against the aim of easy interoperability and comprehension of access and licensing rules.
+These are permissions where the namespace part of the **name** is `ib1`, indicating that they are defined as part of the Icebreaker One Trust Framework. Data providers **SHOULD NOT**, create their own permissions unless absolutely necessary as doing so acts against the aim of easy interoperability and comprehension of access and licensing rules.
 
-Any additional capabilities designed **MUST** be prefixed with the organisation ID of the data provider responsible for their definition, and any such data provider **MUST** publish a clear, legally valid, definition of any such capabilities. In addition, data providers creating custom capabilities **MUST** inform the [TFGS](glossary.md#term-Trust-Framework-Governance-Service) of this, providing links to the aforementioned documentation.
+Any additional permissions designed **MUST** be prefixed with the organisation ID of the data provider responsible for their definition, and any such data provider **MUST** publish a clear, legally valid, definition of any such permissions. In addition, data providers creating custom permissions **MUST** inform the [TFGS](glossary.md#term-Trust-Framework-Governance-Service) of this, providing links to the aforementioned documentation.
 
-**WARNING**: This section is provisional, the exact final set of base capabilities has yet to be determined. Those shown below are a plausible first cut but should not be considered definitive.
+**WARNING**: This section is provisional, the exact final set of base permissions has yet to be determined. Those shown below are a plausible first cut but should not be considered definitive.
 
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-| Category                 | Capability name                           | Meaning                                                                                |
+| Category                 | Permission name                           | Meaning                                                                                |
 +==========================+===========================================+========================================================================================+
 | **Use**                  |                                           | **Use the artefact internally**                                                        |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
@@ -67,11 +67,11 @@ Any additional capabilities designed **MUST** be prefixed with the organisation 
 |                          |                                           | Consumer’s own products or services                                                    |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
 
-### Expressing Open Data licenses with capabilities
+### Expressing Open Data licenses with permissions
 
-The capabilities defined above in Standard capabilities are intended for [shared data](glossary.md#term-Shared-data), but data providers may also publish [open data](glossary.md#term-Open-data). An open data set by definition has no access conditions, so any access rules for such data sets **MUST** have an empty access condition list, and must use one of the following capabilities to declare that the data are licensed under a known OSI approved open license
+The permissions defined above in Standard permissions are intended for [shared data](glossary.md#term-Shared-data), but data providers may also publish [open data](glossary.md#term-Open-data). An open data set by definition has no access conditions, so any access rules for such data sets **MUST** have an empty access condition list, and must use one of the following permissions to declare that the data are licensed under a known OSI approved open license
 
-Rules **MUST NOT** grant a mix of capabilities in the `open` namespace and capabilities in other namespaces, as the semantics of this are not well defined.
+Rules **MUST NOT** grant a mix of permissions in the `open` namespace and permissions in other namespaces, as the semantics of this are not well defined.
 
 +-----------------------------------------------+-------------------------------------------------------------------------------------------------------------+
 | Capability name                               | Corresponding open data license                                                                             |
@@ -102,7 +102,7 @@ Open data sets **SHOULD** be released under the latest version of any given lice
 
 ## Obligations
 
-Obligations are constraints on what the data consumer can do with the data, restricting or specialising the capabilities granted. They are specified as a single **name**.
+Obligations are constraints on what the data consumer can do with the data, restricting or specialising the permissions granted. They are specified as a single **name**.
 
 ### Standard obligations
 
@@ -121,6 +121,6 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mzk5MDM4NjcsMTE3NjE5MDkwMSwtMT
-k2OTEzODgyMl19
+eyJoaXN0b3J5IjpbLTk2OTMwMTI1MCwxMTc2MTkwOTAxLC0xOT
+Y5MTM4ODIyXX0=
 -->
