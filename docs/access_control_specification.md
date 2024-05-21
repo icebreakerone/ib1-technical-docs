@@ -43,6 +43,8 @@ An `ib1:AccessRule` describes a complete machine readable access rule for a data
 
 The Registry maintains an RDF document at a well known URL which maps Licence URLs to Permissions (what you are allowed to do with the data) and Obligations (what you must do when providing derivative data to others).
 
+The document is one or more `ib1:LicenceInterpretation` objects.
+
 ```
 @prefix ib1: <http://registry.ib1.org/ns/1.0/>
 
@@ -57,10 +59,12 @@ The Registry maintains an RDF document at a well known URL which maps Licence UR
 ```
 
 `ib1:permission`
-: The URL of a permission defined in the Registry.
+: The URL of a permission, with the meaning defined in the contracts which govern the Trust Framework.
 
-`
+`ib1:obligation`
+: The URL of a obligation, with the meaning defined in the contracts which govern the Trust Framework.
 
+A consumer of this documentation must ig
 
 ## Permissions
 
@@ -170,7 +174,7 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTcxMDc2ODksLTIxMzM5Nzk0NjMsLT
-c0MTEzNjA5MCw5MzUwODM3NDcsLTk2OTMwMTI1MCwxMTc2MTkw
-OTAxLC0xOTY5MTM4ODIyXX0=
+eyJoaXN0b3J5IjpbMTM3NzI3NDg4OSwtMjEzMzk3OTQ2MywtNz
+QxMTM2MDkwLDkzNTA4Mzc0NywtOTY5MzAxMjUwLDExNzYxOTA5
+MDEsLTE5NjkxMzg4MjJdfQ==
 -->
