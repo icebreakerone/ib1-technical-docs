@@ -25,8 +25,9 @@ searching for particular kinds of data.
 ## Dataset or Data Service?
 
 A Dataset:
-* is provided as one or more downloadable files, and
-* may be updated periodically while maintaining access to previous.
+* is provided as one or more downloadable files,
+* may be published as part of series of Datasets covering the same source of data over different time periods, and
+* maintains historical access to previous periods.
 
 A Data Service:
 * is an API to query some data which uses parameters to specify a subset of data, including time period,
@@ -204,7 +205,7 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzk1OTE3ODgsLTEzNjM2MzE0MDEsLT
+eyJoaXN0b3J5IjpbLTEyNTE5ODQ1MzUsLTEzNjM2MzE0MDEsLT
 E0NzA0MzMzNjMsMTc1MTIzNDk5MCwtNjExNzkzNTEwLDE1MTc5
 NTkzODgsMTE4OTM0MjM2NiwzNTEyNzY3ODAsNTk0OTIxNjY1LD
 ExNDk3NzE3NDAsLTI1NDI5ODc0OCwyMTI5NjczMzczLDEwMzA5
