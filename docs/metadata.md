@@ -59,6 +59,8 @@ The URL of the DCAT object inside the RDF representation is the stable identifer
 
 ## Mandatory metadata fields
 
+The following fields must be included in every DCAT object.
+
 [dcterms:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/title/)
 : Short title for this data set
 
@@ -76,7 +78,7 @@ Additional fields will be made mandatory for Scheme-confirming data sources by t
 : The URL of a Scheme Catalog Requirements Document in the Scheme Registry. Most metadata files will include this field.
 
 `ib1:access`
-: A list of [`ib1:AccessRule`](access_control_specification.md) bnodes which specify Groups of participants which may access this data, and the Licence under which they can access it.
+: A list of [`ib1:AccessRule`](access_control_specification.md) bnodes which specify Groups of participants which may access this data, and the Licence under which they can access it. R
 
 ## Data Service metadata fields
 
@@ -205,11 +207,11 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTE5ODQ1MzUsLTEzNjM2MzE0MDEsLT
-E0NzA0MzMzNjMsMTc1MTIzNDk5MCwtNjExNzkzNTEwLDE1MTc5
-NTkzODgsMTE4OTM0MjM2NiwzNTEyNzY3ODAsNTk0OTIxNjY1LD
-ExNDk3NzE3NDAsLTI1NDI5ODc0OCwyMTI5NjczMzczLDEwMzA5
-MzM2ODcsLTE5MjIxNTkyNTgsMTk2MTM0OTcxMywxNTE5NzU2MD
-AzLC04NDAyNTg2OTUsMTIxNTE5NTIxNiwtMTc2ODQxMzMyNl19
+eyJoaXN0b3J5IjpbMTk2ODIyNDIxLC0xMzYzNjMxNDAxLC0xND
+cwNDMzMzYzLDE3NTEyMzQ5OTAsLTYxMTc5MzUxMCwxNTE3OTU5
+Mzg4LDExODkzNDIzNjYsMzUxMjc2NzgwLDU5NDkyMTY2NSwxMT
+Q5NzcxNzQwLC0yNTQyOTg3NDgsMjEyOTY3MzM3MywxMDMwOTMz
+Njg3LC0xOTIyMTU5MjU4LDE5NjEzNDk3MTMsMTUxOTc1NjAwMy
+wtODQwMjU4Njk1LDEyMTUxOTUyMTYsLTE3Njg0MTMzMjZdfQ==
 
 -->
