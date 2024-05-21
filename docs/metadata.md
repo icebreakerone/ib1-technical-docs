@@ -111,7 +111,7 @@ As Datasets will be discovered by browsing an index, they need additional descri
 : Notes used to explain any changes to this version.
 
 [dcat:distribution](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_distribution)
-: URL of a `dcat:Distribution` for a downloadable f
+: URL of a `dcat:Distribution` for a downloadable file, see below for mandatory fields. Multiple Distribtions may be defined for the same data in different formats, but Scheme-conforming datasets will require a specific format.
 
 [dcat:inSeries](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_in_series)
 : Where the URL is part of a series of periodic datasets, the URL of a `dcat:DataSeries` which associates this Dataset with the overall series. The DataSeries is created by the publisher and contains their data only.
@@ -219,7 +219,7 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTkwNjQ5OTksLTEwMzIyMzI1MjMsLT
+eyJoaXN0b3J5IjpbLTExMTIyMjIwMjIsLTEwMzIyMzI1MjMsLT
 g0MDY1NTE4OSwtNTc5MzY1ODYwLC0xMzYzNjMxNDAxLC0xNDcw
 NDMzMzYzLDE3NTEyMzQ5OTAsLTYxMTc5MzUxMCwxNTE3OTU5Mz
 g4LDExODkzNDIzNjYsMzUxMjc2NzgwLDU5NDkyMTY2NSwxMTQ5
