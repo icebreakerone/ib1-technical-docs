@@ -36,7 +36,10 @@ An `ib1:AccessRule` describes a complete machine readable access rule for a data
 : The URL of a group in the Directory.
 
 `ib1:license`
-: The URL of a Licence which must be 
+: The URL of a Licence which must be registered with the Registry.
+
+
+## Mapping licences to 
 
 
 ## Permissions
@@ -147,7 +150,7 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg5OTc1NTkxLC0yMTMzOTc5NDYzLC03ND
-ExMzYwOTAsOTM1MDgzNzQ3LC05NjkzMDEyNTAsMTE3NjE5MDkw
-MSwtMTk2OTEzODgyMl19
+eyJoaXN0b3J5IjpbLTE1NTY1NTQwNDQsLTIxMzM5Nzk0NjMsLT
+c0MTEzNjA5MCw5MzUwODM3NDcsLTk2OTMwMTI1MCwxMTc2MTkw
+OTAxLC0xOTY5MTM4ODIyXX0=
 -->
