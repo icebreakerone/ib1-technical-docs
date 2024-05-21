@@ -132,10 +132,6 @@ Of particular note, and something we would like to ultimately expose in the Open
 
 We encourage use of the `dcat:keyword` list for data sets. These translate to “tags” in our web interface and are useful to group data sets around specific topics.
 
-```
-dcat:keyword "solar"@en, "electricity"@en, "retrofit"@en ;
-```
-
 
 ## Full Example
 
@@ -182,6 +178,9 @@ dcat:keyword "solar"@en, "electricity"@en, "retrofit"@en ;
     dcat:version "0.1.2" ;
     dcat:inSeries <https://data-provider-example.com/generation-report>;
     dcat:distribution <https://data-provider-example.com/generation-report/oct2024/csv> ;
+    dcat:keyword "solar"@en,
+	    "electricity"@en,
+	    "retrofit"@en ;
     ib1:sensitivityClass "IB1OE-SA" ;
     ib1:dataSetStableIdentifier: "MYENERGYCOMPANY/DS9871/OCT2024" ;
     ib1:access [ a ib1:AccessRule ;
@@ -205,10 +204,11 @@ dcat:keyword "solar"@en, "electricity"@en, "retrofit"@en ;
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjM2MzE0MDEsLTE0NzA0MzMzNjMsMT
-c1MTIzNDk5MCwtNjExNzkzNTEwLDE1MTc5NTkzODgsMTE4OTM0
-MjM2NiwzNTEyNzY3ODAsNTk0OTIxNjY1LDExNDk3NzE3NDAsLT
-I1NDI5ODc0OCwyMTI5NjczMzczLDEwMzA5MzM2ODcsLTE5MjIx
-NTkyNTgsMTk2MTM0OTcxMywxNTE5NzU2MDAzLC04NDAyNTg2OT
-UsMTIxNTE5NTIxNiwtMTc2ODQxMzMyNl19
+eyJoaXN0b3J5IjpbLTM3MjE1MTM1OSwtMTM2MzYzMTQwMSwtMT
+Q3MDQzMzM2MywxNzUxMjM0OTkwLC02MTE3OTM1MTAsMTUxNzk1
+OTM4OCwxMTg5MzQyMzY2LDM1MTI3Njc4MCw1OTQ5MjE2NjUsMT
+E0OTc3MTc0MCwtMjU0Mjk4NzQ4LDIxMjk2NzMzNzMsMTAzMDkz
+MzY4NywtMTkyMjE1OTI1OCwxOTYxMzQ5NzEzLDE1MTk3NTYwMD
+MsLTg0MDI1ODY5NSwxMjE1MTk1MjE2LC0xNzY4NDEzMzI2XX0=
+
 -->
