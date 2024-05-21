@@ -15,18 +15,18 @@ Scheme-conforming data sources use a Scheme Catalog Requirements Document which 
     a dcat:DataService ;
 	# ...
     ib1:access [ a ib1:AccessRule ;
-        ib1:group "group1" ;
-        ib1:licence "https://creativecommons.org/licenses/by/4.0/" ;
+        ib1:group <https://directory.ib1.org/group/report-provider> ;
+        ib1:licence <https://creativecommons.org/licenses/by/4.0/> ;
     ];
     ib1:access [ a ib1:AccessRule ;
-        ib1:group "group1" ;
-        ib1:group "group7" ;
-        ib1:licence "https://creativecommons.org/licenses/by-nd/4.0/" ;
+        ib1:group <https://directory.ib1.org/group/report-provider> ;
+        ib1:group <https://directory.ib1.org/group/archiver> ;
+        ib1:licence <https://creativecommons.org/licenses/by-nd/4.0/> ;
     ];
 .
 ```
 
-These rules specify that members of `group1` may access the data with their choice of the CC BY 4.0 or CC BY-ND 4.0 licence, and members of `group7` may access the data with the CC BY-ND 4.0 license.
+These rules specify that members of the "Report Provider" group may access the data with their choice of the CC BY 4.0 or CC BY-ND 4.0 licence, and members of the "Archivers" group may access the data with the CC BY-ND 4.0 license.
 
 
 ## Permissions
@@ -137,6 +137,7 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MTEzNjA5MCw5MzUwODM3NDcsLTk2OT
-MwMTI1MCwxMTc2MTkwOTAxLC0xOTY5MTM4ODIyXX0=
+eyJoaXN0b3J5IjpbLTIxMzM5Nzk0NjMsLTc0MTEzNjA5MCw5Mz
+UwODM3NDcsLTk2OTMwMTI1MCwxMTc2MTkwOTAxLC0xOTY5MTM4
+ODIyXX0=
 -->
