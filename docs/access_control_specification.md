@@ -2,21 +2,11 @@
 
 Access to data sources is controlled by group membership and licences.
 
-An Access Rule is a RDF structure which defines one or more groups and a licence. If an participant is a member of all the listed groups, then they can access the data under the given licence. If a data source has multiple Access Rules
+An Access Rule is a RDF structure which defines one or more groups and a licence. If an participant is a member of all the listed groups, then they can access the data under the given licence. If a data source has multiple Access Rules, a participant may access the data under any of the matching access rules. When accessing the data, the particiant must indicate the licence they are using.
 
 The Registry maintains a list of the permissions and obligations for access to a data source under a given licence.
 
-Access rules, capability grants, and obligations are explained in [Data Access Conditions](ops_guidelines/common_policies.md#data-access-conditions), this document specifies the
-precise syntax and values that can be used.
-
-An access rule contains:
-
-
-1. Zero or more conditions for access
-2. One or more capability grants to the data consumer if access is granted
-3. Zero or more obligations falling on the data consumer if access is granted
-
-They are applied to properties of a [Data Consumer](glossary.md#term-Data-Consumer) while processing a request for data from a [Data Provider](glossary.md#term-Data-Provider). These properties can be modelled as a map of names to values; some values may be inferred by joining on the [ID](glossary.md#term-Identification) of the data consumer, some may be directly provided in the [Token introspection](ops_guidelines/technical_common.md#token-introspection) response.
+Scheme-conforming data sources use a Scheme Catalog Requirements Document which specifies the Access Rules for common formats of data sources.
 
 
 ## Permissions
@@ -127,6 +117,6 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4MzM0ODIxNSwtOTY5MzAxMjUwLDExNz
-YxOTA5MDEsLTE5NjkxMzg4MjJdfQ==
+eyJoaXN0b3J5IjpbOTM1MDgzNzQ3LC05NjkzMDEyNTAsMTE3Nj
+E5MDkwMSwtMTk2OTEzODgyMl19
 -->
