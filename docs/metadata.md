@@ -26,7 +26,7 @@ searching for particular kinds of data.
 
 A Dataset:
 * is provided as one or more downloadable files, and
-* may be updated periodically.
+* may be updated periodically while maintaining access to previous.
 
 A Data Service:
 * is an API to query some data which uses parameters to specify a subset of data, including time period,
@@ -119,9 +119,9 @@ To specify how the data may be downloaded, one or more associated `dcat:Distribu
 `application/xml` by XSD 1.1 files, and
 `text/csv` by [CSVW](https://www.w3.org/ns/csvw) files.
 
-### Additional metadata for Datasets
+### Additional metadata for Datasets and Data Services
 
-The information above is the minimum needed to ensure that a data set is visible in [the Open Net Zero](https://opennetzero.org) search system. There 
+The information above is the minimum needed to ensure that a data source can be used by the Trust Framework participants, and is visible in [the Open Net Zero](https://opennetzero.org) search system. There 
 are, however, other properties of a data set which may be useful to potential data consumers. Where such information can 
 be provided, it should be provided in as standard a form as possible - in practice this translates to making use of 
 existing ontologies such as DCAT and Dublin Core by preference, then shared, industry-specific, ontologies, and only 
@@ -204,11 +204,11 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MjE1MTM1OSwtMTM2MzYzMTQwMSwtMT
-Q3MDQzMzM2MywxNzUxMjM0OTkwLC02MTE3OTM1MTAsMTUxNzk1
-OTM4OCwxMTg5MzQyMzY2LDM1MTI3Njc4MCw1OTQ5MjE2NjUsMT
-E0OTc3MTc0MCwtMjU0Mjk4NzQ4LDIxMjk2NzMzNzMsMTAzMDkz
-MzY4NywtMTkyMjE1OTI1OCwxOTYxMzQ5NzEzLDE1MTk3NTYwMD
-MsLTg0MDI1ODY5NSwxMjE1MTk1MjE2LC0xNzY4NDEzMzI2XX0=
+eyJoaXN0b3J5IjpbLTEyNzk1OTE3ODgsLTEzNjM2MzE0MDEsLT
+E0NzA0MzMzNjMsMTc1MTIzNDk5MCwtNjExNzkzNTEwLDE1MTc5
+NTkzODgsMTE4OTM0MjM2NiwzNTEyNzY3ODAsNTk0OTIxNjY1LD
+ExNDk3NzE3NDAsLTI1NDI5ODc0OCwyMTI5NjczMzczLDEwMzA5
+MzM2ODcsLTE5MjIxNTkyNTgsMTk2MTM0OTcxMywxNTE5NzU2MD
+AzLC04NDAyNTg2OTUsMTIxNTE5NTIxNiwtMTc2ODQxMzMyNl19
 
 -->
