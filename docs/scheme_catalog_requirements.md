@@ -46,12 +46,15 @@ An `ib1:SchemeCatalogRequirements` RDF object must contain these fields:
 The requirements for terms in the `ib1:requiredMetadata` are modified by terms in the top level object.
 
 (no modifier)
-: All the terms in the requirements must be included. No additonal values for that term may exist in the object.
+: All the values in the requirements must be included for a term which does not have a modifier. No additonal values for that term are allowed.
 
 `ib1:include-at-least <term>`
-: All the terms in the requirements must be included, but additional
+: All the values in the requirements must be included for this term, but additional values are allowed.
 
+`ib1:include-one-of <term>`
+: Exactly one of the values in the requirements must be included for this term. No other values are allowed.
 
+`ib1:include-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjMwNzQ1ODMsMTI2ODgzNjcwOF19
+eyJoaXN0b3J5IjpbLTMxMTk5NTg0NCwxMjY4ODM2NzA4XX0=
 -->
