@@ -93,7 +93,7 @@ Data Services are represented by `dcat:DataService` objects with the common mand
 `ib1:heartbeatDescription`
 : The URL of an OpenAPI file (with Server specified as `dcat:endpointDescription`), which contains a single Path with a 200 response defined. This term will typically be the URL of one of a small number of standard OpenAPI files published in the Registry.
 
-Any additional metadata may be added.
+Any additional metadata defined by published Standards may be added.
 
 ## Dataset metadata fields
 
@@ -109,6 +109,8 @@ As Datasets will be discovered by browsing an index, they need additional descri
 
 [dcat:versionNotes](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version_notes)
 : Notes used to explain any changes to this version.
+
+Any additional metadata defined by published Standards may be added.
 
 ### Distribution metadata fields
 
@@ -211,7 +213,7 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNzQxMjIzMywtNTc5MzY1ODYwLC0xMz
+eyJoaXN0b3J5IjpbLTg0MDY1NTE4OSwtNTc5MzY1ODYwLC0xMz
 YzNjMxNDAxLC0xNDcwNDMzMzYzLDE3NTEyMzQ5OTAsLTYxMTc5
 MzUxMCwxNTE3OTU5Mzg4LDExODkzNDIzNjYsMzUxMjc2NzgwLD
 U5NDkyMTY2NSwxMTQ5NzcxNzQwLC0yNTQyOTg3NDgsMjEyOTY3
