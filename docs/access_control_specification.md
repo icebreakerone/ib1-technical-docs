@@ -39,7 +39,9 @@ An `ib1:AccessRule` describes a complete machine readable access rule for a data
 : The URL of a Licence which must be registered with the Registry.
 
 
-## Mapping licences to 
+## Machine readable intepretation of Licences
+
+The Registry maintains an RDF document at a well known URL which maps Licence URLs to Permissions (what you are allowed to do with the data) and Obligations (
 
 
 ## Permissions
@@ -150,7 +152,7 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTY1NTQwNDQsLTIxMzM5Nzk0NjMsLT
+eyJoaXN0b3J5IjpbLTE0ODg0NTQwODgsLTIxMzM5Nzk0NjMsLT
 c0MTEzNjA5MCw5MzUwODM3NDcsLTk2OTMwMTI1MCwxMTc2MTkw
 OTAxLC0xOTY5MTM4ODIyXX0=
 -->
