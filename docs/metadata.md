@@ -110,8 +110,11 @@ As Datasets will be discovered by browsing an index, they need additional descri
 [dcat:versionNotes](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version_notes)
 : Notes used to explain any changes to this version.
 
+[dcat:distribution](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_distribution)
+: URL of a `dcat:Distribution` for a downloadable f
+
 [dcat:inSeries](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_in_series)
-: Where the URL is part of a series of periodic datasets, the URL of a `dcat:DataSeries` which associates this Dataset with the overall series. The DataSeries is created 
+: Where the URL is part of a series of periodic datasets, the URL of a `dcat:DataSeries` which associates this Dataset with the overall series. The DataSeries is created by the publisher and contains their data only.
 
 Any additional metadata defined by published Standards may be added.
 
@@ -216,11 +219,11 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMDc4MzA0MSwtMTAzMjIzMjUyMywtOD
-QwNjU1MTg5LC01NzkzNjU4NjAsLTEzNjM2MzE0MDEsLTE0NzA0
-MzMzNjMsMTc1MTIzNDk5MCwtNjExNzkzNTEwLDE1MTc5NTkzOD
-gsMTE4OTM0MjM2NiwzNTEyNzY3ODAsNTk0OTIxNjY1LDExNDk3
-NzE3NDAsLTI1NDI5ODc0OCwyMTI5NjczMzczLDEwMzA5MzM2OD
-csLTE5MjIxNTkyNTgsMTk2MTM0OTcxMywxNTE5NzU2MDAzLC04
-NDAyNTg2OTVdfQ==
+eyJoaXN0b3J5IjpbLTE2OTkwNjQ5OTksLTEwMzIyMzI1MjMsLT
+g0MDY1NTE4OSwtNTc5MzY1ODYwLC0xMzYzNjMxNDAxLC0xNDcw
+NDMzMzYzLDE3NTEyMzQ5OTAsLTYxMTc5MzUxMCwxNTE3OTU5Mz
+g4LDExODkzNDIzNjYsMzUxMjc2NzgwLDU5NDkyMTY2NSwxMTQ5
+NzcxNzQwLC0yNTQyOTg3NDgsMjEyOTY3MzM3MywxMDMwOTMzNj
+g3LC0xOTIyMTU5MjU4LDE5NjEzNDk3MTMsMTUxOTc1NjAwMywt
+ODQwMjU4Njk1XX0=
 -->
