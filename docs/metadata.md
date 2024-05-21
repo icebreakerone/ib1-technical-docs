@@ -78,7 +78,7 @@ Additional fields will be made mandatory for Scheme-confirming data sources by t
 : The URL of a Scheme Catalog Requirements Document in the Scheme Registry. Most metadata files will include this field.
 
 `ib1:access`
-: A list of [`ib1:AccessRule`](access_control_specification.md) bnodes which specify Groups of participants which may access this data, and the Licence under which they can access it. R
+: A list of [`ib1:AccessRule`](access_control_specification.md) bnodes which specify Groups of participants which may access this data, and the Licence under which they can access it. Required for Shared Data.
 
 ## Data Service metadata fields
 
@@ -207,11 +207,11 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2ODIyNDIxLC0xMzYzNjMxNDAxLC0xND
-cwNDMzMzYzLDE3NTEyMzQ5OTAsLTYxMTc5MzUxMCwxNTE3OTU5
-Mzg4LDExODkzNDIzNjYsMzUxMjc2NzgwLDU5NDkyMTY2NSwxMT
-Q5NzcxNzQwLC0yNTQyOTg3NDgsMjEyOTY3MzM3MywxMDMwOTMz
-Njg3LC0xOTIyMTU5MjU4LDE5NjEzNDk3MTMsMTUxOTc1NjAwMy
-wtODQwMjU4Njk1LDEyMTUxOTUyMTYsLTE3Njg0MTMzMjZdfQ==
+eyJoaXN0b3J5IjpbMTU5MDk2NDIzMCwtMTM2MzYzMTQwMSwtMT
+Q3MDQzMzM2MywxNzUxMjM0OTkwLC02MTE3OTM1MTAsMTUxNzk1
+OTM4OCwxMTg5MzQyMzY2LDM1MTI3Njc4MCw1OTQ5MjE2NjUsMT
+E0OTc3MTc0MCwtMjU0Mjk4NzQ4LDIxMjk2NzMzNzMsMTAzMDkz
+MzY4NywtMTkyMjE1OTI1OCwxOTYxMzQ5NzEzLDE1MTk3NTYwMD
+MsLTg0MDI1ODY5NSwxMjE1MTk1MjE2LC0xNzY4NDEzMzI2XX0=
 
 -->
