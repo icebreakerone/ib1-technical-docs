@@ -39,7 +39,13 @@ An `ib1:SchemeCatalogRequirements` RDF object must contain these fields:
 : The type of the DCAT Catalog entry which describes this data source.
 
 `ib1:requiredMetadata`
-: A bnod
+: A bnode which contains the metadata required to be Scheme-conforming. This bnode may contain any fields and metadata, and a conforming catalogue entry must contain it all, subject to the term modifiers.
+
+### Term modifiers
+
+Terms in the `ib1:requiredMetadata`
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMzNDUwNjUsMTI2ODgzNjcwOF19
+eyJoaXN0b3J5IjpbODAzOTAwOTQ1LDEyNjg4MzY3MDhdfQ==
 -->
