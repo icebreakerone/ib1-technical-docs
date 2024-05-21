@@ -12,122 +12,10 @@ An access rule contains:
 
 They are applied to properties of a [Data Consumer](glossary.md#term-Data-Consumer) while processing a request for data from a [Data Provider](glossary.md#term-Data-Provider). These properties can be modelled as a map of names to values; some values may be inferred by joining on the [ID](glossary.md#term-Identification) of the data consumer, some may be directly provided in the [Token introspection](ops_guidelines/technical_common.md#token-introspection) response.
 
-## Syntax
 
-### Names
+## Permissions
 
-**Names** consist of a namespace (`[a-z0-9_]+`), a `:` character, and a suffix (`[a-z0-9_.]+`). For example, `ib1:some_value`. Values asserted by Icebreaker One will always have a namespace `ib1`. The suffix may contain `.` characters, the namespace may not.
-
-### Rule syntax
-
-An access rule is represented as a single line string containing a comma separated list of zero or more Conditions, the literal string `grants`, and then a comma separated list of one or more Capabilities. Optionally, this may
-be followed by the literal `requires` and one or more Obligations in a comma separated list.
-
-```default
-[CONDITION]? ["," CONDITION]* "grants" CAPABILITY ["," CAPABILITY]* ["requires" OBLIGATION+ ["," OBLIGATION]
-```
-
-**NOTE**: 
-* A rule with no conditions is valid, and is satisfied by all requests
-* All rules must grant at least one capability
-* Rules may have zero or more obligations
-
-See the following sections for specification of conditions and capabilities.
-
-## Conditions
-
-Conditions are unary or binary clauses.
-
-All conditions must be satisfied within a rule for that rule to be applied. There are no explicit boolean operators such as `or` or similar. For cases where alternative sets of rules could be applied the expectation is that data
-providers will specify multiple, potentially overlapping, rules to express this.
-
-### Unary clauses
-
-Unary clauses consist of a single **named** condition. The clause is satisfied if that condition is `true`. This is typically used to denote a particular property such as *Icebreaker One Trust Framework membership* or similar where the existence of the property is sufficient to accept the data consumer.
-
-```json
- {"ib1:member" : true}
-```
-
-### Binary clauses
-
-Binary clauses consist of a **name** on the left hand side, an **operator**, and a **value** on the right hand side. The valid **operators** are shown in the table below. LHS, operator, and RHS are separated with at least one
-space character.
-
-**Values** can be numerals, dates, quoted strings, or homogeneous lists of these three types. Dates are specified as `dd/mm/yyyy`, we do not need a higher level of precision in any of our envisaged use cases, but if this is needed
-a datetime must be specified as a string compliant with [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339). To simplify expression in [JSON](glossary.md#term-Javascript-Object-Notation), quoted strings should be enclosed in single quote `'` characters. Lists are written as a comma separated list of strings surrounded by `[` and `]` characters. Lists are only valid RHS values for the
-`in` operator.
-
-### Operators
-
-+-----------------------------+-------------------------+--------------------------------------------------------------------------+
-| Operator                    | Range                   | Description                                                              |
-+=============================+=========================+==========================================================================+
-| `is`                        | Any                     | The condition passes if the value of the property on the LHS is exactly  |
-|                             |                         | equal to the value in the RHS                                            |
-+-----------------------------+-------------------------+--------------------------------------------------------------------------+
-| `before`                    | date or datetime        | The condition passes if the value of the property on the LHS is before   |
-|                             |                         | the date or datetime specifed as the RHS. Where a date needs to be       |
-|                             |                         | coerced to a datetime, it is done by setting it to 00:00.00 with the     |
-|                             |                         | same date                                                                |
-+-----------------------------+-------------------------+--------------------------------------------------------------------------+
-| `after`                     | date or datetime        | As above, but passes if the value of the property on the LHS is after    |
-|                             |                         | the date or datetime specified on the RHS.                               |
-+-----------------------------+-------------------------+--------------------------------------------------------------------------+
-| `max_age_days`              | date or datetime        | The condition passes if the value on the LHS corresponds to a date at    |
-|                             |                         | most X days in the past compared to the current date, where X is integer |
-|                             |                         | numeral specified as the RHS                                             |
-+-----------------------------+-------------------------+--------------------------------------------------------------------------+
-| `<`, `<=`, `>=`, `>`, `==`  | number                  | Conditions pass if the LHS is, respectively, less than, less than or     |
-|                             |                         | equal, greater than or equal, greater than, or strictly equal, to the    |
-|                             |                         | number on the RHS. Note that `==` and `is` are equivalent for numeric    |
-|                             |                         | quantities                                                               |
-+-----------------------------+-------------------------+--------------------------------------------------------------------------+
-| `in`                        | number or string        | Conditions pass if there is at least one item in the list specified in   |
-|                             |                         | the RHS which would match the `is` condition with respect to the LHS     |
-|                             |                         | value                                                                    |
-+-----------------------------+-------------------------+--------------------------------------------------------------------------+
-
-### Example conditions
-
-**NOTE**: The conditions shown below are examples, and should not be taken as indicative of standard properties of data
-consumers in the final system.
-
-### Example condition clauses
-
-+------------------------------------------------+----------------------------------------------------------------------------------+
-| Condition                                      | Interpretation                                                                   |
-+================================================+==================================================================================+
-| `ib1:status is 'active'`                       | passes if the value of `ib1:status` is set, and is equal under string comparison |
-|                                                | to `active`                                                                      |
-+------------------------------------------------+----------------------------------------------------------------------------------+
-| `ib1:membership_expires after 24/10/2022`      | passes if the value of `ib1:membership_expires` is either a date or a datetime,  |
-|                                                | and is after the 24th October 2022                                               |
-+------------------------------------------------+----------------------------------------------------------------------------------+
-| `ib1:terms_signed max_age_days 20`             | passes if the value of `ib1:terms_signed` is either a date or a datetime, and    |
-|                                                | is at most 20 days from the current datetime. Note that dates with no time       |
-|                                                | component are equivalent to 00:00.00 on the specified date for comparison        |
-|                                                | purposes                                                                         |
-+------------------------------------------------+----------------------------------------------------------------------------------+
-| `some_group:membership_level >= 2`             | passes if the value of `some_group:membership_level` is a number and is greater  |
-|                                                | to or equal to two.                                                              |
-+------------------------------------------------+----------------------------------------------------------------------------------+
-| `ib1:org_type in ['council', 'academic']`      | passes if the value of `ib1:org_type` would be considered equal to either        |
-|                                                |  `'council'` or `'academic'` as if compared with `is`.                           |
-+------------------------------------------------+----------------------------------------------------------------------------------+
-| `ib1:member`                                   | passes if the value of `ib1:member` is `true`.                                   |
-+------------------------------------------------+----------------------------------------------------------------------------------+
-
-### Specifying multiple conditions
-
-Multiple conditions are separated with `,` characters. All conditions must be satisfied for the rule to pass, there are no sub-clauses or boolean operators. Any number of space characters are allowed before and after the `,` in a
-condition list.
-
-For example, `ib1:status is 'active', some_group:membership_level >=2` is the union of those two example conditions from the previous section and will only be satisfied if both conditions are individually satisfiable.
-
-## Capabilities
-
-Capability grants for a given set of access conditions are specified as a comma (`,`) separated list of **names**. There **MUST** be at least one **name** in this list, an empty capability grant list is not considered valid.
+Permissio grants for a given set of access conditions are specified as a comma (`,`) separated list of **names**. There **MUST** be at least one **name** in this list, an empty capability grant list is not considered valid.
 
 ### Standard capabilities
 
@@ -233,5 +121,6 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3NjE5MDkwMSwtMTk2OTEzODgyMl19
+eyJoaXN0b3J5IjpbLTE2Mzk5MDM4NjcsMTE3NjE5MDkwMSwtMT
+k2OTEzODgyMl19
 -->
