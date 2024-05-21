@@ -59,7 +59,7 @@ The URL of the DCAT object inside the RDF representation is the stable identifer
 
 ## Mandatory metadata fields
 
-The following fields must be included in every DCAT object. Metadata will be visible to all pariticipants in the Trust Framework, and may be visible to anyone on the open web without authentication when data i
+The following fields must be included in every DCAT object. Metadata will be visible to all pariticipants in the Trust Framework, and may be visible to anyone on the open web without authentication in an open index.
 
 [dcterms:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/title/)
 : Short title for this data set.
@@ -219,11 +219,11 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwOTI0MTA0NiwtMTAzMjIzMjUyMywtOD
-QwNjU1MTg5LC01NzkzNjU4NjAsLTEzNjM2MzE0MDEsLTE0NzA0
-MzMzNjMsMTc1MTIzNDk5MCwtNjExNzkzNTEwLDE1MTc5NTkzOD
-gsMTE4OTM0MjM2NiwzNTEyNzY3ODAsNTk0OTIxNjY1LDExNDk3
-NzE3NDAsLTI1NDI5ODc0OCwyMTI5NjczMzczLDEwMzA5MzM2OD
-csLTE5MjIxNTkyNTgsMTk2MTM0OTcxMywxNTE5NzU2MDAzLC04
-NDAyNTg2OTVdfQ==
+eyJoaXN0b3J5IjpbNTQwNTc2NTMsLTEwMzIyMzI1MjMsLTg0MD
+Y1NTE4OSwtNTc5MzY1ODYwLC0xMzYzNjMxNDAxLC0xNDcwNDMz
+MzYzLDE3NTEyMzQ5OTAsLTYxMTc5MzUxMCwxNTE3OTU5Mzg4LD
+ExODkzNDIzNjYsMzUxMjc2NzgwLDU5NDkyMTY2NSwxMTQ5Nzcx
+NzQwLC0yNTQyOTg3NDgsMjEyOTY3MzM3MywxMDMwOTMzNjg3LC
+0xOTIyMTU5MjU4LDE5NjEzNDk3MTMsMTUxOTc1NjAwMywtODQw
+MjU4Njk1XX0=
 -->
