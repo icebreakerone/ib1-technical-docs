@@ -5,16 +5,22 @@ A Scheme Catalog Requirements Document specifies the metadata that a DCAT Catalo
 
 It is an RDF document published by the Registry.
 
+## Example
+
 ```
 @prefix ib1: <http://registry.ib1.org/ns/1.0/>
 
 <https://registry.ib1.org/scheme/catalog-requirements/energy-report>
 	a ib1:SchemeCatalogRequirements ;
-	dcterms:title "Energy 
+	dcterms:title "Energy Report Requirements" ;
+	ib1:requiredType dcat:DataService ;
+	ib1:requiredMetadata [ a ib1:RequiredMetadata ;
+	];
+	ib1:
 .
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MzEyNDkyOSwxMjY4ODM2NzA4XX0=
+eyJoaXN0b3J5IjpbLTEzMTczMDE1ODgsMTI2ODgzNjcwOF19
 -->
