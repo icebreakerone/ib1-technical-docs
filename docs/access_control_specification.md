@@ -6,7 +6,7 @@ An Access Rule is a RDF structure which defines one or more groups and a licence
 
 The Registry maintains a list of the permissions and obligations for access to a data source under a given licence.
 
-Scheme-conforming data sources use a Scheme Catalog Requirements Document which specifies the Access Rules for common formats of data sources.
+Scheme-conforming data sources use a [Scheme Catalog Requirements Documents](scheme_catalog_requirements.md) which specifies the Access Rules for common formats of data sources.
 
 ## Example
 
@@ -138,7 +138,7 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQwMTE3NDQ5LC0yMTMzOTc5NDYzLC03ND
-ExMzYwOTAsOTM1MDgzNzQ3LC05NjkzMDEyNTAsMTE3NjE5MDkw
-MSwtMTk2OTEzODgyMl19
+eyJoaXN0b3J5IjpbMjA4MDIxODM0LDc0MDExNzQ0OSwtMjEzMz
+k3OTQ2MywtNzQxMTM2MDkwLDkzNTA4Mzc0NywtOTY5MzAxMjUw
+LDExNzYxOTA5MDEsLTE5NjkxMzg4MjJdfQ==
 -->
