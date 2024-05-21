@@ -48,13 +48,13 @@ The requirements for terms in the `ib1:requiredMetadata` are modified by terms i
 (no modifier)
 : All the values in the requirements must be included for a term which does not have a modifier. No additonal values for that term are allowed.
 
-`ib1:include-at-least <term>`
+`ib1:include-all-allow-additional <term>`
 : All the values in the requirements must be included for this term, but additional values are allowed.
 
 `ib1:include-one-of <term>`
 : Exactly one of the values in the requirements must be included for this term. No other values are allowed.
 
-`ib1:include-
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMTk5NTg0NCwxMjY4ODM2NzA4XX0=
+eyJoaXN0b3J5IjpbLTY5OTc5OTM4MywxMjY4ODM2NzA4XX0=
 -->
