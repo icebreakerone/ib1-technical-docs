@@ -12,7 +12,7 @@ It is an RDF document published by the Registry.
 
 <https://registry.ib1.org/class/supply-voltage>
 	a ib1:SchemeCatalogRequirements ;
-	dcterms:title "Supply Voltage Report Requirements" ;
+	dcterms:title "Supply Voltage API Requirements" ;
 	ib1:requiredType dcat:DataService ;
 	ib1:requiredMetadata [ a ib1:RequiredMetadata ;
 	    dcterms:conformsTo <https://registry.ib1.org/class/supply-voltage> ; 
@@ -28,7 +28,7 @@ It is an RDF document published by the Registry.
 .
 ```
 
-
+This example defines a standard Supply Voltage API that is provided by 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MjAwMjUyOCwxMjY4ODM2NzA4XX0=
+eyJoaXN0b3J5IjpbLTkwNDMzMzQyNiwxMjY4ODM2NzA4XX0=
 -->
