@@ -71,7 +71,7 @@ The document is one or more `ib1:LicenceInterpretation` objects.
 
 These are permissions where the namespace part of the **name** is `ib1`, indicating that they are defined as part of the Icebreaker One Trust Framework. Data providers **SHOULD NOT**, create their own permissions unless absolutely necessary as doing so acts against the aim of easy interoperability and comprehension of access and licensing rules.
 
-Any additional permissions designed **MUST** be prefixed with the organisation ID of the data provider responsible for their definition, and any such data provider **MUST** publish a clear, legally valid, definition of any such permissions. In addition, data providers creating custom permissions **MUST** inform the [TFGS](glossary.md#term-Trust-Framework-Governance-Service) of this, providing links to the aforementioned documentation.
+Any additional permissions designed **MUST** be within the namespace of the data provider responsible for their definition, and any such data provider **MUST** publish a clear, legally valid, definition of any such permissions. In addition, data providers creating custom permissions **MUST** inform the [TFGS](glossary.md#term-Trust-Framework-Governance-Service) of this, providing links to the aforementioned documentation.
 
 **WARNING**: This section is provisional, the exact final set of base permissions has yet to be determined. Those shown below are a plausible first cut but should not be considered definitive.
 
@@ -117,42 +117,9 @@ Any additional permissions designed **MUST** be prefixed with the organisation I
 |                          |                                           | Consumer’s own products or services                                                    |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
 
-### Expressing Open Data licenses with permissions
-
-The permissions defined above in Standard permissions are intended for [shared data](glossary.md#term-Shared-data), but data providers may also publish [open data](glossary.md#term-Open-data). An open data set by definition has no access conditions, so any access rules for such data sets **MUST** have an empty access condition list, and must use one of the following permissions to declare that the data are licensed under a known OSI approved open license
-
-Rules **MUST NOT** grant a mix of permissions in the `open` namespace and permissions in other namespaces, as the semantics of this are not well defined.
-
-+-----------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| Capability name                               | Corresponding open data license                                                                             |
-+===============================================+=============================================================================================================+
-| `open:cc_by_1.0`                              | [Creative Commons Attribution](https://creativecommons.org/licenses/by/4.0/) (v1.0, v2.0, v2.5, v3.0, v4.0  |
-| `open:cc_by_2.0`                              | respectively)                                                                                               |
-| `open:cc_by_2.5`                              |                                                                                                             |
-| `open:cc_by_3.0`                              |                                                                                                             |
-| `open:cc_by_4.0`                              |                                                                                                             |
-+-----------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| `open:cc_by_sa_1.0`                           | [Creative Commons Attribution ShareAlike](https://creativecommons.org/licenses/by-sa/4.0/) (v1.0, v2.0,     |
-| `open:cc_by_sa_2.0`                           | v2.5, v3.0, v4.0 respectively)                                                                              |
-| `open:cc_by_sa_2.5`                           |                                                                                                             |
-| `open:cc_by_sa_3.0`                           |                                                                                                             |
-| `open:cc_by_sa_4.0`                           |                                                                                                             |
-+-----------------------------------------------+-------------------------------------------------------------------------------------------------------------+ 
-| `open:cc0`                                    | [Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/) v1.0                         |
-+-----------------------------------------------+-------------------------------------------------------------------------------------------------------------+ 
-| `open:gfdl_1.1`                               | [GNU Free Documentation License](http://www.gnu.org/copyleft/fdl.html) (v1.1, 1.2, 1.3 respectively)        |
-| `open:gfdl_1.2`                               |                                                                                                             |
-| `open:gfdl_1.3`                               |                                                                                                             |
-+-----------------------------------------------+-------------------------------------------------------------------------------------------------------------+ 
-| `open:fal_1.2`                                | [Free Art License](http://artlibre.org/licence/lal/en/) (v1.2, v1.3 respectively)                           |
-| `open:fal_1.3`                                |                                                                                                             |
-+-----------------------------------------------+-------------------------------------------------------------------------------------------------------------+ 
-
-Open data sets **SHOULD** be released under the latest version of any given license.
-
 ## Obligations
 
-Obligations are constraints on what the data consumer can do with the data, restricting or specialising the permissions granted. They are specified as a single **name**.
+Obligations are constraints on what the data consumer can do with the data, restricting or specialising the permissions granted. They are specified as a URL.
 
 ### Standard obligations
 
@@ -171,7 +138,7 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5NzQwMzg2OSwtMjEzMzk3OTQ2MywtNz
-QxMTM2MDkwLDkzNTA4Mzc0NywtOTY5MzAxMjUwLDExNzYxOTA5
-MDEsLTE5NjkxMzg4MjJdfQ==
+eyJoaXN0b3J5IjpbNzQwMTE3NDQ5LC0yMTMzOTc5NDYzLC03ND
+ExMzYwOTAsOTM1MDgzNzQ3LC05NjkzMDEyNTAsMTE3NjE5MDkw
+MSwtMTk2OTEzODgyMl19
 -->
