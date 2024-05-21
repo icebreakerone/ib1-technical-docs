@@ -15,7 +15,6 @@ It is an RDF document published by the Registry.
 	dcterms:title "Supply Voltage API Requirements" ;
 	ib1:requiredType dcat:DataService ;
 	ib1:requiredMetadata [ a ib1:RequiredMetadata ;
-	    dcterms:conformsTo <https://registry.ib1.org/class/supply-voltage> ; 
 	    dcat:endpointDescription <https://registry.ib1.org/api/electricty-voltage> ;
 	    ib1:heartbeatDescription <https://registry.ib1.org/api/heartbeat-simple> ;
 	    ib1:sensitivityClass "IB1OE-SA" ;
@@ -28,7 +27,7 @@ It is an RDF document published by the Registry.
 .
 ```
 
-This example defines a standard Supply Voltage API that is provided by 
+This example defines a standard Supply Voltage API that is provided by multiple providers in a Trust Framework. It specifies the API in detail with the `dcat:endpointDescription` referring to an OpenAPI specification hosted by the Registry. It uses a standard `ib1:heartbeatDescription` to check for liveness, using a standard heartbeat request defined in an OpenAPI specification hosted by the Registr
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNDMzMzQyNiwxMjY4ODM2NzA4XX0=
+eyJoaXN0b3J5IjpbLTM0MDQ4ODEwOSwxMjY4ODM2NzA4XX0=
 -->
