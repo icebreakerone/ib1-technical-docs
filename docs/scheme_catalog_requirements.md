@@ -31,7 +31,15 @@ This example defines a standard Supply Voltage API that is provided by multiple 
 
 For access control, it specifices the `ib1:sensitivityClass`, and who can use the API with `ib1:access`. Because `ib1:match-at-least` is used for the access rules, it allows the publisher to widen access with additional access rules, as long as the rules in this document are included.
 
-## M
+## Object specification
+
+An `ib1:SchemeCatalogRequirements` RDF object must contain these fields:
+
+`ib1:requiredType`
+: The type of the DCAT Catalog entry which describes this data source.
+
+`ib1:requiredMetadata`
+: A bnod
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg1NTU2Nzc2LDEyNjg4MzY3MDhdfQ==
+eyJoaXN0b3J5IjpbOTMzNDUwNjUsMTI2ODgzNjcwOF19
 -->
