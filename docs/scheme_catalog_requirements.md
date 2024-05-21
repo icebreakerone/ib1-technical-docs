@@ -24,11 +24,11 @@ It is an RDF document published by the Registry.
 	        ib1:licence <https://creativecommons.org/licenses/by/4.0/> ;
 	    ];
 	];
-	ib1:
+	ib1:match-at-least ib1:access ;
 .
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyNTU0OTYwMiwxMjY4ODM2NzA4XX0=
+eyJoaXN0b3J5IjpbMTc3MjAwMjUyOCwxMjY4ODM2NzA4XX0=
 -->
