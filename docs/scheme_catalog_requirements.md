@@ -10,11 +10,19 @@ It is an RDF document published by the Registry.
 ```
 @prefix ib1: <http://registry.ib1.org/ns/1.0/>
 
-<https://registry.ib1.org/scheme/catalog-requirements/energy-report>
+<https://registry.ib1.org/class/supply-voltage>
 	a ib1:SchemeCatalogRequirements ;
-	dcterms:title "Energy Report Requirements" ;
+	dcterms:title "Supply Voltage Report Requirements" ;
 	ib1:requiredType dcat:DataService ;
 	ib1:requiredMetadata [ a ib1:RequiredMetadata ;
+	    dcterms:conformsTo <https://registry.ib1.org/class/supply-voltage> ; 
+	    dcat:endpointDescription <https://registry.ib1.org/api/electricty-voltage> ;
+	    ib1:heartbeatDescription <https://registry.ib1.org/api/heartbeat-simple> ;
+	    ib1:sensitivityClass "IB1OE-SA" ;
+	    ib1:access [ a ib1:AccessRule ;
+	        ib1:group <https://directory.ib1.org/group/report-provider> ;
+	        ib1:licence <https://creativecommons.org/licenses/by/4.0/> ;
+	    ];
 	];
 	ib1:
 .
@@ -22,5 +30,5 @@ It is an RDF document published by the Registry.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTczMDE1ODgsMTI2ODgzNjcwOF19
+eyJoaXN0b3J5IjpbLTUyNTU0OTYwMiwxMjY4ODM2NzA4XX0=
 -->
