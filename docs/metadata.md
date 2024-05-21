@@ -97,9 +97,9 @@ Additional metadata may be added.
 
 ## Dataset metadata fields
 
-Data Services are represented by `dcat:DataService` objects with the common mandatory fields and Data Service specific fields.
+Datasets are represented by `dcat:Dataset` objects with the common mandatory fields and Dataset specific fields.
 
-As Datasets will be discovered by browsing an index, they need additional dmetadata for discovery. The following fields are mandatory:
+As Datasets will be discovered by browsing an index, they need additional descriptive metadata for discovery. The following fields are mandatory:
 
 [dcterms:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/description/)
 : Longer form description of this data set. This is used in combination with the title and tags when people search for data sets, so aim to include probable search words in the description.
@@ -211,11 +211,11 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MzEwMTI3OCwtMTM2MzYzMTQwMSwtMT
-Q3MDQzMzM2MywxNzUxMjM0OTkwLC02MTE3OTM1MTAsMTUxNzk1
-OTM4OCwxMTg5MzQyMzY2LDM1MTI3Njc4MCw1OTQ5MjE2NjUsMT
-E0OTc3MTc0MCwtMjU0Mjk4NzQ4LDIxMjk2NzMzNzMsMTAzMDkz
-MzY4NywtMTkyMjE1OTI1OCwxOTYxMzQ5NzEzLDE1MTk3NTYwMD
-MsLTg0MDI1ODY5NSwxMjE1MTk1MjE2LC0xNzY4NDEzMzI2XX0=
+eyJoaXN0b3J5IjpbLTc0NDAzMjkxLC0xMzYzNjMxNDAxLC0xND
+cwNDMzMzYzLDE3NTEyMzQ5OTAsLTYxMTc5MzUxMCwxNTE3OTU5
+Mzg4LDExODkzNDIzNjYsMzUxMjc2NzgwLDU5NDkyMTY2NSwxMT
+Q5NzcxNzQwLC0yNTQyOTg3NDgsMjEyOTY3MzM3MywxMDMwOTMz
+Njg3LC0xOTIyMTU5MjU4LDE5NjEzNDk3MTMsMTUxOTc1NjAwMy
+wtODQwMjU4Njk1LDEyMTUxOTUyMTYsLTE3Njg0MTMzMjZdfQ==
 
 -->
