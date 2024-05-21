@@ -110,6 +110,9 @@ As Datasets will be discovered by browsing an index, they need additional descri
 [dcat:versionNotes](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version_notes)
 : Notes used to explain any changes to this version.
 
+[dcat:inSeries](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_in_series)
+: f
+
 Any additional metadata defined by published Standards may be added.
 
 ### Distribution metadata fields
@@ -213,11 +216,11 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MDY1NTE4OSwtNTc5MzY1ODYwLC0xMz
-YzNjMxNDAxLC0xNDcwNDMzMzYzLDE3NTEyMzQ5OTAsLTYxMTc5
-MzUxMCwxNTE3OTU5Mzg4LDExODkzNDIzNjYsMzUxMjc2NzgwLD
-U5NDkyMTY2NSwxMTQ5NzcxNzQwLC0yNTQyOTg3NDgsMjEyOTY3
-MzM3MywxMDMwOTMzNjg3LC0xOTIyMTU5MjU4LDE5NjEzNDk3MT
-MsMTUxOTc1NjAwMywtODQwMjU4Njk1LDEyMTUxOTUyMTYsLTE3
-Njg0MTMzMjZdfQ==
+eyJoaXN0b3J5IjpbLTEwMzIyMzI1MjMsLTg0MDY1NTE4OSwtNT
+c5MzY1ODYwLC0xMzYzNjMxNDAxLC0xNDcwNDMzMzYzLDE3NTEy
+MzQ5OTAsLTYxMTc5MzUxMCwxNTE3OTU5Mzg4LDExODkzNDIzNj
+YsMzUxMjc2NzgwLDU5NDkyMTY2NSwxMTQ5NzcxNzQwLC0yNTQy
+OTg3NDgsMjEyOTY3MzM3MywxMDMwOTMzNjg3LC0xOTIyMTU5Mj
+U4LDE5NjEzNDk3MTMsMTUxOTc1NjAwMywtODQwMjU4Njk1LDEy
+MTUxOTUyMTZdfQ==
 -->
