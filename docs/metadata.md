@@ -170,9 +170,8 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
     ib1:sensitivityClass "IB1OE-SA" ;
     ib1:dataSetStableIdentifier: "MYENERGYCOMPANY/DS188" ;
     ib1:access [ a ib1:AccessRule ;
-        ib1:group "group1" ;
-        ib1:group "group2" ;
-        ib1:licence "https://creativecommons.org/licenses/by/4.0/" ;
+        ib1:group <https://directory.ib1.org/group/report-provider> ;
+        ib1:licence <https://creativecommons.org/licenses/by/4.0/> ;
     ];
 .
 ```
@@ -199,9 +198,8 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
     ib1:sensitivityClass "IB1OE-SA" ;
     ib1:dataSetStableIdentifier: "MYENERGYCOMPANY/DS9871/OCT2024" ;
     ib1:access [ a ib1:AccessRule ;
-        ib1:group "group2" ;
-        ib1:group "group8" ;
-        ib1:licence "https://creativecommons.org/licenses/by/4.0/" ;
+        ib1:group <https://directory.ib1.org/group/report-provider> ;
+        ib1:licence <https://creativecommons.org/licenses/by/4.0/> ;
     ];
 .
 
@@ -219,11 +217,11 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQwNTc2NTMsLTEwMzIyMzI1MjMsLTg0MD
-Y1NTE4OSwtNTc5MzY1ODYwLC0xMzYzNjMxNDAxLC0xNDcwNDMz
-MzYzLDE3NTEyMzQ5OTAsLTYxMTc5MzUxMCwxNTE3OTU5Mzg4LD
-ExODkzNDIzNjYsMzUxMjc2NzgwLDU5NDkyMTY2NSwxMTQ5Nzcx
-NzQwLC0yNTQyOTg3NDgsMjEyOTY3MzM3MywxMDMwOTMzNjg3LC
-0xOTIyMTU5MjU4LDE5NjEzNDk3MTMsMTUxOTc1NjAwMywtODQw
-MjU4Njk1XX0=
+eyJoaXN0b3J5IjpbLTE1MDM2OTQwMCw1NDA1NzY1MywtMTAzMj
+IzMjUyMywtODQwNjU1MTg5LC01NzkzNjU4NjAsLTEzNjM2MzE0
+MDEsLTE0NzA0MzMzNjMsMTc1MTIzNDk5MCwtNjExNzkzNTEwLD
+E1MTc5NTkzODgsMTE4OTM0MjM2NiwzNTEyNzY3ODAsNTk0OTIx
+NjY1LDExNDk3NzE3NDAsLTI1NDI5ODc0OCwyMTI5NjczMzczLD
+EwMzA5MzM2ODcsLTE5MjIxNTkyNTgsMTk2MTM0OTcxMywxNTE5
+NzU2MDAzXX0=
 -->
