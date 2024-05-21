@@ -47,7 +47,11 @@ The Registry maintains an RDF document at a well known URL which maps Licence UR
 @prefix ib1: <http://registry.ib1.org/ns/1.0/>
 
 <https://creativecommons.org/licenses/by/4.0/> a ib1:LicenceInterpretation ;
-	ib1:permission ib1:
+	ib1:permission ib1:use_any ;
+	ib1:permission ib1:adapt_any ;
+	ib1:permission ib1:combine_any ;
+	ib1:permission ib1:redistribute_original ;
+	ib1:permission ib1:combine_external ;
 .
 ```
 
@@ -160,7 +164,7 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NjQxMTM2MCwtMjEzMzk3OTQ2MywtNz
-QxMTM2MDkwLDkzNTA4Mzc0NywtOTY5MzAxMjUwLDExNzYxOTA5
-MDEsLTE5NjkxMzg4MjJdfQ==
+eyJoaXN0b3J5IjpbMTAxNTkzODAzLC0yMTMzOTc5NDYzLC03ND
+ExMzYwOTAsOTM1MDgzNzQ3LC05NjkzMDEyNTAsMTE3NjE5MDkw
+MSwtMTk2OTEzODgyMl19
 -->
