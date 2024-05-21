@@ -23,13 +23,13 @@ It is an RDF document published by the Registry.
 	        ib1:licence <https://creativecommons.org/licenses/by/4.0/> ;
 	    ];
 	];
-	ib1:include-at-least ib1:access ;
+	ib1:include-all-allow-additional ib1:access ;
 .
 ```
 
 This example defines a standard Supply Voltage API that is provided by multiple providers in a Trust Framework. It specifies the API in detail with the `dcat:endpointDescription` referring to an OpenAPI specification hosted by the Registry. It uses a standard `ib1:heartbeatDescription` to check for liveness, using a standard heartbeat request defined in an OpenAPI specification hosted by the Registry.
 
-For access control, it specifices the `ib1:sensitivityClass`, and who can use the API with `ib1:access`. Because `ib1:include-at-least` is used for the access rules, it allows the publisher to widen access with additional access rules, as long as the rules in this document are included.
+For access control, it specifices the `ib1:sensitivityClass`, and who can use the API with `ib1:access`. Because `ib1:include-all-allow-additional` is used for the access rules, it allows the publisher to widen access with additional access rules, as long as the rules in this document are included.
 
 ## Object specification
 
@@ -56,5 +56,5 @@ The requirements for terms in the `ib1:requiredMetadata` are modified by terms i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5OTc5OTM4MywxMjY4ODM2NzA4XX0=
+eyJoaXN0b3J5IjpbLTQ5NjMyODUzNSwxMjY4ODM2NzA4XX0=
 -->
