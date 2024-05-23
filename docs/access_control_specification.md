@@ -14,8 +14,7 @@ Scheme-conforming data sources use a [Scheme Catalog Requirements Documents](sch
 <https://data-provider-example.com/supply-voltage/v0>
     a dcat:DataService ;
 	# ...
-    ib1:access [ a ib1:AccessRule ;
-        ib1:group <https://directory.ib1.org/group/report-provider> ;
+    ib1:group <https://directory.ib1.org/group/report-provider> ;
         ib1:licence <https://creativecommons.org/licenses/by/4.0/> ;
     ];
     ib1:access [ a ib1:AccessRule ;
@@ -138,7 +137,7 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4MDIxODM0LDc0MDExNzQ0OSwtMjEzMz
-k3OTQ2MywtNzQxMTM2MDkwLDkzNTA4Mzc0NywtOTY5MzAxMjUw
-LDExNzYxOTA5MDEsLTE5NjkxMzg4MjJdfQ==
+eyJoaXN0b3J5IjpbMjY4MTEzMjM5LDIwODAyMTgzNCw3NDAxMT
+c0NDksLTIxMzM5Nzk0NjMsLTc0MTEzNjA5MCw5MzUwODM3NDcs
+LTk2OTMwMTI1MCwxMTc2MTkwOTAxLC0xOTY5MTM4ODIyXX0=
 -->
