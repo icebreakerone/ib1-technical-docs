@@ -81,7 +81,7 @@ Additional fields will be made mandatory for Scheme-confirming data sources by t
 : The URL of a Scheme Catalog Requirements Document in the Scheme Registry. Most metadata files will include this field.
 
 `ib1:permitGroup`
-: One or more the URL of a group in the Directory to specify which groups may access this data source subject to the Licence in the `dcterms:license` term. See [Access Control Specification](access_control_specification.md).
+: The URL of a group in the Directory to specify which groups may access this data source subject to the Licence in the `dcterms:license` term. One or more groups may be specified. See [Access Control Specification](access_control_specification.md).
 
 ## Data Service metadata fields
 
@@ -216,11 +216,11 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUyNDI5NSwtMTc3Mjk1NTY3OSwtMTUwMz
-Y5NDAwLDU0MDU3NjUzLC0xMDMyMjMyNTIzLC04NDA2NTUxODks
-LTU3OTM2NTg2MCwtMTM2MzYzMTQwMSwtMTQ3MDQzMzM2MywxNz
-UxMjM0OTkwLC02MTE3OTM1MTAsMTUxNzk1OTM4OCwxMTg5MzQy
-MzY2LDM1MTI3Njc4MCw1OTQ5MjE2NjUsMTE0OTc3MTc0MCwtMj
-U0Mjk4NzQ4LDIxMjk2NzMzNzMsMTAzMDkzMzY4NywtMTkyMjE1
-OTI1OF19
+eyJoaXN0b3J5IjpbLTExODU4MjA4MjMsMzUyNDI5NSwtMTc3Mj
+k1NTY3OSwtMTUwMzY5NDAwLDU0MDU3NjUzLC0xMDMyMjMyNTIz
+LC04NDA2NTUxODksLTU3OTM2NTg2MCwtMTM2MzYzMTQwMSwtMT
+Q3MDQzMzM2MywxNzUxMjM0OTkwLC02MTE3OTM1MTAsMTUxNzk1
+OTM4OCwxMTg5MzQyMzY2LDM1MTI3Njc4MCw1OTQ5MjE2NjUsMT
+E0OTc3MTc0MCwtMjU0Mjk4NzQ4LDIxMjk2NzMzNzMsMTAzMDkz
+MzY4N119
 -->
