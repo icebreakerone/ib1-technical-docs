@@ -67,6 +67,9 @@ The following fields must be included in every DCAT object. Metadata will be vis
 [dcterms:publisher](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/publisher/)
 : The URL of the Data Provider's record in the Scheme Directory.
 
+[dcterms:license](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#license)
+: The URL of a Licence
+
 `ib1:sensitivityClass`
 : The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this data set. In the current IB1 Trust Framework this should always be one of [IB1-O](glossary.md#term-Data-sensitivity-class-open),  [IB1-SA](glossary.md#term-Data-sensitivity-class-shared-A) or [IB1-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](glossary.md#term-Application-programming-interface) security imposed, with [IB1-O](glossary.md#term-Data-sensitivity-class-open) data sets being open data with no additional security, and the two shared data classes mandating [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.
 
@@ -77,7 +80,7 @@ Additional fields will be made mandatory for Scheme-confirming data sources by t
 `dcterms:conformsTo`
 : The URL of a Scheme Catalog Requirements Document in the Scheme Registry. Most metadata files will include this field.
 
-`ib1:access`
+`ib1:permitGroup`
 : A list of [`ib1:AccessRule`](access_control_specification.md) bnodes which specify Groups of participants which may access this data, and the Licence under which they can access it. Required for Shared Data.
 
 ## Data Service metadata fields
@@ -168,10 +171,8 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
     ib1:heartbeatDescription <https://registry.ib1.org/api/heartbeat-simple> ;
     dcat:endpointURL <https://data-provider-example.com/supply-voltage/v0> ;
     ib1:sensitivityClass "IB1OE-SA" ;
-    ib1:access [ a ib1:AccessRule ;
-        ib1:group <https://directory.ib1.org/group/report-provider> ;
-        ib1:licence <https://creativecommons.org/licenses/by/4.0/> ;
-    ];
+    ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 .
 ```
 
@@ -213,11 +214,11 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMTUxMjQ4OSwtMTc3Mjk1NTY3OSwtMT
-UwMzY5NDAwLDU0MDU3NjUzLC0xMDMyMjMyNTIzLC04NDA2NTUx
-ODksLTU3OTM2NTg2MCwtMTM2MzYzMTQwMSwtMTQ3MDQzMzM2My
-wxNzUxMjM0OTkwLC02MTE3OTM1MTAsMTUxNzk1OTM4OCwxMTg5
-MzQyMzY2LDM1MTI3Njc4MCw1OTQ5MjE2NjUsMTE0OTc3MTc0MC
-wtMjU0Mjk4NzQ4LDIxMjk2NzMzNzMsMTAzMDkzMzY4NywtMTky
-MjE1OTI1OF19
+eyJoaXN0b3J5IjpbOTA2MDQwMDU0LC0xNzcyOTU1Njc5LC0xNT
+AzNjk0MDAsNTQwNTc2NTMsLTEwMzIyMzI1MjMsLTg0MDY1NTE4
+OSwtNTc5MzY1ODYwLC0xMzYzNjMxNDAxLC0xNDcwNDMzMzYzLD
+E3NTEyMzQ5OTAsLTYxMTc5MzUxMCwxNTE3OTU5Mzg4LDExODkz
+NDIzNjYsMzUxMjc2NzgwLDU5NDkyMTY2NSwxMTQ5NzcxNzQwLC
+0yNTQyOTg3NDgsMjEyOTY3MzM3MywxMDMwOTMzNjg3LC0xOTIy
+MTU5MjU4XX0=
 -->
