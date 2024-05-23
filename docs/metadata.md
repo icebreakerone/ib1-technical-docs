@@ -195,10 +195,8 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
 	    "electricity"@en,
 	    "retrofit"@en ;
     ib1:sensitivityClass "IB1OE-SA" ;
-    ib1:access [ a ib1:AccessRule ;
-        ib1:group <https://directory.ib1.org/group/report-provider> ;
-        ib1:licence <https://creativecommons.org/licenses/by/4.0/> ;
-    ];
+    ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 .
 
 <https://data-provider-example.com/generation-report/oct2024/download>
@@ -215,11 +213,11 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzI5NTU2NzksLTE1MDM2OTQwMCw1ND
-A1NzY1MywtMTAzMjIzMjUyMywtODQwNjU1MTg5LC01NzkzNjU4
-NjAsLTEzNjM2MzE0MDEsLTE0NzA0MzMzNjMsMTc1MTIzNDk5MC
-wtNjExNzkzNTEwLDE1MTc5NTkzODgsMTE4OTM0MjM2NiwzNTEy
-NzY3ODAsNTk0OTIxNjY1LDExNDk3NzE3NDAsLTI1NDI5ODc0OC
-wyMTI5NjczMzczLDEwMzA5MzM2ODcsLTE5MjIxNTkyNTgsMTk2
-MTM0OTcxM119
+eyJoaXN0b3J5IjpbLTgwMTUxMjQ4OSwtMTc3Mjk1NTY3OSwtMT
+UwMzY5NDAwLDU0MDU3NjUzLC0xMDMyMjMyNTIzLC04NDA2NTUx
+ODksLTU3OTM2NTg2MCwtMTM2MzYzMTQwMSwtMTQ3MDQzMzM2My
+wxNzUxMjM0OTkwLC02MTE3OTM1MTAsMTUxNzk1OTM4OCwxMTg5
+MzQyMzY2LDM1MTI3Njc4MCw1OTQ5MjE2NjUsMTE0OTc3MTc0MC
+wtMjU0Mjk4NzQ4LDIxMjk2NzMzNzMsMTAzMDkzMzY4NywtMTky
+MjE1OTI1OF19
 -->
