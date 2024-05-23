@@ -20,7 +20,7 @@ Scheme-conforming data sources use a [Scheme Catalog Requirements Documents](sch
 .
 ```
 
-These rules specify that members of the "Report Provider" and "Archivers" groups may access the data with the CC BY 4.0 licence.
+These rules specify that members of either the "Report Provider" and "Archivers" groups may access the data with the CC BY 4.0 licence.
 
 
 ## Machine readable intepretation of Licences
@@ -122,8 +122,8 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODgxOTk0OTUsLTIxMzk5NDc4NTMsMj
-A4MDIxODM0LDc0MDExNzQ0OSwtMjEzMzk3OTQ2MywtNzQxMTM2
-MDkwLDkzNTA4Mzc0NywtOTY5MzAxMjUwLDExNzYxOTA5MDEsLT
-E5NjkxMzg4MjJdfQ==
+eyJoaXN0b3J5IjpbMTkxMzMwNjE5MiwtMTE4ODE5OTQ5NSwtMj
+EzOTk0Nzg1MywyMDgwMjE4MzQsNzQwMTE3NDQ5LC0yMTMzOTc5
+NDYzLC03NDExMzYwOTAsOTM1MDgzNzQ3LC05NjkzMDEyNTAsMT
+E3NjE5MDkwMSwtMTk2OTEzODgyMl19
 -->
