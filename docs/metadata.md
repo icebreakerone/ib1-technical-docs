@@ -68,7 +68,7 @@ The following fields must be included in every DCAT object. Metadata will be vis
 : The URL of the Data Provider's record in the Scheme Directory.
 
 [dcterms:license](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#license)
-: The URL of a Licence, which must be registered with the Registry.
+: The URL of a Licence, which must be registered with the Registry. All use of this data source is subject to this Licence.
 
 `ib1:sensitivityClass`
 : The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this data set. In the current IB1 Trust Framework this should always be one of [IB1-O](glossary.md#term-Data-sensitivity-class-open),  [IB1-SA](glossary.md#term-Data-sensitivity-class-shared-A) or [IB1-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](glossary.md#term-Application-programming-interface) security imposed, with [IB1-O](glossary.md#term-Data-sensitivity-class-open) data sets being open data with no additional security, and the two shared data classes mandating [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.
@@ -81,7 +81,7 @@ Additional fields will be made mandatory for Scheme-confirming data sources by t
 : The URL of a Scheme Catalog Requirements Document in the Scheme Registry. Most metadata files will include this field.
 
 `ib1:permitGroup`
-: A list of [`ib1:AccessRule`](access_control_specification.md) bnodes which specify Groups of participants which may access this data, and the Licence under which they can access it. Required for Shared Data.
+: One or more the URL of a group in the Directory to specify which groups may access this data source. See [Access Control Specification](access_control_specification.md).
 
 ## Data Service metadata fields
 
@@ -214,11 +214,11 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NDEzNDQ0MywtMTc3Mjk1NTY3OSwtMT
-UwMzY5NDAwLDU0MDU3NjUzLC0xMDMyMjMyNTIzLC04NDA2NTUx
-ODksLTU3OTM2NTg2MCwtMTM2MzYzMTQwMSwtMTQ3MDQzMzM2My
-wxNzUxMjM0OTkwLC02MTE3OTM1MTAsMTUxNzk1OTM4OCwxMTg5
-MzQyMzY2LDM1MTI3Njc4MCw1OTQ5MjE2NjUsMTE0OTc3MTc0MC
-wtMjU0Mjk4NzQ4LDIxMjk2NzMzNzMsMTAzMDkzMzY4NywtMTky
-MjE1OTI1OF19
+eyJoaXN0b3J5IjpbLTIxMTUzNzc0MzUsLTE3NzI5NTU2NzksLT
+E1MDM2OTQwMCw1NDA1NzY1MywtMTAzMjIzMjUyMywtODQwNjU1
+MTg5LC01NzkzNjU4NjAsLTEzNjM2MzE0MDEsLTE0NzA0MzMzNj
+MsMTc1MTIzNDk5MCwtNjExNzkzNTEwLDE1MTc5NTkzODgsMTE4
+OTM0MjM2NiwzNTEyNzY3ODAsNTk0OTIxNjY1LDExNDk3NzE3ND
+AsLTI1NDI5ODc0OCwyMTI5NjczMzczLDEwMzA5MzM2ODcsLTE5
+MjIxNTkyNThdfQ==
 -->
