@@ -68,7 +68,7 @@ The following fields must be included in every DCAT object. Metadata will be vis
 : The URL of the Data Provider's record in the Scheme Directory.
 
 [dcterms:license](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#license)
-: The URL of a Licence
+: The URL of a Licence, which must be registered with the Registry.
 
 `ib1:sensitivityClass`
 : The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this data set. In the current IB1 Trust Framework this should always be one of [IB1-O](glossary.md#term-Data-sensitivity-class-open),  [IB1-SA](glossary.md#term-Data-sensitivity-class-shared-A) or [IB1-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](glossary.md#term-Application-programming-interface) security imposed, with [IB1-O](glossary.md#term-Data-sensitivity-class-open) data sets being open data with no additional security, and the two shared data classes mandating [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.
@@ -214,11 +214,11 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA2MDQwMDU0LC0xNzcyOTU1Njc5LC0xNT
-AzNjk0MDAsNTQwNTc2NTMsLTEwMzIyMzI1MjMsLTg0MDY1NTE4
-OSwtNTc5MzY1ODYwLC0xMzYzNjMxNDAxLC0xNDcwNDMzMzYzLD
-E3NTEyMzQ5OTAsLTYxMTc5MzUxMCwxNTE3OTU5Mzg4LDExODkz
-NDIzNjYsMzUxMjc2NzgwLDU5NDkyMTY2NSwxMTQ5NzcxNzQwLC
-0yNTQyOTg3NDgsMjEyOTY3MzM3MywxMDMwOTMzNjg3LC0xOTIy
-MTU5MjU4XX0=
+eyJoaXN0b3J5IjpbLTM0NDEzNDQ0MywtMTc3Mjk1NTY3OSwtMT
+UwMzY5NDAwLDU0MDU3NjUzLC0xMDMyMjMyNTIzLC04NDA2NTUx
+ODksLTU3OTM2NTg2MCwtMTM2MzYzMTQwMSwtMTQ3MDQzMzM2My
+wxNzUxMjM0OTkwLC02MTE3OTM1MTAsMTUxNzk1OTM4OCwxMTg5
+MzQyMzY2LDM1MTI3Njc4MCw1OTQ5MjE2NjUsMTE0OTc3MTc0MC
+wtMjU0Mjk4NzQ4LDIxMjk2NzMzNzMsMTAzMDkzMzY4NywtMTky
+MjE1OTI1OF19
 -->
