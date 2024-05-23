@@ -28,7 +28,7 @@ It is an RDF document published by the Registry.
 
 This example defines a standard Supply Voltage API that is provided by multiple providers in a Trust Framework. It specifies the API in detail with the `dcat:endpointDescription` referring to an OpenAPI specification hosted by the Registry. It uses a standard `ib1:heartbeatDescription` to check for liveness, using a standard heartbeat request defined in an OpenAPI specification hosted by the Registry.
 
-For access control, it specifices the `ib1:sensitivityClass`, and who can use the API with `ib1:permitGroup`. Because `ib1:include-all-allow-additional` is used for the access rules, it allows the publisher to widen access to additional groups and roles, as long as the groups in this document are included.
+For access control, it specifies the `ib1:sensitivityClass`, and who can use the API with `ib1:permitGroup`. Because `ib1:include-all-allow-additional` is used for the access rules, it allows the publisher to widen access to additional groups, as long as the groups in this document are included.
 
 ## Object specification
 
@@ -55,5 +55,6 @@ The requirements for terms in the `ib1:requiredMetadata` are modified by terms i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMzEyODk2OSwxMjY4ODM2NzA4XX0=
+eyJoaXN0b3J5IjpbMTM4OTcwMjAzOCwxMTEzMTI4OTY5LDEyNj
+g4MzY3MDhdfQ==
 -->
