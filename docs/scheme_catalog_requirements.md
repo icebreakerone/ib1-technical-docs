@@ -18,12 +18,10 @@ It is an RDF document published by the Registry.
 	    dcat:endpointDescription <https://registry.ib1.org/api/electricty-voltage> ;
 	    ib1:heartbeatDescription <https://registry.ib1.org/api/heartbeat-simple> ;
 	    ib1:sensitivityClass "IB1OE-SA" ;
-	    ib1:access [ a ib1:AccessRule ;
-	        ib1:group <https://directory.ib1.org/group/report-provider> ;
-	        ib1:licence <https://creativecommons.org/licenses/by/4.0/> ;
-	    ];
+	    ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
+	    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
 	];
-	ib1:include-all-allow-additional ib1:access ;
+	ib1:include-all-allow-additional ib1:permitGroup ;
 .
 ```
 
@@ -56,5 +54,5 @@ The requirements for terms in the `ib1:requiredMetadata` are modified by terms i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5NjMyODUzNSwxMjY4ODM2NzA4XX0=
+eyJoaXN0b3J5IjpbOTQ1MjA4NzkzLDEyNjg4MzY3MDhdfQ==
 -->
