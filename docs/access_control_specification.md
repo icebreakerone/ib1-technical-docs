@@ -2,7 +2,7 @@
 
 Access to data sources is controlled by group membership and licences.
 
-An Access Rule is a RDF structure which defines one or more groups and a licence. If an participant is a member of all the listed groups, then they can access the data under the given licence. If a data source has multiple Access Rules, a participant may access the data under any of the matching access rules. When accessing the data, the particiant must indicate the licence they are using.
+A [catalog entry](metadata.md) specifies one or more groups and a licence. If a participant is a member of any of the groups, they may access the data source under the specified licence.
 
 The Registry maintains a list of the permissions and obligations for access to a data source under a given licence.
 
@@ -26,11 +26,11 @@ These rules specify that members of the "Report Provider" and "Archivers" groups
 
 An `ib1:AccessRule` describes a complete machine readable access rule for a data source. It has two fields:
 
-`ib1:group`
+`ib1:permitGroup`
 : The URL of a group in the Directory.
 
-`ib1:license`
-: The URL of a Licence which must be registered with the Registry.
+`dcterms:license`
+: The URL of a Licence, which must be registered with the Registry.
 
 
 ## Machine readable intepretation of Licences
@@ -132,8 +132,8 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzk5NDc4NTMsMjA4MDIxODM0LDc0MD
-ExNzQ0OSwtMjEzMzk3OTQ2MywtNzQxMTM2MDkwLDkzNTA4Mzc0
-NywtOTY5MzAxMjUwLDExNzYxOTA5MDEsLTE5NjkxMzg4MjJdfQ
-==
+eyJoaXN0b3J5IjpbNzExNjAwNTk0LC0yMTM5OTQ3ODUzLDIwOD
+AyMTgzNCw3NDAxMTc0NDksLTIxMzM5Nzk0NjMsLTc0MTEzNjA5
+MCw5MzUwODM3NDcsLTk2OTMwMTI1MCwxMTc2MTkwOTAxLC0xOT
+Y5MTM4ODIyXX0=
 -->
