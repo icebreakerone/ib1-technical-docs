@@ -22,16 +22,6 @@ Scheme-conforming data sources use a [Scheme Catalog Requirements Documents](sch
 
 These rules specify that members of the "Report Provider" and "Archivers" groups may access the data with the CC BY 4.0 licence.
 
-## Specification
-
-An `ib1:AccessRule` describes a complete machine readable access rule for a data source. It has two fields:
-
-`ib1:permitGroup`
-: The URL of a group in the Directory.
-
-`dcterms:license`
-: The URL of a Licence, which must be registered with the Registry.
-
 
 ## Machine readable intepretation of Licences
 
@@ -132,8 +122,8 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzExNjAwNTk0LC0yMTM5OTQ3ODUzLDIwOD
-AyMTgzNCw3NDAxMTc0NDksLTIxMzM5Nzk0NjMsLTc0MTEzNjA5
-MCw5MzUwODM3NDcsLTk2OTMwMTI1MCwxMTc2MTkwOTAxLC0xOT
-Y5MTM4ODIyXX0=
+eyJoaXN0b3J5IjpbLTExODgxOTk0OTUsLTIxMzk5NDc4NTMsMj
+A4MDIxODM0LDc0MDExNzQ0OSwtMjEzMzk3OTQ2MywtNzQxMTM2
+MDkwLDkzNTA4Mzc0NywtOTY5MzAxMjUwLDExNzYxOTA5MDEsLT
+E5NjkxMzg4MjJdfQ==
 -->
