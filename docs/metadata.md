@@ -1,7 +1,7 @@
-# Data Set Metadata
+# Dataset & Data Service Metadata
 
-Each [Data Provider](glossary.md#term-Data-Provider) ([Data Provider](glossary.md#term-Data-Provider)) maintains a set of one or more metadata files, each of which can describe one or more 
-distinct data sets. These descriptions serve several purposes:
+Each [Data Provider](glossary.md#term-Data-Provider) maintains a set of one or more metadata files, each of which can describe one or more 
+distinct sources of data. These descriptions serve several purposes:
 
 
 1. They drive discovery descriptions are ingested into our search system and made available to a [Data Consumer](glossary.md#term-Data-Consumer) 
@@ -22,84 +22,125 @@ searching for particular kinds of data.
 
     4. Representation and internal semantics of expressions of the data
 
+## Dataset or Data Service?
+
+A Dataset:
+* is provided as one or more downloadable files,
+* may be published as part of series of Datasets covering the same source of data over different time periods, and
+* maintains historical access to previous periods.
+
+A Data Service:
+* is an API to query some data which uses parameters to specify a subset of data, including time period,
+* is specified formally by a machine readable API description, and
+* may require consent from a data subject external to the Trust Framework.
+
+They are described by slightly different information in metadata files.
+
+## Scheme-conforming
+
+A Scheme-conforming Dataset or Data Service meets a common standard across a Scheme to provide the same format and meaning of data across all Data Providers. This standard includes the format of the data or API, and the role who can access it under which licenses.
+
+These requirements are published by the Scheme Registry as machine readable [Scheme Catalog Requirements Documents](scheme_catalog_requirements.md), and metadata files link to them to show their conformance.
+
+Most Datasets and Data Services are Scheme-conforming. A Data Provider may publish data which is not Scheme-conforming to:
+* use the Trust Framework access control to share ad-hoc data amongst Trust Framework participants, or
+* use the Catalog to include Open Data in a public index.
+
 ## Metadata File Structure
 
-**NOTE**: The examples below use [YAML](glossary.md#term-YAML-Ain-t-Markup-Language) format for compactness and increased readability. Data providers may present this 
-information either in [YAML](glossary.md#term-YAML-Ain-t-Markup-Language) or in [JSON](glossary.md#term-Javascript-Object-Notation) form.
+The metadata is a standard [DCAT](https://www.w3.org/TR/vocab-dcat-3/) RDF file representing one or more sources of data. 
 
-The overall structure of the metadata file is a list of objects, each of which has the following structure:
+**NOTE**: The examples below use the [Turtle](https://www.w3.org/TR/turtle/) format for compactness and increased readability. Data providers may present this information in Turtle, RDF/XML, JSON-LD or N3 formats.
 
-```yaml
-- content:
-    # Discovery information
-  access:
-    # Access control and licensing information
-  transport:
-    # |API| information
-  representation:
-    # Data format information
-```
+Datasets are represented as Dataset DCAT objects with one or more Distributions. If the data measures the same thing over periods of time, then these must be linked together with a Data Series object. The format of the data is described by JSON Schema, XSD 1.1 or CSVW schemas.
 
-## Content Block
+Data Services are represented as Data Service DCAT objects, with OpenAPI specifications of the API and the format of the data in the responses.
 
-The `content` key contains a block of [JSON-LD](glossary.md#term-JavaScript-Object-Notation-for-Linked-Data) compatible information describing the conceptual content of the dataset. 
-A simple example is shown below:
+The URL of the DCAT object inside the RDF representation is the stable identifer of the Dataset or Data Service. This must remain constant each time the metadata file is fetched and over updates to the metadata.
 
-```yaml
-- content:
-    "@type": "dcat:Dataset"
-    "@context":
-       dcat: http://www.w3.org/ns/dcat#
-       dct: http://purl.org/dc/terms/
-       ib1: http://ib1.org/terms/
-    dct:title: My amazing data set
-    dct:description: This is a free text description of the data set
-    dcat:version: 0.1.2
-    dcat:versionNotes: This is a note on this particular version of the dataset
-    ib1:sensitivityClass: IB1-SA
-    ib1:dataSetStableIdentifier: myData
-```
+## Mandatory metadata fields
 
-These are the minimum properties every data set must define, they include terms from the 
-[Dublic Core](https://dublincore.org/) (`dct`) and [Data Catalog](https://www.w3.org/TR/vocab-dcat-2/) (`dcat`) 
-vocabularies, as well as from the Icebreaker One core ontology. Prefixes are defined in the [JSON-LD](glossary.md#term-JavaScript-Object-Notation-for-Linked-Data) `@context` object 
-as in the example above.
+The following fields must be included in every DCAT object. Metadata will be visible to all pariticipants in the Trust Framework, and may be visible to anyone on the open web without authentication in an open index.
 
-## Mandatory data content metadata fields
+[dcterms:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/title/)
+: Short title for this data set.
 
-+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| Key                                                                                                     | Value                                                                                                       |
-+=========================================================================================================+=============================================================================================================+
-| [dct:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/title/)              | Short title for this data set                                                                               |
-+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| [dct:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/description/)  | Longer form description of this data set. This is used in combination with the title and tags when people   |
-|                                                                                                         | search for data sets, so aim to include probable search words in the description.                           |
-+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| [dcat:version](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version)                           | Version number of the data set, this should preferably follow [semantic versioning](https://semver.org/) if |
-|                                                                                                         | possible. Versioning of the data set should be used to indicate changes in delivery mechanism, or in        |
-|                                                                                                         | representation, rather than for changes in the underlying data. For example, this should not be used to     |
-|                                                                                                         | differentiate between data sets from different years, rather it should be used to indicate whether a        |
-|                                                                                                         | potential data consumer might need to alter how it processes any returned data.                             |
-+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| [dcat:versionNotes](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version_notes)                | Notes used to explain any changes to this version                                                           |
-+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| `ib1:sensitivityClass`                                                                                  | The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this data set. In the current IB1  |
-|                                                                                                         | Trust Framework this should always be one of [IB1-O](glossary.md#term-Data-sensitivity-class-open),         |
-|                                                                                                         | [IB1-SA](glossary.md#term-Data-sensitivity-class-shared-A), or                                              |
-|                                                                                                         | [IB1-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of    |
-|                                                                                                         | this property also determines the level of [API](glossary.md#term-Application-programming-interface)        |
-|                                                                                                         | security imposed, with [IB1-O](glossary.md#term-Data-sensitivity-class-open) data sets being open data with |
-|                                                                                                         | no additional security, and the two shared data classes mandating                                           |
-|                                                                                                         | [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.                        |
-+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-| `ib1:dataSetStableIdentifier`                                                                           | An identifier, unique to this [Data Provider](glossary.md#term-Data-Provider), which will not be changed,   |
-|                                                                                                         | and which will be used along with the data provider’s own ID to create a unique identifier for this data    |
-|                                                                                                         | set within [the Open Net Zero](https://opennetzero.org)                                                     |
-+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+[dcterms:publisher](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/publisher/)
+: The URL of the Data Provider's record in the Scheme Directory.
 
-### Additional metadata
+[dcterms:license](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#license)
+: The URL of a Licence, which must be registered with the Registry. All use of this data source is subject to this Licence.
 
-The information above is the minimum needed to ensure that a data set is visible in [the Open Net Zero](https://opennetzero.org)Energy search system. There 
+`ib1:sensitivityClass`
+: The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this data set. In the current IB1 Trust Framework this should always be one of [IB1-O](glossary.md#term-Data-sensitivity-class-open),  [IB1-SA](glossary.md#term-Data-sensitivity-class-shared-A) or [IB1-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](glossary.md#term-Application-programming-interface) security imposed, with [IB1-O](glossary.md#term-Data-sensitivity-class-open) data sets being open data with no additional security, and the two shared data classes mandating [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.
+
+Additional fields will be made mandatory for Scheme-confirming data sources by the Scheme Catalog Requirements Document.
+
+## Conformance and access control metadata fields
+
+`dcterms:conformsTo`
+: The URL of a Scheme Catalog Requirements Document in the Scheme Registry. Most metadata files will include this field.
+
+`ib1:permitGroup`
+: The URL of a group in the Directory to specify which groups may access this data source subject to the Licence in the `dcterms:license` term. One or more groups may be specified. See [Access Control Specification](access_control_specification.md).
+
+## Data Service metadata fields
+
+Data Services are represented by `dcat:DataService` objects with the common mandatory fields and Data Service specific fields.
+
+`dcat:endpointDescription`
+: The URL of an OpenAPI file, which fully documents the request parameters and responses. Responses must use XML or JSON. To allow the OpenAPI file to be used by multiple Data Providers, the file may only contain a single Server object, where the `url` is `"{endpointURL}"`, and `variables` sets the default to `"https://endpointurl-not-specified.ib1.org"`.
+
+`dcat:endpointURL`
+: The URL of this specific instance of the API. It is interpolated into the `url` specified in the OpenAPI file using the `endpointURL` variable.
+
+`ib1:heartbeatDescription`
+: The URL of an OpenAPI file (with Server specified as `dcat:endpointDescription`), which contains a single Path with a 200 response defined. This term will typically be the URL of one of a small number of standard OpenAPI files published in the Registry.
+
+Any additional metadata defined by published Standards may be added.
+
+## Dataset metadata fields
+
+Datasets are represented by `dcat:Dataset` objects with the common mandatory fields and Dataset specific fields.
+
+As Datasets will be discovered by browsing an index, they need additional descriptive metadata for discovery. The following fields are mandatory:
+
+[dcterms:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/description/)
+: Longer form description of this data set. This is used in combination with the title and tags when people search for data sets, so aim to include probable search words in the description.
+
+[dcat:version](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version)
+: Version number of the data set, this should preferably follow [semantic versioning](https://semver.org/) if possible. Versioning of the data set should be used to indicate changes in delivery mechanism, or in representation, rather than for changes in the underlying data. For example, this should not be used to differentiate between data sets from different years, rather it should be used to indicate whether a potential data consumer might need to alter how it processes any returned data. 
+
+[dcat:versionNotes](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version_notes)
+: Notes used to explain any changes to this version.
+
+[dcat:distribution](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_distribution)
+: URL of a `dcat:Distribution` for a downloadable file, see below for mandatory fields. Multiple Distribtions may be defined for the same data in different formats, but Scheme-conforming datasets will require a specific format.
+
+[dcat:inSeries](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_in_series)
+: Where the URL is part of a series of periodic datasets, the URL of a `dcat:DataSeries` which associates this Dataset with the overall series. The DataSeries is created by the publisher and contains their data only.
+
+Any additional metadata defined by published Standards may be added.
+
+### Distribution metadata fields
+
+To specify how the data may be downloaded, one or more associated `dcat:Distribution` objects must be included which contain:
+
+[dcat:downloadURL](https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_download_url)
+: A stable URL for download of the dataset, subject to access controls specified in the Dataset object. Liveness of the server will be tested by making a HEAD request to this URL.
+
+[dcat:media_type](https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_media_type)
+: The MIME type of the download file.
+
+`ib1:dataSchema`
+: The URL of a schema file specifying the format of the downloadable file. The type of schema depends on the `dcat:mediaType`:
+`application/json` are documented by JSON Schema files,
+`application/xml` by XSD 1.1 files, and
+`text/csv` by [CSVW](https://www.w3.org/ns/csvw) files.
+
+### Additional metadata for Datasets and Data Services
+
+The information above is the minimum needed to ensure that a data source can be used by the Trust Framework participants, and is visible in [the Open Net Zero](https://opennetzero.org) search system. There 
 are, however, other properties of a data set which may be useful to potential data consumers. Where such information can 
 be provided, it should be provided in as standard a form as possible - in practice this translates to making use of 
 existing ontologies such as DCAT and Dublin Core by preference, then shared, industry-specific, ontologies, and only 
@@ -110,290 +151,77 @@ Of particular note, and something we would like to ultimately expose in the Open
 
 We encourage use of the `dcat:keyword` list for data sets. These translate to “tags” in our web interface and are useful to group data sets around specific topics.
 
-```yaml
-dcat:keyword:
-  - solar
-  - electricity
-  - retrofit
-```
-
-## Access Block
-
-This section describes the kinds of licensing, expressed as sets of capabilities, and what, if any, conditions must be 
-satisfied before a [data consumer](glossary.md#term-Data-Consumer) can acquire these data.
-
-Each item within this section contains:
-
-
-1. A statement describing a set of conditions which must be satisfied to grant access, and the set of capabilities 
-granted should access be provided by this set of conditions. The exact specification for these statements can be
-found at [Access Control and Capability Grant Language](access_control_specification.md#access-control-and-capability-grant-language)
-
-
-2. A boolean property indicating whether the access conditions in [1] are sufficient (`true`), or simply indicative 
-(`false`). In the former case, a [data consumer](glossary.md#term-Data-Consumer) which satisfies all the conditions *will* be granted access, 
-in the latter they *may* be granted access, but there may be additional requirements not fully described here
-
-
-3. A pair of dates indicating the time range for which this access condition is valid. Data providers are encouraged to 
-commit to access and license conditions with a reasonable timeframe to allow potential consumers to plan their own
-activities
-
-```yaml
-access:
-  # Access constraint to licensing predicates
-  - rule: ib1oe:verified, ib1oe:last_update max_age_days 60 grants ib1oe:use_any
-    sufficient: true
-    appliesFrom: 20231-04-22
-    appliesTo: 20242-04-22
-  - rule: group:some_group grants ib1oe:use_any, ib1oe:adapt_any
-    sufficient: false
-    appliesFrom: 20231-04-22
-    appliesTo: 20242-04-22
-```
-
-## Transport Block
-
-This section describes the on the wire transport protocol, normally HTTP, but with scope to describe out-of-band 
-transports with an initial HTTP negotiation process. It contains at least a single `http` key, the value of which
-must be valid [Open|API|](https://swagger.io/specification/) 
-
-For example:
-
-```yaml
-transport:
-  http:
-    # This block is mandatory, and contains the Open|API| spec for the secured or open
-    # HTTP endpoints (depending on data class)
-    openapi: 3.0.0
-    info:
-      title: Sample |API|
-      description: CSV format data
-      version: 0.1.0
-    servers:
-      - url: http://data-provider-example.com
-        description: Describe this particular server if needed
-    paths:
-      "/data":
-        get:
-          summary: Returns a CSV containing all the data
-          description: If we had any more to describe, we'd do it here
-          responses:
-            '200':
-              description: CSV data stream
-```
-
-**NOTE**: Because [API](glossary.md#term-Application-programming-interface) security is defined in relation to the data sensitivity class of the data set, it is not necessary to 
-define the security of any presented [API](glossary.md#term-Application-programming-interface) in this section. Data sets in class [IB1OE-O](glossary.md#term-Data-sensitivity-class-open) must expose an [API](glossary.md#term-Application-programming-interface) with no extra
-security measures, and those in [IB1OE-SA](glossary.md#term-Data-sensitivity-class-shared-A) and [IB1OE-SB](glossary.md#term-Data-sensitivity-class-shared-B) must be secured by [FAPI](glossary.md#term-Financial-Grade-API) using the Ib1 Trust FrameworkOpen Energy trust services.
-
-### Heartbeat URL
-
-Data providers **SHOULD** create a secured endpoint to act as a heartbeat - if this is specifed then the [TFOEGS](glossary.md#term-Trust-FrameworkOpen-Energy-Governance-Service) will 
-periodically call it to assertain liveness and optionally gather metrics as described in
-[Heartbeat and monitoring endpoint](ops_guidelines/data_provider_ops_guidelines.md#heartbeat-and-monitoring-endpoint)
-
-A hearbeat URL can be specified as a single key `heartbeat_url` with the value being the fully qualified URL at which 
-the hearbeat response is exposed.
-
-## Representation Block
-
-This section describes the format of any data received by a [data consumer](glossary.md#term-Data-Consumer) from this data set. The IB1 Trust FrameworkOpen Energy does 
-not mandate particular formats, so this section is guidance rather than specification.
-
-The only required element in this section is a key `mime` which should contain the 
-[media type](https://en.wikipedia.org/wiki/Media_type) of the returned data. At a bare minimum this allows a client to 
-load data into some kind of tooling. Depending on this value, other objects may be present.
-
-### text/csv
-
-This type indicates that data is presented in CSV format. In this case, an optional key `csvw` may be defined, and 
-should contain valid [JSON-LD](glossary.md#term-JavaScript-Object-Notation-for-Linked-Data) following the [CSV for the Web](https://www.w3.org/TR/tabular-data-primer/) guidelines:
-
-```yaml
-representation:
-  mime: text/csv
-  csvw:
-    # This is only applicable if the mime type is text/csv
-    "@context": http://www.w3.org/ns/csvw
-    tableSchema:
-      columns:
-        - titles: country
-        - titles: country group
-        - titles: name (en)
-        - titles: name (fr)
-        - titles: name (de)
-        - titles: latitude
-        - titles: longitude
-```
-
-### Other types
-
-This is currently open for consultation, we would like to be able to guide data providers towards particular 
-representation types for particular kinds of information, and make use of any existing ontologies or standards such as
-the [Common Information Model](https://en.wikipedia.org/wiki/Common_Information_Model_(electricity)) where such 
-standards will aid interoperability between IB1 Trust FrameworkOpen Energy participants and the wider community.
 
 ## Full Example
 
-Putting together all the fragments from previous sections produces the following - this represents a single data set, 
-in the full metadata file this would be contained within a list. [YAML](glossary.md#term-YAML-Ain-t-Markup-Language) form:
+### Data Service
 
-```yaml
-- content:
-    "@type": "dcat:Dataset"
-    "@context":
-      dcat: http://www.w3.org/ns/dcat#
-      dct: http://purl.org/dc/terms/
-      ib1: http://ib1.org/terms/
-    dct:title: My amazing data set
-    dct:description: This is a free text description of the data set
-    dcat:version: 0.1.2
-    dcat:versionNotes: This is a note on this particular version of the dataset
-    ib1:sensitivityClass: IB1-SA
-    ib1:dataSetStableIdentifier: myData
-  access:
-    # Access constraint to licensing predicates
-    - rule: ib1:verified, ib1:last_update max_age_days 60 grants ib1:use_any
-      sufficient: true
-      appliesFrom: 20231-04-22
-      appliesTo: 20242-04-22
-    - rule: group:some_group grants ib1oe:use_any, ib1oe:adapt_any
-      sufficient: false
-      appliesFrom: 20231-04-22
-      appliesTo: 20242-04-22
-  transport:
-    http:
-      # This block is mandatory, and contains the Open|API| spec for the secured or open
-      # HTTP endpoints (depending on data class)
-      openapi: 3.0.0
-      info:
-        title: Sample |API|
-        description: CSV format data
-        version: 0.1.0
-      servers:
-        - url: http://data-provider-example.com
-          description: Describe this particular server if needed
-      paths:
-        "/data":
-          get:
-            summary: Returns a CSV containing all the data
-            description: If we had any more to describe, we'd do it here
-          responses:
-            '200':
-              description: CSV data stream
-  representation:
-    mime: text/csv
-    csvw:
-      # This is only applicable if the mime type is text/csv
-      "@context": http://www.w3.org/ns/csvw
-      tableSchema:
-        columns:
-          - titles: country
-          - titles: country group
-          - titles: name (en)
-          - titles: name (fr)
-          - titles: name (de)
-          - titles: latitude
-          - titles: longitude
+```
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ib1: <http://registry.ib1.org/ns/1.0/> .
+
+<https://data-provider-example.com/supply-voltage/v0>
+    a dcat:DataService ;
+    dcterms:title "Electricity Supply Voltage"@en ;
+    dcterms:description "API to query supply voltage across the grid"@en ;
+    dcterms:publisher <https://registry.ib1.org/member/my-energy-company> ;
+    dcterms:conformsTo <https://registry.ib1.org/class/supply-voltage> ; 
+    dcat:version "0.1.2" ;
+    dcat:endpointDescription <https://registry.ib1.org/api/electricty-voltage> ;
+    ib1:heartbeatDescription <https://registry.ib1.org/api/heartbeat-simple> ;
+    dcat:endpointURL <https://data-provider-example.com/supply-voltage/v0> ;
+    ib1:sensitivityClass "IB1-SA" ;
+    ib1:permitGroup <https://directory.ib1.org/group/network-operator> ;
+    ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+.
 ```
 
-Or, in [JSON](glossary.md#term-Javascript-Object-Notation) form:
+### Dataset with Distributions and Data Series
 
-```json
-[
-  {
-    "content": {
-      "@type": "dcat:Dataset",
-      "@context": {
-        "dcat": "http://www.w3.org/ns/dcat#",
-        "dct": "http://purl.org/dc/terms/",
-        "ib1": "http://ib1.org/terms/"
-      },
-      "dct:title": "My amazing data set",
-      "dct:description": "This is a free text description of the data set",
-      "dcat:version": "0.1.2",
-      "dcat:versionNotes": "This is a note on this particular version of the dataset",
-      "ib1:sensitivityClass": "IB1-SA",
-      "ib1oe:dataSetStableIdentifier": "myData"
-    },
-    "access": [
-      {
-        "rule": "ib1:verified, ib1:last_update max_age_days 60 grants ib1:use_any",
-        "sufficient": true,
-        "appliesFrom": "20231-04-22T00:00:00.000Z",
-        "appliesTo": "20242-04-22T00:00:00.000Z"
-      },
-      {
-        "rule": "group:some_group grants ib1:use_any, ib1:adapt_any",
-        "sufficient": false,
-        "appliesFrom": "20231-04-22T00:00:00.000Z",
-        "appliesTo": "20242-04-22T00:00:00.000Z"
-      }
-    ],
-    "transport": {
-      "http": {
-        "openapi": "3.0.0",
-        "info": {
-          "title": "Sample |API|",
-          "description": "CSV format data",
-          "version": "0.1.0"
-        },
-        "servers": [
-          {
-            "url": "http://data-provider-example.com",
-            "description": "Describe this particular server if needed"
-          }
-        ],
-        "paths": {
-          "/data": {
-            "get": {
-              "summary": "Returns a CSV containing all the data",
-              "description": "If we had any more to describe, we'd do it here"
-            },
-            "responses": {
-              "200": {
-                "description": "CSV data stream"
-              }
-            }
-          }
-        }
-      }
-    },
-    "representation": {
-      "mime": "text/csv",
-      "csvw": {
-        "@context": "http://www.w3.org/ns/csvw",
-        "tableSchema": {
-          "columns": [
-            {
-              "titles": "country"
-            },
-            {
-              "titles": "country group"
-            },
-            {
-              "titles": "name (en)"
-            },
-            {
-              "titles": "name (fr)"
-            },
-            {
-              "titles": "name (de)"
-            },
-            {
-              "titles": "latitude"
-            },
-            {
-              "titles": "longitude"
-            }
-          ]
-        }
-      }
-    }
-  }
-]
+```
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ib1: <http://registry.ib1.org/ns/1.0/> .
+
+<https://data-provider-example.com/generation-report/oct2024>
+    a dcat:Dataset ;
+    dcterms:title "Generation Report Oct 2024"@en ;
+    dcterms:description "Data report on generation"@en ;
+    dcterms:publisher <https://registry.ib1.org/member/my-energy-company> ;
+    dcterms:conformsTo <https://registry.ib1.org/class/generation-report> ; 
+    dcat:version "0.1.2" ;
+    dcat:inSeries <https://data-provider-example.com/generation-report>;
+    dcat:distribution <https://data-provider-example.com/generation-report/oct2024/csv> ;
+    dcat:keyword "solar"@en,
+	    "electricity"@en,
+	    "retrofit"@en ;
+    ib1:sensitivityClass "IB1-SA" ;
+    ib1:permitGroup <https://directory.ib1.org/group/network-operator> ;
+    ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+.
+
+<https://data-provider-example.com/generation-report/oct2024/download>
+	a dcat:Distribution ;
+	dcterms:description "CSV"@en ;
+	dcat:downloadURL <https://data-provider-example.com/generation-report/oct2024/csv> ;
+	dcat:media_type "text/csv"@en ;
+	ib1:dataSchema <https://registry.ib1.org/format/generation-report/v2> ;
+.
+
+<https://data-provider-example.com/generation-report>
+    a dcat:DatasetSeries ;
+    dcterms:title "Generation Reports from My Energy Company"@en ;
+.
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxNTE5NTIxNiwtMTc2ODQxMzMyNl19
+eyJoaXN0b3J5IjpbLTE4MzY0ODI1OTIsLTExODU4MjA4MjMsMz
+UyNDI5NSwtMTc3Mjk1NTY3OSwtMTUwMzY5NDAwLDU0MDU3NjUz
+LC0xMDMyMjMyNTIzLC04NDA2NTUxODksLTU3OTM2NTg2MCwtMT
+M2MzYzMTQwMSwtMTQ3MDQzMzM2MywxNzUxMjM0OTkwLC02MTE3
+OTM1MTAsMTUxNzk1OTM4OCwxMTg5MzQyMzY2LDM1MTI3Njc4MC
+w1OTQ5MjE2NjUsMTE0OTc3MTc0MCwtMjU0Mjk4NzQ4LDIxMjk2
+NzMzNzNdfQ==
 -->
