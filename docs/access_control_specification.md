@@ -25,7 +25,7 @@ These rules specify that members of either the "Report Provider" and "Archivers"
 
 ## Machine readable intepretation of Licences
 
-The Registry maintains an RDF document at a well known URL which maps Licence URLs to Permissions (what you are allowed to do with the data) and Obligations (what you must do when providing derivative data to others).
+The Registry maintains an RDF document at a well known URL which maps Licence URLs to Grants (what you are allowed to do with the data) and Obligations (what you must do when providing derivative data to others).
 
 The document is one or more `ib1:LicenceInterpretation` objects.
 
@@ -33,20 +33,20 @@ The document is one or more `ib1:LicenceInterpretation` objects.
 @prefix ib1: <http://registry.ib1.org/ns/1.0/>
 
 <https://creativecommons.org/licenses/by/4.0/> a ib1:LicenceInterpretation ;
-	ib1:permission ib1:use_any ;
-	ib1:permission ib1:adapt_any ;
-	ib1:permission ib1:combine_any ;
-	ib1:permission ib1:redistribute_original ;
-	ib1:permission ib1:combine_external ;
+	ib1:grant ib1:use_any ;
+	ib1:grant ib1:adapt_any ;
+	ib1:grant ib1:combine_any ;
+	ib1:grant ib1:redistribute_original ;
+	ib1:grant ib1:combine_external ;
 	ib1:obligation ib1:by;
 .
 ```
 
-`ib1:permission`
-: The URL of a permission, with the meaning defined in the contracts which govern the Trust Framework. A consumer may ignore any Permission that they do not understand and use the licence.
+`ib1:grant`
+: The URL of a Grant, with the meaning defined in the contracts which govern the Trust Framework. A consumer may ignore any Grant that they do not understand and use the licence.
 
 `ib1:obligation`
-: The URL of a obligation, with the meaning defined in the contracts which govern the Trust Framework. A consumer must not use a licence if it includes an Obligation that they do not understand.
+: The URL of an Obligation, with the meaning defined in the contracts which govern the Trust Framework. A consumer __MUST NOT__ use a licence if it includes an Obligation that they do not understand.
 
 
 ## Permissions
@@ -122,8 +122,9 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyOTk3MzQyNywxOTEzMzA2MTkyLC0xMT
-g4MTk5NDk1LC0yMTM5OTQ3ODUzLDIwODAyMTgzNCw3NDAxMTc0
-NDksLTIxMzM5Nzk0NjMsLTc0MTEzNjA5MCw5MzUwODM3NDcsLT
-k2OTMwMTI1MCwxMTc2MTkwOTAxLC0xOTY5MTM4ODIyXX0=
+eyJoaXN0b3J5IjpbMjI1MjU0Nzk4LC04Mjk5NzM0MjcsMTkxMz
+MwNjE5MiwtMTE4ODE5OTQ5NSwtMjEzOTk0Nzg1MywyMDgwMjE4
+MzQsNzQwMTE3NDQ5LC0yMTMzOTc5NDYzLC03NDExMzYwOTAsOT
+M1MDgzNzQ3LC05NjkzMDEyNTAsMTE3NjE5MDkwMSwtMTk2OTEz
+ODgyMl19
 -->
