@@ -53,7 +53,7 @@ The document is one or more `ib1:LicenceInterpretation` objects.
 
 ### Standard permissions
 
-These are permissions where the namespace part of the **name** is `ib1`, indicating that they are defined as part of the Icebreaker One Trust Framework. Data providers **SHOULD NOT**, create their own permissions unless absolutely necessary as doing so acts against the aim of easy interoperability and comprehension of access and licensing rules.
+These are permissions where the URL prefix is in the IB1 Registry, usually abbreviated as  `ib1:`, indicating that they are defined as part of the Icebreaker One Trust Framework. Data providers **SHOULD NOT**, create their own permissions unless absolutely necessary as doing so acts against the aim of easy interoperability and comprehension of access and licensing rules.
 
 Any additional permissions designed **MUST** be within the namespace of the data provider responsible for their definition, and any such data provider **MUST** publish a clear, legally valid, definition of any such permissions. In addition, data providers creating custom permissions **MUST** inform the [TFGS](glossary.md#term-Trust-Framework-Governance-Service) of this, providing links to the aforementioned documentation.
 
@@ -103,7 +103,7 @@ Any additional permissions designed **MUST** be within the namespace of the data
 
 ## Obligations
 
-Obligations are constraints on what the data consumer can do with the data, restricting or specialising the permissions granted. They are specified as a URL.
+Obligations are constraints on what the data consumer can do with the data, restricting or specialising the permissions granted. They are specified as a URL, similar to Permissions.
 
 ### Standard obligations
 
@@ -122,8 +122,8 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMzMwNjE5MiwtMTE4ODE5OTQ5NSwtMj
-EzOTk0Nzg1MywyMDgwMjE4MzQsNzQwMTE3NDQ5LC0yMTMzOTc5
-NDYzLC03NDExMzYwOTAsOTM1MDgzNzQ3LC05NjkzMDEyNTAsMT
-E3NjE5MDkwMSwtMTk2OTEzODgyMl19
+eyJoaXN0b3J5IjpbLTgyOTk3MzQyNywxOTEzMzA2MTkyLC0xMT
+g4MTk5NDk1LC0yMTM5OTQ3ODUzLDIwODAyMTgzNCw3NDAxMTc0
+NDksLTIxMzM5Nzk0NjMsLTc0MTEzNjA5MCw5MzUwODM3NDcsLT
+k2OTMwMTI1MCwxMTc2MTkwOTAxLC0xOTY5MTM4ODIyXX0=
 -->
