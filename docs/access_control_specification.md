@@ -49,18 +49,18 @@ The document is one or more `ib1:LicenceInterpretation` objects.
 : The URL of an Obligation, with the meaning defined in the contracts which govern the Trust Framework. A consumer __MUST NOT__ use a licence if it includes an Obligation that they do not understand.
 
 
-## Permissions
+## Grants
 
-### Standard permissions
+### Standard grants
 
-These are permissions where the URL prefix is in the IB1 Registry, usually abbreviated as  `ib1:`, indicating that they are defined as part of the Icebreaker One Trust Framework. Data providers **SHOULD NOT**, create their own permissions unless absolutely necessary as doing so acts against the aim of easy interoperability and comprehension of access and licensing rules.
+These are Grants where the URL prefix is in the IB1 Registry, usually abbreviated as  `ib1:`, indicating that they are defined as part of the Icebreaker One Trust Framework. Data providers **SHOULD NOT**, create their own Grants unless absolutely necessary as doing so acts against the aim of easy interoperability and comprehension of access and licensing rules.
 
-Any additional permissions designed **MUST** be within the namespace of the data provider responsible for their definition, and any such data provider **MUST** publish a clear, legally valid, definition of any such permissions. In addition, data providers creating custom permissions **MUST** inform the [TFGS](glossary.md#term-Trust-Framework-Governance-Service) of this, providing links to the aforementioned documentation.
+Any additional grants designed **MUST** be within the namespace of the data provider responsible for their definition, and any such data provider **MUST** publish a clear, legally valid, definition of any such permissions. In addition, data providers creating custom permissions **MUST** inform the [TFGS](glossary.md#term-Trust-Framework-Governance-Service) of this, providing links to the aforementioned documentation.
 
 **WARNING**: This section is provisional, the exact final set of base permissions has yet to be determined. Those shown below are a plausible first cut but should not be considered definitive.
 
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-| Category                 | Permission name                           | Meaning                                                                                |
+| Category                 | Grant name                           | Meaning                                                                                |
 +==========================+===========================================+========================================================================================+
 | **Use**                  |                                           | **Use the artefact internally**                                                        |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
@@ -122,7 +122,7 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI1MjU0Nzk4LC04Mjk5NzM0MjcsMTkxMz
+eyJoaXN0b3J5IjpbNjExODUxNzY4LC04Mjk5NzM0MjcsMTkxMz
 MwNjE5MiwtMTE4ODE5OTQ5NSwtMjEzOTk0Nzg1MywyMDgwMjE4
 MzQsNzQwMTE3NDQ5LC0yMTMzOTc5NDYzLC03NDExMzYwOTAsOT
 M1MDgzNzQ3LC05NjkzMDEyNTAsMTE3NjE5MDkwMSwtMTk2OTEz
