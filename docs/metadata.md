@@ -170,7 +170,7 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
     dcat:endpointDescription <https://registry.ib1.org/api/electricty-voltage> ;
     ib1:heartbeatDescription <https://registry.ib1.org/api/heartbeat-simple> ;
     dcat:endpointURL <https://data-provider-example.com/supply-voltage/v0> ;
-    ib1:sensitivityClass "IB1OE-SA" ;
+    ib1:sensitivityClass "IB1-SA" ;
     ib1:permitGroup <https://directory.ib1.org/group/network-operator> ;
     ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -196,7 +196,7 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
     dcat:keyword "solar"@en,
 	    "electricity"@en,
 	    "retrofit"@en ;
-    ib1:sensitivityClass "IB1OE-SA" ;
+    ib1:sensitivityClass "IB1-SA" ;
     ib1:permitGroup <https://directory.ib1.org/group/network-operator> ;
     ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -216,11 +216,11 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODU4MjA4MjMsMzUyNDI5NSwtMTc3Mj
-k1NTY3OSwtMTUwMzY5NDAwLDU0MDU3NjUzLC0xMDMyMjMyNTIz
-LC04NDA2NTUxODksLTU3OTM2NTg2MCwtMTM2MzYzMTQwMSwtMT
-Q3MDQzMzM2MywxNzUxMjM0OTkwLC02MTE3OTM1MTAsMTUxNzk1
-OTM4OCwxMTg5MzQyMzY2LDM1MTI3Njc4MCw1OTQ5MjE2NjUsMT
-E0OTc3MTc0MCwtMjU0Mjk4NzQ4LDIxMjk2NzMzNzMsMTAzMDkz
-MzY4N119
+eyJoaXN0b3J5IjpbNTI4OTQ3Nzk3LC0xMTg1ODIwODIzLDM1Mj
+QyOTUsLTE3NzI5NTU2NzksLTE1MDM2OTQwMCw1NDA1NzY1Mywt
+MTAzMjIzMjUyMywtODQwNjU1MTg5LC01NzkzNjU4NjAsLTEzNj
+M2MzE0MDEsLTE0NzA0MzMzNjMsMTc1MTIzNDk5MCwtNjExNzkz
+NTEwLDE1MTc5NTkzODgsMTE4OTM0MjM2NiwzNTEyNzY3ODAsNT
+k0OTIxNjY1LDExNDk3NzE3NDAsLTI1NDI5ODc0OCwyMTI5Njcz
+MzczXX0=
 -->
