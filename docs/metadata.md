@@ -50,8 +50,7 @@ Most Datasets and Data Services are Scheme-conforming. A Data Provider may publi
 
 The metadata is a standard [DCAT](https://www.w3.org/TR/vocab-dcat-3/) RDF file representing one or more sources of data. 
 
-**NOTE**: The examples below use the [Turtle](https://www.w3.org/TR/turtle/) format for compactness and increased readability. Data providers may present this 
-information in Turtle, RDF/XML, JSON-LD or N3 formats.
+**NOTE**: The examples below use the [Turtle](https://www.w3.org/TR/turtle/) format for compactness and increased readability. Data providers may present this information in Turtle, RDF/XML, JSON-LD or N3 formats.
 
 Datasets are represented as Dataset DCAT objects with one or more Distributions. If the data measures the same thing over periods of time, then these must be linked together with a Data Series object. The format of the data is described by JSON Schema, XSD 1.1 or CSVW schemas.
 
@@ -218,11 +217,11 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MzMwOTU1NCwtMTE4NTgyMDgyMywzNT
-I0Mjk1LC0xNzcyOTU1Njc5LC0xNTAzNjk0MDAsNTQwNTc2NTMs
-LTEwMzIyMzI1MjMsLTg0MDY1NTE4OSwtNTc5MzY1ODYwLC0xMz
-YzNjMxNDAxLC0xNDcwNDMzMzYzLDE3NTEyMzQ5OTAsLTYxMTc5
-MzUxMCwxNTE3OTU5Mzg4LDExODkzNDIzNjYsMzUxMjc2NzgwLD
-U5NDkyMTY2NSwxMTQ5NzcxNzQwLC0yNTQyOTg3NDgsMjEyOTY3
-MzM3M119
+eyJoaXN0b3J5IjpbLTE4MzY0ODI1OTIsLTExODU4MjA4MjMsMz
+UyNDI5NSwtMTc3Mjk1NTY3OSwtMTUwMzY5NDAwLDU0MDU3NjUz
+LC0xMDMyMjMyNTIzLC04NDA2NTUxODksLTU3OTM2NTg2MCwtMT
+M2MzYzMTQwMSwtMTQ3MDQzMzM2MywxNzUxMjM0OTkwLC02MTE3
+OTM1MTAsMTUxNzk1OTM4OCwxMTg5MzQyMzY2LDM1MTI3Njc4MC
+w1OTQ5MjE2NjUsMTE0OTc3MTc0MCwtMjU0Mjk4NzQ4LDIxMjk2
+NzMzNzNdfQ==
 -->
