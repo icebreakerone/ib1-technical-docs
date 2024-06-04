@@ -103,7 +103,7 @@ Any additional grants designed **MUST** be within the namespace of the data prov
 
 ## Obligations
 
-Obligations are constraints on what the data consumer can do with the data, restricting or specialising the permissions granted. They are specified as a URL, similar to Permissions.
+Obligations are constraints on what the data consumer can do with the data, restricting or specialising the meaning of the Grants. They are specified as a URL, similar to Grants.
 
 ### Standard obligations
 
@@ -122,9 +122,9 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjExODUxNzY4LC04Mjk5NzM0MjcsMTkxMz
-MwNjE5MiwtMTE4ODE5OTQ5NSwtMjEzOTk0Nzg1MywyMDgwMjE4
-MzQsNzQwMTE3NDQ5LC0yMTMzOTc5NDYzLC03NDExMzYwOTAsOT
-M1MDgzNzQ3LC05NjkzMDEyNTAsMTE3NjE5MDkwMSwtMTk2OTEz
-ODgyMl19
+eyJoaXN0b3J5IjpbLTEzMjMxMzY0NDIsNjExODUxNzY4LC04Mj
+k5NzM0MjcsMTkxMzMwNjE5MiwtMTE4ODE5OTQ5NSwtMjEzOTk0
+Nzg1MywyMDgwMjE4MzQsNzQwMTE3NDQ5LC0yMTMzOTc5NDYzLC
+03NDExMzYwOTAsOTM1MDgzNzQ3LC05NjkzMDEyNTAsMTE3NjE5
+MDkwMSwtMTk2OTEzODgyMl19
 -->
