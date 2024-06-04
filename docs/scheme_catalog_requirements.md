@@ -1,7 +1,7 @@
 
 # Scheme Catalog Requirements
 
-A Scheme Catalog Requirements Document specifies the metadata that a DCAT Catalog entry must contain for it to be Scheme-conforming. A conforming data source meets a common standard across a Scheme to provide the same format and meaning of data across all Data Providers.
+A Scheme Catalog Requirements Document specifies the metadata that a DCAT Catalog entry must contain for it to be Scheme-conforming. A conforming data source meets a common standard across a Scheme, where all Data Providers provide the same APIs, formats and meaning of data.
 
 It is an RDF document published by the Registry.
 
@@ -17,7 +17,7 @@ It is an RDF document published by the Registry.
 	ib1:requiredMetadata [ a ib1:RequiredMetadata ;
 	    dcat:endpointDescription <https://registry.ib1.org/api/electricty-voltage> ;
 	    ib1:heartbeatDescription <https://registry.ib1.org/api/heartbeat-simple> ;
-	    ib1:sensitivityClass "IB1OE-SA" ;
+	    ib1:sensitivityClass "IB1-SA" ;
 	    ib1:permitGroup <https://directory.ib1.org/group/network-operator> ;
 	    ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
 	    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
@@ -55,6 +55,6 @@ The requirements for terms in the `ib1:requiredMetadata` are modified by terms i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4Mjk1ODI5MywxMzg5NzAyMDM4LDExMT
+eyJoaXN0b3J5IjpbLTU5MTg4MjU2MiwxMzg5NzAyMDM4LDExMT
 MxMjg5NjksMTI2ODgzNjcwOF19
 -->
