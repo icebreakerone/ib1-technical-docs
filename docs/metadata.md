@@ -80,7 +80,7 @@ The following fields must be included in every DCAT object. Metadata will be vis
 `ib1:sensitivityClass`
 : The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this dataset. In the current IB1 Trust Framework this should always be one of [IB1-O](glossary.md#term-Data-sensitivity-class-open),  [IB1-SA](glossary.md#term-Data-sensitivity-class-shared-A) or [IB1-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](glossary.md#term-Application-programming-interface) security imposed, with [IB1-O](glossary.md#term-Data-sensitivity-class-open) datasets being open data with no additional security, and the two shared data classes mandating [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.
 
-Additional fields may be made mandatory for Scheme-confirming data sources by the Scheme Catalog Requirements Document.
+Additional fields may be made mandatory for Scheme-conforming data sources by the Scheme Catalog Requirements Document.
 
 ## Conformance and access control metadata fields
 
@@ -234,11 +234,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3OTgwODM4NywzNjgxNTIxNTIsLTQ4Nj
-E4MDQ0MCwtMTY3Nzk0ODM2LDQ5MTg2ODk2MywtMTgzNjQ4MjU5
-MiwtMTE4NTgyMDgyMywzNTI0Mjk1LC0xNzcyOTU1Njc5LC0xNT
-AzNjk0MDAsNTQwNTc2NTMsLTEwMzIyMzI1MjMsLTg0MDY1NTE4
-OSwtNTc5MzY1ODYwLC0xMzYzNjMxNDAxLC0xNDcwNDMzMzYzLD
-E3NTEyMzQ5OTAsLTYxMTc5MzUxMCwxNTE3OTU5Mzg4LDExODkz
-NDIzNjZdfQ==
+eyJoaXN0b3J5IjpbMTQzNDg2OTA5LDEzNzk4MDgzODcsMzY4MT
+UyMTUyLC00ODYxODA0NDAsLTE2Nzc5NDgzNiw0OTE4Njg5NjMs
+LTE4MzY0ODI1OTIsLTExODU4MjA4MjMsMzUyNDI5NSwtMTc3Mj
+k1NTY3OSwtMTUwMzY5NDAwLDU0MDU3NjUzLC0xMDMyMjMyNTIz
+LC04NDA2NTUxODksLTU3OTM2NTg2MCwtMTM2MzYzMTQwMSwtMT
+Q3MDQzMzM2MywxNzUxMjM0OTkwLC02MTE3OTM1MTAsMTUxNzk1
+OTM4OF19
 -->
