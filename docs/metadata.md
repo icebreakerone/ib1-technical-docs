@@ -71,6 +71,12 @@ The following fields must be included in every DCAT object. Metadata will be vis
 [dcterms:license](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#license)
 : The URL of a Licence. All use of this data source is subject to this Licence. Where a data source is Scheme-conforming, the URL will be registered in the Registry.
 
+`ib1:trustFramework`
+: The URL of the Trust Framework(s) the dataset is assured under.
+
+`ib1:datasetAssurance`
+: The assurance level for this dataset.
+
 `ib1:sensitivityClass`
 : The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this dataset. In the current IB1 Trust Framework this should always be one of [IB1-O](glossary.md#term-Data-sensitivity-class-open),  [IB1-SA](glossary.md#term-Data-sensitivity-class-shared-A) or [IB1-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](glossary.md#term-Application-programming-interface) security imposed, with [IB1-O](glossary.md#term-Data-sensitivity-class-open) datasets being open data with no additional security, and the two shared data classes mandating [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.
 
@@ -224,11 +230,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NjE4MDQ0MCwtMTY3Nzk0ODM2LDQ5MT
-g2ODk2MywtMTgzNjQ4MjU5MiwtMTE4NTgyMDgyMywzNTI0Mjk1
-LC0xNzcyOTU1Njc5LC0xNTAzNjk0MDAsNTQwNTc2NTMsLTEwMz
-IyMzI1MjMsLTg0MDY1NTE4OSwtNTc5MzY1ODYwLC0xMzYzNjMx
-NDAxLC0xNDcwNDMzMzYzLDE3NTEyMzQ5OTAsLTYxMTc5MzUxMC
-wxNTE3OTU5Mzg4LDExODkzNDIzNjYsMzUxMjc2NzgwLDU5NDky
-MTY2NV19
+eyJoaXN0b3J5IjpbODI1NzEzNzQyLC00ODYxODA0NDAsLTE2Nz
+c5NDgzNiw0OTE4Njg5NjMsLTE4MzY0ODI1OTIsLTExODU4MjA4
+MjMsMzUyNDI5NSwtMTc3Mjk1NTY3OSwtMTUwMzY5NDAwLDU0MD
+U3NjUzLC0xMDMyMjMyNTIzLC04NDA2NTUxODksLTU3OTM2NTg2
+MCwtMTM2MzYzMTQwMSwtMTQ3MDQzMzM2MywxNzUxMjM0OTkwLC
+02MTE3OTM1MTAsMTUxNzk1OTM4OCwxMTg5MzQyMzY2LDM1MTI3
+Njc4MF19
 -->
