@@ -60,7 +60,7 @@ Any additional grants designed **MUST** be within the namespace of the data prov
 **WARNING**: This section is provisional, the exact final set of base permissions has yet to be determined. Those shown below are a plausible first cut but should not be considered definitive.
 
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-| Category                 | Grant name                           | Meaning                                                                                |
+| Category                 | Grant name                                | Meaning                                                                                |
 +==========================+===========================================+========================================================================================+
 | **Use**                  |                                           | **Use the artefact internally**                                                        |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
@@ -122,9 +122,9 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNTgwNTQ2MCw2MTE4NTE3NjgsLTgyOT
-k3MzQyNywxOTEzMzA2MTkyLC0xMTg4MTk5NDk1LC0yMTM5OTQ3
-ODUzLDIwODAyMTgzNCw3NDAxMTc0NDksLTIxMzM5Nzk0NjMsLT
-c0MTEzNjA5MCw5MzUwODM3NDcsLTk2OTMwMTI1MCwxMTc2MTkw
-OTAxLC0xOTY5MTM4ODIyXX0=
+eyJoaXN0b3J5IjpbMjA1MTEzMzIxMiwyMDA1ODA1NDYwLDYxMT
+g1MTc2OCwtODI5OTczNDI3LDE5MTMzMDYxOTIsLTExODgxOTk0
+OTUsLTIxMzk5NDc4NTMsMjA4MDIxODM0LDc0MDExNzQ0OSwtMj
+EzMzk3OTQ2MywtNzQxMTM2MDkwLDkzNTA4Mzc0NywtOTY5MzAx
+MjUwLDExNzYxOTA5MDEsLTE5NjkxMzg4MjJdfQ==
 -->
