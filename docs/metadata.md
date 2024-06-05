@@ -153,7 +153,7 @@ The following fields are optional, but encouraged. They are mandatory for higher
 
 ### Additional metadata for Datasets and Data Services
 
-The information above is the minimum needed to ensure that a data source can be used by the Trust Framework participants, and is visible in [the Open Net Zero](https://opennetzero.org) search system. There 
+The fields marked as mandatory are the minimum needed to ensure that a data source can be used by the Trust Framework participants, and is visible in [the Open Net Zero](https://opennetzero.org) search system. There 
 are, however, other properties of a dataset which may be useful to potential data consumers. Where such information can 
 be provided, it should be provided in as standard a form as possible - in practice this translates to making use of 
 existing ontologies such as DCAT and Dublin Core by preference, then shared, industry-specific, ontologies, and only 
@@ -234,11 +234,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY4MTUyMTUyLC00ODYxODA0NDAsLTE2Nz
-c5NDgzNiw0OTE4Njg5NjMsLTE4MzY0ODI1OTIsLTExODU4MjA4
-MjMsMzUyNDI5NSwtMTc3Mjk1NTY3OSwtMTUwMzY5NDAwLDU0MD
-U3NjUzLC0xMDMyMjMyNTIzLC04NDA2NTUxODksLTU3OTM2NTg2
-MCwtMTM2MzYzMTQwMSwtMTQ3MDQzMzM2MywxNzUxMjM0OTkwLC
-02MTE3OTM1MTAsMTUxNzk1OTM4OCwxMTg5MzQyMzY2LDM1MTI3
-Njc4MF19
+eyJoaXN0b3J5IjpbMTM3OTgwODM4NywzNjgxNTIxNTIsLTQ4Nj
+E4MDQ0MCwtMTY3Nzk0ODM2LDQ5MTg2ODk2MywtMTgzNjQ4MjU5
+MiwtMTE4NTgyMDgyMywzNTI0Mjk1LC0xNzcyOTU1Njc5LC0xNT
+AzNjk0MDAsNTQwNTc2NTMsLTEwMzIyMzI1MjMsLTg0MDY1NTE4
+OSwtNTc5MzY1ODYwLC0xMzYzNjMxNDAxLC0xNDcwNDMzMzYzLD
+E3NTEyMzQ5OTAsLTYxMTc5MzUxMCwxNTE3OTU5Mzg4LDExODkz
+NDIzNjZdfQ==
 -->
