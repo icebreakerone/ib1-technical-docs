@@ -69,12 +69,12 @@ The following fields must be included in every DCAT object. Metadata will be vis
 : The URL of the Data Provider's record in the Scheme Directory.
 
 [dcterms:license](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#license)
-: The URL of a Licence, which must be registered with the Registry. All use of this data source is subject to this Licence.
+: The URL of a Licence. All use of this data source is subject to this Licence. Where a data source is Scheme-conforming, the URL will be registered in the Registry.
 
 `ib1:sensitivityClass`
 : The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this data set. In the current IB1 Trust Framework this should always be one of [IB1-O](glossary.md#term-Data-sensitivity-class-open),  [IB1-SA](glossary.md#term-Data-sensitivity-class-shared-A) or [IB1-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](glossary.md#term-Application-programming-interface) security imposed, with [IB1-O](glossary.md#term-Data-sensitivity-class-open) data sets being open data with no additional security, and the two shared data classes mandating [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.
 
-Additional fields will be made mandatory for Scheme-confirming data sources by the Scheme Catalog Requirements Document.
+Additional fields may be made mandatory for Scheme-confirming data sources by the Scheme Catalog Requirements Document.
 
 ## Conformance and access control metadata fields
 
@@ -217,11 +217,11 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTkxNjcwMTgsLTE4MzY0ODI1OTIsLT
-ExODU4MjA4MjMsMzUyNDI5NSwtMTc3Mjk1NTY3OSwtMTUwMzY5
-NDAwLDU0MDU3NjUzLC0xMDMyMjMyNTIzLC04NDA2NTUxODksLT
-U3OTM2NTg2MCwtMTM2MzYzMTQwMSwtMTQ3MDQzMzM2MywxNzUx
-MjM0OTkwLC02MTE3OTM1MTAsMTUxNzk1OTM4OCwxMTg5MzQyMz
-Y2LDM1MTI3Njc4MCw1OTQ5MjE2NjUsMTE0OTc3MTc0MCwtMjU0
-Mjk4NzQ4XX0=
+eyJoaXN0b3J5IjpbNDkxODY4OTYzLC0xODM2NDgyNTkyLC0xMT
+g1ODIwODIzLDM1MjQyOTUsLTE3NzI5NTU2NzksLTE1MDM2OTQw
+MCw1NDA1NzY1MywtMTAzMjIzMjUyMywtODQwNjU1MTg5LC01Nz
+kzNjU4NjAsLTEzNjM2MzE0MDEsLTE0NzA0MzMzNjMsMTc1MTIz
+NDk5MCwtNjExNzkzNTEwLDE1MTc5NTkzODgsMTE4OTM0MjM2Ni
+wzNTEyNzY3ODAsNTk0OTIxNjY1LDExNDk3NzE3NDAsLTI1NDI5
+ODc0OF19
 -->
