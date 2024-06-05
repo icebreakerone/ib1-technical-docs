@@ -8,7 +8,7 @@ It is an RDF document published by the Registry.
 ## Example
 
 ```
-@prefix ib1: <http://registry.ib1.org/ns/1.0/>
+@prefix ib1: <http://registry.ib1.org/ns/1.0/> .
 
 <https://registry.ib1.org/class/supply-voltage>
 	a ib1:SchemeCatalogRequirements ;
@@ -55,6 +55,6 @@ The requirements for terms in the `ib1:requiredMetadata` are modified by terms i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MTg4MjU2MiwxMzg5NzAyMDM4LDExMT
-MxMjg5NjksMTI2ODgzNjcwOF19
+eyJoaXN0b3J5IjpbLTE3MTI0NzI4NDgsMTM4OTcwMjAzOCwxMT
+EzMTI4OTY5LDEyNjg4MzY3MDhdfQ==
 -->
