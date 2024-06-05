@@ -54,7 +54,7 @@ The metadata is a standard [DCAT](https://www.w3.org/TR/vocab-dcat-3/) RDF file 
 
 Datasets are represented as Dataset DCAT objects with one or more Distributions. If the data measures the same thing over periods of time, then these must be linked together with a Data Series object. The format of the data is described by JSON Schema, XSD 1.1 or CSVW schemas.
 
-Data Services are represented as Data Service DCAT objects, with OpenAPI specifications of the API and the format of the data in the responses.
+Data Services are represented as Data Service DCAT objects, with [OpenAPI](https://swagger.io/specification/) specifications of the API and the format of the data in the responses.
 
 The URL of the DCAT object inside the RDF representation is the stable identifer of the Dataset or Data Service. This must remain constant each time the metadata file is fetched and over updates to the metadata.
 
@@ -217,11 +217,11 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NTE4MzMxMSwtMTgzNjQ4MjU5MiwtMT
-E4NTgyMDgyMywzNTI0Mjk1LC0xNzcyOTU1Njc5LC0xNTAzNjk0
-MDAsNTQwNTc2NTMsLTEwMzIyMzI1MjMsLTg0MDY1NTE4OSwtNT
-c5MzY1ODYwLC0xMzYzNjMxNDAxLC0xNDcwNDMzMzYzLDE3NTEy
-MzQ5OTAsLTYxMTc5MzUxMCwxNTE3OTU5Mzg4LDExODkzNDIzNj
-YsMzUxMjc2NzgwLDU5NDkyMTY2NSwxMTQ5NzcxNzQwLC0yNTQy
-OTg3NDhdfQ==
+eyJoaXN0b3J5IjpbLTEyOTkxNjcwMTgsLTE4MzY0ODI1OTIsLT
+ExODU4MjA4MjMsMzUyNDI5NSwtMTc3Mjk1NTY3OSwtMTUwMzY5
+NDAwLDU0MDU3NjUzLC0xMDMyMjMyNTIzLC04NDA2NTUxODksLT
+U3OTM2NTg2MCwtMTM2MzYzMTQwMSwtMTQ3MDQzMzM2MywxNzUx
+MjM0OTkwLC02MTE3OTM1MTAsMTUxNzk1OTM4OCwxMTg5MzQyMz
+Y2LDM1MTI3Njc4MCw1OTQ5MjE2NjUsMTE0OTc3MTc0MCwtMjU0
+Mjk4NzQ4XX0=
 -->
