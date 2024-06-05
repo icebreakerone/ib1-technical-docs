@@ -80,7 +80,10 @@ The following fields must be included in every DCAT object. Metadata will be vis
 `ib1:sensitivityClass`
 : The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this dataset. In the current IB1 Trust Framework this should always be one of [IB1-O](glossary.md#term-Data-sensitivity-class-open),  [IB1-SA](glossary.md#term-Data-sensitivity-class-shared-A) or [IB1-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](glossary.md#term-Application-programming-interface) security imposed, with [IB1-O](glossary.md#term-Data-sensitivity-class-open) datasets being open data with no additional security, and the two shared data classes mandating [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.
 
-Additional fields may be made mandatory for Scheme-confirming data sources by the Scheme Catalog Requirements Document.
+More information about publishing assured data within a Trust Framework is available on the [How to become an assured data publisher](https://icebreakerone.org/sops/assured-data-publishing/) section of the Icebreaker One website.
+
+Additional fields may be made mandatory for Scheme-conforming data sources by the Scheme Catalog Requirements Document.
+
 
 ## Conformance and access control metadata fields
 
@@ -162,7 +165,7 @@ using internal or custom representation when absolutely necessary.
 Of particular note, and something we would like to ultimately expose in the Open Net Zero search interface, is information about the geospatial and temporal ranges of entries within a dataset. This is a complex subject, but one that has already been handled by DCAT. If you need to express this kind of information, please do so according to the standards laid out 
 [here](https://www.w3.org/TR/vocab-dcat-2/#time-and-space).
 
-We encourage use of the `dcat:keyword` list for datasets. These translate to “tags” in our web interface and are useful to group datasets around specific topics.
+We encourage use of the `dcat:keyword` list for datasets. These translate to “tags” in Open Net Zero's web interface and are useful to group datasets around specific topics.
 
 
 ## Full Example
