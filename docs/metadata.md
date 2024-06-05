@@ -80,9 +80,10 @@ The following fields must be included in every DCAT object. Metadata will be vis
 `ib1:sensitivityClass`
 : The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this dataset. In the current IB1 Trust Framework this should always be one of [IB1-O](glossary.md#term-Data-sensitivity-class-open),  [IB1-SA](glossary.md#term-Data-sensitivity-class-shared-A) or [IB1-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](glossary.md#term-Application-programming-interface) security imposed, with [IB1-O](glossary.md#term-Data-sensitivity-class-open) datasets being open data with no additional security, and the two shared data classes mandating [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.
 
+More information about publishing assured data within a Trust Framework is available on the [How to become an assured data publisher](https://icebreakerone.org/sops/assured-data-publishing/) section of the Icebreaker One website.
+
 Additional fields may be made mandatory for Scheme-conforming data sources by the Scheme Catalog Requirements Document.
 
-More information about publishing assured data within a Trust Framework is available on the [How to become an assured data publisher](https://icebreakerone.org/sops/assured-data-publishing/) section of the Icebreaker One website.
 
 ## Conformance and access control metadata fields
 
@@ -236,11 +237,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MjI0Mjk5MywxMzc5ODA4Mzg3LDM2OD
-E1MjE1MiwtNDg2MTgwNDQwLC0xNjc3OTQ4MzYsNDkxODY4OTYz
-LC0xODM2NDgyNTkyLC0xMTg1ODIwODIzLDM1MjQyOTUsLTE3Nz
-I5NTU2NzksLTE1MDM2OTQwMCw1NDA1NzY1MywtMTAzMjIzMjUy
-MywtODQwNjU1MTg5LC01NzkzNjU4NjAsLTEzNjM2MzE0MDEsLT
-E0NzA0MzMzNjMsMTc1MTIzNDk5MCwtNjExNzkzNTEwLDE1MTc5
-NTkzODhdfQ==
+eyJoaXN0b3J5IjpbLTE1MTA2NDc0NTcsMTM3OTgwODM4NywzNj
+gxNTIxNTIsLTQ4NjE4MDQ0MCwtMTY3Nzk0ODM2LDQ5MTg2ODk2
+MywtMTgzNjQ4MjU5MiwtMTE4NTgyMDgyMywzNTI0Mjk1LC0xNz
+cyOTU1Njc5LC0xNTAzNjk0MDAsNTQwNTc2NTMsLTEwMzIyMzI1
+MjMsLTg0MDY1NTE4OSwtNTc5MzY1ODYwLC0xMzYzNjMxNDAxLC
+0xNDcwNDMzMzYzLDE3NTEyMzQ5OTAsLTYxMTc5MzUxMCwxNTE3
+OTU5Mzg4XX0=
 -->
