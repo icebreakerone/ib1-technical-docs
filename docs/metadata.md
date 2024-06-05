@@ -137,7 +137,7 @@ To specify how the data may be downloaded, one or more associated `dcat:Distribu
 [dcat:media_type](https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_media_type)
 : The MIME type of the download file.
 
-The following fields are optional, but encouraged. They are necessary  mandaory
+The following fields are optional, but encouraged. They are mandatory for higher assurance and Scheme-conforming data sources.
 
 `ib1:dataSchema`
 : The URL of a schema file specifying the format of the downloadable file. The type of schema depends on the `dcat:mediaType`:
@@ -224,11 +224,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY5MjQ2MDIxLC0xNjc3OTQ4MzYsNDkxOD
-Y4OTYzLC0xODM2NDgyNTkyLC0xMTg1ODIwODIzLDM1MjQyOTUs
-LTE3NzI5NTU2NzksLTE1MDM2OTQwMCw1NDA1NzY1MywtMTAzMj
-IzMjUyMywtODQwNjU1MTg5LC01NzkzNjU4NjAsLTEzNjM2MzE0
-MDEsLTE0NzA0MzMzNjMsMTc1MTIzNDk5MCwtNjExNzkzNTEwLD
-E1MTc5NTkzODgsMTE4OTM0MjM2NiwzNTEyNzY3ODAsNTk0OTIx
-NjY1XX0=
+eyJoaXN0b3J5IjpbLTQ4NjE4MDQ0MCwtMTY3Nzk0ODM2LDQ5MT
+g2ODk2MywtMTgzNjQ4MjU5MiwtMTE4NTgyMDgyMywzNTI0Mjk1
+LC0xNzcyOTU1Njc5LC0xNTAzNjk0MDAsNTQwNTc2NTMsLTEwMz
+IyMzI1MjMsLTg0MDY1NTE4OSwtNTc5MzY1ODYwLC0xMzYzNjMx
+NDAxLC0xNDcwNDMzMzYzLDE3NTEyMzQ5OTAsLTYxMTc5MzUxMC
+wxNTE3OTU5Mzg4LDExODkzNDIzNjYsMzUxMjc2NzgwLDU5NDky
+MTY2NV19
 -->
