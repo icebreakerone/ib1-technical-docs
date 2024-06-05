@@ -38,13 +38,12 @@ They are described by slightly different information in metadata files.
 
 ## Scheme-conforming
 
-A Scheme-conforming Dataset or Data Service 
-meets a common standard across a Scheme to provide the same format and meaning of data across all Data Providers. This standard includes the format of the data or API, and the role who can access it under which licenses.
+A Scheme-conforming Dataset or Data Service meets the data format and meaning requirements of the Scheme, along with any required access and licence conditions.
 
 These requirements are published by the Scheme Registry as machine readable [Scheme Catalog Requirements Documents](scheme_catalog_requirements.md), and metadata files link to them to show their conformance.
 
 Most Datasets and Data Services are Scheme-conforming. A Data Provider may publish data which is not Scheme-conforming to:
-* use the Trust Framework access control to share ad-hoc data amongst Trust Framework participants, or
+* use Scheme licences and roles to share ad-hoc Shared Data with Scheme participants (where the Scheme doesn't expressly disallow this), or
 * use the Catalog to include Open Data in a public index.
 
 ## Metadata File Structure
@@ -218,11 +217,11 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgwOTE0Mzk4LC0xODM2NDgyNTkyLC0xMT
-g1ODIwODIzLDM1MjQyOTUsLTE3NzI5NTU2NzksLTE1MDM2OTQw
-MCw1NDA1NzY1MywtMTAzMjIzMjUyMywtODQwNjU1MTg5LC01Nz
-kzNjU4NjAsLTEzNjM2MzE0MDEsLTE0NzA0MzMzNjMsMTc1MTIz
-NDk5MCwtNjExNzkzNTEwLDE1MTc5NTkzODgsMTE4OTM0MjM2Ni
-wzNTEyNzY3ODAsNTk0OTIxNjY1LDExNDk3NzE3NDAsLTI1NDI5
-ODc0OF19
+eyJoaXN0b3J5IjpbLTU5NTE4MzMxMSwtMTgzNjQ4MjU5MiwtMT
+E4NTgyMDgyMywzNTI0Mjk1LC0xNzcyOTU1Njc5LC0xNTAzNjk0
+MDAsNTQwNTc2NTMsLTEwMzIyMzI1MjMsLTg0MDY1NTE4OSwtNT
+c5MzY1ODYwLC0xMzYzNjMxNDAxLC0xNDcwNDMzMzYzLDE3NTEy
+MzQ5OTAsLTYxMTc5MzUxMCwxNTE3OTU5Mzg4LDExODkzNDIzNj
+YsMzUxMjc2NzgwLDU5NDkyMTY2NSwxMTQ5NzcxNzQwLC0yNTQy
+OTg3NDhdfQ==
 -->
