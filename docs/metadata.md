@@ -109,7 +109,7 @@ As Datasets will be discovered by browsing an index, they need additional descri
 : Longer form description of this dataset. This is used in combination with the title and tags when people search for datasets, so aim to include probable search words in the description.
 
 [dcat:distribution](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_distribution)
-: URL of a `dcat:Distribution` for a downloadable file, see below for mandatory fields. Multiple Distribtions may be defined for the same data in different formats, but Scheme-conforming datasets will require a specific format.
+: URL of a `dcat:Distribution` for a downloadable file, see below for mandatory fields. Multiple Distributions may be defined for the same data in different formats, but Scheme-conforming datasets will be restric one or more specific formats.
 
 The folowing fields are optional:
 
@@ -219,11 +219,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0NjY4OTU0MSwtMTY3Nzk0ODM2LDQ5MT
-g2ODk2MywtMTgzNjQ4MjU5MiwtMTE4NTgyMDgyMywzNTI0Mjk1
-LC0xNzcyOTU1Njc5LC0xNTAzNjk0MDAsNTQwNTc2NTMsLTEwMz
-IyMzI1MjMsLTg0MDY1NTE4OSwtNTc5MzY1ODYwLC0xMzYzNjMx
-NDAxLC0xNDcwNDMzMzYzLDE3NTEyMzQ5OTAsLTYxMTc5MzUxMC
-wxNTE3OTU5Mzg4LDExODkzNDIzNjYsMzUxMjc2NzgwLDU5NDky
-MTY2NV19
+eyJoaXN0b3J5IjpbLTEwOTY5MjE5MTYsLTE2Nzc5NDgzNiw0OT
+E4Njg5NjMsLTE4MzY0ODI1OTIsLTExODU4MjA4MjMsMzUyNDI5
+NSwtMTc3Mjk1NTY3OSwtMTUwMzY5NDAwLDU0MDU3NjUzLC0xMD
+MyMjMyNTIzLC04NDA2NTUxODksLTU3OTM2NTg2MCwtMTM2MzYz
+MTQwMSwtMTQ3MDQzMzM2MywxNzUxMjM0OTkwLC02MTE3OTM1MT
+AsMTUxNzk1OTM4OCwxMTg5MzQyMzY2LDM1MTI3Njc4MCw1OTQ5
+MjE2NjVdfQ==
 -->
