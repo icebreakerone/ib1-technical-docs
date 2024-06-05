@@ -11,7 +11,7 @@ searching for particular kinds of data.
 2. They inform consumption of that data, providing information on:
 
 
-    1. The [API](glossary.md#term-Application-programming-interface) required to access the data set
+    1. The [API](glossary.md#term-Application-programming-interface) required to access the data source
 
 
     2. Any access constraints which may need to be satisfied
@@ -63,7 +63,7 @@ The URL of the DCAT object inside the RDF representation is the stable identifer
 The following fields must be included in every DCAT object. Metadata will be visible to all pariticipants in the Trust Framework, and may be visible to anyone on the open web without authentication in an open index.
 
 [dcterms:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/title/)
-: Short title for this data set.
+: Short title for this dataset.
 
 [dcterms:publisher](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/publisher/)
 : The URL of the Data Provider's record in the Scheme Directory.
@@ -72,7 +72,7 @@ The following fields must be included in every DCAT object. Metadata will be vis
 : The URL of a Licence. All use of this data source is subject to this Licence. Where a data source is Scheme-conforming, the URL will be registered in the Registry.
 
 `ib1:sensitivityClass`
-: The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this data set. In the current IB1 Trust Framework this should always be one of [IB1-O](glossary.md#term-Data-sensitivity-class-open),  [IB1-SA](glossary.md#term-Data-sensitivity-class-shared-A) or [IB1-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](glossary.md#term-Application-programming-interface) security imposed, with [IB1-O](glossary.md#term-Data-sensitivity-class-open) data sets being open data with no additional security, and the two shared data classes mandating [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.
+: The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this dataset. In the current IB1 Trust Framework this should always be one of [IB1-O](glossary.md#term-Data-sensitivity-class-open),  [IB1-SA](glossary.md#term-Data-sensitivity-class-shared-A) or [IB1-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](glossary.md#term-Application-programming-interface) security imposed, with [IB1-O](glossary.md#term-Data-sensitivity-class-open) datasets being open data with no additional security, and the two shared data classes mandating [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.
 
 Additional fields may be made mandatory for Scheme-confirming data sources by the Scheme Catalog Requirements Document.
 
@@ -95,7 +95,7 @@ Data Services are represented by `dcat:DataService` objects with the common mand
 : The URL of this specific instance of the API. It is interpolated into the `url` specified in the OpenAPI file using the `endpointURL` variable.
 
 `ib1:heartbeatDescription`
-: The URL of an OpenAPI file (with Server specified as `dcat:endpointDescription`), which contains a single Path with a 200 response defined. This term will typically be the URL of one of a small number of standard OpenAPI files published in the Registry.
+: An optional URL of an OpenAPI file (with Server specified as `dcat:endpointDescription`), which contains a single Path with a 200 response defined. This term will typically be the URL of one of a small number of standard OpenAPI files published in the Registry.
 
 Any additional metadata defined by published Standards may be added.
 
@@ -106,10 +106,10 @@ Datasets are represented by `dcat:Dataset` objects with the common mandatory fie
 As Datasets will be discovered by browsing an index, they need additional descriptive metadata for discovery. The following fields are mandatory:
 
 [dcterms:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/description/)
-: Longer form description of this data set. This is used in combination with the title and tags when people search for data sets, so aim to include probable search words in the description.
+: Longer form description of this dataset. This is used in combination with the title and tags when people search for datasets, so aim to include probable search words in the description.
 
 [dcat:version](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version)
-: Version number of the data set, this should preferably follow [semantic versioning](https://semver.org/) if possible. Versioning of the data set should be used to indicate changes in delivery mechanism, or in representation, rather than for changes in the underlying data. For example, this should not be used to differentiate between data sets from different years, rather it should be used to indicate whether a potential data consumer might need to alter how it processes any returned data. 
+: Version number of the dataset, this should preferably follow [semantic versioning](https://semver.org/) if possible. Versioning of the dataset should be used to indicate changes in delivery mechanism, or in representation, rather than for changes in the underlying data. For example, this should not be used to differentiate between datasets from different years, rather it should be used to indicate whether a potential data consumer might need to alter how it processes any returned data. 
 
 [dcat:versionNotes](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version_notes)
 : Notes used to explain any changes to this version.
@@ -141,15 +141,15 @@ To specify how the data may be downloaded, one or more associated `dcat:Distribu
 ### Additional metadata for Datasets and Data Services
 
 The information above is the minimum needed to ensure that a data source can be used by the Trust Framework participants, and is visible in [the Open Net Zero](https://opennetzero.org) search system. There 
-are, however, other properties of a data set which may be useful to potential data consumers. Where such information can 
+are, however, other properties of a dataset which may be useful to potential data consumers. Where such information can 
 be provided, it should be provided in as standard a form as possible - in practice this translates to making use of 
 existing ontologies such as DCAT and Dublin Core by preference, then shared, industry-specific, ontologies, and only 
 using internal or custom representation when absolutely necessary.
 
-Of particular note, and something we would like to ultimately expose in the Open Net Zero search interface, is information about the geospatial and temporal ranges of entries within a data set. This is a complex subject, but one that has already been handled by DCAT. If you need to express this kind of information, please do so according to the standards laid out 
+Of particular note, and something we would like to ultimately expose in the Open Net Zero search interface, is information about the geospatial and temporal ranges of entries within a dataset. This is a complex subject, but one that has already been handled by DCAT. If you need to express this kind of information, please do so according to the standards laid out 
 [here](https://www.w3.org/TR/vocab-dcat-2/#time-and-space).
 
-We encourage use of the `dcat:keyword` list for data sets. These translate to “tags” in our web interface and are useful to group data sets around specific topics.
+We encourage use of the `dcat:keyword` list for datasets. These translate to “tags” in our web interface and are useful to group datasets around specific topics.
 
 
 ## Full Example
@@ -217,11 +217,11 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to �
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDE2Nzg2OTMsLTE2Nzc5NDgzNiw0OT
-E4Njg5NjMsLTE4MzY0ODI1OTIsLTExODU4MjA4MjMsMzUyNDI5
-NSwtMTc3Mjk1NTY3OSwtMTUwMzY5NDAwLDU0MDU3NjUzLC0xMD
-MyMjMyNTIzLC04NDA2NTUxODksLTU3OTM2NTg2MCwtMTM2MzYz
-MTQwMSwtMTQ3MDQzMzM2MywxNzUxMjM0OTkwLC02MTE3OTM1MT
-AsMTUxNzk1OTM4OCwxMTg5MzQyMzY2LDM1MTI3Njc4MCw1OTQ5
-MjE2NjVdfQ==
+eyJoaXN0b3J5IjpbMTQyMjUwMDIzOCwtMTY3Nzk0ODM2LDQ5MT
+g2ODk2MywtMTgzNjQ4MjU5MiwtMTE4NTgyMDgyMywzNTI0Mjk1
+LC0xNzcyOTU1Njc5LC0xNTAzNjk0MDAsNTQwNTc2NTMsLTEwMz
+IyMzI1MjMsLTg0MDY1NTE4OSwtNTc5MzY1ODYwLC0xMzYzNjMx
+NDAxLC0xNDcwNDMzMzYzLDE3NTEyMzQ5OTAsLTYxMTc5MzUxMC
+wxNTE3OTU5Mzg4LDExODkzNDIzNjYsMzUxMjc2NzgwLDU5NDky
+MTY2NV19
 -->
