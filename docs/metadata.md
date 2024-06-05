@@ -108,14 +108,16 @@ As Datasets will be discovered by browsing an index, they need additional descri
 [dcterms:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/description/)
 : Longer form description of this dataset. This is used in combination with the title and tags when people search for datasets, so aim to include probable search words in the description.
 
+[dcat:distribution](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_distribution)
+: URL of a `dcat:Distribution` for a downloadable file, see below for mandatory fields. Multiple Distribtions may be defined for the same data in different formats, but Scheme-conforming datasets will require a specific format.
+
+The folowing fields are optional:
+
 [dcat:version](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version)
 : Version number of the dataset, this should preferably follow [semantic versioning](https://semver.org/) if possible. Versioning of the dataset should be used to indicate changes in delivery mechanism, or in representation, rather than for changes in the underlying data. For example, this should not be used to differentiate between datasets from different years, rather it should be used to indicate whether a potential data consumer might need to alter how it processes any returned data. 
 
 [dcat:versionNotes](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version_notes)
 : Notes used to explain any changes to this version.
-
-[dcat:distribution](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_distribution)
-: URL of a `dcat:Distribution` for a downloadable file, see below for mandatory fields. Multiple Distribtions may be defined for the same data in different formats, but Scheme-conforming datasets will require a specific format.
 
 [dcat:inSeries](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_in_series)
 : Where the URL is part of a series of periodic datasets, the URL of a `dcat:DataSeries` which associates this Dataset with the overall series. The DataSeries is created by the publisher and contains their data only.
@@ -217,7 +219,7 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMjUwMDIzOCwtMTY3Nzk0ODM2LDQ5MT
+eyJoaXN0b3J5IjpbLTI0NjY4OTU0MSwtMTY3Nzk0ODM2LDQ5MT
 g2ODk2MywtMTgzNjQ4MjU5MiwtMTE4NTgyMDgyMywzNTI0Mjk1
 LC0xNzcyOTU1Njc5LC0xNTAzNjk0MDAsNTQwNTc2NTMsLTEwMz
 IyMzI1MjMsLTg0MDY1NTE4OSwtNTc5MzY1ODYwLC0xMzYzNjMx
