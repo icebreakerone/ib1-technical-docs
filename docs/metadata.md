@@ -210,6 +210,8 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
     dcat:keyword "solar"@en,
 	    "electricity"@en,
 	    "retrofit"@en ;
+    ib1:trustFramework <http://estf.registry.ib1.org> ;
+    ib1:datasetAssurance "IcebreakerOne.DatasetLevel1",
     ib1:sensitivityClass "IB1-SA" ;
     ib1:permitGroup <https://directory.ib1.org/group/network-operator> ;
     ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
@@ -230,11 +232,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI1NzEzNzQyLC00ODYxODA0NDAsLTE2Nz
-c5NDgzNiw0OTE4Njg5NjMsLTE4MzY0ODI1OTIsLTExODU4MjA4
-MjMsMzUyNDI5NSwtMTc3Mjk1NTY3OSwtMTUwMzY5NDAwLDU0MD
-U3NjUzLC0xMDMyMjMyNTIzLC04NDA2NTUxODksLTU3OTM2NTg2
-MCwtMTM2MzYzMTQwMSwtMTQ3MDQzMzM2MywxNzUxMjM0OTkwLC
-02MTE3OTM1MTAsMTUxNzk1OTM4OCwxMTg5MzQyMzY2LDM1MTI3
-Njc4MF19
+eyJoaXN0b3J5IjpbLTEwNzc4NDUwNzEsLTQ4NjE4MDQ0MCwtMT
+Y3Nzk0ODM2LDQ5MTg2ODk2MywtMTgzNjQ4MjU5MiwtMTE4NTgy
+MDgyMywzNTI0Mjk1LC0xNzcyOTU1Njc5LC0xNTAzNjk0MDAsNT
+QwNTc2NTMsLTEwMzIyMzI1MjMsLTg0MDY1NTE4OSwtNTc5MzY1
+ODYwLC0xMzYzNjMxNDAxLC0xNDcwNDMzMzYzLDE3NTEyMzQ5OT
+AsLTYxMTc5MzUxMCwxNTE3OTU5Mzg4LDExODkzNDIzNjYsMzUx
+Mjc2NzgwXX0=
 -->
