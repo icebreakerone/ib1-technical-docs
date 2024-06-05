@@ -6,7 +6,7 @@ A [catalog entry](metadata.md) specifies one or more groups and a licence. If a 
 
 The Registry maintains a list of the permissions and obligations for access to a data source under a given licence.
 
-Scheme-conforming data sources use a [Scheme Catalog Requirements Documents](scheme_catalog_requirements.md) which specifies the Access Rules for common formats of data sources.
+Scheme-conforming data sources use [Scheme Catalog Requirements Documents](scheme_catalog_requirements.md) which specify the Access Rules for common formats of data sources.
 
 ## Example
 
@@ -122,9 +122,9 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjMxMzY0NDIsNjExODUxNzY4LC04Mj
-k5NzM0MjcsMTkxMzMwNjE5MiwtMTE4ODE5OTQ5NSwtMjEzOTk0
-Nzg1MywyMDgwMjE4MzQsNzQwMTE3NDQ5LC0yMTMzOTc5NDYzLC
-03NDExMzYwOTAsOTM1MDgzNzQ3LC05NjkzMDEyNTAsMTE3NjE5
-MDkwMSwtMTk2OTEzODgyMl19
+eyJoaXN0b3J5IjpbMTA5NjY0MzI2OSw2MTE4NTE3NjgsLTgyOT
+k3MzQyNywxOTEzMzA2MTkyLC0xMTg4MTk5NDk1LC0yMTM5OTQ3
+ODUzLDIwODAyMTgzNCw3NDAxMTc0NDksLTIxMzM5Nzk0NjMsLT
+c0MTEzNjA5MCw5MzUwODM3NDcsLTk2OTMwMTI1MCwxMTc2MTkw
+OTAxLC0xOTY5MTM4ODIyXX0=
 -->
