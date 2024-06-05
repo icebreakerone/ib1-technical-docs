@@ -27,7 +27,7 @@ searching for particular kinds of data.
 A Dataset:
 * is provided as one or more downloadable files,
 * may be published as part of series of Datasets covering the same source of data over different time periods, and
-* maintains historical access to previous periods.
+* should maintain historical access to previous periods.
 
 A Data Service:
 * is an API to query some data which uses parameters to specify a subset of data, including time period,
@@ -38,7 +38,8 @@ They are described by slightly different information in metadata files.
 
 ## Scheme-conforming
 
-A Scheme-conforming Dataset or Data Service meets a common standard across a Scheme to provide the same format and meaning of data across all Data Providers. This standard includes the format of the data or API, and the role who can access it under which licenses.
+A Scheme-conforming Dataset or Data Service 
+meets a common standard across a Scheme to provide the same format and meaning of data across all Data Providers. This standard includes the format of the data or API, and the role who can access it under which licenses.
 
 These requirements are published by the Scheme Registry as machine readable [Scheme Catalog Requirements Documents](scheme_catalog_requirements.md), and metadata files link to them to show their conformance.
 
@@ -217,11 +218,11 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzY0ODI1OTIsLTExODU4MjA4MjMsMz
-UyNDI5NSwtMTc3Mjk1NTY3OSwtMTUwMzY5NDAwLDU0MDU3NjUz
-LC0xMDMyMjMyNTIzLC04NDA2NTUxODksLTU3OTM2NTg2MCwtMT
-M2MzYzMTQwMSwtMTQ3MDQzMzM2MywxNzUxMjM0OTkwLC02MTE3
-OTM1MTAsMTUxNzk1OTM4OCwxMTg5MzQyMzY2LDM1MTI3Njc4MC
-w1OTQ5MjE2NjUsMTE0OTc3MTc0MCwtMjU0Mjk4NzQ4LDIxMjk2
-NzMzNzNdfQ==
+eyJoaXN0b3J5IjpbOTgwOTE0Mzk4LC0xODM2NDgyNTkyLC0xMT
+g1ODIwODIzLDM1MjQyOTUsLTE3NzI5NTU2NzksLTE1MDM2OTQw
+MCw1NDA1NzY1MywtMTAzMjIzMjUyMywtODQwNjU1MTg5LC01Nz
+kzNjU4NjAsLTEzNjM2MzE0MDEsLTE0NzA0MzMzNjMsMTc1MTIz
+NDk5MCwtNjExNzkzNTEwLDE1MTc5NTkzODgsMTE4OTM0MjM2Ni
+wzNTEyNzY3ODAsNTk0OTIxNjY1LDExNDk3NzE3NDAsLTI1NDI5
+ODc0OF19
 -->
