@@ -11,7 +11,7 @@ searching for particular kinds of data.
 2. They inform consumption of that data, providing information on:
 
 
-    1. The [API](glossary.md#term-Application-programming-interface) required to access the data set
+    1. The [API](glossary.md#term-Application-programming-interface) required to access the data source
 
 
     2. Any access constraints which may need to be satisfied
@@ -27,7 +27,7 @@ searching for particular kinds of data.
 A Dataset:
 * is provided as one or more downloadable files,
 * may be published as part of series of Datasets covering the same source of data over different time periods, and
-* maintains historical access to previous periods.
+* should maintain historical access to previous periods.
 
 A Data Service:
 * is an API to query some data which uses parameters to specify a subset of data, including time period,
@@ -38,12 +38,12 @@ They are described by slightly different information in metadata files.
 
 ## Scheme-conforming
 
-A Scheme-conforming Dataset or Data Service meets a common standard across a Scheme to provide the same format and meaning of data across all Data Providers. This standard includes the format of the data or API, and the role who can access it under which licenses.
+A Scheme-conforming Dataset or Data Service meets the data format and meaning requirements of the Scheme, along with any required access and licence conditions.
 
 These requirements are published by the Scheme Registry as machine readable [Scheme Catalog Requirements Documents](scheme_catalog_requirements.md), and metadata files link to them to show their conformance.
 
 Most Datasets and Data Services are Scheme-conforming. A Data Provider may publish data which is not Scheme-conforming to:
-* use the Trust Framework access control to share ad-hoc data amongst Trust Framework participants, or
+* use Scheme licences and roles to share ad-hoc Shared Data with Scheme participants (where the Scheme doesn't expressly disallow this), or
 * use the Catalog to include Open Data in a public index.
 
 ## Metadata File Structure
@@ -54,7 +54,7 @@ The metadata is a standard [DCAT](https://www.w3.org/TR/vocab-dcat-3/) RDF file 
 
 Datasets are represented as Dataset DCAT objects with one or more Distributions. If the data measures the same thing over periods of time, then these must be linked together with a Data Series object. The format of the data is described by JSON Schema, XSD 1.1 or CSVW schemas.
 
-Data Services are represented as Data Service DCAT objects, with OpenAPI specifications of the API and the format of the data in the responses.
+Data Services are represented as Data Service DCAT objects, with [OpenAPI](https://swagger.io/specification/) specifications of the API and the format of the data in the responses.
 
 The URL of the DCAT object inside the RDF representation is the stable identifer of the Dataset or Data Service. This must remain constant each time the metadata file is fetched and over updates to the metadata.
 
@@ -63,18 +63,24 @@ The URL of the DCAT object inside the RDF representation is the stable identifer
 The following fields must be included in every DCAT object. Metadata will be visible to all pariticipants in the Trust Framework, and may be visible to anyone on the open web without authentication in an open index.
 
 [dcterms:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/title/)
-: Short title for this data set.
+: Short title for this dataset.
 
 [dcterms:publisher](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/publisher/)
 : The URL of the Data Provider's record in the Scheme Directory.
 
 [dcterms:license](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#license)
-: The URL of a Licence, which must be registered with the Registry. All use of this data source is subject to this Licence.
+: The URL of a Licence. All use of this data source is subject to this Licence. Where a data source is Scheme-conforming, the URL will be registered in the Registry.
+
+`ib1:trustFramework`
+: The URL of the Trust Framework(s) the dataset is assured under.
+
+`ib1:datasetAssurance`
+: The assurance level for this dataset.
 
 `ib1:sensitivityClass`
-: The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this data set. In the current IB1 Trust Framework this should always be one of [IB1-O](glossary.md#term-Data-sensitivity-class-open),  [IB1-SA](glossary.md#term-Data-sensitivity-class-shared-A) or [IB1-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](glossary.md#term-Application-programming-interface) security imposed, with [IB1-O](glossary.md#term-Data-sensitivity-class-open) data sets being open data with no additional security, and the two shared data classes mandating [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.
+: The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this dataset. In the current IB1 Trust Framework this should always be one of [IB1-O](glossary.md#term-Data-sensitivity-class-open),  [IB1-SA](glossary.md#term-Data-sensitivity-class-shared-A) or [IB1-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](glossary.md#term-Application-programming-interface) security imposed, with [IB1-O](glossary.md#term-Data-sensitivity-class-open) datasets being open data with no additional security, and the two shared data classes mandating [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.
 
-Additional fields will be made mandatory for Scheme-confirming data sources by the Scheme Catalog Requirements Document.
+Additional fields may be made mandatory for Scheme-confirming data sources by the Scheme Catalog Requirements Document.
 
 ## Conformance and access control metadata fields
 
@@ -82,20 +88,20 @@ Additional fields will be made mandatory for Scheme-confirming data sources by t
 : The URL of a Scheme Catalog Requirements Document in the Scheme Registry. Most metadata files will include this field.
 
 `ib1:permitGroup`
-: The URL of a group in the Directory to specify which groups may access this data source subject to the Licence in the `dcterms:license` term. One or more groups may be specified. See [Access Control Specification](access_control_specification.md).
+: The URLs of one or more groups in the Directory which may access this data source subject to the Licence in the `dcterms:license` term, unless the data is open data with a `ib1:sensitivityClass` of `IB1-O`. See [Access Control Specification](access_control_specification.md).
 
 ## Data Service metadata fields
 
 Data Services are represented by `dcat:DataService` objects with the common mandatory fields and Data Service specific fields.
 
 `dcat:endpointDescription`
-: The URL of an OpenAPI file, which fully documents the request parameters and responses. Responses must use XML or JSON. To allow the OpenAPI file to be used by multiple Data Providers, the file may only contain a single Server object, where the `url` is `"{endpointURL}"`, and `variables` sets the default to `"https://endpointurl-not-specified.ib1.org"`.
+: The URL of an OpenAPI file, which fully documents the request parameters and responses. Responses must use XML or JSON. To allow the OpenAPI file to be used by multiple Data Providers, the file may only contain a single [Server object](https://swagger.io/specification/#server-object), where the `url` is `"{endpointURL}"`, and `variables` sets the default to `"https://endpointurl-not-specified.ib1.org"`.
 
 `dcat:endpointURL`
 : The URL of this specific instance of the API. It is interpolated into the `url` specified in the OpenAPI file using the `endpointURL` variable.
 
 `ib1:heartbeatDescription`
-: The URL of an OpenAPI file (with Server specified as `dcat:endpointDescription`), which contains a single Path with a 200 response defined. This term will typically be the URL of one of a small number of standard OpenAPI files published in the Registry.
+: An optional URL of an OpenAPI file (with Server specified as `dcat:endpointDescription`), which contains a single Path with a 200 response defined. This term will typically be the URL of one of a small number of standard OpenAPI files published in the Registry.
 
 Any additional metadata defined by published Standards may be added.
 
@@ -106,19 +112,24 @@ Datasets are represented by `dcat:Dataset` objects with the common mandatory fie
 As Datasets will be discovered by browsing an index, they need additional descriptive metadata for discovery. The following fields are mandatory:
 
 [dcterms:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/description/)
-: Longer form description of this data set. This is used in combination with the title and tags when people search for data sets, so aim to include probable search words in the description.
+: Longer form description of this dataset. This is used in combination with the title and tags when people search for datasets, so aim to include probable search words in the description.
+
+[dcat:distribution](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_distribution)
+: URL of a `dcat:Distribution` for a downloadable file, see below for mandatory fields. Multiple Distributions may be defined for the same data in different formats, taking into account any requirements and restrictions for Scheme-conforming datasets.
+
+The following fields are mandatory when the dataset is part of a series of periodic datasets:
+
+[dcat:inSeries](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_in_series)
+: The URL of a `dcat:DataSeries` which associates this Dataset with the overall series. The DataSeries is created by the publisher and contains their data only.
+
+The following fields are optional:
 
 [dcat:version](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version)
-: Version number of the data set, this should preferably follow [semantic versioning](https://semver.org/) if possible. Versioning of the data set should be used to indicate changes in delivery mechanism, or in representation, rather than for changes in the underlying data. For example, this should not be used to differentiate between data sets from different years, rather it should be used to indicate whether a potential data consumer might need to alter how it processes any returned data. 
+: Version number of the dataset, this should preferably follow [semantic versioning](https://semver.org/) if possible. Versioning of the dataset should be used to indicate changes in delivery mechanism, or in representation, rather than for changes in the underlying data. For example, this should not be used to differentiate between datasets from different years, rather it should be used to indicate whether a potential data consumer might need to alter how it processes any returned data. 
 
 [dcat:versionNotes](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version_notes)
 : Notes used to explain any changes to this version.
 
-[dcat:distribution](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_distribution)
-: URL of a `dcat:Distribution` for a downloadable file, see below for mandatory fields. Multiple Distribtions may be defined for the same data in different formats, but Scheme-conforming datasets will require a specific format.
-
-[dcat:inSeries](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_in_series)
-: Where the URL is part of a series of periodic datasets, the URL of a `dcat:DataSeries` which associates this Dataset with the overall series. The DataSeries is created by the publisher and contains their data only.
 
 Any additional metadata defined by published Standards may be added.
 
@@ -132,6 +143,8 @@ To specify how the data may be downloaded, one or more associated `dcat:Distribu
 [dcat:media_type](https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_media_type)
 : The MIME type of the download file.
 
+The following fields are optional, but encouraged. They are mandatory for higher assurance and Scheme-conforming data sources.
+
 `ib1:dataSchema`
 : The URL of a schema file specifying the format of the downloadable file. The type of schema depends on the `dcat:mediaType`:
 `application/json` are documented by JSON Schema files,
@@ -140,16 +153,16 @@ To specify how the data may be downloaded, one or more associated `dcat:Distribu
 
 ### Additional metadata for Datasets and Data Services
 
-The information above is the minimum needed to ensure that a data source can be used by the Trust Framework participants, and is visible in [the Open Net Zero](https://opennetzero.org) search system. There 
-are, however, other properties of a data set which may be useful to potential data consumers. Where such information can 
+The fields marked as mandatory are the minimum needed to ensure that a data source can be used by the Trust Framework participants, and is visible in [the Open Net Zero](https://opennetzero.org) search system. There 
+are, however, other properties of a dataset which may be useful to potential data consumers. Where such information can 
 be provided, it should be provided in as standard a form as possible - in practice this translates to making use of 
 existing ontologies such as DCAT and Dublin Core by preference, then shared, industry-specific, ontologies, and only 
 using internal or custom representation when absolutely necessary.
 
-Of particular note, and something we would like to ultimately expose in the Open Net Zero search interface, is information about the geospatial and temporal ranges of entries within a data set. This is a complex subject, but one that has already been handled by DCAT. If you need to express this kind of information, please do so according to the standards laid out 
+Of particular note, and something we would like to ultimately expose in the Open Net Zero search interface, is information about the geospatial and temporal ranges of entries within a dataset. This is a complex subject, but one that has already been handled by DCAT. If you need to express this kind of information, please do so according to the standards laid out 
 [here](https://www.w3.org/TR/vocab-dcat-2/#time-and-space).
 
-We encourage use of the `dcat:keyword` list for data sets. These translate to “tags” in our web interface and are useful to group data sets around specific topics.
+We encourage use of the `dcat:keyword` list for datasets. These translate to “tags” in our web interface and are useful to group datasets around specific topics.
 
 
 ## Full Example
@@ -171,6 +184,8 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to �
     dcat:endpointDescription <https://registry.ib1.org/api/electricty-voltage> ;
     ib1:heartbeatDescription <https://registry.ib1.org/api/heartbeat-simple> ;
     dcat:endpointURL <https://data-provider-example.com/supply-voltage/v0> ;
+    ib1:trustFramework <http://estf.registry.ib1.org> ;
+    ib1:datasetAssurance "IcebreakerOne.DatasetLevel1" ;
     ib1:sensitivityClass "IB1-SA" ;
     ib1:permitGroup <https://directory.ib1.org/group/network-operator> ;
     ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
@@ -197,6 +212,8 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to �
     dcat:keyword "solar"@en,
 	    "electricity"@en,
 	    "retrofit"@en ;
+    ib1:trustFramework <http://estf.registry.ib1.org> ;
+    ib1:datasetAssurance "IcebreakerOne.DatasetLevel1" ;
     ib1:sensitivityClass "IB1-SA" ;
     ib1:permitGroup <https://directory.ib1.org/group/network-operator> ;
     ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;

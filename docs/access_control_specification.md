@@ -6,7 +6,7 @@ A [catalog entry](metadata.md) specifies one or more groups and a licence. If a 
 
 The Registry maintains a list of the permissions and obligations for access to a data source under a given licence.
 
-Scheme-conforming data sources use a [Scheme Catalog Requirements Documents](scheme_catalog_requirements.md) which specifies the Access Rules for common formats of data sources.
+Scheme-conforming data sources use [Scheme Catalog Requirements Documents](scheme_catalog_requirements.md) which specify the Access Rules for common formats of data sources.
 
 ## Example
 
@@ -16,11 +16,11 @@ Scheme-conforming data sources use a [Scheme Catalog Requirements Documents](sch
 	# ...
     ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
     ib1:permitGroup <https://directory.ib1.org/group/archiver> ;
-    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:license <http://estf.registry.ib1.org/schemes/supply/licence/voltage-reporting-v1> ;
 .
 ```
 
-These rules specify that members of either the "Report Provider" and "Archivers" groups may access the data with the CC BY 4.0 licence.
+These rules specify that members of either the "Report Provider" and "Archivers" groups may access the data with the Scheme's Voltage Reporting licence.
 
 
 ## Machine readable intepretation of Licences
@@ -60,7 +60,7 @@ Any additional grants designed **MUST** be within the namespace of the data prov
 **WARNING**: This section is provisional, the exact final set of base permissions has yet to be determined. Those shown below are a plausible first cut but should not be considered definitive.
 
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-| Category                 | Grant name                           | Meaning                                                                                |
+| Category                 | Grant name                                | Meaning                                                                                |
 +==========================+===========================================+========================================================================================+
 | **Use**                  |                                           | **Use the artefact internally**                                                        |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
