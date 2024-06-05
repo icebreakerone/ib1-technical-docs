@@ -16,11 +16,11 @@ Scheme-conforming data sources use [Scheme Catalog Requirements Documents](schem
 	# ...
     ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
     ib1:permitGroup <https://directory.ib1.org/group/archiver> ;
-    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:license <http://estf.registry.ib1.org/schemes/supply/licence/voltage-reporting-v1> ;
 .
 ```
 
-These rules specify that members of either the "Report Provider" and "Archivers" groups may access the data with the CC BY 4.0 licence.
+These rules specify that members of either the "Report Provider" and "Archivers" groups may access the data with the Scheme's Voltage Reporting licence.
 
 
 ## Machine readable intepretation of Licences
@@ -122,7 +122,7 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NjY0MzI2OSw2MTE4NTE3NjgsLTgyOT
+eyJoaXN0b3J5IjpbMjAwNTgwNTQ2MCw2MTE4NTE3NjgsLTgyOT
 k3MzQyNywxOTEzMzA2MTkyLC0xMTg4MTk5NDk1LC0yMTM5OTQ3
 ODUzLDIwODAyMTgzNCw3NDAxMTc0NDksLTIxMzM5Nzk0NjMsLT
 c0MTEzNjA5MCw5MzUwODM3NDcsLTk2OTMwMTI1MCwxMTc2MTkw
