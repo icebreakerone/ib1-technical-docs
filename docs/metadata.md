@@ -89,7 +89,7 @@ Additional fields may be made mandatory for Scheme-confirming data sources by th
 Data Services are represented by `dcat:DataService` objects with the common mandatory fields and Data Service specific fields.
 
 `dcat:endpointDescription`
-: The URL of an OpenAPI file, which fully documents the request parameters and responses. Responses must use XML or JSON. To allow the OpenAPI file to be used by multiple Data Providers, the file may only contain a single Server object, where the `url` is `"{endpointURL}"`, and `variables` sets the default to `"https://endpointurl-not-specified.ib1.org"`.
+: The URL of an OpenAPI file, which fully documents the request parameters and responses. Responses must use XML or JSON. To allow the OpenAPI file to be used by multiple Data Providers, the file may only contain a single [Server object](https://swagger.io/specification/#server-object), where the `url` is `"{endpointURL}"`, and `variables` sets the default to `"https://endpointurl-not-specified.ib1.org"`.
 
 `dcat:endpointURL`
 : The URL of this specific instance of the API. It is interpolated into the `url` specified in the OpenAPI file using the `endpointURL` variable.
@@ -217,11 +217,11 @@ We encourage use of the `dcat:keyword` list for data sets. These translate to â€
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Nzc5NDgzNiw0OTE4Njg5NjMsLTE4Mz
-Y0ODI1OTIsLTExODU4MjA4MjMsMzUyNDI5NSwtMTc3Mjk1NTY3
-OSwtMTUwMzY5NDAwLDU0MDU3NjUzLC0xMDMyMjMyNTIzLC04ND
-A2NTUxODksLTU3OTM2NTg2MCwtMTM2MzYzMTQwMSwtMTQ3MDQz
-MzM2MywxNzUxMjM0OTkwLC02MTE3OTM1MTAsMTUxNzk1OTM4OC
-wxMTg5MzQyMzY2LDM1MTI3Njc4MCw1OTQ5MjE2NjUsMTE0OTc3
-MTc0MF19
+eyJoaXN0b3J5IjpbLTE1NDE2Nzg2OTMsLTE2Nzc5NDgzNiw0OT
+E4Njg5NjMsLTE4MzY0ODI1OTIsLTExODU4MjA4MjMsMzUyNDI5
+NSwtMTc3Mjk1NTY3OSwtMTUwMzY5NDAwLDU0MDU3NjUzLC0xMD
+MyMjMyNTIzLC04NDA2NTUxODksLTU3OTM2NTg2MCwtMTM2MzYz
+MTQwMSwtMTQ3MDQzMzM2MywxNzUxMjM0OTkwLC02MTE3OTM1MT
+AsMTUxNzk1OTM4OCwxMTg5MzQyMzY2LDM1MTI3Njc4MCw1OTQ5
+MjE2NjVdfQ==
 -->
