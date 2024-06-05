@@ -24,7 +24,7 @@ It is an RDF document published by the Registry.
 	    ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
 	    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
 	];
-	ib1:include-all-allow-additional ib1:permitGroup ;
+	ib1:includeAllAllowAditional ib1:permitGroup ;
 .
 ```
 
@@ -49,14 +49,14 @@ The requirements for terms in the `ib1:requiredMetadata` are modified by terms i
 (no modifier)
 : All the values in the requirements must be included for a term which does not have a modifier. No additonal values for that term are allowed.
 
-`ib1:include-all-allow-additional <term>`
+`ib1:includeAllAllowAdditional <term>`
 : All the values in the requirements must be included for this term, but additional values are allowed.
 
-`ib1:include-one-of <term>`
+`ib1:includeOneOf <term>`
 : Exactly one of the values in the requirements must be included for this term. No other values are allowed.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0Njk4MDkxNSwxMzg5NzAyMDM4LDExMT
+eyJoaXN0b3J5IjpbLTUyODY0NTczNywxMzg5NzAyMDM4LDExMT
 MxMjg5NjksMTI2ODgzNjcwOF19
 -->
