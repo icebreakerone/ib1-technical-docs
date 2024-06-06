@@ -184,7 +184,7 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
     dcterms:publisher <https://registry.ib1.org/member/my-energy-company> ;
     dcterms:conformsTo <https://registry.ib1.org/class/supply-voltage> ; 
     dcat:version "0.1.2" ;
-    dcat:endpointDescription <https://registry.ib1.org/api/electricty-voltage> ;
+    dcat:endpointDescription <https://registry.ib1.org/api/electricity-voltage> ;
     ib1:heartbeatDescription <https://registry.ib1.org/api/heartbeat-simple> ;
     dcat:endpointURL <https://data-provider-example.com/supply-voltage/v0> ;
     ib1:trustFramework <http://estf.registry.ib1.org> ;
@@ -237,7 +237,7 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNzI3MTE2NSwtMTUxMDY0NzQ1NywxMz
+eyJoaXN0b3J5IjpbMTQyMzAzNDg1MCwtMTUxMDY0NzQ1NywxMz
 c5ODA4Mzg3LDM2ODE1MjE1MiwtNDg2MTgwNDQwLC0xNjc3OTQ4
 MzYsNDkxODY4OTYzLC0xODM2NDgyNTkyLC0xMTg1ODIwODIzLD
 M1MjQyOTUsLTE3NzI5NTU2NzksLTE1MDM2OTQwMCw1NDA1NzY1
