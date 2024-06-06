@@ -192,7 +192,7 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
     ib1:sensitivityClass "IB1-SA" ;
     ib1:permitGroup <https://directory.ib1.org/group/network-operator> ;
     ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
-    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:license <https://estf.registry.ib1.org/schemes/supply/licence/voltage-reporting-v1> ;
 .
 ```
 
@@ -220,7 +220,7 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
     ib1:sensitivityClass "IB1-SA" ;
     ib1:permitGroup <https://directory.ib1.org/group/network-operator> ;
     ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
-    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:license <https://estf.registry.ib1.org/schemes/supply/licence/voltage-reporting-v1> ;
 .
 
 <https://data-provider-example.com/generation-report/oct2024/download>
@@ -237,11 +237,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTA2NDc0NTcsMTM3OTgwODM4NywzNj
-gxNTIxNTIsLTQ4NjE4MDQ0MCwtMTY3Nzk0ODM2LDQ5MTg2ODk2
-MywtMTgzNjQ4MjU5MiwtMTE4NTgyMDgyMywzNTI0Mjk1LC0xNz
-cyOTU1Njc5LC0xNTAzNjk0MDAsNTQwNTc2NTMsLTEwMzIyMzI1
-MjMsLTg0MDY1NTE4OSwtNTc5MzY1ODYwLC0xMzYzNjMxNDAxLC
-0xNDcwNDMzMzYzLDE3NTEyMzQ5OTAsLTYxMTc5MzUxMCwxNTE3
-OTU5Mzg4XX0=
+eyJoaXN0b3J5IjpbMTQxNzI3MTE2NSwtMTUxMDY0NzQ1NywxMz
+c5ODA4Mzg3LDM2ODE1MjE1MiwtNDg2MTgwNDQwLC0xNjc3OTQ4
+MzYsNDkxODY4OTYzLC0xODM2NDgyNTkyLC0xMTg1ODIwODIzLD
+M1MjQyOTUsLTE3NzI5NTU2NzksLTE1MDM2OTQwMCw1NDA1NzY1
+MywtMTAzMjIzMjUyMywtODQwNjU1MTg5LC01NzkzNjU4NjAsLT
+EzNjM2MzE0MDEsLTE0NzA0MzMzNjMsMTc1MTIzNDk5MCwtNjEx
+NzkzNTEwXX0=
 -->
