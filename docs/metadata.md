@@ -184,7 +184,7 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
     dcterms:publisher <https://registry.ib1.org/member/my-energy-company> ;
     dcterms:conformsTo <https://registry.ib1.org/class/supply-voltage> ; 
     dcat:version "0.1.2" ;
-    dcat:endpointDescription <https://registry.ib1.org/api/electricty-voltage> ;
+    dcat:endpointDescription <https://registry.ib1.org/api/electricity-voltage> ;
     ib1:heartbeatDescription <https://registry.ib1.org/api/heartbeat-simple> ;
     dcat:endpointURL <https://data-provider-example.com/supply-voltage/v0> ;
     ib1:trustFramework <http://estf.registry.ib1.org> ;
@@ -192,7 +192,7 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
     ib1:sensitivityClass "IB1-SA" ;
     ib1:permitGroup <https://directory.ib1.org/group/network-operator> ;
     ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
-    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:license <https://estf.registry.ib1.org/schemes/supply/licence/voltage-reporting-v1> ;
 .
 ```
 
@@ -220,7 +220,7 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
     ib1:sensitivityClass "IB1-SA" ;
     ib1:permitGroup <https://directory.ib1.org/group/network-operator> ;
     ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
-    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:license <https://estf.registry.ib1.org/schemes/supply/licence/voltage-reporting-v1> ;
 .
 
 <https://data-provider-example.com/generation-report/oct2024/download>

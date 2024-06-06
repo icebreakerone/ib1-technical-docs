@@ -17,7 +17,7 @@ It is an RDF document published by the Registry.
 	dcterms:title "Supply Voltage API Requirements" ;
 	ib1:requiredType dcat:DataService ;
 	ib1:requiredMetadata [ a ib1:RequiredMetadata ;
-	    dcat:endpointDescription <https://registry.ib1.org/api/electricty-voltage> ;
+	    dcat:endpointDescription <https://registry.ib1.org/api/electricity-voltage> ;
 	    ib1:heartbeatDescription <https://registry.ib1.org/api/heartbeat-simple> ;
 	    ib1:sensitivityClass "IB1-SA" ;
 	    ib1:permitGroup <https://directory.ib1.org/group/network-operator> ;

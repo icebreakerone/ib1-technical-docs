@@ -16,7 +16,7 @@ Scheme-conforming data sources use [Scheme Catalog Requirements Documents](schem
 	# ...
     ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
     ib1:permitGroup <https://directory.ib1.org/group/archiver> ;
-    dcterms:license <http://estf.registry.ib1.org/schemes/supply/licence/voltage-reporting-v1> ;
+    dcterms:license <https://estf.registry.ib1.org/schemes/supply/licence/voltage-reporting-v1> ;
 .
 ```
 
