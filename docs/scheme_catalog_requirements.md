@@ -22,7 +22,7 @@ It is an RDF document published by the Registry.
 	    ib1:sensitivityClass "IB1-SA" ;
 	    ib1:permitGroup <https://directory.ib1.org/group/network-operator> ;
 	    ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
-	    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
+	    dcterms:licence <https://estf.registry.ib1.org/schemes/supply/licence/voltage-reporting-v1> ;
 	];
 	ib1:includeAllAllowAditional ib1:permitGroup ;
 .
@@ -57,7 +57,7 @@ The requirements for terms in the `ib1:requiredMetadata` are modified by terms i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc0NTc2NDgxLC0xNzk0NDk1MDQ2LC01Mj
-g2NDU3MzcsMTM4OTcwMjAzOCwxMTEzMTI4OTY5LDEyNjg4MzY3
-MDhdfQ==
+eyJoaXN0b3J5IjpbMTQ0NDg3NTgyNSw2NzQ1NzY0ODEsLTE3OT
+Q0OTUwNDYsLTUyODY0NTczNywxMzg5NzAyMDM4LDExMTMxMjg5
+NjksMTI2ODgzNjcwOF19
 -->
