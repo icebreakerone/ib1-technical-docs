@@ -177,16 +177,16 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix ib1: <http://registry.ib1.org/ns/1.0#> .
 
-<https://data-provider-example.com/supply-voltage/v0>
+<https://example.com/supply-voltage/v0>
     a dcat:DataService ;
-    dcterms:title "Electricity Supply Voltage"@en ;
-    dcterms:description "API to query supply voltage across the grid"@en ;
+    dcterms:title "Electricity Generation Voltage"@en ;
+    dcterms:description "API to query generation supply voltage"@en ;
     dcterms:publisher <https://directory.estf.ib1.org/member/827252> ;
-    dcterms:conformsTo <https://registry.estf.ib1.org/scheme/electricity/licence/supply-voltage> ; 
+    dcterms:conformsTo <https://registry.estf.ib1.org/scheme/electricity/class/supply-voltage> ; 
     dcat:version "0.1.2" ;
     dcat:endpointDescription <https://registry.estf.ib1.org/scheme/electricity/api/voltage> ;
-    ib1:heartbeatDescription <https://registry.estf.ib1.org/api/heartbeat-simple> ;
-    dcat:endpointURL <https://generation.api.example.com/supply-voltage/v0> ;
+    ib1:heartbeatDescription <https://registry.estf.ib1.org/api/heartbeat-simple/1.0> ;
+    dcat:endpointURL <https://grid03.api.example.com/supply-voltage/v0> ;
     ib1:trustFramework <http://estf.registry.ib1.org> ;
     ib1:datasetAssurance "IcebreakerOne.DatasetLevel1" ;
     ib1:sensitivityClass "IB1-SA" ;
@@ -237,11 +237,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIxMjk5MTM5LDE0MjMwMzQ4NTAsLTE1MT
-A2NDc0NTcsMTM3OTgwODM4NywzNjgxNTIxNTIsLTQ4NjE4MDQ0
-MCwtMTY3Nzk0ODM2LDQ5MTg2ODk2MywtMTgzNjQ4MjU5MiwtMT
-E4NTgyMDgyMywzNTI0Mjk1LC0xNzcyOTU1Njc5LC0xNTAzNjk0
-MDAsNTQwNTc2NTMsLTEwMzIyMzI1MjMsLTg0MDY1NTE4OSwtNT
-c5MzY1ODYwLC0xMzYzNjMxNDAxLC0xNDcwNDMzMzYzLDE3NTEy
-MzQ5OTBdfQ==
+eyJoaXN0b3J5IjpbLTEzMTU5MDQ4MjEsMTQyMzAzNDg1MCwtMT
+UxMDY0NzQ1NywxMzc5ODA4Mzg3LDM2ODE1MjE1MiwtNDg2MTgw
+NDQwLC0xNjc3OTQ4MzYsNDkxODY4OTYzLC0xODM2NDgyNTkyLC
+0xMTg1ODIwODIzLDM1MjQyOTUsLTE3NzI5NTU2NzksLTE1MDM2
+OTQwMCw1NDA1NzY1MywtMTAzMjIzMjUyMywtODQwNjU1MTg5LC
+01NzkzNjU4NjAsLTEzNjM2MzE0MDEsLTE0NzA0MzMzNjMsMTc1
+MTIzNDk5MF19
 -->
