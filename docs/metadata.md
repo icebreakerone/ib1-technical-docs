@@ -175,24 +175,23 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 ```
 @prefix dcat: <http://www.w3.org/ns/dcat#> . 
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix ib1: <http://registry.ib1.org/ns/1.0/> .
+@prefix ib1: <http://registry.ib1.org/ns/1.0#> .
 
-<https://data-provider-example.com/supply-voltage/v0>
+<https://example.com/supply-voltage/v0>
     a dcat:DataService ;
-    dcterms:title "Electricity Supply Voltage"@en ;
-    dcterms:description "API to query supply voltage across the grid"@en ;
-    dcterms:publisher <https://registry.ib1.org/member/my-energy-company> ;
-    dcterms:conformsTo <https://registry.ib1.org/class/supply-voltage> ; 
-    dcat:version "0.1.2" ;
-    dcat:endpointDescription <https://registry.ib1.org/api/electricity-voltage> ;
-    ib1:heartbeatDescription <https://registry.ib1.org/api/heartbeat-simple> ;
-    dcat:endpointURL <https://data-provider-example.com/supply-voltage/v0> ;
-    ib1:trustFramework <http://estf.registry.ib1.org> ;
+    dcterms:title "Electricity Generation Voltage"@en ;
+    dcterms:description "API to query generation supply voltage"@en ;
+    dcterms:publisher <https://directory.estf.ib1.org/member/827252> ;
+    dcterms:conformsTo <https://registry.estf.ib1.org/scheme/electricity/standard/supply-voltage> ; 
+    dcat:endpointDescription <https://registry.estf.ib1.org/scheme/electricity/api/voltage> ;
+    ib1:heartbeatDescription <https://registry.estf.ib1.org/api/heartbeat-simple/1.0> ;
+    dcat:endpointURL <https://grid03.api.example.com/generation-voltage/v0> ;
+    ib1:trustFramework <http://registry.estf.ib1.org/trust-framework> ;
     ib1:datasetAssurance "IcebreakerOne.DatasetLevel1" ;
     ib1:sensitivityClass "IB1-SA" ;
-    ib1:permitGroup <https://directory.ib1.org/group/network-operator> ;
-    ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
-    dcterms:license <https://estf.registry.ib1.org/schemes/supply/licence/voltage-reporting-v1> ;
+    ib1:permitGroup <https://directory.estf.ib1.org/scheme/electricity/group/network-operator> ;
+    ib1:permitGroup <https://directory.estf.ib1.org/scheme/electricity/group/report-provider> ;
+    dcterms:license <https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4> ;
 .
 ```
 
@@ -201,37 +200,37 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 ```
 @prefix dcat: <http://www.w3.org/ns/dcat#> . 
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix ib1: <http://registry.ib1.org/ns/1.0/> .
+@prefix ib1: <http://registry.ib1.org/ns/1.0#> .
 
-<https://data-provider-example.com/generation-report/oct2024>
+<https://data.example.com/generation-report/oct2024>
     a dcat:Dataset ;
     dcterms:title "Generation Report Oct 2024"@en ;
     dcterms:description "Data report on generation"@en ;
-    dcterms:publisher <https://registry.ib1.org/member/my-energy-company> ;
-    dcterms:conformsTo <https://registry.ib1.org/class/generation-report> ; 
+    dcterms:publisher <https://directory.estf.ib1.org/member/827252> ;
+    dcterms:conformsTo <https://registry.estf.ib1.org/scheme/electricity/standard/generation-report> ; 
     dcat:version "0.1.2" ;
-    dcat:inSeries <https://data-provider-example.com/generation-report>;
-    dcat:distribution <https://data-provider-example.com/generation-report/oct2024/csv> ;
+    dcat:inSeries <https://data.example.com/generation-report>;
+    dcat:distribution <https://data.example.com/generation-report/oct2024/csv> ;
     dcat:keyword "solar"@en,
 	    "electricity"@en,
 	    "retrofit"@en ;
-    ib1:trustFramework <http://estf.registry.ib1.org> ;
+    ib1:trustFramework <http://registry.estf.ib1.org/trust-framework> ;
     ib1:datasetAssurance "IcebreakerOne.DatasetLevel1" ;
     ib1:sensitivityClass "IB1-SA" ;
-    ib1:permitGroup <https://directory.ib1.org/group/network-operator> ;
-    ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
-    dcterms:license <https://estf.registry.ib1.org/schemes/supply/licence/voltage-reporting-v1> ;
+    ib1:permitGroup <https://directory.estf.ib1.org/scheme/electricity/group/network-operator> ;
+    ib1:permitGroup <https://directory.estf.ib1.org/scheme/electricity/group/report-provider> ;
+    dcterms:license <https://registry.estf.ib1.org/scheme/electricity/licence/generation-reporting/2.1> ;
 .
 
-<https://data-provider-example.com/generation-report/oct2024/download>
+<https://data.example.com/generation-report/oct2024/download>
 	a dcat:Distribution ;
 	dcterms:description "CSV"@en ;
-	dcat:downloadURL <https://data-provider-example.com/generation-report/oct2024/csv> ;
+	dcat:downloadURL <https://data.example.com/generation-report/oct2024/csv> ;
 	dcat:media_type "text/csv"@en ;
-	ib1:dataSchema <https://registry.ib1.org/format/generation-report/v2> ;
+	ib1:dataSchema <https://registry.estf.ib1.org/scheme/electricity/format/generation-report/2.0> ;
 .
 
-<https://data-provider-example.com/generation-report>
+<https://data.example.com/generation-report>
     a dcat:DatasetSeries ;
     dcterms:title "Generation Reports from My Energy Company"@en ;
 .

@@ -10,19 +10,19 @@ It is an RDF document published by the Registry.
 ```
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> . 
-@prefix ib1: <http://registry.ib1.org/ns/1.0/> .
+@prefix ib1: <http://registry.ib1.org/ns/1.0#> .
 
-<https://registry.ib1.org/class/supply-voltage>
-	a ib1:SchemeCatalogRequirements ;
+<https://registry.estf.ib1.org/scheme/electricity/standard/supply-voltage>
+		a ib1:SchemeCatalogRequirements ;
 	dcterms:title "Supply Voltage API Requirements" ;
 	ib1:requiredType dcat:DataService ;
 	ib1:requiredMetadata [ a ib1:RequiredMetadata ;
-	    dcat:endpointDescription <https://registry.ib1.org/api/electricity-voltage> ;
-	    ib1:heartbeatDescription <https://registry.ib1.org/api/heartbeat-simple> ;
+	    dcat:endpointDescription <https://registry.estf.ib1.org/scheme/electricity/api/voltage> ;
+	    ib1:heartbeatDescription <https://registry.estf.ib1.org/api/heartbeat-simple/1.0> ;
 	    ib1:sensitivityClass "IB1-SA" ;
-	    ib1:permitGroup <https://directory.ib1.org/group/network-operator> ;
-	    ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
-	    dcterms:licence <https://creativecommons.org/licenses/by/4.0/> ;
+	    ib1:permitGroup <https://directory.estf.ib1.org/scheme/electricity/group/network-operator> ;
+	    ib1:permitGroup <https://directory.estf.ib1.org/scheme/electricity/group/report-provider> ;
+	    dcterms:licence <https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4> ;
 	];
 	ib1:includeAllAllowAditional ib1:permitGroup ;
 .
@@ -30,7 +30,7 @@ It is an RDF document published by the Registry.
 
 This example defines a standard Supply Voltage API that is provided by multiple providers in a Trust Framework. It specifies the API in detail with the `dcat:endpointDescription` referring to an OpenAPI specification hosted by the Registry. It uses a standard `ib1:heartbeatDescription` to check for liveness, using a standard heartbeat request defined in an OpenAPI specification hosted by the Registry.
 
-For access control, it specifies the `ib1:sensitivityClass`, and who can use the API with `ib1:permitGroup`. Because `ib1:include-all-allow-additional` is used for the access rules, it allows the publisher to widen access to additional groups, as long as the groups in this document are included.
+For access control, it specifies the `ib1:sensitivityClass`, and who can use the API with `ib1:permitGroup`. Because `ib1:includeAllAllowAditional` is used for the access rules, it allows the publisher to widen access to additional groups, as long as the groups in this document are included.
 
 ## Object specification
 

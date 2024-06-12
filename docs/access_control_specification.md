@@ -11,12 +11,12 @@ Scheme-conforming data sources use [Scheme Catalog Requirements Documents](schem
 ## Example
 
 ```
-<https://data-provider-example.com/supply-voltage/v0>
+<https://data.example.com/supply-voltage/v0>
     a dcat:DataService ;
 	# ...
-    ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
-    ib1:permitGroup <https://directory.ib1.org/group/archiver> ;
-    dcterms:license <https://estf.registry.ib1.org/schemes/supply/licence/voltage-reporting-v1> ;
+    ib1:permitGroup <https://directory.estf.ib1.org/scheme/electricity/group/report-provider> ;
+    ib1:permitGroup <https://directory.estf.ib1.org/scheme/electricity/group/archiver> ;
+    dcterms:license <https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4> ;
 .
 ```
 
@@ -30,9 +30,10 @@ The Registry maintains an RDF document at a well known URL which maps Licence UR
 The document is one or more `ib1:LicenceInterpretation` objects.
 
 ```
-@prefix ib1: <http://registry.ib1.org/ns/1.0/>
+@prefix ib1: <http://registry.ib1.org/ns/1.0#>
 
-<https://creativecommons.org/licenses/by/4.0/> a ib1:LicenceInterpretation ;
+<https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4>
+		a ib1:LicenceInterpretation ;
 	ib1:grant ib1:use_any ;
 	ib1:grant ib1:adapt_any ;
 	ib1:grant ib1:combine_any ;
