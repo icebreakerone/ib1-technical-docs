@@ -200,47 +200,47 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 ```
 @prefix dcat: <http://www.w3.org/ns/dcat#> . 
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix ib1: <http://registry.ib1.org/ns/1.0/> .
+@prefix ib1: <http://registry.ib1.org/ns/1.0#> .
 
-<https://example.com/generation-report/oct2024>
+<https://data.example.com/generation-report/oct2024>
     a dcat:Dataset ;
     dcterms:title "Generation Report Oct 2024"@en ;
     dcterms:description "Data report on generation"@en ;
-    dcterms:publisher <https://registry.estf.ib1.org/member/827252> ;
+    dcterms:publisher <https://directory.estf.ib1.org/member/827252> ;
     dcterms:conformsTo <https://registry.estf.ib1.org/scheme/electricity/standard/generation-report> ; 
     dcat:version "0.1.2" ;
-    dcat:inSeries <https://data-provider-example.com/generation-report>;
-    dcat:distribution <https://data-provider-example.com/generation-report/oct2024/csv> ;
+    dcat:inSeries <https://data.example.com/generation-report>;
+    dcat:distribution <https://data.example.com/generation-report/oct2024/csv> ;
     dcat:keyword "solar"@en,
 	    "electricity"@en,
 	    "retrofit"@en ;
     ib1:trustFramework <http://registry.estf.ib1.org/trust-framework> ;
     ib1:datasetAssurance "IcebreakerOne.DatasetLevel1" ;
     ib1:sensitivityClass "IB1-SA" ;
-    ib1:permitGroup <https://directory.ib1.org/group/network-operator> ;
-    ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
+    ib1:permitGroup <https://directory.estf.ib1.org/scheme/electricity/group/network-operator> ;
+    ib1:permitGroup <https://directory.estf.ib1.org/scheme/electricity/group/report-provider> ;
     dcterms:license <https://estf.registry.ib1.org/schemes/supply/licence/voltage-reporting-v1> ;
 .
 
-<https://data-provider-example.com/generation-report/oct2024/download>
+<https://data.example.com/generation-report/oct2024/download>
 	a dcat:Distribution ;
 	dcterms:description "CSV"@en ;
-	dcat:downloadURL <https://data-provider-example.com/generation-report/oct2024/csv> ;
+	dcat:downloadURL <https://data.example.com/generation-report/oct2024/csv> ;
 	dcat:media_type "text/csv"@en ;
 	ib1:dataSchema <https://registry.ib1.org/format/generation-report/v2> ;
 .
 
-<https://data-provider-example.com/generation-report>
+<https://data.example.com/generation-report>
     a dcat:DatasetSeries ;
     dcterms:title "Generation Reports from My Energy Company"@en ;
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjI1MTEwNTMsMTQyMzAzNDg1MCwtMT
-UxMDY0NzQ1NywxMzc5ODA4Mzg3LDM2ODE1MjE1MiwtNDg2MTgw
-NDQwLC0xNjc3OTQ4MzYsNDkxODY4OTYzLC0xODM2NDgyNTkyLC
-0xMTg1ODIwODIzLDM1MjQyOTUsLTE3NzI5NTU2NzksLTE1MDM2
-OTQwMCw1NDA1NzY1MywtMTAzMjIzMjUyMywtODQwNjU1MTg5LC
-01NzkzNjU4NjAsLTEzNjM2MzE0MDEsLTE0NzA0MzMzNjMsMTc1
-MTIzNDk5MF19
+eyJoaXN0b3J5IjpbMTMwODU4ODg0LDE0MjMwMzQ4NTAsLTE1MT
+A2NDc0NTcsMTM3OTgwODM4NywzNjgxNTIxNTIsLTQ4NjE4MDQ0
+MCwtMTY3Nzk0ODM2LDQ5MTg2ODk2MywtMTgzNjQ4MjU5MiwtMT
+E4NTgyMDgyMywzNTI0Mjk1LC0xNzcyOTU1Njc5LC0xNTAzNjk0
+MDAsNTQwNTc2NTMsLTEwMzIyMzI1MjMsLTg0MDY1NTE4OSwtNT
+c5MzY1ODYwLC0xMzYzNjMxNDAxLC0xNDcwNDMzMzYzLDE3NTEy
+MzQ5OTBdfQ==
 -->
