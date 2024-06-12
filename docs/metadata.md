@@ -227,7 +227,7 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 	dcterms:description "CSV"@en ;
 	dcat:downloadURL <https://data.example.com/generation-report/oct2024/csv> ;
 	dcat:media_type "text/csv"@en ;
-	ib1:dataSchema <https://registry.ib1.org/scheme/electricity/format/generation-report/2.0> ;
+	ib1:dataSchema <https://registry.estf.ib1.org/scheme/electricity/format/generation-report/2.0> ;
 .
 
 <https://data.example.com/generation-report>
@@ -236,11 +236,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA0NzU0NDU5LDE0MjMwMzQ4NTAsLTE1MT
-A2NDc0NTcsMTM3OTgwODM4NywzNjgxNTIxNTIsLTQ4NjE4MDQ0
-MCwtMTY3Nzk0ODM2LDQ5MTg2ODk2MywtMTgzNjQ4MjU5MiwtMT
-E4NTgyMDgyMywzNTI0Mjk1LC0xNzcyOTU1Njc5LC0xNTAzNjk0
-MDAsNTQwNTc2NTMsLTEwMzIyMzI1MjMsLTg0MDY1NTE4OSwtNT
-c5MzY1ODYwLC0xMzYzNjMxNDAxLC0xNDcwNDMzMzYzLDE3NTEy
-MzQ5OTBdfQ==
+eyJoaXN0b3J5IjpbLTE4MzM2OTgxOTUsMTQyMzAzNDg1MCwtMT
+UxMDY0NzQ1NywxMzc5ODA4Mzg3LDM2ODE1MjE1MiwtNDg2MTgw
+NDQwLC0xNjc3OTQ4MzYsNDkxODY4OTYzLC0xODM2NDgyNTkyLC
+0xMTg1ODIwODIzLDM1MjQyOTUsLTE3NzI5NTU2NzksLTE1MDM2
+OTQwMCw1NDA1NzY1MywtMTAzMjIzMjUyMywtODQwNjU1MTg5LC
+01NzkzNjU4NjAsLTEzNjM2MzE0MDEsLTE0NzA0MzMzNjMsMTc1
+MTIzNDk5MF19
 -->
