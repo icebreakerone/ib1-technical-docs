@@ -182,7 +182,7 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
     dcterms:title "Electricity Generation Voltage"@en ;
     dcterms:description "API to query generation supply voltage"@en ;
     dcterms:publisher <https://directory.estf.ib1.org/member/827252> ;
-    dcterms:conformsTo <https://registry.estf.ib1.org/scheme/electricity/class/supply-voltage> ; 
+    dcterms:conformsTo <https://registry.estf.ib1.org/scheme/electricity/standard/supply-voltage> ; 
     dcat:version "0.1.2" ;
     dcat:endpointDescription <https://registry.estf.ib1.org/scheme/electricity/api/voltage> ;
     ib1:heartbeatDescription <https://registry.estf.ib1.org/api/heartbeat-simple/1.0> ;
@@ -237,11 +237,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTU5MDQ4MjEsMTQyMzAzNDg1MCwtMT
-UxMDY0NzQ1NywxMzc5ODA4Mzg3LDM2ODE1MjE1MiwtNDg2MTgw
-NDQwLC0xNjc3OTQ4MzYsNDkxODY4OTYzLC0xODM2NDgyNTkyLC
-0xMTg1ODIwODIzLDM1MjQyOTUsLTE3NzI5NTU2NzksLTE1MDM2
-OTQwMCw1NDA1NzY1MywtMTAzMjIzMjUyMywtODQwNjU1MTg5LC
-01NzkzNjU4NjAsLTEzNjM2MzE0MDEsLTE0NzA0MzMzNjMsMTc1
-MTIzNDk5MF19
+eyJoaXN0b3J5IjpbLTY5MzA3NTczMiwxNDIzMDM0ODUwLC0xNT
+EwNjQ3NDU3LDEzNzk4MDgzODcsMzY4MTUyMTUyLC00ODYxODA0
+NDAsLTE2Nzc5NDgzNiw0OTE4Njg5NjMsLTE4MzY0ODI1OTIsLT
+ExODU4MjA4MjMsMzUyNDI5NSwtMTc3Mjk1NTY3OSwtMTUwMzY5
+NDAwLDU0MDU3NjUzLC0xMDMyMjMyNTIzLC04NDA2NTUxODksLT
+U3OTM2NTg2MCwtMTM2MzYzMTQwMSwtMTQ3MDQzMzM2MywxNzUx
+MjM0OTkwXX0=
 -->
