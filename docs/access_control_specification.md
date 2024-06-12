@@ -11,12 +11,12 @@ Scheme-conforming data sources use [Scheme Catalog Requirements Documents](schem
 ## Example
 
 ```
-<https://data-provider-example.com/supply-voltage/v0>
+<https://data.example.com/supply-voltage/v0>
     a dcat:DataService ;
 	# ...
-    ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
-    ib1:permitGroup <https://directory.ib1.org/group/archiver> ;
-    dcterms:license <https://estf.registry.ib1.org/schemes/supply/licence/voltage-reporting-v1> ;
+    ib1:permitGroup <https://directory.estf.ib1.org/scheme/electricity/group/report-provider> ;
+    ib1:permitGroup <https://directory.estf.ib1.org/scheme/electricity/group/archiver> ;
+    dcterms:license <https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4> ;
 .
 ```
 
@@ -122,10 +122,10 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzkxODUxNywyMDUxMTMzMjEyLDIwMD
-U4MDU0NjAsNjExODUxNzY4LC04Mjk5NzM0MjcsMTkxMzMwNjE5
-MiwtMTE4ODE5OTQ5NSwtMjEzOTk0Nzg1MywyMDgwMjE4MzQsNz
-QwMTE3NDQ5LC0yMTMzOTc5NDYzLC03NDExMzYwOTAsOTM1MDgz
-NzQ3LC05NjkzMDEyNTAsMTE3NjE5MDkwMSwtMTk2OTEzODgyMl
-19
+eyJoaXN0b3J5IjpbOTQ5ODgwMDQxLC0xNDM5MTg1MTcsMjA1MT
+EzMzIxMiwyMDA1ODA1NDYwLDYxMTg1MTc2OCwtODI5OTczNDI3
+LDE5MTMzMDYxOTIsLTExODgxOTk0OTUsLTIxMzk5NDc4NTMsMj
+A4MDIxODM0LDc0MDExNzQ0OSwtMjEzMzk3OTQ2MywtNzQxMTM2
+MDkwLDkzNTA4Mzc0NywtOTY5MzAxMjUwLDExNzYxOTA5MDEsLT
+E5NjkxMzg4MjJdfQ==
 -->
