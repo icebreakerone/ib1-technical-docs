@@ -183,7 +183,6 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
     dcterms:description "API to query generation supply voltage"@en ;
     dcterms:publisher <https://directory.estf.ib1.org/member/827252> ;
     dcterms:conformsTo <https://registry.estf.ib1.org/scheme/electricity/standard/supply-voltage> ; 
-    dcat:version "0.1.2" ;
     dcat:endpointDescription <https://registry.estf.ib1.org/scheme/electricity/api/voltage> ;
     ib1:heartbeatDescription <https://registry.estf.ib1.org/api/heartbeat-simple/1.0> ;
     dcat:endpointURL <https://grid03.api.example.com/generation-voltage/v0> ;
@@ -203,19 +202,19 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix ib1: <http://registry.ib1.org/ns/1.0/> .
 
-<https://data-provider-example.com/generation-report/oct2024>
+<https://example.com/generation-report/oct2024>
     a dcat:Dataset ;
     dcterms:title "Generation Report Oct 2024"@en ;
     dcterms:description "Data report on generation"@en ;
-    dcterms:publisher <https://registry.ib1.org/member/my-energy-company> ;
-    dcterms:conformsTo <https://registry.ib1.org/class/generation-report> ; 
+    dcterms:publisher <https://registry.estf.ib1.org/member/827252> ;
+    dcterms:conformsTo <https://registry.estf.ib1.org/scheme/electricity/standard/generation-report> ; 
     dcat:version "0.1.2" ;
     dcat:inSeries <https://data-provider-example.com/generation-report>;
     dcat:distribution <https://data-provider-example.com/generation-report/oct2024/csv> ;
     dcat:keyword "solar"@en,
 	    "electricity"@en,
 	    "retrofit"@en ;
-    ib1:trustFramework <http://estf.registry.ib1.org> ;
+    ib1:trustFramework <http://registry.estf.ib1.org/trust-framework> ;
     ib1:datasetAssurance "IcebreakerOne.DatasetLevel1" ;
     ib1:sensitivityClass "IB1-SA" ;
     ib1:permitGroup <https://directory.ib1.org/group/network-operator> ;
@@ -237,11 +236,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA0OTk5MTQyLDE0MjMwMzQ4NTAsLTE1MT
-A2NDc0NTcsMTM3OTgwODM4NywzNjgxNTIxNTIsLTQ4NjE4MDQ0
-MCwtMTY3Nzk0ODM2LDQ5MTg2ODk2MywtMTgzNjQ4MjU5MiwtMT
-E4NTgyMDgyMywzNTI0Mjk1LC0xNzcyOTU1Njc5LC0xNTAzNjk0
-MDAsNTQwNTc2NTMsLTEwMzIyMzI1MjMsLTg0MDY1NTE4OSwtNT
-c5MzY1ODYwLC0xMzYzNjMxNDAxLC0xNDcwNDMzMzYzLDE3NTEy
-MzQ5OTBdfQ==
+eyJoaXN0b3J5IjpbLTEyNjI1MTEwNTMsMTQyMzAzNDg1MCwtMT
+UxMDY0NzQ1NywxMzc5ODA4Mzg3LDM2ODE1MjE1MiwtNDg2MTgw
+NDQwLC0xNjc3OTQ4MzYsNDkxODY4OTYzLC0xODM2NDgyNTkyLC
+0xMTg1ODIwODIzLDM1MjQyOTUsLTE3NzI5NTU2NzksLTE1MDM2
+OTQwMCw1NDA1NzY1MywtMTAzMjIzMjUyMywtODQwNjU1MTg5LC
+01NzkzNjU4NjAsLTEzNjM2MzE0MDEsLTE0NzA0MzMzNjMsMTc1
+MTIzNDk5MF19
 -->
