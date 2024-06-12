@@ -186,12 +186,12 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
     dcat:version "0.1.2" ;
     dcat:endpointDescription <https://registry.estf.ib1.org/scheme/electricity/api/voltage> ;
     ib1:heartbeatDescription <https://registry.estf.ib1.org/api/heartbeat-simple/1.0> ;
-    dcat:endpointURL <https://grid03.api.example.com/supply-voltage/v0> ;
-    ib1:trustFramework <http://estf.registry.ib1.org> ;
+    dcat:endpointURL <https://grid03.api.example.com/generation-voltage/v0> ;
+    ib1:trustFramework <http://registry.estf.ib1.org/trust-framework> ;
     ib1:datasetAssurance "IcebreakerOne.DatasetLevel1" ;
     ib1:sensitivityClass "IB1-SA" ;
-    ib1:permitGroup <https://directory.ib1.org/group/network-operator> ;
-    ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
+    ib1:permitGroup <https://directory.estf.ib1.org/group/network-operator> ;
+    ib1:permitGroup <https://directory.estf.ib1.org/scheme/electricity/group/report-provider> ;
     dcterms:license <https://estf.registry.ib1.org/schemes/supply/licence/voltage-reporting-v1> ;
 .
 ```
@@ -237,11 +237,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5MzA3NTczMiwxNDIzMDM0ODUwLC0xNT
-EwNjQ3NDU3LDEzNzk4MDgzODcsMzY4MTUyMTUyLC00ODYxODA0
-NDAsLTE2Nzc5NDgzNiw0OTE4Njg5NjMsLTE4MzY0ODI1OTIsLT
-ExODU4MjA4MjMsMzUyNDI5NSwtMTc3Mjk1NTY3OSwtMTUwMzY5
-NDAwLDU0MDU3NjUzLC0xMDMyMjMyNTIzLC04NDA2NTUxODksLT
-U3OTM2NTg2MCwtMTM2MzYzMTQwMSwtMTQ3MDQzMzM2MywxNzUx
-MjM0OTkwXX0=
+eyJoaXN0b3J5IjpbLTk4NDU4MDUxLDE0MjMwMzQ4NTAsLTE1MT
+A2NDc0NTcsMTM3OTgwODM4NywzNjgxNTIxNTIsLTQ4NjE4MDQ0
+MCwtMTY3Nzk0ODM2LDQ5MTg2ODk2MywtMTgzNjQ4MjU5MiwtMT
+E4NTgyMDgyMywzNTI0Mjk1LC0xNzcyOTU1Njc5LC0xNTAzNjk0
+MDAsNTQwNTc2NTMsLTEwMzIyMzI1MjMsLTg0MDY1NTE4OSwtNT
+c5MzY1ODYwLC0xMzYzNjMxNDAxLC0xNDcwNDMzMzYzLDE3NTEy
+MzQ5OTBdfQ==
 -->
