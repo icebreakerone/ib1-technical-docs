@@ -186,7 +186,7 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
     dcat:version "0.1.2" ;
     dcat:endpointDescription <https://registry.estf.ib1.org/scheme/electricity/api/voltage> ;
     ib1:heartbeatDescription <https://registry.estf.ib1.org/api/heartbeat-simple> ;
-    dcat:endpointURL <https://data-provider-example.com/supply-voltage/v0> ;
+    dcat:endpointURL <https://generation.api.example.com/supply-voltage/v0> ;
     ib1:trustFramework <http://estf.registry.ib1.org> ;
     ib1:datasetAssurance "IcebreakerOne.DatasetLevel1" ;
     ib1:sensitivityClass "IB1-SA" ;
@@ -237,7 +237,7 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM3MjY5MjUwLDE0MjMwMzQ4NTAsLTE1MT
+eyJoaXN0b3J5IjpbNjIxMjk5MTM5LDE0MjMwMzQ4NTAsLTE1MT
 A2NDc0NTcsMTM3OTgwODM4NywzNjgxNTIxNTIsLTQ4NjE4MDQ0
 MCwtMTY3Nzk0ODM2LDQ5MTg2ODk2MywtMTgzNjQ4MjU5MiwtMT
 E4NTgyMDgyMywzNTI0Mjk1LC0xNzcyOTU1Njc5LC0xNTAzNjk0
