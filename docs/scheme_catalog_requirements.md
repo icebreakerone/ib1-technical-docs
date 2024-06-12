@@ -17,12 +17,12 @@ It is an RDF document published by the Registry.
 	dcterms:title "Supply Voltage API Requirements" ;
 	ib1:requiredType dcat:DataService ;
 	ib1:requiredMetadata [ a ib1:RequiredMetadata ;
-	    dcat:endpointDescription <https://registry.ib1.org/api/electricity-voltage> ;
-	    ib1:heartbeatDescription <https://registry.ib1.org/api/heartbeat-simple> ;
+	    dcat:endpointDescription <https://registry.estf.ib1.org/scheme/electricity/api/voltage> ;
+	    ib1:heartbeatDescription <https://registry.estf.ib1.org/api/heartbeat-simple/1.0> ;
 	    ib1:sensitivityClass "IB1-SA" ;
-	    ib1:permitGroup <https://directory.ib1.org/group/network-operator> ;
-	    ib1:permitGroup <https://directory.ib1.org/group/report-provider> ;
-	    dcterms:licence <https://estf.registry.ib1.org/schemes/supply/licence/voltage-reporting-v1> ;
+	    ib1:permitGroup <https://directory.estf.ib1.org/scheme/electricity/group/network-operator> ;
+	    ib1:permitGroup <https://directory.estf.ib1.org/scheme/electricity/group/report-provider> ;
+	    dcterms:licence <https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4> ;
 	];
 	ib1:includeAllAllowAditional ib1:permitGroup ;
 .
@@ -57,7 +57,7 @@ The requirements for terms in the `ib1:requiredMetadata` are modified by terms i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzgwOTM4NDQsMTQ0NDg3NTgyNSw2Nz
-Q1NzY0ODEsLTE3OTQ0OTUwNDYsLTUyODY0NTczNywxMzg5NzAy
-MDM4LDExMTMxMjg5NjksMTI2ODgzNjcwOF19
+eyJoaXN0b3J5IjpbOTk1NjgzMTc5LDE0NDQ4NzU4MjUsNjc0NT
+c2NDgxLC0xNzk0NDk1MDQ2LC01Mjg2NDU3MzcsMTM4OTcwMjAz
+OCwxMTEzMTI4OTY5LDEyNjg4MzY3MDhdfQ==
 -->
