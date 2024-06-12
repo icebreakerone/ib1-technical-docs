@@ -10,10 +10,10 @@ It is an RDF document published by the Registry.
 ```
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> . 
-@prefix ib1: <http://registry.ib1.org/ns/1.0/> .
+@prefix ib1: <http://registry.ib1.org/ns/1.0#> .
 
-<https://registry.ib1.org/class/supply-voltage>
-	a ib1:SchemeCatalogRequirements ;
+<https://registry.estf.ib1.org/scheme/electricity/standard/supply-voltage>
+		a ib1:SchemeCatalogRequirements ;
 	dcterms:title "Supply Voltage API Requirements" ;
 	ib1:requiredType dcat:DataService ;
 	ib1:requiredMetadata [ a ib1:RequiredMetadata ;
@@ -57,7 +57,7 @@ The requirements for terms in the `ib1:requiredMetadata` are modified by terms i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NDg3NTgyNSw2NzQ1NzY0ODEsLTE3OT
-Q0OTUwNDYsLTUyODY0NTczNywxMzg5NzAyMDM4LDExMTMxMjg5
-NjksMTI2ODgzNjcwOF19
+eyJoaXN0b3J5IjpbLTE2NzgwOTM4NDQsMTQ0NDg3NTgyNSw2Nz
+Q1NzY0ODEsLTE3OTQ0OTUwNDYsLTUyODY0NTczNywxMzg5NzAy
+MDM4LDExMTMxMjg5NjksMTI2ODgzNjcwOF19
 -->
