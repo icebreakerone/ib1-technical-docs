@@ -175,7 +175,7 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 ```
 @prefix dcat: <http://www.w3.org/ns/dcat#> . 
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix ib1: <http://registry.ib1.org/ns/1.0/> .
+@prefix ib1: <http://registry.ib1.org/ns/1.0#> .
 
 <https://data-provider-example.com/supply-voltage/v0>
     a dcat:DataService ;
@@ -237,11 +237,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMzAzNDg1MCwtMTUxMDY0NzQ1NywxMz
-c5ODA4Mzg3LDM2ODE1MjE1MiwtNDg2MTgwNDQwLC0xNjc3OTQ4
-MzYsNDkxODY4OTYzLC0xODM2NDgyNTkyLC0xMTg1ODIwODIzLD
-M1MjQyOTUsLTE3NzI5NTU2NzksLTE1MDM2OTQwMCw1NDA1NzY1
-MywtMTAzMjIzMjUyMywtODQwNjU1MTg5LC01NzkzNjU4NjAsLT
-EzNjM2MzE0MDEsLTE0NzA0MzMzNjMsMTc1MTIzNDk5MCwtNjEx
-NzkzNTEwXX0=
+eyJoaXN0b3J5IjpbMTc1ODAyMTc0MiwxNDIzMDM0ODUwLC0xNT
+EwNjQ3NDU3LDEzNzk4MDgzODcsMzY4MTUyMTUyLC00ODYxODA0
+NDAsLTE2Nzc5NDgzNiw0OTE4Njg5NjMsLTE4MzY0ODI1OTIsLT
+ExODU4MjA4MjMsMzUyNDI5NSwtMTc3Mjk1NTY3OSwtMTUwMzY5
+NDAwLDU0MDU3NjUzLC0xMDMyMjMyNTIzLC04NDA2NTUxODksLT
+U3OTM2NTg2MCwtMTM2MzYzMTQwMSwtMTQ3MDQzMzM2MywxNzUx
+MjM0OTkwXX0=
 -->
