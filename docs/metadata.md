@@ -181,8 +181,8 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
     a dcat:DataService ;
     dcterms:title "Electricity Supply Voltage"@en ;
     dcterms:description "API to query supply voltage across the grid"@en ;
-    dcterms:publisher <https://registry.ib1.org/member/my-energy-company> ;
-    dcterms:conformsTo <https://registry.ib1.org/class/supply-voltage> ; 
+    dcterms:publisher <https://registry.estf.ib1.org/member/827252> ;
+    dcterms:conformsTo <https://registry.estf.ib1.org/class/supply-voltage> ; 
     dcat:version "0.1.2" ;
     dcat:endpointDescription <https://registry.ib1.org/api/electricity-voltage> ;
     ib1:heartbeatDescription <https://registry.ib1.org/api/heartbeat-simple> ;
@@ -237,7 +237,7 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1ODAyMTc0MiwxNDIzMDM0ODUwLC0xNT
+eyJoaXN0b3J5IjpbLTkzNzE5MzY4NSwxNDIzMDM0ODUwLC0xNT
 EwNjQ3NDU3LDEzNzk4MDgzODcsMzY4MTUyMTUyLC00ODYxODA0
 NDAsLTE2Nzc5NDgzNiw0OTE4Njg5NjMsLTE4MzY0ODI1OTIsLT
 ExODU4MjA4MjMsMzUyNDI5NSwtMTc3Mjk1NTY3OSwtMTUwMzY5
