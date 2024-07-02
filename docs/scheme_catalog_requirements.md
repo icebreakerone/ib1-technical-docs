@@ -24,7 +24,7 @@ It is an RDF document published by the Registry.
 	    ib1:permitGroup <https://directory.estf.ib1.org/scheme/electricity/group/report-provider> ;
 	    dcterms:licence <https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4> ;
 	];
-	ib1:includeAllAllowAditional ib1:permitGroup ;
+	ib1:includeAllAllowAdditional ib1:permitGroup ;
 .
 ```
 
@@ -57,7 +57,8 @@ The requirements for terms in the `ib1:requiredMetadata` are modified by terms i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk1NjgzMTc5LDE0NDQ4NzU4MjUsNjc0NT
-c2NDgxLC0xNzk0NDk1MDQ2LC01Mjg2NDU3MzcsMTM4OTcwMjAz
-OCwxMTEzMTI4OTY5LDEyNjg4MzY3MDhdfQ==
+eyJoaXN0b3J5IjpbLTE2NzMwMjMzNTEsOTk1NjgzMTc5LDE0ND
+Q4NzU4MjUsNjc0NTc2NDgxLC0xNzk0NDk1MDQ2LC01Mjg2NDU3
+MzcsMTM4OTcwMjAzOCwxMTEzMTI4OTY5LDEyNjg4MzY3MDhdfQ
+==
 -->
