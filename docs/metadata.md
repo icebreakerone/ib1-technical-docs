@@ -103,6 +103,9 @@ Data Services are represented by `dcat:DataService` objects with the common mand
 `dcat:endpointURL`
 : The URL of this specific instance of the API. It is interpolated into the `url` specified in the OpenAPI file using the `endpointURL` variable.
 
+`ib1:oauthIssuer`
+: For data which requires end user consent only, the URL of the OAuth Issuer.
+
 `ib1:heartbeatDescription`
 : An optional URL of an OpenAPI file (with Server specified as `dcat:endpointDescription`), which contains a single Path with a 200 response defined. This term will typically be the URL of one of a small number of standard OpenAPI files published in the Registry.
 
@@ -236,11 +239,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzM2OTgxOTUsMTQyMzAzNDg1MCwtMT
-UxMDY0NzQ1NywxMzc5ODA4Mzg3LDM2ODE1MjE1MiwtNDg2MTgw
-NDQwLC0xNjc3OTQ4MzYsNDkxODY4OTYzLC0xODM2NDgyNTkyLC
-0xMTg1ODIwODIzLDM1MjQyOTUsLTE3NzI5NTU2NzksLTE1MDM2
-OTQwMCw1NDA1NzY1MywtMTAzMjIzMjUyMywtODQwNjU1MTg5LC
-01NzkzNjU4NjAsLTEzNjM2MzE0MDEsLTE0NzA0MzMzNjMsMTc1
-MTIzNDk5MF19
+eyJoaXN0b3J5IjpbLTY4MzAwMjc5MSwtMTgzMzY5ODE5NSwxND
+IzMDM0ODUwLC0xNTEwNjQ3NDU3LDEzNzk4MDgzODcsMzY4MTUy
+MTUyLC00ODYxODA0NDAsLTE2Nzc5NDgzNiw0OTE4Njg5NjMsLT
+E4MzY0ODI1OTIsLTExODU4MjA4MjMsMzUyNDI5NSwtMTc3Mjk1
+NTY3OSwtMTUwMzY5NDAwLDU0MDU3NjUzLC0xMDMyMjMyNTIzLC
+04NDA2NTUxODksLTU3OTM2NTg2MCwtMTM2MzYzMTQwMSwtMTQ3
+MDQzMzM2M119
 -->
