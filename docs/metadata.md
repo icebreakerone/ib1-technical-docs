@@ -105,7 +105,7 @@ Data Services are represented by `dcat:DataService` objects with the common mand
 : The URL of this specific instance of the API. It is interpolated into the `url` specified in the OpenAPI file using the `endpointURL` variable.
 
 `ib1:oauthIssuer`
-: Where access to data requires end user consent or se, the URL of the [OAuth Issuer](https://datatracker.ietf.org/doc/html/rfc8414#section-2) which is used to authenticate before accessing this Data Service.
+: Where access to data requires end user consent or selection of an account at the provider, the URL of the [OAuth Issuer](https://datatracker.ietf.org/doc/html/rfc8414#section-2) which is used to authenticate before accessing this Data Service. This field is required for data with a `ib1:sensitivityClass` of `IP1-SP`, and may be used for other classes.
 
 `ib1:heartbeatDescription`
 : An optional URL of an OpenAPI file (with Server specified as `dcat:endpointDescription`), which contains a single Path with a 200 response defined. This term will typically be the URL of one of a small number of standard OpenAPI files published in the Registry.
@@ -240,11 +240,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI0OTM3Nzg3LDI1NzQzMjI5OCwxNzI3ND
-A1MzUxLDExMDM1MjQzMTUsNDI5NjkzNDEyLC02ODMwMDI3OTEs
-LTE4MzM2OTgxOTUsMTQyMzAzNDg1MCwtMTUxMDY0NzQ1NywxMz
-c5ODA4Mzg3LDM2ODE1MjE1MiwtNDg2MTgwNDQwLC0xNjc3OTQ4
-MzYsNDkxODY4OTYzLC0xODM2NDgyNTkyLC0xMTg1ODIwODIzLD
-M1MjQyOTUsLTE3NzI5NTU2NzksLTE1MDM2OTQwMCw1NDA1NzY1
-M119
+eyJoaXN0b3J5IjpbMTc5MjMxNTYyNywyNTc0MzIyOTgsMTcyNz
+QwNTM1MSwxMTAzNTI0MzE1LDQyOTY5MzQxMiwtNjgzMDAyNzkx
+LC0xODMzNjk4MTk1LDE0MjMwMzQ4NTAsLTE1MTA2NDc0NTcsMT
+M3OTgwODM4NywzNjgxNTIxNTIsLTQ4NjE4MDQ0MCwtMTY3Nzk0
+ODM2LDQ5MTg2ODk2MywtMTgzNjQ4MjU5MiwtMTE4NTgyMDgyMy
+wzNTI0Mjk1LC0xNzcyOTU1Njc5LC0xNTAzNjk0MDAsNTQwNTc2
+NTNdfQ==
 -->
