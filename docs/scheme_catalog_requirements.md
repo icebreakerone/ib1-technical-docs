@@ -41,7 +41,7 @@ The URL of a Scheme Catalog Requirements Document is a stable identifier that is
 
 They are not versioned, and do not include version numbers in the URLs, as it would prevent easy searching with SPaRQL queries, and require a range of compatible versions to be included in the record.
 
-If a Scheme's standard need
+The Scheme Catalog Requirements Documents may be updated with backwards compatible changes, for example, adding additional groups who are permitted to use the data source. Consumers which rely on these changes will need to 
 
 ## Object specification
 
@@ -74,7 +74,7 @@ The requirements for terms in the `ib1:requiredMetadata` are modified by terms i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Njg0NTM4NTgsMjYzODQyMjE5LC0xNj
+eyJoaXN0b3J5IjpbLTEwNDkzNzU2OTYsMjYzODQyMjE5LC0xNj
 czMDIzMzUxLDk5NTY4MzE3OSwxNDQ0ODc1ODI1LDY3NDU3NjQ4
 MSwtMTc5NDQ5NTA0NiwtNTI4NjQ1NzM3LDEzODk3MDIwMzgsMT
 ExMzEyODk2OSwxMjY4ODM2NzA4XX0=
