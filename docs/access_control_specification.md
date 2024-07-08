@@ -35,7 +35,7 @@ The Registry maintains an RDF document at a well known URL which maps Licence UR
 
 The document is one or more `ib1:LicenceInterpretation` objects.
 
-The full legal text of the licence, linked from this RDF document, is the definitive description of what is allowed under this licence and the conditions for using the data. A user does not need to refer to this legal text to intepret the Grants and Obligations in this description, but they do need to rely on the 
+The full legal text of the licence, linked from this RDF document, is the definitive description of what is allowed under this licence and the conditions for using the data. A user does not need to refer to this legal text to interpret the Grants and Obligations in this description, but they do need to rely on the legal governance process to accurately reflect the licence in the interpretation.
 
 The Grants listed in this interpretation are a list of things that can be done, but it may be incomplete, and does not include any things that cannot be done. Similarly, the list of Obligations may be incomplete. A licence interpretation which only contains the URL of the legal text with no Grants or Obligations is valid, and makes no claims about the contents of the legal text.
 
@@ -139,7 +139,7 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzMzMjM1MDksODk2NTY1MTEwLDEyMD
+eyJoaXN0b3J5IjpbLTEwMTk5ODkzODIsODk2NTY1MTEwLDEyMD
 MyODc1MjYsLTE0MzkxODUxNywyMDUxMTMzMjEyLDIwMDU4MDU0
 NjAsNjExODUxNzY4LC04Mjk5NzM0MjcsMTkxMzMwNjE5MiwtMT
 E4ODE5OTQ5NSwtMjEzOTk0Nzg1MywyMDgwMjE4MzQsNzQwMTE3
