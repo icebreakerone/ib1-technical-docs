@@ -55,10 +55,13 @@ The requirements for terms in the `ib1:requiredMetadata` are modified by terms i
 `ib1:includeOneOf <term>`
 : Exactly one of the values in the requirements must be included for this term. No other values are allowed.
 
+`ib1:HasAnyValue <term>`
+: 
 
+`ib1:
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzMwMjMzNTEsOTk1NjgzMTc5LDE0ND
-Q4NzU4MjUsNjc0NTc2NDgxLC0xNzk0NDk1MDQ2LC01Mjg2NDU3
-MzcsMTM4OTcwMjAzOCwxMTEzMTI4OTY5LDEyNjg4MzY3MDhdfQ
-==
+eyJoaXN0b3J5IjpbMTc5MzI2MjI1MiwtMTY3MzAyMzM1MSw5OT
+U2ODMxNzksMTQ0NDg3NTgyNSw2NzQ1NzY0ODEsLTE3OTQ0OTUw
+NDYsLTUyODY0NTczNywxMzg5NzAyMDM4LDExMTMxMjg5NjksMT
+I2ODgzNjcwOF19
 -->
