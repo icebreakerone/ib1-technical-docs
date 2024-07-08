@@ -33,7 +33,9 @@ These rules specify that members of either the "Report Provider" and "Archivers"
 
 The Registry maintains an RDF document at a well known URL which maps Licence URLs to Grants (what you are allowed to do with the data) and Obligations (what you must do when providing derivative data to others).
 
-The full legal text of the licence, linked from this RDF document, is the definitive description of what is allowed under this licence and the conditions for using the data. The Grants listed in this interpretation are a list of things that can be done, but it may be incomplete and does not include any things that cannot be done. Simiarly,The Obligations is similarly a potentially incomplete list.
+The full legal text of the licence, linked from this RDF document, is the definitive description of what is allowed under this licence and the conditions for using the data. The Grants listed in this interpretation are a list of things that can be done, but it may be incomplete and does not include any things that cannot be done. Similarly, the list of Obligations is potentially incomplete.
+
+Schemes should prefer to use Grants and Obligations that are defined in the underlying Trust Framework schema, then those defined by their own Trust Framework, and finally, create custom Grants and Obligations 
 
 The document is one or more `ib1:LicenceInterpretation` objects.
 
@@ -135,7 +137,7 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MTE5MTI0Nyw4OTY1NjUxMTAsMTIwMz
+eyJoaXN0b3J5IjpbLTg1NjkyMTMxMSw4OTY1NjUxMTAsMTIwMz
 I4NzUyNiwtMTQzOTE4NTE3LDIwNTExMzMyMTIsMjAwNTgwNTQ2
 MCw2MTE4NTE3NjgsLTgyOTk3MzQyNywxOTEzMzA2MTkyLC0xMT
 g4MTk5NDk1LC0yMTM5OTQ3ODUzLDIwODAyMTgzNCw3NDAxMTc0
