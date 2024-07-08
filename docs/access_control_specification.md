@@ -41,6 +41,7 @@ The document is one or more `ib1:LicenceInterpretation` objects.
 
 <https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4>
 		a ib1:LicenceInterpretation ;
+	dcterms:license https://https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4/legal-text
 	ib1:grant ib1:use_any ;
 	ib1:grant ib1:adapt_any ;
 	ib1:grant ib1:combine_any ;
@@ -49,6 +50,8 @@ The document is one or more `ib1:LicenceInterpretation` objects.
 	ib1:obligation ib1:by;
 .
 ```
+[dcterms:license](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/license/)
+: The URL of the full legal text of the .
 
 `ib1:grant`
 : The URL of a Grant, with the meaning defined in the contracts which govern the Trust Framework. A consumer may ignore any Grant that they do not understand and use the licence.
@@ -130,10 +133,10 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MDgxNTgwLDg5NjU2NTExMCwxMjAzMj
-g3NTI2LC0xNDM5MTg1MTcsMjA1MTEzMzIxMiwyMDA1ODA1NDYw
-LDYxMTg1MTc2OCwtODI5OTczNDI3LDE5MTMzMDYxOTIsLTExOD
-gxOTk0OTUsLTIxMzk5NDc4NTMsMjA4MDIxODM0LDc0MDExNzQ0
-OSwtMjEzMzk3OTQ2MywtNzQxMTM2MDkwLDkzNTA4Mzc0NywtOT
-Y5MzAxMjUwLDExNzYxOTA5MDEsLTE5NjkxMzg4MjJdfQ==
+eyJoaXN0b3J5IjpbLTEwMDY5ODcxMjUsODk2NTY1MTEwLDEyMD
+MyODc1MjYsLTE0MzkxODUxNywyMDUxMTMzMjEyLDIwMDU4MDU0
+NjAsNjExODUxNzY4LC04Mjk5NzM0MjcsMTkxMzMwNjE5MiwtMT
+E4ODE5OTQ5NSwtMjEzOTk0Nzg1MywyMDgwMjE4MzQsNzQwMTE3
+NDQ5LC0yMTMzOTc5NDYzLC03NDExMzYwOTAsOTM1MDgzNzQ3LC
+05NjkzMDEyNTAsMTE3NjE5MDkwMSwtMTk2OTEzODgyMl19
 -->
