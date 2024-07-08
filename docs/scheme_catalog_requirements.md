@@ -39,9 +39,9 @@ Because the API does not require end user consent, `ib1:requireAbsenceOf` is use
 
 The URL of a Scheme Catalog Requirements Document is a stable identifier that is used to find data sources in the Catalog by searching for all entries with this URL in the `dcterms:conformsTo` term.
 
-They are not versioned, and do not include version numbers in the URLs, as it would prevent easy searching with SPaRQL queries, and require a range of compatible versions to be included in the record.
+Scheme Catalog Requirements Documents are not versioned, and do not include version numbers in their URLs. Versioned URLs would prevent easy searching with SPARQL queries, and require a range of compatible versions to be included in the record.
 
-Scheme Catalog Requirements Documents may be updated with backwards compatible changes, for example, adding additional groups who are permitted to use the data source. A compliance process will detect out-of-date catalog entries, and notify providers to review the changes and update their record. Consumers which rely on these changes will need to verify that 
+Scheme Catalog Requirements Documents may be updated with backwards compatible changes, for example, adding additional groups who are permitted to use the data source. Existing records are not updated automatically. A compliance process will detect out-of-date catalog entries, and notify providers to review the changes and update their record.
 
 ## Object specification
 
@@ -74,8 +74,8 @@ The requirements for terms in the `ib1:requiredMetadata` are modified by terms i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzNTQ1NjM1OSwyNjM4NDIyMTksLTE2Nz
-MwMjMzNTEsOTk1NjgzMTc5LDE0NDQ4NzU4MjUsNjc0NTc2NDgx
-LC0xNzk0NDk1MDQ2LC01Mjg2NDU3MzcsMTM4OTcwMjAzOCwxMT
-EzMTI4OTY5LDEyNjg4MzY3MDhdfQ==
+eyJoaXN0b3J5IjpbMjgwODY0LDI2Mzg0MjIxOSwtMTY3MzAyMz
+M1MSw5OTU2ODMxNzksMTQ0NDg3NTgyNSw2NzQ1NzY0ODEsLTE3
+OTQ0OTUwNDYsLTUyODY0NTczNywxMzg5NzAyMDM4LDExMTMxMj
+g5NjksMTI2ODgzNjcwOF19
 -->
