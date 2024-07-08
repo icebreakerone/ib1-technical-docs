@@ -35,6 +35,10 @@ For access control, it specifies the `ib1:sensitivityClass`, and who can use the
 
 Because the API does not require end user consent, `ib1:requireAbsenceOf` is used to prohibit the use of an OAuth Issuer.
 
+## Versions
+
+Scheme Catalog Requirements Document are not versioned, as 
+
 ## Object specification
 
 An `ib1:SchemeCatalogRequirements` RDF object must contain these fields:
@@ -66,7 +70,7 @@ The requirements for terms in the `ib1:requiredMetadata` are modified by terms i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NjAzMzg1NSwyNjM4NDIyMTksLTE2Nz
+eyJoaXN0b3J5IjpbMTk1MDI5NjA4NywyNjM4NDIyMTksLTE2Nz
 MwMjMzNTEsOTk1NjgzMTc5LDE0NDQ4NzU4MjUsNjc0NTc2NDgx
 LC0xNzk0NDk1MDQ2LC01Mjg2NDU3MzcsMTM4OTcwMjAzOCwxMT
 EzMTI4OTY5LDEyNjg4MzY3MDhdfQ==
