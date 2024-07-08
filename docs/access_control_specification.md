@@ -8,6 +8,10 @@ The Registry maintains a list of the permissions and obligations for access to a
 
 Scheme-conforming data sources use [Scheme Catalog Requirements Documents](scheme_catalog_requirements.md) which specify the Access Rules for common formats of data sources.
 
+## Changes from Open Energy
+
+
+
 ## Example
 
 ```
@@ -123,10 +127,10 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMzI4NzUyNiwtMTQzOTE4NTE3LDIwNT
-ExMzMyMTIsMjAwNTgwNTQ2MCw2MTE4NTE3NjgsLTgyOTk3MzQy
-NywxOTEzMzA2MTkyLC0xMTg4MTk5NDk1LC0yMTM5OTQ3ODUzLD
-IwODAyMTgzNCw3NDAxMTc0NDksLTIxMzM5Nzk0NjMsLTc0MTEz
-NjA5MCw5MzUwODM3NDcsLTk2OTMwMTI1MCwxMTc2MTkwOTAxLC
-0xOTY5MTM4ODIyXX0=
+eyJoaXN0b3J5IjpbLTE2Mjg3MTA3ODMsMTIwMzI4NzUyNiwtMT
+QzOTE4NTE3LDIwNTExMzMyMTIsMjAwNTgwNTQ2MCw2MTE4NTE3
+NjgsLTgyOTk3MzQyNywxOTEzMzA2MTkyLC0xMTg4MTk5NDk1LC
+0yMTM5OTQ3ODUzLDIwODAyMTgzNCw3NDAxMTc0NDksLTIxMzM5
+Nzk0NjMsLTc0MTEzNjA5MCw5MzUwODM3NDcsLTk2OTMwMTI1MC
+wxMTc2MTkwOTAxLC0xOTY5MTM4ODIyXX0=
 -->
