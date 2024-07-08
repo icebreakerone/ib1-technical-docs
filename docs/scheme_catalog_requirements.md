@@ -24,13 +24,16 @@ It is an RDF document published by the Registry.
 	    ib1:permitGroup <https://directory.estf.ib1.org/scheme/electricity/group/report-provider> ;
 	    dcterms:licence <https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4> ;
 	];
-	ib1:includeAllAllowAdditional ib1:permitGroup ;
+	ib1:allowAdditional ib1:permitGroup ;
+	ib1:requireAbsenceOf ib1:oauthIssuer ;
 .
 ```
 
 This example defines a standard Supply Voltage API that is provided by multiple providers in a Trust Framework. It specifies the API in detail with the `dcat:endpointDescription` referring to an OpenAPI specification hosted by the Registry. It uses a standard `ib1:heartbeatDescription` to check for liveness, using a standard heartbeat request defined in an OpenAPI specification hosted by the Registry.
 
 For access control, it specifies the `ib1:sensitivityClass`, and who can use the API with `ib1:permitGroup`. Because `ib1:includeAllAllowAditional` is used for the access rules, it allows the publisher to widen access to additional groups, as long as the groups in this document are included.
+
+Because the API does not require end user consent, the `ib1:
 
 ## Object specification
 
@@ -58,9 +61,11 @@ The requirements for terms in the `ib1:requiredMetadata` are modified by terms i
 `ib1:requireAnyValue <term>`
 : 
 
-`ib1:require
+`ib1:requireAbsenceOf <term>`
+: 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NzkzNTgyNCwtMTY3MzAyMzM1MSw5OT
+eyJoaXN0b3J5IjpbMTU1ODkyMzcxOCwtMTY3MzAyMzM1MSw5OT
 U2ODMxNzksMTQ0NDg3NTgyNSw2NzQ1NzY0ODEsLTE3OTQ0OTUw
 NDYsLTUyODY0NTczNywxMzg5NzAyMDM4LDExMTMxMjg5NjksMT
 I2ODgzNjcwOF19
