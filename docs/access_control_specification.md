@@ -8,6 +8,12 @@ The Registry maintains a list of the permissions and obligations for access to a
 
 Scheme-conforming data sources use [Scheme Catalog Requirements Documents](scheme_catalog_requirements.md) which specify the Access Rules for common formats of data sources.
 
+## Changes from Open Energy
+
+This access control specification is a simplification of Open Energy's access control. Open Energy was designed for one-to-many data products, which required the flexibility for each data provider to describe the individual access requirements for each of their products. Data sharing in a Trust Framework is many-to-many, where the access requirements are set by a sector-wide governance process.
+
+This specification will be iterated as use cases emerge. The current expectation, reflected in this specification, is that the governance process will describe the minimum set of roles permitted to access data under a specific licence, and the data provider may be allowed to expand this to additional roles.
+
 ## Example
 
 ```
@@ -29,11 +35,19 @@ The Registry maintains an RDF document at a well known URL which maps Licence UR
 
 The document is one or more `ib1:LicenceInterpretation` objects.
 
+The full legal text of the licence, linked from this RDF document, is the definitive description of what is allowed under this licence and the conditions for using the data. A user does not need to refer to this legal text to interpret the Grants and Obligations in this description, but they do need to rely on the legal governance process to accurately reflect the licence in the interpretation.
+
+The Grants listed in this interpretation are a list of things that can be done, but it may be incomplete, and does not include any things that cannot be done. Similarly, the list of Obligations may be incomplete. A licence interpretation which only contains the URL of the legal text with no Grants or Obligations is valid, and makes no claims about the contents of the legal text.
+
+For interoperability and consistency, Schemes should prefer to use Grants and Obligations that are defined in the underlying Trust Framework schema, then those defined by their own Trust Framework, and finally, create custom Grants and Obligations for their Scheme.
+
 ```
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix ib1: <http://registry.ib1.org/ns/1.0#>
 
 <https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4>
 		a ib1:LicenceInterpretation ;
+	dcterms:license https://https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4/legal-text
 	ib1:grant ib1:use_any ;
 	ib1:grant ib1:adapt_any ;
 	ib1:grant ib1:combine_any ;
@@ -42,6 +56,8 @@ The document is one or more `ib1:LicenceInterpretation` objects.
 	ib1:obligation ib1:by;
 .
 ```
+[dcterms:license](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/license/)
+: The URL of the full legal text of the licence. This term is required.
 
 `ib1:grant`
 : The URL of a Grant, with the meaning defined in the contracts which govern the Trust Framework. A consumer may ignore any Grant that they do not understand and use the licence.
