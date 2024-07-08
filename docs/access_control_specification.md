@@ -33,7 +33,7 @@ These rules specify that members of either the "Report Provider" and "Archivers"
 
 The Registry maintains an RDF document at a well known URL which maps Licence URLs to Grants (what you are allowed to do with the data) and Obligations (what you must do when providing derivative data to others).
 
-The full legal text of the licence, linked from this RDF document, is the definitive description of what is allowed under this licence.
+The full legal text of the licence, linked from this RDF document, is the definitive description of what is allowed under this licence. The Grants listed in this interpretation are a list of things that can be done, but it may be incomplete and does not include any things that cannot be done. The
 
 The document is one or more `ib1:LicenceInterpretation` objects.
 
@@ -135,10 +135,10 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk3MzcxNDcxLDg5NjU2NTExMCwxMjAzMj
-g3NTI2LC0xNDM5MTg1MTcsMjA1MTEzMzIxMiwyMDA1ODA1NDYw
-LDYxMTg1MTc2OCwtODI5OTczNDI3LDE5MTMzMDYxOTIsLTExOD
-gxOTk0OTUsLTIxMzk5NDc4NTMsMjA4MDIxODM0LDc0MDExNzQ0
-OSwtMjEzMzk3OTQ2MywtNzQxMTM2MDkwLDkzNTA4Mzc0NywtOT
-Y5MzAxMjUwLDExNzYxOTA5MDEsLTE5NjkxMzg4MjJdfQ==
+eyJoaXN0b3J5IjpbMTUwNDIwOTcyNCw4OTY1NjUxMTAsMTIwMz
+I4NzUyNiwtMTQzOTE4NTE3LDIwNTExMzMyMTIsMjAwNTgwNTQ2
+MCw2MTE4NTE3NjgsLTgyOTk3MzQyNywxOTEzMzA2MTkyLC0xMT
+g4MTk5NDk1LC0yMTM5OTQ3ODUzLDIwODAyMTgzNCw3NDAxMTc0
+NDksLTIxMzM5Nzk0NjMsLTc0MTEzNjA5MCw5MzUwODM3NDcsLT
+k2OTMwMTI1MCwxMTc2MTkwOTAxLC0xOTY5MTM4ODIyXX0=
 -->
