@@ -79,7 +79,7 @@ The following fields must be included in every DCAT object. Metadata will be vis
 
 `ib1:sensitivityClass`
 : The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this dataset. In the current IB1 Trust Framework this should always be one of [IB1-O](glossary.md#term-Data-sensitivity-class-open),  [IB1-SA](glossary.md#term-Data-sensitivity-class-shared-A) or [IB1-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](glossary.md#term-Application-programming-interface) security imposed, with [IB1-O](glossary.md#term-Data-sensitivity-class-open) datasets being open data with no additional security, and the two shared data classes mandating [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.
-*Under development:* [IB1-SP](glossary.md#term-Data-sensitivity-class-personal) may be used for Data Service APIs which expose personal data with the end user's consent, in whch The `ib1:oauthIssuer` term must be present.
+*Under development:* [IB1-SP](glossary.md#term-Data-sensitivity-class-personal) may be used for Data Service APIs which expose personal data with the end user's consent, in which case the `ib1:oauthIssuer` term must be present.
 
 More information about publishing assured data within a Trust Framework is available on the [How to become an assured data publisher](https://icebreakerone.org/sops/assured-data-publishing/) section of the Icebreaker One website.
 
@@ -240,11 +240,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTY0MzA5NzksMTc5MjMxNTYyNywyNT
-c0MzIyOTgsMTcyNzQwNTM1MSwxMTAzNTI0MzE1LDQyOTY5MzQx
-MiwtNjgzMDAyNzkxLC0xODMzNjk4MTk1LDE0MjMwMzQ4NTAsLT
-E1MTA2NDc0NTcsMTM3OTgwODM4NywzNjgxNTIxNTIsLTQ4NjE4
-MDQ0MCwtMTY3Nzk0ODM2LDQ5MTg2ODk2MywtMTgzNjQ4MjU5Mi
-wtMTE4NTgyMDgyMywzNTI0Mjk1LC0xNzcyOTU1Njc5LC0xNTAz
-Njk0MDBdfQ==
+eyJoaXN0b3J5IjpbLTQ2OTU4MzIzOCwxNzkyMzE1NjI3LDI1Nz
+QzMjI5OCwxNzI3NDA1MzUxLDExMDM1MjQzMTUsNDI5NjkzNDEy
+LC02ODMwMDI3OTEsLTE4MzM2OTgxOTUsMTQyMzAzNDg1MCwtMT
+UxMDY0NzQ1NywxMzc5ODA4Mzg3LDM2ODE1MjE1MiwtNDg2MTgw
+NDQwLC0xNjc3OTQ4MzYsNDkxODY4OTYzLC0xODM2NDgyNTkyLC
+0xMTg1ODIwODIzLDM1MjQyOTUsLTE3NzI5NTU2NzksLTE1MDM2
+OTQwMF19
 -->
