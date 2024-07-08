@@ -36,6 +36,7 @@ The Registry maintains an RDF document at a well known URL which maps Licence UR
 The document is one or more `ib1:LicenceInterpretation` objects.
 
 ```
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix ib1: <http://registry.ib1.org/ns/1.0#>
 
 <https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4>
@@ -129,10 +130,10 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk2NTY1MTEwLDEyMDMyODc1MjYsLTE0Mz
-kxODUxNywyMDUxMTMzMjEyLDIwMDU4MDU0NjAsNjExODUxNzY4
-LC04Mjk5NzM0MjcsMTkxMzMwNjE5MiwtMTE4ODE5OTQ5NSwtMj
-EzOTk0Nzg1MywyMDgwMjE4MzQsNzQwMTE3NDQ5LC0yMTMzOTc5
-NDYzLC03NDExMzYwOTAsOTM1MDgzNzQ3LC05NjkzMDEyNTAsMT
-E3NjE5MDkwMSwtMTk2OTEzODgyMl19
+eyJoaXN0b3J5IjpbMTQ3MDgxNTgwLDg5NjU2NTExMCwxMjAzMj
+g3NTI2LC0xNDM5MTg1MTcsMjA1MTEzMzIxMiwyMDA1ODA1NDYw
+LDYxMTg1MTc2OCwtODI5OTczNDI3LDE5MTMzMDYxOTIsLTExOD
+gxOTk0OTUsLTIxMzk5NDc4NTMsMjA4MDIxODM0LDc0MDExNzQ0
+OSwtMjEzMzk3OTQ2MywtNzQxMTM2MDkwLDkzNTA4Mzc0NywtOT
+Y5MzAxMjUwLDExNzYxOTA5MDEsLTE5NjkxMzg4MjJdfQ==
 -->
