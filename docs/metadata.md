@@ -79,6 +79,7 @@ The following fields must be included in every DCAT object. Metadata will be vis
 
 `ib1:sensitivityClass`
 : The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this dataset. In the current IB1 Trust Framework this should always be one of [IB1-O](glossary.md#term-Data-sensitivity-class-open),  [IB1-SA](glossary.md#term-Data-sensitivity-class-shared-A) or [IB1-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](glossary.md#term-Application-programming-interface) security imposed, with [IB1-O](glossary.md#term-Data-sensitivity-class-open) datasets being open data with no additional security, and the two shared data classes mandating [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.
+*Under development:* [IB1-SP](glossary.md#term-Data-sensitivity-class-personal) may be used for APIs which expose personal data with the end user's consent. The `ib1:oauthIssuer` term must be present.
 
 More information about publishing assured data within a Trust Framework is available on the [How to become an assured data publisher](https://icebreakerone.org/sops/assured-data-publishing/) section of the Icebreaker One website.
 
@@ -102,6 +103,9 @@ Data Services are represented by `dcat:DataService` objects with the common mand
 
 `dcat:endpointURL`
 : The URL of this specific instance of the API. It is interpolated into the `url` specified in the OpenAPI file using the `endpointURL` variable.
+
+`ib1:oauthIssuer`
+: Where access to data requires end user consent or selection of an account at the provider, the URL of the [OAuth Issuer](https://datatracker.ietf.org/doc/html/rfc8414#section-2) which is used to authenticate before accessing this Data Service. This field is required for data with a `ib1:sensitivityClass` of `IP1-SP`, and may be used for other classes.
 
 `ib1:heartbeatDescription`
 : An optional URL of an OpenAPI file (with Server specified as `dcat:endpointDescription`), which contains a single Path with a 200 response defined. This term will typically be the URL of one of a small number of standard OpenAPI files published in the Registry.
