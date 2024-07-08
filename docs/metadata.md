@@ -79,7 +79,7 @@ The following fields must be included in every DCAT object. Metadata will be vis
 
 `ib1:sensitivityClass`
 : The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this dataset. In the current IB1 Trust Framework this should always be one of [IB1-O](glossary.md#term-Data-sensitivity-class-open),  [IB1-SA](glossary.md#term-Data-sensitivity-class-shared-A) or [IB1-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](glossary.md#term-Application-programming-interface) security imposed, with [IB1-O](glossary.md#term-Data-sensitivity-class-open) datasets being open data with no additional security, and the two shared data classes mandating [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.
-Under development
+*Under development:* [IB1-SP](glossay.md#term-Data-sensitivity-class-shared-) 
 
 More information about publishing assured data within a Trust Framework is available on the [How to become an assured data publisher](https://icebreakerone.org/sops/assured-data-publishing/) section of the Icebreaker One website.
 
@@ -240,11 +240,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMzUyNDMxNSw0Mjk2OTM0MTIsLTY4Mz
-AwMjc5MSwtMTgzMzY5ODE5NSwxNDIzMDM0ODUwLC0xNTEwNjQ3
-NDU3LDEzNzk4MDgzODcsMzY4MTUyMTUyLC00ODYxODA0NDAsLT
-E2Nzc5NDgzNiw0OTE4Njg5NjMsLTE4MzY0ODI1OTIsLTExODU4
-MjA4MjMsMzUyNDI5NSwtMTc3Mjk1NTY3OSwtMTUwMzY5NDAwLD
-U0MDU3NjUzLC0xMDMyMjMyNTIzLC04NDA2NTUxODksLTU3OTM2
-NTg2MF19
+eyJoaXN0b3J5IjpbMTcyNzQwNTM1MSwxMTAzNTI0MzE1LDQyOT
+Y5MzQxMiwtNjgzMDAyNzkxLC0xODMzNjk4MTk1LDE0MjMwMzQ4
+NTAsLTE1MTA2NDc0NTcsMTM3OTgwODM4NywzNjgxNTIxNTIsLT
+Q4NjE4MDQ0MCwtMTY3Nzk0ODM2LDQ5MTg2ODk2MywtMTgzNjQ4
+MjU5MiwtMTE4NTgyMDgyMywzNTI0Mjk1LC0xNzcyOTU1Njc5LC
+0xNTAzNjk0MDAsNTQwNTc2NTMsLTEwMzIyMzI1MjMsLTg0MDY1
+NTE4OV19
 -->
