@@ -35,6 +35,14 @@ For access control, it specifies the `ib1:sensitivityClass`, and who can use the
 
 Because the API does not require end user consent, `ib1:requireAbsenceOf` is used to prohibit the use of an OAuth Issuer.
 
+## Versions
+
+The URL of a Scheme Catalog Requirements Document is a stable identifier that is used to find data sources in the Catalog by searching for all entries with this URL in the `dcterms:conformsTo` term.
+
+Scheme Catalog Requirements Documents are not versioned, and do not include version numbers in their URLs. Versioned URLs would prevent easy searching with SPARQL queries, and require a range of compatible versions to be included in the record.
+
+Scheme Catalog Requirements Documents may be updated with backwards compatible changes, for example, adding additional groups who are permitted to use the data source. Existing records are not updated automatically. A compliance process will detect out-of-date catalog entries, and notify providers to review the changes and update their record.
+
 ## Object specification
 
 An `ib1:SchemeCatalogRequirements` RDF object must contain these fields:
