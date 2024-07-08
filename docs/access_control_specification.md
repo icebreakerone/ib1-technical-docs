@@ -10,7 +10,7 @@ Scheme-conforming data sources use [Scheme Catalog Requirements Documents](schem
 
 ## Changes from Open Energy
 
-This access control specification is a simplification of access control within Open Energy, designed 
+This access control specification is a simplification of Open Energy's access control. Open Energy was designed for one-to-many data products, requiring the flexibility to describe individual access control designed for many-to-many data sharing.
 
 ## Example
 
@@ -127,10 +127,10 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMjA3NDUwNSwxMjAzMjg3NTI2LC0xND
-M5MTg1MTcsMjA1MTEzMzIxMiwyMDA1ODA1NDYwLDYxMTg1MTc2
-OCwtODI5OTczNDI3LDE5MTMzMDYxOTIsLTExODgxOTk0OTUsLT
-IxMzk5NDc4NTMsMjA4MDIxODM0LDc0MDExNzQ0OSwtMjEzMzk3
-OTQ2MywtNzQxMTM2MDkwLDkzNTA4Mzc0NywtOTY5MzAxMjUwLD
-ExNzYxOTA5MDEsLTE5NjkxMzg4MjJdfQ==
+eyJoaXN0b3J5IjpbLTIxMTI5MTg5LDEyMDMyODc1MjYsLTE0Mz
+kxODUxNywyMDUxMTMzMjEyLDIwMDU4MDU0NjAsNjExODUxNzY4
+LC04Mjk5NzM0MjcsMTkxMzMwNjE5MiwtMTE4ODE5OTQ5NSwtMj
+EzOTk0Nzg1MywyMDgwMjE4MzQsNzQwMTE3NDQ5LC0yMTMzOTc5
+NDYzLC03NDExMzYwOTAsOTM1MDgzNzQ3LC05NjkzMDEyNTAsMT
+E3NjE5MDkwMSwtMTk2OTEzODgyMl19
 -->
