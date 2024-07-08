@@ -35,9 +35,11 @@ The Registry maintains an RDF document at a well known URL which maps Licence UR
 
 The document is one or more `ib1:LicenceInterpretation` objects.
 
-The full legal text of the licence, linked from this RDF document, is the definitive description of what is allowed under this licence and the conditions for using the data. The Grants listed in this interpretation are a list of things that can be done, but it may be incomplete and does not include any things that cannot be done. Similarly, the list of Obligations is potentially incomplete.
+The full legal text of the licence, linked from this RDF document, is the definitive description of what is allowed under this licence and the conditions for using the data.
 
-A licence interpretation which only contains the URL of the legal text with no Grants or Obligations is valid.
+The Grants listed in this interpretation are a list of things that can be done, but it may be incomplete, and does not include any things that cannot be done. Similarly, the list of Obligations may be incomplete.
+
+A licence interpretation which only contains the URL of the legal text with no Grants or Obligations is valid, and makes no claims about the contents of the legal text.
 
 For interoperability and consistency, Schemes should prefer to use Grants and Obligations that are defined in the underlying Trust Framework schema, then those defined by their own Trust Framework, and finally, create custom Grants and Obligations for their Scheme.
 
@@ -139,10 +141,10 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjMxNDE5NDIsODk2NTY1MTEwLDEyMD
-MyODc1MjYsLTE0MzkxODUxNywyMDUxMTMzMjEyLDIwMDU4MDU0
-NjAsNjExODUxNzY4LC04Mjk5NzM0MjcsMTkxMzMwNjE5MiwtMT
-E4ODE5OTQ5NSwtMjEzOTk0Nzg1MywyMDgwMjE4MzQsNzQwMTE3
-NDQ5LC0yMTMzOTc5NDYzLC03NDExMzYwOTAsOTM1MDgzNzQ3LC
-05NjkzMDEyNTAsMTE3NjE5MDkwMSwtMTk2OTEzODgyMl19
+eyJoaXN0b3J5IjpbLTkwNzkxODEzNSw4OTY1NjUxMTAsMTIwMz
+I4NzUyNiwtMTQzOTE4NTE3LDIwNTExMzMyMTIsMjAwNTgwNTQ2
+MCw2MTE4NTE3NjgsLTgyOTk3MzQyNywxOTEzMzA2MTkyLC0xMT
+g4MTk5NDk1LC0yMTM5OTQ3ODUzLDIwODAyMTgzNCw3NDAxMTc0
+NDksLTIxMzM5Nzk0NjMsLTc0MTEzNjA5MCw5MzUwODM3NDcsLT
+k2OTMwMTI1MCwxMTc2MTkwOTAxLC0xOTY5MTM4ODIyXX0=
 -->
