@@ -33,7 +33,7 @@ This example defines a standard Supply Voltage API that is provided by multiple 
 
 For access control, it specifies the `ib1:sensitivityClass`, and who can use the API with `ib1:permitGroup`. Because `ib1:requireAllAndAllowAdditional` is used for the access rules, it allows the publisher to widen access to additional groups, as long as the groups in this document are included.
 
-Because the API does not require end user consent, `ib1:requireAbsenceOf` is used to prohibit the specification of an OAuth Issuer.
+Because the API does not require end user consent, `ib1:requireAbsenceOf` is used to prohibit the use of an OAuth Issuer.
 
 ## Object specification
 
@@ -59,14 +59,15 @@ The requirements for terms in the `ib1:requiredMetadata` are modified by terms i
 : Exactly one of the values in the requirements must be included for this term. No other values are allowed.
 
 `ib1:requireAnyValue <term>`
-: 
+: The term must be present, with any valid value.
 
 `ib1:requireAbsenceOf <term>`
-: 
+: The term must not be present.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjYzODQyMjE5LC0xNjczMDIzMzUxLDk5NT
-Y4MzE3OSwxNDQ0ODc1ODI1LDY3NDU3NjQ4MSwtMTc5NDQ5NTA0
-NiwtNTI4NjQ1NzM3LDEzODk3MDIwMzgsMTExMzEyODk2OSwxMj
-Y4ODM2NzA4XX0=
+eyJoaXN0b3J5IjpbMTY3NjAzMzg1NSwyNjM4NDIyMTksLTE2Nz
+MwMjMzNTEsOTk1NjgzMTc5LDE0NDQ4NzU4MjUsNjc0NTc2NDgx
+LC0xNzk0NDk1MDQ2LC01Mjg2NDU3MzcsMTM4OTcwMjAzOCwxMT
+EzMTI4OTY5LDEyNjg4MzY3MDhdfQ==
 -->
