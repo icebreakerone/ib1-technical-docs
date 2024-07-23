@@ -1,7 +1,7 @@
 
 # Changelog
 
-## Version 0.2, 17 June 2024
+## Version 0.2beta, 22 June 2024
 
 * [Catalog Metadata](metadata.md) is now a DCAT Dataset or Data Service, extended with IB1 terms.
 	* Standard terms now have restricted meanings when used with a Trust Framework.
