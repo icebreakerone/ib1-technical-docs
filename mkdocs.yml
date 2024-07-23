@@ -11,8 +11,10 @@ nav:
   - 'Trust Framework Architecture': 'architecture.md'
   - 'Dataset Metadata': 'metadata.md'
   - 'Access Control and Capability Grant Language': 'access_control_specification.md'
+  - 'Scheme Catalog Requirements': 'scheme_catalog_requirements.md'
   - 'Glossary': 'glossary.md'
   - 'Additional Material': 'additional_material.md'
+  - 'Changelog': 'changelog.md'
 theme:
   name: material
   logo: assets/logo.png
