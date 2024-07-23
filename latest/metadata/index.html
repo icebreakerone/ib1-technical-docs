@@ -1,30 +1,1102 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Icebreaker One Trust Framework Documentation</title>
-  <noscript>
-    <meta http-equiv="refresh" content="1; url=../../0.1/metadata/" />
-  </noscript>
-  <script>
-    window.location.replace(
-      "../../0.1/metadata/" + window.location.search + window.location.hash
-    );
-  </script>
-  <meta  property="og:type"  content="website" >
-  <meta  property="og:title"  content="Icebreaker One Trust Framework Documentation" >
-  <meta  property="og:description"  content="None" >
-  <meta  property="og:image"  content="https://docs.icebreakerone.org/0.1/assets/images/social/index.png" >
-  <meta  property="og:image:type"  content="image/png" >
-  <meta  property="og:image:width"  content="1200" >
-  <meta  property="og:image:height"  content="630" >
-  <meta  property="og:url"  content="https://docs.icebreakerone.org/0.1/" >
-  <meta  name="twitter:card"  content="summary_large_image" >
-  <meta  name="twitter:title"  content="Icebreaker One Trust Framework Documentation" >
-  <meta  name="twitter:description"  content="None" >
-  <meta  name="twitter:image"  content="https://docs.icebreakerone.org/0.1/assets/images/social/index.png" >
-</head>
-<body>
-  Redirecting to <a href="../../0.1/metadata/">../../0.1/metadata/</a>...
-</body>
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.icebreakerone.org/0.2beta/metadata/">
+      
+      
+        <link rel="prev" href="../architecture/">
+      
+      
+        <link rel="next" href="../access_control_specification/">
+      
+      
+      <link rel="icon" href="../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30">
+    
+    
+      
+        <title>Dataset Metadata - Icebreaker One Trust Framework Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Dataset Metadata - Icebreaker One Trust Framework Documentation" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="https://docs.icebreakerone.org/0.2beta/assets/images/social/metadata.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://docs.icebreakerone.org/0.2beta/metadata/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Dataset Metadata - Icebreaker One Trust Framework Documentation" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="https://docs.icebreakerone.org/0.2beta/assets/images/social/metadata.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="ib1-light" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#dataset-data-service-metadata" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+  You're not viewing the latest version.
+  <a href="../.."> 
+    <strong>Click here to go to latest.</strong>
+  </a>
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),outdated=__md_get("__outdated",sessionStorage);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Icebreaker One Trust Framework Documentation" class="md-header__button md-logo" aria-label="Icebreaker One Trust Framework Documentation" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Icebreaker One Trust Framework Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Dataset Metadata
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="ib1-light" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="ib1-dark" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/icebreakerone/ib1-technical-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Icebreaker One Trust Framework Documentation" class="md-nav__button md-logo" aria-label="Icebreaker One Trust Framework Documentation" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Icebreaker One Trust Framework Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/icebreakerone/ib1-technical-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ops_guidelines/introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to the IB1 Trust Framework
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ops_guidelines/before_starting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Considerations before you start
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ops_guidelines/common_policies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Core Policies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ops_guidelines/data_consumer_ops_guidelines/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guidance for Data Consumers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ops_guidelines/data_provider_ops_guidelines/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guidance for Data Providers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ops_guidelines/technical_common/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Security Requirements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trust Framework Architecture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Dataset Metadata
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Dataset Metadata
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dataset-or-data-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dataset or Data Service?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scheme-conforming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scheme-conforming
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metadata-file-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metadata File Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mandatory-metadata-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mandatory metadata fields
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conformance-and-access-control-metadata-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conformance and access control metadata fields
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-service-metadata-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Service metadata fields
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataset-metadata-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dataset metadata fields
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dataset metadata fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#distribution-metadata-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Distribution metadata fields
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-metadata-for-datasets-and-data-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional metadata for Datasets and Data Services
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#full-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Full Example
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Full Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Service
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-with-distributions-and-data-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dataset with Distributions and Data Series
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../access_control_specification/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Access Control and Capability Grant Language
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scheme_catalog_requirements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scheme Catalog Requirements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../additional_material/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Additional Material
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Changelog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dataset-or-data-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dataset or Data Service?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scheme-conforming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scheme-conforming
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metadata-file-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metadata File Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mandatory-metadata-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mandatory metadata fields
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conformance-and-access-control-metadata-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conformance and access control metadata fields
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-service-metadata-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Service metadata fields
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataset-metadata-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dataset metadata fields
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dataset metadata fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#distribution-metadata-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Distribution metadata fields
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-metadata-for-datasets-and-data-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional metadata for Datasets and Data Services
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#full-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Full Example
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Full Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Service
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-with-distributions-and-data-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dataset with Distributions and Data Series
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="dataset-data-service-metadata">Dataset &amp; Data Service Metadata</h1>
+<p>Each <a href="../glossary/#term-Data-Provider">Data Provider</a> maintains a set of one or more metadata files, each of which can describe one or more 
+distinct sources of data. These descriptions serve several purposes:</p>
+<ol>
+<li>
+<p>They drive discovery descriptions are ingested into our search system and made available to a <a href="../glossary/#term-Data-Consumer">Data Consumer</a> 
+searching for particular kinds of data.</p>
+</li>
+<li>
+<p>They inform consumption of that data, providing information on:</p>
+<ol>
+<li>
+<p>The <a href="../glossary/#term-Application-programming-interface">API</a> required to access the data source</p>
+</li>
+<li>
+<p>Any access constraints which may need to be satisfied</p>
+</li>
+<li>
+<p>Licenses for any accessed data</p>
+</li>
+<li>
+<p>Representation and internal semantics of expressions of the data</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="dataset-or-data-service">Dataset or Data Service?</h2>
+<p>A Dataset:
+* is provided as one or more downloadable files,
+* may be published as part of series of Datasets covering the same source of data over different time periods, and
+* should maintain historical access to previous periods.</p>
+<p>A Data Service:
+* is an API to query some data which uses parameters to specify a subset of data, including time period,
+* is specified formally by a machine readable API description, and
+* may require consent from a data subject external to the Trust Framework.</p>
+<p>They are described by slightly different information in metadata files.</p>
+<h2 id="scheme-conforming">Scheme-conforming</h2>
+<p>A Scheme-conforming Dataset or Data Service meets the data format and meaning requirements of the Scheme, along with any required access and licence conditions.</p>
+<p>These requirements are published by the Scheme Registry as machine readable <a href="../scheme_catalog_requirements/">Scheme Catalog Requirements Documents</a>, and metadata files link to them to show their conformance.</p>
+<p>Most Datasets and Data Services are Scheme-conforming. A Data Provider may publish data which is not Scheme-conforming to:
+* use Scheme licences and roles to share ad-hoc Shared Data with Scheme participants (where the Scheme doesn't expressly disallow this), or
+* use the Catalog to include Open Data in a public index.</p>
+<h2 id="metadata-file-structure">Metadata File Structure</h2>
+<p>The metadata is a standard <a href="https://www.w3.org/TR/vocab-dcat-3/">DCAT</a> RDF file representing one or more sources of data. </p>
+<p><strong>NOTE</strong>: The examples below use the <a href="https://www.w3.org/TR/turtle/">Turtle</a> format for compactness and increased readability. Data providers may present this information in Turtle, RDF/XML, JSON-LD or N3 formats.</p>
+<p>Datasets are represented as Dataset DCAT objects with one or more Distributions. If the data measures the same thing over periods of time, then these must be linked together with a Data Series object. The format of the data is described by JSON Schema, XSD 1.1 or CSVW schemas.</p>
+<p>Data Services are represented as Data Service DCAT objects, with <a href="https://swagger.io/specification/">OpenAPI</a> specifications of the API and the format of the data in the responses.</p>
+<p>The URL of the DCAT object inside the RDF representation is the stable identifer of the Dataset or Data Service. This must remain constant each time the metadata file is fetched and over updates to the metadata.</p>
+<h2 id="mandatory-metadata-fields">Mandatory metadata fields</h2>
+<p>The following fields must be included in every DCAT object. Metadata will be visible to all pariticipants in the Trust Framework, and may be visible to anyone on the open web without authentication in an open index.</p>
+<p><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/title/">dcterms:title</a>
+: Short title for this dataset.</p>
+<p><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/publisher/">dcterms:publisher</a>
+: The URL of the Data Provider's record in the Scheme Directory.</p>
+<p><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#license">dcterms:license</a>
+: The URL of a Licence. All use of this data source is subject to this Licence. Where a data source is Scheme-conforming, the URL will be registered in the Registry.</p>
+<p><code>ib1:trustFramework</code>
+: The URL of the Trust Framework(s) the dataset is assured under.</p>
+<p><code>ib1:datasetAssurance</code>
+: The assurance level for this dataset.</p>
+<p><code>ib1:sensitivityClass</code>
+: The <a href="../glossary/#term-Data-sensitivity-class">data sensitivity class</a> of this dataset. In the current IB1 Trust Framework this should always be one of <a href="../glossary/#term-Data-sensitivity-class-open">IB1-O</a>,  <a href="../glossary/#term-Data-sensitivity-class-shared-A">IB1-SA</a> or <a href="../glossary/#term-Data-sensitivity-class-shared-B">IB1-SB</a>, no other classes are permitted. The value of this property also determines the level of <a href="../glossary/#term-Application-programming-interface">API</a> security imposed, with <a href="../glossary/#term-Data-sensitivity-class-open">IB1-O</a> datasets being open data with no additional security, and the two shared data classes mandating <a href="../glossary/#term-Financial-Grade-API">FAPI</a> security using the IB1 Trust Framework.
+<em>Under development:</em> <a href="../glossary/#term-Data-sensitivity-class-personal">IB1-SP</a> may be used for Data Service APIs which expose personal data with the end user's consent, in which case the <code>ib1:oauthIssuer</code> term must be present.</p>
+<p>More information about publishing assured data within a Trust Framework is available on the <a href="https://icebreakerone.org/sops/assured-data-publishing/">How to become an assured data publisher</a> section of the Icebreaker One website.</p>
+<p>Additional fields may be made mandatory for Scheme-conforming data sources by the Scheme Catalog Requirements Document.</p>
+<h2 id="conformance-and-access-control-metadata-fields">Conformance and access control metadata fields</h2>
+<p><code>dcterms:conformsTo</code>
+: The URL of a Scheme Catalog Requirements Document in the Scheme Registry. Most metadata files will include this field.</p>
+<p><code>ib1:permitGroup</code>
+: The URLs of one or more groups in the Directory which may access this data source subject to the Licence in the <code>dcterms:license</code> term, unless the data is open data with a <code>ib1:sensitivityClass</code> of <code>IB1-O</code>. See <a href="../access_control_specification/">Access Control Specification</a>.</p>
+<h2 id="data-service-metadata-fields">Data Service metadata fields</h2>
+<p>Data Services are represented by <code>dcat:DataService</code> objects with the common mandatory fields and Data Service specific fields.</p>
+<p><code>dcat:endpointDescription</code>
+: The URL of an OpenAPI file, which fully documents the request parameters and responses. Responses must use XML or JSON. To allow the OpenAPI file to be used by multiple Data Providers, the file may only contain a single <a href="https://swagger.io/specification/#server-object">Server object</a>, where the <code>url</code> is <code>"{endpointURL}"</code>, and <code>variables</code> sets the default to <code>"https://endpointurl-not-specified.ib1.org"</code>.</p>
+<p><code>dcat:endpointURL</code>
+: The URL of this specific instance of the API. It is interpolated into the <code>url</code> specified in the OpenAPI file using the <code>endpointURL</code> variable.</p>
+<p><code>ib1:oauthIssuer</code>
+: Where access to data requires end user consent or selection of an account at the provider, the URL of the <a href="https://datatracker.ietf.org/doc/html/rfc8414#section-2">OAuth Issuer</a> which is used to authenticate before accessing this Data Service. This field is required for data with a <code>ib1:sensitivityClass</code> of <code>IP1-SP</code>, and may be used for other classes.</p>
+<p><code>ib1:heartbeatDescription</code>
+: An optional URL of an OpenAPI file (with Server specified as <code>dcat:endpointDescription</code>), which contains a single Path with a 200 response defined. This term will typically be the URL of one of a small number of standard OpenAPI files published in the Registry.</p>
+<p>Any additional metadata defined by published Standards may be added.</p>
+<h2 id="dataset-metadata-fields">Dataset metadata fields</h2>
+<p>Datasets are represented by <code>dcat:Dataset</code> objects with the common mandatory fields and Dataset specific fields.</p>
+<p>As Datasets will be discovered by browsing an index, they need additional descriptive metadata for discovery. The following fields are mandatory:</p>
+<p><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/description/">dcterms:description</a>
+: Longer form description of this dataset. This is used in combination with the title and tags when people search for datasets, so aim to include probable search words in the description.</p>
+<p><a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_distribution">dcat:distribution</a>
+: URL of a <code>dcat:Distribution</code> for a downloadable file, see below for mandatory fields. Multiple Distributions may be defined for the same data in different formats, taking into account any requirements and restrictions for Scheme-conforming datasets.</p>
+<p>The following fields are mandatory when the dataset is part of a series of periodic datasets:</p>
+<p><a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_in_series">dcat:inSeries</a>
+: The URL of a <code>dcat:DataSeries</code> which associates this Dataset with the overall series. The DataSeries is created by the publisher and contains their data only.</p>
+<p>The following fields are optional:</p>
+<p><a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version">dcat:version</a>
+: Version number of the dataset, this should preferably follow <a href="https://semver.org/">semantic versioning</a> if possible. Versioning of the dataset should be used to indicate changes in delivery mechanism, or in representation, rather than for changes in the underlying data. For example, this should not be used to differentiate between datasets from different years, rather it should be used to indicate whether a potential data consumer might need to alter how it processes any returned data. </p>
+<p><a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version_notes">dcat:versionNotes</a>
+: Notes used to explain any changes to this version.</p>
+<p>Any additional metadata defined by published Standards may be added.</p>
+<h3 id="distribution-metadata-fields">Distribution metadata fields</h3>
+<p>To specify how the data may be downloaded, one or more associated <code>dcat:Distribution</code> objects must be included which contain:</p>
+<p><a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_download_url">dcat:downloadURL</a>
+: A stable URL for download of the dataset, subject to access controls specified in the Dataset object. Liveness of the server will be tested by making a HEAD request to this URL.</p>
+<p><a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_media_type">dcat:media_type</a>
+: The MIME type of the download file.</p>
+<p>The following fields are optional, but encouraged. They are mandatory for higher assurance and Scheme-conforming data sources.</p>
+<p><code>ib1:dataSchema</code>
+: The URL of a schema file specifying the format of the downloadable file. The type of schema depends on the <code>dcat:mediaType</code>:
+<code>application/json</code> are documented by JSON Schema files,
+<code>application/xml</code> by XSD 1.1 files, and
+<code>text/csv</code> by <a href="https://www.w3.org/ns/csvw">CSVW</a> files.</p>
+<h3 id="additional-metadata-for-datasets-and-data-services">Additional metadata for Datasets and Data Services</h3>
+<p>The fields marked as mandatory are the minimum needed to ensure that a data source can be used by the Trust Framework participants, and is visible in <a href="https://opennetzero.org">the Open Net Zero</a> search system. There 
+are, however, other properties of a dataset which may be useful to potential data consumers. Where such information can 
+be provided, it should be provided in as standard a form as possible - in practice this translates to making use of 
+existing ontologies such as DCAT and Dublin Core by preference, then shared, industry-specific, ontologies, and only 
+using internal or custom representation when absolutely necessary.</p>
+<p>Of particular note, and something we would like to ultimately expose in the Open Net Zero search interface, is information about the geospatial and temporal ranges of entries within a dataset. This is a complex subject, but one that has already been handled by DCAT. If you need to express this kind of information, please do so according to the standards laid out 
+<a href="https://www.w3.org/TR/vocab-dcat-2/#time-and-space">here</a>.</p>
+<p>We encourage use of the <code>dcat:keyword</code> list for datasets. These translate to “tags” in Open Net Zero's web interface and are useful to group datasets around specific topics.</p>
+<h2 id="full-example">Full Example</h2>
+<h3 id="data-service">Data Service</h3>
+<pre><code>@prefix dcat: &lt;http://www.w3.org/ns/dcat#&gt; . 
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
+@prefix ib1: &lt;http://registry.ib1.org/ns/1.0#&gt; .
+
+&lt;https://example.com/supply-voltage/v0&gt;
+    a dcat:DataService ;
+    dcterms:title &quot;Electricity Generation Voltage&quot;@en ;
+    dcterms:description &quot;API to query generation supply voltage&quot;@en ;
+    dcterms:publisher &lt;https://directory.estf.ib1.org/member/827252&gt; ;
+    dcterms:conformsTo &lt;https://registry.estf.ib1.org/scheme/electricity/standard/supply-voltage&gt; ; 
+    dcat:endpointDescription &lt;https://registry.estf.ib1.org/scheme/electricity/api/voltage&gt; ;
+    ib1:heartbeatDescription &lt;https://registry.estf.ib1.org/api/heartbeat-simple/1.0&gt; ;
+    dcat:endpointURL &lt;https://grid03.api.example.com/generation-voltage/v0&gt; ;
+    ib1:trustFramework &lt;http://registry.estf.ib1.org/trust-framework&gt; ;
+    ib1:datasetAssurance &quot;IcebreakerOne.DatasetLevel1&quot; ;
+    ib1:sensitivityClass &quot;IB1-SA&quot; ;
+    ib1:permitGroup &lt;https://directory.estf.ib1.org/scheme/electricity/group/network-operator&gt; ;
+    ib1:permitGroup &lt;https://directory.estf.ib1.org/scheme/electricity/group/report-provider&gt; ;
+    dcterms:license &lt;https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4&gt; ;
+.
+</code></pre>
+<h3 id="dataset-with-distributions-and-data-series">Dataset with Distributions and Data Series</h3>
+<pre><code>@prefix dcat: &lt;http://www.w3.org/ns/dcat#&gt; . 
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
+@prefix ib1: &lt;http://registry.ib1.org/ns/1.0#&gt; .
+
+&lt;https://data.example.com/generation-report/oct2024&gt;
+    a dcat:Dataset ;
+    dcterms:title &quot;Generation Report Oct 2024&quot;@en ;
+    dcterms:description &quot;Data report on generation&quot;@en ;
+    dcterms:publisher &lt;https://directory.estf.ib1.org/member/827252&gt; ;
+    dcterms:conformsTo &lt;https://registry.estf.ib1.org/scheme/electricity/standard/generation-report&gt; ; 
+    dcat:version &quot;0.1.2&quot; ;
+    dcat:inSeries &lt;https://data.example.com/generation-report&gt;;
+    dcat:distribution &lt;https://data.example.com/generation-report/oct2024/csv&gt; ;
+    dcat:keyword &quot;solar&quot;@en,
+        &quot;electricity&quot;@en,
+        &quot;retrofit&quot;@en ;
+    ib1:trustFramework &lt;http://registry.estf.ib1.org/trust-framework&gt; ;
+    ib1:datasetAssurance &quot;IcebreakerOne.DatasetLevel1&quot; ;
+    ib1:sensitivityClass &quot;IB1-SA&quot; ;
+    ib1:permitGroup &lt;https://directory.estf.ib1.org/scheme/electricity/group/network-operator&gt; ;
+    ib1:permitGroup &lt;https://directory.estf.ib1.org/scheme/electricity/group/report-provider&gt; ;
+    dcterms:license &lt;https://registry.estf.ib1.org/scheme/electricity/licence/generation-reporting/2.1&gt; ;
+.
+
+&lt;https://data.example.com/generation-report/oct2024/download&gt;
+    a dcat:Distribution ;
+    dcterms:description &quot;CSV&quot;@en ;
+    dcat:downloadURL &lt;https://data.example.com/generation-report/oct2024/csv&gt; ;
+    dcat:media_type &quot;text/csv&quot;@en ;
+    ib1:dataSchema &lt;https://registry.estf.ib1.org/scheme/electricity/format/generation-report/2.0&gt; ;
+.
+
+&lt;https://data.example.com/generation-report&gt;
+    a dcat:DatasetSeries ;
+    dcterms:title &quot;Generation Reports from My Energy Company&quot;@en ;
+.
+</code></pre>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE4MzY0ODI1OTIsLTExODU4MjA4MjMsMz
+UyNDI5NSwtMTc3Mjk1NTY3OSwtMTUwMzY5NDAwLDU0MDU3NjUz
+LC0xMDMyMjMyNTIzLC04NDA2NTUxODksLTU3OTM2NTg2MCwtMT
+M2MzYzMTQwMSwtMTQ3MDQzMzM2MywxNzUxMjM0OTkwLC02MTE3
+OTM1MTAsMTUxNzk1OTM4OCwxMTg5MzQyMzY2LDM1MTI3Njc4MC
+w1OTQ5MjE2NjUsMTE0OTc3MTc0MCwtMjU0Mjk4NzQ4LDIxMjk2
+NzMzNzNdfQ==
+-->
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+  
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["disableCookies"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stats.openenergy.org.uk/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '9']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+  </body>
 </html>
