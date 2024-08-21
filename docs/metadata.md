@@ -25,11 +25,13 @@ searching for particular kinds of data.
 ## Dataset or Data Service?
 
 A Dataset:
+
 * is provided as one or more downloadable files,
 * may be published as part of series of Datasets covering the same source of data over different time periods, and
 * should maintain historical access to previous periods.
 
 A Data Service:
+
 * is an API to query some data which uses parameters to specify a subset of data, including time period,
 * is specified formally by a machine readable API description, and
 * may require consent from a data subject external to the Trust Framework.
@@ -43,6 +45,7 @@ A Scheme-conforming Dataset or Data Service meets the data format and meaning re
 These requirements are published by the Scheme Registry as machine readable [Scheme Catalog Requirements Documents](scheme_catalog_requirements.md), and metadata files link to them to show their conformance.
 
 Most Datasets and Data Services are Scheme-conforming. A Data Provider may publish data which is not Scheme-conforming to:
+
 * use Scheme licences and roles to share ad-hoc Shared Data with Scheme participants (where the Scheme doesn't expressly disallow this), or
 * use the Catalog to include Open Data in a public index.
 
@@ -240,11 +243,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzY0ODI1OTIsLTExODU4MjA4MjMsMz
-UyNDI5NSwtMTc3Mjk1NTY3OSwtMTUwMzY5NDAwLDU0MDU3NjUz
-LC0xMDMyMjMyNTIzLC04NDA2NTUxODksLTU3OTM2NTg2MCwtMT
-M2MzYzMTQwMSwtMTQ3MDQzMzM2MywxNzUxMjM0OTkwLC02MTE3
-OTM1MTAsMTUxNzk1OTM4OCwxMTg5MzQyMzY2LDM1MTI3Njc4MC
-w1OTQ5MjE2NjUsMTE0OTc3MTc0MCwtMjU0Mjk4NzQ4LDIxMjk2
-NzMzNzNdfQ==
+eyJoaXN0b3J5IjpbODI4MDQzNTYwLC0xODM2NDgyNTkyLC0xMT
+g1ODIwODIzLDM1MjQyOTUsLTE3NzI5NTU2NzksLTE1MDM2OTQw
+MCw1NDA1NzY1MywtMTAzMjIzMjUyMywtODQwNjU1MTg5LC01Nz
+kzNjU4NjAsLTEzNjM2MzE0MDEsLTE0NzA0MzMzNjMsMTc1MTIz
+NDk5MCwtNjExNzkzNTEwLDE1MTc5NTkzODgsMTE4OTM0MjM2Ni
+wzNTEyNzY3ODAsNTk0OTIxNjY1LDExNDk3NzE3NDAsLTI1NDI5
+ODc0OF19
 -->
