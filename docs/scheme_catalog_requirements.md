@@ -74,8 +74,6 @@ The requirements for terms in the `ib1:requiredMetadata` are modified by terms i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgwODY0LDI2Mzg0MjIxOSwtMTY3MzAyMz
-M1MSw5OTU2ODMxNzksMTQ0NDg3NTgyNSw2NzQ1NzY0ODEsLTE3
-OTQ0OTUwNDYsLTUyODY0NTczNywxMzg5NzAyMDM4LDExMTMxMj
-g5NjksMTI2ODgzNjcwOF19
+eyJoaXN0b3J5IjpbLTU5MTg4MjU2MiwxMzg5NzAyMDM4LDExMT
+MxMjg5NjksMTI2ODgzNjcwOF19
 -->
