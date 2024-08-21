@@ -26,7 +26,7 @@ This specification will be iterated as use cases emerge. The current expectation
 .
 ```
 
-These rules specify that members of either the "Report Provider" and "Archivers" groups may access the data with the Scheme's Voltage Reporting licence.
+These rules specify that members of either the "Report Provider" and "Archivers" roles may access the data with the Scheme's Voltage Reporting licence.
 
 
 ## Machine readable intepretation of Licences
@@ -48,11 +48,11 @@ For interoperability and consistency, Schemes should prefer to use Grants and Ob
 <https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4>
 		a ib1:LicenceInterpretation ;
 	dcterms:license https://https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4/legal-text
-	ib1:grant ib1:use_any ;
-	ib1:grant ib1:adapt_any ;
-	ib1:grant ib1:combine_any ;
-	ib1:grant ib1:redistribute_original ;
-	ib1:grant ib1:combine_external ;
+	ib1:grant ib1:GrantUseAny ;
+	ib1:grant ib1:GrantAdaptAny ;
+	ib1:grant ib1:GrantCombineAny ;
+	ib1:grant ib1:GrantRedistributeCombined ;
+	ib1:grant ib1:GrantCombineExternal ;
 	ib1:obligation ib1:by;
 .
 ```
@@ -139,9 +139,10 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0ODM5MzE1OCwtMTMyMzEzNjQ0Miw2MT
-E4NTE3NjgsLTgyOTk3MzQyNywxOTEzMzA2MTkyLC0xMTg4MTk5
-NDk1LC0yMTM5OTQ3ODUzLDIwODAyMTgzNCw3NDAxMTc0NDksLT
-IxMzM5Nzk0NjMsLTc0MTEzNjA5MCw5MzUwODM3NDcsLTk2OTMw
-MTI1MCwxMTc2MTkwOTAxLC0xOTY5MTM4ODIyXX0=
+eyJoaXN0b3J5IjpbMjA5OTg3NzE2NCwtMjQ4MzkzMTU4LC0xMz
+IzMTM2NDQyLDYxMTg1MTc2OCwtODI5OTczNDI3LDE5MTMzMDYx
+OTIsLTExODgxOTk0OTUsLTIxMzk5NDc4NTMsMjA4MDIxODM0LD
+c0MDExNzQ0OSwtMjEzMzk3OTQ2MywtNzQxMTM2MDkwLDkzNTA4
+Mzc0NywtOTY5MzAxMjUwLDExNzYxOTA5MDEsLTE5NjkxMzg4Mj
+JdfQ==
 -->
