@@ -94,8 +94,8 @@ Additional fields may be made mandatory for Scheme-conforming data sources by th
 `dcterms:conformsTo`
 : The URL of a Scheme Catalog Requirements Document in the Scheme Registry. Most metadata files will include this field.
 
-`ib1:permitGroup`
-: The URLs of one or more groups in the Directory which may access this data source subject to the Licence in the `dcterms:license` term, unless the data is open data with a `ib1:sensitivityClass` of `IB1-O`. See [Access Control Specification](access_control_specification.md).
+`ib1:permitRole`
+: The URLs of one or more roles in the Registry which may access this data source subject to the Licence in the `dcterms:license` term, unless the data is open data with a `ib1:sensitivityClass` of `IB1-O`. See [Access Control Specification](access_control_specification.md).
 
 ## Data Service metadata fields
 
@@ -196,8 +196,8 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
     ib1:trustFramework <http://registry.estf.ib1.org/trust-framework> ;
     ib1:datasetAssurance "IcebreakerOne.DatasetLevel1" ;
     ib1:sensitivityClass "IB1-SA" ;
-    ib1:permitGroup <https://directory.estf.ib1.org/scheme/electricity/group/network-operator> ;
-    ib1:permitGroup <https://directory.estf.ib1.org/scheme/electricity/group/report-provider> ;
+    ib1:permitRole <https://directory.estf.ib1.org/scheme/electricity/role/network-operator> ;
+    ib1:permitRole <https://directory.estf.ib1.org/scheme/electricity/group/report-provider> ;
     dcterms:license <https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4> ;
 .
 ```
@@ -243,11 +243,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI4MDQzNTYwLC0xODM2NDgyNTkyLC0xMT
-g1ODIwODIzLDM1MjQyOTUsLTE3NzI5NTU2NzksLTE1MDM2OTQw
-MCw1NDA1NzY1MywtMTAzMjIzMjUyMywtODQwNjU1MTg5LC01Nz
-kzNjU4NjAsLTEzNjM2MzE0MDEsLTE0NzA0MzMzNjMsMTc1MTIz
-NDk5MCwtNjExNzkzNTEwLDE1MTc5NTkzODgsMTE4OTM0MjM2Ni
-wzNTEyNzY3ODAsNTk0OTIxNjY1LDExNDk3NzE3NDAsLTI1NDI5
-ODc0OF19
+eyJoaXN0b3J5IjpbLTY0MDYyMDA1NywtMTgzNjQ4MjU5MiwtMT
+E4NTgyMDgyMywzNTI0Mjk1LC0xNzcyOTU1Njc5LC0xNTAzNjk0
+MDAsNTQwNTc2NTMsLTEwMzIyMzI1MjMsLTg0MDY1NTE4OSwtNT
+c5MzY1ODYwLC0xMzYzNjMxNDAxLC0xNDcwNDMzMzYzLDE3NTEy
+MzQ5OTAsLTYxMTc5MzUxMCwxNTE3OTU5Mzg4LDExODkzNDIzNj
+YsMzUxMjc2NzgwLDU5NDkyMTY2NSwxMTQ5NzcxNzQwLC0yNTQy
+OTg3NDhdfQ==
 -->
