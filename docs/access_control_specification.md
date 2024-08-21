@@ -1,8 +1,8 @@
 # Access Control
 
-Access to data sources is controlled by group membership and licences.
+Access to data sources is controlled by roles and licences.
 
-A [catalog entry](metadata.md) specifies one or more groups and a licence. If a participant is a member of any of the groups, they may access the data source under the specified licence.
+A [catalog entry](metadata.md) specifies one or more roles and a licence. If a participant has any of the roles, they may access the data source under the specified licence.
 
 The Registry maintains a list of the permissions and obligations for access to a data source under a given licence.
 
@@ -139,7 +139,7 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODcxMzczMzAsLTI0ODM5MzE1OCwtMT
+eyJoaXN0b3J5IjpbLTE5OTk4ODI5MTAsLTI0ODM5MzE1OCwtMT
 MyMzEzNjQ0Miw2MTE4NTE3NjgsLTgyOTk3MzQyNywxOTEzMzA2
 MTkyLC0xMTg4MTk5NDk1LC0yMTM5OTQ3ODUzLDIwODAyMTgzNC
 w3NDAxMTc0NDksLTIxMzM5Nzk0NjMsLTc0MTEzNjA5MCw5MzUw
