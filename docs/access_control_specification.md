@@ -53,7 +53,7 @@ For interoperability and consistency, Schemes should prefer to use Grants and Ob
 	ib1:grant ib1:GrantCombineAny ;
 	ib1:grant ib1:GrantRedistributeCombined ;
 	ib1:grant ib1:GrantCombineExternal ;
-	ib1:obligation ib1:by;
+	ib1:obligation ib1:ObligationAttribution;
 .
 ```
 [dcterms:license](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/license/)
@@ -139,10 +139,10 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5OTg3NzE2NCwtMjQ4MzkzMTU4LC0xMz
-IzMTM2NDQyLDYxMTg1MTc2OCwtODI5OTczNDI3LDE5MTMzMDYx
-OTIsLTExODgxOTk0OTUsLTIxMzk5NDc4NTMsMjA4MDIxODM0LD
-c0MDExNzQ0OSwtMjEzMzk3OTQ2MywtNzQxMTM2MDkwLDkzNTA4
-Mzc0NywtOTY5MzAxMjUwLDExNzYxOTA5MDEsLTE5NjkxMzg4Mj
-JdfQ==
+eyJoaXN0b3J5IjpbLTE3ODcxMzczMzAsLTI0ODM5MzE1OCwtMT
+MyMzEzNjQ0Miw2MTE4NTE3NjgsLTgyOTk3MzQyNywxOTEzMzA2
+MTkyLC0xMTg4MTk5NDk1LC0yMTM5OTQ3ODUzLDIwODAyMTgzNC
+w3NDAxMTc0NDksLTIxMzM5Nzk0NjMsLTc0MTEzNjA5MCw5MzUw
+ODM3NDcsLTk2OTMwMTI1MCwxMTc2MTkwOTAxLC0xOTY5MTM4OD
+IyXX0=
 -->
