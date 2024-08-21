@@ -20,8 +20,8 @@ This specification will be iterated as use cases emerge. The current expectation
 <https://data.example.com/supply-voltage/v0>
     a dcat:DataService ;
 	# ...
-    ib1:permitGroup <https://directory.estf.ib1.org/scheme/electricity/group/report-provider> ;
-    ib1:permitGroup <https://directory.estf.ib1.org/scheme/electricity/group/archiver> ;
+    ib1:permitRole <https://directory.estf.ib1.org/scheme/electricity/role/report-provider> ;
+    ib1:permitRole <https://directory.estf.ib1.org/scheme/electricity/role/archiver> ;
     dcterms:license <https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4> ;
 .
 ```
@@ -139,9 +139,9 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjMxMzY0NDIsNjExODUxNzY4LC04Mj
-k5NzM0MjcsMTkxMzMwNjE5MiwtMTE4ODE5OTQ5NSwtMjEzOTk0
-Nzg1MywyMDgwMjE4MzQsNzQwMTE3NDQ5LC0yMTMzOTc5NDYzLC
-03NDExMzYwOTAsOTM1MDgzNzQ3LC05NjkzMDEyNTAsMTE3NjE5
-MDkwMSwtMTk2OTEzODgyMl19
+eyJoaXN0b3J5IjpbLTI0ODM5MzE1OCwtMTMyMzEzNjQ0Miw2MT
+E4NTE3NjgsLTgyOTk3MzQyNywxOTEzMzA2MTkyLC0xMTg4MTk5
+NDk1LC0yMTM5OTQ3ODUzLDIwODAyMTgzNCw3NDAxMTc0NDksLT
+IxMzM5Nzk0NjMsLTc0MTEzNjA5MCw5MzUwODM3NDcsLTk2OTMw
+MTI1MCwxMTc2MTkwOTAxLC0xOTY5MTM4ODIyXX0=
 -->
