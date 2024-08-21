@@ -46,6 +46,7 @@ markdown_extensions:
   - markdown_grid_tables
   - tables
   - attr_list
+  - def_list
 plugins:
   - social:
       cards_layout_options:
