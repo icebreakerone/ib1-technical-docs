@@ -78,47 +78,47 @@ Any additional grants designed **MUST** be within the namespace of the data prov
 
 **NOTE**: The URLs of the grants have been updated to meet the current naming conventions. The previous names are also shown in the table, and are automatically replaced by the Harvester.
 
-+--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-| Category                 | Grant name                                | Meaning                                                                                |
-+==========================+===========================================+========================================================================================+
-| **Use**                  |                                           | **Use the artefact internally**                                                        |
-+--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `ib1:use_any`                             | For any purpose                                                                        |
-+--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `ib1:use_dev`                             | For development purposes only (i.e. private or limited development of new              |
-|                          |                                           | works, products or services)                                                           |
-+--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `ib1:use_noncom`                          | For non-commercial purposes only (e.g. education, research, charity work               |
-|                          |                                           | etc.)                                                                                  |
-+--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-| **Adapt**                |                                           | **Adapt the artefact for internal use**                                                |
-+--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `ib1:adapt_any`                           | For any purpose                                                                        |
-+--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `ib1:adapt_dev`                           | For development purposes only (i.e. private or limited development of new              |
-|                          |                                           | works, products or services)                                                           |
-+--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `ib1:adapt_noncom`                        | For non-commercial purposes only (e.g. education, research, charity work               |
-|                          |                                           | etc.)                                                                                  |
-+--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-| **Combine**              |                                           | **Combine (‘remix’) the artefact**                                                     |
-+--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `ib1:combine_any`                         | With any other artefacts                                                               |
-+--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `ib1:combine_external`                    | With other external artefacts                                                          |
-+--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `ib1:combine_internal`                    | With the Data Consumer’s own products or services                                      |
-+--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-| **Redistribute**         |                                           | **Redistribute (‘onward share’ - including to any customers of the Service Provider)** |
-+--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `ib1:redistribute_original`               | The original artefact                                                                  |
-+--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `ib1:redistribute_derived`                | Derivatives of the original artefact not produced from other data sets, i.e. filtered  |
-|                          |                                           | or cleaned data                                                                        |
-+--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-|                          | `ib1:redistribute_combined`               | Derivatives of the artefact produced through artefact combination or use in the Data   |
-|                          |                                           | Consumer’s own products or services                                                    |
-+--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
++--------------------------+---------------------------------+-----------------------------+----------------------------------------------------------------------------------------+
+| Category                 | Grant URL                       | Old URL                     | Meaning                                                                                |
++==========================+=================================+=============================+========================================================================================+
+| **Use**                  |                                 |                             | **Use the artefact internally**                                                        |
++--------------------------+---------------------------------+-----------------------------+----------------------------------------------------------------------------------------+
+|                          | `ib1:GrantUseAny`               | `ib1:use_any`               | For any purpose                                                                        |
++--------------------------+---------------------------------+-----------------------------+----------------------------------------------------------------------------------------+
+|                          | `ib1:GrantUseDevelopment`       | `ib1:use_dev`               | For development purposes only (i.e. private or limited development of new              |
+|                          |                                 |                             | works, products or services)                                                           |
++--------------------------+---------------------------------+-----------------------------+----------------------------------------------------------------------------------------+
+|                          | `ib1:GrantUseNonCommercial`     | `ib1:use_noncom`            | For non-commercial purposes only (e.g. education, research, charity work               |
+|                          |                                 |                             | etc.)                                                                                  |
++--------------------------+---------------------------------+-----------------------------+----------------------------------------------------------------------------------------+
+| **Adapt**                |                                 |                             | **Adapt the artefact for internal use**                                                |
++--------------------------+---------------------------------+-----------------------------+----------------------------------------------------------------------------------------+
+|                          | `ib1:GrantAdaptAny`             | `ib1:adapt_any`             | For any purpose                                                                        |
++--------------------------+---------------------------------+-----------------------------+----------------------------------------------------------------------------------------+
+|                          | `ib1:GrantAdaptDevelopment`     | `ib1:adapt_dev`             | For development purposes only (i.e. private or limited development of new              |
+|                          |                                 |                             | works, products or services)                                                           |
++--------------------------+---------------------------------+-----------------------------+----------------------------------------------------------------------------------------+
+|                          | `ib1:GrantAdaptNonCommercial`   | `ib1:adapt_noncom`          | For non-commercial purposes only (e.g. education, research, charity work               |
+|                          |                                 |                             | etc.)                                                                                  |
++--------------------------+---------------------------------+-----------------------------+----------------------------------------------------------------------------------------+
+| **Combine**              |                                 |                             | **Combine (‘remix’) the artefact**                                                     |
++--------------------------+---------------------------------+-----------------------------+----------------------------------------------------------------------------------------+
+|                          | `ib1:GrantCombineAny`           | `ib1:combine_any`           | With any other artefacts                                                               |
++--------------------------+---------------------------------+-----------------------------+----------------------------------------------------------------------------------------+
+|                          | `ib1:GrantCombineExternal`      | `ib1:combine_external`      | With other external artefacts                                                          |
++--------------------------+---------------------------------+-----------------------------+----------------------------------------------------------------------------------------+
+|                          | `ib1:GrantCombineInternal`      | `ib1:combine_internal`      | With the Data Consumer’s own products or services                                      |
++--------------------------+---------------------------------+-----------------------------+----------------------------------------------------------------------------------------+
+| **Redistribute**         |                                 |                             | **Redistribute (‘onward share’ - including to any customers of the Service Provider)** |
++--------------------------+---------------------------------+-----------------------------+----------------------------------------------------------------------------------------+
+|                          | `ib1:GrantRedistributeOriginal` | `ib1:redistribute_original` | The original artefact                                                                  |
++--------------------------+---------------------------------+-----------------------------+----------------------------------------------------------------------------------------+
+|                          | `ib1:GrantRedistributeDerived`  | `ib1:redistribute_derived`  | Derivatives of the original artefact not produced from other data sets, i.e. filtered  |
+|                          |                                 |                             | or cleaned data                                                                        |
++--------------------------+---------------------------------+-----------------------------+----------------------------------------------------------------------------------------+
+|                          | `ib1:GrantRedistributeCombined` | `ib1:redistribute_combined` | Derivatives of the artefact produced through artefact combination or use in the Data   |
+|                          |                                 |                             | Consumer’s own products or services                                                    |
++--------------------------+---------------------------------+-----------------------------+----------------------------------------------------------------------------------------+
 
 ## Obligations
 
@@ -143,11 +143,11 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODE0MzYyMzIsLTYyMDExNjc3OSw0NT
-QwMzk0NzEsLTE5OTk4ODI5MTAsLTI0ODM5MzE1OCwtMTMyMzEz
-NjQ0Miw2MTE4NTE3NjgsLTgyOTk3MzQyNywxOTEzMzA2MTkyLC
-0xMTg4MTk5NDk1LC0yMTM5OTQ3ODUzLDIwODAyMTgzNCw3NDAx
-MTc0NDksLTIxMzM5Nzk0NjMsLTc0MTEzNjA5MCw5MzUwODM3ND
-csLTk2OTMwMTI1MCwxMTc2MTkwOTAxLC0xOTY5MTM4ODIyXX0=
-
+eyJoaXN0b3J5IjpbMTk3OTg3MzM4MywtMTM4MTQzNjIzMiwtNj
+IwMTE2Nzc5LDQ1NDAzOTQ3MSwtMTk5OTg4MjkxMCwtMjQ4Mzkz
+MTU4LC0xMzIzMTM2NDQyLDYxMTg1MTc2OCwtODI5OTczNDI3LD
+E5MTMzMDYxOTIsLTExODgxOTk0OTUsLTIxMzk5NDc4NTMsMjA4
+MDIxODM0LDc0MDExNzQ0OSwtMjEzMzk3OTQ2MywtNzQxMTM2MD
+kwLDkzNTA4Mzc0NywtOTY5MzAxMjUwLDExNzYxOTA5MDEsLTE5
+NjkxMzg4MjJdfQ==
 -->
