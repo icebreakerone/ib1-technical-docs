@@ -128,10 +128,10 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: The names of the obligations have been updated to meet the current naming conventions. The previous names are also shown in the table, and are automatically replaced by the Harvester.
 
-+--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-| Obligation               | Name                                      | Explanation                                                                            |
-+==========================+===========================================+========================================================================================+
-| Fulltext                 | `ib1:ft`                                  | Re-users must display the full text of the license every time they use the work        |
++--------------------------+------------------------------------+----------+------------------------------------------------------------------------------------+
+| Obligation               | Name                               | Old name | Explanation                                                                        |
++==========================+====================================+==========+====================================================================================+
+| Fulltext                 | `ib1:ObligationFullTextOfLicence`  | `ib1:ft` | Re-users must display the full text of the license every time they use the work    |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
 | Attribution              | `ib1:by`                                  | Re-users must attribute the work to the original source when they use it               |
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
@@ -141,10 +141,10 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NDE5NjIxMywtMTk5OTg4MjkxMCwtMj
-Q4MzkzMTU4LC0xMzIzMTM2NDQyLDYxMTg1MTc2OCwtODI5OTcz
-NDI3LDE5MTMzMDYxOTIsLTExODgxOTk0OTUsLTIxMzk5NDc4NT
-MsMjA4MDIxODM0LDc0MDExNzQ0OSwtMjEzMzk3OTQ2MywtNzQx
-MTM2MDkwLDkzNTA4Mzc0NywtOTY5MzAxMjUwLDExNzYxOTA5MD
-EsLTE5NjkxMzg4MjJdfQ==
+eyJoaXN0b3J5IjpbNDU0MDM5NDcxLC0xOTk5ODgyOTEwLC0yND
+gzOTMxNTgsLTEzMjMxMzY0NDIsNjExODUxNzY4LC04Mjk5NzM0
+MjcsMTkxMzMwNjE5MiwtMTE4ODE5OTQ5NSwtMjEzOTk0Nzg1My
+wyMDgwMjE4MzQsNzQwMTE3NDQ5LC0yMTMzOTc5NDYzLC03NDEx
+MzYwOTAsOTM1MDgzNzQ3LC05NjkzMDEyNTAsMTE3NjE5MDkwMS
+wtMTk2OTEzODgyMl19
 -->
