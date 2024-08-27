@@ -195,8 +195,8 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
     dcat:endpointURL <https://grid03.api.example.com/generation-voltage/v0> ;
     ib1:trustFramework <http://registry.estf.ib1.org/trust-framework> ;
     ib1:scheme <http://registry.estf.ib1.org/scheme/electricty> ;
-    ib1:datasetAssurance "IcebreakerOne.DatasetLevel1" ;
-    ib1:sensitivityClass "IB1-SA" ;
+    ib1:datasetAssurance ib1:AssuranceLevel1 ;
+    ib1:sensitivityClass ib1:SensitivityClassSharedStandardTerms ;
     ib1:permitRole <https://registry.estf.ib1.org/scheme/electricity/role/network-operator> ;
     ib1:permitRole <https://registry.estf.ib1.org/scheme/electricity/role/report-provider> ;
     dcterms:license <https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4> ;
@@ -224,8 +224,8 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 	    "retrofit"@en ;
     ib1:trustFramework <http://registry.estf.ib1.org/trust-framework> ;
     ib1:scheme <http://registry.estf.ib1.org/scheme/electricty> ;
-    ib1:datasetAssurance "IcebreakerOne.DatasetLevel1" ;
-    ib1:sensitivityClass "IB1-SA" ;
+    ib1:datasetAssurance ib1:AssuranceLevel1 ;
+    ib1:sensitivityClass ib1:SensitivityClassSharedStandardTerms ;
     ib1:permitRole <https://registry.estf.ib1.org/scheme/electricity/role/network-operator> ;
     ib1:permitRole <https://registry.estf.ib1.org/scheme/electricity/role/report-provider> ;
     dcterms:license <https://registry.estf.ib1.org/scheme/electricity/licence/generation-reporting/2.1> ;
@@ -245,11 +245,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyOTQ1OTg4MiwxOTA5NjA2MzIsLTE4Mz
-Y0ODI1OTIsLTExODU4MjA4MjMsMzUyNDI5NSwtMTc3Mjk1NTY3
-OSwtMTUwMzY5NDAwLDU0MDU3NjUzLC0xMDMyMjMyNTIzLC04ND
-A2NTUxODksLTU3OTM2NTg2MCwtMTM2MzYzMTQwMSwtMTQ3MDQz
-MzM2MywxNzUxMjM0OTkwLC02MTE3OTM1MTAsMTUxNzk1OTM4OC
-wxMTg5MzQyMzY2LDM1MTI3Njc4MCw1OTQ5MjE2NjUsMTE0OTc3
-MTc0MF19
+eyJoaXN0b3J5IjpbMTc5NzQ2MjI3OCwtOTI5NDU5ODgyLDE5MD
+k2MDYzMiwtMTgzNjQ4MjU5MiwtMTE4NTgyMDgyMywzNTI0Mjk1
+LC0xNzcyOTU1Njc5LC0xNTAzNjk0MDAsNTQwNTc2NTMsLTEwMz
+IyMzI1MjMsLTg0MDY1NTE4OSwtNTc5MzY1ODYwLC0xMzYzNjMx
+NDAxLC0xNDcwNDMzMzYzLDE3NTEyMzQ5OTAsLTYxMTc5MzUxMC
+wxNTE3OTU5Mzg4LDExODkzNDIzNjYsMzUxMjc2NzgwLDU5NDky
+MTY2NV19
 -->
