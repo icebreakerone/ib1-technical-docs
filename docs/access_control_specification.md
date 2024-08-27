@@ -126,23 +126,34 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **WARNING**: This set of standard obligations is provisional and may be subject to change
 
+**NOTE**: 
+
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-| Obligation               | Name                                      | Explanation                                                                            |
+
+| Obligation | Name | Explanation |
+
 +==========================+===========================================+========================================================================================+
-| Fulltext                 | `ib1:ft`                                  | Re-users must display the full text of the license every time they use the work        |
+
+| Fulltext | `ib1:FullTextOfLicence` (was `ib1:ft`) | Re-users must display the full text of the license every time they use the work |
+
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-| Attribution              | `ib1:by`                                  | Re-users must attribute the work to the original source when they use it               |
+
+| Attribution | `ib1:Attribution` (was `ib1:by`) | Re-users must attribute the work to the original source when they use it |
+
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
-| ShareAlike               | `ib1:sa`                                  | Re-users who create derivatives of the work must release the derivatives under the     |
-|                          |                                           | same license as the original work, if they choose to distribute the derivatives        |
+
+| ShareAlike | `ib1:SameLicence` (was `ib1:sa`) | Re-users who create derivatives of the work must release the derivatives under the |
+
+| | | same license as the original work, if they choose to distribute the derivatives |
+
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTk4ODI5MTAsLTI0ODM5MzE1OCwtMT
-MyMzEzNjQ0Miw2MTE4NTE3NjgsLTgyOTk3MzQyNywxOTEzMzA2
-MTkyLC0xMTg4MTk5NDk1LC0yMTM5OTQ3ODUzLDIwODAyMTgzNC
-w3NDAxMTc0NDksLTIxMzM5Nzk0NjMsLTc0MTEzNjA5MCw5MzUw
-ODM3NDcsLTk2OTMwMTI1MCwxMTc2MTkwOTAxLC0xOTY5MTM4OD
-IyXX0=
+eyJoaXN0b3J5IjpbNTk5MTcwMTg4LC0xOTk5ODgyOTEwLC0yND
+gzOTMxNTgsLTEzMjMxMzY0NDIsNjExODUxNzY4LC04Mjk5NzM0
+MjcsMTkxMzMwNjE5MiwtMTE4ODE5OTQ5NSwtMjEzOTk0Nzg1My
+wyMDgwMjE4MzQsNzQwMTE3NDQ5LC0yMTMzOTc5NDYzLC03NDEx
+MzYwOTAsOTM1MDgzNzQ3LC05NjkzMDEyNTAsMTE3NjE5MDkwMS
+wtMTk2OTEzODgyMl19
 -->
