@@ -19,7 +19,7 @@ It is an RDF document published by the Registry.
 	ib1:requiredMetadata [ a ib1:RequiredMetadata ;
 	    dcat:endpointDescription <https://registry.estf.ib1.org/scheme/electricity/api/voltage> ;
 	    ib1:heartbeatDescription <https://registry.estf.ib1.org/api/heartbeat-simple/1.0> ;
-	    ib1:sensitivityClass "IB1-SA" ;
+        ib1:sensitivityClass ib1:SensitivityClassSharedStandardTerms ;
 	    ib1:permitRole <https://directory.estf.ib1.org/scheme/electricity/role/network-operator> ;
 	    ib1:permitRole <https://directory.estf.ib1.org/scheme/electricity/role/report-provider> ;
 	    dcterms:licence <https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4> ;
@@ -74,6 +74,7 @@ The requirements for terms in the `ib1:requiredMetadata` are modified by terms i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0NzYwNzksLTU5MTg4MjU2MiwxMzg5Nz
-AyMDM4LDExMTMxMjg5NjksMTI2ODgzNjcwOF19
+eyJoaXN0b3J5IjpbLTI5NzkwNjA1MiwtMjQ3NjA3OSwtNTkxOD
+gyNTYyLDEzODk3MDIwMzgsMTExMzEyODk2OSwxMjY4ODM2NzA4
+XX0=
 -->
