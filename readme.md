@@ -1,5 +1,6 @@
 # Icebreaker One Technical Docs
-Icebreaker One technical documentation. This repository contains the sources for a [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) 
+
+Icebreaker One technical documentation. This repository contains the sources for a [mkdocs-material](https://squidfunk.github.io/mkdocs-material/)
 build of the technical documentation, including operational guidelines, for the Icebreaker One Trust Framework.
 
 ## Viewing the docs
@@ -10,35 +11,23 @@ Once released, this documentation will be hosted at https://docs.icebreakerone.o
 
 Building the documentation requires [Python 3](https://www.python.org/) or later.
 
-### Activate virtual environment and install Python dependencies
+### Install Python dependencies using pipenv
 
-#### MacOS
-```
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
-#### Windows
-```
-python -m venv venv
-. venv/Scripts/activate
-pip install -r requirements.txt
+```bash
+pip install pipenv
+pipenv install
 ```
 
 ## Local editing and testing
 
-### Activate the virtual environment (only required once)
+### Activate the pipenv shell (only required once)
 
-#### MacOS
-```
-source venv/bin/activate
-```
-#### Windows
-```
-. venv/Scripts/activate
+```bash
+pipenv shell
 ```
 
 ### Building a local version of the docs
+
 The documentation uses [mike](https://github.com/jimporter/mike) to manage versioning. This includes a local webserver you can use to test your changes.
 
 ```
@@ -46,29 +35,29 @@ mike deploy <version> [latest]
 ```
 
 e.g. if the current edit is to version 1.2 of the documents, which is also the latest (default served on the site):
+
 ```
 mike deploy 1.2 latest
 ```
 
-`mike` automatically pushes updates to the `gh-pages` branch locally. 
-
+`mike` automatically pushes updates to the `gh-pages` branch locally.
 
 ### Serving the site locally
 
 ```
 mike serve
-````
+```
+
 By default, this serves the docs on `http://localhost:8000`, but you can change this with `-a`/`--dev-addr`.
 
 ### Edit and test
 
-Unlike `mkdocs`, `mike serve` doesn't automatically refresh when you make changes, so you need to quit `mike serve`, 
+Unlike `mkdocs`, `mike serve` doesn't automatically refresh when you make changes, so you need to quit `mike serve`,
 run `mike deploy` then run `mike serve` again to view changes.
 
 ## Pushing completed updates
 
-
-Each call to `mike deploy` adds a commit to the `gh-pages` branch. This leads to a lot of "junk commits" on the `gh-pages` branch 
+Each call to `mike deploy` adds a commit to the `gh-pages` branch. This leads to a lot of "junk commits" on the `gh-pages` branch
 as you make and test edits. You should reduce these down to a single commit for each substantial change. To do this you will need
 to find the commit ID of the last commit before you started editing:
 
@@ -76,8 +65,8 @@ to find the commit ID of the last commit before you started editing:
 git checkout gh-pages
 git log
 ```
-This outputs a log of all commits on the branch in reverse order e.g.
 
+This outputs a log of all commits on the branch in reverse order e.g.
 
 ```
 commit xxxxxxxxxxxxxxxxxxxx4 (HEAD -> gh-pages)
@@ -107,8 +96,7 @@ Date:   Fri Dec 16 14:12:36 2022 +0000
 ...
 ```
 
-
-You need to rebase all your recent local changes on the last meaningful commit - "Update the docs to something interesting" in the above example - 
+You need to rebase all your recent local changes on the last meaningful commit - "Update the docs to something interesting" in the above example -
 and then re-commit and push that to `gh-pages` on the remote.
 
 ```
@@ -122,13 +110,14 @@ Finally, assuning you were working in `master`, check out `master` again so you 
 ```
 git checkout master
 ```
+
 ## Updating the glossary
 
-The Python script `build_glossary.py` retrieves the glossary from our gdrive and writes it to `docs/glossary.md`. `mkdocs` doesn't have 
-any glossary autobuild capabilities so you will need to add links to defined terms manually in the docs. The `Term` field from the 
+The Python script `build_glossary.py` retrieves the glossary from our gdrive and writes it to `docs/glossary.md`. `mkdocs` doesn't have
+any glossary autobuild capabilities so you will need to add links to defined terms manually in the docs. The `Term` field from the
 glossary spreadsheet is parsed by the Python script to create an anchor tag on the item in the `glossary.md` file. The ID of the tag is
-the term with punctuation renoved and whitespace replaced by "-". For example "Data sensitivity class - shared (A)" has the tag 
-`Data-sensitivity-class-shared-A` and a link to it would look like 
+the term with punctuation renoved and whitespace replaced by "-". For example "Data sensitivity class - shared (A)" has the tag
+`Data-sensitivity-class-shared-A` and a link to it would look like
 `[Data sensitivity class - shared (A)](glossary.md#Data-sensitivity-class-shared-A)`
 
 ### Deactivating the virtual environment
