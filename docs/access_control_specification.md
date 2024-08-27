@@ -76,6 +76,8 @@ Any additional grants designed **MUST** be within the namespace of the data prov
 
 **WARNING**: This section is provisional, the exact final set of base permissions has yet to be determined. Those shown below are a plausible first cut but should not be considered definitive.
 
+**NOTE**: The URLs of the grants have been updated to meet the current naming conventions. The previous names are also shown in the table, and are automatically replaced by the Harvester.
+
 +--------------------------+-------------------------------------------+----------------------------------------------------------------------------------------+
 | Category                 | Grant name                                | Meaning                                                                                |
 +==========================+===========================================+========================================================================================+
@@ -126,10 +128,10 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **WARNING**: This set of standard obligations is provisional and may be subject to change
 
-**NOTE**: The names of the obligations have been updated to meet the current naming conventions. The previous names are also shown in the table, and are automatically replaced by the Harvester.
+**NOTE**: The URLs of the obligations have been updated to meet the current naming conventions. The previous names are also shown in the table, and are automatically replaced by the Harvester.
 
 +--------------------------+------------------------------------+----------+------------------------------------------------------------------------------------+
-| Obligation               | Name                               | Old name | Explanation                                                                        |
+| Obligation               | URL                                | Old URL  | Explanation                                                                        |
 +==========================+====================================+==========+====================================================================================+
 | Fulltext                 | `ib1:ObligationFullTextOfLicence`  | `ib1:ft` | Re-users must display the full text of the license every time they use the work    |
 +--------------------------+------------------------------------+----------+------------------------------------------------------------------------------------+
@@ -141,10 +143,11 @@ Obligations are constraints on what the data consumer can do with the data, rest
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMDExNjc3OSw0NTQwMzk0NzEsLTE5OT
-k4ODI5MTAsLTI0ODM5MzE1OCwtMTMyMzEzNjQ0Miw2MTE4NTE3
-NjgsLTgyOTk3MzQyNywxOTEzMzA2MTkyLC0xMTg4MTk5NDk1LC
-0yMTM5OTQ3ODUzLDIwODAyMTgzNCw3NDAxMTc0NDksLTIxMzM5
-Nzk0NjMsLTc0MTEzNjA5MCw5MzUwODM3NDcsLTk2OTMwMTI1MC
-wxMTc2MTkwOTAxLC0xOTY5MTM4ODIyXX0=
+eyJoaXN0b3J5IjpbLTEzODE0MzYyMzIsLTYyMDExNjc3OSw0NT
+QwMzk0NzEsLTE5OTk4ODI5MTAsLTI0ODM5MzE1OCwtMTMyMzEz
+NjQ0Miw2MTE4NTE3NjgsLTgyOTk3MzQyNywxOTEzMzA2MTkyLC
+0xMTg4MTk5NDk1LC0yMTM5OTQ3ODUzLDIwODAyMTgzNCw3NDAx
+MTc0NDksLTIxMzM5Nzk0NjMsLTc0MTEzNjA5MCw5MzUwODM3ND
+csLTk2OTMwMTI1MCwxMTc2MTkwOTAxLC0xOTY5MTM4ODIyXX0=
+
 -->
