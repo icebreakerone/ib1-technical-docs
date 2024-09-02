@@ -81,8 +81,9 @@ The following fields must be included in every DCAT object. Metadata will be vis
 : The assurance level for this dataset.
 
 `ib1:sensitivityClass`
-: The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this dataset. In the current IB1 Trust Framework this should always be one of [IB1-O](glossary.md#term-Data-sensitivity-class-open),  [IB1-SA](glossary.md#term-Data-sensitivity-class-shared-A) or [IB1-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](glossary.md#term-Application-programming-interface) security imposed, with [IB1-O](glossary.md#term-Data-sensitivity-class-open) datasets being open data with no additional security, and the two shared data classes mandating [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.
-*Under development:* [IB1-SP](glossary.md#term-Data-sensitivity-class-personal) may be used for Data Service APIs which expose personal data with the end user's consent, in which case the `ib1:oauthIssuer` term must be present.
+: The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this dataset. In the current IB1 Trust Framework this should always be one of [`ib1:IB1-O`](glossary.md#term-Data-sensitivity-class-open),  [`ib1:IB1-SA`](glossary.md#term-Data-sensitivity-class-shared-A) or [`ib1:IB1-SB`](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](glossary.md#term-Application-programming-interface) security imposed, with [`ib1:IB1-O`](glossary.md#term-Data-sensitivity-class-open) datasets being open data with no additional security, and the two shared data classes mandating [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.
+*Under development:* [`ib1:IB1-SP`](glossary.md#term-Data-sensitivity-class-personal) may be used for Data Service APIs which expose personal data with the end user's consent, in which case the `ib1:oauthIssuer` term must be present.
+Previous versions of this standard used literal strings to identify the classes.
 
 More information about publishing assured data within a Trust Framework is available on the [How to become an assured data publisher](https://icebreakerone.org/sops/assured-data-publishing/) section of the Icebreaker One website.
 
@@ -245,7 +246,7 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM5MjE1Nzk0LDE3OTc0NjIyNzgsLTkyOT
+eyJoaXN0b3J5IjpbMTQyMzkyMzUwLDE3OTc0NjIyNzgsLTkyOT
 Q1OTg4MiwxOTA5NjA2MzIsLTE4MzY0ODI1OTIsLTExODU4MjA4
 MjMsMzUyNDI5NSwtMTc3Mjk1NTY3OSwtMTUwMzY5NDAwLDU0MD
 U3NjUzLC0xMDMyMjMyNTIzLC04NDA2NTUxODksLTU3OTM2NTg2
