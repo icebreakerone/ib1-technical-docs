@@ -6,7 +6,7 @@
 * Rename Group to Roles.
 * Change values of `ib1:sensitivityClass` to URLs, retaining the class names.
 * Change values of `ib1:datasetAssurance` to URls, with values using correct naming conventions.
-* Change URLs for Grants and Obligation
+* Change URLs for Grants and Obligations to use correct naming conventions.
 
 ## Version 0.2beta, 22 June 2024
 
@@ -20,5 +20,5 @@
 	* renamed "Permissions" to "Grants" to clarify intent and avoid a name clash with another concept.
 * [Scheme Catalog Requirements](scheme_catalog_requirements.md) are added to define how data sources comply with standards across the Scheme.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI2NTY4NzAwLC0xODYwMDc1MDgwXX0=
+eyJoaXN0b3J5IjpbMTQxNTI3NDc0NSwtMTg2MDA3NTA4MF19
 -->
