@@ -25,11 +25,13 @@ searching for particular kinds of data.
 ## Dataset or Data Service?
 
 A Dataset:
+
 * is provided as one or more downloadable files,
 * may be published as part of series of Datasets covering the same source of data over different time periods, and
 * should maintain historical access to previous periods.
 
 A Data Service:
+
 * is an API to query some data which uses parameters to specify a subset of data, including time period,
 * is specified formally by a machine readable API description, and
 * may require consent from a data subject external to the Trust Framework.
@@ -43,6 +45,7 @@ A Scheme-conforming Dataset or Data Service meets the data format and meaning re
 These requirements are published by the Scheme Registry as machine readable [Scheme Catalog Requirements Documents](scheme_catalog_requirements.md), and metadata files link to them to show their conformance.
 
 Most Datasets and Data Services are Scheme-conforming. A Data Provider may publish data which is not Scheme-conforming to:
+
 * use Scheme licences and roles to share ad-hoc Shared Data with Scheme participants (where the Scheme doesn't expressly disallow this), or
 * use the Catalog to include Open Data in a public index.
 
@@ -69,7 +72,7 @@ The following fields must be included in every DCAT object. Metadata will be vis
 : The URL of the Data Provider's record in the Scheme Directory.
 
 [dcterms:license](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#license)
-: The URL of a Licence. All use of this data source is subject to this Licence. Where a data source is Scheme-conforming, the URL will be registered in the Registry.
+: The URL of an `ib1:LicenceInterpretation`. All use of this data source is subject to this Licence. Where a data source is Scheme-conforming, the URL will be registered in the Registry.
 
 `ib1:trustFramework`
 : The URL of the Trust Framework(s) the dataset is assured under.
@@ -78,8 +81,9 @@ The following fields must be included in every DCAT object. Metadata will be vis
 : The assurance level for this dataset.
 
 `ib1:sensitivityClass`
-: The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this dataset. In the current IB1 Trust Framework this should always be one of [IB1-O](glossary.md#term-Data-sensitivity-class-open),  [IB1-SA](glossary.md#term-Data-sensitivity-class-shared-A) or [IB1-SB](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](glossary.md#term-Application-programming-interface) security imposed, with [IB1-O](glossary.md#term-Data-sensitivity-class-open) datasets being open data with no additional security, and the two shared data classes mandating [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.
-*Under development:* [IB1-SP](glossary.md#term-Data-sensitivity-class-personal) may be used for Data Service APIs which expose personal data with the end user's consent, in which case the `ib1:oauthIssuer` term must be present.
+: The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this dataset. In the current IB1 Trust Framework this should always be one of [`ib1:IB1-O`](glossary.md#term-Data-sensitivity-class-open),  [`ib1:IB1-SA`](glossary.md#term-Data-sensitivity-class-shared-A) or [`ib1:IB1-SB`](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](glossary.md#term-Application-programming-interface) security imposed, with [`ib1:IB1-O`](glossary.md#term-Data-sensitivity-class-open) datasets being open data with no additional security, and the two shared data classes mandating [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.
+*Under development:* [`ib1:IB1-SP`](glossary.md#term-Data-sensitivity-class-personal) may be used for Data Service APIs which expose personal data with the end user's consent, in which case the `ib1:oauthIssuer` term must be present.
+Previous versions of this standard used literal strings to identify the classes.
 
 More information about publishing assured data within a Trust Framework is available on the [How to become an assured data publisher](https://icebreakerone.org/sops/assured-data-publishing/) section of the Icebreaker One website.
 
@@ -91,8 +95,8 @@ Additional fields may be made mandatory for Scheme-conforming data sources by th
 `dcterms:conformsTo`
 : The URL of a Scheme Catalog Requirements Document in the Scheme Registry. Most metadata files will include this field.
 
-`ib1:permitGroup`
-: The URLs of one or more groups in the Directory which may access this data source subject to the Licence in the `dcterms:license` term, unless the data is open data with a `ib1:sensitivityClass` of `IB1-O`. See [Access Control Specification](access_control_specification.md).
+`ib1:permitRole`
+: The URLs of one or more roles in the Registry which may access this data source subject to the Licence in the `dcterms:license` term, unless the data is open data with a `ib1:sensitivityClass` of `ib1:IB1-O`. See [Access Control Specification](access_control_specification.md).
 
 ## Data Service metadata fields
 
@@ -105,7 +109,7 @@ Data Services are represented by `dcat:DataService` objects with the common mand
 : The URL of this specific instance of the API. It is interpolated into the `url` specified in the OpenAPI file using the `endpointURL` variable.
 
 `ib1:oauthIssuer`
-: Where access to data requires end user consent or selection of an account at the provider, the URL of the [OAuth Issuer](https://datatracker.ietf.org/doc/html/rfc8414#section-2) which is used to authenticate before accessing this Data Service. This field is required for data with a `ib1:sensitivityClass` of `IP1-SP`, and may be used for other classes.
+: Where access to data requires end user consent or selection of an account at the provider, the URL of the [OAuth Issuer](https://datatracker.ietf.org/doc/html/rfc8414#section-2) which is used to authenticate before accessing this Data Service. This field is required for data with a `ib1:sensitivityClass` of `ib1:IP1-SP`, and may be used for other classes.
 
 `ib1:heartbeatDescription`
 : An optional URL of an OpenAPI file (with Server specified as `dcat:endpointDescription`), which contains a single Path with a 200 response defined. This term will typically be the URL of one of a small number of standard OpenAPI files published in the Registry.
@@ -191,10 +195,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
     ib1:heartbeatDescription <https://registry.estf.ib1.org/api/heartbeat-simple/1.0> ;
     dcat:endpointURL <https://grid03.api.example.com/generation-voltage/v0> ;
     ib1:trustFramework <http://registry.estf.ib1.org/trust-framework> ;
-    ib1:datasetAssurance "IcebreakerOne.DatasetLevel1" ;
-    ib1:sensitivityClass "IB1-SA" ;
-    ib1:permitGroup <https://directory.estf.ib1.org/scheme/electricity/group/network-operator> ;
-    ib1:permitGroup <https://directory.estf.ib1.org/scheme/electricity/group/report-provider> ;
+    ib1:scheme <http://registry.estf.ib1.org/scheme/electricty> ;
+    ib1:datasetAssurance ib1:AssuranceLevel1 ;
+    ib1:sensitivityClass ib1:IB1-SA ;
+    ib1:permitRole <https://registry.estf.ib1.org/scheme/electricity/role/network-operator> ;
+    ib1:permitRole <https://registry.estf.ib1.org/scheme/electricity/role/report-provider> ;
     dcterms:license <https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4> ;
 .
 ```
@@ -219,10 +224,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 	    "electricity"@en,
 	    "retrofit"@en ;
     ib1:trustFramework <http://registry.estf.ib1.org/trust-framework> ;
-    ib1:datasetAssurance "IcebreakerOne.DatasetLevel1" ;
-    ib1:sensitivityClass "IB1-SA" ;
-    ib1:permitGroup <https://directory.estf.ib1.org/scheme/electricity/group/network-operator> ;
-    ib1:permitGroup <https://directory.estf.ib1.org/scheme/electricity/group/report-provider> ;
+    ib1:scheme <http://registry.estf.ib1.org/scheme/electricty> ;
+    ib1:datasetAssurance ib1:AssuranceLevel1 ;
+    ib1:sensitivityClass ib1:IB1-SA ;
+    ib1:permitRole <https://registry.estf.ib1.org/scheme/electricity/role/network-operator> ;
+    ib1:permitRole <https://registry.estf.ib1.org/scheme/electricity/role/report-provider> ;
     dcterms:license <https://registry.estf.ib1.org/scheme/electricity/licence/generation-reporting/2.1> ;
 .
 
@@ -240,11 +246,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzY0ODI1OTIsLTExODU4MjA4MjMsMz
-UyNDI5NSwtMTc3Mjk1NTY3OSwtMTUwMzY5NDAwLDU0MDU3NjUz
-LC0xMDMyMjMyNTIzLC04NDA2NTUxODksLTU3OTM2NTg2MCwtMT
-M2MzYzMTQwMSwtMTQ3MDQzMzM2MywxNzUxMjM0OTkwLC02MTE3
-OTM1MTAsMTUxNzk1OTM4OCwxMTg5MzQyMzY2LDM1MTI3Njc4MC
-w1OTQ5MjE2NjUsMTE0OTc3MTc0MCwtMjU0Mjk4NzQ4LDIxMjk2
-NzMzNzNdfQ==
+eyJoaXN0b3J5IjpbMTQyMzkyMzUwLDE3OTc0NjIyNzgsLTkyOT
+Q1OTg4MiwxOTA5NjA2MzIsLTE4MzY0ODI1OTIsLTExODU4MjA4
+MjMsMzUyNDI5NSwtMTc3Mjk1NTY3OSwtMTUwMzY5NDAwLDU0MD
+U3NjUzLC0xMDMyMjMyNTIzLC04NDA2NTUxODksLTU3OTM2NTg2
+MCwtMTM2MzYzMTQwMSwtMTQ3MDQzMzM2MywxNzUxMjM0OTkwLC
+02MTE3OTM1MTAsMTUxNzk1OTM4OCwxMTg5MzQyMzY2LDM1MTI3
+Njc4MF19
 -->
