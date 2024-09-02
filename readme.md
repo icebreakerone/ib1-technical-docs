@@ -13,8 +13,9 @@ Building the documentation requires [Python 3](https://www.python.org/) or later
 
 ### Install Python dependencies using pipenv
 
+You will need to have [pipenv installed](https://pipenv.pypa.io/en/latest/installation.html)
+
 ```bash
-pip install pipenv
 pipenv install
 ```
 
