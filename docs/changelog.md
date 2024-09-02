@@ -4,6 +4,7 @@
 ## Version 0.3beta, 22 August 2024
 
 * Rename Group to Roles.
+* Change sens
 
 ## Version 0.2beta, 22 June 2024
 
@@ -17,5 +18,5 @@
 	* renamed "Permissions" to "Grants" to clarify intent and avoid a name clash with another concept.
 * [Scheme Catalog Requirements](scheme_catalog_requirements.md) are added to define how data sources comply with standards across the Scheme.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1NjgyODM4MywtMTg2MDA3NTA4MF19
+eyJoaXN0b3J5IjpbMTg0NDQxMDE2NCwtMTg2MDA3NTA4MF19
 -->
