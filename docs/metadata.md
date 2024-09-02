@@ -72,7 +72,7 @@ The following fields must be included in every DCAT object. Metadata will be vis
 : The URL of the Data Provider's record in the Scheme Directory.
 
 [dcterms:license](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#license)
-: The URL of a Licence. All use of this data source is subject to this Licence. Where a data source is Scheme-conforming, the URL will be registered in the Registry.
+: The URL of an `ib1:LicenceInterpretation`. All use of this data source is subject to this Licence. Where a data source is Scheme-conforming, the URL will be registered in the Registry.
 
 `ib1:trustFramework`
 : The URL of the Trust Framework(s) the dataset is assured under.
@@ -245,11 +245,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NzQ2MjI3OCwtOTI5NDU5ODgyLDE5MD
-k2MDYzMiwtMTgzNjQ4MjU5MiwtMTE4NTgyMDgyMywzNTI0Mjk1
-LC0xNzcyOTU1Njc5LC0xNTAzNjk0MDAsNTQwNTc2NTMsLTEwMz
-IyMzI1MjMsLTg0MDY1NTE4OSwtNTc5MzY1ODYwLC0xMzYzNjMx
-NDAxLC0xNDcwNDMzMzYzLDE3NTEyMzQ5OTAsLTYxMTc5MzUxMC
-wxNTE3OTU5Mzg4LDExODkzNDIzNjYsMzUxMjc2NzgwLDU5NDky
-MTY2NV19
+eyJoaXN0b3J5IjpbLTIzNDgxMDAxNCwxNzk3NDYyMjc4LC05Mj
+k0NTk4ODIsMTkwOTYwNjMyLC0xODM2NDgyNTkyLC0xMTg1ODIw
+ODIzLDM1MjQyOTUsLTE3NzI5NTU2NzksLTE1MDM2OTQwMCw1ND
+A1NzY1MywtMTAzMjIzMjUyMywtODQwNjU1MTg5LC01NzkzNjU4
+NjAsLTEzNjM2MzE0MDEsLTE0NzA0MzMzNjMsMTc1MTIzNDk5MC
+wtNjExNzkzNTEwLDE1MTc5NTkzODgsMTE4OTM0MjM2NiwzNTEy
+NzY3ODBdfQ==
 -->
