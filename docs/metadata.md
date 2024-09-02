@@ -225,7 +225,7 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
     ib1:trustFramework <http://registry.estf.ib1.org/trust-framework> ;
     ib1:scheme <http://registry.estf.ib1.org/scheme/electricty> ;
     ib1:datasetAssurance ib1:AssuranceLevel1 ;
-    ib1:sensitivityClass ib1:SensitivityClassSharedStandardTerms ;
+    ib1:sensitivityClass ib1:IB1-SA ;
     ib1:permitRole <https://registry.estf.ib1.org/scheme/electricity/role/network-operator> ;
     ib1:permitRole <https://registry.estf.ib1.org/scheme/electricity/role/report-provider> ;
     dcterms:license <https://registry.estf.ib1.org/scheme/electricity/licence/generation-reporting/2.1> ;
@@ -245,11 +245,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNDgxMDAxNCwxNzk3NDYyMjc4LC05Mj
-k0NTk4ODIsMTkwOTYwNjMyLC0xODM2NDgyNTkyLC0xMTg1ODIw
-ODIzLDM1MjQyOTUsLTE3NzI5NTU2NzksLTE1MDM2OTQwMCw1ND
-A1NzY1MywtMTAzMjIzMjUyMywtODQwNjU1MTg5LC01NzkzNjU4
-NjAsLTEzNjM2MzE0MDEsLTE0NzA0MzMzNjMsMTc1MTIzNDk5MC
-wtNjExNzkzNTEwLDE1MTc5NTkzODgsMTE4OTM0MjM2NiwzNTEy
-NzY3ODBdfQ==
+eyJoaXN0b3J5IjpbLTE3NjkyNDYxOTUsMTc5NzQ2MjI3OCwtOT
+I5NDU5ODgyLDE5MDk2MDYzMiwtMTgzNjQ4MjU5MiwtMTE4NTgy
+MDgyMywzNTI0Mjk1LC0xNzcyOTU1Njc5LC0xNTAzNjk0MDAsNT
+QwNTc2NTMsLTEwMzIyMzI1MjMsLTg0MDY1NTE4OSwtNTc5MzY1
+ODYwLC0xMzYzNjMxNDAxLC0xNDcwNDMzMzYzLDE3NTEyMzQ5OT
+AsLTYxMTc5MzUxMCwxNTE3OTU5Mzg4LDExODkzNDIzNjYsMzUx
+Mjc2NzgwXX0=
 -->
