@@ -95,7 +95,7 @@ Additional fields may be made mandatory for Scheme-conforming data sources by th
 : The URL of a Scheme Catalog Requirements Document in the Scheme Registry. Most metadata files will include this field.
 
 `ib1:permitRole`
-: The URLs of one or more roles in the Registry which may access this data source subject to the Licence in the `dcterms:license` term, unless the data is open data with a `ib1:sensitivityClass` of `IB1-O`. See [Access Control Specification](access_control_specification.md).
+: The URLs of one or more roles in the Registry which may access this data source subject to the Licence in the `dcterms:license` term, unless the data is open data with a `ib1:sensitivityClass` of `ib1:IB1-O`. See [Access Control Specification](access_control_specification.md).
 
 ## Data Service metadata fields
 
@@ -108,7 +108,7 @@ Data Services are represented by `dcat:DataService` objects with the common mand
 : The URL of this specific instance of the API. It is interpolated into the `url` specified in the OpenAPI file using the `endpointURL` variable.
 
 `ib1:oauthIssuer`
-: Where access to data requires end user consent or selection of an account at the provider, the URL of the [OAuth Issuer](https://datatracker.ietf.org/doc/html/rfc8414#section-2) which is used to authenticate before accessing this Data Service. This field is required for data with a `ib1:sensitivityClass` of `IP1-SP`, and may be used for other classes.
+: Where access to data requires end user consent or selection of an account at the provider, the URL of the [OAuth Issuer](https://datatracker.ietf.org/doc/html/rfc8414#section-2) which is used to authenticate before accessing this Data Service. This field is required for data with a `ib1:sensitivityClass` of `ib1:IP1-SP`, and may be used for other classes.
 
 `ib1:heartbeatDescription`
 : An optional URL of an OpenAPI file (with Server specified as `dcat:endpointDescription`), which contains a single Path with a 200 response defined. This term will typically be the URL of one of a small number of standard OpenAPI files published in the Registry.
@@ -245,11 +245,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MjY1MjkxNCwxNzk3NDYyMjc4LC05Mj
-k0NTk4ODIsMTkwOTYwNjMyLC0xODM2NDgyNTkyLC0xMTg1ODIw
-ODIzLDM1MjQyOTUsLTE3NzI5NTU2NzksLTE1MDM2OTQwMCw1ND
-A1NzY1MywtMTAzMjIzMjUyMywtODQwNjU1MTg5LC01NzkzNjU4
-NjAsLTEzNjM2MzE0MDEsLTE0NzA0MzMzNjMsMTc1MTIzNDk5MC
-wtNjExNzkzNTEwLDE1MTc5NTkzODgsMTE4OTM0MjM2NiwzNTEy
-NzY3ODBdfQ==
+eyJoaXN0b3J5IjpbMzM5MjE1Nzk0LDE3OTc0NjIyNzgsLTkyOT
+Q1OTg4MiwxOTA5NjA2MzIsLTE4MzY0ODI1OTIsLTExODU4MjA4
+MjMsMzUyNDI5NSwtMTc3Mjk1NTY3OSwtMTUwMzY5NDAwLDU0MD
+U3NjUzLC0xMDMyMjMyNTIzLC04NDA2NTUxODksLTU3OTM2NTg2
+MCwtMTM2MzYzMTQwMSwtMTQ3MDQzMzM2MywxNzUxMjM0OTkwLC
+02MTE3OTM1MTAsMTUxNzk1OTM4OCwxMTg5MzQyMzY2LDM1MTI3
+Njc4MF19
 -->
