@@ -1,7 +1,7 @@
 
 # Changelog
 
-## Version 0.3beta, 22 August 2024
+## Version 0.3beta, 6 September 2024
 
 * Rename Group to Roles.
 * Change values of `ib1:sensitivityClass` to URLs, retaining the class names.
@@ -20,5 +20,5 @@
 	* renamed "Permissions" to "Grants" to clarify intent and avoid a name clash with another concept.
 * [Scheme Catalog Requirements](scheme_catalog_requirements.md) are added to define how data sources comply with standards across the Scheme.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNTI3NDc0NSwtMTg2MDA3NTA4MF19
+eyJoaXN0b3J5IjpbMTc4OTU5ODUxNywtMTg2MDA3NTA4MF19
 -->
