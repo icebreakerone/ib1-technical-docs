@@ -109,7 +109,7 @@ Data Services are represented by `dcat:DataService` objects with the common mand
 : The URL of this specific instance of the API. It is interpolated into the `url` specified in the OpenAPI file using the `endpointURL` variable.
 
 `ib1:oauthIssuer`
-: Where access to data requires end user consent or selection of an account at the provider, the URL of the [OAuth Issuer](https://datatracker.ietf.org/doc/html/rfc8414#section-2) which is used to authenticate before accessing this Data Service. This field is required for data with a `ib1:sensitivityClass` of `ib1:IP1-SP`, and may be used for other classes.
+: Where access to data requires end user consent or selection of an account at the provider, the URL of the [OAuth Issuer](https://datatracker.ietf.org/doc/html/rfc8414#section-2) which is used to authenticate before accessing this Data Service. This field is required for data with a `ib1:sensitivityClass` of `ib1:IB1-SP`, and may be used for other classes.
 
 `ib1:heartbeatDescription`
 : An optional URL of an OpenAPI file (with Server specified as `dcat:endpointDescription`), which contains a single Path with a 200 response defined. This term will typically be the URL of one of a small number of standard OpenAPI files published in the Registry.
@@ -246,11 +246,11 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 .
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMzkyMzUwLDE3OTc0NjIyNzgsLTkyOT
-Q1OTg4MiwxOTA5NjA2MzIsLTE4MzY0ODI1OTIsLTExODU4MjA4
-MjMsMzUyNDI5NSwtMTc3Mjk1NTY3OSwtMTUwMzY5NDAwLDU0MD
-U3NjUzLC0xMDMyMjMyNTIzLC04NDA2NTUxODksLTU3OTM2NTg2
-MCwtMTM2MzYzMTQwMSwtMTQ3MDQzMzM2MywxNzUxMjM0OTkwLC
-02MTE3OTM1MTAsMTUxNzk1OTM4OCwxMTg5MzQyMzY2LDM1MTI3
-Njc4MF19
+eyJoaXN0b3J5IjpbMTY5ODQzNjQ5NiwxNDIzOTIzNTAsMTc5Nz
+Q2MjI3OCwtOTI5NDU5ODgyLDE5MDk2MDYzMiwtMTgzNjQ4MjU5
+MiwtMTE4NTgyMDgyMywzNTI0Mjk1LC0xNzcyOTU1Njc5LC0xNT
+AzNjk0MDAsNTQwNTc2NTMsLTEwMzIyMzI1MjMsLTg0MDY1NTE4
+OSwtNTc5MzY1ODYwLC0xMzYzNjMxNDAxLC0xNDcwNDMzMzYzLD
+E3NTEyMzQ5OTAsLTYxMTc5MzUxMCwxNTE3OTU5Mzg4LDExODkz
+NDIzNjZdfQ==
 -->
