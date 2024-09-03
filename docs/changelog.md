@@ -5,7 +5,7 @@
 
 * Rename Group to Roles.
 * Change values of `ib1:sensitivityClass` to URLs, retaining the class names.
-* Change values of `ib1:datasetAssurance` to URls, with values using correct naming conventions.
+* Change values of `ib1:datasetAssurance` to URLs, with values using correct naming conventions.
 * Change URLs for Grants and Obligations to use correct naming conventions.
 * `dcterms:license` is the URL of a Licence Interpretation.
 
@@ -21,6 +21,6 @@
 	* renamed "Permissions" to "Grants" to clarify intent and avoid a name clash with another concept.
 * [Scheme Catalog Requirements](scheme_catalog_requirements.md) are added to define how data sources comply with standards across the Scheme.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY1Mzc5Mjc5LDE3ODk1OTg1MTcsLTE4Nj
-AwNzUwODBdfQ==
+eyJoaXN0b3J5IjpbLTEyNjk0MjQ0NjUsMzY1Mzc5Mjc5LDE3OD
+k1OTg1MTcsLTE4NjAwNzUwODBdfQ==
 -->
