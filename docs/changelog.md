@@ -5,7 +5,7 @@
 
 * Rename Group to Roles.
 * Change values of `ib1:sensitivityClass` to URLs, retaining the class names.
-* Change values of `ib1:datasetAssurance` to URls, with values using correct naming conventions.
+* Change values of `ib1:datasetAssurance` to URLs, with values using correct naming conventions.
 * Change URLs for Grants and Obligations to use correct naming conventions.
 * `dcterms:license` is the URL of a Licence Interpretation.
 
