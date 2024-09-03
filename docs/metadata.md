@@ -109,7 +109,7 @@ Data Services are represented by `dcat:DataService` objects with the common mand
 : The URL of this specific instance of the API. It is interpolated into the `url` specified in the OpenAPI file using the `endpointURL` variable.
 
 `ib1:oauthIssuer`
-: Where access to data requires end user consent or selection of an account at the provider, the URL of the [OAuth Issuer](https://datatracker.ietf.org/doc/html/rfc8414#section-2) which is used to authenticate before accessing this Data Service. This field is required for data with a `ib1:sensitivityClass` of `ib1:IP1-SP`, and may be used for other classes.
+: Where access to data requires end user consent or selection of an account at the provider, the URL of the [OAuth Issuer](https://datatracker.ietf.org/doc/html/rfc8414#section-2) which is used to authenticate before accessing this Data Service. This field is required for data with a `ib1:sensitivityClass` of `ib1:IB1-SP`, and may be used for other classes.
 
 `ib1:heartbeatDescription`
 : An optional URL of an OpenAPI file (with Server specified as `dcat:endpointDescription`), which contains a single Path with a 200 response defined. This term will typically be the URL of one of a small number of standard OpenAPI files published in the Registry.
