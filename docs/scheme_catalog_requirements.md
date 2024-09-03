@@ -53,6 +53,9 @@ An `ib1:SchemeCatalogRequirements` RDF object must contain these fields:
 `ib1:requiredMetadata`
 : A bnode which contains the metadata required to be Scheme-conforming. This bnode may contain any fields and metadata, and a conforming catalogue entry must contain it all, subject to the term modifiers.
 
+`ib1:publisherRole`
+: The URL of the Role which is permitted to publish a Catalog entry conforming to. If muliple Roles are specified, any of those Roles may publish a catalog entry
+
 ### Term modifiers
 
 The requirements for terms in the `ib1:requiredMetadata` are modified by terms in the top level object.
@@ -74,7 +77,7 @@ The requirements for terms in the `ib1:requiredMetadata` are modified by terms i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzgyNDIwODUsLTEwODkwNjYwNDUsLT
-I0NzYwNzksLTU5MTg4MjU2MiwxMzg5NzAyMDM4LDExMTMxMjg5
-NjksMTI2ODgzNjcwOF19
+eyJoaXN0b3J5IjpbMTYzNDczMjk2NCwtMTQ3ODI0MjA4NSwtMT
+A4OTA2NjA0NSwtMjQ3NjA3OSwtNTkxODgyNTYyLDEzODk3MDIw
+MzgsMTExMzEyODk2OSwxMjY4ODM2NzA4XX0=
 -->
