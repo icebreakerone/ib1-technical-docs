@@ -1,9 +1,9 @@
 
 # Scheme Catalog Requirements
 
-A Scheme Catalog Requirements Document specifies the metadata that a DCAT Catalog entry must contain for it to be Scheme-conforming. A conforming data source meets a common standard across a Scheme, where all Data Providers provide the same APIs, formats and meaning of data.
+A Scheme-conforming data source meets a common standard across a Scheme, where all Data Providers provide the same APIs, formats and meaning of data. A Scheme Catalog Requirements Document specifies the metadata that a DCAT Catalog entry must contain for it to be Scheme-conforming, and which roles may publish a conforming data source. 
 
-It is an RDF document published by the Registry.
+It is an RDF document published in the Registry.
 
 ## Example
 
@@ -16,6 +16,7 @@ It is an RDF document published by the Registry.
 		a ib1:SchemeCatalogRequirements ;
 	dcterms:title "Supply Voltage API Requirements" ;
 	ib1:requiredType dcat:DataService ;
+	ib1:publisherRole <https://directory.estf.ib1.org/scheme/electricity/role/generator> ;
 	ib1:requiredMetadata [ a ib1:RequiredMetadata ;
 	    dcat:endpointDescription <https://registry.estf.ib1.org/scheme/electricity/api/voltage> ;
 	    ib1:heartbeatDescription <https://registry.estf.ib1.org/api/heartbeat-simple/1.0> ;
@@ -52,6 +53,9 @@ An `ib1:SchemeCatalogRequirements` RDF object must contain these fields:
 
 `ib1:requiredMetadata`
 : A bnode which contains the metadata required to be Scheme-conforming. This bnode may contain any fields and metadata, and a conforming catalogue entry must contain it all, subject to the term modifiers.
+
+`ib1:publisherRole`
+: The URL of the Role which is permitted to publish a Catalog entry conforming to this standard. If muliple Roles are specified, any of those Roles may publish a catalog entry.
 
 ### Term modifiers
 
