@@ -9,7 +9,7 @@
 * Change URLs for Grants and Obligations to use correct naming conventions.
 * `dcterms:license` is the URL of a Licence Interpretation.
 * Add `ib1:publisherRole` to Scheme Catalog Requirements
-
+	
 ## Version 0.2beta, 22 June 2024
 
 * [Catalog Metadata](metadata.md) is now a DCAT Dataset or Data Service, extended with IB1 terms.
@@ -22,6 +22,7 @@
 	* renamed "Permissions" to "Grants" to clarify intent and avoid a name clash with another concept.
 * [Scheme Catalog Requirements](scheme_catalog_requirements.md) are added to define how data sources comply with standards across the Scheme.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMDI1NjQ5OSwtMTY0MDQ0OTU4MSwzNj
-UzNzkyNzksMTc4OTU5ODUxNywtMTg2MDA3NTA4MF19
+eyJoaXN0b3J5IjpbLTEzMDU2NjY4MDUsMTUyMDI1NjQ5OSwtMT
+Y0MDQ0OTU4MSwzNjUzNzkyNzksMTc4OTU5ODUxNywtMTg2MDA3
+NTA4MF19
 -->
