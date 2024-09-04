@@ -8,7 +8,7 @@
 * Change values of `ib1:datasetAssurance` to URLs, with values using correct naming conventions.
 * Change URLs for Grants and Obligations to use correct naming conventions.
 * `dcterms:license` is the URL of a Licence Interpretation.
-* Add ib1:publisherRole to Scheme Catalog Requirements
+* Add `ib1:publisherRole` to Scheme Catalog Requirements
 
 ## Version 0.2beta, 22 June 2024
 
