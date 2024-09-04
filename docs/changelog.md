@@ -21,7 +21,4 @@
 	* added machine readable interpretation of licences.
 	* renamed "Permissions" to "Grants" to clarify intent and avoid a name clash with another concept.
 * [Scheme Catalog Requirements](scheme_catalog_requirements.md) are added to define how data sources comply with standards across the Scheme.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY1Mzc5Mjc5LDE3ODk1OTg1MTcsLTE4Nj
-AwNzUwODBdfQ==
--->
+

@@ -76,9 +76,3 @@ The requirements for terms in the `ib1:requiredMetadata` are modified by terms i
 `ib1:requireAbsenceOf <term>`
 : The term must not be present.
 
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzgyNDIwODUsLTEwODkwNjYwNDUsLT
-I0NzYwNzksLTU5MTg4MjU2MiwxMzg5NzAyMDM4LDExMTMxMjg5
-NjksMTI2ODgzNjcwOF19
--->

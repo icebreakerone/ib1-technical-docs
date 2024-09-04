@@ -142,12 +142,3 @@ Obligations are constraints on what the data consumer can do with the data, rest
 +--------------------------+------------------------------------+----------+------------------------------------------------------------------------------------+
 
 **NOTE**: Two additional common constraints in existing (mostly open) licenses are NonCommercial and NoDerivatives. These are explicitly not included here as it is possible to express this through the access conditions (i.e. rather than declaring that a data set is only available for non-commercial usage it is better to say that only non-commercial entities may access it). This is not quite equivalent, but simpler and better defined than the relative minefield of defining ‘non commercial use’.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3OTg3MzM4MywtMTM4MTQzNjIzMiwtNj
-IwMTE2Nzc5LDQ1NDAzOTQ3MSwtMTk5OTg4MjkxMCwtMjQ4Mzkz
-MTU4LC0xMzIzMTM2NDQyLDYxMTg1MTc2OCwtODI5OTczNDI3LD
-E5MTMzMDYxOTIsLTExODgxOTk0OTUsLTIxMzk5NDc4NTMsMjA4
-MDIxODM0LDc0MDExNzQ0OSwtMjEzMzk3OTQ2MywtNzQxMTM2MD
-kwLDkzNTA4Mzc0NywtOTY5MzAxMjUwLDExNzYxOTA5MDEsLTE5
-NjkxMzg4MjJdfQ==
--->

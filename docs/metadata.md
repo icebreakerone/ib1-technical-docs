@@ -245,12 +245,3 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
     dcterms:title "Generation Reports from My Energy Company"@en ;
 .
 ```
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMzkyMzUwLDE3OTc0NjIyNzgsLTkyOT
-Q1OTg4MiwxOTA5NjA2MzIsLTE4MzY0ODI1OTIsLTExODU4MjA4
-MjMsMzUyNDI5NSwtMTc3Mjk1NTY3OSwtMTUwMzY5NDAwLDU0MD
-U3NjUzLC0xMDMyMjMyNTIzLC04NDA2NTUxODksLTU3OTM2NTg2
-MCwtMTM2MzYzMTQwMSwtMTQ3MDQzMzM2MywxNzUxMjM0OTkwLC
-02MTE3OTM1MTAsMTUxNzk1OTM4OCwxMTg5MzQyMzY2LDM1MTI3
-Njc4MF19
--->
