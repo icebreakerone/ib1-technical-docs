@@ -1,7 +1,7 @@
 
 # Changelog
 
-## Version 0.3beta, 6 September 2024
+## Version 0.3beta, 10 September 2024
 
 * Rename Group to Roles, with `ib1:permitGroup` renamed to `ib1:roleRequiredToAccess`
 * Change values of `ib1:sensitivityClass` to URLs, retaining the class names.
