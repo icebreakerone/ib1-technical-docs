@@ -95,7 +95,7 @@ Additional fields may be made mandatory for Scheme-conforming data sources by th
 `dcterms:conformsTo`
 : The URL of a Scheme Catalog Requirements Document in the Scheme Registry. Most metadata files will include this field.
 
-`ib1:permitRole`
+`ib1:roleRequiredToAccess`
 : The URLs of one or more roles in the Registry which may access this data source subject to the Licence in the `dcterms:license` term, unless the data is open data with a `ib1:sensitivityClass` of `ib1:IB1-O`. See [Access Control Specification](access_control_specification.md).
 
 ## Data Service metadata fields
@@ -198,8 +198,8 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
     ib1:scheme <http://registry.estf.ib1.org/scheme/electricty> ;
     ib1:datasetAssurance ib1:AssuranceLevel1 ;
     ib1:sensitivityClass ib1:IB1-SA ;
-    ib1:permitRole <https://registry.estf.ib1.org/scheme/electricity/role/network-operator> ;
-    ib1:permitRole <https://registry.estf.ib1.org/scheme/electricity/role/report-provider> ;
+    ib1:roleRequiredToAccess <https://registry.estf.ib1.org/scheme/electricity/role/network-operator> ;
+    ib1:roleRequiredToAccess <https://registry.estf.ib1.org/scheme/electricity/role/report-provider> ;
     dcterms:license <https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4> ;
 .
 ```
@@ -227,8 +227,8 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
     ib1:scheme <http://registry.estf.ib1.org/scheme/electricty> ;
     ib1:datasetAssurance ib1:AssuranceLevel1 ;
     ib1:sensitivityClass ib1:IB1-SA ;
-    ib1:permitRole <https://registry.estf.ib1.org/scheme/electricity/role/network-operator> ;
-    ib1:permitRole <https://registry.estf.ib1.org/scheme/electricity/role/report-provider> ;
+    ib1:roleRequiredToAccess <https://registry.estf.ib1.org/scheme/electricity/role/network-operator> ;
+    ib1:roleRequiredToAccess <https://registry.estf.ib1.org/scheme/electricity/role/report-provider> ;
     dcterms:license <https://registry.estf.ib1.org/scheme/electricity/licence/generation-reporting/2.1> ;
 .
 

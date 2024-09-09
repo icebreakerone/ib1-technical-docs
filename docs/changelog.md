@@ -3,7 +3,7 @@
 
 ## Version 0.3beta, 6 September 2024
 
-* Rename Group to Roles.
+* Rename Group to Roles, with `ib1:permitGroup` renamed to `ib1:roleRequiredToAccess`
 * Change values of `ib1:sensitivityClass` to URLs, retaining the class names.
 * Change values of `ib1:datasetAssurance` to URLs, with values using correct naming conventions.
 * Change URLs for Grants and Obligations to use correct naming conventions.

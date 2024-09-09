@@ -21,18 +21,18 @@ It is an RDF document published in the Registry.
 	    dcat:endpointDescription <https://registry.estf.ib1.org/scheme/electricity/api/voltage> ;
 	    ib1:heartbeatDescription <https://registry.estf.ib1.org/api/heartbeat-simple/1.0> ;
 	    ib1:sensitivityClass ib1:IB1-SA ;
-	    ib1:permitRole <https://directory.estf.ib1.org/scheme/electricity/role/network-operator> ;
-	    ib1:permitRole <https://directory.estf.ib1.org/scheme/electricity/role/report-provider> ;
+	    ib1:roleRequiredToAccess <https://directory.estf.ib1.org/scheme/electricity/role/network-operator> ;
+	    ib1:roleRequiredToAccess <https://directory.estf.ib1.org/scheme/electricity/role/report-provider> ;
 	    dcterms:licence <https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4> ;
 	];
-	ib1:requireAllAndAllowAdditional ib1:permitRole ;
+	ib1:requireAllAndAllowAdditional ib1:roleRequiredToAccess ;
 	ib1:requireAbsenceOf ib1:oauthIssuer ;
 .
 ```
 
 This example defines a standard Supply Voltage API that is provided by multiple providers in a Trust Framework. It specifies the API in detail with the `dcat:endpointDescription` referring to an OpenAPI specification hosted by the Registry. It uses a standard `ib1:heartbeatDescription` to check for liveness, using a standard heartbeat request defined in an OpenAPI specification hosted by the Registry.
 
-For access control, it specifies the `ib1:sensitivityClass`, and who can use the API with `ib1:permitRole`. Because `ib1:requireAllAndAllowAdditional` is used for the access rules, it allows the publisher to widen access to additional roles, as long as the roles in this document are included.
+For access control, it specifies the `ib1:sensitivityClass`, and who can use the API with `ib1:roleRequiredToAccess`. Because `ib1:requireAllAndAllowAdditional` is used for the access rules, it allows the publisher to widen access to additional roles, as long as the roles in this document are included.
 
 Because the API does not require end user consent, `ib1:requireAbsenceOf` is used to prohibit the use of an OAuth Issuer.
 

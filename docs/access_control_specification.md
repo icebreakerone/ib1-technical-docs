@@ -20,8 +20,8 @@ This specification will be iterated as use cases emerge. The current expectation
 <https://data.example.com/supply-voltage/v0>
     a dcat:DataService ;
 	# ...
-    ib1:permitRole <https://directory.estf.ib1.org/scheme/electricity/role/report-provider> ;
-    ib1:permitRole <https://directory.estf.ib1.org/scheme/electricity/role/archiver> ;
+    ib1:roleRequiredToAccess <https://directory.estf.ib1.org/scheme/electricity/role/report-provider> ;
+    ib1:roleRequiredToAccess <https://directory.estf.ib1.org/scheme/electricity/role/archiver> ;
     dcterms:license <https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4> ;
 .
 ```
