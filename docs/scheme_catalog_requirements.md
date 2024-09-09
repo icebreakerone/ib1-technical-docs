@@ -1,9 +1,9 @@
 
 # Scheme Catalog Requirements
 
-A Scheme-conforming data source meets a common standard across a Scheme, where all Data Providers provide the same APIs, formats and meaning of data. A Scheme Catalog Requirements Document specifies the metadata that a DCAT Catalog entry must contain for it to be Scheme-conforming, and which roles may publish a conforming data source. 
+A Scheme-conforming data source meets a common standard across a Scheme. These standards are followed by the Data Providers so that the same kind of data is published across the Scheme using the same APIs, formats and meaning of data. A Scheme Catalog Requirements Document specifies the metadata that a DCAT Catalog entry must contain for it to be Scheme-conforming, and which roles may publish a conforming data source. 
 
-It is an RDF document published in the Registry.
+It is an RDF document published in the Registry, and the metadata links to machine readable Licence, API and format specifications which are also published in the Registry.
 
 ## Example
 
