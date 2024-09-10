@@ -1,0 +1,1466 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.icebreakerone.org/0.3beta/ops_guidelines/data_provider_ops_guidelines/">
+      
+      
+        <link rel="prev" href="../data_consumer_ops_guidelines/">
+      
+      
+        <link rel="next" href="../technical_common/">
+      
+      
+      <link rel="icon" href="../../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30">
+    
+    
+      
+        <title>Guidance for Data Providers - Icebreaker One Trust Framework Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Guidance for Data Providers - Icebreaker One Trust Framework Documentation" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="https://docs.icebreakerone.org/0.3beta/assets/images/social/ops_guidelines/data_provider_ops_guidelines.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://docs.icebreakerone.org/0.3beta/ops_guidelines/data_provider_ops_guidelines/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Guidance for Data Providers - Icebreaker One Trust Framework Documentation" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="https://docs.icebreakerone.org/0.3beta/assets/images/social/ops_guidelines/data_provider_ops_guidelines.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="ib1-light" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guidance-for-data-providers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+  You're not viewing the latest version.
+  <a href="../../.."> 
+    <strong>Click here to go to latest.</strong>
+  </a>
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),outdated=__md_get("__outdated",sessionStorage);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Icebreaker One Trust Framework Documentation" class="md-header__button md-logo" aria-label="Icebreaker One Trust Framework Documentation" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Icebreaker One Trust Framework Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Guidance for Data Providers
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="ib1-light" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="ib1-dark" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/icebreakerone/ib1-technical-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Icebreaker One Trust Framework Documentation" class="md-nav__button md-logo" aria-label="Icebreaker One Trust Framework Documentation" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Icebreaker One Trust Framework Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/icebreakerone/ib1-technical-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to the IB1 Trust Framework
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../before_starting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Considerations before you start
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common_policies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Core Policies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_consumer_ops_guidelines/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guidance for Data Consumers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Guidance for Data Providers
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Guidance for Data Providers
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-provider-role-and-responsibilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Provider Role and Responsibilities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Provider Role and Responsibilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-data-classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Responsibility - Data classification
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-access-and-licensing-specification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Responsibility - Access and licensing specification
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-data-provision" class="md-nav__link">
+    <span class="md-ellipsis">
+      Responsibility - Data provision
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Responsibility - Data provision">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data formats
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-data-integrity-and-correctness" class="md-nav__link">
+    <span class="md-ellipsis">
+      Responsibility - Data integrity and correctness
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-metadata-provision" class="md-nav__link">
+    <span class="md-ellipsis">
+      Responsibility - Metadata provision
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-api-availability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Responsibility - API availability
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-api-stability-and-change-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Responsibility - API stability and change management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-api-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data API Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data API Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#date-and-time-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Date and time formats
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      Endpoint security
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Endpoint security">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-data-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open data endpoints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shared-data-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shared data endpoints
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heartbeat-and-monitoring-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Heartbeat and monitoring endpoint
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      API documentation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Versioning
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-resolution-data-providers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem Resolution (Data Providers)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Problem Resolution (Data Providers)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#effective-resolution-of-problems-data-providers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Effective resolution of problems (Data Providers)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#online-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Online support
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ticket-management-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ticket management process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dispute-resolution-for-access-control-and-capability-grant-policies-data-providers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dispute resolution for access control and capability grant policies (Data Providers)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tfgs-support-data-providers" class="md-nav__link">
+    <span class="md-ellipsis">
+      TFGS support (Data Providers)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Change Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Change Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#downtime" class="md-nav__link">
+    <span class="md-ellipsis">
+      Downtime
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#licensing-and-access-control-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Licensing and access control changes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-api-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data API changes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data API changes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dual-running-and-deprecation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dual running and deprecation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-credentials-consent-and-authorisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      API credentials, consent and authorisation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../technical_common/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Security Requirements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trust Framework Architecture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metadata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dataset Metadata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../access_control_specification/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Access Control and Capability Grant Language
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scheme_catalog_requirements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scheme Catalog Requirements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additional_material/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Additional Material
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Changelog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-provider-role-and-responsibilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Provider Role and Responsibilities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Provider Role and Responsibilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-data-classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Responsibility - Data classification
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-access-and-licensing-specification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Responsibility - Access and licensing specification
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-data-provision" class="md-nav__link">
+    <span class="md-ellipsis">
+      Responsibility - Data provision
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Responsibility - Data provision">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data formats
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-data-integrity-and-correctness" class="md-nav__link">
+    <span class="md-ellipsis">
+      Responsibility - Data integrity and correctness
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-metadata-provision" class="md-nav__link">
+    <span class="md-ellipsis">
+      Responsibility - Metadata provision
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-api-availability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Responsibility - API availability
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-api-stability-and-change-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Responsibility - API stability and change management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-api-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data API Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data API Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#date-and-time-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Date and time formats
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      Endpoint security
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Endpoint security">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-data-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open data endpoints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shared-data-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shared data endpoints
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heartbeat-and-monitoring-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Heartbeat and monitoring endpoint
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      API documentation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Versioning
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-resolution-data-providers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem Resolution (Data Providers)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Problem Resolution (Data Providers)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#effective-resolution-of-problems-data-providers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Effective resolution of problems (Data Providers)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#online-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Online support
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ticket-management-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ticket management process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dispute-resolution-for-access-control-and-capability-grant-policies-data-providers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dispute resolution for access control and capability grant policies (Data Providers)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tfgs-support-data-providers" class="md-nav__link">
+    <span class="md-ellipsis">
+      TFGS support (Data Providers)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Change Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Change Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#downtime" class="md-nav__link">
+    <span class="md-ellipsis">
+      Downtime
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#licensing-and-access-control-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Licensing and access control changes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-api-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data API changes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data API changes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dual-running-and-deprecation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dual running and deprecation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-credentials-consent-and-authorisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      API credentials, consent and authorisation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="guidance-for-data-providers">Guidance for Data Providers</h1>
+<p><strong>NOTE</strong>: This document is primarily intended for technical and operations teams within organisations wishing to participate in the IB1 Trust Framework as <a href="../../glossary/#term-Data-Provider">Data Providers</a>.</p>
+<p><strong>NOTE</strong>: The key words <strong>“MUST”</strong>, <strong>“MUST NOT”</strong>, <strong>“REQUIRED”</strong>, <strong>“SHALL”</strong>, <strong>“SHALL NOT”</strong>, <strong>“SHOULD”</strong>, <strong>“SHOULD NOT”</strong>, <strong>“RECOMMENDED”</strong>, <strong>“MAY”</strong>, and <strong>“OPTIONAL”</strong> in this document are to be interpreted as described in <a href="https://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a>.</p>
+<h2 id="data-provider-role-and-responsibilities">Data Provider Role and Responsibilities</h2>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> are IB1 Trust Framework members which make data sets available to:</p>
+<ul>
+<li>
+<p><a href="../../glossary/#term-Data-Consumer">Data Consumers</a> within the Trust Framework</p>
+<ul>
+<li>Applies to shared data sets</li>
+<li>Data <a href="../../glossary/#term-Application-programming-interface">APIs</a> secured using Financial-grade <a href="../../glossary/#term-Application-programming-interface">API</a> security (<a href="../../glossary/#term-Financial-Grade-API">FAPI</a>)</li>
+</ul>
+</li>
+<li>
+<p>Any third party, in the case of open data</p>
+<ul>
+<li>Open data sets are made available through publicly accessible <a href="../../glossary/#term-Application-programming-interface">APIs</a></li>
+<li>Data are made available under an appropriate open license agreement</li>
+</ul>
+</li>
+</ul>
+<p>In this context, Data <a href="../../glossary/#term-Application-programming-interface">APIs</a> can be anything from a simple link to a <a href="../../glossary/#term-Comma-Separated-Value">CSV</a> or other file (for open data) to a complex query system returning custom output on demand.</p>
+<p>To support this role, <a href="../../glossary/#term-Data-Provider">Data Providers</a> have certain responsibilities:</p>
+<h3 id="responsibility-data-classification">Responsibility - Data classification</h3>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> are responsible for classification of their data sets by data sensitivity class, and for ensuring that data are shared, or not shared, as appropriate.</p>
+<ul>
+<li>Any data classed as <a href="../../glossary/#term-Data-sensitivity-class-closed">IB1-C</a> (Closed) or <a href="../../glossary/#term-Data-sensitivity-class-personal">IB1-SP</a> (Personal) <strong>MUST NOT</strong> be shared within the IB1 Trust Framework at present.</li>
+<li>Data in <a href="../../glossary/#term-Data-sensitivity-class-open">IB1-O</a>, <a href="../../glossary/#term-Data-sensitivity-class-shared-A">IB1-SA</a>, and <a href="../../glossary/#term-Data-sensitivity-class-shared-B">IB1-SB</a> <strong>MAY</strong> be shared within the IB1 Trust Framework as described in the following sections</li>
+</ul>
+<h3 id="responsibility-access-and-licensing-specification">Responsibility - Access and licensing specification</h3>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> are responsible for creating access rules for each dataset shared via the IB1 Trust Framework. For each data set, the <a href="../../glossary/#term-Data-Provider">Data Provider</a> must
+create a set of one or more access rules as defined in <a href="../../metadata/#data-set-metadata">Data Set Metadata</a>. These rules specify the conditions under which access will be granted, along with the capabilities forming the license grant should those conditions be satisfied.</p>
+<ul>
+<li>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> <strong>MUST</strong> ensure that access conditions and capability grants are non-discriminatory and fair to Data Consumers</p>
+</li>
+<li>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> <strong>SHOULD</strong> ensure that the validity time bounds of any published capability grants are sufficient for reasonable commercial operation of a data consumer</p>
+</li>
+</ul>
+<h3 id="responsibility-data-provision">Responsibility - Data provision</h3>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> are responsible for providing a data <a href="../../glossary/#term-Application-programming-interface">API</a> for each data set, and for configuring and securing each <a href="../../glossary/#term-Application-programming-interface">API</a> in accordance with the kinds of data it exposes (along with any other access conditions deemed necessary and appropriate by the <a href="../../glossary/#term-Data-Provider">Data Provider</a> on a per-data-set basis)</p>
+<ul>
+<li>
+<p>Open data <strong>MUST</strong> be made available with no authentication or authorization requirements</p>
+</li>
+<li>
+<p>Shared data <strong>MUST</strong> made available through a <a href="../../glossary/#term-Financial-Grade-API">FAPI</a> compliant resource server connected to the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a>’s authorization service (see <a href="../technical_common/#common-security-requirements">Common Security Requirements</a> for more details)</p>
+</li>
+</ul>
+<h4 id="data-formats">Data formats</h4>
+<p>The IB1 Trust Framework does not define or mandate individual data formats to be returned from data <a href="../../glossary/#term-Application-programming-interface">APIs</a> - the diversity of kinds of information in the sector renders this impractical, and the additional overhead imposed on data providers would be undesirable.</p>
+<p>With this said, we would encourage <a href="../../glossary/#term-Data-Provider">Data Providers</a> to consider likely automated consumption of data when designing their data <a href="../../glossary/#term-Application-programming-interface">APIs</a> - this implies using machine readable formats such as <a href="../../glossary/#term-Comma-Separated-Value">CSV</a>, <a href="../../glossary/#term-Javascript-Object-Notation">JSON</a> and similar, with a preference for those formats compatible with existing software tools and libraries.</p>
+<h3 id="responsibility-data-integrity-and-correctness">Responsibility - Data integrity and correctness</h3>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> are responsible for the correctness of data returned by their published data <a href="../../glossary/#term-Application-programming-interface">APIs</a>. <a href="https://opennetzero.org">Open Net Zero</a> provides a mechanism (a flag at the top-right of the page for the dataset) by which <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> can report any data quality issues to Icebreaker One, which will be forwarded to a nominated contact within the <a href="../../glossary/#term-Data-Provider">Data Provider</a>.</p>
+<h3 id="responsibility-metadata-provision">Responsibility - Metadata provision</h3>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> are responsible for creating, and publishing, metadata for each exposed data set. This provides visibility of each data set within the Trust Framework Governance Service (<a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a>) Registry.</p>
+<p>The metadata file covers, for each provided data set, whether shared or open:</p>
+<ul>
+<li>Semantic content</li>
+<li>Access rules and licensing of the data set</li>
+<li>Transport mechanism specification</li>
+<li>Syntactic content</li>
+</ul>
+<p>The content and format of the metadata file can be found at <a href="../../metadata/#data-set-metadata">Data Set Metadata</a>.</p>
+<p>The <a href="../../glossary/#term-Data-Provider">Data Provider</a> is responsible for the accuracy and completeness of this metadata.</p>
+<h3 id="responsibility-api-availability">Responsibility - API availability</h3>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> are responsible for availability of their published data <a href="../../glossary/#term-Application-programming-interface">APIs</a>. Availability will be monitored automatically by the
+<a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a>, availability information will form part of the metadata for each data set record in the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> Registry.</p>
+<p>The <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> will provide a mechanism for <a href="../../glossary/#term-Data-Provider">Data Providers</a> to announce scheduled downtime when planned, and to report unscheduled
+downtime when necessary.</p>
+<h3 id="responsibility-api-stability-and-change-management">Responsibility - API stability and change management</h3>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> are responsible for managing any change to the data <a href="../../glossary/#term-Application-programming-interface">APIs</a> such that disruption to <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> is minimised. This is handled through:</p>
+<ul>
+<li>Semantic versioning of all <a href="../../glossary/#term-Application-programming-interface">API</a> methods</li>
+<li>Publication of anticipated changes and retirement of <a href="../../glossary/#term-Application-programming-interface">API</a> versions through the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a></li>
+<li>Changeover periods where new and prior <a href="../../glossary/#term-Application-programming-interface">API</a> versions are run in parallel</li>
+</ul>
+<h2 id="data-api-requirements">Data API Requirements</h2>
+<p>Unlike Open Banking, the IB1 Trust Framework does not mandate particular <a href="../../glossary/#term-Application-programming-interface">APIs</a> for data provision - it is expected that there will be a variety of mechanisms to expose data, with varying inputs (from a single data set <a href="../../glossary/#term-Identification">ID</a> to a complex query object) and varying kinds of output dependent on the information exposed.</p>
+<p>With that said, there are certain properties that all data <a href="../../glossary/#term-Application-programming-interface">APIs</a> must satisfy to interoperate successfully with other parties within the IB1 Trust Framework.</p>
+<p>We refer to endpoints used to retrieve data as data endpoints, and others as infrastructure endpoints.</p>
+<h3 id="date-and-time-formats">Date and time formats</h3>
+<p>Whenever date or time quantities are accepted or returned from a data <a href="../../glossary/#term-Application-programming-interface">API</a>, these values MUST conform to <a href="https://tools.ietf.org/html/rfc3339">|RFC| 3339</a>. This is referenced elsewhere in this document as <strong>date/time</strong></p>
+<h3 id="endpoint-security">Endpoint security</h3>
+<h4 id="open-data-endpoints">Open data endpoints</h4>
+<p>Data endpoints which provide access to open data (in class <a href="../../glossary/#term-Data-sensitivity-class-open">IB1-O</a>) <strong>MUST NOT</strong> require any form of authentication prior to access. This includes allowing access to entities which are not members of the IB1 Trust Framework.</p>
+<h4 id="shared-data-endpoints">Shared data endpoints</h4>
+<p>Data endpoints which provide access to shared data (in classes <a href="../../glossary/#term-Data-sensitivity-class-shared-A">IB1-SA</a> and <a href="../../glossary/#term-Data-sensitivity-class-shared-B">IB1-SB</a>) <strong>MUST</strong> implement the subset of the resource server part of the <a href="../../glossary/#term-Financial-Grade-API">FAPI</a> specification used within the IB1 Trust Framework as described in <a href="../technical_common/#common-security-requirements">Common Security Requirements</a>, and authorize against the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> authorization service.</p>
+<p>Protected data endpoints <strong>MAY</strong> use the token introspection mechanism provided by <a href="../../glossary/#term-Financial-Grade-API">FAPI</a> to gather additional information about the client making the request prior to any access decision.</p>
+<h3 id="heartbeat-and-monitoring-endpoint">Heartbeat and monitoring endpoint</h3>
+<p>All data <a href="../../glossary/#term-Application-programming-interface">APIs</a> <strong>SHOULD</strong> include a <a href="../../glossary/#term-Financial-Grade-API">FAPI</a> protected heartbeat infrastructure endpoint. This serves two purposes:</p>
+<ul>
+<li>
+<p>It allows the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> to monitor the liveness of the data <a href="../../glossary/#term-Application-programming-interface">API</a></p>
+</li>
+<li>
+<p>It provides some level of verification that the resource server has been correctly configured</p>
+</li>
+</ul>
+<p>The heartbeat endpoint location is defined within the data set metadata file, if specified it <strong>MUST</strong> respond to <code>GET</code> requests from the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> monitoring system with a <code>200</code> status code.</p>
+<p>If the heartbeat response contains a body, the body will be interpreted by the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> monitoring system as a <a href="../../glossary/#term-Javascript-Object-Notation">JSON</a>
+dictionary containing statistics for the period between the most recent two successful calls to the heartbeat endpoint (including the call to which this is a response). This response is <strong>RECOMMENDED</strong> as it provides oversight
+of <a href="../../glossary/#term-Application-programming-interface">API</a> usage to the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a>.</p>
+<p>Legal keys, and the semantics of their associated values, are as follows:</p>
+<table>
+<thead>
+<tr>
+<th colspan="1" rowspan="1">
+<p>Name</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Content</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="1" rowspan="1">
+<p><code>period_start</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p><strong>date/time</strong> of the start of the period for which statistics are reported</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><code>period_end</code>
+</p>
+</td>
+<td colspan="1" rowspan="1">
+<p><strong>date/time</strong> of the end of the period for which statistics are reported, this
+will typically be the date and time of the heartbeat request</p>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+<p><code>api_call_response_[CODE]_count</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>integer number of requests to non-heartbeat endpoints within this data
+<a href="../../glossary/#term-Application-programming-interface">API</a> which resulted in a
+response of type CODE. A distinct key:value pair is sent in the response for each
+distinct <a href="../../glossary/#term-HypterText-Transfer-Protocol">HTTP</a> status code
+returned.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="api-documentation">API documentation</h3>
+<p>Data <a href="../../glossary/#term-Application-programming-interface">APIs</a> <strong>MUST</strong> be described within the transport section of the data set metadata file.</p>
+<h3 id="versioning">Versioning</h3>
+<p>All data <a href="../../glossary/#term-Application-programming-interface">APIs</a> <strong>MUST</strong> include a version number in the path of each data endpoint. This version SHOULD use semantic versioning to differentiate between breaking and backwards compatible changes. This <strong>MUST</strong> be documented within the OpenAPI transport section of the metadata file.</p>
+<h2 id="problem-resolution-data-providers">Problem Resolution (Data Providers)</h2>
+<h3 id="effective-resolution-of-problems-data-providers">Effective resolution of problems (Data Providers)</h3>
+<p>A <a href="../../glossary/#term-Data-Provider">Data Provider</a> <strong>MUST</strong> create documentation to clearly outline the policies, processes and systems it has in place for problem resolution and its respective service level objectives. This framework should enable the effective resolution of <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> issues and therefore cater for problems that relate specifically to a <a href="../../glossary/#term-Data-Consumer">Data Consumer</a>’s use of a <a href="../../glossary/#term-Data-Provider">Data Provider</a>’s data <a href="../../glossary/#term-Application-programming-interface">APIs</a>. In the event that a <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> is unable to resolve an issue with a <a href="../../glossary/#term-Data-Provider">Data Provider</a>, the issue <strong>MAY</strong> be flagged to the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> Dispute Resolution function for independent support.</p>
+<h3 id="online-support">Online support</h3>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> <strong>SHOULD</strong> provide <a href="../../glossary/#term-Frequently-Asked-Question">Frequently Asked Questions</a>, which address areas that may be specific to <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> such as technical advice or test facility guidance. They should also consider a means of identifying recurring questions or user-error issues so these can be collated into <a href="../../glossary/#term-Frequently-Asked-Question">Frequently Asked Questions</a> to support the early resolution of problems.</p>
+<p>Problem resolution documentation, <a href="../../glossary/#term-Frequently-Asked-Question">Frequently Asked Questions</a>, contact details, opening times and out of hours support <strong>SHOULD</strong> be published and easily accessible in one collective area on the <a href="../../glossary/#term-Data-Provider">Data Provider</a>’s website.</p>
+<h3 id="ticket-management-process">Ticket management process</h3>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> <strong>MUST</strong> ensure they have a functioning ticket management system which enables them to respond to issues and problems raised within clearly defined service level targets. A successful problem resolution framework will enable the efficient identification and resolution of problems which specifically impact <a href="../../glossary/#term-Data-Consumer">Data Consumers</a>. The system for raising and reporting on tickets should be transparent in order to fully inform users and engender trust across the ecosystem.</p>
+<h3 id="dispute-resolution-for-access-control-and-capability-grant-policies-data-providers">Dispute resolution for access control and capability grant policies (Data Providers)</h3>
+<p>In cases where a <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> believes that access conditions or capability grant rules are being applied unfairly, the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> will act as a mediating party.</p>
+<h3 id="tfgs-support-data-providers">TFGS support (Data Providers)</h3>
+<p>The <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> Service Desk will provide participants with a supplementary ticket management process and supports <a href="../../glossary/#term-Data-Provider">Data Providers</a> in communicating problems to ecosystem participants via the noticeboard.</p>
+<h2 id="change-management">Change Management</h2>
+<p>This section outlines various change scenarios that may impact <a href="../../glossary/#term-Data-Consumer">Data Consumers</a>, and provides guidance for a <a href="../../glossary/#term-Data-Provider">Data Provider</a> to consider when implementing a change and communicating to <a href="../../glossary/#term-Data-Consumer">Data Consumers</a>.</p>
+<h3 id="downtime">Downtime</h3>
+<p>Planned downtime, by definition, is something that a <a href="../../glossary/#term-Data-Provider">Data Provider</a> anticipates and therefore is able to give advance notice to <a href="../../glossary/#term-Data-Consumer">Data Consumers</a>. It is not generally possible to give advance notice of unplanned downtime, but <a href="../../glossary/#term-Data-Provider">Data Providers</a> should give notice as soon as they are aware of the downtime.</p>
+<p>When providing notifications, <a href="../../glossary/#term-Data-Provider">Data Providers</a> <strong>SHOULD</strong> provide a specific time period, so <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> are aware that the data <a href="../../glossary/#term-Application-programming-interface">API</a> will be unavailable for that time, or upon a subsequent notification to confirm that the service has been reinstated sooner than anticipated.</p>
+<p>In future, <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> Support Services will be able assist <a href="../../glossary/#term-Data-Provider">Data Providers</a> with the dissemination of downtime information to the wider Icebreaker One ecosystem via its central noticeboard facility.</p>
+<p>Planned downtime should be given at least five business days before the event. Apart from cancelling the planned downtime, no changes should be made to the planned downtime notification within the five business day period. Where practical, <a href="../../glossary/#term-Data-Provider">Data Providers</a> should give advance notice via their own website, developer portal or <a href="../../glossary/#term-Trust-Framwork-Governance-Service">TFGS</a> of any planned downtime one calendar month in advance.</p>
+<h3 id="licensing-and-access-control-changes">Licensing and access control changes</h3>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> <strong>MUST</strong> provide advance notice of any changes to access control and capability grant policies. This is normally covered by the time-bounded nature of these grants, but <a href="../../glossary/#term-Data-Provider">Data Providers</a> <strong>MAY</strong> also use any notification services provided by the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> to publish additional information about changes.</p>
+<h3 id="data-api-changes">Data API changes</h3>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> may periodically wish to upgrade and / or to deprecate versions of their data <a href="../../glossary/#term-Application-programming-interface">APIs</a>. The following mitigation measures will reduce the impact on service providers of these changes.</p>
+<h4 id="dual-running-and-deprecation">Dual running and deprecation</h4>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> <strong>SHOULD</strong> support a minimum of two non-compatible <a href="../../glossary/#term-Application-programming-interface">API</a> versions in a production context, providing both versions were previously supported by the <a href="../../glossary/#term-Data-Provider">Data Provider</a>, for a period of time long enough to ensure that <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> have had sufficient time to successfully test the new version and migrate their applications and customers. <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> recommends dual running for at least six months for a major version, and three months for a minor version. Where a <a href="../../glossary/#term-Data-Provider">Data Provider</a> implements a data <a href="../../glossary/#term-Application-programming-interface">API</a> for the
+first time, they will only need to support this one version to start with.</p>
+<p>The deprecation of unsupported versions is at the <a href="../../glossary/#term-Data-Provider">Data Provider</a>’s discretion – based on usage metrics. However, the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> may recommend that any specific version (major, minor, or patch) should be deprecated at any time, and this should be implemented within three months of notification by the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a>. This is to cater for critical defects, especially those relating to security. In exceptional circumstances it may be agreed by <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> that support for a specific version is terminated earlier.</p>
+<p><a href="../../glossary/#term-Data-Provider">Data Providers</a> must not apply any measures to induce <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> to adopt a new version of the <a href="../../glossary/#term-Application-programming-interface">APIs</a> (e.g. rate limiting the older version while providing better performance on a newer version).</p>
+<h4 id="api-credentials-consent-and-authorisation">API credentials, consent and authorisation</h4>
+<p><a href="../../glossary/#term-Application-programming-interface">API</a> Credentials associated with an <a href="../../glossary/#term-Application-programming-interface">API</a> should be version agnostic. Therefore, a <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> accessing v1.0, v1.1 or v2.0 should be able to use the same <a href="../../glossary/#term-Application-programming-interface">API</a> Credentials across all available <a href="../../glossary/#term-Application-programming-interface">API</a> endpoints.</p>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTU4OTEyNzU2NSw0OTI4MzA0NV19
+-->
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+  
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["disableCookies"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stats.openenergy.org.uk/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '9']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+  </body>
+</html>
