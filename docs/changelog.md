@@ -1,6 +1,15 @@
 
 # Changelog
 
+## Version 0.3beta, 10 September 2024
+
+* Rename Group to Roles, with `ib1:permitGroup` renamed to `ib1:roleRequiredToAccess`
+* Change values of `ib1:sensitivityClass` to URLs, retaining the class names.
+* Change values of `ib1:datasetAssurance` to URLs, with values using correct naming conventions.
+* Change URLs for Grants and Obligations to use correct naming conventions.
+* `dcterms:license` is the URL of a Licence Interpretation.
+* Add `ib1:roleRequiredToPublish` to Scheme Catalog Requirements
+
 ## Version 0.2beta, 22 June 2024
 
 * [Catalog Metadata](metadata.md) is now a DCAT Dataset or Data Service, extended with IB1 terms.
@@ -12,6 +21,4 @@
 	* added machine readable interpretation of licences.
 	* renamed "Permissions" to "Grants" to clarify intent and avoid a name clash with another concept.
 * [Scheme Catalog Requirements](scheme_catalog_requirements.md) are added to define how data sources comply with standards across the Scheme.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjAwNzUwODBdfQ==
--->
+
