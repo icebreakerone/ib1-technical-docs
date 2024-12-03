@@ -183,24 +183,24 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 ```
 @prefix dcat: <http://www.w3.org/ns/dcat#> . 
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix ib1: <http://registry.ib1.org/ns/1.0#> .
+@prefix ib1: <https://registry.core.trust.ib1.org/ns/1.0#> .
 
 <https://example.com/supply-voltage/v0>
     a dcat:DataService ;
     dcterms:title "Electricity Generation Voltage"@en ;
     dcterms:description "API to query generation supply voltage"@en ;
-    dcterms:publisher <https://directory.estf.ib1.org/member/827252> ;
-    dcterms:conformsTo <https://registry.estf.ib1.org/scheme/electricity/standard/supply-voltage> ; 
-    dcat:endpointDescription <https://registry.estf.ib1.org/scheme/electricity/api/voltage> ;
-    ib1:heartbeatDescription <https://registry.estf.ib1.org/api/heartbeat-simple/1.0> ;
+    dcterms:publisher <https://directory.core.trust.ib1.org/member/827252> ;
+    dcterms:conformsTo <https://registry.core.trust.ib1.org/scheme/electricity/standard/supply-voltage> ; 
+    dcat:endpointDescription <https://registry.core.trust.ib1.org/scheme/electricity/api/voltage> ;
+    ib1:heartbeatDescription <https://registry.core.trust.ib1.org/api/heartbeat-simple/1.0> ;
     dcat:endpointURL <https://grid03.api.example.com/generation-voltage/v0> ;
-    ib1:trustFramework <http://registry.estf.ib1.org/trust-framework> ;
-    ib1:scheme <http://registry.estf.ib1.org/scheme/electricty> ;
+    ib1:trustFramework <https://registry.core.trust.ib1.org/trust-framework> ;
+    ib1:scheme <https://registry.core.trust.ib1.org/scheme/electricty> ;
     ib1:datasetAssurance ib1:AssuranceLevel1 ;
     ib1:sensitivityClass ib1:IB1-SA ;
-    ib1:roleRequiredToAccess <https://registry.estf.ib1.org/scheme/electricity/role/network-operator> ;
-    ib1:roleRequiredToAccess <https://registry.estf.ib1.org/scheme/electricity/role/report-provider> ;
-    dcterms:license <https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4> ;
+    ib1:roleRequiredToAccess <https://registry.core.trust.ib1.org/scheme/electricity/role/network-operator> ;
+    ib1:roleRequiredToAccess <https://registry.core.trust.ib1.org/scheme/electricity/role/report-provider> ;
+    dcterms:license <https://registry.core.trust.ib1.org/scheme/electricity/licence/voltage-reporting/1.4> ;
 .
 ```
 
@@ -209,35 +209,35 @@ We encourage use of the `dcat:keyword` list for datasets. These translate to “
 ```
 @prefix dcat: <http://www.w3.org/ns/dcat#> . 
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix ib1: <http://registry.ib1.org/ns/1.0#> .
+@prefix ib1: <https://registry.core.trust.ib1.org/ns/1.0#> .
 
 <https://data.example.com/generation-report/oct2024>
     a dcat:Dataset ;
     dcterms:title "Generation Report Oct 2024"@en ;
     dcterms:description "Data report on generation"@en ;
-    dcterms:publisher <https://directory.estf.ib1.org/member/827252> ;
-    dcterms:conformsTo <https://registry.estf.ib1.org/scheme/electricity/standard/generation-report> ; 
+    dcterms:publisher <https://directory.core.trust.ib1.org/member/827252> ;
+    dcterms:conformsTo <https://registry.core.trust.ib1.org/scheme/electricity/standard/generation-report> ; 
     dcat:version "0.1.2" ;
     dcat:inSeries <https://data.example.com/generation-report>;
     dcat:distribution <https://data.example.com/generation-report/oct2024/csv> ;
     dcat:keyword "solar"@en,
 	    "electricity"@en,
 	    "retrofit"@en ;
-    ib1:trustFramework <http://registry.estf.ib1.org/trust-framework> ;
-    ib1:scheme <http://registry.estf.ib1.org/scheme/electricty> ;
+    ib1:trustFramework <https://registry.core.trust.ib1.org/trust-framework> ;
+    ib1:scheme <https://registry.core.trust.ib1.org/scheme/electricty> ;
     ib1:datasetAssurance ib1:AssuranceLevel1 ;
     ib1:sensitivityClass ib1:IB1-SA ;
-    ib1:roleRequiredToAccess <https://registry.estf.ib1.org/scheme/electricity/role/network-operator> ;
-    ib1:roleRequiredToAccess <https://registry.estf.ib1.org/scheme/electricity/role/report-provider> ;
-    dcterms:license <https://registry.estf.ib1.org/scheme/electricity/licence/generation-reporting/2.1> ;
+    ib1:roleRequiredToAccess <https://registry.core.trust.ib1.org/scheme/electricity/role/network-operator> ;
+    ib1:roleRequiredToAccess <https://registry.core.trust.ib1.org/scheme/electricity/role/report-provider> ;
+    dcterms:license <https://registry.core.trust.ib1.org/scheme/electricity/licence/generation-reporting/2.1> ;
 .
 
 <https://data.example.com/generation-report/oct2024/download>
 	a dcat:Distribution ;
 	dcterms:description "CSV"@en ;
 	dcat:downloadURL <https://data.example.com/generation-report/oct2024/csv> ;
-	dcat:media_type "text/csv"@en ;
-	ib1:dataSchema <https://registry.estf.ib1.org/scheme/electricity/format/generation-report/2.0> ;
+	dcat:mediaType "text/csv"@en ;
+	ib1:dataSchema <https://registry.core.trust.ib1.org/scheme/electricity/format/generation-report/2.0> ;
 .
 
 <https://data.example.com/generation-report>

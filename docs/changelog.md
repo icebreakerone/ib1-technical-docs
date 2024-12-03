@@ -1,6 +1,10 @@
 
 # Changelog
 
+## Version 0.4beta, 12 December 2024
+
+* Change Registry URLs and IB1 terms to use new style hostnames under `trust.ib1.org`.
+
 ## Version 0.3beta, 10 September 2024
 
 * Rename Group to Roles, with `ib1:permitGroup` renamed to `ib1:roleRequiredToAccess`

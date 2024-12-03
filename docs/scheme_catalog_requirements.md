@@ -10,20 +10,20 @@ It is an RDF document published in the Registry, and the metadata links to machi
 ```
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> . 
-@prefix ib1: <http://registry.ib1.org/ns/1.0#> .
+@prefix ib1: <https://registry.core.trust.ib1.org/ns/1.0#> .
 
-<https://registry.estf.ib1.org/scheme/electricity/standard/supply-voltage>
+<https://registry.core.trust.ib1.org/scheme/electricity/standard/supply-voltage>
 		a ib1:SchemeCatalogRequirements ;
 	dcterms:title "Supply Voltage API Requirements" ;
 	ib1:requiredType dcat:DataService ;
-	ib1:roleRequiredToPublish <https://directory.estf.ib1.org/scheme/electricity/role/generator> ;
+	ib1:roleRequiredToPublish <https://registry.core.trust.ib1.org/scheme/electricity/role/generator> ;
 	ib1:requiredMetadata [ a ib1:RequiredMetadata ;
-	    dcat:endpointDescription <https://registry.estf.ib1.org/scheme/electricity/api/voltage> ;
-	    ib1:heartbeatDescription <https://registry.estf.ib1.org/api/heartbeat-simple/1.0> ;
+	    dcat:endpointDescription <https://registry.core.trust.ib1.org/scheme/electricity/api/voltage> ;
+	    ib1:heartbeatDescription <https://registry.core.trust.ib1.org/api/heartbeat-simple/1.0> ;
 	    ib1:sensitivityClass ib1:IB1-SA ;
-	    ib1:roleRequiredToAccess <https://directory.estf.ib1.org/scheme/electricity/role/network-operator> ;
-	    ib1:roleRequiredToAccess <https://directory.estf.ib1.org/scheme/electricity/role/report-provider> ;
-	    dcterms:licence <https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4> ;
+	    ib1:roleRequiredToAccess <https://registry.core.trust.ib1.org/scheme/electricity/role/network-operator> ;
+	    ib1:roleRequiredToAccess <https://registry.core.trust.ib1.org/scheme/electricity/role/report-provider> ;
+	    dcterms:licence <https://registry.core.trust.ib1.org/scheme/electricity/licence/voltage-reporting/1.4> ;
 	];
 	ib1:requireAllAndAllowAdditional ib1:roleRequiredToAccess ;
 	ib1:requireAbsenceOf ib1:oauthIssuer ;

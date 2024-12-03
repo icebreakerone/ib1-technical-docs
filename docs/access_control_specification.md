@@ -20,9 +20,9 @@ This specification will be iterated as use cases emerge. The current expectation
 <https://data.example.com/supply-voltage/v0>
     a dcat:DataService ;
 	# ...
-    ib1:roleRequiredToAccess <https://directory.estf.ib1.org/scheme/electricity/role/report-provider> ;
-    ib1:roleRequiredToAccess <https://directory.estf.ib1.org/scheme/electricity/role/archiver> ;
-    dcterms:license <https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4> ;
+    ib1:roleRequiredToAccess <https://registry.core.trust.ib1.org/scheme/electricity/role/report-provider> ;
+    ib1:roleRequiredToAccess <https://registry.core.trust.ib1.org/scheme/electricity/role/archiver> ;
+    dcterms:license <https://registry.core.trust.ib1.org/scheme/electricity/licence/voltage-reporting/1.4> ;
 .
 ```
 
@@ -43,11 +43,11 @@ For interoperability and consistency, Schemes should prefer to use Grants and Ob
 
 ```
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix ib1: <http://registry.ib1.org/ns/1.0#>
+@prefix ib1: <https://registry.core.trust.ib1.org/ns/1.0#>
 
-<https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4>
+<https://registry.core.trust.ib1.org/scheme/electricity/licence/voltage-reporting/1.4>
 		a ib1:LicenceInterpretation ;
-	dcterms:license https://https://registry.estf.ib1.org/scheme/electricity/licence/voltage-reporting/1.4/legal-text
+	dcterms:license https://registry.core.trust.ib1.org/scheme/electricity/licence/voltage-reporting/1.4/legal-text
 	ib1:grant ib1:GrantUseAny ;
 	ib1:grant ib1:GrantAdaptAny ;
 	ib1:grant ib1:GrantCombineAny ;
