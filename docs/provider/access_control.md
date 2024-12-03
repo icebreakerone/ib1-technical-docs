@@ -2,11 +2,11 @@
 
 Access to data sources is controlled by roles and licences.
 
-A [catalog entry](metadata.md) specifies one or more roles and a licence. If a participant has any of the roles, they may access the data source under the specified licence.
+A [catalog entry](../metadata/) specifies one or more roles and a licence. If a participant has any of the roles, they may access the data source under the specified licence.
 
 The Registry maintains a list of the permissions and obligations for access to a data source under a given licence.
 
-Scheme-conforming data sources use [Scheme Catalog Requirements Documents](scheme_catalog_requirements.md) which specify the Access Rules for common formats of data sources.
+Scheme-conforming data sources use [Scheme Catalog Requirements Documents](../../registry/scheme_catalog_requirements/) which specify the Access Rules for common formats of data sources.
 
 ## Changes from Open Energy
 

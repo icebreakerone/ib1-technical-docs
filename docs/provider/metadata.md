@@ -1,17 +1,17 @@
 # Dataset & Data Service Metadata
 
-Each [Data Provider](glossary.md#term-Data-Provider) maintains a set of one or more metadata files, each of which can describe one or more 
+Each [Data Provider](../../glossary/#term-Data-Provider) maintains a set of one or more metadata files, each of which can describe one or more 
 distinct sources of data. These descriptions serve several purposes:
 
 
-1. They drive discovery descriptions are ingested into our search system and made available to a [Data Consumer](glossary.md#term-Data-Consumer) 
+1. They drive discovery descriptions are ingested into our search system and made available to a [Data Consumer](../../glossary/#term-Data-Consumer) 
 searching for particular kinds of data.
 
 
 2. They inform consumption of that data, providing information on:
 
 
-    1. The [API](glossary.md#term-Application-programming-interface) required to access the data source
+    1. The [API](../../glossary/#term-Application-programming-interface) required to access the data source
 
 
     2. Any access constraints which may need to be satisfied
@@ -42,7 +42,7 @@ They are described by slightly different information in metadata files.
 
 A Scheme-conforming Dataset or Data Service meets the data format and meaning requirements of the Scheme, along with any required access and licence conditions.
 
-These requirements are published by the Scheme Registry as machine readable [Scheme Catalog Requirements Documents](scheme_catalog_requirements.md), and metadata files link to them to show their conformance.
+These requirements are published by the Scheme Registry as machine readable [Scheme Catalog Requirements Documents](../../registry/scheme_catalog_requirements/), and metadata files link to them to show their conformance.
 
 Most Datasets and Data Services are Scheme-conforming. A Data Provider may publish data which is not Scheme-conforming to:
 
@@ -81,8 +81,8 @@ The following fields must be included in every DCAT object. Metadata will be vis
 : The assurance level for this dataset.
 
 `ib1:sensitivityClass`
-: The [data sensitivity class](glossary.md#term-Data-sensitivity-class) of this dataset. In the current IB1 Trust Framework this should always be one of [`ib1:IB1-O`](glossary.md#term-Data-sensitivity-class-open),  [`ib1:IB1-SA`](glossary.md#term-Data-sensitivity-class-shared-A) or [`ib1:IB1-SB`](glossary.md#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](glossary.md#term-Application-programming-interface) security imposed, with [`ib1:IB1-O`](glossary.md#term-Data-sensitivity-class-open) datasets being open data with no additional security, and the two shared data classes mandating [FAPI](glossary.md#term-Financial-Grade-API) security using the IB1 Trust Framework.
-*Under development:* [`ib1:IB1-SP`](glossary.md#term-Data-sensitivity-class-personal) may be used for Data Service APIs which expose personal data with the end user's consent, in which case the `ib1:oauthIssuer` term must be present.
+: The [data sensitivity class](../../glossary/#term-Data-sensitivity-class) of this dataset. In the current IB1 Trust Framework this should always be one of [`ib1:IB1-O`](../../glossary/#term-Data-sensitivity-class-open),  [`ib1:IB1-SA`](../../glossary/#term-Data-sensitivity-class-shared-A) or [`ib1:IB1-SB`](../../glossary/#term-Data-sensitivity-class-shared-B), no other classes are permitted. The value of this property also determines the level of [API](../../glossary/#term-Application-programming-interface) security imposed, with [`ib1:IB1-O`](../../glossary/#term-Data-sensitivity-class-open) datasets being open data with no additional security, and the two shared data classes mandating [FAPI](../../glossary/#term-Financial-Grade-API) security using the IB1 Trust Framework.
+*Under development:* [`ib1:IB1-SP`](../../glossary/#term-Data-sensitivity-class-personal) may be used for Data Service APIs which expose personal data with the end user's consent, in which case the `ib1:oauthIssuer` term must be present.
 Previous versions of this standard used literal strings to identify the classes.
 
 More information about publishing assured data within a Trust Framework is available on the [How to become an assured data publisher](https://icebreakerone.org/sops/assured-data-publishing/) section of the Icebreaker One website.
@@ -96,7 +96,7 @@ Additional fields may be made mandatory for Scheme-conforming data sources by th
 : The URL of a Scheme Catalog Requirements Document in the Scheme Registry. Most metadata files will include this field.
 
 `ib1:roleRequiredToAccess`
-: The URLs of one or more roles in the Registry which may access this data source subject to the Licence in the `dcterms:license` term, unless the data is open data with a `ib1:sensitivityClass` of `ib1:IB1-O`. See [Access Control Specification](access_control_specification.md).
+: The URLs of one or more roles in the Registry which may access this data source subject to the Licence in the `dcterms:license` term, unless the data is open data with a `ib1:sensitivityClass` of `ib1:IB1-O`. See [Access Control](../access_control/).
 
 ## Data Service metadata fields
 
