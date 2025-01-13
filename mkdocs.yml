@@ -2,14 +2,9 @@ site_name: Icebreaker One Trust Framework Documentation
 site_url: https://docs.icebreakerone.org
 repo_url: https://github.com/icebreakerone/ib1-technical-docs
 nav:
+  - 'Introduction': 'index.md'
   - 'Guidelines':
-    - 'Introduction to the IB1 Trust Framework': 'ops_guidelines/introduction.md'
-    - 'Considerations before you start': 'ops_guidelines/before_starting.md'
-    - 'Core Policies': 'ops_guidelines/common_policies.md'
-    - 'Guidance for Data Consumers': 'ops_guidelines/data_consumer_ops_guidelines.md'
     - 'Guidance for Data Providers': 'ops_guidelines/data_provider_ops_guidelines.md'
-    - 'Common Security Requirements': 'ops_guidelines/technical_common.md'
-  - 'Trust Framework Architecture': 'architecture.md'
   - 'Data Providers':
     - 'Dataset Metadata': 'provider/metadata.md'
     - 'Access Control': 'provider/access_control.md'
@@ -17,7 +12,6 @@ nav:
     - 'Registry Structure': 'registry/structure.md'
     - 'Scheme Catalog Requirements': 'registry/scheme_catalog_requirements.md'
   - 'Glossary': 'glossary.md'
-  - 'Additional Material': 'additional_material.md'
   - 'Changelog': 'changelog.md'
 theme:
   name: material

@@ -1,8 +1,9 @@
 
 # Changelog
 
-## Version 0.4beta, 12 December 2024
+## Version 0.4beta, 12 February 2025
 
+* Remove redundant materials.
 * Change Registry URLs and IB1 terms to use new style hostnames under `trust.ib1.org`.
 
 ## Version 0.3beta, 10 September 2024
