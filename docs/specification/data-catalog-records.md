@@ -1,4 +1,4 @@
-# Dataset & Data Service Metadata
+# Data Catalog Records
 
 Each [Data Provider](../../glossary/#term-Data-Provider) maintains a set of one or more metadata files, each of which can describe one or more 
 distinct sources of data. These descriptions serve several purposes:

@@ -5,12 +5,12 @@ nav:
   - 'Introduction': 'index.md'
   - 'Guidelines':
     - 'Guidance for Data Providers': 'ops_guidelines/data_provider_ops_guidelines.md'
-  - 'Data Providers':
-    - 'Dataset Metadata': 'provider/metadata.md'
-    - 'Access Control': 'provider/access_control.md'
-  - 'Registry':
-    - 'Registry Structure': 'registry/structure.md'
-    - 'Scheme Catalog Requirements': 'registry/scheme_catalog_requirements.md'
+  - 'Specifications':
+    - 'Data Catalog Records':
+      - 'Metadata': 'specification/data-catalog-records.md'
+      - 'Scheme Catalog Requirements': 'specification/data-catalog-records/scheme-catalog-requirements.md'
+    - 'Access Control': 'provider/access-control.md'
+    - 'Registry Structure': 'specification/registry.md'
   - 'Glossary': 'glossary.md'
   - 'Changelog': 'changelog.md'
 theme:
