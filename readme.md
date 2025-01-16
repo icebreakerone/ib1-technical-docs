@@ -1,7 +1,7 @@
 # Icebreaker One Technical Docs
 
 Icebreaker One technical documentation. This repository contains the sources for a [mkdocs-material](https://squidfunk.github.io/mkdocs-material/)
-build of the technical documentation, including operational guidelines, for the Icebreaker One Trust Framework.
+build of the technical documentation, including operational guidelines, for the IB1 Trust Framework.
 
 ## Viewing the docs
 
