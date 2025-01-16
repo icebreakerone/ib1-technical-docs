@@ -70,7 +70,7 @@ For interoperability and consistency, Schemes should prefer to use Grants and Ob
 
 ### Standard grants
 
-These are Grants where the URL prefix is in the IB1 Registry, usually abbreviated as  `ib1:`, indicating that they are defined as part of the Icebreaker One Trust Framework. Data providers **SHOULD NOT**, create their own Grants unless absolutely necessary as doing so acts against the aim of easy interoperability and comprehension of access and licensing rules.
+These are Grants where the URL prefix is in the IB1 Registry, usually abbreviated as  `ib1:`, indicating that they are defined as part of the IB1 Trust Framework. Data providers **SHOULD NOT**, create their own Grants unless absolutely necessary as doing so acts against the aim of easy interoperability and comprehension of access and licensing rules.
 
 Any additional grants designed **MUST** be within the namespace of the data provider responsible for their definition, and any such data provider **MUST** publish a clear, legally valid, definition of any such permissions. In addition, data providers creating custom permissions **MUST** inform the [TFGS](glossary.md#term-Trust-Framework-Governance-Service) of this, providing links to the aforementioned documentation.
 

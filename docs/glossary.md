@@ -228,13 +228,13 @@
 | Term | Description/Definition | Notes |
 | --- | --- | --- |
 | <span id="term-Data-sensitivity-class">Data sensitivity class</span> | OE members can self-allocate dataset into ‘classes’ depending on its sensitivity profile. Access and security requirements differ across classes. | |
-| <span id="term-Icebreaker-One-Trust-Framework">Icebreaker One Trust Framework</span> | The governance, standards and technical specifications for the Trust Framework operated by Icebreaker One | |
+| <span id="term-Icebreaker-One-Trust-Framework">IB1 Trust Framework</span> | The governance, standards and technical specifications for the Trust Framework operated by Icebreaker One | |
 | <span id="term-Preemptive-licence">Preemptive licence</span> | A pre-determined set of rules governing data sharing and use. | |
 | <span id="term-Rule">Rule</span> | An articulation of a dataset’s sensitivity class, access conditions, and license that is publishing in the metadata file. A dataset may either have a single, or multiple, rules. | |
 | <span id="term-Trust-framework">Trust framework</span> | A set of governance measures ensuring that data is shared in a trustworthy manner (e.g. participant authorisation, access, data tiers etc.) | |
 | <span id="term-Advisory-Group">Advisory Group</span> | *AG* - Trust Frameworks operate under a Steering Group and up to five Advisory groups, covering User needs, materiality and impact; Technical infrastructure; Data licensing and legal; Engagement and communications; Policy | |
-| <span id="term-Data-Consumer">Data Consumer</span> | *DC* - A consumer of data operating as a member within the Icebreaker One Trust Framework. Data Consumers serve needs that are internal to their own organisation. | |
-| <span id="term-Data-Provider">Data Provider</span> | *DP* - Organisation providing data into the Icebreaker One Trust Framework | |
+| <span id="term-Data-Consumer">Data Consumer</span> | *DC* - A consumer of data operating as a member within the IB1 Trust Framework. Data Consumers serve needs that are internal to their own organisation. | |
+| <span id="term-Data-Provider">Data Provider</span> | *DP* - Organisation providing data into the IB1 Trust Framework | |
 | <span id="term-Data-sensitivity-class-closed">Data sensitivity class - closed</span> | *IB1-C* - Closed data - datasets which must not be shared within Open Energy | |
 | <span id="term-Data-sensitivity-class-open">Data sensitivity class - open</span> | *IB1-O* - Open Data - full open access, under an open data licence. Free to use, by anyone, for any purpose. | |
 | <span id="term-Data-sensitivity-class-shared-A">Data sensitivity class - shared (A)</span> | *IB1-SA* - Shared data - datasets which can/could be shared, but which require the user to agree to standard T&Cs to access. May include some openly licensed materials (e.g. CC BY-SA or GNU AGPLv3). | |
@@ -242,7 +242,7 @@
 | <span id="term-Data-sensitivity-class-personal">Data sensitivity class - personal</span> | *IB1-SP* - Datasets which include personal data, requiring appropriate consent to share, or other legal bases to data processing, as defined by the UK DPA 2018. | |
 | <span id="term-Steering-Group">Steering Group</span> | *SG* - Each Trust Framework has a high-level steering group that supports consultation and guidance of activities. | |
 | <span id="term-Service-Provider">Service Provider</span> | *SP* - A Service Provider is a type of Data Consumer and third party provider of data services operating as a member within the Trust Framework. Service Providers operate within a competitive market and serve customers that are external to their own organisation. | |
-| <span id="term-Trust-Framework-Governance-Service">Trust Framework Governance Service</span> | *TFGS* - The technical and governance architecture backing the Icebreaker One Trust Framework in which data is shared. | |
+| <span id="term-Trust-Framework-Governance-Service">Trust Framework Governance Service</span> | *TFGS* - The technical and governance architecture backing the IB1 Trust Framework in which data is shared. | |
 
 ## Open Energy
 

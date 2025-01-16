@@ -1,8 +1,8 @@
-# Introduction to the Icebreaker One Trust Framework
+# Introduction to the Trust Framework
 
 ## Overview and purpose of the guidelines
 
-These operational guidelines aim to provide practical advice to all types of actors participating in the Icebreaker One (IB1) Trust Framework ecosystem. The guidelines are supplemented by links to more detailed technical and membership documentation.
+These operational guidelines aim to provide practical advice to all types of actors participating in the IB1 Trust Framework ecosystem. The guidelines are supplemented by links to more detailed technical and membership documentation.
 
 Overarching aims of these operational guidelines:
 
@@ -37,7 +37,7 @@ to consider in order to meet operational requirements.
 
 Participants are responsible for their own compliance with all applicable regulations and laws, including but not limited to: data protection and privacy, consumer protection laws, and energy sector licences and codes (where applicable). The IB1 Trust Framework operational guidelines will be revised in future in accordance with further development of services offered in the ecosystem, or changes to the regulatory and policy environment in which it operates. Please ensure that you are referring to the most current version of the guidelines prior to reading.
 
-## What is the Icebreaker One Trust Framework, how was it made and who is it for?
+## What is the IB1 Trust Framework, how was it made and who is it for?
 
 The Icebreaker One (IB1) Trust Framework is an ambitious, non-profit project working with across industry, finance, government and regulators to modernise access to data and break down barriers to data sharing. The Trust Framework makes it easier to discover, share, access and use datasets, supporting the drive towards decarbonisation and its related social and economic benefits.
 

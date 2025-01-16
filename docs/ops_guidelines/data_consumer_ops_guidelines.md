@@ -1,6 +1,6 @@
 # Guidance for Data Consumers
 
-**NOTE**: This documented is primarily intended for technical and operations teams within organisations wishing to participate in the Icebreaker One Trust Framework as Data Consumers.
+**NOTE**: This documented is primarily intended for technical and operations teams within organisations wishing to participate in the IB1 Trust Framework as Data Consumers.
 
 **NOTE**: The key words **“MUST”**, **“MUST NOT”**, **“REQUIRED”**, **“SHALL”**, **“SHALL NOT”**, **“SHOULD”**, **“SHOULD NOT”**, **“RECOMMENDED”**, **“MAY”**, and **“OPTIONAL”** in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 

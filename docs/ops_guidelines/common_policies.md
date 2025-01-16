@@ -2,7 +2,7 @@
 
 ## Introduction (Core Policies)
 
-This section aims to outline core policies and principles with implications for all members of the Icebreaker One Trust Framework. Development of detailed guidance and tooling to accompany the policies in this section is a priority for future development and will be approached openly; using consultation with [Advisory Groups](../glossary.md#term-Advisory-Group), tester organisations and members to ensure that resources meet member needs. All terminology used in this section is outlined in the [Glossary](../glossary.md).
+This section aims to outline core policies and principles with implications for all members of the IB1 Trust Framework. Development of detailed guidance and tooling to accompany the policies in this section is a priority for future development and will be approached openly; using consultation with [Advisory Groups](../glossary.md#term-Advisory-Group), tester organisations and members to ensure that resources meet member needs. All terminology used in this section is outlined in the [Glossary](../glossary.md).
 
 ## Metadata
 

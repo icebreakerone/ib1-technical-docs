@@ -1,6 +1,6 @@
-# Icebreaker One Trust Framework Documentation
+# Trust Framework Documentation
 
-Technical documentation for the [Icebreaker One](https://icebreakerone.org) (IB1) [Trust Framework](https://icebreakerone.org/ib1-trust-framework-for-data-sharing/).
+Technical documentation for the [IB1](https://ib1.org) [Trust Framework](https://icebreakerone.org/ib1-trust-framework-for-data-sharing/).
 
 ## Contents
 
@@ -393,7 +393,7 @@ Technical documentation for the [Icebreaker One](https://icebreakerone.org) (IB1
     * [Legal](glossary.md#legal)
 
 
-    * [Icebreaker One Trust Framework](glossary.md#trust-framework)
+    * [IB1 Trust Framework](glossary.md#trust-framework)
 
 
     * [Operational](glossary.md#operational)

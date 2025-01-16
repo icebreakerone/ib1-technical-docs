@@ -1,5 +1,5 @@
-site_name: Icebreaker One Trust Framework Documentation
-site_url: https://docs.icebreakerone.org
+site_name: Trust Framework Documentation
+site_url: https://docs.ib1.org
 repo_url: https://github.com/icebreakerone/ib1-technical-docs
 nav:
   - 'Introduction to the IB1 Trust Framework': 'ops_guidelines/introduction.md'
