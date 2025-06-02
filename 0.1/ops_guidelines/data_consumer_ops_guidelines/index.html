@@ -1,0 +1,825 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.icebreakerone.org/0.1/ops_guidelines/data_consumer_ops_guidelines/">
+      
+      
+        <link rel="prev" href="../common_policies/">
+      
+      
+        <link rel="next" href="../data_provider_ops_guidelines/">
+      
+      
+      <link rel="icon" href="../../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30">
+    
+    
+      
+        <title>Guidance for Data Consumers - Icebreaker One Trust Framework Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Guidance for Data Consumers - Icebreaker One Trust Framework Documentation" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="https://docs.icebreakerone.org/0.1/assets/images/social/ops_guidelines/data_consumer_ops_guidelines.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://docs.icebreakerone.org/0.1/ops_guidelines/data_consumer_ops_guidelines/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Guidance for Data Consumers - Icebreaker One Trust Framework Documentation" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="https://docs.icebreakerone.org/0.1/assets/images/social/ops_guidelines/data_consumer_ops_guidelines.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="ib1-light" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guidance-for-data-consumers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+  You're not viewing the latest version.
+  <a href="../../.."> 
+    <strong>Click here to go to latest.</strong>
+  </a>
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),outdated=__md_get("__outdated",sessionStorage);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Icebreaker One Trust Framework Documentation" class="md-header__button md-logo" aria-label="Icebreaker One Trust Framework Documentation" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Icebreaker One Trust Framework Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Guidance for Data Consumers
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="ib1-light" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="ib1-dark" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/icebreakerone/ib1-technical-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Icebreaker One Trust Framework Documentation" class="md-nav__button md-logo" aria-label="Icebreaker One Trust Framework Documentation" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Icebreaker One Trust Framework Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/icebreakerone/ib1-technical-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to the IB1 Trust Framework
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../before_starting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Considerations before you start
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common_policies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Core Policies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Guidance for Data Consumers
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Guidance for Data Consumers
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-consumer-role-and-responsibilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Consumer Role and Responsibilities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Consumer Role and Responsibilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-consumer-vs-service-provider" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Consumer vs Service Provider
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-data-consumption" class="md-nav__link">
+    <span class="md-ellipsis">
+      Responsibility - Data consumption
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-data-licensing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Responsibility - Data licensing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-resolution-data-consumers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem Resolution (Data Consumers)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Problem Resolution (Data Consumers)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#effective-resolution-of-problems-data-consumers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Effective resolution of problems (Data Consumers)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dispute-resolution-for-access-control-and-capability-grant-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dispute resolution for access control and capability grant policies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tfgs-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      TFGS support
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_provider_ops_guidelines/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guidance for Data Providers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../technical_common/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Security Requirements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trust Framework Architecture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metadata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dataset Metadata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../access_control_specification/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Access Control and Capability Grant Language
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additional_material/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Additional Material
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-consumer-role-and-responsibilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Consumer Role and Responsibilities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Consumer Role and Responsibilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-consumer-vs-service-provider" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Consumer vs Service Provider
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-data-consumption" class="md-nav__link">
+    <span class="md-ellipsis">
+      Responsibility - Data consumption
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsibility-data-licensing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Responsibility - Data licensing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-resolution-data-consumers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem Resolution (Data Consumers)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Problem Resolution (Data Consumers)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#effective-resolution-of-problems-data-consumers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Effective resolution of problems (Data Consumers)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dispute-resolution-for-access-control-and-capability-grant-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dispute resolution for access control and capability grant policies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tfgs-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      TFGS support
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="guidance-for-data-consumers">Guidance for Data Consumers</h1>
+<p><strong>NOTE</strong>: This documented is primarily intended for technical and operations teams within organisations wishing to participate in the Icebreaker One Trust Framework as Data Consumers.</p>
+<p><strong>NOTE</strong>: The key words <strong>“MUST”</strong>, <strong>“MUST NOT”</strong>, <strong>“REQUIRED”</strong>, <strong>“SHALL”</strong>, <strong>“SHALL NOT”</strong>, <strong>“SHOULD”</strong>, <strong>“SHOULD NOT”</strong>, <strong>“RECOMMENDED”</strong>, <strong>“MAY”</strong>, and <strong>“OPTIONAL”</strong> in this document are to be interpreted as described in <a href="https://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a>.</p>
+<h2 id="data-consumer-role-and-responsibilities">Data Consumer Role and Responsibilities</h2>
+<p><a href="../../glossary/#term-Data-Consumer">Data Consumers</a> are IB1 Trust Framework members that can consume Shared Data (classes <a href="../../glossary/#term-Data-sensitivity-class-shared-A">IB1-SA</a> and <a href="../../glossary/#term-Data-sensitivity-class-shared-B">IB1-SB</a> in our <a href="../common_policies/#data-sensitivity-classes">Data Sensitivity Classes</a>) from <a href="../../glossary/#term-Application-programming-interface">APIs</a> produced and maintained by <a href="../../glossary/#term-Data-Provider">Data Providers</a>.</p>
+<p>In the figure below, we expect <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> to occupy a number of roles from the lowest in the diagram upwards - they are organisations able to configure their infrastructure (in terms of the consumer parts of the <a href="../technical_common/#common-security-requirements">Common Security Requirements</a>, specifically <a href="../technical_common/#token-acquisition">Token acquisition</a> and <a href="../technical_common/#token-usage-calling-a-shared-data-api">Token usage - calling a shared data API</a>). This is covered by the bottom two boxes.</p>
+<h3 id="data-consumer-vs-service-provider">Data Consumer vs Service Provider</h3>
+<p>The IB1 Trust Framework does not differentiate between <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> that access data to solve a problem internal to their organisation and those (known as <a href="../../glossary/#term-Service-Provider">Service Providers</a>) which offer this as a service to other organisations. A <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> may also be a <a href="../../glossary/#term-Data-Provider">Data Provider</a>, the roles are not mutually exclusive.</p>
+<p>In a similar vein, it would be entirely normal for a <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> to also access <a href="../../glossary/#term-Open-data">Open Data</a>, and to use <a href="https://opennetzero.org">Open Net Zero</a> to locate data sets of interest, both open and shared.</p>
+<h3 id="responsibility-data-consumption">Responsibility - Data consumption</h3>
+<p>The definition of a <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> is that it consumes data from <a href="../../glossary/#term-Shared-data">shared data</a> <a href="../../glossary/#term-Application-programming-interface">APIs</a>. To do this, the organisation <strong>MUST</strong> create cryptographic key material, and maintain a record within the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> directory. It is responsible for the integrity of this key material, and <strong>MUST</strong> put appropriate policies in place to ensure that this material is not misused.</p>
+<h3 id="responsibility-data-licensing">Responsibility - Data licensing</h3>
+<p><a href="../../glossary/#term-Data-Consumer">Data Consumers</a> are responsible for honouring the licenses for any data obtained through <a href="../../glossary/#term-Shared-data">shared data</a> <a href="../../glossary/#term-Application-programming-interface">APIs</a>. Where the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> provides technical measures such as cryptographically signed receipts binding data and license conditions together, the <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> is responsible for retaining and storing such receipts.</p>
+<h2 id="problem-resolution-data-consumers">Problem Resolution (Data Consumers)</h2>
+<h3 id="effective-resolution-of-problems-data-consumers">Effective resolution of problems (Data Consumers)</h3>
+<p>We encourage <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> to direct any problems with data <a href="../../glossary/#term-Application-programming-interface">APIs</a> first to the <a href="../../glossary/#term-Data-Provider">Data Provider</a> concerned. In the event that a <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> is unable to resolve an issue with a <a href="../../glossary/#term-Data-Provider">Data Provider</a>, the issue MAY be flagged to the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> Dispute Resolution function for independent support.</p>
+<h3 id="dispute-resolution-for-access-control-and-capability-grant-policies">Dispute resolution for access control and capability grant policies</h3>
+<p>In cases where a <a href="../../glossary/#term-Data-Consumer">Data Consumer</a> believes that access conditions or capability grant rules are being applied unfairly, the <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> will act as a mediating party.</p>
+<h3 id="tfgs-support">TFGS support</h3>
+<p>The <a href="../../glossary/#term-Trust-Framework-Governance-Service">TFGS</a> Service Desk will provide participants with a supplementary ticket management process and supports <a href="../../glossary/#term-Data-Consumer">Data Consumers</a> in communicating problems to ecosystem participants via the noticeboard.</p>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE2Mjk4MTEzNTIsNzI3NTYwNDMxXX0=
+-->
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+  
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["disableCookies"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stats.openenergy.org.uk/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '9']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+  </body>
+</html>
