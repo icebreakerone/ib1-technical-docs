@@ -2,9 +2,11 @@
 
 The technical Specifications for [IB1](https://ib1.org) (IB1) [Trust Framework](https://ib1.org/trust-frameworks/) are published at [specification.trust.ib1.org](https://specification.trust.ib1.org). These are designed as a modular set of small, focused specifications. Trust Frameworks and Schemes select the Specifications that define their architecture, and may also introduce their own where appropriate. This site provides an overview of the available specifications, and describes how they fit together.
 
-![IB1 Trust Framework Architecture Diagram ](assets/ib1_trust_framework_architecture.svg)
-
 *Note: These documents use US English. To align with W3C and other prevalent standards, IB1 uses US English in its technical specifications and technical documentation.*
+
+## Trust Framework Architecture
+
+![IB1 Trust Framework Architecture Diagram ](assets/ib1_trust_framework_architecture_202506.svg)
 
 ## Registry
 
