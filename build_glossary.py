@@ -83,7 +83,7 @@ def parse_glossary_sheet(sheet_id=GLOSSARY_ID, gid=0):
 
 
 def glossaries_by_domain(entries: List[GlossaryEntry]) -> Dict[str, str]:
-    known_domains = set([entry.domain for entry in entries])
+    known_domains = sorted(set([entry.domain for entry in entries]))
     return {domain: glossary(entries=entries, domain=domain) for domain in known_domains}
 
 
