@@ -1,6 +1,12 @@
 
 # Changelog
 
+## Version 0.4beta, 03 July 2025
+
+* Move technical specifications to [specification.docs.ib1.org](https://specification.docs.ib1.org)
+* Remove redundant materials.
+* Change Registry URLs and IB1 terms to use new style hostnames under `trust.ib1.org`.
+
 ## Version 0.3beta, 10 September 2024
 
 * Rename Group to Roles, with `ib1:permitGroup` renamed to `ib1:roleRequiredToAccess`
@@ -12,13 +18,13 @@
 
 ## Version 0.2beta, 22 June 2024
 
-* [Catalog Metadata](metadata.md) is now a DCAT Dataset or Data Service, extended with IB1 terms.
+* Catalog Metadata is now a DCAT Dataset or Data Service, extended with IB1 terms.
 	* Standard terms now have restricted meanings when used with a Trust Framework.
 	* Format of data and API responses are specified in external files in the Registry for standardisation.
 	* Both Dataset and Data Service DCAT types are used.
-* [Access control](access_control_specification.md) updated to
+* Access control updated to
 	* remove complex, reducing to a simple statement that one or more groups can access a dataset under a single licence.
 	* added machine readable interpretation of licences.
 	* renamed "Permissions" to "Grants" to clarify intent and avoid a name clash with another concept.
-* [Scheme Catalog Requirements](scheme_catalog_requirements.md) are added to define how data sources comply with standards across the Scheme.
+* Scheme Catalog Requirements are added to define how data sources comply with standards across the Scheme.
 

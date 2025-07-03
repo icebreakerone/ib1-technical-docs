@@ -1,454 +1,87 @@
 # Trust Framework Documentation
 
-Technical documentation for the [IB1](https://ib1.org) [Trust Framework](https://icebreakerone.org/ib1-trust-framework-for-data-sharing/).
+The technical Specifications for [IB1](https://ib1.org) (IB1) [Trust Framework](https://ib1.org/trust-frameworks/) are published at [specification.trust.ib1.org](https://specification.trust.ib1.org). These are designed as a modular set of small, focused specifications. Trust Frameworks and Schemes select the Specifications that define their architecture, and may also introduce their own where appropriate. This site provides an overview of the available specifications, and describes how they fit together.
 
-## Contents
+*Note: These documents use US English. To align with W3C and other prevalent standards, IB1 uses US English in its technical specifications and technical documentation.*
 
-* [Introduction to the IB1 Trust Framework](ops_guidelines/introduction.md)
-    * [Overview and purpose of the guidelines](ops_guidelines/introduction.md#overview-and-purpose-of-the-guidelines)
-    * [What is the IB1 Trust Framework, how was it made and who is it for?](ops_guidelines/introduction.md#what-is-the-icerbreaker-one-trust-framework-how-was-it-made-and-who-is-it-for)
-    * [How is the IB1 Trust Framework Structured?](ops_guidelines/introduction.md#how-is-the-ib1-trust-framework-structured)
+## Trust Framework Architecture
 
+![IB1 Trust Framework Architecture Diagram ](assets/ib1_trust_framework_architecture_20250703.svg)
 
-        * [Dataset Search](ops_guidelines/introduction.md#dataset-search)
+## Registry
 
+[Registry](https://specification.trust.ib1.org/registry/1.0/)
+: Defines a machine-readable RDF Registry for describing Trust Frameworks, Schemes, standards, roles, agreements, policies, and other entities.
 
-        * [Governance Service](ops_guidelines/introduction.md#governance-service)
+[Registry Versioning](https://specification.trust.ib1.org/registry-versioning/1.0/)
+: Provides a method for versioning RDF resources within the Registry, maintaining immutability while allowing changes via linked versions and Registry Change records.
 
+[Registry Process Resources](https://specification.trust.ib1.org/registry-process-resources/1.0/)
+: Specifies how formally defined data processing activities are described using Registry resources with stable URLs.
 
-        * [Project Governance](ops_guidelines/introduction.md#project-governance)
 
+## Identity, Certificates & Security
 
-    * [What data can be found and used through Open Net Zero?](ops_guidelines/introduction.md#what-data-can-be-found-and-used-through-open-net-zero)
+[Baseline TLS Configuration](https://specification.trust.ib1.org/baseline-tls-configuration/1.0/)
+: Establishes mandatory TLS settings and cryptographic profiles for secure communication within the Trust Framework.
 
+[Member Identity Digital Certificates](https://specification.trust.ib1.org/member-identity-digital-certificates/1.0/)
+: Describes digital certificates issued to Members for authentication, enabling secure decentralised identification within the Trust Framework.
 
-        * [Open data](ops_guidelines/introduction.md#open-data)
+[Directory Issued Server TLS Certificates](https://specification.trust.ib1.org/directory-issued-server-tls-certificates/1.0/)
+: Defines short-lived TLS server certificates issued by the Directory.
 
+[Public CA Issued Server TLS Certificates with Directory Allowlist](https://specification.trust.ib1.org/public-ca-issued-server-tls-certificates-with-directory-allowlist/1.0/)
+: Specifies requirements for public CA-issued TLS certificates and how the Directory maintains an allowlist of permitted DNS names for Member servers.
 
-        * [Shared data](ops_guidelines/introduction.md#shared-data)
 
+## Access Control & Permission
 
-        * [Closed data](ops_guidelines/introduction.md#closed-data)
+[Role-based Access Control](https://specification.trust.ib1.org/role-based-access-control/1.0/)
+: Access to data sources is governed by assigned roles and licenses, managed through Data Catalog Entries specifying who can access or publish data.
 
+[Message Delivery to Applications](https://specification.trust.ib1.org/message-delivery-to-applications/1.0/)
+: Specifies how Applications exchange JSON messages outside of data transfers, with MTLS authentication and delivery endpoints defined in the Directory.
 
-    * [What role does your organisation play in the IB1 Trust ecosystem?](ops_guidelines/introduction.md#what-role-does-your-organisation-play-in-the-ib1-trust-ecosystem)
+[OAuth with Member Identity Certificates](https://specification.trust.ib1.org/oauth-with-member-identity-certificates/1.0/)
+: An OAuth Profile which requires mutual TLS (MTLS) using Member identity from Directory issued certificates.
 
+[Permission Records](https://specification.trust.ib1.org/permission-records/1.0/)
+: Defines how OAuth Issuers provide records containing details of permissions granted by end users, including evidence of consent.
 
-        * [Data Providers](ops_guidelines/introduction.md#dps)
+[Withdrawal of Permission](https://specification.trust.ib1.org/withdrawal-of-permission/1.0/)
+: Specifies processes for users to withdraw permission, how Members revoke permissions, and cascading revocation of linked permissions.
 
+## Data Catalog & Licenses
 
-        * [Data Consumers](ops_guidelines/introduction.md#data-consumers)
+[Data Catalog Records](https://specification.trust.ib1.org/data-catalog-records/1.0/)
+: Specifies how metadata describing datasets and APIs is structured using DCAT, enabling discovery, access, and licensing information.
 
+[Data Catalog Publishing](https://specification.trust.ib1.org/data-catalog-publishing/1.0/)
+: Methods for publishing dataset and API metadata to the Directory, and how records are validated.
 
-            * [Service Providers](ops_guidelines/introduction.md#service-providers)
+[Machine-Readable Data Licenses](https://specification.trust.ib1.org/machine-readable-data-licenses/1.0/)
+: Defines how data licenses are published in the Registry as machine-readable RDF resources.
 
 
-        * [Dual Roles](ops_guidelines/introduction.md#dual-roles)
+## Open Data
 
+[Open Data Publication](https://specification.trust.ib1.org/open-data/1.0/)
+: Defines how datasets are published as Open Data within a Trust Framework.
 
-    * [How does dataset access and licensing operate under the IB1 Trust Framework?](ops_guidelines/introduction.md#how-does-dataset-access-and-licensing-operate-under-the-ib1-trust-framework)
+[Assured Open Data Publication](https://specification.trust.ib1.org/assured-open-data/1.0/)
+: Builds on Open Data Publication by introducing dataset assurance levels and strict choice of licenses.
 
+## Provenance & Assurance
 
-        * [Types of Access Conditions](ops_guidelines/introduction.md#types-of-access-conditions)
+[Provenance Records](https://specification.trust.ib1.org/provenance-records/1.0/)
+: Captures the origin, processing, transfers, licenses, and permissions associated with data within the Trust Framework.
 
+[Generic Dataset Assurance Levels](https://specification.trust.ib1.org/generic-dataset-assurance-levels/1.0/)
+: Establishes standardized levels of dataset assurance, indicating the quality, completeness, and governance applied to published datasets.
 
-        * [Creating Access Rules (Introduction)](ops_guidelines/introduction.md#creating-access-rules-introduction)
+[Generic Organizational Assurance Levels](https://specification.trust.ib1.org/generic-organizational-assurance-levels/1.0/)
+: Specifies levels of organizational assurance, reflecting the verified trustworthiness and compliance posture of Trust Framework participants.
 
-
-        * [Data Licensing (Introduction)](ops_guidelines/introduction.md#data-licensing-introduction)
-
-
-    * [Future development of the guidelines](ops_guidelines/introduction.md#future-development-of-the-guidelines)
-
-
-* [Considerations Before You Start](ops_guidelines/before_starting.md)
-
-
-    * [Introduction (Before you start)](ops_guidelines/before_starting.md#introduction-before-you-start)
-
-
-    * [Considerations for Data Providers](ops_guidelines/before_starting.md#considerations-for-data-providers)
-
-
-    * [Considerations for Data Consumers](ops_guidelines/before_starting.md#considerations-for-data-consumers)
-
-
-* [Core Policies](ops_guidelines/common_policies.md)
-
-
-    * [Introduction (Core Policies)](ops_guidelines/common_policies.md#introduction-core-policies)
-
-
-    * [Metadata](ops_guidelines/common_policies.md#metadata)
-
-
-    * [Data Sensitivity Classes](ops_guidelines/common_policies.md#data-sensitivity-classes)
-
-
-        * [Policy details](ops_guidelines/common_policies.md#policy-details)
-
-
-    * [Data Access Conditions](ops_guidelines/common_policies.md#data-access-conditions)
-
-
-        * [Policy details (Data access conditions)](ops_guidelines/common_policies.md#policy-details-data-access-conditions)
-
-
-        * [Group based access control](ops_guidelines/common_policies.md#group-based-access-control)
-
-
-        * [Use case based access control](ops_guidelines/common_policies.md#use-case-based-access-control)
-
-
-        * [Prioritisation](ops_guidelines/common_policies.md#prioritisation)
-
-
-    * [Data Licensing](ops_guidelines/common_policies.md#data-licensing)
-
-
-        * [Creating access rules](ops_guidelines/common_policies.md#creating-access-rules)
-
-
-        * [Associating access rules with capabilities](ops_guidelines/common_policies.md#associating-access-rules-with-capabilities)
-
-
-        * [What are licenses and capabilities?](ops_guidelines/common_policies.md#what-are-licenses-and-capabilities)
-
-
-        * [How will capability grants work in practice?](ops_guidelines/common_policies.md#how-will-capability-grants-work-in-practice)
-
-
-        * [Obligations accompanying capability grants](ops_guidelines/common_policies.md#obligations-accompanying-capability-grants)
-
-
-        * [Why are we proposing this approach?](ops_guidelines/common_policies.md#why-are-we-proposing-this-approach)
-
-
-        * [Example access control and capability grant scenarios](ops_guidelines/common_policies.md#example-access-control-and-capability-grant-scenarios)
-
-
-        * [Risks of license proliferation](ops_guidelines/common_policies.md#risks-of-license-proliferation)
-
-
-        * [Is there a risk of licences changing too frequently or without notice?](ops_guidelines/common_policies.md#is-there-a-risk-of-licences-changing-too-frequently-or-without-notice)
-
-
-        * [Where are these rules specified?](ops_guidelines/common_policies.md#where-are-these-rules-specified)
-
-
-        * [Where are these rules evaluated, and by whom?](ops_guidelines/common_policies.md#where-are-these-rules-evaluated-and-by-whom)
-
-
-    * [Service Desk and Notifications](ops_guidelines/common_policies.md#service-desk-and-notifications)
-
-
-    * [Dispute Resolution](ops_guidelines/common_policies.md#dispute-resolution)
-
-
-* [Guidance for Data Consumers](ops_guidelines/data_consumer_ops_guidelines.md)
-
-
-    * [Data Consumer Role and Responsibilities](ops_guidelines/data_consumer_ops_guidelines.md#data-consumer-role-and-responsibilities)
-
-
-        * [Data Consumer vs Service Provider](ops_guidelines/data_consumer_ops_guidelines.md#data-consumer-vs-service-provider)
-
-
-        * [Responsibility - Data consumption](ops_guidelines/data_consumer_ops_guidelines.md#responsibility-data-consumption)
-
-
-        * [Responsibility - Data licensing](ops_guidelines/data_consumer_ops_guidelines.md#responsibility-data-licensing)
-
-
-    * [Problem Resolution (Data Consumers)](ops_guidelines/data_consumer_ops_guidelines.md#problem-resolution-data-consumers)
-
-
-        * [Effective resolution of problems (Data Consumers)](ops_guidelines/data_consumer_ops_guidelines.md#effective-resolution-of-problems-data-consumers)
-
-
-        * [Dispute resolution for access control and capability grant policies](ops_guidelines/data_consumer_ops_guidelines.md#dispute-resolution-for-access-control-and-capability-grant-policies)
-
-
-        * [TFGS support](ops_guidelines/data_consumer_ops_guidelines.md#tfgs-support)
-
-
-* [Guidance for Data Providers](ops_guidelines/data_provider_ops_guidelines.md)
-
-
-    * [Data Provider Role and Responsibilities](ops_guidelines/data_provider_ops_guidelines.md#data-provider-role-and-responsibilities)
-
-
-        * [Responsibility - Data classification](ops_guidelines/data_provider_ops_guidelines.md#responsibility-data-classification)
-
-
-        * [Responsibility - Access and licensing specification](ops_guidelines/data_provider_ops_guidelines.md#responsibility-access-and-licensing-specification)
-
-
-        * [Responsibility - Data provision](ops_guidelines/data_provider_ops_guidelines.md#responsibility-data-provision)
-
-
-            * [Data formats](ops_guidelines/data_provider_ops_guidelines.md#data-formats)
-
-
-        * [Responsibility - Data integrity and correctness](ops_guidelines/data_provider_ops_guidelines.md#responsibility-data-integrity-and-correctness)
-
-
-        * [Responsibility - Metadata provision](ops_guidelines/data_provider_ops_guidelines.md#responsibility-metadata-provision)
-
-
-        * [Responsibility - API availability](ops_guidelines/data_provider_ops_guidelines.md#responsibility-api-availability)
-
-
-        * [Responsibility - API stability and change management](ops_guidelines/data_provider_ops_guidelines.md#responsibility-api-stability-and-change-management)
-
-
-    * [Data API Requirements](ops_guidelines/data_provider_ops_guidelines.md#data-api-requirements)
-
-
-        * [Date and time formats](ops_guidelines/data_provider_ops_guidelines.md#date-and-time-formats)
-
-
-        * [Endpoint security](ops_guidelines/data_provider_ops_guidelines.md#endpoint-security)
-
-
-            * [Open data endpoints](ops_guidelines/data_provider_ops_guidelines.md#open-data-endpoints)
-
-
-            * [Shared data endpoints](ops_guidelines/data_provider_ops_guidelines.md#shared-data-endpoints)
-
-
-        * [Heartbeat and monitoring endpoint](ops_guidelines/data_provider_ops_guidelines.md#heartbeat-and-monitoring-endpoint)
-
-
-        * [API documentation](ops_guidelines/data_provider_ops_guidelines.md#api-documentation)
-
-
-        * [Versioning](ops_guidelines/data_provider_ops_guidelines.md#versioning)
-
-
-    * [Problem Resolution (Data Providers)](ops_guidelines/data_provider_ops_guidelines.md#problem-resolution-data-providers)
-
-
-        * [Effective resolution of problems (Data Providers)](ops_guidelines/data_provider_ops_guidelines.md#effective-resolution-of-problems-data-providers)
-
-
-        * [Online support](ops_guidelines/data_provider_ops_guidelines.md#online-support)
-
-
-        * [Ticket management process](ops_guidelines/data_provider_ops_guidelines.md#ticket-management-process)
-
-
-        * [Dispute resolution for access control and capability grant policies (Data Providers)](ops_guidelines/data_provider_ops_guidelines.md#dispute-resolution-for-access-control-and-capability-grant-policies-data-providers)
-
-
-        * [OEGS support (Data Providers)](ops_guidelines/data_provider_ops_guidelines.md#oegs-support-data-providers)
-
-
-    * [Change Management](ops_guidelines/data_provider_ops_guidelines.md#change-management)
-
-
-        * [Downtime](ops_guidelines/data_provider_ops_guidelines.md#downtime)
-
-
-        * [Licensing and access control changes](ops_guidelines/data_provider_ops_guidelines.md#licensing-and-access-control-changes)
-
-
-        * [Data API changes](ops_guidelines/data_provider_ops_guidelines.md#data-api-changes)
-
-
-            * [Dual running and deprecation](ops_guidelines/data_provider_ops_guidelines.md#dual-running-and-deprecation)
-
-
-            * [API credentials, consent and authorisation](ops_guidelines/data_provider_ops_guidelines.md#api-credentials-consent-and-authorisation)
-
-
-* [Common Security Requirements](ops_guidelines/technical_common.md)
-
-
-    * [Applicable standards](ops_guidelines/technical_common.md#applicable-standards)
-
-
-        * [Discovery of endpoint URLs](ops_guidelines/technical_common.md#discovery-of-endpoint-urls)
-
-
-    * [Token acquisition](ops_guidelines/technical_common.md#token-acquisition)
-
-
-    * [Token usage - calling a shared data API](ops_guidelines/technical_common.md#token-usage-calling-a-shared-data-api)
-
-
-    * [Request validation](ops_guidelines/technical_common.md#request-validation)
-
-
-        * [Token introspection](ops_guidelines/technical_common.md#token-introspection)
-
-
-        * [Introspection response validation](ops_guidelines/technical_common.md#introspection-response-validation)
-
-
-            * [active](ops_guidelines/technical_common.md#active)
-
-
-            * [time ranges](ops_guidelines/technical_common.md#time-ranges)
-
-
-            * [certificate thumbprint](ops_guidelines/technical_common.md#certificate-thumbprint)
-
-
-        * [Interaction header](ops_guidelines/technical_common.md#interaction-header)
-
-
-        * [Other validation](ops_guidelines/technical_common.md#other-validation)
-
-
-* [Trust Framework Architecture](architecture.md)
-
-
-* [Data Set Metadata](metadata.md)
-
-
-    * [Metadata File Structure](metadata.md#metadata-file-structure)
-
-
-    * [Content Block](metadata.md#content-block)
-
-
-        * [Additional metadata](metadata.md#additional-metadata)
-
-
-    * [Access Block](metadata.md#access-block)
-
-
-    * [Transport Block](metadata.md#transport-block)
-
-
-        * [Heartbeat URL](metadata.md#heartbeat-url)
-
-
-    * [Representation Block](metadata.md#representation-block)
-
-
-        * [text/csv](metadata.md#text-csv)
-
-
-        * [Other types](metadata.md#other-types)
-
-
-    * [Full Example](metadata.md#full-example)
-
-
-* [Access Control and Capability Grant Language](access_control_specification.md)
-
-
-    * [Syntax](access_control_specification.md#syntax)
-
-
-        * [Names](access_control_specification.md#names)
-
-
-        * [Rule syntax](access_control_specification.md#rule-syntax)
-
-
-    * [Conditions](access_control_specification.md#conditions)
-
-
-        * [Unary clauses](access_control_specification.md#unary-clauses)
-
-
-        * [Binary clauses](access_control_specification.md#binary-clauses)
-
-
-        * [Example conditions](access_control_specification.md#example-conditions)
-
-
-        * [Specifying multiple conditions](access_control_specification.md#specifying-multiple-conditions)
-
-
-    * [Capabilities](access_control_specification.md#capabilities)
-
-
-        * [Standard capabilities](access_control_specification.md#standard-capabilities)
-
-
-        * [Expressing Open Data licenses with capabilities](access_control_specification.md#expressing-open-data-licenses-with-capabilities)
-
-
-    * [Obligations](access_control_specification.md#obligations)
-
-
-        * [Standard obligations](access_control_specification.md#standard-obligations)
-
-
-* [IB1 Trust Framework Glossary](glossary.md)
-
-
-    * [Commercial](glossary.md#commercial)
-
-
-    * [Data](glossary.md#data)
-
-
-    * [Energy Technology](glossary.md#energy-technology)
-
-    * [Legal](glossary.md#legal)
-
-
-    * [IB1 Trust Framework](glossary.md#trust-framework)
-
-
-    * [Operational](glossary.md#operational)
-
-
-    * [Other](glossary.md#other)
-
-
-    * [Policy and governance](glossary.md#policy-and-governance)
-
-
-    * [Regulated monopoly](glossary.md#regulated-monopoly)
-
-
-    * [Regulatory](glossary.md#regulatory)
-
-
-    * [Research](glossary.md#research)
-
-
-    * [Security](glossary.md#security)
-
-
-    * [Standard](glossary.md#standard)
-
-
-    * [Technology](glossary.md#technology)
-
-
-    * [Term - multiple uses](glossary.md#term-multiple-uses)
-
-
-    * [Unit of measurement](glossary.md#unit-of-measurement)
-
-
-* [Additional Material](additional_material.md)
-
-
-    * [Membership](additional_material.md#membership)
-
-
-    * [Search Related](additional_material.md#search-related)
-
-
-    * [Technical](additional_material.md#technical)
-
-
-    * [Policy](additional_material.md#policy)
-
-
-    * [Reporting](additional_material.md#reporting)
-
-
-    * [Engagement](additional_material.md#engagement)
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU3MjgyMjQ2LDk1NzI4MjI0NiwtMTMyNT
-k2OTEsMzcxMjE0Mjg3XX0=
--->
+[Generic Sensitivity Classes](https://specification.trust.ib1.org/generic-sensitivity-classes/1.0/)
+: Defines standard sensitivity classes (e.g., Open Data, Shared, Personal) with corresponding access, security, and consent requirements.

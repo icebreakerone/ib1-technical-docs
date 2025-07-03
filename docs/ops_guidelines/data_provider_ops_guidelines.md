@@ -32,7 +32,7 @@ To support this role, [Data Providers](../glossary.md#term-Data-Provider) have c
 ### Responsibility - Access and licensing specification
 
 [Data Providers](../glossary.md#term-Data-Provider) are responsible for creating access rules for each dataset shared via the IB1 Trust Framework. For each data set, the [Data Provider](../glossary.md#term-Data-Provider) must
-create a set of one or more access rules as defined in [Data Set Metadata](../metadata.md#data-set-metadata). These rules specify the conditions under which access will be granted, along with the capabilities forming the license grant should those conditions be satisfied.
+create a set of one or more access rules as defined in [Data Set Metadata](https://specification.trust.ib1.org/data-catalog-records/1.0/#dataset-metadata-fields). These rules specify the conditions under which access will be granted, along with the capabilities forming the license grant should those conditions be satisfied.
 
 
 * [Data Providers](../glossary.md#term-Data-Provider) **MUST** ensure that access conditions and capability grants are non-discriminatory and fair to Data Consumers
@@ -47,7 +47,7 @@ create a set of one or more access rules as defined in [Data Set Metadata](../me
 * Open data **MUST** be made available with no authentication or authorization requirements
 
 
-* Shared data **MUST** made available through a [FAPI](../glossary.md#term-Financial-Grade-API) compliant resource server connected to the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service)’s authorization service (see [Common Security Requirements](technical_common.md#common-security-requirements) for more details)
+* Shared data **MUST** made available through a [FAPI](../glossary.md#term-Financial-Grade-API) compliant resource server connected to the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service)’s authorization service (see [OAuth Specification](https://specification.trust.ib1.org/oauth-with-member-identity-certificates/1.0/) for more details)
 
 #### Data formats
 
@@ -70,7 +70,7 @@ The metadata file covers, for each provided data set, whether shared or open:
 * Transport mechanism specification
 * Syntactic content
 
-The content and format of the metadata file can be found at [Data Set Metadata](../metadata.md#data-set-metadata).
+The content and format of the metadata file can be found at [Data Set Metadata](https://specification.trust.ib1.org/data-catalog-records/1.0/#dataset-metadata-fields).
 
 The [Data Provider](../glossary.md#term-Data-Provider) is responsible for the accuracy and completeness of this metadata.
 
@@ -110,7 +110,7 @@ Data endpoints which provide access to open data (in class [IB1-O](../glossary.m
 
 #### Shared data endpoints
 
-Data endpoints which provide access to shared data (in classes [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A) and [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B)) **MUST** implement the subset of the resource server part of the [FAPI](../glossary.md#term-Financial-Grade-API) specification used within the IB1 Trust Framework as described in [Common Security Requirements](technical_common.md#common-security-requirements), and authorize against the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) authorization service.
+Data endpoints which provide access to shared data (in classes [IB1-SA](../glossary.md#term-Data-sensitivity-class-shared-A) and [IB1-SB](../glossary.md#term-Data-sensitivity-class-shared-B)) **MUST** implement the subset of the resource server part of the [FAPI](../glossary.md#term-Financial-Grade-API) specification used within the IB1 Trust Framework as described in [OAuth Specification](https://specification.trust.ib1.org/oauth-with-member-identity-certificates/1.0/), and authorize against the [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) authorization service.
 
 Protected data endpoints **MAY** use the token introspection mechanism provided by [FAPI](../glossary.md#term-Financial-Grade-API) to gather additional information about the client making the request prior to any access decision.
 
@@ -189,7 +189,7 @@ When providing notifications, [Data Providers](../glossary.md#term-Data-Provider
 
 In future, [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) Support Services will be able assist [Data Providers](../glossary.md#term-Data-Provider) with the dissemination of downtime information to the wider Icebreaker One ecosystem via its central noticeboard facility.
 
-Planned downtime should be given at least five business days before the event. Apart from cancelling the planned downtime, no changes should be made to the planned downtime notification within the five business day period. Where practical, [Data Providers](../glossary.md#term-Data-Provider) should give advance notice via their own website, developer portal or [TFGS](../glossary.md#term-Trust-Framwork-Governance-Service) of any planned downtime one calendar month in advance.
+Planned downtime should be given at least five business days before the event. Apart from cancelling the planned downtime, no changes should be made to the planned downtime notification within the five business day period. Where practical, [Data Providers](../glossary.md#term-Data-Provider) should give advance notice via their own website, developer portal or [TFGS](../glossary.md#term-Trust-Framework-Governance-Service) of any planned downtime one calendar month in advance.
 
 ### Licensing and access control changes
 
@@ -211,6 +211,3 @@ The deprecation of unsupported versions is at the [Data Provider](../glossary.md
 #### API credentials, consent and authorisation
 
 [API](../glossary.md#term-Application-programming-interface) Credentials associated with an [API](../glossary.md#term-Application-programming-interface) should be version agnostic. Therefore, a [Data Consumer](../glossary.md#term-Data-Consumer) accessing v1.0, v1.1 or v2.0 should be able to use the same [API](../glossary.md#term-Application-programming-interface) Credentials across all available [API](../glossary.md#term-Application-programming-interface) endpoints.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4OTEyNzU2NSw0OTI4MzA0NV19
--->

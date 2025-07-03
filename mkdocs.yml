@@ -2,21 +2,15 @@ site_name: Trust Framework Documentation
 site_url: https://docs.ib1.org
 repo_url: https://github.com/icebreakerone/ib1-technical-docs
 nav:
-  - 'Introduction to the IB1 Trust Framework': 'ops_guidelines/introduction.md'
-  - 'Considerations before you start': 'ops_guidelines/before_starting.md'
-  - 'Core Policies': 'ops_guidelines/common_policies.md'
-  - 'Guidance for Data Consumers': 'ops_guidelines/data_consumer_ops_guidelines.md'
-  - 'Guidance for Data Providers': 'ops_guidelines/data_provider_ops_guidelines.md'
-  - 'Common Security Requirements': 'ops_guidelines/technical_common.md'
-  - 'Trust Framework Architecture': 'architecture.md'
-  - 'Dataset Metadata': 'metadata.md'
-  - 'Access Control and Capability Grant Language': 'access_control_specification.md'
-  - 'Scheme Catalog Requirements': 'scheme_catalog_requirements.md'
+  - 'Introduction': 'index.md'
+  - 'Guidelines':
+    - 'Guidance for Data Providers': 'ops_guidelines/data_provider_ops_guidelines.md'
   - 'Glossary': 'glossary.md'
-  - 'Additional Material': 'additional_material.md'
   - 'Changelog': 'changelog.md'
 theme:
   name: material
+  features:
+    - navigation.expand
   logo: assets/logo.png
   favicon: assets/logo.png
   custom_dir: overrides

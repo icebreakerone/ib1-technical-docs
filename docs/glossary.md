@@ -1,19 +1,5 @@
 # Glossary
 
-## Regulated monopoly
-
-| Term | Description/Definition | Notes |
-| --- | --- | --- |
-| <span id="term-Data-and-Communications-Company">Data and Communications Company</span> | *DCC* - The 'central communications body appointed to manage communications and data transfer for smart metering. It is responsible for linking smart meters in homes and small businesses with the systems of energy suppliers, network operators and other companies.' | [www.ofgem.gov.uk: 126045](https://www.ofgem.gov.uk/ofgem-publications/126045) |
-| <span id="term-Distribution-Network-Operator">Distribution Network Operator</span> | *DNO* - Responsible for regional electricity distribution (lower voltage). | |
-| <span id="term-Distribution-System-Operator">Distribution System Operator</span> | *DSO* - In the UK, electricity DNOs are transitioning to become DSOs in response to electricity system changes (e.g. decentralisation, decarbonisation). The transition will change DNO responsibilities, broadening these from asset/network management. The term DSO is also commonly used outside of the UK. | |
-| <span id="term-Electricity-System-Operator">Electricity System Operator</span> | *ESO* - Responsible for system operation and balancing. National 'control room'. Role carried out by National Grid ESO (a separate company within the National Grid Group - not connected to the electricity TSO). | |
-| <span id="term-Gas-Distribution-Network">Gas Distribution Network</span> | *GDN* - Responsible for regional gas distribution (lower pressure). | |
-| <span id="term-Gas-System-Operator">Gas System Operator</span> | *GSO* - Responsible for system operation and balancing. National 'control room'. Role carried out by National Grid Gas Plc (a separate company within the National Grid Group who also own the gas transmission network). | |
-| <span id="term-Independent-Distribution-Network-Operator">Independent Distribution Network Operator</span> | *iDNO* - IDNOs own and operate smaller networks located within the areas covered by the DNOs. IDNO networks are mainly extensions to the DNO networks serving new housing and commercial developments. | [www.ofgem.gov.uk: independent-distribution-network-operators](https://www.ofgem.gov.uk/electricity/distribution-networks/connections-and-competition/independent-distribution-network-operators) |
-| <span id="term-Independent-System-Operator">Independent System Operator</span> | *ISO* - There is currently a proposal, backed by Ofgem, to convert the ESO to an ISO. The proposal advocates this change in order to meet new requirements of system operation oriented towards achieving Net Zero. The change would involve some change in the ESO's structure, responsibilities and relationship to other bodies in the sector. | |
-| <span id="term-Transmission-System-Owner">Transmission System Owner</span> | *TSO* - Owner of the national electricity and gas transmission networks (higher voltage/pressure). | |
-
 ## Security
 
 | Term | Description/Definition | Notes |
@@ -26,22 +12,102 @@
 | <span id="term-Validation">Validation</span> | Ongoing processes confirming that information is true. | |
 | <span id="term-Vector-component-values">Vector component values</span> | Levels of vector components | |
 | <span id="term-Authentication">Authentication</span> | *AuthN* - The process of proving that somthing is real or true. | [assets.publishing.service.gov.uk: Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/909363/Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf) |
-| <span id="term-Authorization">Authorization</span> | *AuthZ* - The act of giving someone permission to do something | [assets.publishing.service.gov.uk: Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/909363/Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf) |
+| <span id="term-Authorization">Authorization</span> | *AuthZ* - The act of giving someone permission to do something. Authorization determines the access rights for an authenticated user or service. | [assets.publishing.service.gov.uk: Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/909363/Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf) |
 | <span id="term-Identification">Identification</span> | *ID* - Proof of who someone or something is | [assets.publishing.service.gov.uk: Raidiam_Authentication_Research_Response.pdf](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/909363/Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/909365/Raidiam_Authentication_Research_Response.pdf) |
 | <span id="term-Multi-Factor-Authorisation">Multi Factor Authorisation</span> | *MFA* - Commonly used security feature - e.g. password and one-time passcode via text/email | |
 | <span id="term-Open-Authorization-2">Open Authorization 2</span> | *OAuth2* - Industry standard protocol for authorization | [assets.publishing.service.gov.uk: Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/909363/Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf) |
 | <span id="term-One-time-passcode">One time passcode</span> | *OTP* - A mechanism for customer login / part of two-step authorisation | |
 | <span id="term-Single-signon">Single sign-on</span> | *SSO* - A mechanism allowing federated access and re-use of the same credentials to logon to different services/sites. | [assets.publishing.service.gov.uk: Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/909363/Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf) |
 
-## Other
+## Data
 
 | Term | Description/Definition | Notes |
 | --- | --- | --- |
-| <span id="term-Intermittency">Intermittency</span> | Variability of renewable energy generation in line with weather conditions. | |
-| <span id="term-Prosumer">Prosumer</span> | An entity (e.g. household) that both produces and consumes electricity. | Prosumption may also be combined with flexibility technology (e.g. home battery) to maximise the amount of self-generated electricity that can be consumed by the entity. Prosumption behaviour is currently often associated with atypically active behaviour of households in the energy system, however this may change as distributed energy resources proliferate. |
-| <span id="term-Minimum-Viable-Product">Minimum Viable Product</span> | *MVP* - An early version of a product for initial release, potentially with limited features or space for future development. | |
-| <span id="term-Third-Party-Intermediary">Third Party Intermediary</span> | *TPI* - A defined form of TPP recognised and operating in the energy sector. | [www.ofgem.gov.uk: third-party-intermediaries-tpi-programme](https://www.ofgem.gov.uk/gas/retail-market/market-review-and-reform/third-party-intermediaries-tpi-programme) |
-| <span id="term-Third-party-provider">Third party provider</span> | *TPP* - A third party providing services - generic term used across sectors. | |
+| <span id="term-Consent">Consent</span> | pertaining to personal data - “any freely given, specific, informed and unambiguous indication of the data subject's wishes by which he or she, by a statement or by a clear affirmative action, signifies agreement to the processing of personal data relating to him or her” (Article 4(11), GDPR, 2018) | Consent to access personal data has a specific meaning under the UK Data Protection Act. However, this is not the only type of consent to share data. |
+| <span id="term-Controller">Controller</span> | Data controller (DPA 2018): 'means a person who (either alone or jointly or in common with other persons) determines the purposes for which and the manner in which any personal data are, or are to be processed' | [ico.org.uk: data-controllers-and-data-processors-dp-guidance.pdf](https://ico.org.uk/media/for-organisations/documents/1546/data-controllers-and-data-processors-dp-guidance.pdf) |
+
+## Unit of measurement
+
+| Term | Description/Definition | Notes |
+| --- | --- | --- |
+| <span id="term-Gigawatt">Gigawatt</span> | *GW* - Unit of power equal to 1 billion watts. | |
+| <span id="term-Kilograms-of-carbon-dioxide-equivalent-per-unit-of-fuel">Kilograms of carbon dioxide equivalent (per unit of fuel)</span> | *kgCO2e* - A measure of greenhouse gas conversion from energy sources. | |
+| <span id="term-Kilowatt">Kilowatt</span> | *kW* - Unit of power equal to 1 thousand watts. | [www.ofgem.gov.uk: ofgem_-_review_of_gb_energy_system_operation_0.pdf](https://www.ofgem.gov.uk/system/files/docs/2021/01/ofgem_-_review_of_gb_energy_system_operation_0.pdf) |
+| <span id="term-Kilowatt-hour">Kilowatt hour</span> | *kWh* - A unit of measurement (3,500 Joules) equivalent to using a 1,000 Watt appliance for 1 hour. | |
+| <span id="term-Megawatt">Megawatt</span> | *MW* - Unit of power equal to 1 million watts. | |
+
+## Open Energy
+
+| Term | Description/Definition | Notes |
+| --- | --- | --- |
+| <span id="term-Open-Energy-Phase-3">Open Energy Phase 3</span> | *OE3* - Phase 3 of Open Energy's development running from February - July 2021. | |
+
+## Term - multiple uses
+
+| Term | Description/Definition | Notes |
+| --- | --- | --- |
+| <span id="term-Aggregator">Aggregator</span> | Energy: a digital intermediary connecting smaller distributed energy generation so it can participate in energy markets as a group. Data: an entity that searches, accesses and collates different datasets - may be offered as a commercial service also providing value-add such as data standardisation. | |
+| <span id="term-Code">Code</span> | Variable uses including: writing development code, code of practice, industry codes, codes that are unique alphanumerics etc. Care should be taken to specify the kind of code implied when this term is used in documentation. | |
+| <span id="term-Ontology">Ontology</span> | In the IB1 Trust Framework, ontology is used to describe the core concepts, categories, subjects, properties and relationships making up the Trust Framework data ecosystem. | |
+| <span id="term-Policy">Policy</span> | Variable uses describing how something is run - e.g. privacy policy - public policy, regulatory policys. Care should be taken to specify the kind of policy implied when this term is used in documentation. | |
+| <span id="term-Stakeholder">Stakeholder</span> | In a Trust Framework, stakeholder is a term used broadly to describe any actor who may interested in, or impacted by, the Trust Framework | |
+| <span id="term-Value">Value</span> | Variable uses including: unit of measurement, economic, social, environmental. Care should be taken to specify the kind of value implied when this term is used in documentation. | |
+
+## Legal
+
+| Term | Description/Definition | Notes |
+| --- | --- | --- |
+| <span id="term-Custom-data-licence">Custom data licence</span> | A user-specific custom licence or contract governing data use. Created bespoke for each user. | |
+| <span id="term-Derivative">Derivative</span> | A derivative of a dataset is a product, service, or other word that is either wholly or in part produced from the original dataset. | |
+| <span id="term-Liability-chain">Liability chain</span> | Definitions of the roles and responsibilities of each player in a data flow, including who is liable for accident or misuse at each stage in the data flow. | |
+| <span id="term-Permission">Permission</span> | A broader term than consent that is aligned with the principles of GDPR but can also apply to non-personal data - any freely given, specific, informed and unambiguous indication of the wishes of the data subject or organisation - articulated by an appropriate representative if organisation - by which the data subject or organisation, by a statement or by a clear affirmative action, signifies agreement to the processing of his/her/its data. | |
+| <span id="term-Processor">Processor</span> | Data processor (DPA 2018): 'in relation to personal data, means any person (other than an employee of the data controller) who processes the data on behalf of the data controller.' | [ico.org.uk: data-controllers-and-data-processors-dp-guidance.pdf](https://ico.org.uk/media/for-organisations/documents/1546/data-controllers-and-data-processors-dp-guidance.pdf) |
+| <span id="term-Creative-Commons-Attribution">Creative Commons + Attribution</span> | *CC-BY* - A license requiring attribution | [creativecommons.org: by](https://creativecommons.org/licenses/by)/ |
+| <span id="term-Creative-Commons-Attribution-Noncommercial">Creative Commons + Attribution + Non-commercial</span> | *CC-BY-NC* - A license requiring attribution and restricted to non-commercial use | [creativecommons.org: by-nc](https://creativecommons.org/licenses/by-nc)/ |
+| <span id="term-Creative-Commons-Attribution-No-derivatives">Creative Commons + Attribution + No derivatives</span> | *CC-BY-ND* - A license requiring attribution and prohibiting distribution of derived products | [creativecommons.org: by-nd](https://creativecommons.org/licenses/by-nd)/ |
+| <span id="term-Data-Protection-Act">Data Protection Act</span> | *DPA* - The Data Protection Act 2018 is the UK’s implementation of the General Data Protection Regulation (GDPR). | [www.gov.uk: data-protection](https://www.gov.uk/data-protection) |
+| <span id="term-Data-subject">Data subject</span> | *DS* - As defined by GDPR | [assets.publishing.service.gov.uk: Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/909363/Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf) |
+| <span id="term-General-Data-Protection-Regulation">General Data Protection Regulation</span> | *GDPR* - Incorporated in UK law under the Data Protection Act 2018 (DPA 2018) | |
+| <span id="term-Lawful-basis">Lawful basis</span> | *LB* - As defined by GDPR | [assets.publishing.service.gov.uk: Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/909363/Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf) |
+| <span id="term-Legitimate-interest">Legitimate interest</span> | *LI* - As defined by GDPR | [assets.publishing.service.gov.uk: Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/909363/Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf) |
+
+## Commercial
+
+| Term | Description/Definition | Notes |
+| --- | --- | --- |
+| <span id="term-Heat-as-a-service">Heat as a service</span> | A business model providing heat and cooling services based on units or measurements of 'comfort' or 'warm/cold hours' rather than traditional measures of energy supply. | |
+| <span id="term-Infrastructure-as-a-service">Infrastructure as a service</span> | An ICT infrastructure development, licensing and delivery model than is often subscription-based. | Increasingly used by organisations needing to increase technological capacity, but who do not have the skills/resources to develop bespoke products internally. |
+| <span id="term-Mobility-as-a-service">Mobility as a service</span> | A business model providing mobility services based on vehicle access rather than traditional models of vehicle ownership. | |
+| <span id="term-Platform-as-a-service">Platform as a service</span> | A platform development, licensing and delivery model than is often subscription-based. | Increasingly used by organisations needing to increase technological capacity, but who do not have the skills/resources to develop bespoke products internally. |
+| <span id="term-Software-as-a-service">Software as a service</span> | A software development, licensing and delivery model than is often subscription-based. | Increasingly used by organisations needing to increase technological capacity, but who do not have the skills/resources to develop bespoke products internally. |
+| <span id="term-Industrial-and-commercial">Industrial and commercial</span> | *I&C* - Accronym commonly used in the energy sector to refer to non-domestic actors - particularly heavy industry and other high-consumption actors. | |
+| <span id="term-Know-Your-Customer">Know Your Customer</span> | *KYC* - Borrowed from banking/fraud - common among businesses to describe all aspects of licensing / permissions management for data consumers. (Definition provided by AG member) | |
+| <span id="term-Pay-As-You-Go">Pay As You Go</span> | *PAYG* - Payment as a resource is used, rather than up-front | |
+| <span id="term-Purchase-Power-Agreement">Purchase Power Agreement</span> | *PPA* - An electricity supply agreement between two parties - e.g. generator and trader. | |
+| <span id="term-Time-of-use">Time of use</span> | *TOU* - Energy supply tariff offering variable pricing depending on the time of day energy is used and the demand on the grid at that point in time. | |
+
+## Energy Technology
+
+| Term | Description/Definition | Notes |
+| --- | --- | --- |
+| <span id="term-Battery-storage">Battery storage</span> | Battery technology used in vehicles, buildings, or a grid-scale. | Grid-scale batteries can also provide ancilliary services such as frequency response in addition to power dispatch. |
+| <span id="term-Clip-size">Clip size</span> | The size of generation or flexibility resource required to participate in certain markets - usually 1MW | |
+| <span id="term-Flexibility-resouces">Flexibility resouces</span> | The assets, services and behaviours that can be used to shift energy demand in order to meet supply, where required. | |
+| <span id="term-Forecast-model">Forecast model</span> | Model on which energy forecasting is based. | [www.ibm.com: relational-databases](https://www.ibm.com/cloud/learn/relational-databases) |
+| <span id="term-Heat-pump">Heat pump</span> | A device that can transfer heat from a source of thermal energy into a building. There are air-source, ground-source and water-source heat pumps. | |
+| <span id="term-Microgeneration">Microgeneration</span> | Forms of small-scale generation (e.g. solar PV) that can be installed on domestic properties or small organisations (e.g. community centre) | |
+| <span id="term-Smart-meter">Smart meter</span> | A type of electricity and gas meter installed in domestic or SME properties that feeds information regarding energy consumption back to the consumer. Smart meters also track energy export to the grid. | |
+| <span id="term-Combined-Heat-and-Power">Combined Heat and Power</span> | *CHP* - CHP generates electricity whilst also capturing usable heat that is produced in this process. As a result, CHP operates at much higher efficiency than traditional power generation methods. | |
+| <span id="term-Distributed-energy-resources">Distributed energy resources</span> | *DER* - A term used to describe a combination of distributed generation and flexibility resources in the electricity system (e.g. solar PV, EVs, biogas, heat pumpts, batteries). | |
+| <span id="term-Demandside-response">Demand-side response</span> | *DSR* - The act of shifting energy demand in order to relieve pressure on the grid, or consume excess power. e.g. industrial processes may be slowed down or turned off at times of peak demand to reduce grid constraints. | |
+| <span id="term-Electric-charging-station">Electric charging station</span> | *ECS* - Charging station for electric vehicles | |
+| <span id="term-Electric-vehicle">Electric vehicle</span> | *EV* - Vehicle powered primarily or exclusively by electricity | |
+| <span id="term-Electric-vehicle-supply-equipment">Electric vehicle supply equipment</span> | *EVSE* - Another term for electric vehicle charging stations and related equipment | |
+| <span id="term-Home-Energy-Management-System">Home Energy Management System</span> | *HEMS* - A combination of sensors, metering, and data analytics designed to optimise energy usage within a building to maximise factors such as bills-reduction or comfort. Often used to optimise microgeneration, home battery, EV, domestic consumption and grid export. | |
+| <span id="term-Smart-Export-Guarantee">Smart Export Guarantee</span> | *SEG* - "an obligation set by the government for licensed electricity suppliers to offer a tariff and make payment to small-scale low-carbon generators for electricity exported to the National Grid, providing certain criteria are met." | [www.ofgem.gov.uk: about-smart-export-guarantee-seg](https://www.ofgem.gov.uk/environmental-programmes/smart-export-guarantee-seg/about-smart-export-guarantee-seg) |
+| <span id="term-Smart-Metering-Equipment-Technical-Specifications">Smart Metering Equipment Technical Specifications</span> | *SMETS* - SMETS describe the specifications of UK smart meters. Two generations of smart meters have been released to date - SMETS1 and SMETS2. | [www.ovoenergy.com: smets-1-and-2-new-smart-meter-generation.html](https://www.ovoenergy.com/guides/energy-guides/smets-1-and-2-new-smart-meter-generation.html) |
+| <span id="term-Vehicle-to-grid">Vehicle to grid</span> | *V2G* - Bidirectional power flow between the grid and an EV battery. Enables EV owners to discharge power stored in batteries to the grid at times of need. | |
+| <span id="term-Virtual-power-plant">Virtual power plant</span> | *VPP* - A digitally-connected set of distributed energy resources that can be aggregated to provide services (e.g. trading, generation) | |
 
 ## Technology
 
@@ -52,7 +118,7 @@
 | <span id="term-Data-institution">Data institution</span> | Data institutions are organisations that steward data on behalf of others, often towards public, educational or charitable aims. | [theodi.org: what-are-data-institutions-and-why-are-they-important](https://theodi.org/article/what-are-data-institutions-and-why-are-they-important)/ |
 | <span id="term-Data-lake">Data lake</span> | A significant quantity of unstructured data. | |
 | <span id="term-Data-standard">Data standard</span> | A standardised agreement determining how data is categorised, described, and recorded (e.g. format, definitions, structure etc.) | |
-| <span id="term-Data-triage">Data triage</span> | The process used by organisations to determine whether data can be made open, shared, or closed. | Detailed guidance on triage is available in point 12 of the MED data best practice guidance here: [modernisingenergydata.atlassian.net: Data+Best+Practice+v0.21](https://modernisingenergydata.atlassian.net/wiki/spaces/MED/pages/319389709/Data+Best+Practice+v0.21) |
+| <span id="term-Data-triage">Data triage</span> | The process used by organisations to determine whether data can be made open, shared, or closed. | Detailed guidance on triage is available in point 12 of the MED data best practice guidance here: [es.catapult.org.uk: data-best-practice-guidance](https://es.catapult.org.uk/guide/data-best-practice-guidance)/ |
 | <span id="term-Data-warehouse">Data warehouse</span> | A significant quantity of structured data. | |
 | <span id="term-Dataset">Dataset</span> | A collection of related sets of data (data elements) which can be treated as a single unit. This collection of data however will together provide a meaningful grouping as defined by a subject of interest. | Definition submitted by SSE |
 | <span id="term-Digital-twin">Digital twin</span> | A digital model of a 'real world' object or system. | |
@@ -97,6 +163,20 @@
 | <span id="term-X-as-as-Service">X as as Service</span> | *XaaS* - Generic term used to refer to various items (e.g. software, platforms, heat, mobility etc) that are being offered via 'as a service' business models. | |
 | <span id="term-YAML-Aint-Markup-Language">YAML Ain't Markup Language</span> | *YAML* - YAML (a recursive acronym for "YAML Ain't Markup Language") is a human-readable data-serialization language. It is commonly used for configuration files and in applications where data is being stored or transmitted. | [en.wikipedia.org: YAML](https://en.wikipedia.org/wiki/YAML) |
 
+## Regulated monopoly
+
+| Term | Description/Definition | Notes |
+| --- | --- | --- |
+| <span id="term-Data-and-Communications-Company">Data and Communications Company</span> | *DCC* - The 'central communications body appointed to manage communications and data transfer for smart metering. It is responsible for linking smart meters in homes and small businesses with the systems of energy suppliers, network operators and other companies.' | [www.ofgem.gov.uk: 126045](https://www.ofgem.gov.uk/ofgem-publications/126045) |
+| <span id="term-Distribution-Network-Operator">Distribution Network Operator</span> | *DNO* - Responsible for regional electricity distribution (lower voltage). | |
+| <span id="term-Distribution-System-Operator">Distribution System Operator</span> | *DSO* - In the UK, electricity DNOs are transitioning to become DSOs in response to electricity system changes (e.g. decentralisation, decarbonisation). The transition will change DNO responsibilities, broadening these from asset/network management. The term DSO is also commonly used outside of the UK. | |
+| <span id="term-Electricity-System-Operator">Electricity System Operator</span> | *ESO* - Responsible for system operation and balancing. National 'control room'. Role carried out by National Grid ESO (a separate company within the National Grid Group - not connected to the electricity TSO). | |
+| <span id="term-Gas-Distribution-Network">Gas Distribution Network</span> | *GDN* - Responsible for regional gas distribution (lower pressure). | |
+| <span id="term-Gas-System-Operator">Gas System Operator</span> | *GSO* - Responsible for system operation and balancing. National 'control room'. Role carried out by National Grid Gas Plc (a separate company within the National Grid Group who also own the gas transmission network). | |
+| <span id="term-Independent-Distribution-Network-Operator">Independent Distribution Network Operator</span> | *iDNO* - IDNOs own and operate smaller networks located within the areas covered by the DNOs. IDNO networks are mainly extensions to the DNO networks serving new housing and commercial developments. | [www.ofgem.gov.uk: independent-distribution-network-operators](https://www.ofgem.gov.uk/electricity/distribution-networks/connections-and-competition/independent-distribution-network-operators) |
+| <span id="term-Independent-System-Operator">Independent System Operator</span> | *ISO* - There is currently a proposal, backed by Ofgem, to convert the ESO to an ISO. The proposal advocates this change in order to meet new requirements of system operation oriented towards achieving Net Zero. The change would involve some change in the ESO's structure, responsibilities and relationship to other bodies in the sector. | |
+| <span id="term-Transmission-System-Owner">Transmission System Owner</span> | *TSO* - Owner of the national electricity and gas transmission networks (higher voltage/pressure). | |
+
 ## Regulatory
 
 | Term | Description/Definition | Notes |
@@ -111,60 +191,21 @@
 | <span id="term-Office-for-National-Statistics">Office for National Statistics</span> | *ONS* - The UK’s largest independent producer of official statistics and its recognised national statistical institute. | [www.ons.gov.uk: ](https://www.ons.gov.uk)/ |
 | <span id="term-Revenues-Incentives-Innovation-Outputs">Revenues = Incentives + Innovation + Outputs</span> | *RIIO* - Ofgem's regulatory framework for network companies, negotiated every 5 years. | |
 
-## Commercial
+## Standard
 
 | Term | Description/Definition | Notes |
 | --- | --- | --- |
-| <span id="term-Heat-as-a-service">Heat as a service</span> | A business model providing heat and cooling services based on units or measurements of 'comfort' or 'warm/cold hours' rather than traditional measures of energy supply. | |
-| <span id="term-Infrastructure-as-a-service">Infrastructure as a service</span> | An ICT infrastructure development, licensing and delivery model than is often subscription-based. | Increasingly used by organisations needing to increase technological capacity, but who do not have the skills/resources to develop bespoke products internally. |
-| <span id="term-Mobility-as-a-service">Mobility as a service</span> | A business model providing mobility services based on vehicle access rather than traditional models of vehicle ownership. | |
-| <span id="term-Platform-as-a-service">Platform as a service</span> | A platform development, licensing and delivery model than is often subscription-based. | Increasingly used by organisations needing to increase technological capacity, but who do not have the skills/resources to develop bespoke products internally. |
-| <span id="term-Software-as-a-service">Software as a service</span> | A software development, licensing and delivery model than is often subscription-based. | Increasingly used by organisations needing to increase technological capacity, but who do not have the skills/resources to develop bespoke products internally. |
-| <span id="term-Industrial-and-commercial">Industrial and commercial</span> | *I&C* - Accronym commonly used in the energy sector to refer to non-domestic actors - particularly heavy industry and other high-consumption actors. | |
-| <span id="term-Know-Your-Customer">Know Your Customer</span> | *KYC* - Borrowed from banking/fraud - common among businesses to describe all aspects of licensing / permissions management for data consumers. (Definition provided by AG member) | |
-| <span id="term-Pay-As-You-Go">Pay As You Go</span> | *PAYG* - Payment as a resource is used, rather than up-front | |
-| <span id="term-Purchase-Power-Agreement">Purchase Power Agreement</span> | *PPA* - An electricity supply agreement between two parties - e.g. generator and trader. | |
-| <span id="term-Time-of-use">Time of use</span> | *TOU* - Energy supply tariff offering variable pricing depending on the time of day energy is used and the demand on the grid at that point in time. | |
-
-## Research
-
-| Term | Description/Definition | Notes |
-| --- | --- | --- |
-| <span id="term-Centre-for-Digital-Built-Britain">Centre for Digital Built Britain</span> | *CDBB* - The Centre for Digital Built Britain is a partnership between the Department of Business, Energy & Industrial Strategy and the University of Cambridge to understand how the construction and infrastructure sectors could use a digital approach to better design, build, operate, and integrate the built environment. | [www.cdbb.cam.ac.uk: ](https://www.cdbb.cam.ac.uk)/ |
-| <span id="term-Energy-Systems-Capatult">Energy Systems Capatult</span> | *ESC* - Energy Systems Catapult was set up to accelerate the transformation of the UK’s energy system and ensure UK businesses and consumers capture the opportunities of clean growth. The Catapult is an independent, not-for-profit centre of excellence that bridges the gap between industry, government, academia and research. We take a whole-systems view of the energy sector, helping us to identify and address innovation priorities and market barriers, in order to decarbonise the energy system at the lowest cost. | [es.catapult.org.uk: ](https://es.catapult.org.uk)/ |
-
-## Unit of measurement
-
-| Term | Description/Definition | Notes |
-| --- | --- | --- |
-| <span id="term-Gigawatt">Gigawatt</span> | *GW* - Unit of power equal to 1 billion watts. | |
-| <span id="term-Kilograms-of-carbon-dioxide-equivalent-per-unit-of-fuel">Kilograms of carbon dioxide equivalent (per unit of fuel)</span> | *kgCO2e* - A measure of greenhouse gas conversion from energy sources. | |
-| <span id="term-Kilowatt">Kilowatt</span> | *kW* - Unit of power equal to 1 thousand watts. | [www.ofgem.gov.uk: ofgem_-_review_of_gb_energy_system_operation_0.pdf](https://www.ofgem.gov.uk/system/files/docs/2021/01/ofgem_-_review_of_gb_energy_system_operation_0.pdf) |
-| <span id="term-Kilowatt-hour">Kilowatt hour</span> | *kWh* - A unit of measurement (3,500 Joules) equivalent to using a 1,000 Watt appliance for 1 hour. | |
-| <span id="term-Megawatt">Megawatt</span> | *MW* - Unit of power equal to 1 million watts. | |
-
-## Energy Technology
-
-| Term | Description/Definition | Notes |
-| --- | --- | --- |
-| <span id="term-Battery-storage">Battery storage</span> | Battery technology used in vehicles, buildings, or a grid-scale. | Grid-scale batteries can also provide ancilliary services such as frequency response in addition to power dispatch. |
-| <span id="term-Clip-size">Clip size</span> | The size of generation or flexibility resource required to participate in certain markets - usually 1MW | |
-| <span id="term-Flexibility-resouces">Flexibility resouces</span> | The assets, services and behaviours that can be used to shift energy demand in order to meet supply, where required. | |
-| <span id="term-Forecast-model">Forecast model</span> | Model on which energy forecasting is based. | [www.ibm.com: relational-databases](https://www.ibm.com/cloud/learn/relational-databases) |
-| <span id="term-Heat-pump">Heat pump</span> | A device that can transfer heat from a source of thermal energy into a building. There are air-source, ground-source and water-source heat pumps. | |
-| <span id="term-Microgeneration">Microgeneration</span> | Forms of small-scale generation (e.g. solar PV) that can be installed on domestic properties or small organisations (e.g. community centre) | |
-| <span id="term-Smart-meter">Smart meter</span> | A type of electricity and gas meter installed in domestic or SME properties that feeds information regarding energy consumption back to the consumer. Smart meters also track energy export to the grid. | |
-| <span id="term-Combined-Heat-and-Power">Combined Heat and Power</span> | *CHP* - CHP generates electricity whilst also capturing usable heat that is produced in this process. As a result, CHP operates at much higher efficiency than traditional power generation methods. | |
-| <span id="term-Distributed-energy-resources">Distributed energy resources</span> | *DER* - A term used to describe a combination of distributed generation and flexibility resources in the electricity system (e.g. solar PV, EVs, biogas, heat pumpts, batteries). | |
-| <span id="term-Demandside-response">Demand-side response</span> | *DSR* - The act of shifting energy demand in order to relieve pressure on the grid, or consume excess power. e.g. industrial processes may be slowed down or turned off at times of peak demand to reduce grid constraints. | |
-| <span id="term-Electric-charging-station">Electric charging station</span> | *ECS* - Charging station for electric vehicles | |
-| <span id="term-Electric-vehicle">Electric vehicle</span> | *EV* - Vehicle powered primarily or exclusively by electricity | |
-| <span id="term-Electric-vehicle-supply-equipment">Electric vehicle supply equipment</span> | *EVSE* - Another term for electric vehicle charging stations and related equipment | |
-| <span id="term-Home-Energy-Management-System">Home Energy Management System</span> | *HEMS* - A combination of sensors, metering, and data analytics designed to optimise energy usage within a building to maximise factors such as bills-reduction or comfort. Often used to optimise microgeneration, home battery, EV, domestic consumption and grid export. | |
-| <span id="term-Smart-Export-Guarantee">Smart Export Guarantee</span> | *SEG* - "an obligation set by the government for licensed electricity suppliers to offer a tariff and make payment to small-scale low-carbon generators for electricity exported to the National Grid, providing certain criteria are met." | [www.ofgem.gov.uk: about-smart-export-guarantee-seg](https://www.ofgem.gov.uk/environmental-programmes/smart-export-guarantee-seg/about-smart-export-guarantee-seg) |
-| <span id="term-Smart-Metering-Equipment-Technical-Specifications">Smart Metering Equipment Technical Specifications</span> | *SMETS* - SMETS describe the specifications of UK smart meters. Two generations of smart meters have been released to date - SMETS1 and SMETS2. | [www.ovoenergy.com: smets-1-and-2-new-smart-meter-generation.html](https://www.ovoenergy.com/guides/energy-guides/smets-1-and-2-new-smart-meter-generation.html) |
-| <span id="term-Vehicle-to-grid">Vehicle to grid</span> | *V2G* - Bidirectional power flow between the grid and an EV battery. Enables EV owners to discharge power stored in batteries to the grid at times of need. | |
-| <span id="term-Virtual-power-plant">Virtual power plant</span> | *VPP* - A digitally-connected set of distributed energy resources that can be aggregated to provide services (e.g. trading, generation) | |
+| <span id="term-Open-ADR">Open ADR</span> | Open Automated Demand-Side Response. A research and standards-development programme, led by organisations in North America, aiming to standardise automated signals for power-consuming devices to lower consumption or switch off completely during periods of high demand. | |
+| <span id="term-Open-Charge-Alliance">Open Charge Alliance</span> | An international consortium of public and private electric vehicle infrastructure organisations that have come together to promote open standards through the adoption of the Open Charge Point Protocol and the Open Smart Charging Protocol. | [www.openchargealliance.org: ](https://www.openchargealliance.org)/ |
+| <span id="term-Open-Standard">Open Standard</span> | Open standards give users permission to copy, distribute and use technology freely or at low cost. | |
+| <span id="term-Common-Information-Model">Common Information Model</span> | *CIM* - An open, standardised method of representing computing devices and energy network asset types, and the relationships between them. | [www.theade.co.uk: what-is-combined-heat-and-power](https://www.theade.co.uk/resources/what-is-combined-heat-and-power) |
+| <span id="term-EEBUS">EEBUS</span> | *EEBUS* - A standard-development project aiming to define a standardised language for the energy Internet of Things | [www.eebus.org: what-is-eebus](https://www.eebus.org/what-is-eebus)/ |
+| <span id="term-European-Union">European Union</span> | *EU* - no definition | |
+| <span id="term-Frequently-Asked-Question">Frequently Asked Question</span> | *FAQ* - A list of questions and answers relating to a particular subject, especially one giving basic information for users of a website. | |
+| <span id="term-International-Standards-Organisation-standard-regarding-date-time-data">International Standards Organisation standard regarding date time data</span> | *ISO 8601* - ISO 8601 Data elements and interchange formats – Information interchange – Representation of dates and times is an international standard covering the exchange of date- and time-related data | [en.wikipedia.org: ISO_8601](https://en.wikipedia.org/wiki/ISO_8601) |
+| <span id="term-Small-Medium-Enterprise">Small / Medium Enterprise</span> | *SME* - Small and medium-sized enterprises or small and medium-sized businesses are businesses whose personnel numbers fall below certain limits. The abbreviation "SME" is used by international organizations such as the World Bank, the European Union, the United Nations and the World Trade Organization. | |
+| <span id="term-United-Kingdom">United Kingdom</span> | *UK* - no definition | |
+| <span id="term-Universal-Coordinated-Time">Universal Coordinated Time</span> | *UTC* - 24 hour time standard at a high level of precision. | [www.timeanddate.com: aboututc.html](https://www.timeanddate.com/time/aboututc.html) |
 
 ## Operational
 
@@ -174,6 +215,50 @@
 | <span id="term-Case-study">Case study</span> | An empirical description of a particular situation in which a product, service, technology, method (etc.) has been used, and the results of its use. | |
 | <span id="term-Usecase">Use-case</span> | An outline of a specific situation in which a product or service could be used (can be theoretical or empirical) | Main use-case for OE3: local authority retrofit |
 | <span id="term-User-storyjourney">User story/journey</span> | A user story is an informal, general explanation of a software feature written from the perspective of the end user. Its purpose is to articulate how a software feature will provide value to the customer.' | User journey for OE3: Leah. Source for definition: [www.atlassian.com: user-stories](https://www.atlassian.com/agile/project-management/user-stories) |
+
+## Other
+
+| Term | Description/Definition | Notes |
+| --- | --- | --- |
+| <span id="term-Intermittency">Intermittency</span> | Variability of renewable energy generation in line with weather conditions. | |
+| <span id="term-Prosumer">Prosumer</span> | An entity (e.g. household) that both produces and consumes electricity. | Prosumption may also be combined with flexibility technology (e.g. home battery) to maximise the amount of self-generated electricity that can be consumed by the entity. Prosumption behaviour is currently often associated with atypically active behaviour of households in the energy system, however this may change as distributed energy resources proliferate. |
+| <span id="term-Minimum-Viable-Product">Minimum Viable Product</span> | *MVP* - An early version of a product for initial release, potentially with limited features or space for future development. | |
+| <span id="term-Third-Party-Intermediary">Third Party Intermediary</span> | *TPI* - A defined form of TPP recognised and operating in the energy sector. | [www.ofgem.gov.uk: third-party-intermediaries-tpi-programme](https://www.ofgem.gov.uk/gas/retail-market/market-review-and-reform/third-party-intermediaries-tpi-programme) |
+| <span id="term-Third-party-provider">Third party provider</span> | *TPP* - A third party providing services - generic term used across sectors. | |
+
+## Trust Framework
+
+| Term | Description/Definition | Notes |
+| --- | --- | --- |
+| <span id="term-Assurance">Assurance</span> | Gives confidence both to people inside companies that they are allowed to share data externally, as well as those externally knowing that they have permission to use the data for their purposes and confidence in what is being supplied | [ib1.org: assurance](https://ib1.org/assurance) |
+| <span id="term-Data-sensitivity-class">Data sensitivity class</span> | OE members can self-allocate dataset into ‘classes’ depending on its sensitivity profile. Access and security requirements differ across classes. | |
+| <span id="term-Icebreaker-One-Trust-Framework">Icebreaker One Trust Framework</span> | The governance, standards and technical specifications for the Trust Framework operated by Icebreaker One | |
+| <span id="term-Lineage">Lineage</span> | Describes in detail the processing of data within an organisation | |
+| <span id="term-Preemptive-licence">Preemptive licence</span> | A data licence which is predetermined and applies to multiple users without custom per-user adaptation. | |
+| <span id="term-Provenance">Provenance</span> | Describes how data is originated, processed, and transferred by data publishers. It should contain information sufficient for data users external to the publishing organisation to obtain assurance, but doesn’t necessarily include full lineage. | |
+| <span id="term-Rule">Rule</span> | An articulation of a dataset’s sensitivity class, access conditions, and license that is publishing in the metadata file. A dataset may either have a single, or multiple, rules. | |
+| <span id="term-Scheme">Scheme</span> | Schemes co-develop and maintain the additional rules, governance, and enabling technology necessary to facilitate the exchange of data for a particular use case (or set of related use cases) among a defined set of participating actors.  Schemes operate only within wider trust Framework environments. | |
+| <span id="term-Trust-framework">Trust framework</span> | A set of governance measures ensuring that data is shared in a trustworthy manner (e.g. participant authorisation, access, data tiers etc.) | |
+| <span id="term-Trust-Framework">Trust Framework</span> | Trust Frameworks operate at the level of collective governance (e.g. sector, market, geography) to establish and maintain a light layer of collaboratively developed and governed interventions which create the foundations of a trusted data sharing ecosystem. This includes, but is not limited to: identity management, assured Open Data publishing (baseline), and maintenance of a library of common principles, definitions, and Open Standards. | |
+| <span id="term-Trust-Framework-Data-Officer">Trust Framework Data Officer</span> | A Trust Framework Data Officer is required when using Icebreaker One assurance and is contractually required to ensure that data published within a Trust Framework adheres to its rules. This includes the technical security and integrity of data sharing (including consent-based access controls where relevant) as well as ensuring requirements are met for assurance levels, permissible data formats, metadata requirements etc. | |
+| <span id="term-Trust-Framework-Licence-Officer">Trust Framework Licence Officer</span> | A Trust Framework Licence Officer is required when using Icebreaker One assurance and has legal authority in the organisation to sign, or provide consent to, Data Sharing licences (e.g. Open Data or preemptive licences) on behalf of the organisation or legal entity | |
+| <span id="term-Advisory-Group">Advisory Group</span> | *AG* - Trust Frameworks operate under a Steering Group and up to five Advisory groups, covering User needs, materiality and impact; Technical infrastructure; Data licensing and legal; Engagement and communications; Policy | |
+| <span id="term-Data-Consumer">Data Consumer</span> | *DC* - A consumer of data operating as a member within the Icebreaker One Trust Framework. Data Consumers serve needs that are internal to their own organisation. | |
+| <span id="term-Data-Provider">Data Provider</span> | *DP* - Organisation providing data into the Icebreaker One Trust Framework | |
+| <span id="term-Data-sensitivity-class-closed">Data sensitivity class - closed</span> | *IB1-C* - Closed data - datasets which must not be shared within Open Energy | |
+| <span id="term-Data-sensitivity-class-open">Data sensitivity class - open</span> | *IB1-O* - Open Data - full open access, under an open data licence. Free to use, by anyone, for any purpose. | |
+| <span id="term-Data-sensitivity-class-shared-A">Data sensitivity class - shared (A)</span> | *IB1-SA* - Shared data - datasets which can/could be shared, but which require the user to agree to standard T&Cs to access. May include some openly licensed materials (e.g. CC BY-SA or GNU AGPLv3). | |
+| <span id="term-Data-sensitivity-class-shared-B">Data sensitivity class - shared (B)</span> | *IB1-SB* - Shared data - datasets which can/could be shared, but currently require some bilateral contract negotiation. May include data currently shared on the basis of group-based access. May include aggregated, anonymised or pseudonymised data about individuals. | |
+| <span id="term-Data-sensitivity-class-personal">Data sensitivity class - personal</span> | *IB1-SP* - Datasets which include personal data, requiring appropriate consent to share, or other legal bases to data processing, as defined by the UK DPA 2018 and the GDPR. | |
+| <span id="term-Steering-Group">Steering Group</span> | *SG* - Each Trust Framework has a high-level steering group that supports consultation and guidance of activities. | |
+| <span id="term-Service-Provider">Service Provider</span> | *SP* - A Service Provider is a type of Data Consumer and third party provider of data services operating as a member within the Trust Framework. Service Providers operate within a competitive market and serve customers that are external to their own organisation. | |
+| <span id="term-Trust-Framework-Governance-Service">Trust Framework Governance Service</span> | *TFGS* - The technical and governance architecture backing the Icebreaker One Trust Framework in which data is shared. | |
+
+## Energy - Technology
+
+| Term | Description/Definition | Notes |
+| --- | --- | --- |
+| <span id="term-Asset-register">Asset register</span> | Propsed by the EDTF. A list of physical energy assets (generation and storage), designed to improve the visibility of different assets on the network | |
 
 ## Policy and governance
 
@@ -206,86 +291,10 @@
 | <span id="term-Renewable-Heat-Incentive">Renewable Heat Incentive</span> | *RHI* - Government-funded financial incentive to support uptake of renewable heat. | [www.ofgem.gov.uk: about-domestic-rhi](https://www.ofgem.gov.uk/environmental-programmes/domestic-rhi/about-domestic-rhi) |
 | <span id="term-Smart-Energy-Code">Smart Energy Code</span> | *SEC* - "​​​The Smart Energy Code (SEC) is a multi-Party agreement which defines the rights and obligations of energy suppliers, network operators and other relevant parties involved in the end to end management of smart metering in Great Britain." | [smartenergycodecompany.co.uk: ](https://smartenergycodecompany.co.uk)/ |
 
-## Term - multiple uses
+## Research
 
 | Term | Description/Definition | Notes |
 | --- | --- | --- |
-| <span id="term-Aggregator">Aggregator</span> | Energy: a digital intermediary connecting smaller distributed energy generation so it can participate in energy markets as a group. Data: an entity that searches, accesses and collates different datasets - may be offered as a commercial service also providing value-add such as data standardisation. | |
-| <span id="term-Code">Code</span> | Variable uses including: writing development code, code of practice, industry codes, codes that are unique alphanumerics etc. Care should be taken to specify the kind of code implied when this term is used in documentation. | |
-| <span id="term-Ontology">Ontology</span> | In the IB1 Trust Framework, ontology is used to describe the core concepts, categories, subjects, properties and relationships making up the Trust Framework data ecosystem. | |
-| <span id="term-Policy">Policy</span> | Variable uses describing how something is run - e.g. privacy policy - public policy, regulatory policys. Care should be taken to specify the kind of policy implied when this term is used in documentation. | |
-| <span id="term-Stakeholder">Stakeholder</span> | In a Trust Framework, stakeholder is a term used broadly to describe any actor who may interested in, or impacted by, the Trust Framework | |
-| <span id="term-Value">Value</span> | Variable uses including: unit of measurement, economic, social, environmental. Care should be taken to specify the kind of value implied when this term is used in documentation. | |
-
-## Energy - Technology
-
-| Term | Description/Definition | Notes |
-| --- | --- | --- |
-| <span id="term-Asset-register">Asset register</span> | Propsed by the EDTF. A list of physical energy assets (generation and storage), designed to improve the visibility of different assets on the network | |
-
-## Trust Framework
-
-| Term | Description/Definition | Notes |
-| --- | --- | --- |
-| <span id="term-Data-sensitivity-class">Data sensitivity class</span> | OE members can self-allocate dataset into ‘classes’ depending on its sensitivity profile. Access and security requirements differ across classes. | |
-| <span id="term-Icebreaker-One-Trust-Framework">IB1 Trust Framework</span> | The governance, standards and technical specifications for the Trust Framework operated by Icebreaker One | |
-| <span id="term-Preemptive-licence">Preemptive licence</span> | A pre-determined set of rules governing data sharing and use. | |
-| <span id="term-Rule">Rule</span> | An articulation of a dataset’s sensitivity class, access conditions, and license that is publishing in the metadata file. A dataset may either have a single, or multiple, rules. | |
-| <span id="term-Trust-framework">Trust framework</span> | A set of governance measures ensuring that data is shared in a trustworthy manner (e.g. participant authorisation, access, data tiers etc.) | |
-| <span id="term-Advisory-Group">Advisory Group</span> | *AG* - Trust Frameworks operate under a Steering Group and up to five Advisory groups, covering User needs, materiality and impact; Technical infrastructure; Data licensing and legal; Engagement and communications; Policy | |
-| <span id="term-Data-Consumer">Data Consumer</span> | *DC* - A consumer of data operating as a member within the IB1 Trust Framework. Data Consumers serve needs that are internal to their own organisation. | |
-| <span id="term-Data-Provider">Data Provider</span> | *DP* - Organisation providing data into the IB1 Trust Framework | |
-| <span id="term-Data-sensitivity-class-closed">Data sensitivity class - closed</span> | *IB1-C* - Closed data - datasets which must not be shared within Open Energy | |
-| <span id="term-Data-sensitivity-class-open">Data sensitivity class - open</span> | *IB1-O* - Open Data - full open access, under an open data licence. Free to use, by anyone, for any purpose. | |
-| <span id="term-Data-sensitivity-class-shared-A">Data sensitivity class - shared (A)</span> | *IB1-SA* - Shared data - datasets which can/could be shared, but which require the user to agree to standard T&Cs to access. May include some openly licensed materials (e.g. CC BY-SA or GNU AGPLv3). | |
-| <span id="term-Data-sensitivity-class-shared-B">Data sensitivity class - shared (B)</span> | *IB1-SB* - Shared data - datasets which can/could be shared, but currently require some bilateral contract negotiation. May include data currently shared on the basis of group-based access. May include aggregated, anonymised or pseudonymised data about individuals. | |
-| <span id="term-Data-sensitivity-class-personal">Data sensitivity class - personal</span> | *IB1-SP* - Datasets which include personal data, requiring appropriate consent to share, or other legal bases to data processing, as defined by the UK DPA 2018. | |
-| <span id="term-Steering-Group">Steering Group</span> | *SG* - Each Trust Framework has a high-level steering group that supports consultation and guidance of activities. | |
-| <span id="term-Service-Provider">Service Provider</span> | *SP* - A Service Provider is a type of Data Consumer and third party provider of data services operating as a member within the Trust Framework. Service Providers operate within a competitive market and serve customers that are external to their own organisation. | |
-| <span id="term-Trust-Framework-Governance-Service">Trust Framework Governance Service</span> | *TFGS* - The technical and governance architecture backing the IB1 Trust Framework in which data is shared. | |
-
-## Open Energy
-
-| Term | Description/Definition | Notes |
-| --- | --- | --- |
-| <span id="term-Open-Energy-Phase-3">Open Energy Phase 3</span> | *OE3* - Phase 3 of Open Energy's development running from February - July 2021. | |
-
-## Standard
-
-| Term | Description/Definition | Notes |
-| --- | --- | --- |
-| <span id="term-Open-ADR">Open ADR</span> | Open Automated Demand-Side Response. A research and standards-development programme, led by organisations in North America, aiming to standardise automated signals for power-consuming devices to lower consumption or switch off completely during periods of high demand. | |
-| <span id="term-Open-Charge-Alliance">Open Charge Alliance</span> | An international consortium of public and private electric vehicle infrastructure organisations that have come together to promote open standards through the adoption of the Open Charge Point Protocol and the Open Smart Charging Protocol. | [www.openchargealliance.org: ](https://www.openchargealliance.org)/ |
-| <span id="term-Open-Standard">Open Standard</span> | Open standards give users permission to copy, distribute and use technology freely or at low cost. | |
-| <span id="term-Common-Information-Model">Common Information Model</span> | *CIM* - An open, standardised method of representing computing devices and energy network asset types, and the relationships between them. | [www.theade.co.uk: what-is-combined-heat-and-power](https://www.theade.co.uk/resources/what-is-combined-heat-and-power) |
-| <span id="term-EEBUS">EEBUS</span> | *EEBUS* - A standard-development project aiming to define a standardised language for the energy Internet of Things | [www.eebus.org: what-is-eebus](https://www.eebus.org/what-is-eebus)/ |
-| <span id="term-European-Union">European Union</span> | *EU* - no definition | |
-| <span id="term-Frequently-Asked-Question">Frequently Asked Question</span> | *FAQ* - A list of questions and answers relating to a particular subject, especially one giving basic information for users of a website. | |
-| <span id="term-International-Standards-Organisation-standard-regarding-date-time-data">International Standards Organisation standard regarding date time data</span> | *ISO 8601* - ISO 8601 Data elements and interchange formats – Information interchange – Representation of dates and times is an international standard covering the exchange of date- and time-related data | [en.wikipedia.org: ISO_8601](https://en.wikipedia.org/wiki/ISO_8601) |
-| <span id="term-Small-Medium-Enterprise">Small / Medium Enterprise</span> | *SME* - Small and medium-sized enterprises or small and medium-sized businesses are businesses whose personnel numbers fall below certain limits. The abbreviation "SME" is used by international organizations such as the World Bank, the European Union, the United Nations and the World Trade Organization. | |
-| <span id="term-United-Kingdom">United Kingdom</span> | *UK* - no definition | |
-| <span id="term-Universal-Coordinated-Time">Universal Coordinated Time</span> | *UTC* - 24 hour time standard at a high level of precision. | [www.timeanddate.com: aboututc.html](https://www.timeanddate.com/time/aboututc.html) |
-
-## Legal
-
-| Term | Description/Definition | Notes |
-| --- | --- | --- |
-| <span id="term-Derivative">Derivative</span> | A derivative of a dataset is a product, service, or other word that is either wholly or in part produced from the original dataset. | |
-| <span id="term-Liability-chain">Liability chain</span> | Definitions of the roles and responsibilities of each player in a data flow, including who is liable for accident or misuse at each stage in the data flow. | |
-| <span id="term-Processor">Processor</span> | Data processor (DPA 2018): 'in relation to personal data, means any person (other than an employee of the data controller) who processes the data on behalf of the data controller.' | [ico.org.uk: data-controllers-and-data-processors-dp-guidance.pdf](https://ico.org.uk/media/for-organisations/documents/1546/data-controllers-and-data-processors-dp-guidance.pdf) |
-| <span id="term-Creative-Commons-Attribution">Creative Commons + Attribution</span> | *CC-BY* - A license requiring attribution | [creativecommons.org: by](https://creativecommons.org/licenses/by)/ |
-| <span id="term-Creative-Commons-Attribution-Noncommercial">Creative Commons + Attribution + Non-commercial</span> | *CC-BY-NC* - A license requiring attribution and restricted to non-commercial use | [creativecommons.org: by-nc](https://creativecommons.org/licenses/by-nc)/ |
-| <span id="term-Creative-Commons-Attribution-No-derivatives">Creative Commons + Attribution + No derivatives</span> | *CC-BY-ND* - A license requiring attribution and prohibiting distribution of derived products | [creativecommons.org: by-nd](https://creativecommons.org/licenses/by-nd)/ |
-| <span id="term-Data-Protection-Act">Data Protection Act</span> | *DPA* - The Data Protection Act 2018 is the UK’s implementation of the General Data Protection Regulation (GDPR). | [www.gov.uk: data-protection](https://www.gov.uk/data-protection) |
-| <span id="term-Data-subject">Data subject</span> | *DS* - As defined by GDPR | [assets.publishing.service.gov.uk: Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/909363/Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf) |
-| <span id="term-General-Data-Protection-Regulation">General Data Protection Regulation</span> | *GDPR* - Incorporated in UK law under the Data Protection Act 2018 (DPA 2018) | |
-| <span id="term-Lawful-basis">Lawful basis</span> | *LB* - As defined by GDPR | [assets.publishing.service.gov.uk: Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/909363/Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf) |
-| <span id="term-Legitimate-interest">Legitimate interest</span> | *LI* - As defined by GDPR | [assets.publishing.service.gov.uk: Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/909363/Dgen_and_BEIS_-_Smart_Data_-_Consent.pdf) |
-
-## Data
-
-| Term | Description/Definition | Notes |
-| --- | --- | --- |
-| <span id="term-Consent">Consent</span> | Processes for ensuring that appropriate permissions are given for certain actions to occur (e.g. certain uses of data). | Consent to access personal data has a specific meaning under the UK Data Protection Act. However, this is not the only type of consent to share data. |
-| <span id="term-Controller">Controller</span> | Data controller (DPA 2018): 'means a person who (either alone or jointly or in common with other persons) determines the purposes for which and the manner in which any personal data are, or are to be processed' | [ico.org.uk: data-controllers-and-data-processors-dp-guidance.pdf](https://ico.org.uk/media/for-organisations/documents/1546/data-controllers-and-data-processors-dp-guidance.pdf) |
+| <span id="term-Centre-for-Digital-Built-Britain">Centre for Digital Built Britain</span> | *CDBB* - The Centre for Digital Built Britain is a partnership between the Department of Business, Energy & Industrial Strategy and the University of Cambridge to understand how the construction and infrastructure sectors could use a digital approach to better design, build, operate, and integrate the built environment. | [www.cdbb.cam.ac.uk: ](https://www.cdbb.cam.ac.uk)/ |
+| <span id="term-Energy-Systems-Capatult">Energy Systems Capatult</span> | *ESC* - Energy Systems Catapult was set up to accelerate the transformation of the UK’s energy system and ensure UK businesses and consumers capture the opportunities of clean growth. The Catapult is an independent, not-for-profit centre of excellence that bridges the gap between industry, government, academia and research. We take a whole-systems view of the energy sector, helping us to identify and address innovation priorities and market barriers, in order to decarbonise the energy system at the lowest cost. | [es.catapult.org.uk: ](https://es.catapult.org.uk)/ |
 
