@@ -6,7 +6,7 @@ The technical Specifications for [IB1](https://ib1.org) (IB1) [Trust Framework](
 
 ## Trust Framework Architecture
 
-![IB1 Trust Framework Architecture Diagram ](assets/ib1_trust_framework_architecture_202506.svg)
+![IB1 Trust Framework Architecture Diagram ](assets/ib1_trust_framework_architecture_20250703.svg)
 
 ## Registry
 
