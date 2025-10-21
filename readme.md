@@ -7,6 +7,18 @@ build of the technical documentation, including operational guidelines, for the 
 
 Once released, this documentation will be hosted at https://docs.icebreakerone.org
 
+## Process to update the glossary and publish
+
+1. Checkout a new branch off `main` to do the changes.
+2. If you need to update the glossary, run the python script `build_glossary.py`. This takes the data from [https://docs.google.com/spreadsheets/d/1W4mk3hGTmVg8tt5wA0Ce8c7q69LdIxJQX1IMSQkeLuE/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1W4mk3hGTmVg8tt5wA0Ce8c7q69LdIxJQX1IMSQkeLuE/edit?usp=sharing) and generates `docs/glossary.md`.
+3. List versions in `mike` using `mike list` and identify which version you are wanting to update or iterate.
+4. Deploy a new version of the documentation using `mike`. If you are iterating the version, then use `mike deploy <version> latest -u` which says to create a new version, and move the `latest` alias to this new version. If you are updating the existing version, then `mike deploy <version>`.
+5. Check the changes on [https://localhost:8000](https://localhost:8000) with `mike serve`.
+6. If the local version shows the correct changes, then commit the changes to the branch.
+7. Push the branch to the GitHub repository.
+8. Generate a PR on GitHub from the branch just pushed to the `main` branch on GitHub.
+9. To deploy the changes to the website, `mike deploy` will generate a separate new commit to the `gh-pages` branch, so push the changes in local `gh-pages` to `git push origin gh-pages` to make the changes live. 
+
 ## Installation
 
 Building the documentation requires [Python 3](https://www.python.org/) or later.
