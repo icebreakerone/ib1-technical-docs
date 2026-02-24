@@ -1,23 +1,11 @@
 # Icebreaker One Technical Docs
 
 Icebreaker One technical documentation. This repository contains the sources for a [mkdocs-material](https://squidfunk.github.io/mkdocs-material/)
-build of the technical documentation, including operational guidelines, for the IB1 Trust Framework.
+build of the technical documentation, including operational guidelines, for IB1 Trust Frameworks.
 
 ## Viewing the docs
 
-Once released, this documentation will be hosted at https://docs.icebreakerone.org
-
-## Process to update the glossary and publish
-
-1. Checkout a new branch off `main` to do the changes.
-2. If you need to update the glossary, run the python script `build_glossary.py`. This takes the data from [https://docs.google.com/spreadsheets/d/1W4mk3hGTmVg8tt5wA0Ce8c7q69LdIxJQX1IMSQkeLuE/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1W4mk3hGTmVg8tt5wA0Ce8c7q69LdIxJQX1IMSQkeLuE/edit?usp=sharing) and generates `docs/glossary.md`.
-3. List versions in `mike` using `mike list` and identify which version you are wanting to update or iterate.
-4. Deploy a new version of the documentation using `mike`. If you are iterating the version, then use `mike deploy <version> latest -u` which says to create a new version, and move the `latest` alias to this new version. If you are updating the existing version, then `mike deploy <version>`.
-5. Check the changes on [https://localhost:8000](https://localhost:8000) with `mike serve`.
-6. If the local version shows the correct changes, then commit the changes to the branch.
-7. Push the branch to the GitHub repository.
-8. Generate a PR on GitHub from the branch just pushed to the `main` branch on GitHub.
-9. To deploy the changes to the website, `mike deploy` will generate a separate new commit to the `gh-pages` branch, so push the changes in local `gh-pages` to `git push origin gh-pages` to make the changes live. 
+This documentation is hosted at https://docs.trust.ib1.org
 
 ## Installation
 
@@ -44,14 +32,17 @@ pipenv shell
 The documentation uses [mike](https://github.com/jimporter/mike) to manage versioning. This includes a local webserver you can use to test your changes.
 
 ```
-mike deploy <version> [latest]
+mike deploy <version> [latest -u]
 ```
 
 e.g. if the current edit is to version 1.2 of the documents, which is also the latest (default served on the site):
 
 ```
-mike deploy 1.2 latest
+mike deploy 1.2 latest -u
 ```
+
+The `-u` flag signals that the `latest` alias should be updated to the new deployment
+
 
 `mike` automatically pushes updates to the `gh-pages` branch locally.
 
@@ -71,8 +62,7 @@ run `mike deploy` then run `mike serve` again to view changes.
 ## Pushing completed updates
 
 Each call to `mike deploy` adds a commit to the `gh-pages` branch. This leads to a lot of "junk commits" on the `gh-pages` branch
-as you make and test edits. You should reduce these down to a single commit for each substantial change. To do this you will need
-to find the commit ID of the last commit before you started editing:
+as you make and test edits. You should reduce these down to a single commit for each substantial change. To do this you will need to find the commit ID of the last commit before you started editing:
 
 ```
 git checkout gh-pages
@@ -84,13 +74,13 @@ This outputs a log of all commits on the branch in reverse order e.g.
 ```
 commit xxxxxxxxxxxxxxxxxxxx4 (HEAD -> gh-pages)
 Author: Alice <alice@example.com>
-Date:   Fri Dec 16 17:09:21 2022 +0000
+Date:   Fri Dec 16 17:09:23 2022 +0000
 
     Deployed xxxxxxx to 0.1 with MkDocs 1.4.2 and mike 1.1.2
 
 commit xxxxxxxxxxxxxxxxxxxx3 (HEAD -> gh-pages)
 Author: Alice <alice@example.com>
-Date:   Fri Dec 16 17:09:21 2022 +0000
+Date:   Fri Dec 16 17:09:22 2022 +0000
 
     Deployed xxxxxxx to 0.1 with MkDocs 1.4.2 and mike 1.1.2
 
@@ -101,8 +91,8 @@ Date:   Fri Dec 16 17:09:21 2022 +0000
     Deployed xxxxxxx to 0.1 with MkDocs 1.4.2 and mike 1.1.2
 
 commit xxxxxxxxxxxxxxxxxxxx1
-Author: Alice <alice@example.com>
-Date:   Fri Dec 16 14:12:36 2022 +0000
+Author: Bob <bob@example.com>
+Date:   Thu Dec 15 14:12:36 2022 +0000
 
     Update the docs to something interesting
 
@@ -118,20 +108,23 @@ git commit -m "My meaningful commit"
 git push
 ```
 
-Finally, assuning you were working in `master`, check out `master` again so you don't accidentally edit the `gh-pages` branch.
+Finally, assuming you were working in `master`, check out `master` again so you don't accidentally edit the `gh-pages` branch.
 
 ```
 git checkout master
 ```
 
-## Updating the glossary
+## Process to update the glossary and publish
 
-The Python script `build_glossary.py` retrieves the glossary from our gdrive and writes it to `docs/glossary.md`. `mkdocs` doesn't have
-any glossary autobuild capabilities so you will need to add links to defined terms manually in the docs. The `Term` field from the
-glossary spreadsheet is parsed by the Python script to create an anchor tag on the item in the `glossary.md` file. The ID of the tag is
-the term with punctuation renoved and whitespace replaced by "-". For example "Data sensitivity class - shared (A)" has the tag
-`Data-sensitivity-class-shared-A` and a link to it would look like
-`[Data sensitivity class - shared (A)](glossary.md#Data-sensitivity-class-shared-A)`
+1. Create a new branch off `main` to do the changes.
+2. If you need to update the glossary, run the python script `build_glossary.py`. This takes the data from [https://docs.google.com/spreadsheets/d/1W4mk3hGTmVg8tt5wA0Ce8c7q69LdIxJQX1IMSQkeLuE/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1W4mk3hGTmVg8tt5wA0Ce8c7q69LdIxJQX1IMSQkeLuE/edit?usp=sharing) and generates `docs/glossary.md`.
+3. List versions in `mike` using `mike list` and identify which version you are wanting to update or iterate.
+4. Deploy a new version of the documentation using `mike`. If you are iterating the version, then use `mike deploy <version> latest -u` which says to create a new version, and move the `latest` alias to this new version. If you are updating the existing version, then `mike deploy <version>`.
+5. Check the changes on [https://localhost:8000](https://localhost:8000) with `mike serve`.
+6. If the local version shows the correct changes, then commit the changes to the branch.
+7. Push the branch to the GitHub repository.
+8. Generate a PR on GitHub from the branch just pushed to the `main` branch on GitHub.
+9. To deploy the changes to the website, `mike deploy` will generate a separate new commit to the `gh-pages` branch, so push the changes in local `gh-pages` to `git push origin gh-pages` to make the changes live. 
 
 ### Deactivating the virtual environment
 
