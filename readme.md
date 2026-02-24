@@ -5,7 +5,7 @@ build of the technical documentation, including operational guidelines, for IB1 
 
 ## Viewing the docs
 
-This documentation is hosted at https://docs.trust.ib1.org
+This documentation is hosted at [https://docs.trust.ib1.org](https://docs.trust.ib1.org)
 
 ## Installation
 
